@@ -9,5 +9,3 @@ measurements_example: example of modification of tx_rx.py that sweep the Tx powe
 
 If you get the warning: USRP Source Block caught rx error code: 2 when not sharing the local oscillator, just switch the clock source and time source to 'mimo' run one time and switch back to 'internal' and 'none'. 
 
-setpaths.sh: script that add the library and python paths for the current shell process. It might have to be changed accordingly to your installation locations.
-
