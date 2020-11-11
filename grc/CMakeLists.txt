@@ -19,5 +19,23 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    lora_sdr_lora_sdr.block.yml DESTINATION share/gnuradio/grc/blocks
+    lora_sdr_lora_sdr.block.yml
+    lora_sdr_add_crc.block.yml
+    lora_sdr_crc_verif.block.yml
+    lora_sdr_dewhitening.block.yml
+    lora_sdr_gray_decode.block.yml
+    lora_sdr_gray_enc.block.yml
+    lora_sdr_hamming_dec.block.yml
+    lora_sdr_hamming_enc.block.yml
+    lora_sdr_header_decoder.block.yml
+    lora_sdr_header.block.yml
+    lora_sdr_interleaver.block.yml
+    lora_sdr_modulate.block.yml
+    lora_sdr_whitening.block.yml
+    lora_sdr_RH_RF95_header.block.yml
+    lora_sdr_fft_demod.block.yml
+    lora_sdr_data_source.block.yml
+    lora_sdr_frame_sync.block.yml
+    lora_sdr_deinterleaver.block.yml
+    lora_sdr_err_measures.block.yml DESTINATION share/gnuradio/grc/blocks
 )

@@ -25,6 +25,9 @@ cmake_minimum_required(VERSION 3.8)
 project(gr-lora_sdr CXX C)
 enable_testing()
 
+#set destination
+# set(CMAKE_INSTALL_PREFIX $ENV{HOME}/lora_sdr/)
+
 # Install to PyBOMBS target prefix if defined
 if(DEFINED ENV{PYBOMBS_PREFIX})
     set(CMAKE_INSTALL_PREFIX $ENV{PYBOMBS_PREFIX})

@@ -13,20 +13,19 @@ Payload length: up to LoRa maximum packet length (255 Bytes)
 Verification of payload CRC
 Verification of explicit header checksum
 
-Requirements:
--Gnuradio 3.7
--python 2
--cmake
--swig
--libvolk
--UHD
+## Requirements:
+SDR-LoRa requires the following dependencies to build from source :
 
-Extra libs Arch Linux:
--- cppunit
--- doxygen -> documentation
+- Gnuradio 3.8
+- python 2
+- cmake
+- swig
+- libvolk
+- UHD
+- cppunit
+- doxygen (only needed for documentation)
 
-
-Installation:
+## Installation:
 
 -The installation path can be set in CMakeLists.txt under #set destination.(default: home/lora_sdr)
 

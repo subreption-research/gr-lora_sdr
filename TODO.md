@@ -1,4 +1,4 @@
 ## Install 
--- update extra libs
--- Fix GNU radio version -> find_package
+- xml to yaml conversion
+- Fix paths and grc loading
 
