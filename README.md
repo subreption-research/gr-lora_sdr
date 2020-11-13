@@ -23,6 +23,7 @@ SDR-LoRa requires the following dependencies to build from source :
 - libvolk
 - UHD
 - cppunit
+- qwt (for gui)
 - doxygen (only needed for documentation)
 
 ## Installation:
