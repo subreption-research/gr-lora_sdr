@@ -9,24 +9,65 @@
 # Description: Simulation example LoRa
 # GNU Radio version: 3.8.1.0
 
-from gnuradio import analog
+from distutils.version import StrictVersion
+
+if __name__ == '__main__':
+    import ctypes
+    import sys
+    if sys.platform.startswith('linux'):
+        try:
+            x11 = ctypes.cdll.LoadLibrary('libX11.so')
+            x11.XInitThreads()
+        except:
+            print("Warning: failed to XInitThreads()")
+
 from gnuradio import blocks
 import pmt
 from gnuradio import gr
 from gnuradio.filter import firdes
 import sys
 import signal
+from PyQt5 import Qt
 from argparse import ArgumentParser
 from gnuradio.eng_arg import eng_float, intx
 from gnuradio import eng_notation
 import lora_sdr
 import threading
 
+from gnuradio import qtgui
 
-class sim_lor(gr.top_block):
+class sim_lor(gr.top_block, Qt.QWidget):
 
     def __init__(self):
         gr.top_block.__init__(self, "Sim Lor")
+        Qt.QWidget.__init__(self)
+        self.setWindowTitle("Sim Lor")
+        qtgui.util.check_set_qss()
+        try:
+            self.setWindowIcon(Qt.QIcon.fromTheme('gnuradio-grc'))
+        except:
+            pass
+        self.top_scroll_layout = Qt.QVBoxLayout()
+        self.setLayout(self.top_scroll_layout)
+        self.top_scroll = Qt.QScrollArea()
+        self.top_scroll.setFrameStyle(Qt.QFrame.NoFrame)
+        self.top_scroll_layout.addWidget(self.top_scroll)
+        self.top_scroll.setWidgetResizable(True)
+        self.top_widget = Qt.QWidget()
+        self.top_scroll.setWidget(self.top_widget)
+        self.top_layout = Qt.QVBoxLayout(self.top_widget)
+        self.top_grid_layout = Qt.QGridLayout()
+        self.top_layout.addLayout(self.top_grid_layout)
+
+        self.settings = Qt.QSettings("GNU Radio", "sim_lor")
+
+        try:
+            if StrictVersion(Qt.qVersion()) < StrictVersion("5.0.0"):
+                self.restoreGeometry(self.settings.value("geometry").toByteArray())
+            else:
+                self.restoreGeometry(self.settings.value("geometry"))
+        except:
+            pass
 
         self._lock = threading.RLock()
 
@@ -66,11 +107,13 @@ class sim_lor(gr.top_block):
         self.lora_sdr_data_source_0 = lora_sdr.data_source(pay_len, n_frame)
         self.lora_sdr_crc_verif_0 = lora_sdr.crc_verif()
         self.lora_sdr_add_crc_0 = lora_sdr.add_crc(has_crc)
-        self.blocks_null_sink_0 = blocks.null_sink(gr.sizeof_gr_complex*1)
         self.blocks_multiply_const_vxx_0 = blocks.multiply_const_cc(mult_const)
         self.blocks_multiply_const_vxx_0.set_min_output_buffer(10000000)
         self.blocks_message_strobe_random_0 = blocks.message_strobe_random(pmt.intern(''), blocks.STROBE_UNIFORM, frame_period, 5)
-        self.analog_const_source_x_0 = analog.sig_source_c(0, analog.GR_CONST_WAVE, 0, 0, 0)
+        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_gr_complex*1, '/home/martyn/gr-lora-sdr/gr-lora_sdr/apps/test_input', True, 0, 0)
+        self.blocks_file_source_0.set_begin_tag(pmt.PMT_NIL)
+        self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_gr_complex*1, '/home/martyn/gr-lora-sdr/gr-lora_sdr/apps/output_test', False)
+        self.blocks_file_sink_0.set_unbuffered(False)
 
 
 
@@ -90,19 +133,19 @@ class sim_lor(gr.top_block):
         self.msg_connect((self.lora_sdr_frame_sync_0, 'new_frame'), (self.lora_sdr_fft_demod_0, 'new_frame'))
         self.msg_connect((self.lora_sdr_frame_sync_0, 'new_frame'), (self.lora_sdr_hamming_dec_0, 'new_frame'))
         self.msg_connect((self.lora_sdr_frame_sync_0, 'new_frame'), (self.lora_sdr_header_decoder_0, 'new_frame'))
-        self.msg_connect((self.lora_sdr_header_decoder_0, 'pay_len'), (self.lora_sdr_crc_verif_0, 'pay_len'))
         self.msg_connect((self.lora_sdr_header_decoder_0, 'CRC'), (self.lora_sdr_crc_verif_0, 'CRC'))
+        self.msg_connect((self.lora_sdr_header_decoder_0, 'pay_len'), (self.lora_sdr_crc_verif_0, 'pay_len'))
         self.msg_connect((self.lora_sdr_header_decoder_0, 'CR'), (self.lora_sdr_deinterleaver_0, 'CR'))
         self.msg_connect((self.lora_sdr_header_decoder_0, 'CRC'), (self.lora_sdr_dewhitening_0, 'CRC'))
         self.msg_connect((self.lora_sdr_header_decoder_0, 'pay_len'), (self.lora_sdr_dewhitening_0, 'pay_len'))
         self.msg_connect((self.lora_sdr_header_decoder_0, 'CR'), (self.lora_sdr_fft_demod_0, 'CR'))
-        self.msg_connect((self.lora_sdr_header_decoder_0, 'CRC'), (self.lora_sdr_frame_sync_0, 'crc'))
-        self.msg_connect((self.lora_sdr_header_decoder_0, 'pay_len'), (self.lora_sdr_frame_sync_0, 'pay_len'))
         self.msg_connect((self.lora_sdr_header_decoder_0, 'CR'), (self.lora_sdr_frame_sync_0, 'CR'))
         self.msg_connect((self.lora_sdr_header_decoder_0, 'err'), (self.lora_sdr_frame_sync_0, 'err'))
+        self.msg_connect((self.lora_sdr_header_decoder_0, 'CRC'), (self.lora_sdr_frame_sync_0, 'crc'))
+        self.msg_connect((self.lora_sdr_header_decoder_0, 'pay_len'), (self.lora_sdr_frame_sync_0, 'pay_len'))
         self.msg_connect((self.lora_sdr_header_decoder_0, 'CR'), (self.lora_sdr_hamming_dec_0, 'CR'))
-        self.connect((self.analog_const_source_x_0, 0), (self.lora_sdr_frame_sync_0, 0))
-        self.connect((self.blocks_multiply_const_vxx_0, 0), (self.blocks_null_sink_0, 0))
+        self.connect((self.blocks_file_source_0, 0), (self.lora_sdr_frame_sync_0, 0))
+        self.connect((self.blocks_multiply_const_vxx_0, 0), (self.blocks_file_sink_0, 0))
         self.connect((self.lora_sdr_add_crc_0, 0), (self.lora_sdr_hamming_enc_0, 0))
         self.connect((self.lora_sdr_deinterleaver_0, 0), (self.lora_sdr_hamming_dec_0, 0))
         self.connect((self.lora_sdr_dewhitening_0, 0), (self.lora_sdr_crc_verif_0, 0))
@@ -118,6 +161,11 @@ class sim_lor(gr.top_block):
         self.connect((self.lora_sdr_modulate_0, 0), (self.blocks_multiply_const_vxx_0, 0))
         self.connect((self.lora_sdr_whitening_0, 0), (self.lora_sdr_header_0, 0))
 
+
+    def closeEvent(self, event):
+        self.settings = Qt.QSettings("GNU Radio", "sim_lor")
+        self.settings.setValue("geometry", self.saveGeometry())
+        event.accept()
 
     def get_bw(self):
         return self.bw
@@ -204,26 +252,34 @@ class sim_lor(gr.top_block):
 
 
 def main(top_block_cls=sim_lor, options=None):
+
+    if StrictVersion("4.5.0") <= StrictVersion(Qt.qVersion()) < StrictVersion("5.0.0"):
+        style = gr.prefs().get_string('qtgui', 'style', 'raster')
+        Qt.QApplication.setGraphicsSystem(style)
+    qapp = Qt.QApplication(sys.argv)
+
     tb = top_block_cls()
 
-    def sig_handler(sig=None, frame=None):
-        tb.stop()
-        tb.wait()
+    tb.start()
 
-        sys.exit(0)
+    tb.show()
+
+    def sig_handler(sig=None, frame=None):
+        Qt.QApplication.quit()
 
     signal.signal(signal.SIGINT, sig_handler)
     signal.signal(signal.SIGTERM, sig_handler)
 
-    tb.start()
+    timer = Qt.QTimer()
+    timer.start(500)
+    timer.timeout.connect(lambda: None)
 
-    try:
-        input('Press Enter to quit: ')
-    except EOFError:
-        pass
-    tb.stop()
-    tb.wait()
+    def quitting():
+        tb.stop()
+        tb.wait()
 
+    qapp.aboutToQuit.connect(quitting)
+    qapp.exec_()
 
 if __name__ == '__main__':
     main()

@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "/usr/bin/python3",
-            "args": ["-u","/home/martyn/gr-lora-sdr/gr-lora_sdr/apps/tx_rx.py"],
+            "args": ["-u","/home/martyn/gr-lora-sdr/gr-lora_sdr/apps/sim_lor.py"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],

@@ -8,7 +8,7 @@ options:
     description: Simulation example LoRa
     gen_cmake: 'On'
     gen_linking: dynamic
-    generate_options: no_gui
+    generate_options: qt_gui
     hier_block_src_path: '.:'
     id: sim_lor
     max_nouts: '0'
@@ -164,21 +164,44 @@ blocks:
     coordinate: [352, 4]
     rotation: 0
     state: enabled
-- name: analog_const_source_x_0
-  id: analog_const_source_x
+- name: blocks_file_sink_0
+  id: blocks_file_sink
   parameters:
     affinity: ''
     alias: ''
+    append: 'False'
     comment: ''
-    const: '0'
-    maxoutbuf: '0'
-    minoutbuf: '0'
+    file: /home/martyn/gr-lora-sdr/gr-lora_sdr/apps/output_test
     type: complex
+    unbuffered: 'False'
+    vlen: '1'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2687, 376]
+    coordinate: [2246, 192]
+    rotation: 0
+    state: true
+- name: blocks_file_source_0
+  id: blocks_file_source
+  parameters:
+    affinity: ''
+    alias: ''
+    begin_tag: pmt.PMT_NIL
+    comment: ''
+    file: /home/martyn/gr-lora-sdr/gr-lora_sdr/apps/test_input
+    length: '0'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    offset: '0'
+    repeat: 'True'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2560, 380]
     rotation: 0
     state: true
 - name: blocks_message_strobe_random_0
@@ -218,23 +241,6 @@ blocks:
     coordinate: [2035, 227]
     rotation: 0
     state: enabled
-- name: blocks_null_sink_0
-  id: blocks_null_sink
-  parameters:
-    affinity: ''
-    alias: ''
-    bus_structure_sink: '[[0,],]'
-    comment: ''
-    num_inputs: '1'
-    type: complex
-    vlen: '1'
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [2300, 240]
-    rotation: 0
-    state: true
 - name: lora_sdr_add_crc_0
   id: lora_sdr_add_crc
   parameters:
@@ -296,7 +302,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1811, 585]
+    coordinate: [1824, 541]
     rotation: 180
     state: enabled
 - name: lora_sdr_dewhitening_0
@@ -345,7 +351,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2228, 442]
+    coordinate: [2239, 388]
     rotation: 180
     state: enabled
 - name: lora_sdr_frame_sync_0
@@ -395,7 +401,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2047, 484]
+    coordinate: [2072, 490]
     rotation: 180
     state: enabled
 - name: lora_sdr_hamming_dec_0
@@ -410,7 +416,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1555, 634]
+    coordinate: [1575, 633]
     rotation: 180
     state: enabled
 - name: lora_sdr_hamming_enc_0
@@ -519,9 +525,9 @@ blocks:
     state: enabled
 
 connections:
-- [analog_const_source_x_0, '0', lora_sdr_frame_sync_0, '0']
+- [blocks_file_source_0, '0', lora_sdr_frame_sync_0, '0']
 - [blocks_message_strobe_random_0, strobe, lora_sdr_data_source_0, trigg]
-- [blocks_multiply_const_vxx_0, '0', blocks_null_sink_0, '0']
+- [blocks_multiply_const_vxx_0, '0', blocks_file_sink_0, '0']
 - [lora_sdr_add_crc_0, '0', lora_sdr_hamming_enc_0, '0']
 - [lora_sdr_crc_verif_0, msg, lora_sdr_err_measures_0, msg]
 - [lora_sdr_data_source_0, msg, lora_sdr_add_crc_0, msg]

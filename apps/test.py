@@ -1,3 +1,3 @@
-from lora_sdr_swig import *
+import lora_sdr
 
-lora_sdr_swig.whitening()
+lora_sdr.
