@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="classgr_1_1lora__sdr_1_1header" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora_sdr::header</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1lora__sdr_1_1header__impl" prot="public" virt="non-virtual">gr::lora_sdr::header_impl</derivedcompoundref>
+    <includes refid="header_8h" local="no">header.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1lora__sdr_1_1header_1ad3e8a1bb5ac14e261664227d35bfb22c" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1lora__sdr_1_1header" kindref="compound">header</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;header&gt; gr::lora_sdr::header::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/header.h" line="39" column="33" bodyfile="/home/martyn/gr-lora_sdr/include/lora_sdr/header.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1header_1a90759b05ba40572668384c4f907e61d0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1lora__sdr_1_1header_1ad3e8a1bb5ac14e261664227d35bfb22c" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::lora_sdr::header::make</definition>
+        <argsstring>(bool impl_head, bool has_crc, uint8_t cr)</argsstring>
+        <name>make</name>
+        <param>
+          <type>bool</type>
+          <declname>impl_head</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>has_crc</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>cr</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1lora__sdr_1_1header" kindref="compound">lora_sdr::header</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1lora__sdr_1_1header" kindref="compound">lora_sdr::header</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1lora__sdr_1_1header_1a90759b05ba40572668384c4f907e61d0" kindref="member">lora_sdr::header::make</ref> is the public interface for creating new instances. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/header.h" line="49" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gr::lora_sdr::header</label>
+        <link refid="classgr_1_1lora__sdr_1_1header"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::lora_sdr::header_impl</label>
+        <link refid="classgr_1_1lora__sdr_1_1header__impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gr::lora_sdr::header</label>
+        <link refid="classgr_1_1lora__sdr_1_1header"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/header.h" line="36" column="5" bodyfile="/home/martyn/gr-lora_sdr/include/lora_sdr/header.h" bodystart="37" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora__sdr_1_1header_1a90759b05ba40572668384c4f907e61d0" prot="public" virt="non-virtual"><scope>gr::lora_sdr::header</scope><name>make</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1header_1ad3e8a1bb5ac14e261664227d35bfb22c" prot="public" virt="non-virtual"><scope>gr::lora_sdr::header</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="classgr_1_1lora__sdr_1_1deinterleaver" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora_sdr::deinterleaver</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1lora__sdr_1_1deinterleaver__impl" prot="public" virt="non-virtual">gr::lora_sdr::deinterleaver_impl</derivedcompoundref>
+    <includes refid="deinterleaver_8h" local="no">deinterleaver.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1lora__sdr_1_1deinterleaver_1a10c6ecd76513d2d8e8faee8a25174ab6" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1lora__sdr_1_1deinterleaver" kindref="compound">deinterleaver</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;deinterleaver&gt; gr::lora_sdr::deinterleaver::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/deinterleaver.h" line="39" column="33" bodyfile="/home/martyn/gr-lora_sdr/include/lora_sdr/deinterleaver.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1deinterleaver_1a1d8d559906b8e87cab05ca7d8a3330c5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1lora__sdr_1_1deinterleaver_1a10c6ecd76513d2d8e8faee8a25174ab6" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::lora_sdr::deinterleaver::make</definition>
+        <argsstring>(uint8_t sf)</argsstring>
+        <name>make</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>sf</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1lora__sdr_1_1deinterleaver" kindref="compound">lora_sdr::deinterleaver</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1lora__sdr_1_1deinterleaver" kindref="compound">lora_sdr::deinterleaver</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1lora__sdr_1_1deinterleaver_1a1d8d559906b8e87cab05ca7d8a3330c5" kindref="member">lora_sdr::deinterleaver::make</ref> is the public interface for creating new instances. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/deinterleaver.h" line="49" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Deinterleaves the received payload, for more information about the implementation visit <ref refid="classgr_1_1lora__sdr_1_1deinterleaver__impl" kindref="compound">deinterleaver_impl</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gr::lora_sdr::deinterleaver</label>
+        <link refid="classgr_1_1lora__sdr_1_1deinterleaver"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>block</label>
+      </node>
+      <node id="3">
+        <label>gr::lora_sdr::deinterleaver_impl</label>
+        <link refid="classgr_1_1lora__sdr_1_1deinterleaver__impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gr::lora_sdr::deinterleaver</label>
+        <link refid="classgr_1_1lora__sdr_1_1deinterleaver"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/deinterleaver.h" line="36" column="5" bodyfile="/home/martyn/gr-lora_sdr/include/lora_sdr/deinterleaver.h" bodystart="37" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora__sdr_1_1deinterleaver_1a1d8d559906b8e87cab05ca7d8a3330c5" prot="public" virt="non-virtual"><scope>gr::lora_sdr::deinterleaver</scope><name>make</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1deinterleaver_1a10c6ecd76513d2d8e8faee8a25174ab6" prot="public" virt="non-virtual"><scope>gr::lora_sdr::deinterleaver</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

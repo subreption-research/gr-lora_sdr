@@ -1,0 +1,61 @@
+\doxysection{gr\+::lora\+\_\+sdr\+::frame\+\_\+sync Class Reference}
+\label{classgr_1_1lora__sdr_1_1frame__sync}\index{gr::lora\_sdr::frame\_sync@{gr::lora\_sdr::frame\_sync}}
+
+
+Block that is able to detect the received spectrum and start to find the data such that it can be decoded. This block is at the heart of the the RX (decoding) side and houses a lot of logic and data manipulation. For more information about the implementation visit \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl}{frame\+\_\+sync\+\_\+impl}}.  
+
+
+
+
+{\ttfamily \#include $<$frame\+\_\+sync.\+h$>$}
+
+
+
+Inheritance diagram for gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classgr_1_1lora__sdr_1_1frame__sync__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync}{frame\+\_\+sync}} $>$ \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync_acc9df91d7e03a2e5cb5a57dab389c765}{sptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync_acc9df91d7e03a2e5cb5a57dab389c765}{sptr}} \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync_a776adf7b13bb1555de3dc0a97b3940cc}{make}} (float samp\+\_\+rate, uint32\+\_\+t bandwidth, uint8\+\_\+t sf, bool impl\+\_\+head)
+\begin{DoxyCompactList}\small\item\em Return a shared\+\_\+ptr to a new instance of \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync}{lora\+\_\+sdr\+::frame\+\_\+sync}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Block that is able to detect the received spectrum and start to find the data such that it can be decoded. This block is at the heart of the the RX (decoding) side and houses a lot of logic and data manipulation. For more information about the implementation visit \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl}{frame\+\_\+sync\+\_\+impl}}. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync_acc9df91d7e03a2e5cb5a57dab389c765}} 
+\index{gr::lora\_sdr::frame\_sync@{gr::lora\_sdr::frame\_sync}!sptr@{sptr}}
+\index{sptr@{sptr}!gr::lora\_sdr::frame\_sync@{gr::lora\_sdr::frame\_sync}}
+\doxysubsubsection{\texorpdfstring{sptr}{sptr}}
+{\footnotesize\ttfamily typedef boost\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync}{frame\+\_\+sync}}$>$ \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync_acc9df91d7e03a2e5cb5a57dab389c765}{gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+::sptr}}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync_a776adf7b13bb1555de3dc0a97b3940cc}} 
+\index{gr::lora\_sdr::frame\_sync@{gr::lora\_sdr::frame\_sync}!make@{make}}
+\index{make@{make}!gr::lora\_sdr::frame\_sync@{gr::lora\_sdr::frame\_sync}}
+\doxysubsubsection{\texorpdfstring{make()}{make()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync_acc9df91d7e03a2e5cb5a57dab389c765}{sptr}} gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+::make (\begin{DoxyParamCaption}\item[{float}]{samp\+\_\+rate,  }\item[{uint32\+\_\+t}]{bandwidth,  }\item[{uint8\+\_\+t}]{sf,  }\item[{bool}]{impl\+\_\+head }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return a shared\+\_\+ptr to a new instance of \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync}{lora\+\_\+sdr\+::frame\+\_\+sync}}. 
+
+To avoid accidental use of raw pointers, \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync}{lora\+\_\+sdr\+::frame\+\_\+sync}}\textquotesingle{}s constructor is in a private implementation class. \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync_a776adf7b13bb1555de3dc0a97b3940cc}{lora\+\_\+sdr\+::frame\+\_\+sync\+::make}} is the public interface for creating new instances. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{frame__sync_8h}{frame\+\_\+sync.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="classgr_1_1lora__sdr_1_1dewhitening__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora_sdr::dewhitening_impl</compoundname>
+    <basecompoundref refid="classgr_1_1lora__sdr_1_1dewhitening" prot="public" virt="non-virtual">gr::lora_sdr::dewhitening</basecompoundref>
+    <includes refid="dewhitening__impl_8h" local="no">dewhitening_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1dewhitening__impl_1a368db5d661f493ce04433864af2466e7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lora_sdr::dewhitening_impl::m_payload_len</definition>
+        <argsstring></argsstring>
+        <name>m_payload_len</name>
+        <briefdescription>
+<para>Payload length in bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/dewhitening_impl.h" line="15" column="7" bodyfile="/home/martyn/gr-lora_sdr/lib/dewhitening_impl.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1dewhitening__impl_1a157b81ab15a0947e30f0437a5579b03c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lora_sdr::dewhitening_impl::m_crc_presence</definition>
+        <argsstring></argsstring>
+        <name>m_crc_presence</name>
+        <briefdescription>
+<para>indicate the presence of a CRC </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/dewhitening_impl.h" line="21" column="7" bodyfile="/home/martyn/gr-lora_sdr/lib/dewhitening_impl.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1dewhitening__impl_1ad8d403d876523fa0307e64264756cdb4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lora_sdr::dewhitening_impl::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>The offset in the whitening table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/dewhitening_impl.h" line="27" column="7" bodyfile="/home/martyn/gr-lora_sdr/lib/dewhitening_impl.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1dewhitening__impl_1a63cb47f4b513f2ac3e11a6520c29ec42" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt;uint8_t&gt; gr::lora_sdr::dewhitening_impl::dewhitened</definition>
+        <argsstring></argsstring>
+        <name>dewhitened</name>
+        <briefdescription>
+<para>The dewhitened bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/dewhitening_impl.h" line="33" column="15" bodyfile="/home/martyn/gr-lora_sdr/lib/dewhitening_impl.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1dewhitening__impl_1a8ff495112f4b518e7043f845d6f5a146" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::dewhitening_impl::header_pay_len_handler</definition>
+        <argsstring>(pmt::pmt_t payload_len)</argsstring>
+        <name>header_pay_len_handler</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>payload_len</declname>
+        </param>
+        <briefdescription>
+<para>Handles the payload length received from the <ref refid="classgr_1_1lora__sdr_1_1header__decoder" kindref="compound">header_decoder</ref> block. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>payload_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: payload length </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/dewhitening_impl.h" line="40" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1dewhitening__impl_1a3e2d8d2acf27e62dd8668cd5723c4db6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::dewhitening_impl::new_frame_handler</definition>
+        <argsstring>(pmt::pmt_t id)</argsstring>
+        <name>new_frame_handler</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Reset the block variables for a new frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/dewhitening_impl.h" line="47" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1dewhitening__impl_1a45c377e9f8fdf0e3de16b9e450cf55f2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::dewhitening_impl::header_crc_handler</definition>
+        <argsstring>(pmt::pmt_t crc_presence)</argsstring>
+        <name>header_crc_handler</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>crc_presence</declname>
+        </param>
+        <briefdescription>
+<para>Receive indication on the CRC presence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>crc_presence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: control message if <ref refid="classgr_1_1lora__sdr_1_1add__crc" kindref="compound">add_crc</ref> is active </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/dewhitening_impl.h" line="54" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1dewhitening__impl_1a3e63ec5340212128238f07f9a2f53d65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora_sdr::dewhitening_impl::dewhitening_impl</definition>
+        <argsstring>()</argsstring>
+        <name>dewhitening_impl</name>
+        <briefdescription>
+<para>Construct a new dewhitening impl object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/dewhitening_impl.h" line="61" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1dewhitening__impl_1a04f45b466a94cbc55887d7bc68c4e29c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora_sdr::dewhitening_impl::~dewhitening_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~dewhitening_impl</name>
+        <briefdescription>
+<para>Destroy the dewhitening impl object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/dewhitening_impl.h" line="66" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1dewhitening__impl_1a2382c13953ec3a0fe020cb9b794fbb14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::dewhitening_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>noutput_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ninput_items_required</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/dewhitening_impl.h" line="74" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1dewhitening__impl_1aef67789f37eaaaa30a6c2c2331303c12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::lora_sdr::dewhitening_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+<para>Main dewhitining function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>noutput_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ninput_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>input_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/dewhitening_impl.h" line="85" column="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>gr::lora_sdr::dewhitening</label>
+        <link refid="classgr_1_1lora__sdr_1_1dewhitening"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>block</label>
+      </node>
+      <node id="1">
+        <label>gr::lora_sdr::dewhitening_impl</label>
+        <link refid="classgr_1_1lora__sdr_1_1dewhitening__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>gr::lora_sdr::dewhitening</label>
+        <link refid="classgr_1_1lora__sdr_1_1dewhitening"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>block</label>
+      </node>
+      <node id="1">
+        <label>gr::lora_sdr::dewhitening_impl</label>
+        <link refid="classgr_1_1lora__sdr_1_1dewhitening__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>dewhitened</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::vector&lt; uint8_t &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/martyn/gr-lora_sdr/lib/dewhitening_impl.h" line="9" column="1" bodyfile="/home/martyn/gr-lora_sdr/lib/dewhitening_impl.h" bodystart="9" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora__sdr_1_1dewhitening__impl_1a63cb47f4b513f2ac3e11a6520c29ec42" prot="private" virt="non-virtual"><scope>gr::lora_sdr::dewhitening_impl</scope><name>dewhitened</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1dewhitening__impl_1a3e63ec5340212128238f07f9a2f53d65" prot="public" virt="non-virtual"><scope>gr::lora_sdr::dewhitening_impl</scope><name>dewhitening_impl</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1dewhitening__impl_1a2382c13953ec3a0fe020cb9b794fbb14" prot="public" virt="non-virtual"><scope>gr::lora_sdr::dewhitening_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1dewhitening__impl_1aef67789f37eaaaa30a6c2c2331303c12" prot="public" virt="non-virtual"><scope>gr::lora_sdr::dewhitening_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1dewhitening__impl_1a45c377e9f8fdf0e3de16b9e450cf55f2" prot="private" virt="non-virtual"><scope>gr::lora_sdr::dewhitening_impl</scope><name>header_crc_handler</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1dewhitening__impl_1a8ff495112f4b518e7043f845d6f5a146" prot="private" virt="non-virtual"><scope>gr::lora_sdr::dewhitening_impl</scope><name>header_pay_len_handler</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1dewhitening__impl_1a157b81ab15a0947e30f0437a5579b03c" prot="private" virt="non-virtual"><scope>gr::lora_sdr::dewhitening_impl</scope><name>m_crc_presence</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1dewhitening__impl_1a368db5d661f493ce04433864af2466e7" prot="private" virt="non-virtual"><scope>gr::lora_sdr::dewhitening_impl</scope><name>m_payload_len</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1dewhitening_1a6611a7708b8c4a79f9bf038be8136924" prot="public" virt="non-virtual"><scope>gr::lora_sdr::dewhitening_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1dewhitening__impl_1a3e2d8d2acf27e62dd8668cd5723c4db6" prot="private" virt="non-virtual"><scope>gr::lora_sdr::dewhitening_impl</scope><name>new_frame_handler</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1dewhitening__impl_1ad8d403d876523fa0307e64264756cdb4" prot="private" virt="non-virtual"><scope>gr::lora_sdr::dewhitening_impl</scope><name>offset</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1dewhitening_1a31f9b20a1769a5c82b5672a4e1071853" prot="public" virt="non-virtual"><scope>gr::lora_sdr::dewhitening_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1dewhitening__impl_1a04f45b466a94cbc55887d7bc68c4e29c" prot="public" virt="non-virtual"><scope>gr::lora_sdr::dewhitening_impl</scope><name>~dewhitening_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

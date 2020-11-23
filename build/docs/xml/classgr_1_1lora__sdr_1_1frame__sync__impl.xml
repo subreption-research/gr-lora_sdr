@@ -1,0 +1,1086 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="classgr_1_1lora__sdr_1_1frame__sync__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora_sdr::frame_sync_impl</compoundname>
+    <basecompoundref refid="classgr_1_1lora__sdr_1_1frame__sync" prot="public" virt="non-virtual">gr::lora_sdr::frame_sync</basecompoundref>
+    <includes refid="frame__sync__impl_8h" local="no">frame_sync_impl.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1ac3ebff914014982b368f2cf729e3a43d" prot="private" static="no" strong="no">
+        <type></type>
+        <name>DecoderState</name>
+        <enumvalue id="classgr_1_1lora__sdr_1_1frame__sync__impl_1ac3ebff914014982b368f2cf729e3a43dae6ca094bf562c31fc6eda992c1bf6726" prot="private">
+          <name>DETECT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1lora__sdr_1_1frame__sync__impl_1ac3ebff914014982b368f2cf729e3a43da607f95a36b6031f20f71eec37d100b78" prot="private">
+          <name>SYNC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1lora__sdr_1_1frame__sync__impl_1ac3ebff914014982b368f2cf729e3a43daf511314f95ff2885db561532fe65a29c" prot="private">
+          <name>FRAC_CFO_CORREC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1lora__sdr_1_1frame__sync__impl_1ac3ebff914014982b368f2cf729e3a43dad4d47759f099f2f4c680aa4b5c1db7cc" prot="private">
+          <name>STOP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="21" column="10" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="21" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="enum" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a2b524afc6785765fff65a13449cb8c95" prot="private" static="no" strong="no">
+        <type></type>
+        <name>SyncState</name>
+        <enumvalue id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a2b524afc6785765fff65a13449cb8c95a0feb99e1be18748a655f97e0c0ab51b0" prot="private">
+          <name>NET_ID1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a2b524afc6785765fff65a13449cb8c95ab391933a2a5b33fc235fda1f4c8bab52" prot="private">
+          <name>NET_ID2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a2b524afc6785765fff65a13449cb8c95a363c02bacac44b26e4e918f80c0d5eec" prot="private">
+          <name>DOWNCHIRP1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a2b524afc6785765fff65a13449cb8c95af96bb9c0004167b468656daaff4fea30" prot="private">
+          <name>DOWNCHIRP2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a2b524afc6785765fff65a13449cb8c95a3e4e5a91c81bedf48f4c2cbdc2fed549" prot="private">
+          <name>QUARTER_DOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="27" column="10" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="27" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1af6f15eff69be46a3ebbc6711f1f0dcd3" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::lora_sdr::frame_sync_impl::m_state</definition>
+        <argsstring></argsstring>
+        <name>m_state</name>
+        <briefdescription>
+<para>Current state of the synchronization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="34" column="18" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a9a4ae1521f6018562e434771c26d7e66" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora_sdr::frame_sync_impl::m_bw</definition>
+        <argsstring></argsstring>
+        <name>m_bw</name>
+        <briefdescription>
+<para>Bandwidth. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="35" column="19" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1ab684e902c9a0d246d5f0c54dfa66936d" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora_sdr::frame_sync_impl::m_samp_rate</definition>
+        <argsstring></argsstring>
+        <name>m_samp_rate</name>
+        <briefdescription>
+<para>Sampling rate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="36" column="19" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1aa62258177e546ad516d4e1556036b4fb" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::lora_sdr::frame_sync_impl::m_sf</definition>
+        <argsstring></argsstring>
+        <name>m_sf</name>
+        <briefdescription>
+<para>Spreading factor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="37" column="18" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a89bdc0fa6ac011519600b410dd1de931" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::lora_sdr::frame_sync_impl::m_cr</definition>
+        <argsstring></argsstring>
+        <name>m_cr</name>
+        <briefdescription>
+<para>Coding rate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="38" column="18" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a2233e37b5a8ca7b75e09c3a7a829b511" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora_sdr::frame_sync_impl::m_pay_len</definition>
+        <argsstring></argsstring>
+        <name>m_pay_len</name>
+        <briefdescription>
+<para>payload length </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="39" column="19" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a003179df5ff8544990a851a42fe0807d" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::lora_sdr::frame_sync_impl::m_has_crc</definition>
+        <argsstring></argsstring>
+        <name>m_has_crc</name>
+        <briefdescription>
+<para>CRC presence. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="40" column="18" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a8760cc4cf884ead3d41c3c7ec7ff9678" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora_sdr::frame_sync_impl::m_impl_head</definition>
+        <argsstring></argsstring>
+        <name>m_impl_head</name>
+        <briefdescription>
+<para>use implicit header mode </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="41" column="15" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a2bb5eeff6d22579aa578477055dfc0a4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora_sdr::frame_sync_impl::received_cr</definition>
+        <argsstring></argsstring>
+        <name>received_cr</name>
+        <briefdescription>
+<para>Indicate that the coding rate has been given by the <ref refid="classgr_1_1lora__sdr_1_1header__decoder" kindref="compound">header_decoder</ref> block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="43" column="15" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1aa5f3945fed7b5b7540703552da7451e9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora_sdr::frame_sync_impl::received_crc</definition>
+        <argsstring></argsstring>
+        <name>received_crc</name>
+        <briefdescription>
+<para>Indicate that the crc presence has been given by the <ref refid="classgr_1_1lora__sdr_1_1header__decoder" kindref="compound">header_decoder</ref> block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="44" column="15" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a3c77a061b85d8ddabcdc5371061f43b6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora_sdr::frame_sync_impl::received_pay_len</definition>
+        <argsstring></argsstring>
+        <name>received_pay_len</name>
+        <briefdescription>
+<para>Indicate that the payload length has been given by the <ref refid="classgr_1_1lora__sdr_1_1header__decoder" kindref="compound">header_decoder</ref> block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="45" column="15" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1ae3f2860b9a9ab9ec2771246f586404ea" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora_sdr::frame_sync_impl::m_number_of_bins</definition>
+        <argsstring></argsstring>
+        <name>m_number_of_bins</name>
+        <briefdescription>
+<para>Number of bins in each lora Symbol. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="48" column="19" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a470a1f224c9b0dd35c1daab4df69eed9" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora_sdr::frame_sync_impl::m_samples_per_symbol</definition>
+        <argsstring></argsstring>
+        <name>m_samples_per_symbol</name>
+        <briefdescription>
+<para>Number of samples received per lora symbols. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="49" column="19" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1abdccba1627ee3b149979e5add9d077f7" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora_sdr::frame_sync_impl::symb_numb</definition>
+        <argsstring></argsstring>
+        <name>symb_numb</name>
+        <briefdescription>
+<para>number of payload loar symbols </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="50" column="19" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a383c6483d547e6510c88afffa16a7013" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora_sdr::frame_sync_impl::in_down</definition>
+        <argsstring></argsstring>
+        <name>in_down</name>
+        <briefdescription>
+<para>downsampled input </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="52" column="22" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a14d950a36abb113ed9ac633a569e12f3" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora_sdr::frame_sync_impl::m_downchirp</definition>
+        <argsstring></argsstring>
+        <name>m_downchirp</name>
+        <briefdescription>
+<para>Reference downchirp. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="53" column="22" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1af45c81b0f96ffcc571b9cf1cade06b98" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora_sdr::frame_sync_impl::m_upchirp</definition>
+        <argsstring></argsstring>
+        <name>m_upchirp</name>
+        <briefdescription>
+<para>Reference upchirp. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="54" column="22" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a64adb1e1f451420f2a89e2acf831a954" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t gr::lora_sdr::frame_sync_impl::symbol_cnt</definition>
+        <argsstring></argsstring>
+        <name>symbol_cnt</name>
+        <briefdescription>
+<para>Number of symbols already received. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="56" column="18" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1ae80408bcee980142d126fbdf73d91e25" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t gr::lora_sdr::frame_sync_impl::bin_idx</definition>
+        <argsstring></argsstring>
+        <name>bin_idx</name>
+        <briefdescription>
+<para>value of previous lora symbol </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="57" column="18" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a8bb40a93d35d2077119cf08569a070e8" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t gr::lora_sdr::frame_sync_impl::bin_idx_new</definition>
+        <argsstring></argsstring>
+        <name>bin_idx_new</name>
+        <briefdescription>
+<para>value of newly demodulated symbol </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="58" column="18" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1aa581b92de3463c3ee54f00370c73396f" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora_sdr::frame_sync_impl::n_up</definition>
+        <argsstring></argsstring>
+        <name>n_up</name>
+        <briefdescription>
+<para>Number of consecutive upchirps in preamble. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="60" column="19" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a14c396c5df39fa330aba0869e6033048" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::lora_sdr::frame_sync_impl::symbols_to_skip</definition>
+        <argsstring></argsstring>
+        <name>symbols_to_skip</name>
+        <briefdescription>
+<para>Number of integer symbol to skip after consecutive upchirps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="61" column="18" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a23563e7b9e8c3febede3510ce97beaff" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora_sdr::frame_sync_impl::net_id_1</definition>
+        <argsstring></argsstring>
+        <name>net_id_1</name>
+        <briefdescription>
+<para>network identifier 1 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="62" column="19" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a494befbdb0b75b127c616b9d4a736255" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora_sdr::frame_sync_impl::net_id_2</definition>
+        <argsstring></argsstring>
+        <name>net_id_2</name>
+        <briefdescription>
+<para>network identifier 2 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="63" column="19" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a46cfbafe7bdf7f1f75812fc21f510736" prot="private" static="no" mutable="no">
+        <type><ref refid="structkiss__fft__cpx" kindref="compound">kiss_fft_cpx</ref> *</type>
+        <definition>kiss_fft_cpx* gr::lora_sdr::frame_sync_impl::cx_in</definition>
+        <argsstring></argsstring>
+        <name>cx_in</name>
+        <briefdescription>
+<para>input of the FFT </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="65" column="23" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a05ffc10157b0b2820eabe50ee3e9354c" prot="private" static="no" mutable="no">
+        <type><ref refid="structkiss__fft__cpx" kindref="compound">kiss_fft_cpx</ref> *</type>
+        <definition>kiss_fft_cpx* gr::lora_sdr::frame_sync_impl::cx_out</definition>
+        <argsstring></argsstring>
+        <name>cx_out</name>
+        <briefdescription>
+<para>output of the FFT </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="66" column="23" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a47754256d95dbfaea66010934d19ea64" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lora_sdr::frame_sync_impl::items_to_consume</definition>
+        <argsstring></argsstring>
+        <name>items_to_consume</name>
+        <briefdescription>
+<para>Number of items to consume after each iteration of the general_work function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="68" column="14" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a086f7bf25fa3b2e4c66eb7576e83c45c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora_sdr::frame_sync_impl::preamble_raw</definition>
+        <argsstring></argsstring>
+        <name>preamble_raw</name>
+        <briefdescription>
+<para>vector containing the preamble upchirps without any synchronization </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="70" column="22" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a40ed0f1b1076744b029bc6223244887f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora_sdr::frame_sync_impl::preamble_up</definition>
+        <argsstring></argsstring>
+        <name>preamble_up</name>
+        <briefdescription>
+<para>vector containing the preamble upchirps </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="71" column="22" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1aac6f3ec75f3c13ea1d8516254baa33da" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lora_sdr::frame_sync_impl::up_symb_to_use</definition>
+        <argsstring></argsstring>
+        <name>up_symb_to_use</name>
+        <briefdescription>
+<para>number of upchirp symbols to use for CFO and STO frac estimation </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="73" column="14" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a59d7020858f6c9002d54985231f16d7d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lora_sdr::frame_sync_impl::k_hat</definition>
+        <argsstring></argsstring>
+        <name>k_hat</name>
+        <briefdescription>
+<para>integer part of CFO+STO </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="74" column="14" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a0e4738dbc0b13031ff68bc4c27d10ac5" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::lora_sdr::frame_sync_impl::lambda_cfo</definition>
+        <argsstring></argsstring>
+        <name>lambda_cfo</name>
+        <briefdescription>
+<para>fractional part of CFO </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="75" column="17" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1ab5584e0986ebc2d80c92291787a189a1" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::lora_sdr::frame_sync_impl::lambda_bernier</definition>
+        <argsstring></argsstring>
+        <name>lambda_bernier</name>
+        <briefdescription>
+<para>fractional part of CFO using Berniers algo </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="76" column="17" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1ae2c64922abd169455d933c8eb74ecfcc" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::lora_sdr::frame_sync_impl::lambda_sto</definition>
+        <argsstring></argsstring>
+        <name>lambda_sto</name>
+        <briefdescription>
+<para>fractional part of CFO </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="77" column="17" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a2849c607a48302dc88bcc823ea57c641" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora_sdr::frame_sync_impl::cfo_sto_est</definition>
+        <argsstring></argsstring>
+        <name>cfo_sto_est</name>
+        <briefdescription>
+<para>indicate that the estimation of lambda_cfo/sto has been performed </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="78" column="15" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a0e20beb40f927d2e3b8440db05c3a2c2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lora_sdr::frame_sync_impl::usFactor</definition>
+        <argsstring></argsstring>
+        <name>usFactor</name>
+        <briefdescription>
+<para>upsampling factor used by the FIR interpolator </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="79" column="14" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a94b01d0b856953cf298dc26ce601ca94" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora_sdr::frame_sync_impl::CFO_frac_correc</definition>
+        <argsstring></argsstring>
+        <name>CFO_frac_correc</name>
+        <briefdescription>
+<para>cfo frac correction vector </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="80" column="22" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a4068c720254e46d5274b20ef99cd08b7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora_sdr::frame_sync_impl::symb_corr</definition>
+        <argsstring></argsstring>
+        <name>symb_corr</name>
+        <briefdescription>
+<para>symbol with CFO frac corrected </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="83" column="22" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a380e05e0270be852eae202c159624445" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lora_sdr::frame_sync_impl::down_val</definition>
+        <argsstring></argsstring>
+        <name>down_val</name>
+        <briefdescription>
+<para>value of the preamble downchirps </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="84" column="14" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a3218be7beba0809c5e38b3ce9be5e9c5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lora_sdr::frame_sync_impl::CFOint</definition>
+        <argsstring></argsstring>
+        <name>CFOint</name>
+        <briefdescription>
+<para>integer part of CFO </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="85" column="14" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a13f07cd01445600e72d1d5c0865d92c2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lora_sdr::frame_sync_impl::net_id_off</definition>
+        <argsstring></argsstring>
+        <name>net_id_off</name>
+        <briefdescription>
+<para>offset of the network identifier </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="86" column="14" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1abdf0395969da75f873586ddc2ed3ed2b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::frame_sync_impl::header_cr_handler</definition>
+        <argsstring>(pmt::pmt_t cr)</argsstring>
+        <name>header_cr_handler</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>cr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="98" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1ac2d3aead505986fd7443f20b7516c415" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::frame_sync_impl::header_pay_len_handler</definition>
+        <argsstring>(pmt::pmt_t pay_len)</argsstring>
+        <name>header_pay_len_handler</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>pay_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="99" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1adf179669215a4186eb9e118c74da1055" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::frame_sync_impl::header_crc_handler</definition>
+        <argsstring>(pmt::pmt_t crc)</argsstring>
+        <name>header_crc_handler</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>crc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="100" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a8cafbe752ffa76beaf3c3d61fc4528d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::frame_sync_impl::frame_err_handler</definition>
+        <argsstring>(pmt::pmt_t err)</argsstring>
+        <name>frame_err_handler</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>err</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="101" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a81f8d548daf3cf8fe03380e402a8a530" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::frame_sync_impl::estimate_CFO</definition>
+        <argsstring>(gr_complex *samples)</argsstring>
+        <name>estimate_CFO</name>
+        <param>
+          <type>gr_complex *</type>
+          <declname>samples</declname>
+        </param>
+        <briefdescription>
+<para>Estimate the value of fractional part of the CFO using RCTSL. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to the preamble beginning.(We might want to avoid the first symbol since it might be incomplete) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="110" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a1f775ab159a615812bf22c94d919ffd7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::frame_sync_impl::estimate_CFO_Bernier</definition>
+        <argsstring>()</argsstring>
+        <name>estimate_CFO_Bernier</name>
+        <briefdescription>
+<para>(not used) Estimate the value of fractional part of the CFO using Berniers algorithm </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="114" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a7650eac6bb57346f4ab538988b7ba4ba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::frame_sync_impl::estimate_STO</definition>
+        <argsstring>()</argsstring>
+        <name>estimate_STO</name>
+        <briefdescription>
+<para>Estimate the value of fractional part of the STO from m_consec_up. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="118" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a7a0f5f8aefdd0a8b21bb5095ddd729a8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora_sdr::frame_sync_impl::get_symbol_val</definition>
+        <argsstring>(const gr_complex *samples, gr_complex *ref_chirp)</argsstring>
+        <name>get_symbol_val</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>samples</declname>
+        </param>
+        <param>
+          <type>gr_complex *</type>
+          <declname>ref_chirp</declname>
+        </param>
+        <briefdescription>
+<para>Recover the lora symbol value using argmax of the dechirped symbol FFT. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to the symbol beginning. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ref_chirp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reference chirp to use to dechirp the lora symbol. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="127" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a3f1a359b54ddc731d4327d8c72a19dab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::lora_sdr::frame_sync_impl::determine_energy</definition>
+        <argsstring>(const gr_complex *samples)</argsstring>
+        <name>determine_energy</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>samples</declname>
+        </param>
+        <briefdescription>
+<para>Determine the energy of a symbol. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The complex symbol to analyse. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="135" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a283eae1d4c91804cbb25d032590b6cf9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::frame_sync_impl::header_err_handler</definition>
+        <argsstring>(pmt::pmt_t payload_len)</argsstring>
+        <name>header_err_handler</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>payload_len</declname>
+        </param>
+        <briefdescription>
+<para>Handles the error message coming from the header decoding. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="140" column="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a9271e12468d0e5bcc6cd9b25cd7ca23b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora_sdr::frame_sync_impl::frame_sync_impl</definition>
+        <argsstring>(float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head)</argsstring>
+        <name>frame_sync_impl</name>
+        <param>
+          <type>float</type>
+          <declname>samp_rate</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>bandwidth</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>sf</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>impl_head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="143" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1aba5790ae712b7e49561462e3b4606d78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora_sdr::frame_sync_impl::~frame_sync_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~frame_sync_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="144" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1a7860e2694fb44c6af427bce375214d7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::frame_sync_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="147" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1frame__sync__impl_1aeaf4f32d03b9c603d3167dc4b99a097b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::lora_sdr::frame_sync_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="149" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gr::lora_sdr::frame_sync_impl</label>
+        <link refid="classgr_1_1lora__sdr_1_1frame__sync__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>block</label>
+      </node>
+      <node id="2">
+        <label>gr::lora_sdr::frame_sync</label>
+        <link refid="classgr_1_1lora__sdr_1_1frame__sync"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gr::lora_sdr::frame_sync_impl</label>
+        <link refid="classgr_1_1lora__sdr_1_1frame__sync__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>block</label>
+      </node>
+      <node id="2">
+        <label>gr::lora_sdr::frame_sync</label>
+        <link refid="classgr_1_1lora__sdr_1_1frame__sync"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" line="18" column="5" bodyfile="/home/martyn/gr-lora_sdr/lib/frame_sync_impl.h" bodystart="19" bodyend="153"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1ae80408bcee980142d126fbdf73d91e25" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>bin_idx</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a8bb40a93d35d2077119cf08569a070e8" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>bin_idx_new</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a94b01d0b856953cf298dc26ce601ca94" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>CFO_frac_correc</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a2849c607a48302dc88bcc823ea57c641" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>cfo_sto_est</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a3218be7beba0809c5e38b3ce9be5e9c5" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>CFOint</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a46cfbafe7bdf7f1f75812fc21f510736" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>cx_in</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a05ffc10157b0b2820eabe50ee3e9354c" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>cx_out</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1ac3ebff914014982b368f2cf729e3a43d" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>DecoderState</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1ac3ebff914014982b368f2cf729e3a43dae6ca094bf562c31fc6eda992c1bf6726" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>DETECT</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a3f1a359b54ddc731d4327d8c72a19dab" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>determine_energy</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a380e05e0270be852eae202c159624445" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>down_val</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a2b524afc6785765fff65a13449cb8c95a363c02bacac44b26e4e918f80c0d5eec" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>DOWNCHIRP1</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a2b524afc6785765fff65a13449cb8c95af96bb9c0004167b468656daaff4fea30" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>DOWNCHIRP2</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a81f8d548daf3cf8fe03380e402a8a530" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>estimate_CFO</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a1f775ab159a615812bf22c94d919ffd7" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>estimate_CFO_Bernier</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a7650eac6bb57346f4ab538988b7ba4ba" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>estimate_STO</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a7860e2694fb44c6af427bce375214d7f" prot="public" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1ac3ebff914014982b368f2cf729e3a43daf511314f95ff2885db561532fe65a29c" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>FRAC_CFO_CORREC</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a8cafbe752ffa76beaf3c3d61fc4528d4" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>frame_err_handler</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a9271e12468d0e5bcc6cd9b25cd7ca23b" prot="public" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>frame_sync_impl</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1aeaf4f32d03b9c603d3167dc4b99a097b" prot="public" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a7a0f5f8aefdd0a8b21bb5095ddd729a8" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>get_symbol_val</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1abdf0395969da75f873586ddc2ed3ed2b" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>header_cr_handler</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1adf179669215a4186eb9e118c74da1055" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>header_crc_handler</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a283eae1d4c91804cbb25d032590b6cf9" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>header_err_handler</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1ac2d3aead505986fd7443f20b7516c415" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>header_pay_len_handler</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a383c6483d547e6510c88afffa16a7013" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>in_down</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a47754256d95dbfaea66010934d19ea64" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>items_to_consume</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a59d7020858f6c9002d54985231f16d7d" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>k_hat</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1ab5584e0986ebc2d80c92291787a189a1" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>lambda_bernier</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a0e4738dbc0b13031ff68bc4c27d10ac5" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>lambda_cfo</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1ae2c64922abd169455d933c8eb74ecfcc" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>lambda_sto</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a9a4ae1521f6018562e434771c26d7e66" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>m_bw</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a89bdc0fa6ac011519600b410dd1de931" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>m_cr</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a14d950a36abb113ed9ac633a569e12f3" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>m_downchirp</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a003179df5ff8544990a851a42fe0807d" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>m_has_crc</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a8760cc4cf884ead3d41c3c7ec7ff9678" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>m_impl_head</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1ae3f2860b9a9ab9ec2771246f586404ea" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>m_number_of_bins</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a2233e37b5a8ca7b75e09c3a7a829b511" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>m_pay_len</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1ab684e902c9a0d246d5f0c54dfa66936d" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>m_samp_rate</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a470a1f224c9b0dd35c1daab4df69eed9" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>m_samples_per_symbol</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1aa62258177e546ad516d4e1556036b4fb" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>m_sf</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1af6f15eff69be46a3ebbc6711f1f0dcd3" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>m_state</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1af45c81b0f96ffcc571b9cf1cade06b98" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>m_upchirp</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync_1a776adf7b13bb1555de3dc0a97b3940cc" prot="public" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1aa581b92de3463c3ee54f00370c73396f" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>n_up</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a2b524afc6785765fff65a13449cb8c95a0feb99e1be18748a655f97e0c0ab51b0" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>NET_ID1</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a2b524afc6785765fff65a13449cb8c95ab391933a2a5b33fc235fda1f4c8bab52" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>NET_ID2</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a23563e7b9e8c3febede3510ce97beaff" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>net_id_1</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a494befbdb0b75b127c616b9d4a736255" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>net_id_2</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a13f07cd01445600e72d1d5c0865d92c2" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>net_id_off</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a086f7bf25fa3b2e4c66eb7576e83c45c" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>preamble_raw</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a40ed0f1b1076744b029bc6223244887f" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>preamble_up</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a2b524afc6785765fff65a13449cb8c95a3e4e5a91c81bedf48f4c2cbdc2fed549" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>QUARTER_DOWN</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a2bb5eeff6d22579aa578477055dfc0a4" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>received_cr</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1aa5f3945fed7b5b7540703552da7451e9" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>received_crc</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a3c77a061b85d8ddabcdc5371061f43b6" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>received_pay_len</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync_1acc9df91d7e03a2e5cb5a57dab389c765" prot="public" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1ac3ebff914014982b368f2cf729e3a43dad4d47759f099f2f4c680aa4b5c1db7cc" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>STOP</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a4068c720254e46d5274b20ef99cd08b7" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>symb_corr</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1abdccba1627ee3b149979e5add9d077f7" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>symb_numb</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a64adb1e1f451420f2a89e2acf831a954" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>symbol_cnt</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a14c396c5df39fa330aba0869e6033048" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>symbols_to_skip</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1ac3ebff914014982b368f2cf729e3a43da607f95a36b6031f20f71eec37d100b78" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>SYNC</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a2b524afc6785765fff65a13449cb8c95" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>SyncState</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1aac6f3ec75f3c13ea1d8516254baa33da" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>up_symb_to_use</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1a0e20beb40f927d2e3b8440db05c3a2c2" prot="private" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>usFactor</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1frame__sync__impl_1aba5790ae712b7e49561462e3b4606d78" prot="public" virt="non-virtual"><scope>gr::lora_sdr::frame_sync_impl</scope><name>~frame_sync_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

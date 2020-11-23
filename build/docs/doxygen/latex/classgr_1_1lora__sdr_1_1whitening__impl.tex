@@ -1,0 +1,120 @@
+\doxysection{gr\+::lora\+\_\+sdr\+::whitening\+\_\+impl Class Reference}
+\label{classgr_1_1lora__sdr_1_1whitening__impl}\index{gr::lora\_sdr::whitening\_impl@{gr::lora\_sdr::whitening\_impl}}
+
+
+{\ttfamily \#include $<$whitening\+\_\+impl.\+h$>$}
+
+
+
+Inheritance diagram for gr\+::lora\+\_\+sdr\+::whitening\+\_\+impl\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classgr_1_1lora__sdr_1_1whitening__impl__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1whitening__impl_a8648bdb19213ed9382c4046fb7084752}{whitening\+\_\+impl}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new whitening impl object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1whitening__impl_aacb2f2b2b5c5c7253a0f4b6c976f1ee1}{$\sim$whitening\+\_\+impl}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the whitening impl object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classgr_1_1lora__sdr_1_1whitening__impl_aac72e7729195be616478ff45b9b46f56}{work}} (int noutput\+\_\+items, gr\+\_\+vector\+\_\+const\+\_\+void\+\_\+star \&input\+\_\+items, gr\+\_\+vector\+\_\+void\+\_\+star \&output\+\_\+items)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1whitening__impl_ad40d4e990c8f746e5fa57b16cf373466}{msg\+\_\+handler}} (pmt\+::pmt\+\_\+t message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classgr_1_1lora__sdr_1_1whitening__impl_aaa2e9d3e266613222132b8b6c4ffa265}{new\+\_\+message}}
+\begin{DoxyCompactList}\small\item\em indicate that a new message has to be whitened \end{DoxyCompactList}\item 
+std\+::vector$<$ uint8\+\_\+t $>$ \mbox{\hyperlink{classgr_1_1lora__sdr_1_1whitening__impl_a9e037f323dc42d3cc0707d59bdd49c21}{m\+\_\+payload}}
+\begin{DoxyCompactList}\small\item\em store the payload bytes \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1whitening__impl_a8648bdb19213ed9382c4046fb7084752}} 
+\index{gr::lora\_sdr::whitening\_impl@{gr::lora\_sdr::whitening\_impl}!whitening\_impl@{whitening\_impl}}
+\index{whitening\_impl@{whitening\_impl}!gr::lora\_sdr::whitening\_impl@{gr::lora\_sdr::whitening\_impl}}
+\doxysubsubsection{\texorpdfstring{whitening\_impl()}{whitening\_impl()}}
+{\footnotesize\ttfamily gr\+::lora\+\_\+sdr\+::whitening\+\_\+impl\+::whitening\+\_\+impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new whitening impl object. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1whitening__impl_aacb2f2b2b5c5c7253a0f4b6c976f1ee1}} 
+\index{gr::lora\_sdr::whitening\_impl@{gr::lora\_sdr::whitening\_impl}!````~whitening\_impl@{$\sim$whitening\_impl}}
+\index{````~whitening\_impl@{$\sim$whitening\_impl}!gr::lora\_sdr::whitening\_impl@{gr::lora\_sdr::whitening\_impl}}
+\doxysubsubsection{\texorpdfstring{$\sim$whitening\_impl()}{~whitening\_impl()}}
+{\footnotesize\ttfamily gr\+::lora\+\_\+sdr\+::whitening\+\_\+impl\+::$\sim$whitening\+\_\+impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the whitening impl object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1whitening__impl_ad40d4e990c8f746e5fa57b16cf373466}} 
+\index{gr::lora\_sdr::whitening\_impl@{gr::lora\_sdr::whitening\_impl}!msg\_handler@{msg\_handler}}
+\index{msg\_handler@{msg\_handler}!gr::lora\_sdr::whitening\_impl@{gr::lora\_sdr::whitening\_impl}}
+\doxysubsubsection{\texorpdfstring{msg\_handler()}{msg\_handler()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::whitening\+\_\+impl\+::msg\+\_\+handler (\begin{DoxyParamCaption}\item[{pmt\+::pmt\+\_\+t}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1whitening__impl_aac72e7729195be616478ff45b9b46f56}} 
+\index{gr::lora\_sdr::whitening\_impl@{gr::lora\_sdr::whitening\_impl}!work@{work}}
+\index{work@{work}!gr::lora\_sdr::whitening\_impl@{gr::lora\_sdr::whitening\_impl}}
+\doxysubsubsection{\texorpdfstring{work()}{work()}}
+{\footnotesize\ttfamily int gr\+::lora\+\_\+sdr\+::whitening\+\_\+impl\+::work (\begin{DoxyParamCaption}\item[{int}]{noutput\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+const\+\_\+void\+\_\+star \&}]{input\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+void\+\_\+star \&}]{output\+\_\+items }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em noutput\+\_\+items} & \\
+\hline
+{\em input\+\_\+items} & \\
+\hline
+{\em output\+\_\+items} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1whitening__impl_a9e037f323dc42d3cc0707d59bdd49c21}} 
+\index{gr::lora\_sdr::whitening\_impl@{gr::lora\_sdr::whitening\_impl}!m\_payload@{m\_payload}}
+\index{m\_payload@{m\_payload}!gr::lora\_sdr::whitening\_impl@{gr::lora\_sdr::whitening\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_payload}{m\_payload}}
+{\footnotesize\ttfamily std\+::vector$<$uint8\+\_\+t$>$ gr\+::lora\+\_\+sdr\+::whitening\+\_\+impl\+::m\+\_\+payload\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+store the payload bytes 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1whitening__impl_aaa2e9d3e266613222132b8b6c4ffa265}} 
+\index{gr::lora\_sdr::whitening\_impl@{gr::lora\_sdr::whitening\_impl}!new\_message@{new\_message}}
+\index{new\_message@{new\_message}!gr::lora\_sdr::whitening\_impl@{gr::lora\_sdr::whitening\_impl}}
+\doxysubsubsection{\texorpdfstring{new\_message}{new\_message}}
+{\footnotesize\ttfamily bool gr\+::lora\+\_\+sdr\+::whitening\+\_\+impl\+::new\+\_\+message\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+indicate that a new message has to be whitened 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{whitening__impl_8h}{whitening\+\_\+impl.\+h}}\end{DoxyCompactItemize}

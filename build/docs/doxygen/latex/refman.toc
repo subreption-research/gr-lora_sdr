@@ -1,0 +1,355 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Main Page}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Module Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Modules}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Hierarchical Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Class Hierarchy}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Class Index}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Class List}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}File Index}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}File List}{9}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Module Documentation}{11}{chapter.6}%
+\contentsline {section}{\numberline {6.1}G\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}NU Radio L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}DR C++ Signal Processing Blocks}{11}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Namespace Documentation}{13}{chapter.7}%
+\contentsline {section}{\numberline {7.1}gr Namespace Reference}{13}{section.7.1}%
+\contentsline {section}{\numberline {7.2}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr Namespace Reference}{13}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Function Documentation}{15}{subsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.1.1}bool2int()}{15}{subsubsection.7.2.1.1}%
+\contentsline {subsubsection}{\numberline {7.2.1.2}build\_ref\_chirps()}{15}{subsubsection.7.2.1.2}%
+\contentsline {subsubsection}{\numberline {7.2.1.3}build\_upchirp()}{15}{subsubsection.7.2.1.3}%
+\contentsline {subsubsection}{\numberline {7.2.1.4}int2bool()}{17}{subsubsection.7.2.1.4}%
+\contentsline {subsubsection}{\numberline {7.2.1.5}mod()}{17}{subsubsection.7.2.1.5}%
+\contentsline {subsection}{\numberline {7.2.2}Variable Documentation}{17}{subsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {7.2.2.1}whitening\_seq}{17}{subsubsection.7.2.2.1}%
+\contentsline {chapter}{\numberline {8}Class Documentation}{19}{chapter.8}%
+\contentsline {section}{\numberline {8.1}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::add\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}crc Class Reference}{19}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Detailed Description}{20}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Member Typedef Documentation}{20}{subsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.2.1}sptr}{20}{subsubsection.8.1.2.1}%
+\contentsline {subsection}{\numberline {8.1.3}Member Function Documentation}{20}{subsection.8.1.3}%
+\contentsline {subsubsection}{\numberline {8.1.3.1}make()}{20}{subsubsection.8.1.3.1}%
+\contentsline {section}{\numberline {8.2}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::add\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}crc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl Class Reference}{20}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Constructor \& Destructor Documentation}{21}{subsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.1.1}add\_crc\_impl()}{21}{subsubsection.8.2.1.1}%
+\contentsline {subsubsection}{\numberline {8.2.1.2}$\sim $add\_crc\_impl()}{21}{subsubsection.8.2.1.2}%
+\contentsline {subsection}{\numberline {8.2.2}Member Function Documentation}{21}{subsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {8.2.2.1}forecast()}{21}{subsubsection.8.2.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2.2}general\_work()}{22}{subsubsection.8.2.2.2}%
+\contentsline {section}{\numberline {8.3}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::crc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}verif Class Reference}{22}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Detailed Description}{23}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Member Typedef Documentation}{23}{subsection.8.3.2}%
+\contentsline {subsubsection}{\numberline {8.3.2.1}sptr}{23}{subsubsection.8.3.2.1}%
+\contentsline {subsection}{\numberline {8.3.3}Member Function Documentation}{23}{subsection.8.3.3}%
+\contentsline {subsubsection}{\numberline {8.3.3.1}make()}{23}{subsubsection.8.3.3.1}%
+\contentsline {section}{\numberline {8.4}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::crc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}verif\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl Class Reference}{23}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Constructor \& Destructor Documentation}{24}{subsection.8.4.1}%
+\contentsline {subsubsection}{\numberline {8.4.1.1}crc\_verif\_impl()}{24}{subsubsection.8.4.1.1}%
+\contentsline {subsubsection}{\numberline {8.4.1.2}$\sim $crc\_verif\_impl()}{24}{subsubsection.8.4.1.2}%
+\contentsline {subsection}{\numberline {8.4.2}Member Function Documentation}{24}{subsection.8.4.2}%
+\contentsline {subsubsection}{\numberline {8.4.2.1}forecast()}{24}{subsubsection.8.4.2.1}%
+\contentsline {subsubsection}{\numberline {8.4.2.2}general\_work()}{24}{subsubsection.8.4.2.2}%
+\contentsline {section}{\numberline {8.5}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}source Class Reference}{25}{section.8.5}%
+\contentsline {subsection}{\numberline {8.5.1}Detailed Description}{25}{subsection.8.5.1}%
+\contentsline {subsection}{\numberline {8.5.2}Member Typedef Documentation}{25}{subsection.8.5.2}%
+\contentsline {subsubsection}{\numberline {8.5.2.1}sptr}{26}{subsubsection.8.5.2.1}%
+\contentsline {subsection}{\numberline {8.5.3}Member Function Documentation}{26}{subsection.8.5.3}%
+\contentsline {subsubsection}{\numberline {8.5.3.1}make()}{26}{subsubsection.8.5.3.1}%
+\contentsline {section}{\numberline {8.6}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}source\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl Class Reference}{26}{section.8.6}%
+\contentsline {subsection}{\numberline {8.6.1}Constructor \& Destructor Documentation}{27}{subsection.8.6.1}%
+\contentsline {subsubsection}{\numberline {8.6.1.1}data\_source\_impl()}{27}{subsubsection.8.6.1.1}%
+\contentsline {subsubsection}{\numberline {8.6.1.2}$\sim $data\_source\_impl()}{27}{subsubsection.8.6.1.2}%
+\contentsline {subsection}{\numberline {8.6.2}Member Function Documentation}{27}{subsection.8.6.2}%
+\contentsline {subsubsection}{\numberline {8.6.2.1}work()}{27}{subsubsection.8.6.2.1}%
+\contentsline {section}{\numberline {8.7}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::deinterleaver Class Reference}{28}{section.8.7}%
+\contentsline {subsection}{\numberline {8.7.1}Detailed Description}{28}{subsection.8.7.1}%
+\contentsline {subsection}{\numberline {8.7.2}Member Typedef Documentation}{28}{subsection.8.7.2}%
+\contentsline {subsubsection}{\numberline {8.7.2.1}sptr}{28}{subsubsection.8.7.2.1}%
+\contentsline {subsection}{\numberline {8.7.3}Member Function Documentation}{29}{subsection.8.7.3}%
+\contentsline {subsubsection}{\numberline {8.7.3.1}make()}{29}{subsubsection.8.7.3.1}%
+\contentsline {section}{\numberline {8.8}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::deinterleaver\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl Class Reference}{29}{section.8.8}%
+\contentsline {subsection}{\numberline {8.8.1}Constructor \& Destructor Documentation}{30}{subsection.8.8.1}%
+\contentsline {subsubsection}{\numberline {8.8.1.1}deinterleaver\_impl()}{30}{subsubsection.8.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.8.1.2}$\sim $deinterleaver\_impl()}{30}{subsubsection.8.8.1.2}%
+\contentsline {subsection}{\numberline {8.8.2}Member Function Documentation}{30}{subsection.8.8.2}%
+\contentsline {subsubsection}{\numberline {8.8.2.1}forecast()}{30}{subsubsection.8.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.8.2.2}general\_work()}{30}{subsubsection.8.8.2.2}%
+\contentsline {section}{\numberline {8.9}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::dewhitening Class Reference}{31}{section.8.9}%
+\contentsline {subsection}{\numberline {8.9.1}Detailed Description}{31}{subsection.8.9.1}%
+\contentsline {subsection}{\numberline {8.9.2}Member Typedef Documentation}{31}{subsection.8.9.2}%
+\contentsline {subsubsection}{\numberline {8.9.2.1}sptr}{31}{subsubsection.8.9.2.1}%
+\contentsline {subsection}{\numberline {8.9.3}Member Function Documentation}{32}{subsection.8.9.3}%
+\contentsline {subsubsection}{\numberline {8.9.3.1}make()}{32}{subsubsection.8.9.3.1}%
+\contentsline {section}{\numberline {8.10}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::dewhitening\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl Class Reference}{32}{section.8.10}%
+\contentsline {subsection}{\numberline {8.10.1}Constructor \& Destructor Documentation}{33}{subsection.8.10.1}%
+\contentsline {subsubsection}{\numberline {8.10.1.1}dewhitening\_impl()}{33}{subsubsection.8.10.1.1}%
+\contentsline {subsubsection}{\numberline {8.10.1.2}$\sim $dewhitening\_impl()}{33}{subsubsection.8.10.1.2}%
+\contentsline {subsection}{\numberline {8.10.2}Member Function Documentation}{33}{subsection.8.10.2}%
+\contentsline {subsubsection}{\numberline {8.10.2.1}forecast()}{33}{subsubsection.8.10.2.1}%
+\contentsline {subsubsection}{\numberline {8.10.2.2}general\_work()}{33}{subsubsection.8.10.2.2}%
+\contentsline {section}{\numberline {8.11}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::err\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}measures Class Reference}{34}{section.8.11}%
+\contentsline {subsection}{\numberline {8.11.1}Detailed Description}{34}{subsection.8.11.1}%
+\contentsline {subsection}{\numberline {8.11.2}Member Typedef Documentation}{34}{subsection.8.11.2}%
+\contentsline {subsubsection}{\numberline {8.11.2.1}sptr}{34}{subsubsection.8.11.2.1}%
+\contentsline {subsection}{\numberline {8.11.3}Member Function Documentation}{35}{subsection.8.11.3}%
+\contentsline {subsubsection}{\numberline {8.11.3.1}make()}{35}{subsubsection.8.11.3.1}%
+\contentsline {section}{\numberline {8.12}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::err\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}measures\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl Class Reference}{35}{section.8.12}%
+\contentsline {subsection}{\numberline {8.12.1}Constructor \& Destructor Documentation}{36}{subsection.8.12.1}%
+\contentsline {subsubsection}{\numberline {8.12.1.1}err\_measures\_impl()}{36}{subsubsection.8.12.1.1}%
+\contentsline {subsubsection}{\numberline {8.12.1.2}$\sim $err\_measures\_impl()}{36}{subsubsection.8.12.1.2}%
+\contentsline {subsection}{\numberline {8.12.2}Member Function Documentation}{36}{subsection.8.12.2}%
+\contentsline {subsubsection}{\numberline {8.12.2.1}work()}{36}{subsubsection.8.12.2.1}%
+\contentsline {section}{\numberline {8.13}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::fft\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}demod Class Reference}{37}{section.8.13}%
+\contentsline {subsection}{\numberline {8.13.1}Detailed Description}{37}{subsection.8.13.1}%
+\contentsline {subsection}{\numberline {8.13.2}Member Typedef Documentation}{37}{subsection.8.13.2}%
+\contentsline {subsubsection}{\numberline {8.13.2.1}sptr}{37}{subsubsection.8.13.2.1}%
+\contentsline {subsection}{\numberline {8.13.3}Member Function Documentation}{38}{subsection.8.13.3}%
+\contentsline {subsubsection}{\numberline {8.13.3.1}make()}{38}{subsubsection.8.13.3.1}%
+\contentsline {section}{\numberline {8.14}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::fft\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}demod\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl Class Reference}{38}{section.8.14}%
+\contentsline {subsection}{\numberline {8.14.1}Constructor \& Destructor Documentation}{39}{subsection.8.14.1}%
+\contentsline {subsubsection}{\numberline {8.14.1.1}fft\_demod\_impl()}{39}{subsubsection.8.14.1.1}%
+\contentsline {subsubsection}{\numberline {8.14.1.2}$\sim $fft\_demod\_impl()}{39}{subsubsection.8.14.1.2}%
+\contentsline {subsection}{\numberline {8.14.2}Member Function Documentation}{39}{subsection.8.14.2}%
+\contentsline {subsubsection}{\numberline {8.14.2.1}forecast()}{39}{subsubsection.8.14.2.1}%
+\contentsline {subsubsection}{\numberline {8.14.2.2}general\_work()}{39}{subsubsection.8.14.2.2}%
+\contentsline {section}{\numberline {8.15}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::frame\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sync Class Reference}{40}{section.8.15}%
+\contentsline {subsection}{\numberline {8.15.1}Detailed Description}{40}{subsection.8.15.1}%
+\contentsline {subsection}{\numberline {8.15.2}Member Typedef Documentation}{40}{subsection.8.15.2}%
+\contentsline {subsubsection}{\numberline {8.15.2.1}sptr}{40}{subsubsection.8.15.2.1}%
+\contentsline {subsection}{\numberline {8.15.3}Member Function Documentation}{41}{subsection.8.15.3}%
+\contentsline {subsubsection}{\numberline {8.15.3.1}make()}{41}{subsubsection.8.15.3.1}%
+\contentsline {section}{\numberline {8.16}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::frame\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sync\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl Class Reference}{41}{section.8.16}%
+\contentsline {subsection}{\numberline {8.16.1}Constructor \& Destructor Documentation}{42}{subsection.8.16.1}%
+\contentsline {subsubsection}{\numberline {8.16.1.1}frame\_sync\_impl()}{42}{subsubsection.8.16.1.1}%
+\contentsline {subsubsection}{\numberline {8.16.1.2}$\sim $frame\_sync\_impl()}{42}{subsubsection.8.16.1.2}%
+\contentsline {subsection}{\numberline {8.16.2}Member Function Documentation}{42}{subsection.8.16.2}%
+\contentsline {subsubsection}{\numberline {8.16.2.1}forecast()}{42}{subsubsection.8.16.2.1}%
+\contentsline {subsubsection}{\numberline {8.16.2.2}general\_work()}{43}{subsubsection.8.16.2.2}%
+\contentsline {section}{\numberline {8.17}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::gray\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}decode Class Reference}{43}{section.8.17}%
+\contentsline {subsection}{\numberline {8.17.1}Detailed Description}{44}{subsection.8.17.1}%
+\contentsline {subsection}{\numberline {8.17.2}Member Typedef Documentation}{44}{subsection.8.17.2}%
+\contentsline {subsubsection}{\numberline {8.17.2.1}sptr}{44}{subsubsection.8.17.2.1}%
+\contentsline {subsection}{\numberline {8.17.3}Member Function Documentation}{44}{subsection.8.17.3}%
+\contentsline {subsubsection}{\numberline {8.17.3.1}make()}{44}{subsubsection.8.17.3.1}%
+\contentsline {section}{\numberline {8.18}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::gray\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}decode\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl Class Reference}{45}{section.8.18}%
+\contentsline {subsection}{\numberline {8.18.1}Constructor \& Destructor Documentation}{45}{subsection.8.18.1}%
+\contentsline {subsubsection}{\numberline {8.18.1.1}gray\_decode\_impl()}{45}{subsubsection.8.18.1.1}%
+\contentsline {subsubsection}{\numberline {8.18.1.2}$\sim $gray\_decode\_impl()}{46}{subsubsection.8.18.1.2}%
+\contentsline {subsection}{\numberline {8.18.2}Member Function Documentation}{46}{subsection.8.18.2}%
+\contentsline {subsubsection}{\numberline {8.18.2.1}work()}{46}{subsubsection.8.18.2.1}%
+\contentsline {section}{\numberline {8.19}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::gray\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}enc Class Reference}{46}{section.8.19}%
+\contentsline {subsection}{\numberline {8.19.1}Detailed Description}{47}{subsection.8.19.1}%
+\contentsline {subsection}{\numberline {8.19.2}Member Typedef Documentation}{47}{subsection.8.19.2}%
+\contentsline {subsubsection}{\numberline {8.19.2.1}sptr}{47}{subsubsection.8.19.2.1}%
+\contentsline {subsection}{\numberline {8.19.3}Member Function Documentation}{47}{subsection.8.19.3}%
+\contentsline {subsubsection}{\numberline {8.19.3.1}make()}{47}{subsubsection.8.19.3.1}%
+\contentsline {section}{\numberline {8.20}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::gray\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}enc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl Class Reference}{48}{section.8.20}%
+\contentsline {subsection}{\numberline {8.20.1}Constructor \& Destructor Documentation}{48}{subsection.8.20.1}%
+\contentsline {subsubsection}{\numberline {8.20.1.1}gray\_enc\_impl()}{48}{subsubsection.8.20.1.1}%
+\contentsline {subsubsection}{\numberline {8.20.1.2}$\sim $gray\_enc\_impl()}{48}{subsubsection.8.20.1.2}%
+\contentsline {subsection}{\numberline {8.20.2}Member Function Documentation}{49}{subsection.8.20.2}%
+\contentsline {subsubsection}{\numberline {8.20.2.1}work()}{49}{subsubsection.8.20.2.1}%
+\contentsline {section}{\numberline {8.21}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::hamming\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}dec Class Reference}{49}{section.8.21}%
+\contentsline {subsection}{\numberline {8.21.1}Detailed Description}{50}{subsection.8.21.1}%
+\contentsline {subsection}{\numberline {8.21.2}Member Typedef Documentation}{50}{subsection.8.21.2}%
+\contentsline {subsubsection}{\numberline {8.21.2.1}sptr}{50}{subsubsection.8.21.2.1}%
+\contentsline {subsection}{\numberline {8.21.3}Member Function Documentation}{50}{subsection.8.21.3}%
+\contentsline {subsubsection}{\numberline {8.21.3.1}make()}{50}{subsubsection.8.21.3.1}%
+\contentsline {section}{\numberline {8.22}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::hamming\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}dec\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl Class Reference}{51}{section.8.22}%
+\contentsline {subsection}{\numberline {8.22.1}Constructor \& Destructor Documentation}{51}{subsection.8.22.1}%
+\contentsline {subsubsection}{\numberline {8.22.1.1}hamming\_dec\_impl()}{51}{subsubsection.8.22.1.1}%
+\contentsline {subsubsection}{\numberline {8.22.1.2}$\sim $hamming\_dec\_impl()}{51}{subsubsection.8.22.1.2}%
+\contentsline {subsection}{\numberline {8.22.2}Member Function Documentation}{52}{subsection.8.22.2}%
+\contentsline {subsubsection}{\numberline {8.22.2.1}work()}{52}{subsubsection.8.22.2.1}%
+\contentsline {section}{\numberline {8.23}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::hamming\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}enc Class Reference}{52}{section.8.23}%
+\contentsline {subsection}{\numberline {8.23.1}Detailed Description}{53}{subsection.8.23.1}%
+\contentsline {subsection}{\numberline {8.23.2}Member Typedef Documentation}{53}{subsection.8.23.2}%
+\contentsline {subsubsection}{\numberline {8.23.2.1}sptr}{53}{subsubsection.8.23.2.1}%
+\contentsline {subsection}{\numberline {8.23.3}Member Function Documentation}{53}{subsection.8.23.3}%
+\contentsline {subsubsection}{\numberline {8.23.3.1}make()}{53}{subsubsection.8.23.3.1}%
+\contentsline {section}{\numberline {8.24}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::hamming\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}enc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl Class Reference}{54}{section.8.24}%
+\contentsline {subsection}{\numberline {8.24.1}Constructor \& Destructor Documentation}{54}{subsection.8.24.1}%
+\contentsline {subsubsection}{\numberline {8.24.1.1}hamming\_enc\_impl()}{54}{subsubsection.8.24.1.1}%
+\contentsline {subsubsection}{\numberline {8.24.1.2}$\sim $hamming\_enc\_impl()}{54}{subsubsection.8.24.1.2}%
+\contentsline {subsection}{\numberline {8.24.2}Member Function Documentation}{55}{subsection.8.24.2}%
+\contentsline {subsubsection}{\numberline {8.24.2.1}work()}{55}{subsubsection.8.24.2.1}%
+\contentsline {section}{\numberline {8.25}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::header Class Reference}{55}{section.8.25}%
+\contentsline {subsection}{\numberline {8.25.1}Detailed Description}{56}{subsection.8.25.1}%
+\contentsline {subsection}{\numberline {8.25.2}Member Typedef Documentation}{56}{subsection.8.25.2}%
+\contentsline {subsubsection}{\numberline {8.25.2.1}sptr}{56}{subsubsection.8.25.2.1}%
+\contentsline {subsection}{\numberline {8.25.3}Member Function Documentation}{56}{subsection.8.25.3}%
+\contentsline {subsubsection}{\numberline {8.25.3.1}make()}{56}{subsubsection.8.25.3.1}%
+\contentsline {section}{\numberline {8.26}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::header\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}decoder Class Reference}{57}{section.8.26}%
+\contentsline {subsection}{\numberline {8.26.1}Detailed Description}{57}{subsection.8.26.1}%
+\contentsline {subsection}{\numberline {8.26.2}Member Typedef Documentation}{57}{subsection.8.26.2}%
+\contentsline {subsubsection}{\numberline {8.26.2.1}sptr}{58}{subsubsection.8.26.2.1}%
+\contentsline {subsection}{\numberline {8.26.3}Member Function Documentation}{58}{subsection.8.26.3}%
+\contentsline {subsubsection}{\numberline {8.26.3.1}make()}{58}{subsubsection.8.26.3.1}%
+\contentsline {section}{\numberline {8.27}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::header\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}decoder\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl Class Reference}{58}{section.8.27}%
+\contentsline {subsection}{\numberline {8.27.1}Constructor \& Destructor Documentation}{59}{subsection.8.27.1}%
+\contentsline {subsubsection}{\numberline {8.27.1.1}header\_decoder\_impl()}{59}{subsubsection.8.27.1.1}%
+\contentsline {subsubsection}{\numberline {8.27.1.2}$\sim $header\_decoder\_impl()}{59}{subsubsection.8.27.1.2}%
+\contentsline {subsection}{\numberline {8.27.2}Member Function Documentation}{59}{subsection.8.27.2}%
+\contentsline {subsubsection}{\numberline {8.27.2.1}forecast()}{59}{subsubsection.8.27.2.1}%
+\contentsline {subsubsection}{\numberline {8.27.2.2}general\_work()}{60}{subsubsection.8.27.2.2}%
+\contentsline {section}{\numberline {8.28}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::header\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl Class Reference}{60}{section.8.28}%
+\contentsline {subsection}{\numberline {8.28.1}Constructor \& Destructor Documentation}{60}{subsection.8.28.1}%
+\contentsline {subsubsection}{\numberline {8.28.1.1}header\_impl()}{61}{subsubsection.8.28.1.1}%
+\contentsline {subsubsection}{\numberline {8.28.1.2}$\sim $header\_impl()}{61}{subsubsection.8.28.1.2}%
+\contentsline {subsection}{\numberline {8.28.2}Member Function Documentation}{61}{subsection.8.28.2}%
+\contentsline {subsubsection}{\numberline {8.28.2.1}forecast()}{61}{subsubsection.8.28.2.1}%
+\contentsline {subsubsection}{\numberline {8.28.2.2}general\_work()}{61}{subsubsection.8.28.2.2}%
+\contentsline {section}{\numberline {8.29}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::interleaver Class Reference}{62}{section.8.29}%
+\contentsline {subsection}{\numberline {8.29.1}Detailed Description}{62}{subsection.8.29.1}%
+\contentsline {subsection}{\numberline {8.29.2}Member Typedef Documentation}{62}{subsection.8.29.2}%
+\contentsline {subsubsection}{\numberline {8.29.2.1}sptr}{62}{subsubsection.8.29.2.1}%
+\contentsline {subsection}{\numberline {8.29.3}Member Function Documentation}{63}{subsection.8.29.3}%
+\contentsline {subsubsection}{\numberline {8.29.3.1}make()}{63}{subsubsection.8.29.3.1}%
+\contentsline {section}{\numberline {8.30}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::interleaver\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl Class Reference}{63}{section.8.30}%
+\contentsline {subsection}{\numberline {8.30.1}Constructor \& Destructor Documentation}{64}{subsection.8.30.1}%
+\contentsline {subsubsection}{\numberline {8.30.1.1}interleaver\_impl()}{64}{subsubsection.8.30.1.1}%
+\contentsline {subsubsection}{\numberline {8.30.1.2}$\sim $interleaver\_impl()}{64}{subsubsection.8.30.1.2}%
+\contentsline {subsection}{\numberline {8.30.2}Member Function Documentation}{64}{subsection.8.30.2}%
+\contentsline {subsubsection}{\numberline {8.30.2.1}forecast()}{64}{subsubsection.8.30.2.1}%
+\contentsline {subsubsection}{\numberline {8.30.2.2}general\_work()}{64}{subsubsection.8.30.2.2}%
+\contentsline {section}{\numberline {8.31}kiss\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}fft\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpx Struct Reference}{65}{section.8.31}%
+\contentsline {subsection}{\numberline {8.31.1}Member Data Documentation}{65}{subsection.8.31.1}%
+\contentsline {subsubsection}{\numberline {8.31.1.1}i}{65}{subsubsection.8.31.1.1}%
+\contentsline {subsubsection}{\numberline {8.31.1.2}r}{65}{subsubsection.8.31.1.2}%
+\contentsline {section}{\numberline {8.32}kiss\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}fft\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}state Struct Reference}{65}{section.8.32}%
+\contentsline {subsection}{\numberline {8.32.1}Member Data Documentation}{65}{subsection.8.32.1}%
+\contentsline {subsubsection}{\numberline {8.32.1.1}factors}{66}{subsubsection.8.32.1.1}%
+\contentsline {subsubsection}{\numberline {8.32.1.2}inverse}{66}{subsubsection.8.32.1.2}%
+\contentsline {subsubsection}{\numberline {8.32.1.3}nfft}{66}{subsubsection.8.32.1.3}%
+\contentsline {subsubsection}{\numberline {8.32.1.4}twiddles}{66}{subsubsection.8.32.1.4}%
+\contentsline {section}{\numberline {8.33}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr Class Reference}{66}{section.8.33}%
+\contentsline {subsection}{\numberline {8.33.1}Detailed Description}{67}{subsection.8.33.1}%
+\contentsline {subsection}{\numberline {8.33.2}Member Typedef Documentation}{67}{subsection.8.33.2}%
+\contentsline {subsubsection}{\numberline {8.33.2.1}sptr}{67}{subsubsection.8.33.2.1}%
+\contentsline {subsection}{\numberline {8.33.3}Member Function Documentation}{67}{subsection.8.33.3}%
+\contentsline {subsubsection}{\numberline {8.33.3.1}make()}{67}{subsubsection.8.33.3.1}%
+\contentsline {section}{\numberline {8.34}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl Class Reference}{68}{section.8.34}%
+\contentsline {subsection}{\numberline {8.34.1}Constructor \& Destructor Documentation}{68}{subsection.8.34.1}%
+\contentsline {subsubsection}{\numberline {8.34.1.1}lora\_sdr\_impl()}{68}{subsubsection.8.34.1.1}%
+\contentsline {subsubsection}{\numberline {8.34.1.2}$\sim $lora\_sdr\_impl()}{69}{subsubsection.8.34.1.2}%
+\contentsline {subsection}{\numberline {8.34.2}Member Function Documentation}{69}{subsection.8.34.2}%
+\contentsline {subsubsection}{\numberline {8.34.2.1}forecast()}{69}{subsubsection.8.34.2.1}%
+\contentsline {subsubsection}{\numberline {8.34.2.2}general\_work()}{69}{subsubsection.8.34.2.2}%
+\contentsline {section}{\numberline {8.35}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::modulate Class Reference}{69}{section.8.35}%
+\contentsline {subsection}{\numberline {8.35.1}Detailed Description}{70}{subsection.8.35.1}%
+\contentsline {subsection}{\numberline {8.35.2}Member Typedef Documentation}{70}{subsection.8.35.2}%
+\contentsline {subsubsection}{\numberline {8.35.2.1}sptr}{70}{subsubsection.8.35.2.1}%
+\contentsline {subsection}{\numberline {8.35.3}Member Function Documentation}{70}{subsection.8.35.3}%
+\contentsline {subsubsection}{\numberline {8.35.3.1}make()}{70}{subsubsection.8.35.3.1}%
+\contentsline {section}{\numberline {8.36}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::modulate\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl Class Reference}{71}{section.8.36}%
+\contentsline {subsection}{\numberline {8.36.1}Constructor \& Destructor Documentation}{71}{subsection.8.36.1}%
+\contentsline {subsubsection}{\numberline {8.36.1.1}modulate\_impl()}{71}{subsubsection.8.36.1.1}%
+\contentsline {subsubsection}{\numberline {8.36.1.2}$\sim $modulate\_impl()}{72}{subsubsection.8.36.1.2}%
+\contentsline {subsection}{\numberline {8.36.2}Member Function Documentation}{72}{subsection.8.36.2}%
+\contentsline {subsubsection}{\numberline {8.36.2.1}forecast()}{72}{subsubsection.8.36.2.1}%
+\contentsline {subsubsection}{\numberline {8.36.2.2}general\_work()}{72}{subsubsection.8.36.2.2}%
+\contentsline {section}{\numberline {8.37}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}H\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}F95\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}header Class Reference}{72}{section.8.37}%
+\contentsline {subsection}{\numberline {8.37.1}Detailed Description}{73}{subsection.8.37.1}%
+\contentsline {subsection}{\numberline {8.37.2}Member Typedef Documentation}{73}{subsection.8.37.2}%
+\contentsline {subsubsection}{\numberline {8.37.2.1}sptr}{73}{subsubsection.8.37.2.1}%
+\contentsline {subsection}{\numberline {8.37.3}Member Function Documentation}{73}{subsection.8.37.3}%
+\contentsline {subsubsection}{\numberline {8.37.3.1}make()}{73}{subsubsection.8.37.3.1}%
+\contentsline {section}{\numberline {8.38}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}H\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}F95\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}header\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl Class Reference}{74}{section.8.38}%
+\contentsline {subsection}{\numberline {8.38.1}Constructor \& Destructor Documentation}{74}{subsection.8.38.1}%
+\contentsline {subsubsection}{\numberline {8.38.1.1}RH\_RF95\_header\_impl()}{74}{subsubsection.8.38.1.1}%
+\contentsline {subsubsection}{\numberline {8.38.1.2}$\sim $RH\_RF95\_header\_impl()}{75}{subsubsection.8.38.1.2}%
+\contentsline {subsection}{\numberline {8.38.2}Member Function Documentation}{75}{subsection.8.38.2}%
+\contentsline {subsubsection}{\numberline {8.38.2.1}forecast()}{75}{subsubsection.8.38.2.1}%
+\contentsline {subsubsection}{\numberline {8.38.2.2}general\_work()}{75}{subsubsection.8.38.2.2}%
+\contentsline {section}{\numberline {8.39}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::whitening Class Reference}{75}{section.8.39}%
+\contentsline {subsection}{\numberline {8.39.1}Detailed Description}{76}{subsection.8.39.1}%
+\contentsline {subsection}{\numberline {8.39.2}Member Typedef Documentation}{76}{subsection.8.39.2}%
+\contentsline {subsubsection}{\numberline {8.39.2.1}sptr}{76}{subsubsection.8.39.2.1}%
+\contentsline {subsection}{\numberline {8.39.3}Member Function Documentation}{76}{subsection.8.39.3}%
+\contentsline {subsubsection}{\numberline {8.39.3.1}make()}{76}{subsubsection.8.39.3.1}%
+\contentsline {section}{\numberline {8.40}gr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::whitening\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl Class Reference}{77}{section.8.40}%
+\contentsline {subsection}{\numberline {8.40.1}Constructor \& Destructor Documentation}{77}{subsection.8.40.1}%
+\contentsline {subsubsection}{\numberline {8.40.1.1}whitening\_impl()}{77}{subsubsection.8.40.1.1}%
+\contentsline {subsubsection}{\numberline {8.40.1.2}$\sim $whitening\_impl()}{77}{subsubsection.8.40.1.2}%
+\contentsline {subsection}{\numberline {8.40.2}Member Function Documentation}{78}{subsection.8.40.2}%
+\contentsline {subsubsection}{\numberline {8.40.2.1}work()}{78}{subsubsection.8.40.2.1}%
+\contentsline {chapter}{\numberline {9}File Documentation}{79}{chapter.9}%
+\contentsline {section}{\numberline {9.1}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}kiss\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}fft\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}guts.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{79}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Macro Definition Documentation}{80}{subsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.1.1}C\_ADD}{80}{subsubsection.9.1.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.1.2}C\_ADDTO}{80}{subsubsection.9.1.1.2}%
+\contentsline {subsubsection}{\numberline {9.1.1.3}C\_FIXDIV}{81}{subsubsection.9.1.1.3}%
+\contentsline {subsubsection}{\numberline {9.1.1.4}C\_MUL}{81}{subsubsection.9.1.1.4}%
+\contentsline {subsubsection}{\numberline {9.1.1.5}C\_MULBYSCALAR}{81}{subsubsection.9.1.1.5}%
+\contentsline {subsubsection}{\numberline {9.1.1.6}C\_SUB}{81}{subsubsection.9.1.1.6}%
+\contentsline {subsubsection}{\numberline {9.1.1.7}C\_SUBFROM}{82}{subsubsection.9.1.1.7}%
+\contentsline {subsubsection}{\numberline {9.1.1.8}CHECK\_OVERFLOW\_OP}{82}{subsubsection.9.1.1.8}%
+\contentsline {subsubsection}{\numberline {9.1.1.9}HALF\_OF}{82}{subsubsection.9.1.1.9}%
+\contentsline {subsubsection}{\numberline {9.1.1.10}kf\_cexp}{82}{subsubsection.9.1.1.10}%
+\contentsline {subsubsection}{\numberline {9.1.1.11}KISS\_FFT\_COS}{82}{subsubsection.9.1.1.11}%
+\contentsline {subsubsection}{\numberline {9.1.1.12}KISS\_FFT\_SIN}{83}{subsubsection.9.1.1.12}%
+\contentsline {subsubsection}{\numberline {9.1.1.13}KISS\_FFT\_TMP\_ALLOC}{83}{subsubsection.9.1.1.13}%
+\contentsline {subsubsection}{\numberline {9.1.1.14}KISS\_FFT\_TMP\_FREE}{83}{subsubsection.9.1.1.14}%
+\contentsline {subsubsection}{\numberline {9.1.1.15}MAXFACTORS}{83}{subsubsection.9.1.1.15}%
+\contentsline {subsubsection}{\numberline {9.1.1.16}pcpx}{83}{subsubsection.9.1.1.16}%
+\contentsline {subsubsection}{\numberline {9.1.1.17}S\_MUL}{83}{subsubsection.9.1.1.17}%
+\contentsline {section}{\numberline {9.2}add\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}crc.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{84}{section.9.2}%
+\contentsline {section}{\numberline {9.3}add\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}crc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{85}{section.9.3}%
+\contentsline {section}{\numberline {9.4}api.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{85}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Macro Definition Documentation}{86}{subsection.9.4.1}%
+\contentsline {subsubsection}{\numberline {9.4.1.1}LORA\_SDR\_API}{86}{subsubsection.9.4.1.1}%
+\contentsline {section}{\numberline {9.5}crc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}verif.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{86}{section.9.5}%
+\contentsline {section}{\numberline {9.6}crc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}verif\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{87}{section.9.6}%
+\contentsline {section}{\numberline {9.7}data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}source.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{88}{section.9.7}%
+\contentsline {section}{\numberline {9.8}data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}source\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{89}{section.9.8}%
+\contentsline {section}{\numberline {9.9}deinterleaver.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{89}{section.9.9}%
+\contentsline {section}{\numberline {9.10}deinterleaver\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{90}{section.9.10}%
+\contentsline {section}{\numberline {9.11}dewhitening.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{91}{section.9.11}%
+\contentsline {section}{\numberline {9.12}dewhitening\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{92}{section.9.12}%
+\contentsline {section}{\numberline {9.13}err\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}measures.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{93}{section.9.13}%
+\contentsline {section}{\numberline {9.14}err\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}measures\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{94}{section.9.14}%
+\contentsline {section}{\numberline {9.15}fft\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}demod.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{94}{section.9.15}%
+\contentsline {section}{\numberline {9.16}fft\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}demod\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{95}{section.9.16}%
+\contentsline {section}{\numberline {9.17}frame\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sync.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{96}{section.9.17}%
+\contentsline {section}{\numberline {9.18}frame\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sync\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{97}{section.9.18}%
+\contentsline {section}{\numberline {9.19}gray\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}decode.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{98}{section.9.19}%
+\contentsline {section}{\numberline {9.20}gray\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}decode\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{99}{section.9.20}%
+\contentsline {section}{\numberline {9.21}gray\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}enc.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{99}{section.9.21}%
+\contentsline {section}{\numberline {9.22}gray\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}enc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{100}{section.9.22}%
+\contentsline {section}{\numberline {9.23}group\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}defs.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}dox File Reference}{101}{section.9.23}%
+\contentsline {section}{\numberline {9.24}hamming\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}dec.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{101}{section.9.24}%
+\contentsline {section}{\numberline {9.25}hamming\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}dec\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{102}{section.9.25}%
+\contentsline {section}{\numberline {9.26}hamming\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}enc.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{103}{section.9.26}%
+\contentsline {section}{\numberline {9.27}hamming\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}enc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{104}{section.9.27}%
+\contentsline {section}{\numberline {9.28}header.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{105}{section.9.28}%
+\contentsline {section}{\numberline {9.29}header\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}decoder.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{106}{section.9.29}%
+\contentsline {section}{\numberline {9.30}header\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}decoder\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{107}{section.9.30}%
+\contentsline {section}{\numberline {9.31}header\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{107}{section.9.31}%
+\contentsline {section}{\numberline {9.32}interleaver.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{108}{section.9.32}%
+\contentsline {section}{\numberline {9.33}interleaver\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{109}{section.9.33}%
+\contentsline {section}{\numberline {9.34}kiss\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}fft.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{110}{section.9.34}%
+\contentsline {subsection}{\numberline {9.34.1}Macro Definition Documentation}{111}{subsection.9.34.1}%
+\contentsline {subsubsection}{\numberline {9.34.1.1}KISS\_FFT\_FREE}{111}{subsubsection.9.34.1.1}%
+\contentsline {subsubsection}{\numberline {9.34.1.2}kiss\_fft\_free}{111}{subsubsection.9.34.1.2}%
+\contentsline {subsubsection}{\numberline {9.34.1.3}KISS\_FFT\_MALLOC}{111}{subsubsection.9.34.1.3}%
+\contentsline {subsubsection}{\numberline {9.34.1.4}kiss\_fft\_scalar}{111}{subsubsection.9.34.1.4}%
+\contentsline {subsubsection}{\numberline {9.34.1.5}kiss\_fftr\_next\_fast\_size\_real}{112}{subsubsection.9.34.1.5}%
+\contentsline {subsection}{\numberline {9.34.2}Typedef Documentation}{112}{subsection.9.34.2}%
+\contentsline {subsubsection}{\numberline {9.34.2.1}kiss\_fft\_cfg}{112}{subsubsection.9.34.2.1}%
+\contentsline {subsection}{\numberline {9.34.3}Function Documentation}{112}{subsection.9.34.3}%
+\contentsline {subsubsection}{\numberline {9.34.3.1}kiss\_fft()}{112}{subsubsection.9.34.3.1}%
+\contentsline {subsubsection}{\numberline {9.34.3.2}kiss\_fft\_alloc()}{112}{subsubsection.9.34.3.2}%
+\contentsline {subsubsection}{\numberline {9.34.3.3}kiss\_fft\_cleanup()}{112}{subsubsection.9.34.3.3}%
+\contentsline {subsubsection}{\numberline {9.34.3.4}kiss\_fft\_next\_fast\_size()}{113}{subsubsection.9.34.3.4}%
+\contentsline {subsubsection}{\numberline {9.34.3.5}kiss\_fft\_stride()}{113}{subsubsection.9.34.3.5}%
+\contentsline {section}{\numberline {9.35}lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{113}{section.9.35}%
+\contentsline {section}{\numberline {9.36}lora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}sdr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{114}{section.9.36}%
+\contentsline {section}{\numberline {9.37}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}page.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}dox File Reference}{115}{section.9.37}%
+\contentsline {section}{\numberline {9.38}modulate.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{115}{section.9.38}%
+\contentsline {section}{\numberline {9.39}modulate\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{116}{section.9.39}%
+\contentsline {section}{\numberline {9.40}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}H\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}F95\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}header.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{116}{section.9.40}%
+\contentsline {section}{\numberline {9.41}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}H\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}F95\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}header\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{117}{section.9.41}%
+\contentsline {section}{\numberline {9.42}tables.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{118}{section.9.42}%
+\contentsline {section}{\numberline {9.43}utilities.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{118}{section.9.43}%
+\contentsline {section}{\numberline {9.44}whitening.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{119}{section.9.44}%
+\contentsline {section}{\numberline {9.45}whitening\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{120}{section.9.45}%
+\contentsline {chapter}{Index}{121}{section*.272}%

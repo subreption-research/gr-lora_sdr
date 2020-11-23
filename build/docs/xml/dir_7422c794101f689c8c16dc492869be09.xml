@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_7422c794101f689c8c16dc492869be09" kind="dir">
+    <compoundname>lora_sdr</compoundname>
+    <innerfile refid="add__crc_8h">add_crc.h</innerfile>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="crc__verif_8h">crc_verif.h</innerfile>
+    <innerfile refid="data__source_8h">data_source.h</innerfile>
+    <innerfile refid="deinterleaver_8h">deinterleaver.h</innerfile>
+    <innerfile refid="dewhitening_8h">dewhitening.h</innerfile>
+    <innerfile refid="err__measures_8h">err_measures.h</innerfile>
+    <innerfile refid="fft__demod_8h">fft_demod.h</innerfile>
+    <innerfile refid="frame__sync_8h">frame_sync.h</innerfile>
+    <innerfile refid="gray__decode_8h">gray_decode.h</innerfile>
+    <innerfile refid="gray__enc_8h">gray_enc.h</innerfile>
+    <innerfile refid="hamming__dec_8h">hamming_dec.h</innerfile>
+    <innerfile refid="hamming__enc_8h">hamming_enc.h</innerfile>
+    <innerfile refid="header_8h">header.h</innerfile>
+    <innerfile refid="header__decoder_8h">header_decoder.h</innerfile>
+    <innerfile refid="interleaver_8h">interleaver.h</innerfile>
+    <innerfile refid="lora__sdr_8h">lora_sdr.h</innerfile>
+    <innerfile refid="modulate_8h">modulate.h</innerfile>
+    <innerfile refid="RH__RF95__header_8h">RH_RF95_header.h</innerfile>
+    <innerfile refid="utilities_8h">utilities.h</innerfile>
+    <innerfile refid="whitening_8h">whitening.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/"/>
+  </compounddef>
+</doxygen>

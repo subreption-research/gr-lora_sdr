@@ -1,0 +1,200 @@
+\doxysection{gr\+::lora\+\_\+sdr\+::deinterleaver\+\_\+impl Class Reference}
+\label{classgr_1_1lora__sdr_1_1deinterleaver__impl}\index{gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}}
+
+
+{\ttfamily \#include $<$deinterleaver\+\_\+impl.\+h$>$}
+
+
+
+Inheritance diagram for gr\+::lora\+\_\+sdr\+::deinterleaver\+\_\+impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classgr_1_1lora__sdr_1_1deinterleaver__impl__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1deinterleaver__impl_abacc979e4e3f57f8bc97feb7c11ec9cf}{deinterleaver\+\_\+impl}} (uint8\+\_\+t sf)
+\begin{DoxyCompactList}\small\item\em Construct a new deinterleaver impl object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1deinterleaver__impl_a85f84b3a6fd8a4b65ed297bdf61dd4e6}{$\sim$deinterleaver\+\_\+impl}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the deinterleaver impl object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1deinterleaver__impl_aad7a0ec6b032c177866cb8e1cdbeab0d}{forecast}} (int noutput\+\_\+items, gr\+\_\+vector\+\_\+int \&ninput\+\_\+items\+\_\+required)
+\item 
+int \mbox{\hyperlink{classgr_1_1lora__sdr_1_1deinterleaver__impl_a988e93f02184e00c2669fc13426f7edc}{general\+\_\+work}} (int noutput\+\_\+items, gr\+\_\+vector\+\_\+int \&ninput\+\_\+items, gr\+\_\+vector\+\_\+const\+\_\+void\+\_\+star \&input\+\_\+items, gr\+\_\+vector\+\_\+void\+\_\+star \&output\+\_\+items)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1deinterleaver__impl_a681ce9f583d5eb9146e2140f5da399ff}{new\+\_\+frame\+\_\+handler}} (pmt\+::pmt\+\_\+t id)
+\begin{DoxyCompactList}\small\item\em Reset the block variables when a new lora packet needs to be decoded. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1deinterleaver__impl_a9afa6729b40c2d278af1a20df16ea62d}{header\+\_\+cr\+\_\+handler}} (pmt\+::pmt\+\_\+t cr)
+\begin{DoxyCompactList}\small\item\em Handles the coding rate received from the \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder}{header\+\_\+decoder}} block. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1deinterleaver__impl_a4317ded1b980b934dcd8da9e90b29cfe}{m\+\_\+sf}}
+\begin{DoxyCompactList}\small\item\em Transmission Spreading factor. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1deinterleaver__impl_a6385b2a7a625f058ea1dbd1fe3cd9448}{m\+\_\+cr}}
+\begin{DoxyCompactList}\small\item\em Transmission Coding rate. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1deinterleaver__impl_a5311d0dc3c782b33735b98cd387c769a}{sf\+\_\+app}}
+\begin{DoxyCompactList}\small\item\em Spreading factor to use to deinterleave. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1deinterleaver__impl_a2ee14c8c25c0343be3ec8d56408805f8}{cw\+\_\+len}}
+\begin{DoxyCompactList}\small\item\em Length of a codeword. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgr_1_1lora__sdr_1_1deinterleaver__impl_a0c00749eec7089a76dde4de2c9c37020}{is\+\_\+first}}
+\begin{DoxyCompactList}\small\item\em Indicate that we need to deinterleave the first block. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1deinterleaver__impl_abacc979e4e3f57f8bc97feb7c11ec9cf}} 
+\index{gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}!deinterleaver\_impl@{deinterleaver\_impl}}
+\index{deinterleaver\_impl@{deinterleaver\_impl}!gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}}
+\doxysubsubsection{\texorpdfstring{deinterleaver\_impl()}{deinterleaver\_impl()}}
+{\footnotesize\ttfamily gr\+::lora\+\_\+sdr\+::deinterleaver\+\_\+impl\+::deinterleaver\+\_\+impl (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{sf }\end{DoxyParamCaption})}
+
+
+
+Construct a new deinterleaver impl object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sf} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1deinterleaver__impl_a85f84b3a6fd8a4b65ed297bdf61dd4e6}} 
+\index{gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}!````~deinterleaver\_impl@{$\sim$deinterleaver\_impl}}
+\index{````~deinterleaver\_impl@{$\sim$deinterleaver\_impl}!gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}}
+\doxysubsubsection{\texorpdfstring{$\sim$deinterleaver\_impl()}{~deinterleaver\_impl()}}
+{\footnotesize\ttfamily gr\+::lora\+\_\+sdr\+::deinterleaver\+\_\+impl\+::$\sim$deinterleaver\+\_\+impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the deinterleaver impl object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1deinterleaver__impl_aad7a0ec6b032c177866cb8e1cdbeab0d}} 
+\index{gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}!forecast@{forecast}}
+\index{forecast@{forecast}!gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}}
+\doxysubsubsection{\texorpdfstring{forecast()}{forecast()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::deinterleaver\+\_\+impl\+::forecast (\begin{DoxyParamCaption}\item[{int}]{noutput\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+int \&}]{ninput\+\_\+items\+\_\+required }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em noutput\+\_\+items} & \\
+\hline
+{\em ninput\+\_\+items\+\_\+required} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1deinterleaver__impl_a988e93f02184e00c2669fc13426f7edc}} 
+\index{gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}!general\_work@{general\_work}}
+\index{general\_work@{general\_work}!gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}}
+\doxysubsubsection{\texorpdfstring{general\_work()}{general\_work()}}
+{\footnotesize\ttfamily int gr\+::lora\+\_\+sdr\+::deinterleaver\+\_\+impl\+::general\+\_\+work (\begin{DoxyParamCaption}\item[{int}]{noutput\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+int \&}]{ninput\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+const\+\_\+void\+\_\+star \&}]{input\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+void\+\_\+star \&}]{output\+\_\+items }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em noutput\+\_\+items} & \\
+\hline
+{\em ninput\+\_\+items} & \\
+\hline
+{\em input\+\_\+items} & \\
+\hline
+{\em output\+\_\+items} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\label{classgr_1_1lora__sdr_1_1deinterleaver__impl_a9afa6729b40c2d278af1a20df16ea62d}} 
+\index{gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}!header\_cr\_handler@{header\_cr\_handler}}
+\index{header\_cr\_handler@{header\_cr\_handler}!gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}}
+\doxysubsubsection{\texorpdfstring{header\_cr\_handler()}{header\_cr\_handler()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::deinterleaver\+\_\+impl\+::header\+\_\+cr\+\_\+handler (\begin{DoxyParamCaption}\item[{pmt\+::pmt\+\_\+t}]{cr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handles the coding rate received from the \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder}{header\+\_\+decoder}} block. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cr} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1deinterleaver__impl_a681ce9f583d5eb9146e2140f5da399ff}} 
+\index{gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}!new\_frame\_handler@{new\_frame\_handler}}
+\index{new\_frame\_handler@{new\_frame\_handler}!gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}}
+\doxysubsubsection{\texorpdfstring{new\_frame\_handler()}{new\_frame\_handler()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::deinterleaver\+\_\+impl\+::new\+\_\+frame\+\_\+handler (\begin{DoxyParamCaption}\item[{pmt\+::pmt\+\_\+t}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reset the block variables when a new lora packet needs to be decoded. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1deinterleaver__impl_a2ee14c8c25c0343be3ec8d56408805f8}} 
+\index{gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}!cw\_len@{cw\_len}}
+\index{cw\_len@{cw\_len}!gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}}
+\doxysubsubsection{\texorpdfstring{cw\_len}{cw\_len}}
+{\footnotesize\ttfamily uint8\+\_\+t gr\+::lora\+\_\+sdr\+::deinterleaver\+\_\+impl\+::cw\+\_\+len\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Length of a codeword. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1deinterleaver__impl_a0c00749eec7089a76dde4de2c9c37020}} 
+\index{gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}!is\_first@{is\_first}}
+\index{is\_first@{is\_first}!gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}}
+\doxysubsubsection{\texorpdfstring{is\_first}{is\_first}}
+{\footnotesize\ttfamily bool gr\+::lora\+\_\+sdr\+::deinterleaver\+\_\+impl\+::is\+\_\+first\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indicate that we need to deinterleave the first block. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1deinterleaver__impl_a6385b2a7a625f058ea1dbd1fe3cd9448}} 
+\index{gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}!m\_cr@{m\_cr}}
+\index{m\_cr@{m\_cr}!gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_cr}{m\_cr}}
+{\footnotesize\ttfamily uint8\+\_\+t gr\+::lora\+\_\+sdr\+::deinterleaver\+\_\+impl\+::m\+\_\+cr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transmission Coding rate. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1deinterleaver__impl_a4317ded1b980b934dcd8da9e90b29cfe}} 
+\index{gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}!m\_sf@{m\_sf}}
+\index{m\_sf@{m\_sf}!gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_sf}{m\_sf}}
+{\footnotesize\ttfamily uint8\+\_\+t gr\+::lora\+\_\+sdr\+::deinterleaver\+\_\+impl\+::m\+\_\+sf\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transmission Spreading factor. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1deinterleaver__impl_a5311d0dc3c782b33735b98cd387c769a}} 
+\index{gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}!sf\_app@{sf\_app}}
+\index{sf\_app@{sf\_app}!gr::lora\_sdr::deinterleaver\_impl@{gr::lora\_sdr::deinterleaver\_impl}}
+\doxysubsubsection{\texorpdfstring{sf\_app}{sf\_app}}
+{\footnotesize\ttfamily uint8\+\_\+t gr\+::lora\+\_\+sdr\+::deinterleaver\+\_\+impl\+::sf\+\_\+app\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spreading factor to use to deinterleave. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{deinterleaver__impl_8h}{deinterleaver\+\_\+impl.\+h}}\end{DoxyCompactItemize}

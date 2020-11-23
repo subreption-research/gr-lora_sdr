@@ -1,0 +1,157 @@
+\doxysection{gr\+::lora\+\_\+sdr\+::interleaver\+\_\+impl Class Reference}
+\label{classgr_1_1lora__sdr_1_1interleaver__impl}\index{gr::lora\_sdr::interleaver\_impl@{gr::lora\_sdr::interleaver\_impl}}
+
+
+{\ttfamily \#include $<$interleaver\+\_\+impl.\+h$>$}
+
+
+
+Inheritance diagram for gr\+::lora\+\_\+sdr\+::interleaver\+\_\+impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classgr_1_1lora__sdr_1_1interleaver__impl__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1interleaver__impl_acfe9c5f82e17715891430113d526e0bb}{interleaver\+\_\+impl}} (uint8\+\_\+t cr, uint8\+\_\+t sf)
+\begin{DoxyCompactList}\small\item\em Construct a new interleaver impl object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1interleaver__impl_aa7d8a1471e5f14a641475c1fd7fa1e84}{$\sim$interleaver\+\_\+impl}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the interleaver impl object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1interleaver__impl_a0957f1e476d8926c265e325b17dc136f}{forecast}} (int noutput\+\_\+items, gr\+\_\+vector\+\_\+int \&ninput\+\_\+items\+\_\+required)
+\item 
+int \mbox{\hyperlink{classgr_1_1lora__sdr_1_1interleaver__impl_adfe772e35ecb4e837e620a9f88245e06}{general\+\_\+work}} (int noutput\+\_\+items, gr\+\_\+vector\+\_\+int \&ninput\+\_\+items, gr\+\_\+vector\+\_\+const\+\_\+void\+\_\+star \&input\+\_\+items, gr\+\_\+vector\+\_\+void\+\_\+star \&output\+\_\+items)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1interleaver__impl_a2f1e6660c33fb26575041de39eb89aca}{msg\+\_\+handler}} (pmt\+::pmt\+\_\+t message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1interleaver__impl_a6945652529f45d51705db59c89974c9a}{m\+\_\+cr}}
+\begin{DoxyCompactList}\small\item\em Transmission coding rate. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1interleaver__impl_a9c6741820d3d0d6b5e381a73602cf71d}{m\+\_\+sf}}
+\begin{DoxyCompactList}\small\item\em Transmission spreading factor. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1interleaver__impl_a0ebde855ca3af4ff51d5b006f3121346}{cw\+\_\+cnt}}
+\begin{DoxyCompactList}\small\item\em count the number of codewords \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1interleaver__impl_acfe9c5f82e17715891430113d526e0bb}} 
+\index{gr::lora\_sdr::interleaver\_impl@{gr::lora\_sdr::interleaver\_impl}!interleaver\_impl@{interleaver\_impl}}
+\index{interleaver\_impl@{interleaver\_impl}!gr::lora\_sdr::interleaver\_impl@{gr::lora\_sdr::interleaver\_impl}}
+\doxysubsubsection{\texorpdfstring{interleaver\_impl()}{interleaver\_impl()}}
+{\footnotesize\ttfamily gr\+::lora\+\_\+sdr\+::interleaver\+\_\+impl\+::interleaver\+\_\+impl (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{cr,  }\item[{uint8\+\_\+t}]{sf }\end{DoxyParamCaption})}
+
+
+
+Construct a new interleaver impl object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cr} & coding rate \\
+\hline
+{\em sf} & sampling rate \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1interleaver__impl_aa7d8a1471e5f14a641475c1fd7fa1e84}} 
+\index{gr::lora\_sdr::interleaver\_impl@{gr::lora\_sdr::interleaver\_impl}!````~interleaver\_impl@{$\sim$interleaver\_impl}}
+\index{````~interleaver\_impl@{$\sim$interleaver\_impl}!gr::lora\_sdr::interleaver\_impl@{gr::lora\_sdr::interleaver\_impl}}
+\doxysubsubsection{\texorpdfstring{$\sim$interleaver\_impl()}{~interleaver\_impl()}}
+{\footnotesize\ttfamily gr\+::lora\+\_\+sdr\+::interleaver\+\_\+impl\+::$\sim$interleaver\+\_\+impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the interleaver impl object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1interleaver__impl_a0957f1e476d8926c265e325b17dc136f}} 
+\index{gr::lora\_sdr::interleaver\_impl@{gr::lora\_sdr::interleaver\_impl}!forecast@{forecast}}
+\index{forecast@{forecast}!gr::lora\_sdr::interleaver\_impl@{gr::lora\_sdr::interleaver\_impl}}
+\doxysubsubsection{\texorpdfstring{forecast()}{forecast()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::interleaver\+\_\+impl\+::forecast (\begin{DoxyParamCaption}\item[{int}]{noutput\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+int \&}]{ninput\+\_\+items\+\_\+required }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em noutput\+\_\+items} & \\
+\hline
+{\em ninput\+\_\+items\+\_\+required} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1interleaver__impl_adfe772e35ecb4e837e620a9f88245e06}} 
+\index{gr::lora\_sdr::interleaver\_impl@{gr::lora\_sdr::interleaver\_impl}!general\_work@{general\_work}}
+\index{general\_work@{general\_work}!gr::lora\_sdr::interleaver\_impl@{gr::lora\_sdr::interleaver\_impl}}
+\doxysubsubsection{\texorpdfstring{general\_work()}{general\_work()}}
+{\footnotesize\ttfamily int gr\+::lora\+\_\+sdr\+::interleaver\+\_\+impl\+::general\+\_\+work (\begin{DoxyParamCaption}\item[{int}]{noutput\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+int \&}]{ninput\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+const\+\_\+void\+\_\+star \&}]{input\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+void\+\_\+star \&}]{output\+\_\+items }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em noutput\+\_\+items} & \\
+\hline
+{\em ninput\+\_\+items} & \\
+\hline
+{\em input\+\_\+items} & \\
+\hline
+{\em output\+\_\+items} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\label{classgr_1_1lora__sdr_1_1interleaver__impl_a2f1e6660c33fb26575041de39eb89aca}} 
+\index{gr::lora\_sdr::interleaver\_impl@{gr::lora\_sdr::interleaver\_impl}!msg\_handler@{msg\_handler}}
+\index{msg\_handler@{msg\_handler}!gr::lora\_sdr::interleaver\_impl@{gr::lora\_sdr::interleaver\_impl}}
+\doxysubsubsection{\texorpdfstring{msg\_handler()}{msg\_handler()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::interleaver\+\_\+impl\+::msg\+\_\+handler (\begin{DoxyParamCaption}\item[{pmt\+::pmt\+\_\+t}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1interleaver__impl_a0ebde855ca3af4ff51d5b006f3121346}} 
+\index{gr::lora\_sdr::interleaver\_impl@{gr::lora\_sdr::interleaver\_impl}!cw\_cnt@{cw\_cnt}}
+\index{cw\_cnt@{cw\_cnt}!gr::lora\_sdr::interleaver\_impl@{gr::lora\_sdr::interleaver\_impl}}
+\doxysubsubsection{\texorpdfstring{cw\_cnt}{cw\_cnt}}
+{\footnotesize\ttfamily uint32\+\_\+t gr\+::lora\+\_\+sdr\+::interleaver\+\_\+impl\+::cw\+\_\+cnt\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+count the number of codewords 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1interleaver__impl_a6945652529f45d51705db59c89974c9a}} 
+\index{gr::lora\_sdr::interleaver\_impl@{gr::lora\_sdr::interleaver\_impl}!m\_cr@{m\_cr}}
+\index{m\_cr@{m\_cr}!gr::lora\_sdr::interleaver\_impl@{gr::lora\_sdr::interleaver\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_cr}{m\_cr}}
+{\footnotesize\ttfamily uint8\+\_\+t gr\+::lora\+\_\+sdr\+::interleaver\+\_\+impl\+::m\+\_\+cr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transmission coding rate. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1interleaver__impl_a9c6741820d3d0d6b5e381a73602cf71d}} 
+\index{gr::lora\_sdr::interleaver\_impl@{gr::lora\_sdr::interleaver\_impl}!m\_sf@{m\_sf}}
+\index{m\_sf@{m\_sf}!gr::lora\_sdr::interleaver\_impl@{gr::lora\_sdr::interleaver\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_sf}{m\_sf}}
+{\footnotesize\ttfamily uint8\+\_\+t gr\+::lora\+\_\+sdr\+::interleaver\+\_\+impl\+::m\+\_\+sf\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transmission spreading factor. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interleaver__impl_8h}{interleaver\+\_\+impl.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,41 @@
+<map id="api.h" name="api.h">
+<area shape="rect" id="node1" title=" " alt="" coords="1427,5,1478,32"/>
+<area shape="rect" id="node2" href="$add__crc_8h.html" title=" " alt="" coords="53,80,132,107"/>
+<area shape="rect" id="node4" href="$crc__verif_8h.html" title=" " alt="" coords="173,80,255,107"/>
+<area shape="rect" id="node6" href="$data__source_8h.html" title=" " alt="" coords="311,80,415,107"/>
+<area shape="rect" id="node8" href="$deinterleaver_8h.html" title=" " alt="" coords="470,80,577,107"/>
+<area shape="rect" id="node10" href="$dewhitening_8h.html" title=" " alt="" coords="632,80,735,107"/>
+<area shape="rect" id="node12" href="$err__measures_8h.html" title=" " alt="" coords="791,80,903,107"/>
+<area shape="rect" id="node14" href="$fft__demod_8h.html" title=" " alt="" coords="959,80,1050,107"/>
+<area shape="rect" id="node16" href="$frame__sync_8h.html" title=" " alt="" coords="1106,80,1207,107"/>
+<area shape="rect" id="node18" href="$gray__decode_8h.html" title=" " alt="" coords="1262,80,1369,107"/>
+<area shape="rect" id="node20" href="$gray__enc_8h.html" title=" " alt="" coords="1409,80,1496,107"/>
+<area shape="rect" id="node22" href="$hamming__dec_8h.html" title=" " alt="" coords="1535,80,1650,107"/>
+<area shape="rect" id="node24" href="$hamming__enc_8h.html" title=" " alt="" coords="1697,80,1811,107"/>
+<area shape="rect" id="node26" href="$header_8h.html" title=" " alt="" coords="1863,80,1933,107"/>
+<area shape="rect" id="node28" href="$header__decoder_8h.html" title=" " alt="" coords="1987,80,2111,107"/>
+<area shape="rect" id="node30" href="$interleaver_8h.html" title=" " alt="" coords="2165,80,2257,107"/>
+<area shape="rect" id="node32" href="$lora__sdr_8h.html" title=" " alt="" coords="2313,80,2392,107"/>
+<area shape="rect" id="node34" href="$modulate_8h.html" title=" " alt="" coords="2448,80,2535,107"/>
+<area shape="rect" id="node36" href="$RH__RF95__header_8h.html" title=" " alt="" coords="2591,80,2728,107"/>
+<area shape="rect" id="node38" href="$whitening_8h.html" title=" " alt="" coords="2783,80,2871,107"/>
+<area shape="rect" id="node3" href="$add__crc__impl_8h.html" title=" " alt="" coords="5,155,116,181"/>
+<area shape="rect" id="node5" href="$crc__verif__impl_8h.html" title=" " alt="" coords="141,155,255,181"/>
+<area shape="rect" id="node7" href="$data__source__impl_8h.html" title=" " alt="" coords="280,155,415,181"/>
+<area shape="rect" id="node9" href="$deinterleaver__impl_8h.html" title=" " alt="" coords="439,155,578,181"/>
+<area shape="rect" id="node11" href="$dewhitening__impl_8h.html" title=" " alt="" coords="602,155,735,181"/>
+<area shape="rect" id="node13" href="$err__measures__impl_8h.html" title=" " alt="" coords="760,155,903,181"/>
+<area shape="rect" id="node15" href="$fft__demod__impl_8h.html" title=" " alt="" coords="927,155,1050,181"/>
+<area shape="rect" id="node17" href="$frame__sync__impl_8h.html" title=" " alt="" coords="1075,155,1207,181"/>
+<area shape="rect" id="node19" href="$gray__decode__impl_8h.html" title=" " alt="" coords="1231,155,1370,181"/>
+<area shape="rect" id="node21" href="$gray__enc__impl_8h.html" title=" " alt="" coords="1394,155,1511,181"/>
+<area shape="rect" id="node23" href="$hamming__dec__impl_8h.html" title=" " alt="" coords="1536,155,1681,181"/>
+<area shape="rect" id="node25" href="$hamming__enc__impl_8h.html" title=" " alt="" coords="1705,155,1851,181"/>
+<area shape="rect" id="node27" href="$header__impl_8h.html" title=" " alt="" coords="1875,155,1977,181"/>
+<area shape="rect" id="node29" href="$header__decoder__impl_8h.html" title=" " alt="" coords="2001,155,2157,181"/>
+<area shape="rect" id="node31" href="$interleaver__impl_8h.html" title=" " alt="" coords="2181,155,2305,181"/>
+<area shape="rect" id="node33" href="$lora__sdr__impl_8h.html" title=" " alt="" coords="2329,155,2440,181"/>
+<area shape="rect" id="node35" href="$modulate__impl_8h.html" title=" " alt="" coords="2465,155,2582,181"/>
+<area shape="rect" id="node37" href="$RH__RF95__header__impl_8h.html" title=" " alt="" coords="2607,155,2776,181"/>
+<area shape="rect" id="node39" href="$whitening__impl_8h.html" title=" " alt="" coords="2800,155,2919,181"/>
+</map>

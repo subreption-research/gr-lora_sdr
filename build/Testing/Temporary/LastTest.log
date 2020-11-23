@@ -1,0 +1,40 @@
+Start testing: Nov 23 16:19 CET
+----------------------------------------------------------
+1/2 Testing: test_lora_sdr
+1/2 Test: test_lora_sdr
+Command: "/usr/bin/sh" "/home/martyn/gr-lora_sdr/build/lib/test_lora_sdr_test.sh"
+Directory: /home/martyn/gr-lora_sdr/build/lib
+"test_lora_sdr" start time: Nov 23 16:19 CET
+Output:
+----------------------------------------------------------
+
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test_lora_sdr" end time: Nov 23 16:19 CET
+"test_lora_sdr" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: qa_lora_sdr
+2/2 Test: qa_lora_sdr
+Command: "/usr/bin/sh" "/home/martyn/gr-lora_sdr/build/python/qa_lora_sdr_test.sh"
+Directory: /home/martyn/gr-lora_sdr/build/python
+"qa_lora_sdr" start time: Nov 23 16:19 CET
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"qa_lora_sdr" end time: Nov 23 16:19 CET
+"qa_lora_sdr" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 23 16:19 CET

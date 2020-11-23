@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.20" xml:lang="en-US">
+  <compound refid="classgr_1_1lora__sdr_1_1add__crc" kind="class"><name>gr::lora_sdr::add_crc</name>
+    <member refid="classgr_1_1lora__sdr_1_1add__crc_1a30e22b5b18cf980a10a3af747f818301" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora__sdr_1_1add__crc_1a46eb96a85a8fbf59d04311b34384d5cb" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora__sdr_1_1crc__verif" kind="class"><name>gr::lora_sdr::crc_verif</name>
+    <member refid="classgr_1_1lora__sdr_1_1crc__verif_1ae5939101448bdd7295622afb95b13ed6" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora__sdr_1_1crc__verif_1a8d3a88dbb742f88a47b1e88a3c3683a7" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora__sdr_1_1data__source" kind="class"><name>gr::lora_sdr::data_source</name>
+    <member refid="classgr_1_1lora__sdr_1_1data__source_1a27bf4f8366600a8d1edf6b8b5c340fe7" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora__sdr_1_1data__source_1ab7974018ae36a9ddafe6363dca83107d" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora__sdr_1_1deinterleaver" kind="class"><name>gr::lora_sdr::deinterleaver</name>
+    <member refid="classgr_1_1lora__sdr_1_1deinterleaver_1a10c6ecd76513d2d8e8faee8a25174ab6" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora__sdr_1_1deinterleaver_1a1d8d559906b8e87cab05ca7d8a3330c5" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora__sdr_1_1dewhitening" kind="class"><name>gr::lora_sdr::dewhitening</name>
+    <member refid="classgr_1_1lora__sdr_1_1dewhitening_1a31f9b20a1769a5c82b5672a4e1071853" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora__sdr_1_1dewhitening_1a6611a7708b8c4a79f9bf038be8136924" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora__sdr_1_1err__measures" kind="class"><name>gr::lora_sdr::err_measures</name>
+    <member refid="classgr_1_1lora__sdr_1_1err__measures_1a51e39025d249df128721754dcd9dc7f7" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora__sdr_1_1err__measures_1af065d77d6bda81dc5dbda893dd951e19" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora__sdr_1_1fft__demod" kind="class"><name>gr::lora_sdr::fft_demod</name>
+    <member refid="classgr_1_1lora__sdr_1_1fft__demod_1ab2c3a81290444e82a9e741ce03baad91" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora__sdr_1_1fft__demod_1a3416792e976c1759d3062530ae7df26a" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora__sdr_1_1frame__sync" kind="class"><name>gr::lora_sdr::frame_sync</name>
+    <member refid="classgr_1_1lora__sdr_1_1frame__sync_1acc9df91d7e03a2e5cb5a57dab389c765" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora__sdr_1_1frame__sync_1a776adf7b13bb1555de3dc0a97b3940cc" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora__sdr_1_1gray__decode" kind="class"><name>gr::lora_sdr::gray_decode</name>
+    <member refid="classgr_1_1lora__sdr_1_1gray__decode_1ae03bf1cce6609a68183a00b2ca5ad866" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora__sdr_1_1gray__decode_1a07d9fafee356f2637a3e3b87db29e19e" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora__sdr_1_1gray__enc" kind="class"><name>gr::lora_sdr::gray_enc</name>
+    <member refid="classgr_1_1lora__sdr_1_1gray__enc_1a9343a25fa38a7ca0e02865ca48ba7cbf" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora__sdr_1_1gray__enc_1aea9076b78c4fdcfdbd83e29f69bbd6b6" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora__sdr_1_1hamming__dec" kind="class"><name>gr::lora_sdr::hamming_dec</name>
+    <member refid="classgr_1_1lora__sdr_1_1hamming__dec_1afb15aa1f353d155f337c4dd48cbcc0ee" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora__sdr_1_1hamming__dec_1ab522d215ee9b4667102e35f8e3c6d5a3" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora__sdr_1_1hamming__enc" kind="class"><name>gr::lora_sdr::hamming_enc</name>
+    <member refid="classgr_1_1lora__sdr_1_1hamming__enc_1aaa3dca1b85fe25de8e5d139fba91f406" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora__sdr_1_1hamming__enc_1aa3e80d4bc27ed6cd23ca2362e8b702e7" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora__sdr_1_1header" kind="class"><name>gr::lora_sdr::header</name>
+    <member refid="classgr_1_1lora__sdr_1_1header_1ad3e8a1bb5ac14e261664227d35bfb22c" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora__sdr_1_1header_1a90759b05ba40572668384c4f907e61d0" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora__sdr_1_1header__decoder" kind="class"><name>gr::lora_sdr::header_decoder</name>
+    <member refid="classgr_1_1lora__sdr_1_1header__decoder_1a57494eb2a6c015a5681958e9b44230c5" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora__sdr_1_1header__decoder_1a00e9a5d5ae43dc349a53acfa10c28646" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora__sdr_1_1interleaver" kind="class"><name>gr::lora_sdr::interleaver</name>
+    <member refid="classgr_1_1lora__sdr_1_1interleaver_1a61fc3a441fc78d4089bda76fb175412b" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora__sdr_1_1interleaver_1a3221a20013ca8fad755153d84a35378e" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora__sdr_1_1lora__sdr" kind="class"><name>gr::lora_sdr::lora_sdr</name>
+    <member refid="classgr_1_1lora__sdr_1_1lora__sdr_1a5fd6356daf21462a6674a45b9b7a644e" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora__sdr_1_1lora__sdr_1a6773fa58ad1500bdd06b5fc8dd3c392a" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora__sdr_1_1modulate" kind="class"><name>gr::lora_sdr::modulate</name>
+    <member refid="classgr_1_1lora__sdr_1_1modulate_1a4b7dfaddb71a83af68be93ce9adc1088" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora__sdr_1_1modulate_1afee2074f2c457116a159086cb4475063" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora__sdr_1_1RH__RF95__header" kind="class"><name>gr::lora_sdr::RH_RF95_header</name>
+    <member refid="classgr_1_1lora__sdr_1_1RH__RF95__header_1a78f756c477acdd634283adff3c5c746c" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora__sdr_1_1RH__RF95__header_1a64e2c450f96a9e4ccb2e1634ae981269" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora__sdr_1_1whitening" kind="class"><name>gr::lora_sdr::whitening</name>
+    <member refid="classgr_1_1lora__sdr_1_1whitening_1a5aabd6f4cec85a5321175c84c597011f" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora__sdr_1_1whitening_1a6db3671947c08fd931a23c9bc6168be8" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1lora__sdr" kind="namespace"><name>gr::lora_sdr</name>
+    <member refid="namespacegr_1_1lora__sdr_1adb2d67013a158614413dedf3f2ae4503" kind="function"><name>mod</name></member>
+    <member refid="namespacegr_1_1lora__sdr_1af4e0331fc85f5e094f335feb3d65fb61" kind="function"><name>int2bool</name></member>
+    <member refid="namespacegr_1_1lora__sdr_1aff065b957d7d236fcb0c9fd010c9b6a6" kind="function"><name>bool2int</name></member>
+    <member refid="namespacegr_1_1lora__sdr_1ab200cb6584b1993e5227cb0c2feaf077" kind="function"><name>build_ref_chirps</name></member>
+    <member refid="namespacegr_1_1lora__sdr_1ae0ffa3d5d413320a39a835e8318f3bb0" kind="function"><name>build_upchirp</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="add__crc_8h" kind="file"><name>add_crc.h</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a7f43a70ead7390c8125a3e3273e64b8c" kind="define"><name>LORA_SDR_API</name></member>
+  </compound>
+  <compound refid="crc__verif_8h" kind="file"><name>crc_verif.h</name>
+  </compound>
+  <compound refid="data__source_8h" kind="file"><name>data_source.h</name>
+  </compound>
+  <compound refid="deinterleaver_8h" kind="file"><name>deinterleaver.h</name>
+  </compound>
+  <compound refid="dewhitening_8h" kind="file"><name>dewhitening.h</name>
+  </compound>
+  <compound refid="err__measures_8h" kind="file"><name>err_measures.h</name>
+  </compound>
+  <compound refid="fft__demod_8h" kind="file"><name>fft_demod.h</name>
+  </compound>
+  <compound refid="frame__sync_8h" kind="file"><name>frame_sync.h</name>
+  </compound>
+  <compound refid="gray__decode_8h" kind="file"><name>gray_decode.h</name>
+  </compound>
+  <compound refid="gray__enc_8h" kind="file"><name>gray_enc.h</name>
+  </compound>
+  <compound refid="hamming__dec_8h" kind="file"><name>hamming_dec.h</name>
+  </compound>
+  <compound refid="hamming__enc_8h" kind="file"><name>hamming_enc.h</name>
+  </compound>
+  <compound refid="header_8h" kind="file"><name>header.h</name>
+  </compound>
+  <compound refid="header__decoder_8h" kind="file"><name>header_decoder.h</name>
+  </compound>
+  <compound refid="interleaver_8h" kind="file"><name>interleaver.h</name>
+  </compound>
+  <compound refid="lora__sdr_8h" kind="file"><name>lora_sdr.h</name>
+  </compound>
+  <compound refid="modulate_8h" kind="file"><name>modulate.h</name>
+  </compound>
+  <compound refid="RH__RF95__header_8h" kind="file"><name>RH_RF95_header.h</name>
+  </compound>
+  <compound refid="utilities_8h" kind="file"><name>utilities.h</name>
+  </compound>
+  <compound refid="whitening_8h" kind="file"><name>whitening.h</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_7422c794101f689c8c16dc492869be09" kind="dir"><name>lora_sdr</name>
+  </compound>
+</doxygenindex>

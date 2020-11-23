@@ -1,0 +1,158 @@
+\doxysection{gr\+::lora\+\_\+sdr\+::hamming\+\_\+dec\+\_\+impl Class Reference}
+\label{classgr_1_1lora__sdr_1_1hamming__dec__impl}\index{gr::lora\_sdr::hamming\_dec\_impl@{gr::lora\_sdr::hamming\_dec\_impl}}
+
+
+{\ttfamily \#include $<$hamming\+\_\+dec\+\_\+impl.\+h$>$}
+
+
+
+Inheritance diagram for gr\+::lora\+\_\+sdr\+::hamming\+\_\+dec\+\_\+impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classgr_1_1lora__sdr_1_1hamming__dec__impl__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1hamming__dec__impl_a5d07feb76b0d8215dfa8e698d64c82e3}{hamming\+\_\+dec\+\_\+impl}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new hamming dec impl object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1hamming__dec__impl_a8d62d5eed7b60068397faeaad2a30922}{$\sim$hamming\+\_\+dec\+\_\+impl}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the hamming dec impl object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classgr_1_1lora__sdr_1_1hamming__dec__impl_ab152998bcda1cc40835d82fa1afed17a}{work}} (int noutput\+\_\+items, gr\+\_\+vector\+\_\+const\+\_\+void\+\_\+star \&input\+\_\+items, gr\+\_\+vector\+\_\+void\+\_\+star \&output\+\_\+items)
+\begin{DoxyCompactList}\small\item\em Main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1hamming__dec__impl_ac241ccd3e25eccc083dc300bb1ad860f}{header\+\_\+cr\+\_\+handler}} (pmt\+::pmt\+\_\+t cr)
+\begin{DoxyCompactList}\small\item\em Handles the coding rate received from the \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder}{header\+\_\+decoder}} block. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1hamming__dec__impl_a726c794575eeb4832ede943ee7cb95c5}{new\+\_\+frame\+\_\+handler}} (pmt\+::pmt\+\_\+t id)
+\begin{DoxyCompactList}\small\item\em Reset the block variables for a new frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1hamming__dec__impl_a97b48238fbd0aa5162df2003ba908e1e}{m\+\_\+cr}}
+\begin{DoxyCompactList}\small\item\em Transmission coding rate. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1hamming__dec__impl_aac6775251e61db5b28d48755bb00d054}{cr\+\_\+app}}
+\begin{DoxyCompactList}\small\item\em Coding rate use for the block. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgr_1_1lora__sdr_1_1hamming__dec__impl_aa687b995a65fc5c6a10d4aba0f3fb2f0}{is\+\_\+first}}
+\begin{DoxyCompactList}\small\item\em Indicate that it is the first block. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1hamming__dec__impl_a5d07feb76b0d8215dfa8e698d64c82e3}} 
+\index{gr::lora\_sdr::hamming\_dec\_impl@{gr::lora\_sdr::hamming\_dec\_impl}!hamming\_dec\_impl@{hamming\_dec\_impl}}
+\index{hamming\_dec\_impl@{hamming\_dec\_impl}!gr::lora\_sdr::hamming\_dec\_impl@{gr::lora\_sdr::hamming\_dec\_impl}}
+\doxysubsubsection{\texorpdfstring{hamming\_dec\_impl()}{hamming\_dec\_impl()}}
+{\footnotesize\ttfamily gr\+::lora\+\_\+sdr\+::hamming\+\_\+dec\+\_\+impl\+::hamming\+\_\+dec\+\_\+impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new hamming dec impl object. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1hamming__dec__impl_a8d62d5eed7b60068397faeaad2a30922}} 
+\index{gr::lora\_sdr::hamming\_dec\_impl@{gr::lora\_sdr::hamming\_dec\_impl}!````~hamming\_dec\_impl@{$\sim$hamming\_dec\_impl}}
+\index{````~hamming\_dec\_impl@{$\sim$hamming\_dec\_impl}!gr::lora\_sdr::hamming\_dec\_impl@{gr::lora\_sdr::hamming\_dec\_impl}}
+\doxysubsubsection{\texorpdfstring{$\sim$hamming\_dec\_impl()}{~hamming\_dec\_impl()}}
+{\footnotesize\ttfamily gr\+::lora\+\_\+sdr\+::hamming\+\_\+dec\+\_\+impl\+::$\sim$hamming\+\_\+dec\+\_\+impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the hamming dec impl object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1hamming__dec__impl_ac241ccd3e25eccc083dc300bb1ad860f}} 
+\index{gr::lora\_sdr::hamming\_dec\_impl@{gr::lora\_sdr::hamming\_dec\_impl}!header\_cr\_handler@{header\_cr\_handler}}
+\index{header\_cr\_handler@{header\_cr\_handler}!gr::lora\_sdr::hamming\_dec\_impl@{gr::lora\_sdr::hamming\_dec\_impl}}
+\doxysubsubsection{\texorpdfstring{header\_cr\_handler()}{header\_cr\_handler()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::hamming\+\_\+dec\+\_\+impl\+::header\+\_\+cr\+\_\+handler (\begin{DoxyParamCaption}\item[{pmt\+::pmt\+\_\+t}]{cr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handles the coding rate received from the \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder}{header\+\_\+decoder}} block. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cr} & \+: coding rate \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1hamming__dec__impl_a726c794575eeb4832ede943ee7cb95c5}} 
+\index{gr::lora\_sdr::hamming\_dec\_impl@{gr::lora\_sdr::hamming\_dec\_impl}!new\_frame\_handler@{new\_frame\_handler}}
+\index{new\_frame\_handler@{new\_frame\_handler}!gr::lora\_sdr::hamming\_dec\_impl@{gr::lora\_sdr::hamming\_dec\_impl}}
+\doxysubsubsection{\texorpdfstring{new\_frame\_handler()}{new\_frame\_handler()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::hamming\+\_\+dec\+\_\+impl\+::new\+\_\+frame\+\_\+handler (\begin{DoxyParamCaption}\item[{pmt\+::pmt\+\_\+t}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reset the block variables for a new frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1hamming__dec__impl_ab152998bcda1cc40835d82fa1afed17a}} 
+\index{gr::lora\_sdr::hamming\_dec\_impl@{gr::lora\_sdr::hamming\_dec\_impl}!work@{work}}
+\index{work@{work}!gr::lora\_sdr::hamming\_dec\_impl@{gr::lora\_sdr::hamming\_dec\_impl}}
+\doxysubsubsection{\texorpdfstring{work()}{work()}}
+{\footnotesize\ttfamily int gr\+::lora\+\_\+sdr\+::hamming\+\_\+dec\+\_\+impl\+::work (\begin{DoxyParamCaption}\item[{int}]{noutput\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+const\+\_\+void\+\_\+star \&}]{input\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+void\+\_\+star \&}]{output\+\_\+items }\end{DoxyParamCaption})}
+
+
+
+Main function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em noutput\+\_\+items} & \\
+\hline
+{\em input\+\_\+items} & \\
+\hline
+{\em output\+\_\+items} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1hamming__dec__impl_aac6775251e61db5b28d48755bb00d054}} 
+\index{gr::lora\_sdr::hamming\_dec\_impl@{gr::lora\_sdr::hamming\_dec\_impl}!cr\_app@{cr\_app}}
+\index{cr\_app@{cr\_app}!gr::lora\_sdr::hamming\_dec\_impl@{gr::lora\_sdr::hamming\_dec\_impl}}
+\doxysubsubsection{\texorpdfstring{cr\_app}{cr\_app}}
+{\footnotesize\ttfamily uint8\+\_\+t gr\+::lora\+\_\+sdr\+::hamming\+\_\+dec\+\_\+impl\+::cr\+\_\+app\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Coding rate use for the block. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1hamming__dec__impl_aa687b995a65fc5c6a10d4aba0f3fb2f0}} 
+\index{gr::lora\_sdr::hamming\_dec\_impl@{gr::lora\_sdr::hamming\_dec\_impl}!is\_first@{is\_first}}
+\index{is\_first@{is\_first}!gr::lora\_sdr::hamming\_dec\_impl@{gr::lora\_sdr::hamming\_dec\_impl}}
+\doxysubsubsection{\texorpdfstring{is\_first}{is\_first}}
+{\footnotesize\ttfamily bool gr\+::lora\+\_\+sdr\+::hamming\+\_\+dec\+\_\+impl\+::is\+\_\+first\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indicate that it is the first block. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1hamming__dec__impl_a97b48238fbd0aa5162df2003ba908e1e}} 
+\index{gr::lora\_sdr::hamming\_dec\_impl@{gr::lora\_sdr::hamming\_dec\_impl}!m\_cr@{m\_cr}}
+\index{m\_cr@{m\_cr}!gr::lora\_sdr::hamming\_dec\_impl@{gr::lora\_sdr::hamming\_dec\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_cr}{m\_cr}}
+{\footnotesize\ttfamily uint8\+\_\+t gr\+::lora\+\_\+sdr\+::hamming\+\_\+dec\+\_\+impl\+::m\+\_\+cr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transmission coding rate. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{hamming__dec__impl_8h}{hamming\+\_\+dec\+\_\+impl.\+h}}\end{DoxyCompactItemize}

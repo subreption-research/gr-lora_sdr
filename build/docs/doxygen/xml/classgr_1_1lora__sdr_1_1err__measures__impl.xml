@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="classgr_1_1lora__sdr_1_1err__measures__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora_sdr::err_measures_impl</compoundname>
+    <basecompoundref refid="classgr_1_1lora__sdr_1_1err__measures" prot="public" virt="non-virtual">gr::lora_sdr::err_measures</basecompoundref>
+    <includes refid="err__measures__impl_8h" local="no">err_measures_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1err__measures__impl_1ab7202171f89c7005b264e4baaedc1bb7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; char &gt;</type>
+        <definition>std::vector&lt;char&gt; gr::lora_sdr::err_measures_impl::m_corr_payload</definition>
+        <argsstring></argsstring>
+        <name>m_corr_payload</name>
+        <briefdescription>
+<para>Vector containing the reference payload. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/err_measures_impl.h" line="20" column="21" bodyfile="/home/martyn/gr-lora_sdr/lib/err_measures_impl.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1err__measures__impl_1af24cdfdabaf3b348da432c3ebcbadb1d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; char &gt;</type>
+        <definition>std::vector&lt;char&gt; gr::lora_sdr::err_measures_impl::m_payload</definition>
+        <argsstring></argsstring>
+        <name>m_payload</name>
+        <briefdescription>
+<para>Vector containing the received payload. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/err_measures_impl.h" line="26" column="21" bodyfile="/home/martyn/gr-lora_sdr/lib/err_measures_impl.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1err__measures__impl_1a6d1c86d9b2f96efc9ff1fdf2c8d473ee" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lora_sdr::err_measures_impl::BE</definition>
+        <argsstring></argsstring>
+        <name>BE</name>
+        <briefdescription>
+<para>Bits errors in the frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/err_measures_impl.h" line="32" column="13" bodyfile="/home/martyn/gr-lora_sdr/lib/err_measures_impl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1err__measures__impl_1aa14460ee9757ac1af575c5b3becce949" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lora_sdr::err_measures_impl::drop</definition>
+        <argsstring></argsstring>
+        <name>drop</name>
+        <briefdescription>
+<para>variable used to detect missing frames </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/err_measures_impl.h" line="38" column="13" bodyfile="/home/martyn/gr-lora_sdr/lib/err_measures_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1err__measures__impl_1a70be364136d66ddc755e1e1468d62559" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::err_measures_impl::msg_handler</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>msg_handler</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/err_measures_impl.h" line="49" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1err__measures__impl_1a14052b48c4b90bf6fb784cd84f8abdc6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::err_measures_impl::ref_handler</definition>
+        <argsstring>(pmt::pmt_t ref)</argsstring>
+        <name>ref_handler</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ref</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/err_measures_impl.h" line="56" column="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1err__measures__impl_1a719d49c656b47a95d3c6a5fa78f9fa06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora_sdr::err_measures_impl::err_measures_impl</definition>
+        <argsstring>()</argsstring>
+        <name>err_measures_impl</name>
+        <briefdescription>
+<para>Construct a new err measures impl object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/err_measures_impl.h" line="63" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1err__measures__impl_1ab65c3f943a8b19cb74d5accf47ab8e1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora_sdr::err_measures_impl::~err_measures_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~err_measures_impl</name>
+        <briefdescription>
+<para>Destroy the err measures impl object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/err_measures_impl.h" line="69" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1err__measures__impl_1aed53036188e66c19e7a2fb6eaa7b974b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::lora_sdr::err_measures_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+<para>Main function of error measurement. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>noutput_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>input_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/err_measures_impl.h" line="79" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>sync_block</label>
+      </node>
+      <node id="1">
+        <label>gr::lora_sdr::err_measures_impl</label>
+        <link refid="classgr_1_1lora__sdr_1_1err__measures__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gr::lora_sdr::err_measures</label>
+        <link refid="classgr_1_1lora__sdr_1_1err__measures"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>std::vector&lt; char &gt;</label>
+      </node>
+      <node id="3">
+        <label>sync_block</label>
+      </node>
+      <node id="1">
+        <label>gr::lora_sdr::err_measures_impl</label>
+        <link refid="classgr_1_1lora__sdr_1_1err__measures__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_corr_payload</edgelabel>
+          <edgelabel>m_payload</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gr::lora_sdr::err_measures</label>
+        <link refid="classgr_1_1lora__sdr_1_1err__measures"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/martyn/gr-lora_sdr/lib/err_measures_impl.h" line="13" column="5" bodyfile="/home/martyn/gr-lora_sdr/lib/err_measures_impl.h" bodystart="14" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora__sdr_1_1err__measures__impl_1a6d1c86d9b2f96efc9ff1fdf2c8d473ee" prot="private" virt="non-virtual"><scope>gr::lora_sdr::err_measures_impl</scope><name>BE</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1err__measures__impl_1aa14460ee9757ac1af575c5b3becce949" prot="private" virt="non-virtual"><scope>gr::lora_sdr::err_measures_impl</scope><name>drop</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1err__measures__impl_1a719d49c656b47a95d3c6a5fa78f9fa06" prot="public" virt="non-virtual"><scope>gr::lora_sdr::err_measures_impl</scope><name>err_measures_impl</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1err__measures__impl_1ab7202171f89c7005b264e4baaedc1bb7" prot="private" virt="non-virtual"><scope>gr::lora_sdr::err_measures_impl</scope><name>m_corr_payload</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1err__measures__impl_1af24cdfdabaf3b348da432c3ebcbadb1d" prot="private" virt="non-virtual"><scope>gr::lora_sdr::err_measures_impl</scope><name>m_payload</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1err__measures_1af065d77d6bda81dc5dbda893dd951e19" prot="public" virt="non-virtual"><scope>gr::lora_sdr::err_measures_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1err__measures__impl_1a70be364136d66ddc755e1e1468d62559" prot="private" virt="non-virtual"><scope>gr::lora_sdr::err_measures_impl</scope><name>msg_handler</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1err__measures__impl_1a14052b48c4b90bf6fb784cd84f8abdc6" prot="private" virt="non-virtual"><scope>gr::lora_sdr::err_measures_impl</scope><name>ref_handler</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1err__measures_1a51e39025d249df128721754dcd9dc7f7" prot="public" virt="non-virtual"><scope>gr::lora_sdr::err_measures_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1err__measures__impl_1aed53036188e66c19e7a2fb6eaa7b974b" prot="public" virt="non-virtual"><scope>gr::lora_sdr::err_measures_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1err__measures__impl_1ab65c3f943a8b19cb74d5accf47ab8e1f" prot="public" virt="non-virtual"><scope>gr::lora_sdr::err_measures_impl</scope><name>~err_measures_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

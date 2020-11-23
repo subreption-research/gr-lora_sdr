@@ -1,0 +1,475 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="classgr_1_1lora__sdr_1_1fft__demod__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora_sdr::fft_demod_impl</compoundname>
+    <basecompoundref refid="classgr_1_1lora__sdr_1_1fft__demod" prot="public" virt="non-virtual">gr::lora_sdr::fft_demod</basecompoundref>
+    <includes refid="fft__demod__impl_8h" local="no">fft_demod_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1aa8fa4584b292c63d5712da3199d15458" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora_sdr::fft_demod_impl::m_bw</definition>
+        <argsstring></argsstring>
+        <name>m_bw</name>
+        <briefdescription>
+<para>Bandwidth. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="21" column="16" bodyfile="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1afa0940e27a5dda61e9206c6d6e102970" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora_sdr::fft_demod_impl::m_samp_rate</definition>
+        <argsstring></argsstring>
+        <name>m_samp_rate</name>
+        <briefdescription>
+<para>Sampling rate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="22" column="16" bodyfile="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1ac39e22a443bc819d2ff303df29f0334c" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::lora_sdr::fft_demod_impl::m_sf</definition>
+        <argsstring></argsstring>
+        <name>m_sf</name>
+        <briefdescription>
+<para>Spreading factor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="23" column="15" bodyfile="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1a5b3609e945147746d8259eec1e8a2ba3" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::lora_sdr::fft_demod_impl::m_cr</definition>
+        <argsstring></argsstring>
+        <name>m_cr</name>
+        <briefdescription>
+<para>Coding rate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="24" column="15" bodyfile="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1a0b0d076e324daddbdb942267de205a97" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora_sdr::fft_demod_impl::m_number_of_bins</definition>
+        <argsstring></argsstring>
+        <name>m_number_of_bins</name>
+        <briefdescription>
+<para>Number of bins in each lora Symbol. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="26" column="16" bodyfile="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1a2f4330404757df5b7bfd7c9b97cf0ad0" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora_sdr::fft_demod_impl::m_samples_per_symbol</definition>
+        <argsstring></argsstring>
+        <name>m_samples_per_symbol</name>
+        <briefdescription>
+<para>Number of samples received per lora symbols. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="27" column="16" bodyfile="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1a17e7d986e999f3f1c3341743def29a88" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lora_sdr::fft_demod_impl::CFOint</definition>
+        <argsstring></argsstring>
+        <name>CFOint</name>
+        <briefdescription>
+<para>integer part of the CFO </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="28" column="11" bodyfile="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1a798b1551cd0767ad388b3906d7d2dd05" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora_sdr::fft_demod_impl::m_upchirp</definition>
+        <argsstring></argsstring>
+        <name>m_upchirp</name>
+        <briefdescription>
+<para>Reference upchirp. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="31" column="19" bodyfile="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1ad7807381ffdc3b388d97e38fd84f1f53" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora_sdr::fft_demod_impl::m_downchirp</definition>
+        <argsstring></argsstring>
+        <name>m_downchirp</name>
+        <briefdescription>
+<para>Reference downchirp. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="32" column="19" bodyfile="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1afaa84d5826d3d465a87a5f98439b95cc" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora_sdr::fft_demod_impl::m_dechirped</definition>
+        <argsstring></argsstring>
+        <name>m_dechirped</name>
+        <briefdescription>
+<para>Dechirped symbol. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="33" column="19" bodyfile="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1a0ccca8d20fd9e33d02d624bd337a3cb3" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora_sdr::fft_demod_impl::m_fft</definition>
+        <argsstring></argsstring>
+        <name>m_fft</name>
+        <briefdescription>
+<para>Result of the FFT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="34" column="19" bodyfile="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1aff9a44c1a882a6920d13f3e479460a5e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; uint32_t &gt;</type>
+        <definition>std::vector&lt;uint32_t&gt; gr::lora_sdr::fft_demod_impl::output</definition>
+        <argsstring></argsstring>
+        <name>output</name>
+        <briefdescription>
+<para>Stores the value to be outputted once a full bloc has been received. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="37" column="19" bodyfile="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1a6408faa4b1e5dfd6569e32df2fde7810" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora_sdr::fft_demod_impl::is_first</definition>
+        <argsstring></argsstring>
+        <name>is_first</name>
+        <briefdescription>
+<para>Indicate that the first block hasn&apos;t been fully received. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="38" column="12" bodyfile="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1a683bd4db4b34cee2e7746d9e8659dcb6" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::lora_sdr::fft_demod_impl::block_size</definition>
+        <argsstring></argsstring>
+        <name>block_size</name>
+        <briefdescription>
+<para>The number of lora symbol in one block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="39" column="15" bodyfile="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1ab22aa5ca548cd29411928b7004112de7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora_sdr::fft_demod_impl::received_cr</definition>
+        <argsstring></argsstring>
+        <name>received_cr</name>
+        <briefdescription>
+<para>Indicate that the coding rate has been given by the <ref refid="classgr_1_1lora__sdr_1_1header__decoder" kindref="compound">header_decoder</ref> block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="40" column="12" bodyfile="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1a93c4bc845c39a1e9c4ac6ac12cd3db66" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora_sdr::fft_demod_impl::received_crc</definition>
+        <argsstring></argsstring>
+        <name>received_crc</name>
+        <briefdescription>
+<para>Indicate that the crc presence has been given by the <ref refid="classgr_1_1lora__sdr_1_1header__decoder" kindref="compound">header_decoder</ref> block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="41" column="12" bodyfile="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1aad71bb643d43689a72d10dd7ac1437c6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora_sdr::fft_demod_impl::received_pay_len</definition>
+        <argsstring></argsstring>
+        <name>received_pay_len</name>
+        <briefdescription>
+<para>Indicate that the payload length has been given by the <ref refid="classgr_1_1lora__sdr_1_1header__decoder" kindref="compound">header_decoder</ref> block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="42" column="12" bodyfile="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1af9815b3171b41bc0a0bb979d54830f5c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t gr::lora_sdr::fft_demod_impl::get_symbol_val</definition>
+        <argsstring>(const gr_complex *samples)</argsstring>
+        <name>get_symbol_val</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>samples</declname>
+        </param>
+        <briefdescription>
+<para>Recover the lora symbol value using argmax of the dechirped symbol FFT. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to the symbol beginning. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="56" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1af5b2d9159011d36332f85e7c3823f483" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::fft_demod_impl::new_frame_handler</definition>
+        <argsstring>(pmt::pmt_t id)</argsstring>
+        <name>new_frame_handler</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Reset the block variables when a new lora packet needs to be decoded. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="61" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1a4c45b9ff4b282d539cadfce78a61d6d2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::fft_demod_impl::header_cr_handler</definition>
+        <argsstring>(pmt::pmt_t cr)</argsstring>
+        <name>header_cr_handler</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>cr</declname>
+        </param>
+        <briefdescription>
+<para>Handles the reception of the coding rate received by the <ref refid="classgr_1_1lora__sdr_1_1header__decoder" kindref="compound">header_decoder</ref> block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="66" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1a5d185ff5734610f99c80468d87eac7e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora_sdr::fft_demod_impl::fft_demod_impl</definition>
+        <argsstring>(float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head)</argsstring>
+        <name>fft_demod_impl</name>
+        <param>
+          <type>float</type>
+          <declname>samp_rate</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>bandwidth</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>sf</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>impl_head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="69" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1a7419ee12d81e6d0fa4ddcccd91ec9cd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora_sdr::fft_demod_impl::~fft_demod_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~fft_demod_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="70" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1a96287d39435951608c38f0056be4cd53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::fft_demod_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="73" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1fft__demod__impl_1ab06bde4706616dac75b7438b2e6b291e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::lora_sdr::fft_demod_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="75" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gr::lora_sdr::fft_demod_impl</label>
+        <link refid="classgr_1_1lora__sdr_1_1fft__demod__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>block</label>
+      </node>
+      <node id="2">
+        <label>gr::lora_sdr::fft_demod</label>
+        <link refid="classgr_1_1lora__sdr_1_1fft__demod"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gr::lora_sdr::fft_demod_impl</label>
+        <link refid="classgr_1_1lora__sdr_1_1fft__demod__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>block</label>
+      </node>
+      <node id="2">
+        <label>gr::lora_sdr::fft_demod</label>
+        <link refid="classgr_1_1lora__sdr_1_1fft__demod"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" line="18" column="5" bodyfile="/home/martyn/gr-lora_sdr/lib/fft_demod_impl.h" bodystart="19" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1a683bd4db4b34cee2e7746d9e8659dcb6" prot="private" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>block_size</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1a17e7d986e999f3f1c3341743def29a88" prot="private" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>CFOint</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1a5d185ff5734610f99c80468d87eac7e3" prot="public" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>fft_demod_impl</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1a96287d39435951608c38f0056be4cd53" prot="public" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1ab06bde4706616dac75b7438b2e6b291e" prot="public" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1af9815b3171b41bc0a0bb979d54830f5c" prot="private" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>get_symbol_val</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1a4c45b9ff4b282d539cadfce78a61d6d2" prot="private" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>header_cr_handler</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1a6408faa4b1e5dfd6569e32df2fde7810" prot="private" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>is_first</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1aa8fa4584b292c63d5712da3199d15458" prot="private" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>m_bw</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1a5b3609e945147746d8259eec1e8a2ba3" prot="private" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>m_cr</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1afaa84d5826d3d465a87a5f98439b95cc" prot="private" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>m_dechirped</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1ad7807381ffdc3b388d97e38fd84f1f53" prot="private" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>m_downchirp</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1a0ccca8d20fd9e33d02d624bd337a3cb3" prot="private" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>m_fft</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1a0b0d076e324daddbdb942267de205a97" prot="private" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>m_number_of_bins</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1afa0940e27a5dda61e9206c6d6e102970" prot="private" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>m_samp_rate</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1a2f4330404757df5b7bfd7c9b97cf0ad0" prot="private" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>m_samples_per_symbol</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1ac39e22a443bc819d2ff303df29f0334c" prot="private" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>m_sf</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1a798b1551cd0767ad388b3906d7d2dd05" prot="private" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>m_upchirp</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod_1a3416792e976c1759d3062530ae7df26a" prot="public" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1af5b2d9159011d36332f85e7c3823f483" prot="private" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>new_frame_handler</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1aff9a44c1a882a6920d13f3e479460a5e" prot="private" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>output</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1ab22aa5ca548cd29411928b7004112de7" prot="private" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>received_cr</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1a93c4bc845c39a1e9c4ac6ac12cd3db66" prot="private" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>received_crc</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1aad71bb643d43689a72d10dd7ac1437c6" prot="private" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>received_pay_len</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod_1ab2c3a81290444e82a9e741ce03baad91" prot="public" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod__impl_1a7419ee12d81e6d0fa4ddcccd91ec9cd8" prot="public" virt="non-virtual"><scope>gr::lora_sdr::fft_demod_impl</scope><name>~fft_demod_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,854 @@
+\doxysection{gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl Class Reference}
+\label{classgr_1_1lora__sdr_1_1frame__sync__impl}\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+
+
+{\ttfamily \#include $<$frame\+\_\+sync\+\_\+impl.\+h$>$}
+
+
+
+Inheritance diagram for gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classgr_1_1lora__sdr_1_1frame__sync__impl__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a9271e12468d0e5bcc6cd9b25cd7ca23b}{frame\+\_\+sync\+\_\+impl}} (float samp\+\_\+rate, uint32\+\_\+t bandwidth, uint8\+\_\+t sf, bool impl\+\_\+head)
+\begin{DoxyCompactList}\small\item\em Construct a new frame sync impl object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_aba5790ae712b7e49561462e3b4606d78}{$\sim$frame\+\_\+sync\+\_\+impl}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the frame sync impl object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a7860e2694fb44c6af427bce375214d7f}{forecast}} (int noutput\+\_\+items, gr\+\_\+vector\+\_\+int \&ninput\+\_\+items\+\_\+required)
+\begin{DoxyCompactList}\small\item\em Where all the action really happens. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_aeaf4f32d03b9c603d3167dc4b99a097b}{general\+\_\+work}} (int noutput\+\_\+items, gr\+\_\+vector\+\_\+int \&ninput\+\_\+items, gr\+\_\+vector\+\_\+const\+\_\+void\+\_\+star \&input\+\_\+items, gr\+\_\+vector\+\_\+void\+\_\+star \&output\+\_\+items)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_ac3ebff914014982b368f2cf729e3a43d}{Decoder\+State}} \{ \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_ac3ebff914014982b368f2cf729e3a43dae6ca094bf562c31fc6eda992c1bf6726}{D\+E\+T\+E\+CT}}, 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_ac3ebff914014982b368f2cf729e3a43da607f95a36b6031f20f71eec37d100b78}{S\+Y\+NC}}, 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_ac3ebff914014982b368f2cf729e3a43daf511314f95ff2885db561532fe65a29c}{F\+R\+A\+C\+\_\+\+C\+F\+O\+\_\+\+C\+O\+R\+R\+EC}}, 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_ac3ebff914014982b368f2cf729e3a43dad4d47759f099f2f4c680aa4b5c1db7cc}{S\+T\+OP}}
+ \}
+\begin{DoxyCompactList}\small\item\em Decoder states\+: \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a2b524afc6785765fff65a13449cb8c95}{Sync\+State}} \{ \newline
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a2b524afc6785765fff65a13449cb8c95a0feb99e1be18748a655f97e0c0ab51b0}{N\+E\+T\+\_\+\+I\+D1}}, 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a2b524afc6785765fff65a13449cb8c95ab391933a2a5b33fc235fda1f4c8bab52}{N\+E\+T\+\_\+\+I\+D2}}, 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a2b524afc6785765fff65a13449cb8c95a363c02bacac44b26e4e918f80c0d5eec}{D\+O\+W\+N\+C\+H\+I\+R\+P1}}, 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a2b524afc6785765fff65a13449cb8c95af96bb9c0004167b468656daaff4fea30}{D\+O\+W\+N\+C\+H\+I\+R\+P2}}, 
+\newline
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a2b524afc6785765fff65a13449cb8c95a3e4e5a91c81bedf48f4c2cbdc2fed549}{Q\+U\+A\+R\+T\+E\+R\+\_\+\+D\+O\+WN}}
+ \}
+\begin{DoxyCompactList}\small\item\em Sync states\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_abdf0395969da75f873586ddc2ed3ed2b}{header\+\_\+cr\+\_\+handler}} (pmt\+::pmt\+\_\+t cr)
+\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_ac2d3aead505986fd7443f20b7516c415}{header\+\_\+pay\+\_\+len\+\_\+handler}} (pmt\+::pmt\+\_\+t pay\+\_\+len)
+\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_adf179669215a4186eb9e118c74da1055}{header\+\_\+crc\+\_\+handler}} (pmt\+::pmt\+\_\+t crc)
+\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a8cafbe752ffa76beaf3c3d61fc4528d4}{frame\+\_\+err\+\_\+handler}} (pmt\+::pmt\+\_\+t err)
+\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a81f8d548daf3cf8fe03380e402a8a530}{estimate\+\_\+\+C\+FO}} (gr\+\_\+complex $\ast$samples)
+\begin{DoxyCompactList}\small\item\em Estimate the value of fractional part of the C\+FO using R\+C\+T\+SL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a1f775ab159a615812bf22c94d919ffd7}{estimate\+\_\+\+C\+F\+O\+\_\+\+Bernier}} ()
+\begin{DoxyCompactList}\small\item\em (not used) Estimate the value of fractional part of the C\+FO using Berniers algorithm \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a7650eac6bb57346f4ab538988b7ba4ba}{estimate\+\_\+\+S\+TO}} ()
+\begin{DoxyCompactList}\small\item\em Estimate the value of fractional part of the S\+TO from m\+\_\+consec\+\_\+up. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a7a0f5f8aefdd0a8b21bb5095ddd729a8}{get\+\_\+symbol\+\_\+val}} (const gr\+\_\+complex $\ast$samples, gr\+\_\+complex $\ast$ref\+\_\+chirp)
+\begin{DoxyCompactList}\small\item\em The pointer to the symbol beginning. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a3f1a359b54ddc731d4327d8c72a19dab}{determine\+\_\+energy}} (const gr\+\_\+complex $\ast$samples)
+\begin{DoxyCompactList}\small\item\em Determine the energy of a symbol. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a283eae1d4c91804cbb25d032590b6cf9}{header\+\_\+err\+\_\+handler}} (pmt\+::pmt\+\_\+t payload\+\_\+len)
+\begin{DoxyCompactList}\small\item\em Handles the error message coming from the header decoding. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_af6f15eff69be46a3ebbc6711f1f0dcd3}{m\+\_\+state}}
+\begin{DoxyCompactList}\small\item\em Current state of the synchronization. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a9a4ae1521f6018562e434771c26d7e66}{m\+\_\+bw}}
+\begin{DoxyCompactList}\small\item\em Bandwith. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_ab684e902c9a0d246d5f0c54dfa66936d}{m\+\_\+samp\+\_\+rate}}
+\begin{DoxyCompactList}\small\item\em Sampling rate. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_aa62258177e546ad516d4e1556036b4fb}{m\+\_\+sf}}
+\begin{DoxyCompactList}\small\item\em Spreading factor. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a89bdc0fa6ac011519600b410dd1de931}{m\+\_\+cr}}
+\begin{DoxyCompactList}\small\item\em Coding rate. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a2233e37b5a8ca7b75e09c3a7a829b511}{m\+\_\+pay\+\_\+len}}
+\begin{DoxyCompactList}\small\item\em Payload length. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a003179df5ff8544990a851a42fe0807d}{m\+\_\+has\+\_\+crc}}
+\begin{DoxyCompactList}\small\item\em C\+RC presence. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a8760cc4cf884ead3d41c3c7ec7ff9678}{m\+\_\+impl\+\_\+head}}
+\begin{DoxyCompactList}\small\item\em Use implicit header mode. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a2bb5eeff6d22579aa578477055dfc0a4}{received\+\_\+cr}}
+\begin{DoxyCompactList}\small\item\em Indicate that the coding rate has been given by the \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder}{header\+\_\+decoder}} block. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_aa5f3945fed7b5b7540703552da7451e9}{received\+\_\+crc}}
+\begin{DoxyCompactList}\small\item\em Indicate that the crc presence has been given by the \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder}{header\+\_\+decoder}} block. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a3c77a061b85d8ddabcdc5371061f43b6}{received\+\_\+pay\+\_\+len}}
+\begin{DoxyCompactList}\small\item\em Indicate that the payload length has been given by the \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder}{header\+\_\+decoder}} block. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_ae3f2860b9a9ab9ec2771246f586404ea}{m\+\_\+number\+\_\+of\+\_\+bins}}
+\begin{DoxyCompactList}\small\item\em Number of bins in each lora Symbol. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a470a1f224c9b0dd35c1daab4df69eed9}{m\+\_\+samples\+\_\+per\+\_\+symbol}}
+\begin{DoxyCompactList}\small\item\em Number of samples received per lora symbols. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_abdccba1627ee3b149979e5add9d077f7}{symb\+\_\+numb}}
+\begin{DoxyCompactList}\small\item\em number of payload loar symbols \end{DoxyCompactList}\item 
+std\+::vector$<$ gr\+\_\+complex $>$ \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a383c6483d547e6510c88afffa16a7013}{in\+\_\+down}}
+\begin{DoxyCompactList}\small\item\em downsampled input \end{DoxyCompactList}\item 
+std\+::vector$<$ gr\+\_\+complex $>$ \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a14d950a36abb113ed9ac633a569e12f3}{m\+\_\+downchirp}}
+\begin{DoxyCompactList}\small\item\em Reference downchirp. \end{DoxyCompactList}\item 
+std\+::vector$<$ gr\+\_\+complex $>$ \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_af45c81b0f96ffcc571b9cf1cade06b98}{m\+\_\+upchirp}}
+\begin{DoxyCompactList}\small\item\em Reference upchirp. \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a64adb1e1f451420f2a89e2acf831a954}{symbol\+\_\+cnt}}
+\begin{DoxyCompactList}\small\item\em Number of symbols already received. \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_ae80408bcee980142d126fbdf73d91e25}{bin\+\_\+idx}}
+\begin{DoxyCompactList}\small\item\em value of previous lora symbol \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a8bb40a93d35d2077119cf08569a070e8}{bin\+\_\+idx\+\_\+new}}
+\begin{DoxyCompactList}\small\item\em value of newly demodulated symbol \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_aa581b92de3463c3ee54f00370c73396f}{n\+\_\+up}}
+\begin{DoxyCompactList}\small\item\em Number of consecutive upchirps in preamble. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a14c396c5df39fa330aba0869e6033048}{symbols\+\_\+to\+\_\+skip}}
+\begin{DoxyCompactList}\small\item\em Number of integer symbol to skip after consecutive upchirps. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a23563e7b9e8c3febede3510ce97beaff}{net\+\_\+id\+\_\+1}}
+\begin{DoxyCompactList}\small\item\em network identifier 1 \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a494befbdb0b75b127c616b9d4a736255}{net\+\_\+id\+\_\+2}}
+\begin{DoxyCompactList}\small\item\em network identifier 2 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structkiss__fft__cpx}{kiss\+\_\+fft\+\_\+cpx}} $\ast$ \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a46cfbafe7bdf7f1f75812fc21f510736}{cx\+\_\+in}}
+\begin{DoxyCompactList}\small\item\em input of the F\+FT \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structkiss__fft__cpx}{kiss\+\_\+fft\+\_\+cpx}} $\ast$ \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a05ffc10157b0b2820eabe50ee3e9354c}{cx\+\_\+out}}
+\begin{DoxyCompactList}\small\item\em output of the F\+FT \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a47754256d95dbfaea66010934d19ea64}{items\+\_\+to\+\_\+consume}}
+\begin{DoxyCompactList}\small\item\em Number of items to consume after each iteration of the general\+\_\+work function. \end{DoxyCompactList}\item 
+std\+::vector$<$ gr\+\_\+complex $>$ \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a086f7bf25fa3b2e4c66eb7576e83c45c}{preamble\+\_\+raw}}
+\begin{DoxyCompactList}\small\item\em vector containing the preamble upchirps without any synchronization \end{DoxyCompactList}\item 
+std\+::vector$<$ gr\+\_\+complex $>$ \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a40ed0f1b1076744b029bc6223244887f}{preamble\+\_\+up}}
+\begin{DoxyCompactList}\small\item\em vector containing the preamble upchirps \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_aac6f3ec75f3c13ea1d8516254baa33da}{up\+\_\+symb\+\_\+to\+\_\+use}}
+\begin{DoxyCompactList}\small\item\em number of upchirp symbols to use for C\+FO and S\+TO frac estimation \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a59d7020858f6c9002d54985231f16d7d}{k\+\_\+hat}}
+\begin{DoxyCompactList}\small\item\em integer part of C\+F\+O+\+S\+TO \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a0e4738dbc0b13031ff68bc4c27d10ac5}{lambda\+\_\+cfo}}
+\begin{DoxyCompactList}\small\item\em fractional part of C\+FO \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_ab5584e0986ebc2d80c92291787a189a1}{lambda\+\_\+bernier}}
+\begin{DoxyCompactList}\small\item\em fractional part of C\+FO using Berniers algo \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_ae2c64922abd169455d933c8eb74ecfcc}{lambda\+\_\+sto}}
+\begin{DoxyCompactList}\small\item\em fractional part of C\+FO \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a2849c607a48302dc88bcc823ea57c641}{cfo\+\_\+sto\+\_\+est}}
+\begin{DoxyCompactList}\small\item\em indicate that the estimation of lambda\+\_\+cfo/sto has been performed \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a0e20beb40f927d2e3b8440db05c3a2c2}{us\+Factor}}
+\begin{DoxyCompactList}\small\item\em upsampling factor used by the F\+IR interpolator \end{DoxyCompactList}\item 
+std\+::vector$<$ gr\+\_\+complex $>$ \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a94b01d0b856953cf298dc26ce601ca94}{C\+F\+O\+\_\+frac\+\_\+correc}}
+\begin{DoxyCompactList}\small\item\em cfo frac correction vector \end{DoxyCompactList}\item 
+std\+::vector$<$ gr\+\_\+complex $>$ \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a4068c720254e46d5274b20ef99cd08b7}{symb\+\_\+corr}}
+\begin{DoxyCompactList}\small\item\em symbol with C\+FO frac corrected \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a380e05e0270be852eae202c159624445}{down\+\_\+val}}
+\begin{DoxyCompactList}\small\item\em value of the preamble downchirps \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a3218be7beba0809c5e38b3ce9be5e9c5}{C\+F\+Oint}}
+\begin{DoxyCompactList}\small\item\em integer part of C\+FO \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a13f07cd01445600e72d1d5c0865d92c2}{net\+\_\+id\+\_\+off}}
+\begin{DoxyCompactList}\small\item\em offset of the network identifier \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_ac3ebff914014982b368f2cf729e3a43d}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!DecoderState@{DecoderState}}
+\index{DecoderState@{DecoderState}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{DecoderState}{DecoderState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_ac3ebff914014982b368f2cf729e3a43d}{gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::\+Decoder\+State}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Decoder states\+: 
+
+
+\begin{DoxyItemize}
+\item D\+E\+T\+E\+CT
+\item S\+Y\+NC
+\item F\+R\+A\+C\+\_\+\+C\+F\+O\+\_\+\+C\+O\+R\+R\+EC
+\item S\+T\+OP 
+\end{DoxyItemize}\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DETECT@{DETECT}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!DETECT@{DETECT}}}\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_ac3ebff914014982b368f2cf729e3a43dae6ca094bf562c31fc6eda992c1bf6726}} 
+D\+E\+T\+E\+CT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SYNC@{SYNC}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!SYNC@{SYNC}}}\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_ac3ebff914014982b368f2cf729e3a43da607f95a36b6031f20f71eec37d100b78}} 
+S\+Y\+NC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FRAC\_CFO\_CORREC@{FRAC\_CFO\_CORREC}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!FRAC\_CFO\_CORREC@{FRAC\_CFO\_CORREC}}}\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_ac3ebff914014982b368f2cf729e3a43daf511314f95ff2885db561532fe65a29c}} 
+F\+R\+A\+C\+\_\+\+C\+F\+O\+\_\+\+C\+O\+R\+R\+EC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STOP@{STOP}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!STOP@{STOP}}}\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_ac3ebff914014982b368f2cf729e3a43dad4d47759f099f2f4c680aa4b5c1db7cc}} 
+S\+T\+OP&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a2b524afc6785765fff65a13449cb8c95}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!SyncState@{SyncState}}
+\index{SyncState@{SyncState}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{SyncState}{SyncState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classgr_1_1lora__sdr_1_1frame__sync__impl_a2b524afc6785765fff65a13449cb8c95}{gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::\+Sync\+State}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sync states\+: 
+
+
+\begin{DoxyItemize}
+\item N\+E\+T\+\_\+\+I\+D1
+\item N\+E\+T\+\_\+\+I\+D2
+\item D\+O\+W\+N\+C\+H\+I\+R\+P1
+\item D\+O\+W\+N\+C\+H\+I\+R\+P2
+\item Q\+U\+A\+R\+T\+E\+R\+\_\+\+D\+O\+WN 
+\end{DoxyItemize}\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NET\_ID1@{NET\_ID1}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!NET\_ID1@{NET\_ID1}}}\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a2b524afc6785765fff65a13449cb8c95a0feb99e1be18748a655f97e0c0ab51b0}} 
+N\+E\+T\+\_\+\+I\+D1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NET\_ID2@{NET\_ID2}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!NET\_ID2@{NET\_ID2}}}\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a2b524afc6785765fff65a13449cb8c95ab391933a2a5b33fc235fda1f4c8bab52}} 
+N\+E\+T\+\_\+\+I\+D2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOWNCHIRP1@{DOWNCHIRP1}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!DOWNCHIRP1@{DOWNCHIRP1}}}\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a2b524afc6785765fff65a13449cb8c95a363c02bacac44b26e4e918f80c0d5eec}} 
+D\+O\+W\+N\+C\+H\+I\+R\+P1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOWNCHIRP2@{DOWNCHIRP2}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!DOWNCHIRP2@{DOWNCHIRP2}}}\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a2b524afc6785765fff65a13449cb8c95af96bb9c0004167b468656daaff4fea30}} 
+D\+O\+W\+N\+C\+H\+I\+R\+P2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{QUARTER\_DOWN@{QUARTER\_DOWN}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!QUARTER\_DOWN@{QUARTER\_DOWN}}}\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a2b524afc6785765fff65a13449cb8c95a3e4e5a91c81bedf48f4c2cbdc2fed549}} 
+Q\+U\+A\+R\+T\+E\+R\+\_\+\+D\+O\+WN&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a9271e12468d0e5bcc6cd9b25cd7ca23b}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!frame\_sync\_impl@{frame\_sync\_impl}}
+\index{frame\_sync\_impl@{frame\_sync\_impl}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{frame\_sync\_impl()}{frame\_sync\_impl()}}
+{\footnotesize\ttfamily gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::frame\+\_\+sync\+\_\+impl (\begin{DoxyParamCaption}\item[{float}]{samp\+\_\+rate,  }\item[{uint32\+\_\+t}]{bandwidth,  }\item[{uint8\+\_\+t}]{sf,  }\item[{bool}]{impl\+\_\+head }\end{DoxyParamCaption})}
+
+
+
+Construct a new frame sync impl object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em samp\+\_\+rate} & \\
+\hline
+{\em bandwidth} & \\
+\hline
+{\em sf} & \\
+\hline
+{\em impl\+\_\+head} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_aba5790ae712b7e49561462e3b4606d78}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!````~frame\_sync\_impl@{$\sim$frame\_sync\_impl}}
+\index{````~frame\_sync\_impl@{$\sim$frame\_sync\_impl}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{$\sim$frame\_sync\_impl()}{~frame\_sync\_impl()}}
+{\footnotesize\ttfamily gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::$\sim$frame\+\_\+sync\+\_\+impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the frame sync impl object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a3f1a359b54ddc731d4327d8c72a19dab}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!determine\_energy@{determine\_energy}}
+\index{determine\_energy@{determine\_energy}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{determine\_energy()}{determine\_energy()}}
+{\footnotesize\ttfamily float gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::determine\+\_\+energy (\begin{DoxyParamCaption}\item[{const gr\+\_\+complex $\ast$}]{samples }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Determine the energy of a symbol. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em samples} & The complex symbol to analyse. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a81f8d548daf3cf8fe03380e402a8a530}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!estimate\_CFO@{estimate\_CFO}}
+\index{estimate\_CFO@{estimate\_CFO}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{estimate\_CFO()}{estimate\_CFO()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::estimate\+\_\+\+C\+FO (\begin{DoxyParamCaption}\item[{gr\+\_\+complex $\ast$}]{samples }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Estimate the value of fractional part of the C\+FO using R\+C\+T\+SL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em samples} & The pointer to the preamble beginning.(We might want to avoid the first symbol since it might be incomplete) \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a1f775ab159a615812bf22c94d919ffd7}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!estimate\_CFO\_Bernier@{estimate\_CFO\_Bernier}}
+\index{estimate\_CFO\_Bernier@{estimate\_CFO\_Bernier}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{estimate\_CFO\_Bernier()}{estimate\_CFO\_Bernier()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::estimate\+\_\+\+C\+F\+O\+\_\+\+Bernier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+(not used) Estimate the value of fractional part of the C\+FO using Berniers algorithm 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a7650eac6bb57346f4ab538988b7ba4ba}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!estimate\_STO@{estimate\_STO}}
+\index{estimate\_STO@{estimate\_STO}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{estimate\_STO()}{estimate\_STO()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::estimate\+\_\+\+S\+TO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Estimate the value of fractional part of the S\+TO from m\+\_\+consec\+\_\+up. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a7860e2694fb44c6af427bce375214d7f}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!forecast@{forecast}}
+\index{forecast@{forecast}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{forecast()}{forecast()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::forecast (\begin{DoxyParamCaption}\item[{int}]{noutput\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+int \&}]{ninput\+\_\+items\+\_\+required }\end{DoxyParamCaption})}
+
+
+
+Where all the action really happens. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em noutput\+\_\+items} & \\
+\hline
+{\em ninput\+\_\+items\+\_\+required} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a8cafbe752ffa76beaf3c3d61fc4528d4}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!frame\_err\_handler@{frame\_err\_handler}}
+\index{frame\_err\_handler@{frame\_err\_handler}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{frame\_err\_handler()}{frame\_err\_handler()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::frame\+\_\+err\+\_\+handler (\begin{DoxyParamCaption}\item[{pmt\+::pmt\+\_\+t}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em err} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_aeaf4f32d03b9c603d3167dc4b99a097b}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!general\_work@{general\_work}}
+\index{general\_work@{general\_work}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{general\_work()}{general\_work()}}
+{\footnotesize\ttfamily int gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::general\+\_\+work (\begin{DoxyParamCaption}\item[{int}]{noutput\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+int \&}]{ninput\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+const\+\_\+void\+\_\+star \&}]{input\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+void\+\_\+star \&}]{output\+\_\+items }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em noutput\+\_\+items} & \\
+\hline
+{\em ninput\+\_\+items} & \\
+\hline
+{\em input\+\_\+items} & \\
+\hline
+{\em output\+\_\+items} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a7a0f5f8aefdd0a8b21bb5095ddd729a8}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!get\_symbol\_val@{get\_symbol\_val}}
+\index{get\_symbol\_val@{get\_symbol\_val}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{get\_symbol\_val()}{get\_symbol\_val()}}
+{\footnotesize\ttfamily uint32\+\_\+t gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::get\+\_\+symbol\+\_\+val (\begin{DoxyParamCaption}\item[{const gr\+\_\+complex $\ast$}]{samples,  }\item[{gr\+\_\+complex $\ast$}]{ref\+\_\+chirp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The pointer to the symbol beginning. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em samples} & \\
+\hline
+{\em ref\+\_\+chirp} & The reference chirp to use to dechirp the lora symbol. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t 
+\end{DoxyReturn}
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_abdf0395969da75f873586ddc2ed3ed2b}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!header\_cr\_handler@{header\_cr\_handler}}
+\index{header\_cr\_handler@{header\_cr\_handler}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{header\_cr\_handler()}{header\_cr\_handler()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::header\+\_\+cr\+\_\+handler (\begin{DoxyParamCaption}\item[{pmt\+::pmt\+\_\+t}]{cr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em cr} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_adf179669215a4186eb9e118c74da1055}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!header\_crc\_handler@{header\_crc\_handler}}
+\index{header\_crc\_handler@{header\_crc\_handler}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{header\_crc\_handler()}{header\_crc\_handler()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::header\+\_\+crc\+\_\+handler (\begin{DoxyParamCaption}\item[{pmt\+::pmt\+\_\+t}]{crc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em crc} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a283eae1d4c91804cbb25d032590b6cf9}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!header\_err\_handler@{header\_err\_handler}}
+\index{header\_err\_handler@{header\_err\_handler}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{header\_err\_handler()}{header\_err\_handler()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::header\+\_\+err\+\_\+handler (\begin{DoxyParamCaption}\item[{pmt\+::pmt\+\_\+t}]{payload\+\_\+len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handles the error message coming from the header decoding. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload\+\_\+len} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_ac2d3aead505986fd7443f20b7516c415}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!header\_pay\_len\_handler@{header\_pay\_len\_handler}}
+\index{header\_pay\_len\_handler@{header\_pay\_len\_handler}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{header\_pay\_len\_handler()}{header\_pay\_len\_handler()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::header\+\_\+pay\+\_\+len\+\_\+handler (\begin{DoxyParamCaption}\item[{pmt\+::pmt\+\_\+t}]{pay\+\_\+len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em pay\+\_\+len} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_ae80408bcee980142d126fbdf73d91e25}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!bin\_idx@{bin\_idx}}
+\index{bin\_idx@{bin\_idx}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{bin\_idx}{bin\_idx}}
+{\footnotesize\ttfamily int32\+\_\+t gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::bin\+\_\+idx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+value of previous lora symbol 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a8bb40a93d35d2077119cf08569a070e8}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!bin\_idx\_new@{bin\_idx\_new}}
+\index{bin\_idx\_new@{bin\_idx\_new}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{bin\_idx\_new}{bin\_idx\_new}}
+{\footnotesize\ttfamily int32\+\_\+t gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::bin\+\_\+idx\+\_\+new\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+value of newly demodulated symbol 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a94b01d0b856953cf298dc26ce601ca94}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!CFO\_frac\_correc@{CFO\_frac\_correc}}
+\index{CFO\_frac\_correc@{CFO\_frac\_correc}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{CFO\_frac\_correc}{CFO\_frac\_correc}}
+{\footnotesize\ttfamily std\+::vector$<$gr\+\_\+complex$>$ gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::\+C\+F\+O\+\_\+frac\+\_\+correc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+cfo frac correction vector 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a2849c607a48302dc88bcc823ea57c641}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!cfo\_sto\_est@{cfo\_sto\_est}}
+\index{cfo\_sto\_est@{cfo\_sto\_est}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{cfo\_sto\_est}{cfo\_sto\_est}}
+{\footnotesize\ttfamily bool gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::cfo\+\_\+sto\+\_\+est\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+indicate that the estimation of lambda\+\_\+cfo/sto has been performed 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a3218be7beba0809c5e38b3ce9be5e9c5}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!CFOint@{CFOint}}
+\index{CFOint@{CFOint}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{CFOint}{CFOint}}
+{\footnotesize\ttfamily int gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::\+C\+F\+Oint\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+integer part of C\+FO 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a46cfbafe7bdf7f1f75812fc21f510736}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!cx\_in@{cx\_in}}
+\index{cx\_in@{cx\_in}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{cx\_in}{cx\_in}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structkiss__fft__cpx}{kiss\+\_\+fft\+\_\+cpx}}$\ast$ gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::cx\+\_\+in\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+input of the F\+FT 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a05ffc10157b0b2820eabe50ee3e9354c}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!cx\_out@{cx\_out}}
+\index{cx\_out@{cx\_out}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{cx\_out}{cx\_out}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structkiss__fft__cpx}{kiss\+\_\+fft\+\_\+cpx}}$\ast$ gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::cx\+\_\+out\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+output of the F\+FT 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a380e05e0270be852eae202c159624445}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!down\_val@{down\_val}}
+\index{down\_val@{down\_val}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{down\_val}{down\_val}}
+{\footnotesize\ttfamily int gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::down\+\_\+val\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+value of the preamble downchirps 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a383c6483d547e6510c88afffa16a7013}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!in\_down@{in\_down}}
+\index{in\_down@{in\_down}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{in\_down}{in\_down}}
+{\footnotesize\ttfamily std\+::vector$<$gr\+\_\+complex$>$ gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::in\+\_\+down\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+downsampled input 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a47754256d95dbfaea66010934d19ea64}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!items\_to\_consume@{items\_to\_consume}}
+\index{items\_to\_consume@{items\_to\_consume}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{items\_to\_consume}{items\_to\_consume}}
+{\footnotesize\ttfamily int gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::items\+\_\+to\+\_\+consume\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Number of items to consume after each iteration of the general\+\_\+work function. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a59d7020858f6c9002d54985231f16d7d}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!k\_hat@{k\_hat}}
+\index{k\_hat@{k\_hat}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{k\_hat}{k\_hat}}
+{\footnotesize\ttfamily int gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::k\+\_\+hat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+integer part of C\+F\+O+\+S\+TO 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_ab5584e0986ebc2d80c92291787a189a1}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!lambda\_bernier@{lambda\_bernier}}
+\index{lambda\_bernier@{lambda\_bernier}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{lambda\_bernier}{lambda\_bernier}}
+{\footnotesize\ttfamily double gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::lambda\+\_\+bernier\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+fractional part of C\+FO using Berniers algo 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a0e4738dbc0b13031ff68bc4c27d10ac5}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!lambda\_cfo@{lambda\_cfo}}
+\index{lambda\_cfo@{lambda\_cfo}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{lambda\_cfo}{lambda\_cfo}}
+{\footnotesize\ttfamily double gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::lambda\+\_\+cfo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+fractional part of C\+FO 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_ae2c64922abd169455d933c8eb74ecfcc}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!lambda\_sto@{lambda\_sto}}
+\index{lambda\_sto@{lambda\_sto}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{lambda\_sto}{lambda\_sto}}
+{\footnotesize\ttfamily double gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::lambda\+\_\+sto\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+fractional part of C\+FO 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a9a4ae1521f6018562e434771c26d7e66}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!m\_bw@{m\_bw}}
+\index{m\_bw@{m\_bw}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_bw}{m\_bw}}
+{\footnotesize\ttfamily uint32\+\_\+t gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::m\+\_\+bw\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bandwith. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a89bdc0fa6ac011519600b410dd1de931}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!m\_cr@{m\_cr}}
+\index{m\_cr@{m\_cr}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_cr}{m\_cr}}
+{\footnotesize\ttfamily uint8\+\_\+t gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::m\+\_\+cr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Coding rate. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a14d950a36abb113ed9ac633a569e12f3}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!m\_downchirp@{m\_downchirp}}
+\index{m\_downchirp@{m\_downchirp}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_downchirp}{m\_downchirp}}
+{\footnotesize\ttfamily std\+::vector$<$gr\+\_\+complex$>$ gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::m\+\_\+downchirp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reference downchirp. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a003179df5ff8544990a851a42fe0807d}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!m\_has\_crc@{m\_has\_crc}}
+\index{m\_has\_crc@{m\_has\_crc}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_has\_crc}{m\_has\_crc}}
+{\footnotesize\ttfamily uint8\+\_\+t gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::m\+\_\+has\+\_\+crc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+C\+RC presence. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a8760cc4cf884ead3d41c3c7ec7ff9678}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!m\_impl\_head@{m\_impl\_head}}
+\index{m\_impl\_head@{m\_impl\_head}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_impl\_head}{m\_impl\_head}}
+{\footnotesize\ttfamily bool gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::m\+\_\+impl\+\_\+head\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Use implicit header mode. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_ae3f2860b9a9ab9ec2771246f586404ea}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!m\_number\_of\_bins@{m\_number\_of\_bins}}
+\index{m\_number\_of\_bins@{m\_number\_of\_bins}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_number\_of\_bins}{m\_number\_of\_bins}}
+{\footnotesize\ttfamily uint32\+\_\+t gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::m\+\_\+number\+\_\+of\+\_\+bins\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Number of bins in each lora Symbol. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a2233e37b5a8ca7b75e09c3a7a829b511}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!m\_pay\_len@{m\_pay\_len}}
+\index{m\_pay\_len@{m\_pay\_len}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_pay\_len}{m\_pay\_len}}
+{\footnotesize\ttfamily uint32\+\_\+t gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::m\+\_\+pay\+\_\+len\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Payload length. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_ab684e902c9a0d246d5f0c54dfa66936d}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!m\_samp\_rate@{m\_samp\_rate}}
+\index{m\_samp\_rate@{m\_samp\_rate}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_samp\_rate}{m\_samp\_rate}}
+{\footnotesize\ttfamily uint32\+\_\+t gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::m\+\_\+samp\+\_\+rate\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sampling rate. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a470a1f224c9b0dd35c1daab4df69eed9}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!m\_samples\_per\_symbol@{m\_samples\_per\_symbol}}
+\index{m\_samples\_per\_symbol@{m\_samples\_per\_symbol}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_samples\_per\_symbol}{m\_samples\_per\_symbol}}
+{\footnotesize\ttfamily uint32\+\_\+t gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::m\+\_\+samples\+\_\+per\+\_\+symbol\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Number of samples received per lora symbols. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_aa62258177e546ad516d4e1556036b4fb}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!m\_sf@{m\_sf}}
+\index{m\_sf@{m\_sf}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_sf}{m\_sf}}
+{\footnotesize\ttfamily uint8\+\_\+t gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::m\+\_\+sf\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spreading factor. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_af6f15eff69be46a3ebbc6711f1f0dcd3}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!m\_state@{m\_state}}
+\index{m\_state@{m\_state}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_state}{m\_state}}
+{\footnotesize\ttfamily uint8\+\_\+t gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::m\+\_\+state\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Current state of the synchronization. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_af45c81b0f96ffcc571b9cf1cade06b98}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!m\_upchirp@{m\_upchirp}}
+\index{m\_upchirp@{m\_upchirp}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_upchirp}{m\_upchirp}}
+{\footnotesize\ttfamily std\+::vector$<$gr\+\_\+complex$>$ gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::m\+\_\+upchirp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reference upchirp. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_aa581b92de3463c3ee54f00370c73396f}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!n\_up@{n\_up}}
+\index{n\_up@{n\_up}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{n\_up}{n\_up}}
+{\footnotesize\ttfamily uint32\+\_\+t gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::n\+\_\+up\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Number of consecutive upchirps in preamble. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a23563e7b9e8c3febede3510ce97beaff}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!net\_id\_1@{net\_id\_1}}
+\index{net\_id\_1@{net\_id\_1}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{net\_id\_1}{net\_id\_1}}
+{\footnotesize\ttfamily uint32\+\_\+t gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::net\+\_\+id\+\_\+1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+network identifier 1 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a494befbdb0b75b127c616b9d4a736255}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!net\_id\_2@{net\_id\_2}}
+\index{net\_id\_2@{net\_id\_2}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{net\_id\_2}{net\_id\_2}}
+{\footnotesize\ttfamily uint32\+\_\+t gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::net\+\_\+id\+\_\+2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+network identifier 2 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a13f07cd01445600e72d1d5c0865d92c2}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!net\_id\_off@{net\_id\_off}}
+\index{net\_id\_off@{net\_id\_off}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{net\_id\_off}{net\_id\_off}}
+{\footnotesize\ttfamily int gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::net\+\_\+id\+\_\+off\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+offset of the network identifier 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a086f7bf25fa3b2e4c66eb7576e83c45c}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!preamble\_raw@{preamble\_raw}}
+\index{preamble\_raw@{preamble\_raw}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{preamble\_raw}{preamble\_raw}}
+{\footnotesize\ttfamily std\+::vector$<$gr\+\_\+complex$>$ gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::preamble\+\_\+raw\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+vector containing the preamble upchirps without any synchronization 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a40ed0f1b1076744b029bc6223244887f}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!preamble\_up@{preamble\_up}}
+\index{preamble\_up@{preamble\_up}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{preamble\_up}{preamble\_up}}
+{\footnotesize\ttfamily std\+::vector$<$gr\+\_\+complex$>$ gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::preamble\+\_\+up\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+vector containing the preamble upchirps 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a2bb5eeff6d22579aa578477055dfc0a4}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!received\_cr@{received\_cr}}
+\index{received\_cr@{received\_cr}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{received\_cr}{received\_cr}}
+{\footnotesize\ttfamily bool gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::received\+\_\+cr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indicate that the coding rate has been given by the \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder}{header\+\_\+decoder}} block. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_aa5f3945fed7b5b7540703552da7451e9}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!received\_crc@{received\_crc}}
+\index{received\_crc@{received\_crc}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{received\_crc}{received\_crc}}
+{\footnotesize\ttfamily bool gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::received\+\_\+crc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indicate that the crc presence has been given by the \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder}{header\+\_\+decoder}} block. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a3c77a061b85d8ddabcdc5371061f43b6}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!received\_pay\_len@{received\_pay\_len}}
+\index{received\_pay\_len@{received\_pay\_len}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{received\_pay\_len}{received\_pay\_len}}
+{\footnotesize\ttfamily bool gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::received\+\_\+pay\+\_\+len\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indicate that the payload length has been given by the \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder}{header\+\_\+decoder}} block. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a4068c720254e46d5274b20ef99cd08b7}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!symb\_corr@{symb\_corr}}
+\index{symb\_corr@{symb\_corr}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{symb\_corr}{symb\_corr}}
+{\footnotesize\ttfamily std\+::vector$<$gr\+\_\+complex$>$ gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::symb\+\_\+corr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+symbol with C\+FO frac corrected 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_abdccba1627ee3b149979e5add9d077f7}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!symb\_numb@{symb\_numb}}
+\index{symb\_numb@{symb\_numb}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{symb\_numb}{symb\_numb}}
+{\footnotesize\ttfamily uint32\+\_\+t gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::symb\+\_\+numb\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+number of payload loar symbols 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a64adb1e1f451420f2a89e2acf831a954}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!symbol\_cnt@{symbol\_cnt}}
+\index{symbol\_cnt@{symbol\_cnt}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{symbol\_cnt}{symbol\_cnt}}
+{\footnotesize\ttfamily int32\+\_\+t gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::symbol\+\_\+cnt\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Number of symbols already received. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a14c396c5df39fa330aba0869e6033048}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!symbols\_to\_skip@{symbols\_to\_skip}}
+\index{symbols\_to\_skip@{symbols\_to\_skip}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{symbols\_to\_skip}{symbols\_to\_skip}}
+{\footnotesize\ttfamily uint8\+\_\+t gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::symbols\+\_\+to\+\_\+skip\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Number of integer symbol to skip after consecutive upchirps. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_aac6f3ec75f3c13ea1d8516254baa33da}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!up\_symb\_to\_use@{up\_symb\_to\_use}}
+\index{up\_symb\_to\_use@{up\_symb\_to\_use}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{up\_symb\_to\_use}{up\_symb\_to\_use}}
+{\footnotesize\ttfamily int gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::up\+\_\+symb\+\_\+to\+\_\+use\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+number of upchirp symbols to use for C\+FO and S\+TO frac estimation 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1frame__sync__impl_a0e20beb40f927d2e3b8440db05c3a2c2}} 
+\index{gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}!usFactor@{usFactor}}
+\index{usFactor@{usFactor}!gr::lora\_sdr::frame\_sync\_impl@{gr::lora\_sdr::frame\_sync\_impl}}
+\doxysubsubsection{\texorpdfstring{usFactor}{usFactor}}
+{\footnotesize\ttfamily int gr\+::lora\+\_\+sdr\+::frame\+\_\+sync\+\_\+impl\+::us\+Factor\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+upsampling factor used by the F\+IR interpolator 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{frame__sync__impl_8h}{frame\+\_\+sync\+\_\+impl.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,243 @@
+\doxysection{gr\+::lora\+\_\+sdr\+::modulate\+\_\+impl Class Reference}
+\label{classgr_1_1lora__sdr_1_1modulate__impl}\index{gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}}
+
+
+{\ttfamily \#include $<$modulate\+\_\+impl.\+h$>$}
+
+
+
+Inheritance diagram for gr\+::lora\+\_\+sdr\+::modulate\+\_\+impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classgr_1_1lora__sdr_1_1modulate__impl__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1modulate__impl_a588aa8c55c92d07af1b98184e6426396}{modulate\+\_\+impl}} (uint8\+\_\+t sf, uint32\+\_\+t samp\+\_\+rate, uint32\+\_\+t bw)
+\begin{DoxyCompactList}\small\item\em Construct a new modulate impl object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1modulate__impl_a115b4bb223b5ad808fe8766823367c6f}{$\sim$modulate\+\_\+impl}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the modulate impl object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1modulate__impl_a28e0c84f4fe1595df12af7967a418693}{forecast}} (int noutput\+\_\+items, gr\+\_\+vector\+\_\+int \&ninput\+\_\+items\+\_\+required)
+\item 
+int \mbox{\hyperlink{classgr_1_1lora__sdr_1_1modulate__impl_a3cfe0381dc856de57622357554995310}{general\+\_\+work}} (int noutput\+\_\+items, gr\+\_\+vector\+\_\+int \&ninput\+\_\+items, gr\+\_\+vector\+\_\+const\+\_\+void\+\_\+star \&input\+\_\+items, gr\+\_\+vector\+\_\+void\+\_\+star \&output\+\_\+items)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1modulate__impl_a0e210cef35dac625e70e3b52b914abe6}{msg\+\_\+handler}} (pmt\+::pmt\+\_\+t message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1modulate__impl_a0503404afe218f71be3c58f719760a59}{m\+\_\+sf}}
+\begin{DoxyCompactList}\small\item\em Transmission spreading factor. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1modulate__impl_a0d42a486c0e9026f92d0e4dff1c183b4}{m\+\_\+samp\+\_\+rate}}
+\begin{DoxyCompactList}\small\item\em Transmission sampling rate. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1modulate__impl_aa7996cc28155b930a520c56d547f5ef7}{m\+\_\+bw}}
+\begin{DoxyCompactList}\small\item\em Transmission bandwidth (Works only for samp\+\_\+rate=bw) \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1modulate__impl_aab459eb2bccd75e7432e4c41a55c1087}{m\+\_\+number\+\_\+of\+\_\+bins}}
+\begin{DoxyCompactList}\small\item\em number of bin per lora symbol \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classgr_1_1lora__sdr_1_1modulate__impl_ada87a0de1315f3d5ab842f73e2435ffa}{m\+\_\+symbols\+\_\+per\+\_\+second}}
+\begin{DoxyCompactList}\small\item\em lora symbols per second \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1modulate__impl_a36660b5a232ae44e9f7da4ee2a65bcfc}{m\+\_\+samples\+\_\+per\+\_\+symbol}}
+\begin{DoxyCompactList}\small\item\em samples per symbols(\+Works only for 2$^\wedge$sf) \end{DoxyCompactList}\item 
+std\+::vector$<$ gr\+\_\+complex $>$ \mbox{\hyperlink{classgr_1_1lora__sdr_1_1modulate__impl_ab81def3ea19c85e4e17ec9782c2de4d1}{m\+\_\+upchirp}}
+\begin{DoxyCompactList}\small\item\em reference upchirp \end{DoxyCompactList}\item 
+std\+::vector$<$ gr\+\_\+complex $>$ \mbox{\hyperlink{classgr_1_1lora__sdr_1_1modulate__impl_a784362e26a06069fafab4f11c70a0d09}{m\+\_\+downchirp}}
+\begin{DoxyCompactList}\small\item\em reference downchirp \end{DoxyCompactList}\item 
+uint \mbox{\hyperlink{classgr_1_1lora__sdr_1_1modulate__impl_adab83f8a64cca05269b7af04282515fd}{n\+\_\+up}}
+\begin{DoxyCompactList}\small\item\em number of upchirps in the preamble \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1modulate__impl_a25df5b094d1afb50275104f97a02b17d}{symb\+\_\+cnt}}
+\begin{DoxyCompactList}\small\item\em counter of the number of lora symbols sent \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1modulate__impl_a588aa8c55c92d07af1b98184e6426396}} 
+\index{gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}!modulate\_impl@{modulate\_impl}}
+\index{modulate\_impl@{modulate\_impl}!gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}}
+\doxysubsubsection{\texorpdfstring{modulate\_impl()}{modulate\_impl()}}
+{\footnotesize\ttfamily gr\+::lora\+\_\+sdr\+::modulate\+\_\+impl\+::modulate\+\_\+impl (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{sf,  }\item[{uint32\+\_\+t}]{samp\+\_\+rate,  }\item[{uint32\+\_\+t}]{bw }\end{DoxyParamCaption})}
+
+
+
+Construct a new modulate impl object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sf} & spreading factor \\
+\hline
+{\em samp\+\_\+rate} & sampling rate \\
+\hline
+{\em bw} & bandwith \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1modulate__impl_a115b4bb223b5ad808fe8766823367c6f}} 
+\index{gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}!````~modulate\_impl@{$\sim$modulate\_impl}}
+\index{````~modulate\_impl@{$\sim$modulate\_impl}!gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}}
+\doxysubsubsection{\texorpdfstring{$\sim$modulate\_impl()}{~modulate\_impl()}}
+{\footnotesize\ttfamily gr\+::lora\+\_\+sdr\+::modulate\+\_\+impl\+::$\sim$modulate\+\_\+impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the modulate impl object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1modulate__impl_a28e0c84f4fe1595df12af7967a418693}} 
+\index{gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}!forecast@{forecast}}
+\index{forecast@{forecast}!gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}}
+\doxysubsubsection{\texorpdfstring{forecast()}{forecast()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::modulate\+\_\+impl\+::forecast (\begin{DoxyParamCaption}\item[{int}]{noutput\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+int \&}]{ninput\+\_\+items\+\_\+required }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em noutput\+\_\+items} & \\
+\hline
+{\em ninput\+\_\+items\+\_\+required} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1modulate__impl_a3cfe0381dc856de57622357554995310}} 
+\index{gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}!general\_work@{general\_work}}
+\index{general\_work@{general\_work}!gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}}
+\doxysubsubsection{\texorpdfstring{general\_work()}{general\_work()}}
+{\footnotesize\ttfamily int gr\+::lora\+\_\+sdr\+::modulate\+\_\+impl\+::general\+\_\+work (\begin{DoxyParamCaption}\item[{int}]{noutput\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+int \&}]{ninput\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+const\+\_\+void\+\_\+star \&}]{input\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+void\+\_\+star \&}]{output\+\_\+items }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em noutput\+\_\+items} & \\
+\hline
+{\em ninput\+\_\+items} & \\
+\hline
+{\em input\+\_\+items} & \\
+\hline
+{\em output\+\_\+items} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\label{classgr_1_1lora__sdr_1_1modulate__impl_a0e210cef35dac625e70e3b52b914abe6}} 
+\index{gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}!msg\_handler@{msg\_handler}}
+\index{msg\_handler@{msg\_handler}!gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}}
+\doxysubsubsection{\texorpdfstring{msg\_handler()}{msg\_handler()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::modulate\+\_\+impl\+::msg\+\_\+handler (\begin{DoxyParamCaption}\item[{pmt\+::pmt\+\_\+t}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1modulate__impl_aa7996cc28155b930a520c56d547f5ef7}} 
+\index{gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}!m\_bw@{m\_bw}}
+\index{m\_bw@{m\_bw}!gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_bw}{m\_bw}}
+{\footnotesize\ttfamily uint32\+\_\+t gr\+::lora\+\_\+sdr\+::modulate\+\_\+impl\+::m\+\_\+bw\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transmission bandwidth (Works only for samp\+\_\+rate=bw) 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1modulate__impl_a784362e26a06069fafab4f11c70a0d09}} 
+\index{gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}!m\_downchirp@{m\_downchirp}}
+\index{m\_downchirp@{m\_downchirp}!gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_downchirp}{m\_downchirp}}
+{\footnotesize\ttfamily std\+::vector$<$gr\+\_\+complex$>$ gr\+::lora\+\_\+sdr\+::modulate\+\_\+impl\+::m\+\_\+downchirp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+reference downchirp 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1modulate__impl_aab459eb2bccd75e7432e4c41a55c1087}} 
+\index{gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}!m\_number\_of\_bins@{m\_number\_of\_bins}}
+\index{m\_number\_of\_bins@{m\_number\_of\_bins}!gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_number\_of\_bins}{m\_number\_of\_bins}}
+{\footnotesize\ttfamily uint32\+\_\+t gr\+::lora\+\_\+sdr\+::modulate\+\_\+impl\+::m\+\_\+number\+\_\+of\+\_\+bins\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+number of bin per lora symbol 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1modulate__impl_a0d42a486c0e9026f92d0e4dff1c183b4}} 
+\index{gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}!m\_samp\_rate@{m\_samp\_rate}}
+\index{m\_samp\_rate@{m\_samp\_rate}!gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_samp\_rate}{m\_samp\_rate}}
+{\footnotesize\ttfamily uint32\+\_\+t gr\+::lora\+\_\+sdr\+::modulate\+\_\+impl\+::m\+\_\+samp\+\_\+rate\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transmission sampling rate. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1modulate__impl_a36660b5a232ae44e9f7da4ee2a65bcfc}} 
+\index{gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}!m\_samples\_per\_symbol@{m\_samples\_per\_symbol}}
+\index{m\_samples\_per\_symbol@{m\_samples\_per\_symbol}!gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_samples\_per\_symbol}{m\_samples\_per\_symbol}}
+{\footnotesize\ttfamily uint32\+\_\+t gr\+::lora\+\_\+sdr\+::modulate\+\_\+impl\+::m\+\_\+samples\+\_\+per\+\_\+symbol\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+samples per symbols(\+Works only for 2$^\wedge$sf) 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1modulate__impl_a0503404afe218f71be3c58f719760a59}} 
+\index{gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}!m\_sf@{m\_sf}}
+\index{m\_sf@{m\_sf}!gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_sf}{m\_sf}}
+{\footnotesize\ttfamily uint8\+\_\+t gr\+::lora\+\_\+sdr\+::modulate\+\_\+impl\+::m\+\_\+sf\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transmission spreading factor. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1modulate__impl_ada87a0de1315f3d5ab842f73e2435ffa}} 
+\index{gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}!m\_symbols\_per\_second@{m\_symbols\_per\_second}}
+\index{m\_symbols\_per\_second@{m\_symbols\_per\_second}!gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_symbols\_per\_second}{m\_symbols\_per\_second}}
+{\footnotesize\ttfamily double gr\+::lora\+\_\+sdr\+::modulate\+\_\+impl\+::m\+\_\+symbols\+\_\+per\+\_\+second\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+lora symbols per second 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1modulate__impl_ab81def3ea19c85e4e17ec9782c2de4d1}} 
+\index{gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}!m\_upchirp@{m\_upchirp}}
+\index{m\_upchirp@{m\_upchirp}!gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_upchirp}{m\_upchirp}}
+{\footnotesize\ttfamily std\+::vector$<$gr\+\_\+complex$>$ gr\+::lora\+\_\+sdr\+::modulate\+\_\+impl\+::m\+\_\+upchirp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+reference upchirp 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1modulate__impl_adab83f8a64cca05269b7af04282515fd}} 
+\index{gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}!n\_up@{n\_up}}
+\index{n\_up@{n\_up}!gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}}
+\doxysubsubsection{\texorpdfstring{n\_up}{n\_up}}
+{\footnotesize\ttfamily uint gr\+::lora\+\_\+sdr\+::modulate\+\_\+impl\+::n\+\_\+up\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+number of upchirps in the preamble 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1modulate__impl_a25df5b094d1afb50275104f97a02b17d}} 
+\index{gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}!symb\_cnt@{symb\_cnt}}
+\index{symb\_cnt@{symb\_cnt}!gr::lora\_sdr::modulate\_impl@{gr::lora\_sdr::modulate\_impl}}
+\doxysubsubsection{\texorpdfstring{symb\_cnt}{symb\_cnt}}
+{\footnotesize\ttfamily uint32\+\_\+t gr\+::lora\+\_\+sdr\+::modulate\+\_\+impl\+::symb\+\_\+cnt\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+counter of the number of lora symbols sent 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{modulate__impl_8h}{modulate\+\_\+impl.\+h}}\end{DoxyCompactItemize}

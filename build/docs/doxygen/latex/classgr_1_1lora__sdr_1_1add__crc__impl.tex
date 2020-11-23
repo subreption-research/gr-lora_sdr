@@ -1,0 +1,188 @@
+\doxysection{gr\+::lora\+\_\+sdr\+::add\+\_\+crc\+\_\+impl Class Reference}
+\label{classgr_1_1lora__sdr_1_1add__crc__impl}\index{gr::lora\_sdr::add\_crc\_impl@{gr::lora\_sdr::add\_crc\_impl}}
+
+
+{\ttfamily \#include $<$add\+\_\+crc\+\_\+impl.\+h$>$}
+
+
+
+Inheritance diagram for gr\+::lora\+\_\+sdr\+::add\+\_\+crc\+\_\+impl\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{classgr_1_1lora__sdr_1_1add__crc__impl__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1add__crc__impl_a141e98281979bcc67c40976732e9aa50}{add\+\_\+crc\+\_\+impl}} (bool has\+\_\+crc)
+\begin{DoxyCompactList}\small\item\em Construct a new add crc impl object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1add__crc__impl_ab79f297228f3431e7613629a5d6cede9}{$\sim$add\+\_\+crc\+\_\+impl}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the add crc impl object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1add__crc__impl_adeeb01a45dae7558c36756ff4e794134}{forecast}} (int noutput\+\_\+items, gr\+\_\+vector\+\_\+int \&ninput\+\_\+items\+\_\+required)
+\begin{DoxyCompactList}\small\item\em Where all the action really happens. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classgr_1_1lora__sdr_1_1add__crc__impl_a39ebc25dc893e70b81d4d756997dd6a1}{general\+\_\+work}} (int noutput\+\_\+items, gr\+\_\+vector\+\_\+int \&ninput\+\_\+items, gr\+\_\+vector\+\_\+const\+\_\+void\+\_\+star \&input\+\_\+items, gr\+\_\+vector\+\_\+void\+\_\+star \&output\+\_\+items)
+\begin{DoxyCompactList}\small\item\em Main function of the \mbox{\hyperlink{classgr_1_1lora__sdr_1_1add__crc}{add\+\_\+crc}} module, this module will add Cyclic Redundancy Check (C\+RC) to the payload to be able to detect more bit errors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1add__crc__impl_aa52d2d28a50356c49a5f95a7eed988c8}{msg\+\_\+handler}} (pmt\+::pmt\+\_\+t message)
+\begin{DoxyCompactList}\small\item\em Message handler, handles all the control messages. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classgr_1_1lora__sdr_1_1add__crc__impl_ab46b2f78b7eaa01d5eb27ada3e6b1aec}{crc16}} (unsigned int crc\+Value, unsigned char new\+Byte)
+\begin{DoxyCompactList}\small\item\em C\+R\+C16, add 16 bit C\+RC to the payload. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classgr_1_1lora__sdr_1_1add__crc__impl_ad7b14f262b44eb3c74de0d8bedfc4211}{m\+\_\+has\+\_\+crc}}
+\begin{DoxyCompactList}\small\item\em Indicate the presence of a payload C\+RC. \end{DoxyCompactList}\item 
+std\+::vector$<$ uint8\+\_\+t $>$ \mbox{\hyperlink{classgr_1_1lora__sdr_1_1add__crc__impl_a076373e7eb8c27a1b363d70af735083a}{m\+\_\+payload}}
+\begin{DoxyCompactList}\small\item\em The payload data itself. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1add__crc__impl_a5b6afeb93cbff3baf241da65a1b5999c}{m\+\_\+payload\+\_\+len}}
+\begin{DoxyCompactList}\small\item\em The length of the payload in bytes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1add__crc__impl_a141e98281979bcc67c40976732e9aa50}} 
+\index{gr::lora\_sdr::add\_crc\_impl@{gr::lora\_sdr::add\_crc\_impl}!add\_crc\_impl@{add\_crc\_impl}}
+\index{add\_crc\_impl@{add\_crc\_impl}!gr::lora\_sdr::add\_crc\_impl@{gr::lora\_sdr::add\_crc\_impl}}
+\doxysubsubsection{\texorpdfstring{add\_crc\_impl()}{add\_crc\_impl()}}
+{\footnotesize\ttfamily gr\+::lora\+\_\+sdr\+::add\+\_\+crc\+\_\+impl\+::add\+\_\+crc\+\_\+impl (\begin{DoxyParamCaption}\item[{bool}]{has\+\_\+crc }\end{DoxyParamCaption})}
+
+
+
+Construct a new add crc impl object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em has\+\_\+crc} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1add__crc__impl_ab79f297228f3431e7613629a5d6cede9}} 
+\index{gr::lora\_sdr::add\_crc\_impl@{gr::lora\_sdr::add\_crc\_impl}!````~add\_crc\_impl@{$\sim$add\_crc\_impl}}
+\index{````~add\_crc\_impl@{$\sim$add\_crc\_impl}!gr::lora\_sdr::add\_crc\_impl@{gr::lora\_sdr::add\_crc\_impl}}
+\doxysubsubsection{\texorpdfstring{$\sim$add\_crc\_impl()}{~add\_crc\_impl()}}
+{\footnotesize\ttfamily gr\+::lora\+\_\+sdr\+::add\+\_\+crc\+\_\+impl\+::$\sim$add\+\_\+crc\+\_\+impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the add crc impl object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1add__crc__impl_ab46b2f78b7eaa01d5eb27ada3e6b1aec}} 
+\index{gr::lora\_sdr::add\_crc\_impl@{gr::lora\_sdr::add\_crc\_impl}!crc16@{crc16}}
+\index{crc16@{crc16}!gr::lora\_sdr::add\_crc\_impl@{gr::lora\_sdr::add\_crc\_impl}}
+\doxysubsubsection{\texorpdfstring{crc16()}{crc16()}}
+{\footnotesize\ttfamily unsigned int gr\+::lora\+\_\+sdr\+::add\+\_\+crc\+\_\+impl\+::crc16 (\begin{DoxyParamCaption}\item[{unsigned int}]{crc\+Value,  }\item[{unsigned char}]{new\+Byte }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+C\+R\+C16, add 16 bit C\+RC to the payload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em crc\+Value} & \+: \\
+\hline
+{\em new\+Byte} & \+: \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned int 
+\end{DoxyReturn}
+\mbox{\label{classgr_1_1lora__sdr_1_1add__crc__impl_adeeb01a45dae7558c36756ff4e794134}} 
+\index{gr::lora\_sdr::add\_crc\_impl@{gr::lora\_sdr::add\_crc\_impl}!forecast@{forecast}}
+\index{forecast@{forecast}!gr::lora\_sdr::add\_crc\_impl@{gr::lora\_sdr::add\_crc\_impl}}
+\doxysubsubsection{\texorpdfstring{forecast()}{forecast()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::add\+\_\+crc\+\_\+impl\+::forecast (\begin{DoxyParamCaption}\item[{int}]{noutput\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+int \&}]{ninput\+\_\+items\+\_\+required }\end{DoxyParamCaption})}
+
+
+
+Where all the action really happens. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em noutput\+\_\+items} & \+: number of output items \\
+\hline
+{\em ninput\+\_\+items\+\_\+required} & \+: number of required input items \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1add__crc__impl_a39ebc25dc893e70b81d4d756997dd6a1}} 
+\index{gr::lora\_sdr::add\_crc\_impl@{gr::lora\_sdr::add\_crc\_impl}!general\_work@{general\_work}}
+\index{general\_work@{general\_work}!gr::lora\_sdr::add\_crc\_impl@{gr::lora\_sdr::add\_crc\_impl}}
+\doxysubsubsection{\texorpdfstring{general\_work()}{general\_work()}}
+{\footnotesize\ttfamily int gr\+::lora\+\_\+sdr\+::add\+\_\+crc\+\_\+impl\+::general\+\_\+work (\begin{DoxyParamCaption}\item[{int}]{noutput\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+int \&}]{ninput\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+const\+\_\+void\+\_\+star \&}]{input\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+void\+\_\+star \&}]{output\+\_\+items }\end{DoxyParamCaption})}
+
+
+
+Main function of the \mbox{\hyperlink{classgr_1_1lora__sdr_1_1add__crc}{add\+\_\+crc}} module, this module will add Cyclic Redundancy Check (C\+RC) to the payload to be able to detect more bit errors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em noutput\+\_\+items} & \+: number of output items \\
+\hline
+{\em ninput\+\_\+items} & \+: number of input items \\
+\hline
+{\em input\+\_\+items} & \+: vector containing the input items \\
+\hline
+{\em output\+\_\+items} & \+: vector containting the output items \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\label{classgr_1_1lora__sdr_1_1add__crc__impl_aa52d2d28a50356c49a5f95a7eed988c8}} 
+\index{gr::lora\_sdr::add\_crc\_impl@{gr::lora\_sdr::add\_crc\_impl}!msg\_handler@{msg\_handler}}
+\index{msg\_handler@{msg\_handler}!gr::lora\_sdr::add\_crc\_impl@{gr::lora\_sdr::add\_crc\_impl}}
+\doxysubsubsection{\texorpdfstring{msg\_handler()}{msg\_handler()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::add\+\_\+crc\+\_\+impl\+::msg\+\_\+handler (\begin{DoxyParamCaption}\item[{pmt\+::pmt\+\_\+t}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Message handler, handles all the control messages. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \+:pmt message \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1add__crc__impl_ad7b14f262b44eb3c74de0d8bedfc4211}} 
+\index{gr::lora\_sdr::add\_crc\_impl@{gr::lora\_sdr::add\_crc\_impl}!m\_has\_crc@{m\_has\_crc}}
+\index{m\_has\_crc@{m\_has\_crc}!gr::lora\_sdr::add\_crc\_impl@{gr::lora\_sdr::add\_crc\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_has\_crc}{m\_has\_crc}}
+{\footnotesize\ttfamily bool gr\+::lora\+\_\+sdr\+::add\+\_\+crc\+\_\+impl\+::m\+\_\+has\+\_\+crc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indicate the presence of a payload C\+RC. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1add__crc__impl_a076373e7eb8c27a1b363d70af735083a}} 
+\index{gr::lora\_sdr::add\_crc\_impl@{gr::lora\_sdr::add\_crc\_impl}!m\_payload@{m\_payload}}
+\index{m\_payload@{m\_payload}!gr::lora\_sdr::add\_crc\_impl@{gr::lora\_sdr::add\_crc\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_payload}{m\_payload}}
+{\footnotesize\ttfamily std\+::vector$<$uint8\+\_\+t$>$ gr\+::lora\+\_\+sdr\+::add\+\_\+crc\+\_\+impl\+::m\+\_\+payload\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The payload data itself. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1add__crc__impl_a5b6afeb93cbff3baf241da65a1b5999c}} 
+\index{gr::lora\_sdr::add\_crc\_impl@{gr::lora\_sdr::add\_crc\_impl}!m\_payload\_len@{m\_payload\_len}}
+\index{m\_payload\_len@{m\_payload\_len}!gr::lora\_sdr::add\_crc\_impl@{gr::lora\_sdr::add\_crc\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_payload\_len}{m\_payload\_len}}
+{\footnotesize\ttfamily uint8\+\_\+t gr\+::lora\+\_\+sdr\+::add\+\_\+crc\+\_\+impl\+::m\+\_\+payload\+\_\+len\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The length of the payload in bytes. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{add__crc__impl_8h}{add\+\_\+crc\+\_\+impl.\+h}}\end{DoxyCompactItemize}

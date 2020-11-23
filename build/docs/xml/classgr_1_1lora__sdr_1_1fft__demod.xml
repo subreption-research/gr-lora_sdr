@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="classgr_1_1lora__sdr_1_1fft__demod" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora_sdr::fft_demod</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1lora__sdr_1_1fft__demod__impl" prot="public" virt="non-virtual">gr::lora_sdr::fft_demod_impl</derivedcompoundref>
+    <includes refid="fft__demod_8h" local="no">fft_demod.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1lora__sdr_1_1fft__demod_1ab2c3a81290444e82a9e741ce03baad91" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1lora__sdr_1_1fft__demod" kindref="compound">fft_demod</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;fft_demod&gt; gr::lora_sdr::fft_demod::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/fft_demod.h" line="39" column="33" bodyfile="/home/martyn/gr-lora_sdr/include/lora_sdr/fft_demod.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1fft__demod_1a3416792e976c1759d3062530ae7df26a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1lora__sdr_1_1fft__demod_1ab2c3a81290444e82a9e741ce03baad91" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::lora_sdr::fft_demod::make</definition>
+        <argsstring>(float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head)</argsstring>
+        <name>make</name>
+        <param>
+          <type>float</type>
+          <declname>samp_rate</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>bandwidth</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>sf</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>impl_head</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1lora__sdr_1_1fft__demod" kindref="compound">lora_sdr::fft_demod</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1lora__sdr_1_1fft__demod" kindref="compound">lora_sdr::fft_demod</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1lora__sdr_1_1fft__demod_1a3416792e976c1759d3062530ae7df26a" kindref="member">lora_sdr::fft_demod::make</ref> is the public interface for creating new instances. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/fft_demod.h" line="49" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>gr::lora_sdr::fft_demod_impl</label>
+        <link refid="classgr_1_1lora__sdr_1_1fft__demod__impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>block</label>
+      </node>
+      <node id="1">
+        <label>gr::lora_sdr::fft_demod</label>
+        <link refid="classgr_1_1lora__sdr_1_1fft__demod"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>block</label>
+      </node>
+      <node id="1">
+        <label>gr::lora_sdr::fft_demod</label>
+        <link refid="classgr_1_1lora__sdr_1_1fft__demod"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/fft_demod.h" line="36" column="5" bodyfile="/home/martyn/gr-lora_sdr/include/lora_sdr/fft_demod.h" bodystart="37" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod_1a3416792e976c1759d3062530ae7df26a" prot="public" virt="non-virtual"><scope>gr::lora_sdr::fft_demod</scope><name>make</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1fft__demod_1ab2c3a81290444e82a9e741ce03baad91" prot="public" virt="non-virtual"><scope>gr::lora_sdr::fft_demod</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

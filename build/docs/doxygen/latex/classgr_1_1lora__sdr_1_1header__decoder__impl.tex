@@ -1,0 +1,241 @@
+\doxysection{gr\+::lora\+\_\+sdr\+::header\+\_\+decoder\+\_\+impl Class Reference}
+\label{classgr_1_1lora__sdr_1_1header__decoder__impl}\index{gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}}
+
+
+{\ttfamily \#include $<$header\+\_\+decoder\+\_\+impl.\+h$>$}
+
+
+
+Inheritance diagram for gr\+::lora\+\_\+sdr\+::header\+\_\+decoder\+\_\+impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classgr_1_1lora__sdr_1_1header__decoder__impl__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder__impl_ab1bf9d329c4abaa52ba915bd7f5f5e2e}{header\+\_\+decoder\+\_\+impl}} (bool impl\+\_\+head, uint8\+\_\+t cr, uint32\+\_\+t pay\+\_\+len, bool has\+\_\+crc)
+\begin{DoxyCompactList}\small\item\em Construct a new header decoder impl object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder__impl_a47d5c528e5f77c773e381157b292a008}{$\sim$header\+\_\+decoder\+\_\+impl}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the header decoder impl object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder__impl_a912c5211ada6a98099cd426951b220d7}{forecast}} (int noutput\+\_\+items, gr\+\_\+vector\+\_\+int \&ninput\+\_\+items\+\_\+required)
+\item 
+int \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder__impl_a49a4f2a90d68e1947b310403682d0fec}{general\+\_\+work}} (int noutput\+\_\+items, gr\+\_\+vector\+\_\+int \&ninput\+\_\+items, gr\+\_\+vector\+\_\+const\+\_\+void\+\_\+star \&input\+\_\+items, gr\+\_\+vector\+\_\+void\+\_\+star \&output\+\_\+items)
+\begin{DoxyCompactList}\small\item\em Main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder__impl_a6d090d25ddf73e2e1aa49462462a7bef}{new\+\_\+frame\+\_\+handler}} (pmt\+::pmt\+\_\+t id)
+\begin{DoxyCompactList}\small\item\em Reset the block variables for a new frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const uint8\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder__impl_a77917cc06ab704011f8e5b7edd5e265d}{header\+\_\+len}} = 5
+\begin{DoxyCompactList}\small\item\em size of the header in nibbles \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder__impl_ac3f73a12945f631285c3411fe1924ba8}{m\+\_\+impl\+\_\+header}}
+\begin{DoxyCompactList}\small\item\em Specify if we use an explicit or implicit header. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder__impl_ac86aa87a24ada0167ad2568338667746}{m\+\_\+payload\+\_\+len}}
+\begin{DoxyCompactList}\small\item\em The payload length in bytes. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder__impl_a9783dcfc61522e86655264b003dd7d3a}{m\+\_\+has\+\_\+crc}}
+\begin{DoxyCompactList}\small\item\em Specify the usage of a payload C\+RC. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder__impl_a932e5215a102ae2f6df2dfc846033f62}{m\+\_\+cr}}
+\begin{DoxyCompactList}\small\item\em Coding rate. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder__impl_af1dfde848bc2a510609d3fb762fbcbeb}{header\+\_\+chk}}
+\begin{DoxyCompactList}\small\item\em The header checksum received in the header. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder__impl_ab98ef453939204f56767e4fa911ac787}{pay\+\_\+cnt}}
+\begin{DoxyCompactList}\small\item\em The number of payload nibbles received. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder__impl_a4f4b7c62dbe74c80e4925fc00ad89143}{nout}}
+\begin{DoxyCompactList}\small\item\em The number of data nibbles to output. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgr_1_1lora__sdr_1_1header__decoder__impl_a81fcdefdeb7e13430d3be38f4f23cecf}{is\+\_\+first}}
+\begin{DoxyCompactList}\small\item\em Indicate that we need to decode the header. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1header__decoder__impl_ab1bf9d329c4abaa52ba915bd7f5f5e2e}} 
+\index{gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}!header\_decoder\_impl@{header\_decoder\_impl}}
+\index{header\_decoder\_impl@{header\_decoder\_impl}!gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}}
+\doxysubsubsection{\texorpdfstring{header\_decoder\_impl()}{header\_decoder\_impl()}}
+{\footnotesize\ttfamily gr\+::lora\+\_\+sdr\+::header\+\_\+decoder\+\_\+impl\+::header\+\_\+decoder\+\_\+impl (\begin{DoxyParamCaption}\item[{bool}]{impl\+\_\+head,  }\item[{uint8\+\_\+t}]{cr,  }\item[{uint32\+\_\+t}]{pay\+\_\+len,  }\item[{bool}]{has\+\_\+crc }\end{DoxyParamCaption})}
+
+
+
+Construct a new header decoder impl object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em impl\+\_\+head} & \+: boolean if implicit header mode is on or off \\
+\hline
+{\em cr} & \+: coding rate \\
+\hline
+{\em pay\+\_\+len} & \+: payload length \\
+\hline
+{\em has\+\_\+crc} & \+: boolean if crc stage is active or not \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1header__decoder__impl_a47d5c528e5f77c773e381157b292a008}} 
+\index{gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}!````~header\_decoder\_impl@{$\sim$header\_decoder\_impl}}
+\index{````~header\_decoder\_impl@{$\sim$header\_decoder\_impl}!gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}}
+\doxysubsubsection{\texorpdfstring{$\sim$header\_decoder\_impl()}{~header\_decoder\_impl()}}
+{\footnotesize\ttfamily gr\+::lora\+\_\+sdr\+::header\+\_\+decoder\+\_\+impl\+::$\sim$header\+\_\+decoder\+\_\+impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the header decoder impl object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1header__decoder__impl_a912c5211ada6a98099cd426951b220d7}} 
+\index{gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}!forecast@{forecast}}
+\index{forecast@{forecast}!gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}}
+\doxysubsubsection{\texorpdfstring{forecast()}{forecast()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::header\+\_\+decoder\+\_\+impl\+::forecast (\begin{DoxyParamCaption}\item[{int}]{noutput\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+int \&}]{ninput\+\_\+items\+\_\+required }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em noutput\+\_\+items} & \\
+\hline
+{\em ninput\+\_\+items\+\_\+required} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classgr_1_1lora__sdr_1_1header__decoder__impl_a49a4f2a90d68e1947b310403682d0fec}} 
+\index{gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}!general\_work@{general\_work}}
+\index{general\_work@{general\_work}!gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}}
+\doxysubsubsection{\texorpdfstring{general\_work()}{general\_work()}}
+{\footnotesize\ttfamily int gr\+::lora\+\_\+sdr\+::header\+\_\+decoder\+\_\+impl\+::general\+\_\+work (\begin{DoxyParamCaption}\item[{int}]{noutput\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+int \&}]{ninput\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+const\+\_\+void\+\_\+star \&}]{input\+\_\+items,  }\item[{gr\+\_\+vector\+\_\+void\+\_\+star \&}]{output\+\_\+items }\end{DoxyParamCaption})}
+
+
+
+Main function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em noutput\+\_\+items} & \\
+\hline
+{\em ninput\+\_\+items} & \\
+\hline
+{\em input\+\_\+items} & \\
+\hline
+{\em output\+\_\+items} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\label{classgr_1_1lora__sdr_1_1header__decoder__impl_a6d090d25ddf73e2e1aa49462462a7bef}} 
+\index{gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}!new\_frame\_handler@{new\_frame\_handler}}
+\index{new\_frame\_handler@{new\_frame\_handler}!gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}}
+\doxysubsubsection{\texorpdfstring{new\_frame\_handler()}{new\_frame\_handler()}}
+{\footnotesize\ttfamily void gr\+::lora\+\_\+sdr\+::header\+\_\+decoder\+\_\+impl\+::new\+\_\+frame\+\_\+handler (\begin{DoxyParamCaption}\item[{pmt\+::pmt\+\_\+t}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reset the block variables for a new frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\label{classgr_1_1lora__sdr_1_1header__decoder__impl_af1dfde848bc2a510609d3fb762fbcbeb}} 
+\index{gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}!header\_chk@{header\_chk}}
+\index{header\_chk@{header\_chk}!gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}}
+\doxysubsubsection{\texorpdfstring{header\_chk}{header\_chk}}
+{\footnotesize\ttfamily uint8\+\_\+t gr\+::lora\+\_\+sdr\+::header\+\_\+decoder\+\_\+impl\+::header\+\_\+chk\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The header checksum received in the header. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1header__decoder__impl_a77917cc06ab704011f8e5b7edd5e265d}} 
+\index{gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}!header\_len@{header\_len}}
+\index{header\_len@{header\_len}!gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}}
+\doxysubsubsection{\texorpdfstring{header\_len}{header\_len}}
+{\footnotesize\ttfamily const uint8\+\_\+t gr\+::lora\+\_\+sdr\+::header\+\_\+decoder\+\_\+impl\+::header\+\_\+len = 5\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+size of the header in nibbles 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1header__decoder__impl_a81fcdefdeb7e13430d3be38f4f23cecf}} 
+\index{gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}!is\_first@{is\_first}}
+\index{is\_first@{is\_first}!gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}}
+\doxysubsubsection{\texorpdfstring{is\_first}{is\_first}}
+{\footnotesize\ttfamily bool gr\+::lora\+\_\+sdr\+::header\+\_\+decoder\+\_\+impl\+::is\+\_\+first\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indicate that we need to decode the header. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1header__decoder__impl_a932e5215a102ae2f6df2dfc846033f62}} 
+\index{gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}!m\_cr@{m\_cr}}
+\index{m\_cr@{m\_cr}!gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_cr}{m\_cr}}
+{\footnotesize\ttfamily uint8\+\_\+t gr\+::lora\+\_\+sdr\+::header\+\_\+decoder\+\_\+impl\+::m\+\_\+cr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Coding rate. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1header__decoder__impl_a9783dcfc61522e86655264b003dd7d3a}} 
+\index{gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}!m\_has\_crc@{m\_has\_crc}}
+\index{m\_has\_crc@{m\_has\_crc}!gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_has\_crc}{m\_has\_crc}}
+{\footnotesize\ttfamily bool gr\+::lora\+\_\+sdr\+::header\+\_\+decoder\+\_\+impl\+::m\+\_\+has\+\_\+crc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Specify the usage of a payload C\+RC. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1header__decoder__impl_ac3f73a12945f631285c3411fe1924ba8}} 
+\index{gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}!m\_impl\_header@{m\_impl\_header}}
+\index{m\_impl\_header@{m\_impl\_header}!gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_impl\_header}{m\_impl\_header}}
+{\footnotesize\ttfamily bool gr\+::lora\+\_\+sdr\+::header\+\_\+decoder\+\_\+impl\+::m\+\_\+impl\+\_\+header\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Specify if we use an explicit or implicit header. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1header__decoder__impl_ac86aa87a24ada0167ad2568338667746}} 
+\index{gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}!m\_payload\_len@{m\_payload\_len}}
+\index{m\_payload\_len@{m\_payload\_len}!gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}}
+\doxysubsubsection{\texorpdfstring{m\_payload\_len}{m\_payload\_len}}
+{\footnotesize\ttfamily uint8\+\_\+t gr\+::lora\+\_\+sdr\+::header\+\_\+decoder\+\_\+impl\+::m\+\_\+payload\+\_\+len\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The payload length in bytes. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1header__decoder__impl_a4f4b7c62dbe74c80e4925fc00ad89143}} 
+\index{gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}!nout@{nout}}
+\index{nout@{nout}!gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}}
+\doxysubsubsection{\texorpdfstring{nout}{nout}}
+{\footnotesize\ttfamily uint32\+\_\+t gr\+::lora\+\_\+sdr\+::header\+\_\+decoder\+\_\+impl\+::nout\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The number of data nibbles to output. 
+
+\mbox{\label{classgr_1_1lora__sdr_1_1header__decoder__impl_ab98ef453939204f56767e4fa911ac787}} 
+\index{gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}!pay\_cnt@{pay\_cnt}}
+\index{pay\_cnt@{pay\_cnt}!gr::lora\_sdr::header\_decoder\_impl@{gr::lora\_sdr::header\_decoder\_impl}}
+\doxysubsubsection{\texorpdfstring{pay\_cnt}{pay\_cnt}}
+{\footnotesize\ttfamily uint32\+\_\+t gr\+::lora\+\_\+sdr\+::header\+\_\+decoder\+\_\+impl\+::pay\+\_\+cnt\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The number of payload nibbles received. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{header__decoder__impl_8h}{header\+\_\+decoder\+\_\+impl.\+h}}\end{DoxyCompactItemize}

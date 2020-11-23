@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="namespacegr_1_1lora__sdr" kind="namespace" language="C++">
+    <compoundname>gr::lora_sdr</compoundname>
+    <innerclass refid="classgr_1_1lora__sdr_1_1add__crc" prot="public">gr::lora_sdr::add_crc</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1add__crc__impl" prot="public">gr::lora_sdr::add_crc_impl</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1crc__verif" prot="public">gr::lora_sdr::crc_verif</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1crc__verif__impl" prot="public">gr::lora_sdr::crc_verif_impl</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1data__source" prot="public">gr::lora_sdr::data_source</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1data__source__impl" prot="public">gr::lora_sdr::data_source_impl</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1deinterleaver" prot="public">gr::lora_sdr::deinterleaver</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1deinterleaver__impl" prot="public">gr::lora_sdr::deinterleaver_impl</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1dewhitening" prot="public">gr::lora_sdr::dewhitening</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1dewhitening__impl" prot="public">gr::lora_sdr::dewhitening_impl</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1err__measures" prot="public">gr::lora_sdr::err_measures</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1err__measures__impl" prot="public">gr::lora_sdr::err_measures_impl</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1fft__demod" prot="public">gr::lora_sdr::fft_demod</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1fft__demod__impl" prot="public">gr::lora_sdr::fft_demod_impl</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1frame__sync" prot="public">gr::lora_sdr::frame_sync</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1frame__sync__impl" prot="public">gr::lora_sdr::frame_sync_impl</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1gray__decode" prot="public">gr::lora_sdr::gray_decode</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1gray__decode__impl" prot="public">gr::lora_sdr::gray_decode_impl</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1gray__enc" prot="public">gr::lora_sdr::gray_enc</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1gray__enc__impl" prot="public">gr::lora_sdr::gray_enc_impl</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1hamming__dec" prot="public">gr::lora_sdr::hamming_dec</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1hamming__dec__impl" prot="public">gr::lora_sdr::hamming_dec_impl</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1hamming__enc" prot="public">gr::lora_sdr::hamming_enc</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1hamming__enc__impl" prot="public">gr::lora_sdr::hamming_enc_impl</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1header" prot="public">gr::lora_sdr::header</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1header__decoder" prot="public">gr::lora_sdr::header_decoder</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1header__decoder__impl" prot="public">gr::lora_sdr::header_decoder_impl</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1header__impl" prot="public">gr::lora_sdr::header_impl</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1interleaver" prot="public">gr::lora_sdr::interleaver</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1interleaver__impl" prot="public">gr::lora_sdr::interleaver_impl</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1lora__sdr" prot="public">gr::lora_sdr::lora_sdr</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1lora__sdr__impl" prot="public">gr::lora_sdr::lora_sdr_impl</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1modulate" prot="public">gr::lora_sdr::modulate</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1modulate__impl" prot="public">gr::lora_sdr::modulate_impl</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1RH__RF95__header" prot="public">gr::lora_sdr::RH_RF95_header</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1RH__RF95__header__impl" prot="public">gr::lora_sdr::RH_RF95_header_impl</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1whitening" prot="public">gr::lora_sdr::whitening</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1whitening__impl" prot="public">gr::lora_sdr::whitening_impl</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacegr_1_1lora__sdr_1ac9015b8839f9981e9f6a82316b52dffb" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t gr::lora_sdr::whitening_seq[]</definition>
+        <argsstring>[]</argsstring>
+        <name>whitening_seq</name>
+        <initializer>= {
+            0xFF, 0xFE, 0xFC, 0xF8, 0xF0, 0xE1, 0xC2, 0x85, 0x0B, 0x17, 0x2F, 0x5E, 0xBC, 0x78, 0xF1, 0xE3,
+            0xC6, 0x8D, 0x1A, 0x34, 0x68, 0xD0, 0xA0, 0x40, 0x80, 0x01, 0x02, 0x04, 0x08, 0x11, 0x23, 0x47,
+            0x8E, 0x1C, 0x38, 0x71, 0xE2, 0xC4, 0x89, 0x12, 0x25, 0x4B, 0x97, 0x2E, 0x5C, 0xB8, 0x70, 0xE0,
+            0xC0, 0x81, 0x03, 0x06, 0x0C, 0x19, 0x32, 0x64, 0xC9, 0x92, 0x24, 0x49, 0x93, 0x26, 0x4D, 0x9B,
+            0x37, 0x6E, 0xDC, 0xB9, 0x72, 0xE4, 0xC8, 0x90, 0x20, 0x41, 0x82, 0x05, 0x0A, 0x15, 0x2B, 0x56,
+            0xAD, 0x5B, 0xB6, 0x6D, 0xDA, 0xB5, 0x6B, 0xD6, 0xAC, 0x59, 0xB2, 0x65, 0xCB, 0x96, 0x2C, 0x58,
+            0xB0, 0x61, 0xC3, 0x87, 0x0F, 0x1F, 0x3E, 0x7D, 0xFB, 0xF6, 0xED, 0xDB, 0xB7, 0x6F, 0xDE, 0xBD,
+            0x7A, 0xF5, 0xEB, 0xD7, 0xAE, 0x5D, 0xBA, 0x74, 0xE8, 0xD1, 0xA2, 0x44, 0x88, 0x10, 0x21, 0x43,
+            0x86, 0x0D, 0x1B, 0x36, 0x6C, 0xD8, 0xB1, 0x63, 0xC7, 0x8F, 0x1E, 0x3C, 0x79, 0xF3, 0xE7, 0xCE,
+            0x9C, 0x39, 0x73, 0xE6, 0xCC, 0x98, 0x31, 0x62, 0xC5, 0x8B, 0x16, 0x2D, 0x5A, 0xB4, 0x69, 0xD2,
+            0xA4, 0x48, 0x91, 0x22, 0x45, 0x8A, 0x14, 0x29, 0x52, 0xA5, 0x4A, 0x95, 0x2A, 0x54, 0xA9, 0x53,
+            0xA7, 0x4E, 0x9D, 0x3B, 0x77, 0xEE, 0xDD, 0xBB, 0x76, 0xEC, 0xD9, 0xB3, 0x67, 0xCF, 0x9E, 0x3D,
+            0x7B, 0xF7, 0xEF, 0xDF, 0xBF, 0x7E, 0xFD, 0xFA, 0xF4, 0xE9, 0xD3, 0xA6, 0x4C, 0x99, 0x33, 0x66,
+            0xCD, 0x9A, 0x35, 0x6A, 0xD4, 0xA8, 0x51, 0xA3, 0x46, 0x8C, 0x18, 0x30, 0x60, 0xC1, 0x83, 0x07,
+            0x0E, 0x1D, 0x3A, 0x75, 0xEA, 0xD5, 0xAA, 0x55, 0xAB, 0x57, 0xAF, 0x5F, 0xBE, 0x7C, 0xF9, 0xF2,
+            0xE5, 0xCA, 0x94, 0x28, 0x50, 0xA1, 0x42, 0x84, 0x09, 0x13, 0x27, 0x4F, 0x9F, 0x3F, 0x7F
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/lib/tables.h" line="7" column="23" bodyfile="/home/martyn/gr-lora_sdr/lib/tables.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegr_1_1lora__sdr_1adb2d67013a158614413dedf3f2ae4503" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long gr::lora_sdr::mod</definition>
+        <argsstring>(long a, long b)</argsstring>
+        <name>mod</name>
+        <param>
+          <type>long</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>return the modulus ab between 0 and (b-1) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/utilities.h" line="15" column="21" bodyfile="/home/martyn/gr-lora_sdr/include/lora_sdr/utilities.h" bodystart="15" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora__sdr_1af4e0331fc85f5e094f335feb3d65fb61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; bool &gt;</type>
+        <definition>std::vector&lt;bool&gt; gr::lora_sdr::int2bool</definition>
+        <argsstring>(uint integer, uint8_t n_bits)</argsstring>
+        <name>int2bool</name>
+        <param>
+          <type>uint</type>
+          <declname>integer</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>n_bits</declname>
+        </param>
+        <briefdescription>
+<para>Convert an integer into a MSB first vector of bool. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>integer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The integer to convert </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_bits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output number of bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/utilities.h" line="25" column="28" bodyfile="/home/martyn/gr-lora_sdr/include/lora_sdr/utilities.h" bodystart="25" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora__sdr_1aff065b957d7d236fcb0c9fd010c9b6a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora_sdr::bool2int</definition>
+        <argsstring>(std::vector&lt; bool &gt; b)</argsstring>
+        <name>bool2int</name>
+        <param>
+          <type>std::vector&lt; bool &gt;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Convert a MSB first vector of bool to a integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The boolean vector to convert </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/utilities.h" line="40" column="25" bodyfile="/home/martyn/gr-lora_sdr/include/lora_sdr/utilities.h" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora__sdr_1ab200cb6584b1993e5227cb0c2feaf077" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::build_ref_chirps</definition>
+        <argsstring>(gr_complex *upchirp, gr_complex *downchirp, uint8_t sf)</argsstring>
+        <name>build_ref_chirps</name>
+        <param>
+          <type>gr_complex *</type>
+          <declname>upchirp</declname>
+        </param>
+        <param>
+          <type>gr_complex *</type>
+          <declname>downchirp</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>sf</declname>
+        </param>
+        <briefdescription>
+<para>Return the reference chirps using s_f=bw. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>upchirp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to the reference upchirp </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>downchirp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to the reference downchirp </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The spreading factor to use </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/utilities.h" line="56" column="21" bodyfile="/home/martyn/gr-lora_sdr/include/lora_sdr/utilities.h" bodystart="56" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora__sdr_1ae0ffa3d5d413320a39a835e8318f3bb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::build_upchirp</definition>
+        <argsstring>(gr_complex *chirp, uint32_t id, uint8_t sf)</argsstring>
+        <name>build_upchirp</name>
+        <param>
+          <type>gr_complex *</type>
+          <declname>chirp</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>sf</declname>
+        </param>
+        <briefdescription>
+<para>Return an modulated upchirp using s_f=bw. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chirp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to the modulated upchirp </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number used to modulate the chirp </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The spreading factor to use </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/utilities.h" line="74" column="21" bodyfile="/home/martyn/gr-lora_sdr/include/lora_sdr/utilities.h" bodystart="74" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/add_crc.h" line="29" column="3"/>
+  </compounddef>
+</doxygen>

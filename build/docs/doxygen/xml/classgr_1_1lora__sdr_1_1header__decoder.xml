@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="classgr_1_1lora__sdr_1_1header__decoder" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora_sdr::header_decoder</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1lora__sdr_1_1header__decoder__impl" prot="public" virt="non-virtual">gr::lora_sdr::header_decoder_impl</derivedcompoundref>
+    <includes refid="header__decoder_8h" local="no">header_decoder.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1lora__sdr_1_1header__decoder_1a57494eb2a6c015a5681958e9b44230c5" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1lora__sdr_1_1header__decoder" kindref="compound">header_decoder</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;header_decoder&gt; gr::lora_sdr::header_decoder::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/header_decoder.h" line="40" column="33" bodyfile="/home/martyn/gr-lora_sdr/include/lora_sdr/header_decoder.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1lora__sdr_1_1header__decoder_1a00e9a5d5ae43dc349a53acfa10c28646" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1lora__sdr_1_1header__decoder_1a57494eb2a6c015a5681958e9b44230c5" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::lora_sdr::header_decoder::make</definition>
+        <argsstring>(bool impl_head, uint8_t cr, uint32_t pay_len, bool has_crc)</argsstring>
+        <name>make</name>
+        <param>
+          <type>bool</type>
+          <declname>impl_head</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>cr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>pay_len</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>has_crc</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1lora__sdr_1_1header__decoder" kindref="compound">lora_sdr::header_decoder</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1lora__sdr_1_1header__decoder" kindref="compound">lora_sdr::header_decoder</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1lora__sdr_1_1header__decoder_1a00e9a5d5ae43dc349a53acfa10c28646" kindref="member">lora_sdr::header_decoder::make</ref> is the public interface for creating new instances. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/header_decoder.h" line="50" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Decode the header of the data spackage. For more information about the implementation visit <ref refid="classgr_1_1lora__sdr_1_1header__decoder__impl" kindref="compound">header_decoder_impl</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>block</label>
+      </node>
+      <node id="3">
+        <label>gr::lora_sdr::header_decoder_impl</label>
+        <link refid="classgr_1_1lora__sdr_1_1header__decoder__impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gr::lora_sdr::header_decoder</label>
+        <link refid="classgr_1_1lora__sdr_1_1header__decoder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>block</label>
+      </node>
+      <node id="1">
+        <label>gr::lora_sdr::header_decoder</label>
+        <link refid="classgr_1_1lora__sdr_1_1header__decoder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/header_decoder.h" line="37" column="5" bodyfile="/home/martyn/gr-lora_sdr/include/lora_sdr/header_decoder.h" bodystart="38" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora__sdr_1_1header__decoder_1a00e9a5d5ae43dc349a53acfa10c28646" prot="public" virt="non-virtual"><scope>gr::lora_sdr::header_decoder</scope><name>make</name></member>
+      <member refid="classgr_1_1lora__sdr_1_1header__decoder_1a57494eb2a6c015a5681958e9b44230c5" prot="public" virt="non-virtual"><scope>gr::lora_sdr::header_decoder</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,530 @@
+\begin{theindex}
+
+  \item {\_kiss\_fft\_guts.h}, \hyperpage{79}
+    \subitem {C\_ADD}, \hyperpage{80}
+    \subitem {C\_ADDTO}, \hyperpage{80}
+    \subitem {C\_FIXDIV}, \hyperpage{80}
+    \subitem {C\_MUL}, \hyperpage{81}
+    \subitem {C\_MULBYSCALAR}, \hyperpage{81}
+    \subitem {C\_SUB}, \hyperpage{81}
+    \subitem {C\_SUBFROM}, \hyperpage{81}
+    \subitem {CHECK\_OVERFLOW\_OP}, \hyperpage{82}
+    \subitem {HALF\_OF}, \hyperpage{82}
+    \subitem {kf\_cexp}, \hyperpage{82}
+    \subitem {KISS\_FFT\_COS}, \hyperpage{82}
+    \subitem {KISS\_FFT\_SIN}, \hyperpage{82}
+    \subitem {KISS\_FFT\_TMP\_ALLOC}, \hyperpage{83}
+    \subitem {KISS\_FFT\_TMP\_FREE}, \hyperpage{83}
+    \subitem {MAXFACTORS}, \hyperpage{83}
+    \subitem {pcpx}, \hyperpage{83}
+    \subitem {S\_MUL}, \hyperpage{83}
+  \item {$\sim$RH\_RF95\_header\_impl}
+    \subitem {gr::lora\_sdr::RH\_RF95\_header\_impl}, \hyperpage{74}
+  \item {$\sim$add\_crc\_impl}
+    \subitem {gr::lora\_sdr::add\_crc\_impl}, \hyperpage{21}
+  \item {$\sim$crc\_verif\_impl}
+    \subitem {gr::lora\_sdr::crc\_verif\_impl}, \hyperpage{24}
+  \item {$\sim$data\_source\_impl}
+    \subitem {gr::lora\_sdr::data\_source\_impl}, \hyperpage{27}
+  \item {$\sim$deinterleaver\_impl}
+    \subitem {gr::lora\_sdr::deinterleaver\_impl}, \hyperpage{30}
+  \item {$\sim$dewhitening\_impl}
+    \subitem {gr::lora\_sdr::dewhitening\_impl}, \hyperpage{33}
+  \item {$\sim$err\_measures\_impl}
+    \subitem {gr::lora\_sdr::err\_measures\_impl}, \hyperpage{36}
+  \item {$\sim$fft\_demod\_impl}
+    \subitem {gr::lora\_sdr::fft\_demod\_impl}, \hyperpage{39}
+  \item {$\sim$frame\_sync\_impl}
+    \subitem {gr::lora\_sdr::frame\_sync\_impl}, \hyperpage{42}
+  \item {$\sim$gray\_decode\_impl}
+    \subitem {gr::lora\_sdr::gray\_decode\_impl}, \hyperpage{45}
+  \item {$\sim$gray\_enc\_impl}
+    \subitem {gr::lora\_sdr::gray\_enc\_impl}, \hyperpage{48}
+  \item {$\sim$hamming\_dec\_impl}
+    \subitem {gr::lora\_sdr::hamming\_dec\_impl}, \hyperpage{51}
+  \item {$\sim$hamming\_enc\_impl}
+    \subitem {gr::lora\_sdr::hamming\_enc\_impl}, \hyperpage{54}
+  \item {$\sim$header\_decoder\_impl}
+    \subitem {gr::lora\_sdr::header\_decoder\_impl}, \hyperpage{59}
+  \item {$\sim$header\_impl}
+    \subitem {gr::lora\_sdr::header\_impl}, \hyperpage{61}
+  \item {$\sim$interleaver\_impl}
+    \subitem {gr::lora\_sdr::interleaver\_impl}, \hyperpage{64}
+  \item {$\sim$lora\_sdr\_impl}
+    \subitem {gr::lora\_sdr::lora\_sdr\_impl}, \hyperpage{68}
+  \item {$\sim$modulate\_impl}
+    \subitem {gr::lora\_sdr::modulate\_impl}, \hyperpage{71}
+  \item {$\sim$whitening\_impl}
+    \subitem {gr::lora\_sdr::whitening\_impl}, \hyperpage{77}
+
+  \indexspace
+
+  \item {add\_crc.h}, \hyperpage{84}
+  \item {add\_crc\_impl}
+    \subitem {gr::lora\_sdr::add\_crc\_impl}, \hyperpage{21}
+  \item {add\_crc\_impl.h}, \hyperpage{85}
+  \item {api.h}, \hyperpage{85}
+    \subitem {LORA\_SDR\_API}, \hyperpage{86}
+
+  \indexspace
+
+  \item {bool2int}
+    \subitem {gr::lora\_sdr}, \hyperpage{15}
+  \item {build\_ref\_chirps}
+    \subitem {gr::lora\_sdr}, \hyperpage{15}
+  \item {build\_upchirp}
+    \subitem {gr::lora\_sdr}, \hyperpage{15}
+
+  \indexspace
+
+  \item {C\_ADD}
+    \subitem {\_kiss\_fft\_guts.h}, \hyperpage{80}
+  \item {C\_ADDTO}
+    \subitem {\_kiss\_fft\_guts.h}, \hyperpage{80}
+  \item {C\_FIXDIV}
+    \subitem {\_kiss\_fft\_guts.h}, \hyperpage{80}
+  \item {C\_MUL}
+    \subitem {\_kiss\_fft\_guts.h}, \hyperpage{81}
+  \item {C\_MULBYSCALAR}
+    \subitem {\_kiss\_fft\_guts.h}, \hyperpage{81}
+  \item {C\_SUB}
+    \subitem {\_kiss\_fft\_guts.h}, \hyperpage{81}
+  \item {C\_SUBFROM}
+    \subitem {\_kiss\_fft\_guts.h}, \hyperpage{81}
+  \item {CHECK\_OVERFLOW\_OP}
+    \subitem {\_kiss\_fft\_guts.h}, \hyperpage{82}
+  \item {crc\_verif.h}, \hyperpage{86}
+  \item {crc\_verif\_impl}
+    \subitem {gr::lora\_sdr::crc\_verif\_impl}, \hyperpage{24}
+  \item {crc\_verif\_impl.h}, \hyperpage{87}
+
+  \indexspace
+
+  \item {data\_source.h}, \hyperpage{88}
+  \item {data\_source\_impl}
+    \subitem {gr::lora\_sdr::data\_source\_impl}, \hyperpage{27}
+  \item {data\_source\_impl.h}, \hyperpage{89}
+  \item {deinterleaver.h}, \hyperpage{89}
+  \item {deinterleaver\_impl}
+    \subitem {gr::lora\_sdr::deinterleaver\_impl}, \hyperpage{30}
+  \item {deinterleaver\_impl.h}, \hyperpage{90}
+  \item {dewhitening.h}, \hyperpage{91}
+  \item {dewhitening\_impl}
+    \subitem {gr::lora\_sdr::dewhitening\_impl}, \hyperpage{33}
+  \item {dewhitening\_impl.h}, \hyperpage{92}
+
+  \indexspace
+
+  \item {err\_measures.h}, \hyperpage{93}
+  \item {err\_measures\_impl}
+    \subitem {gr::lora\_sdr::err\_measures\_impl}, \hyperpage{36}
+  \item {err\_measures\_impl.h}, \hyperpage{94}
+
+  \indexspace
+
+  \item {factors}
+    \subitem {kiss\_fft\_state}, \hyperpage{65}
+  \item {fft\_demod.h}, \hyperpage{94}
+  \item {fft\_demod\_impl}
+    \subitem {gr::lora\_sdr::fft\_demod\_impl}, \hyperpage{39}
+  \item {fft\_demod\_impl.h}, \hyperpage{95}
+  \item {forecast}
+    \subitem {gr::lora\_sdr::add\_crc\_impl}, \hyperpage{21}
+    \subitem {gr::lora\_sdr::crc\_verif\_impl}, \hyperpage{24}
+    \subitem {gr::lora\_sdr::deinterleaver\_impl}, \hyperpage{30}
+    \subitem {gr::lora\_sdr::dewhitening\_impl}, \hyperpage{33}
+    \subitem {gr::lora\_sdr::fft\_demod\_impl}, \hyperpage{39}
+    \subitem {gr::lora\_sdr::frame\_sync\_impl}, \hyperpage{42}
+    \subitem {gr::lora\_sdr::header\_decoder\_impl}, \hyperpage{59}
+    \subitem {gr::lora\_sdr::header\_impl}, \hyperpage{61}
+    \subitem {gr::lora\_sdr::interleaver\_impl}, \hyperpage{64}
+    \subitem {gr::lora\_sdr::lora\_sdr\_impl}, \hyperpage{69}
+    \subitem {gr::lora\_sdr::modulate\_impl}, \hyperpage{72}
+    \subitem {gr::lora\_sdr::RH\_RF95\_header\_impl}, \hyperpage{75}
+  \item {frame\_sync.h}, \hyperpage{96}
+  \item {frame\_sync\_impl}
+    \subitem {gr::lora\_sdr::frame\_sync\_impl}, \hyperpage{42}
+  \item {frame\_sync\_impl.h}, \hyperpage{97}
+
+  \indexspace
+
+  \item {general\_work}
+    \subitem {gr::lora\_sdr::add\_crc\_impl}, \hyperpage{21}
+    \subitem {gr::lora\_sdr::crc\_verif\_impl}, \hyperpage{24}
+    \subitem {gr::lora\_sdr::deinterleaver\_impl}, \hyperpage{30}
+    \subitem {gr::lora\_sdr::dewhitening\_impl}, \hyperpage{33}
+    \subitem {gr::lora\_sdr::fft\_demod\_impl}, \hyperpage{39}
+    \subitem {gr::lora\_sdr::frame\_sync\_impl}, \hyperpage{42}
+    \subitem {gr::lora\_sdr::header\_decoder\_impl}, \hyperpage{59}
+    \subitem {gr::lora\_sdr::header\_impl}, \hyperpage{61}
+    \subitem {gr::lora\_sdr::interleaver\_impl}, \hyperpage{64}
+    \subitem {gr::lora\_sdr::lora\_sdr\_impl}, \hyperpage{69}
+    \subitem {gr::lora\_sdr::modulate\_impl}, \hyperpage{72}
+    \subitem {gr::lora\_sdr::RH\_RF95\_header\_impl}, \hyperpage{75}
+  \item {GNU Radio LORA\_SDR C++ Signal Processing Blocks}, 
+		\hyperpage{11}
+  \item {gr}, \hyperpage{13}
+  \item {gr::lora\_sdr}, \hyperpage{13}
+    \subitem {bool2int}, \hyperpage{15}
+    \subitem {build\_ref\_chirps}, \hyperpage{15}
+    \subitem {build\_upchirp}, \hyperpage{15}
+    \subitem {int2bool}, \hyperpage{17}
+    \subitem {mod}, \hyperpage{17}
+    \subitem {whitening\_seq}, \hyperpage{17}
+  \item {gr::lora\_sdr::add\_crc}, \hyperpage{19}
+    \subitem {make}, \hyperpage{20}
+    \subitem {sptr}, \hyperpage{20}
+  \item {gr::lora\_sdr::add\_crc\_impl}, \hyperpage{20}
+    \subitem {$\sim$add\_crc\_impl}, \hyperpage{21}
+    \subitem {add\_crc\_impl}, \hyperpage{21}
+    \subitem {forecast}, \hyperpage{21}
+    \subitem {general\_work}, \hyperpage{21}
+  \item {gr::lora\_sdr::crc\_verif}, \hyperpage{22}
+    \subitem {make}, \hyperpage{23}
+    \subitem {sptr}, \hyperpage{23}
+  \item {gr::lora\_sdr::crc\_verif\_impl}, \hyperpage{23}
+    \subitem {$\sim$crc\_verif\_impl}, \hyperpage{24}
+    \subitem {crc\_verif\_impl}, \hyperpage{24}
+    \subitem {forecast}, \hyperpage{24}
+    \subitem {general\_work}, \hyperpage{24}
+  \item {gr::lora\_sdr::data\_source}, \hyperpage{25}
+    \subitem {make}, \hyperpage{26}
+    \subitem {sptr}, \hyperpage{25}
+  \item {gr::lora\_sdr::data\_source\_impl}, \hyperpage{26}
+    \subitem {$\sim$data\_source\_impl}, \hyperpage{27}
+    \subitem {data\_source\_impl}, \hyperpage{27}
+    \subitem {work}, \hyperpage{27}
+  \item {gr::lora\_sdr::deinterleaver}, \hyperpage{28}
+    \subitem {make}, \hyperpage{29}
+    \subitem {sptr}, \hyperpage{28}
+  \item {gr::lora\_sdr::deinterleaver\_impl}, \hyperpage{29}
+    \subitem {$\sim$deinterleaver\_impl}, \hyperpage{30}
+    \subitem {deinterleaver\_impl}, \hyperpage{30}
+    \subitem {forecast}, \hyperpage{30}
+    \subitem {general\_work}, \hyperpage{30}
+  \item {gr::lora\_sdr::dewhitening}, \hyperpage{31}
+    \subitem {make}, \hyperpage{32}
+    \subitem {sptr}, \hyperpage{31}
+  \item {gr::lora\_sdr::dewhitening\_impl}, \hyperpage{32}
+    \subitem {$\sim$dewhitening\_impl}, \hyperpage{33}
+    \subitem {dewhitening\_impl}, \hyperpage{33}
+    \subitem {forecast}, \hyperpage{33}
+    \subitem {general\_work}, \hyperpage{33}
+  \item {gr::lora\_sdr::err\_measures}, \hyperpage{34}
+    \subitem {make}, \hyperpage{35}
+    \subitem {sptr}, \hyperpage{34}
+  \item {gr::lora\_sdr::err\_measures\_impl}, \hyperpage{35}
+    \subitem {$\sim$err\_measures\_impl}, \hyperpage{36}
+    \subitem {err\_measures\_impl}, \hyperpage{36}
+    \subitem {work}, \hyperpage{36}
+  \item {gr::lora\_sdr::fft\_demod}, \hyperpage{37}
+    \subitem {make}, \hyperpage{38}
+    \subitem {sptr}, \hyperpage{37}
+  \item {gr::lora\_sdr::fft\_demod\_impl}, \hyperpage{38}
+    \subitem {$\sim$fft\_demod\_impl}, \hyperpage{39}
+    \subitem {fft\_demod\_impl}, \hyperpage{39}
+    \subitem {forecast}, \hyperpage{39}
+    \subitem {general\_work}, \hyperpage{39}
+  \item {gr::lora\_sdr::frame\_sync}, \hyperpage{40}
+    \subitem {make}, \hyperpage{41}
+    \subitem {sptr}, \hyperpage{40}
+  \item {gr::lora\_sdr::frame\_sync\_impl}, \hyperpage{41}
+    \subitem {$\sim$frame\_sync\_impl}, \hyperpage{42}
+    \subitem {forecast}, \hyperpage{42}
+    \subitem {frame\_sync\_impl}, \hyperpage{42}
+    \subitem {general\_work}, \hyperpage{42}
+  \item {gr::lora\_sdr::gray\_decode}, \hyperpage{43}
+    \subitem {make}, \hyperpage{44}
+    \subitem {sptr}, \hyperpage{44}
+  \item {gr::lora\_sdr::gray\_decode\_impl}, \hyperpage{45}
+    \subitem {$\sim$gray\_decode\_impl}, \hyperpage{45}
+    \subitem {gray\_decode\_impl}, \hyperpage{45}
+    \subitem {work}, \hyperpage{46}
+  \item {gr::lora\_sdr::gray\_enc}, \hyperpage{46}
+    \subitem {make}, \hyperpage{47}
+    \subitem {sptr}, \hyperpage{47}
+  \item {gr::lora\_sdr::gray\_enc\_impl}, \hyperpage{48}
+    \subitem {$\sim$gray\_enc\_impl}, \hyperpage{48}
+    \subitem {gray\_enc\_impl}, \hyperpage{48}
+    \subitem {work}, \hyperpage{49}
+  \item {gr::lora\_sdr::hamming\_dec}, \hyperpage{49}
+    \subitem {make}, \hyperpage{50}
+    \subitem {sptr}, \hyperpage{50}
+  \item {gr::lora\_sdr::hamming\_dec\_impl}, \hyperpage{51}
+    \subitem {$\sim$hamming\_dec\_impl}, \hyperpage{51}
+    \subitem {hamming\_dec\_impl}, \hyperpage{51}
+    \subitem {work}, \hyperpage{52}
+  \item {gr::lora\_sdr::hamming\_enc}, \hyperpage{52}
+    \subitem {make}, \hyperpage{53}
+    \subitem {sptr}, \hyperpage{53}
+  \item {gr::lora\_sdr::hamming\_enc\_impl}, \hyperpage{54}
+    \subitem {$\sim$hamming\_enc\_impl}, \hyperpage{54}
+    \subitem {hamming\_enc\_impl}, \hyperpage{54}
+    \subitem {work}, \hyperpage{55}
+  \item {gr::lora\_sdr::header}, \hyperpage{55}
+    \subitem {make}, \hyperpage{56}
+    \subitem {sptr}, \hyperpage{56}
+  \item {gr::lora\_sdr::header\_decoder}, \hyperpage{57}
+    \subitem {make}, \hyperpage{58}
+    \subitem {sptr}, \hyperpage{57}
+  \item {gr::lora\_sdr::header\_decoder\_impl}, \hyperpage{58}
+    \subitem {$\sim$header\_decoder\_impl}, \hyperpage{59}
+    \subitem {forecast}, \hyperpage{59}
+    \subitem {general\_work}, \hyperpage{59}
+    \subitem {header\_decoder\_impl}, \hyperpage{59}
+  \item {gr::lora\_sdr::header\_impl}, \hyperpage{60}
+    \subitem {$\sim$header\_impl}, \hyperpage{61}
+    \subitem {forecast}, \hyperpage{61}
+    \subitem {general\_work}, \hyperpage{61}
+    \subitem {header\_impl}, \hyperpage{60}
+  \item {gr::lora\_sdr::interleaver}, \hyperpage{62}
+    \subitem {make}, \hyperpage{63}
+    \subitem {sptr}, \hyperpage{62}
+  \item {gr::lora\_sdr::interleaver\_impl}, \hyperpage{63}
+    \subitem {$\sim$interleaver\_impl}, \hyperpage{64}
+    \subitem {forecast}, \hyperpage{64}
+    \subitem {general\_work}, \hyperpage{64}
+    \subitem {interleaver\_impl}, \hyperpage{64}
+  \item {gr::lora\_sdr::lora\_sdr}, \hyperpage{66}
+    \subitem {make}, \hyperpage{67}
+    \subitem {sptr}, \hyperpage{67}
+  \item {gr::lora\_sdr::lora\_sdr\_impl}, \hyperpage{68}
+    \subitem {$\sim$lora\_sdr\_impl}, \hyperpage{68}
+    \subitem {forecast}, \hyperpage{69}
+    \subitem {general\_work}, \hyperpage{69}
+    \subitem {lora\_sdr\_impl}, \hyperpage{68}
+  \item {gr::lora\_sdr::modulate}, \hyperpage{69}
+    \subitem {make}, \hyperpage{70}
+    \subitem {sptr}, \hyperpage{70}
+  \item {gr::lora\_sdr::modulate\_impl}, \hyperpage{71}
+    \subitem {$\sim$modulate\_impl}, \hyperpage{71}
+    \subitem {forecast}, \hyperpage{72}
+    \subitem {general\_work}, \hyperpage{72}
+    \subitem {modulate\_impl}, \hyperpage{71}
+  \item {gr::lora\_sdr::RH\_RF95\_header}, \hyperpage{72}
+    \subitem {make}, \hyperpage{73}
+    \subitem {sptr}, \hyperpage{73}
+  \item {gr::lora\_sdr::RH\_RF95\_header\_impl}, \hyperpage{74}
+    \subitem {$\sim$RH\_RF95\_header\_impl}, \hyperpage{74}
+    \subitem {forecast}, \hyperpage{75}
+    \subitem {general\_work}, \hyperpage{75}
+    \subitem {RH\_RF95\_header\_impl}, \hyperpage{74}
+  \item {gr::lora\_sdr::whitening}, \hyperpage{75}
+    \subitem {make}, \hyperpage{76}
+    \subitem {sptr}, \hyperpage{76}
+  \item {gr::lora\_sdr::whitening\_impl}, \hyperpage{77}
+    \subitem {$\sim$whitening\_impl}, \hyperpage{77}
+    \subitem {whitening\_impl}, \hyperpage{77}
+    \subitem {work}, \hyperpage{78}
+  \item {gray\_decode.h}, \hyperpage{98}
+  \item {gray\_decode\_impl}
+    \subitem {gr::lora\_sdr::gray\_decode\_impl}, \hyperpage{45}
+  \item {gray\_decode\_impl.h}, \hyperpage{99}
+  \item {gray\_enc.h}, \hyperpage{99}
+  \item {gray\_enc\_impl}
+    \subitem {gr::lora\_sdr::gray\_enc\_impl}, \hyperpage{48}
+  \item {gray\_enc\_impl.h}, \hyperpage{100}
+  \item {group\_defs.dox}, \hyperpage{101}
+
+  \indexspace
+
+  \item {HALF\_OF}
+    \subitem {\_kiss\_fft\_guts.h}, \hyperpage{82}
+  \item {hamming\_dec.h}, \hyperpage{101}
+  \item {hamming\_dec\_impl}
+    \subitem {gr::lora\_sdr::hamming\_dec\_impl}, \hyperpage{51}
+  \item {hamming\_dec\_impl.h}, \hyperpage{102}
+  \item {hamming\_enc.h}, \hyperpage{103}
+  \item {hamming\_enc\_impl}
+    \subitem {gr::lora\_sdr::hamming\_enc\_impl}, \hyperpage{54}
+  \item {hamming\_enc\_impl.h}, \hyperpage{104}
+  \item {header.h}, \hyperpage{105}
+  \item {header\_decoder.h}, \hyperpage{106}
+  \item {header\_decoder\_impl}
+    \subitem {gr::lora\_sdr::header\_decoder\_impl}, \hyperpage{59}
+  \item {header\_decoder\_impl.h}, \hyperpage{107}
+  \item {header\_impl}
+    \subitem {gr::lora\_sdr::header\_impl}, \hyperpage{60}
+  \item {header\_impl.h}, \hyperpage{107}
+
+  \indexspace
+
+  \item {i}
+    \subitem {kiss\_fft\_cpx}, \hyperpage{65}
+  \item {int2bool}
+    \subitem {gr::lora\_sdr}, \hyperpage{17}
+  \item {interleaver.h}, \hyperpage{108}
+  \item {interleaver\_impl}
+    \subitem {gr::lora\_sdr::interleaver\_impl}, \hyperpage{64}
+  \item {interleaver\_impl.h}, \hyperpage{109}
+  \item {inverse}
+    \subitem {kiss\_fft\_state}, \hyperpage{66}
+
+  \indexspace
+
+  \item {kf\_cexp}
+    \subitem {\_kiss\_fft\_guts.h}, \hyperpage{82}
+  \item {kiss\_fft}
+    \subitem {kiss\_fft.h}, \hyperpage{112}
+  \item {kiss\_fft.h}, \hyperpage{110}
+    \subitem {kiss\_fft}, \hyperpage{112}
+    \subitem {kiss\_fft\_alloc}, \hyperpage{112}
+    \subitem {kiss\_fft\_cfg}, \hyperpage{112}
+    \subitem {kiss\_fft\_cleanup}, \hyperpage{112}
+    \subitem {KISS\_FFT\_FREE}, \hyperpage{111}
+    \subitem {kiss\_fft\_free}, \hyperpage{111}
+    \subitem {KISS\_FFT\_MALLOC}, \hyperpage{111}
+    \subitem {kiss\_fft\_next\_fast\_size}, \hyperpage{112}
+    \subitem {kiss\_fft\_scalar}, \hyperpage{111}
+    \subitem {kiss\_fft\_stride}, \hyperpage{113}
+    \subitem {kiss\_fftr\_next\_fast\_size\_real}, \hyperpage{111}
+  \item {kiss\_fft\_alloc}
+    \subitem {kiss\_fft.h}, \hyperpage{112}
+  \item {kiss\_fft\_cfg}
+    \subitem {kiss\_fft.h}, \hyperpage{112}
+  \item {kiss\_fft\_cleanup}
+    \subitem {kiss\_fft.h}, \hyperpage{112}
+  \item {KISS\_FFT\_COS}
+    \subitem {\_kiss\_fft\_guts.h}, \hyperpage{82}
+  \item {kiss\_fft\_cpx}, \hyperpage{65}
+    \subitem {i}, \hyperpage{65}
+    \subitem {r}, \hyperpage{65}
+  \item {KISS\_FFT\_FREE}
+    \subitem {kiss\_fft.h}, \hyperpage{111}
+  \item {kiss\_fft\_free}
+    \subitem {kiss\_fft.h}, \hyperpage{111}
+  \item {KISS\_FFT\_MALLOC}
+    \subitem {kiss\_fft.h}, \hyperpage{111}
+  \item {kiss\_fft\_next\_fast\_size}
+    \subitem {kiss\_fft.h}, \hyperpage{112}
+  \item {kiss\_fft\_scalar}
+    \subitem {kiss\_fft.h}, \hyperpage{111}
+  \item {KISS\_FFT\_SIN}
+    \subitem {\_kiss\_fft\_guts.h}, \hyperpage{82}
+  \item {kiss\_fft\_state}, \hyperpage{65}
+    \subitem {factors}, \hyperpage{65}
+    \subitem {inverse}, \hyperpage{66}
+    \subitem {nfft}, \hyperpage{66}
+    \subitem {twiddles}, \hyperpage{66}
+  \item {kiss\_fft\_stride}
+    \subitem {kiss\_fft.h}, \hyperpage{113}
+  \item {KISS\_FFT\_TMP\_ALLOC}
+    \subitem {\_kiss\_fft\_guts.h}, \hyperpage{83}
+  \item {KISS\_FFT\_TMP\_FREE}
+    \subitem {\_kiss\_fft\_guts.h}, \hyperpage{83}
+  \item {kiss\_fftr\_next\_fast\_size\_real}
+    \subitem {kiss\_fft.h}, \hyperpage{111}
+
+  \indexspace
+
+  \item {lora\_sdr.h}, \hyperpage{113}
+  \item {LORA\_SDR\_API}
+    \subitem {api.h}, \hyperpage{86}
+  \item {lora\_sdr\_impl}
+    \subitem {gr::lora\_sdr::lora\_sdr\_impl}, \hyperpage{68}
+  \item {lora\_sdr\_impl.h}, \hyperpage{114}
+
+  \indexspace
+
+  \item {main\_page.dox}, \hyperpage{115}
+  \item {make}
+    \subitem {gr::lora\_sdr::add\_crc}, \hyperpage{20}
+    \subitem {gr::lora\_sdr::crc\_verif}, \hyperpage{23}
+    \subitem {gr::lora\_sdr::data\_source}, \hyperpage{26}
+    \subitem {gr::lora\_sdr::deinterleaver}, \hyperpage{29}
+    \subitem {gr::lora\_sdr::dewhitening}, \hyperpage{32}
+    \subitem {gr::lora\_sdr::err\_measures}, \hyperpage{35}
+    \subitem {gr::lora\_sdr::fft\_demod}, \hyperpage{38}
+    \subitem {gr::lora\_sdr::frame\_sync}, \hyperpage{41}
+    \subitem {gr::lora\_sdr::gray\_decode}, \hyperpage{44}
+    \subitem {gr::lora\_sdr::gray\_enc}, \hyperpage{47}
+    \subitem {gr::lora\_sdr::hamming\_dec}, \hyperpage{50}
+    \subitem {gr::lora\_sdr::hamming\_enc}, \hyperpage{53}
+    \subitem {gr::lora\_sdr::header}, \hyperpage{56}
+    \subitem {gr::lora\_sdr::header\_decoder}, \hyperpage{58}
+    \subitem {gr::lora\_sdr::interleaver}, \hyperpage{63}
+    \subitem {gr::lora\_sdr::lora\_sdr}, \hyperpage{67}
+    \subitem {gr::lora\_sdr::modulate}, \hyperpage{70}
+    \subitem {gr::lora\_sdr::RH\_RF95\_header}, \hyperpage{73}
+    \subitem {gr::lora\_sdr::whitening}, \hyperpage{76}
+  \item {MAXFACTORS}
+    \subitem {\_kiss\_fft\_guts.h}, \hyperpage{83}
+  \item {mod}
+    \subitem {gr::lora\_sdr}, \hyperpage{17}
+  \item {modulate.h}, \hyperpage{115}
+  \item {modulate\_impl}
+    \subitem {gr::lora\_sdr::modulate\_impl}, \hyperpage{71}
+  \item {modulate\_impl.h}, \hyperpage{116}
+
+  \indexspace
+
+  \item {nfft}
+    \subitem {kiss\_fft\_state}, \hyperpage{66}
+
+  \indexspace
+
+  \item {pcpx}
+    \subitem {\_kiss\_fft\_guts.h}, \hyperpage{83}
+
+  \indexspace
+
+  \item {r}
+    \subitem {kiss\_fft\_cpx}, \hyperpage{65}
+  \item {RH\_RF95\_header.h}, \hyperpage{116}
+  \item {RH\_RF95\_header\_impl}
+    \subitem {gr::lora\_sdr::RH\_RF95\_header\_impl}, \hyperpage{74}
+  \item {RH\_RF95\_header\_impl.h}, \hyperpage{117}
+
+  \indexspace
+
+  \item {S\_MUL}
+    \subitem {\_kiss\_fft\_guts.h}, \hyperpage{83}
+  \item {sptr}
+    \subitem {gr::lora\_sdr::add\_crc}, \hyperpage{20}
+    \subitem {gr::lora\_sdr::crc\_verif}, \hyperpage{23}
+    \subitem {gr::lora\_sdr::data\_source}, \hyperpage{25}
+    \subitem {gr::lora\_sdr::deinterleaver}, \hyperpage{28}
+    \subitem {gr::lora\_sdr::dewhitening}, \hyperpage{31}
+    \subitem {gr::lora\_sdr::err\_measures}, \hyperpage{34}
+    \subitem {gr::lora\_sdr::fft\_demod}, \hyperpage{37}
+    \subitem {gr::lora\_sdr::frame\_sync}, \hyperpage{40}
+    \subitem {gr::lora\_sdr::gray\_decode}, \hyperpage{44}
+    \subitem {gr::lora\_sdr::gray\_enc}, \hyperpage{47}
+    \subitem {gr::lora\_sdr::hamming\_dec}, \hyperpage{50}
+    \subitem {gr::lora\_sdr::hamming\_enc}, \hyperpage{53}
+    \subitem {gr::lora\_sdr::header}, \hyperpage{56}
+    \subitem {gr::lora\_sdr::header\_decoder}, \hyperpage{57}
+    \subitem {gr::lora\_sdr::interleaver}, \hyperpage{62}
+    \subitem {gr::lora\_sdr::lora\_sdr}, \hyperpage{67}
+    \subitem {gr::lora\_sdr::modulate}, \hyperpage{70}
+    \subitem {gr::lora\_sdr::RH\_RF95\_header}, \hyperpage{73}
+    \subitem {gr::lora\_sdr::whitening}, \hyperpage{76}
+
+  \indexspace
+
+  \item {tables.h}, \hyperpage{118}
+  \item {twiddles}
+    \subitem {kiss\_fft\_state}, \hyperpage{66}
+
+  \indexspace
+
+  \item {utilities.h}, \hyperpage{118}
+
+  \indexspace
+
+  \item {whitening.h}, \hyperpage{119}
+  \item {whitening\_impl}
+    \subitem {gr::lora\_sdr::whitening\_impl}, \hyperpage{77}
+  \item {whitening\_impl.h}, \hyperpage{120}
+  \item {whitening\_seq}
+    \subitem {gr::lora\_sdr}, \hyperpage{17}
+  \item {work}
+    \subitem {gr::lora\_sdr::data\_source\_impl}, \hyperpage{27}
+    \subitem {gr::lora\_sdr::err\_measures\_impl}, \hyperpage{36}
+    \subitem {gr::lora\_sdr::gray\_decode\_impl}, \hyperpage{46}
+    \subitem {gr::lora\_sdr::gray\_enc\_impl}, \hyperpage{49}
+    \subitem {gr::lora\_sdr::hamming\_dec\_impl}, \hyperpage{52}
+    \subitem {gr::lora\_sdr::hamming\_enc\_impl}, \hyperpage{55}
+    \subitem {gr::lora\_sdr::whitening\_impl}, \hyperpage{78}
+
+\end{theindex}

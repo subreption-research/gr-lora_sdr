@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="namespacegr_1_1lora__sdr" kind="namespace" language="C++">
+    <compoundname>gr::lora_sdr</compoundname>
+    <innerclass refid="classgr_1_1lora__sdr_1_1add__crc" prot="public">gr::lora_sdr::add_crc</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1crc__verif" prot="public">gr::lora_sdr::crc_verif</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1data__source" prot="public">gr::lora_sdr::data_source</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1deinterleaver" prot="public">gr::lora_sdr::deinterleaver</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1dewhitening" prot="public">gr::lora_sdr::dewhitening</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1err__measures" prot="public">gr::lora_sdr::err_measures</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1fft__demod" prot="public">gr::lora_sdr::fft_demod</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1frame__sync" prot="public">gr::lora_sdr::frame_sync</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1gray__decode" prot="public">gr::lora_sdr::gray_decode</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1gray__enc" prot="public">gr::lora_sdr::gray_enc</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1hamming__dec" prot="public">gr::lora_sdr::hamming_dec</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1hamming__enc" prot="public">gr::lora_sdr::hamming_enc</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1header" prot="public">gr::lora_sdr::header</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1header__decoder" prot="public">gr::lora_sdr::header_decoder</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1interleaver" prot="public">gr::lora_sdr::interleaver</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1lora__sdr" prot="public">gr::lora_sdr::lora_sdr</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1modulate" prot="public">gr::lora_sdr::modulate</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1RH__RF95__header" prot="public">gr::lora_sdr::RH_RF95_header</innerclass>
+    <innerclass refid="classgr_1_1lora__sdr_1_1whitening" prot="public">gr::lora_sdr::whitening</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegr_1_1lora__sdr_1adb2d67013a158614413dedf3f2ae4503" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long gr::lora_sdr::mod</definition>
+        <argsstring>(long a, long b)</argsstring>
+        <name>mod</name>
+        <param>
+          <type>long</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>return the modulus ab between 0 and (b-1) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/utilities.h" line="15" column="13" bodyfile="/home/martyn/gr-lora_sdr/include/lora_sdr/utilities.h" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora__sdr_1af4e0331fc85f5e094f335feb3d65fb61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; bool &gt;</type>
+        <definition>std::vector&lt;bool&gt; gr::lora_sdr::int2bool</definition>
+        <argsstring>(uint integer, uint8_t n_bits)</argsstring>
+        <name>int2bool</name>
+        <param>
+          <type>uint</type>
+          <declname>integer</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>n_bits</declname>
+        </param>
+        <briefdescription>
+<para>Convert an integer into a MSB first vector of bool. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>integer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The integer to convert </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_bits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output number of bits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/utilities.h" line="24" column="20" bodyfile="/home/martyn/gr-lora_sdr/include/lora_sdr/utilities.h" bodystart="24" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora__sdr_1aff065b957d7d236fcb0c9fd010c9b6a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora_sdr::bool2int</definition>
+        <argsstring>(std::vector&lt; bool &gt; b)</argsstring>
+        <name>bool2int</name>
+        <param>
+          <type>std::vector&lt; bool &gt;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Convert a MSB first vector of bool to a integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The boolean vector to convert </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/utilities.h" line="38" column="17" bodyfile="/home/martyn/gr-lora_sdr/include/lora_sdr/utilities.h" bodystart="38" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora__sdr_1ab200cb6584b1993e5227cb0c2feaf077" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::build_ref_chirps</definition>
+        <argsstring>(gr_complex *upchirp, gr_complex *downchirp, uint8_t sf)</argsstring>
+        <name>build_ref_chirps</name>
+        <param>
+          <type>gr_complex *</type>
+          <declname>upchirp</declname>
+        </param>
+        <param>
+          <type>gr_complex *</type>
+          <declname>downchirp</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>sf</declname>
+        </param>
+        <briefdescription>
+<para>Return the reference chirps using s_f=bw. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>upchirp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to the reference upchirp </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>downchirp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to the reference downchirp </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The spreading factor to use </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/utilities.h" line="54" column="13" bodyfile="/home/martyn/gr-lora_sdr/include/lora_sdr/utilities.h" bodystart="54" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora__sdr_1ae0ffa3d5d413320a39a835e8318f3bb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora_sdr::build_upchirp</definition>
+        <argsstring>(gr_complex *chirp, uint32_t id, uint8_t sf)</argsstring>
+        <name>build_upchirp</name>
+        <param>
+          <type>gr_complex *</type>
+          <declname>chirp</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>sf</declname>
+        </param>
+        <briefdescription>
+<para>Return an modulated upchirp using s_f=bw. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chirp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to the modulated upchirp </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number used to modulate the chirp </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The spreading factor to use </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/utilities.h" line="75" column="13" bodyfile="/home/martyn/gr-lora_sdr/include/lora_sdr/utilities.h" bodystart="75" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/martyn/gr-lora_sdr/include/lora_sdr/add_crc.h" line="29" column="3"/>
+  </compounddef>
+</doxygen>
