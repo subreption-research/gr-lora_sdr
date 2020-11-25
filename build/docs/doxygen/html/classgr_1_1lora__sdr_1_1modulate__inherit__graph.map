@@ -1,5 +1,0 @@
-<map id="gr::lora_sdr::modulate" name="gr::lora_sdr::modulate">
-<area shape="rect" id="node1" title="End block of the sending side that modulates the final to be sent data to the LoRa standard For more ..." alt="" coords="21,80,169,107"/>
-<area shape="rect" id="node3" href="$classgr_1_1lora__sdr_1_1modulate__impl.html" title=" " alt="" coords="5,155,184,181"/>
-<area shape="rect" id="node2" title=" " alt="" coords="68,5,121,32"/>
-</map>

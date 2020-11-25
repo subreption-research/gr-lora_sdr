@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/_lora_sdr_swig_doc_tag.dir/_lora_sdr_swig_doc_tag.cpp.o -o _lora_sdr_swig_doc_tag 

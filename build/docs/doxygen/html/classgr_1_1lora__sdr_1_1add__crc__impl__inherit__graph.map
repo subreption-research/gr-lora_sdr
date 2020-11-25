@@ -1,5 +1,0 @@
-<map id="gr::lora_sdr::add_crc_impl" name="gr::lora_sdr::add_crc_impl">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,177,181"/>
-<area shape="rect" id="node2" href="$classgr_1_1lora__sdr_1_1add__crc.html" title="This block add LoRa CRC (Cyclic redundancy check) into the payload, more info see add_crc_impl." alt="" coords="21,80,162,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="65,5,118,32"/>
-</map>
