@@ -80,8 +80,8 @@ $(document).ready(function(){initNavTree('dev_2lib_2hamming__enc__impl_8h_source
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">   * @brief Construct a new hamming enc impl object</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">   * @param cr</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">   * @param sf</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">   * @param cr : coding rate</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">   * @param sf : spreading factor</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">   */</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1hamming__enc__impl.html#a4ae1a7020803b6125d510a07e07b275d">hamming_enc_impl</a>(uint8_t cr, uint8_t sf);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span> </div>
@@ -92,25 +92,26 @@ $(document).ready(function(){initNavTree('dev_2lib_2hamming__enc__impl_8h_source
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1hamming__enc__impl.html#a4af886733a3eac5a5b379739d3119cfb">~hamming_enc_impl</a>();</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">   * @brief Main function</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">   * @param noutput_items</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">   * @param input_items</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">   * @param output_items</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">   * @return int</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1hamming__enc__impl.html#acfba73ff3c17106a69452f73061d1bb3">work</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_const_void_star &amp;input_items,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;           gr_vector_void_star &amp;output_items);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <span class="comment">// namespace gr</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_HAMMING_ENC_IMPL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">   * @brief Main function that does the actual hamming encoding.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">   * With cr : coding rate, and sf : spreading factor</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">   * @param input_items : number of input items</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">   * @param output_items : number of output items</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">   * @return int</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1hamming__enc__impl.html#acfba73ff3c17106a69452f73061d1bb3">work</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_const_void_star &amp;input_items,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;           gr_vector_void_star &amp;output_items);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_HAMMING_ENC_IMPL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1hamming__enc__impl_html_a4ae1a7020803b6125d510a07e07b275d"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hamming__enc__impl.html#a4ae1a7020803b6125d510a07e07b275d">gr::lora_sdr::hamming_enc_impl::hamming_enc_impl</a></div><div class="ttdeci">hamming_enc_impl(uint8_t cr, uint8_t sf)</div><div class="ttdoc">Construct a new hamming enc impl object.</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1hamming__enc__impl_html_acfba73ff3c17106a69452f73061d1bb3"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hamming__enc__impl.html#acfba73ff3c17106a69452f73061d1bb3">gr::lora_sdr::hamming_enc_impl::work</a></div><div class="ttdeci">int work(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div><div class="ttdoc">Main function.</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1hamming__enc__impl_html_acfba73ff3c17106a69452f73061d1bb3"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hamming__enc__impl.html#acfba73ff3c17106a69452f73061d1bb3">gr::lora_sdr::hamming_enc_impl::work</a></div><div class="ttdeci">int work(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div><div class="ttdoc">Main function that does the actual hamming encoding. With cr : coding rate, and sf : spreading factor...</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1hamming__enc__impl_html_a4af886733a3eac5a5b379739d3119cfb"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hamming__enc__impl.html#a4af886733a3eac5a5b379739d3119cfb">gr::lora_sdr::hamming_enc_impl::~hamming_enc_impl</a></div><div class="ttdeci">~hamming_enc_impl()</div><div class="ttdoc">Destroy the hamming enc impl object.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1hamming__enc_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hamming__enc.html">gr::lora_sdr::hamming_enc</a></div><div class="ttdoc">Add hamming code to the to be sent playload. This means extra party bits are added to the payload to ...</div><div class="ttdef"><b>Definition:</b> dev/include/lora_sdr/hamming_enc.h:38</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1hamming__enc__impl_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hamming__enc__impl.html">gr::lora_sdr::hamming_enc_impl</a></div><div class="ttdef"><b>Definition:</b> dev/lib/hamming_enc_impl.h:9</div></div>

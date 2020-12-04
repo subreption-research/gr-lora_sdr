@@ -77,11 +77,11 @@ $(document).ready(function(){initNavTree('dev_2lib_2gray__enc__impl_8h_source.ht
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1gray__enc__impl.html#a5c627d9debb5acc6377cf354e2e18097">~gray_enc_impl</a>();</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">   * @brief Main function</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">   * @brief Main function where the actual computation happens</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">   * </span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">   * @param noutput_items </span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">   * @param input_items </span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">   * @param output_items </span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">   * @param noutput_items : number of input items</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">   * @param input_items  : input item (i.e. output data from the interleaving stage)</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">   * @param output_items : output data</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">   * @return int </span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">   */</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1gray__enc__impl.html#a3d03bc1c252d0312584f9d739c2c73cd">work</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_const_void_star &amp;input_items,</div>
@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('dev_2lib_2gray__enc__impl_8h_source.ht
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1gray__enc__impl_html_a25a0781fd8fa030cc67bdfeacb31b3ed"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1gray__enc__impl.html#a25a0781fd8fa030cc67bdfeacb31b3ed">gr::lora_sdr::gray_enc_impl::gray_enc_impl</a></div><div class="ttdeci">gray_enc_impl()</div><div class="ttdoc">Construct a new gray enc impl object.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1gray__enc__impl_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1gray__enc__impl.html">gr::lora_sdr::gray_enc_impl</a></div><div class="ttdef"><b>Definition:</b> dev/lib/gray_enc_impl.h:9</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1gray__enc_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1gray__enc.html">gr::lora_sdr::gray_enc</a></div><div class="ttdoc">Modulate the payload with an Gray map. This ensures that bits are modulated such that two subsequent ...</div><div class="ttdef"><b>Definition:</b> dev/include/lora_sdr/gray_enc.h:38</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1gray__enc__impl_html_a3d03bc1c252d0312584f9d739c2c73cd"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1gray__enc__impl.html#a3d03bc1c252d0312584f9d739c2c73cd">gr::lora_sdr::gray_enc_impl::work</a></div><div class="ttdeci">int work(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div><div class="ttdoc">Main function.</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1gray__enc__impl_html_a3d03bc1c252d0312584f9d739c2c73cd"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1gray__enc__impl.html#a3d03bc1c252d0312584f9d739c2c73cd">gr::lora_sdr::gray_enc_impl::work</a></div><div class="ttdeci">int work(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div><div class="ttdoc">Main function where the actual computation happens.</div></div>
 <div class="ttc" id="anamespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> dev/include/lora_sdr/add_crc.h:28</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

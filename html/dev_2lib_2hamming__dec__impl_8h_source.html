@@ -101,28 +101,30 @@ $(document).ready(function(){initNavTree('dev_2lib_2hamming__dec__impl_8h_source
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">   * @brief Construct a new hamming dec impl object</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a5d07feb76b0d8215dfa8e698d64c82e3">hamming_dec_impl</a>();<span class="comment"></span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">   * @brief Destroy the hamming dec impl object</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a8d62d5eed7b60068397faeaad2a30922">~hamming_dec_impl</a>();<span class="comment"></span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">   * @brief Main function</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">   * @param noutput_items</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">   * @param input_items</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">   * @param output_items</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">   * @return int</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#ab152998bcda1cc40835d82fa1afed17a">work</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_const_void_star &amp;input_items,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;           gr_vector_void_star &amp;output_items);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;} <span class="comment">// namespace gr</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_hamming_dec_IMPL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a5d07feb76b0d8215dfa8e698d64c82e3">hamming_dec_impl</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="comment"></span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">   * @brief Destroy the hamming dec impl object</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a8d62d5eed7b60068397faeaad2a30922">~hamming_dec_impl</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">   * @brief Main function where the actual computation resides</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">   * </span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">   * @param input_items : input items (i.e. data from deinterleaver)</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">   * @param output_items : output data</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">   * @return int</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#ab152998bcda1cc40835d82fa1afed17a">work</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_const_void_star &amp;input_items,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;           gr_vector_void_star &amp;output_items);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_hamming_dec_IMPL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1hamming__dec__impl_html_a726c794575eeb4832ede943ee7cb95c5"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a726c794575eeb4832ede943ee7cb95c5">gr::lora_sdr::hamming_dec_impl::new_frame_handler</a></div><div class="ttdeci">void new_frame_handler(pmt::pmt_t id)</div><div class="ttdoc">Reset the block variables for a new frame.</div></div>
@@ -134,7 +136,7 @@ $(document).ready(function(){initNavTree('dev_2lib_2hamming__dec__impl_8h_source
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1hamming__dec__impl_html_ac241ccd3e25eccc083dc300bb1ad860f"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#ac241ccd3e25eccc083dc300bb1ad860f">gr::lora_sdr::hamming_dec_impl::header_cr_handler</a></div><div class="ttdeci">void header_cr_handler(pmt::pmt_t cr)</div><div class="ttdoc">Handles the coding rate received from the header_decoder block.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1hamming__dec__impl_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html">gr::lora_sdr::hamming_dec_impl</a></div><div class="ttdef"><b>Definition:</b> dev/lib/hamming_dec_impl.h:9</div></div>
 <div class="ttc" id="anamespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> dev/include/lora_sdr/add_crc.h:28</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1hamming__dec__impl_html_ab152998bcda1cc40835d82fa1afed17a"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#ab152998bcda1cc40835d82fa1afed17a">gr::lora_sdr::hamming_dec_impl::work</a></div><div class="ttdeci">int work(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div><div class="ttdoc">Main function.</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1hamming__dec__impl_html_ab152998bcda1cc40835d82fa1afed17a"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#ab152998bcda1cc40835d82fa1afed17a">gr::lora_sdr::hamming_dec_impl::work</a></div><div class="ttdeci">int work(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div><div class="ttdoc">Main function where the actual computation resides.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1hamming__dec__impl_html_a8d62d5eed7b60068397faeaad2a30922"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a8d62d5eed7b60068397faeaad2a30922">gr::lora_sdr::hamming_dec_impl::~hamming_dec_impl</a></div><div class="ttdeci">~hamming_dec_impl()</div><div class="ttdoc">Destroy the hamming dec impl object.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

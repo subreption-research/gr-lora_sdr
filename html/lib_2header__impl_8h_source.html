@@ -65,13 +65,13 @@ $(document).ready(function(){initNavTree('lib_2header__impl_8h_source.html','');
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span>header_impl : <span class="keyword">public</span> header {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:<span class="comment"></span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">   * @brief indicate if the header is implicit</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">   * @brief boolean variable to indicate implicit header mode is used</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">   * </span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">   */</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classgr_1_1lora__sdr_1_1header__impl.html#add166cd35985b68d1b47775d7bc6bd74">m_impl_head</a>;     </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="comment"></span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">   * @brief indicate the presence of a payload crc</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">   * @brief boolean variable to indicate the presence of a payload crc</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">   * </span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">   */</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classgr_1_1lora__sdr_1_1header__impl.html#a98332592978639984f93f49783886231">m_has_crc</a>;      </div>
@@ -83,13 +83,13 @@ $(document).ready(function(){initNavTree('lib_2header__impl_8h_source.html','');
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1header__impl.html#afcbe1e73136c6aec3d6e60b31b0d9e7a">m_cr</a>;          </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="comment"></span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">   * @brief Payload length</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">   * @brief Payload length (i.e input data length)</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">   * </span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">   */</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1header__impl.html#a5e67c8fa72fdb77854ceb2993a658842">m_payload_len</a>; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">   * @brief M</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">   * @brief Function that handles on the input PMT message (i.e. input data from data source)</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">   * </span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">   * @param message pmt message</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">   */</span></div>
@@ -99,9 +99,9 @@ $(document).ready(function(){initNavTree('lib_2header__impl_8h_source.html','');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">   * @brief Construct a new header impl object</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">   * </span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">   * @param impl_head boolean if implicit header mode is on or off</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">   * @param has_crc boolean if crc stage is active or not</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">   * @param cr coding rate</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">   * @param impl_head boolean variable to indicate implicit header mode is used</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">   * @param has_crc boolean variable to indicate the presence of a payload crc</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">   * @param cr Transmission coding rate </span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">   */</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1header__impl.html#a58da493055bb078822751d390e4242f7">header_impl</a>(<span class="keywordtype">bool</span> impl_head, <span class="keywordtype">bool</span> has_crc, uint8_t cr);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="comment"></span></div>
@@ -112,43 +112,45 @@ $(document).ready(function(){initNavTree('lib_2header__impl_8h_source.html','');
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1header__impl.html#a6a797fc7fd2a4cdc1c351aa239c60020">~header_impl</a>();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">   * @brief </span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">   * </span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">   * @param noutput_items </span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">   * @param ninput_items_required </span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1header__impl.html#ae05493af895b9be8c4da49b9508ea771">forecast</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">   * @brief </span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">   * </span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">   * @param noutput_items </span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">   * @param ninput_items </span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">   * @param input_items </span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">   * @param output_items </span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">   * @return int </span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1header__impl.html#afa6f7f180882d6edc93f204d0e2b947a">general_work</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                   gr_vector_const_void_star &amp;input_items,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                   gr_vector_void_star &amp;output_items);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;} <span class="comment">// namespace gr</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_HEADER_IMPL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">   * @brief Gnuradio forecast function which tells the </span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">   * gnuradio system how many items are needed before it can continue to the work function</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">   * </span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">   * @param ninput_items_required : number of required output items before </span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1header__impl.html#ae05493af895b9be8c4da49b9508ea771">forecast</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">   * @brief Main function where the actual computation is done.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">   * If impl_head is set to true the output will be  the payload added with an header</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">   * </span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">   * @param noutput_items : number of ouput items</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">   * @param ninput_items : number of input items</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">   * @param input_items : input items (output of whitening stage)</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">   * @param output_items : output items (added header if applicable)</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">   * @return int </span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1header__impl.html#afa6f7f180882d6edc93f204d0e2b947a">general_work</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                   gr_vector_const_void_star &amp;input_items,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                   gr_vector_void_star &amp;output_items);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_HEADER_IMPL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__impl_html_afa6f7f180882d6edc93f204d0e2b947a"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__impl.html#afa6f7f180882d6edc93f204d0e2b947a">gr::lora_sdr::header_impl::general_work</a></div><div class="ttdeci">int general_work(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__impl_html_afa6f7f180882d6edc93f204d0e2b947a"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__impl.html#afa6f7f180882d6edc93f204d0e2b947a">gr::lora_sdr::header_impl::general_work</a></div><div class="ttdeci">int general_work(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div><div class="ttdoc">Main function where the actual computation is done. If impl_head is set to true the output will be th...</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__impl_html_a6a797fc7fd2a4cdc1c351aa239c60020"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__impl.html#a6a797fc7fd2a4cdc1c351aa239c60020">gr::lora_sdr::header_impl::~header_impl</a></div><div class="ttdeci">~header_impl()</div><div class="ttdoc">Destroy the header impl object.</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__impl_html_a939d100f3b5b01893fff314c37f5db76"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__impl.html#a939d100f3b5b01893fff314c37f5db76">gr::lora_sdr::header_impl::msg_handler</a></div><div class="ttdeci">void msg_handler(pmt::pmt_t message)</div><div class="ttdoc">M.</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__impl_html_add166cd35985b68d1b47775d7bc6bd74"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__impl.html#add166cd35985b68d1b47775d7bc6bd74">gr::lora_sdr::header_impl::m_impl_head</a></div><div class="ttdeci">bool m_impl_head</div><div class="ttdoc">indicate if the header is implicit</div><div class="ttdef"><b>Definition:</b> dev/lib/header_impl.h:15</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__impl_html_a5e67c8fa72fdb77854ceb2993a658842"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__impl.html#a5e67c8fa72fdb77854ceb2993a658842">gr::lora_sdr::header_impl::m_payload_len</a></div><div class="ttdeci">uint8_t m_payload_len</div><div class="ttdoc">Payload length.</div><div class="ttdef"><b>Definition:</b> dev/lib/header_impl.h:33</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__impl_html_ae05493af895b9be8c4da49b9508ea771"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__impl.html#ae05493af895b9be8c4da49b9508ea771">gr::lora_sdr::header_impl::forecast</a></div><div class="ttdeci">void forecast(int noutput_items, gr_vector_int &amp;ninput_items_required)</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__impl_html_a939d100f3b5b01893fff314c37f5db76"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__impl.html#a939d100f3b5b01893fff314c37f5db76">gr::lora_sdr::header_impl::msg_handler</a></div><div class="ttdeci">void msg_handler(pmt::pmt_t message)</div><div class="ttdoc">Function that handles on the input PMT message (i.e. input data from data source)</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__impl_html_add166cd35985b68d1b47775d7bc6bd74"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__impl.html#add166cd35985b68d1b47775d7bc6bd74">gr::lora_sdr::header_impl::m_impl_head</a></div><div class="ttdeci">bool m_impl_head</div><div class="ttdoc">boolean variable to indicate implicit header mode is used</div><div class="ttdef"><b>Definition:</b> dev/lib/header_impl.h:15</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__impl_html_a5e67c8fa72fdb77854ceb2993a658842"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__impl.html#a5e67c8fa72fdb77854ceb2993a658842">gr::lora_sdr::header_impl::m_payload_len</a></div><div class="ttdeci">uint8_t m_payload_len</div><div class="ttdoc">Payload length (i.e input data length)</div><div class="ttdef"><b>Definition:</b> dev/lib/header_impl.h:33</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__impl_html_ae05493af895b9be8c4da49b9508ea771"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__impl.html#ae05493af895b9be8c4da49b9508ea771">gr::lora_sdr::header_impl::forecast</a></div><div class="ttdeci">void forecast(int noutput_items, gr_vector_int &amp;ninput_items_required)</div><div class="ttdoc">Gnuradio forecast function which tells the gnuradio system how many items are needed before it can co...</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__impl_html_afcbe1e73136c6aec3d6e60b31b0d9e7a"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__impl.html#afcbe1e73136c6aec3d6e60b31b0d9e7a">gr::lora_sdr::header_impl::m_cr</a></div><div class="ttdeci">uint8_t m_cr</div><div class="ttdoc">Transmission coding rate.</div><div class="ttdef"><b>Definition:</b> dev/lib/header_impl.h:27</div></div>
 <div class="ttc" id="anamespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> dev/include/lora_sdr/add_crc.h:28</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__impl_html_a58da493055bb078822751d390e4242f7"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__impl.html#a58da493055bb078822751d390e4242f7">gr::lora_sdr::header_impl::header_impl</a></div><div class="ttdeci">header_impl(bool impl_head, bool has_crc, uint8_t cr)</div><div class="ttdoc">Construct a new header impl object.</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__impl_html_a98332592978639984f93f49783886231"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__impl.html#a98332592978639984f93f49783886231">gr::lora_sdr::header_impl::m_has_crc</a></div><div class="ttdeci">bool m_has_crc</div><div class="ttdoc">indicate the presence of a payload crc</div><div class="ttdef"><b>Definition:</b> dev/lib/header_impl.h:21</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__impl_html_a98332592978639984f93f49783886231"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__impl.html#a98332592978639984f93f49783886231">gr::lora_sdr::header_impl::m_has_crc</a></div><div class="ttdeci">bool m_has_crc</div><div class="ttdoc">boolean variable to indicate the presence of a payload crc</div><div class="ttdef"><b>Definition:</b> dev/lib/header_impl.h:21</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -83,12 +83,12 @@ $(document).ready(function(){initNavTree('lib_2add__crc__impl_8h_source.html',''
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a5b6afeb93cbff3baf241da65a1b5999c">m_payload_len</a>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">   * @brief Message handler, handles all the control messages</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">   * @brief Message handler, handles the pmt input message (i.e. input data)</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">   * @param message :pmt message</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">   * @param message : input message (i.e input data)</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">   */</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#aa52d2d28a50356c49a5f95a7eed988c8">msg_handler</a>(pmt::pmt_t message);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="comment"></span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">   * @brief CRC16, add 16 bit CRC to the payload.</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">   *</span></div>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('lib_2add__crc__impl_8h_source.html',''
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">   * @brief Construct a new add crc impl object</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">   * @param has_crc</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">   * @param has_crc : boolean to indicate if crc should be added to the payload</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">   */</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a141e98281979bcc67c40976732e9aa50">add_crc_impl</a>(<span class="keywordtype">bool</span> has_crc);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"></span> </div>
@@ -113,41 +113,43 @@ $(document).ready(function(){initNavTree('lib_2add__crc__impl_8h_source.html',''
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ab79f297228f3431e7613629a5d6cede9">~add_crc_impl</a>();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">   * @brief Where all the action really happens</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">   * @param ninput_items_required : number of required input items</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#adeeb01a45dae7558c36756ff4e794134">forecast</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">   * @brief Main function of the add_crc module, this module will add Cyclic</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">   * Redundancy Check (CRC) to the payload to be able to detect more bit errors.</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">   * @param ninput_items : number of input items</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">   * @param input_items  : vector containing the input items</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">   * @param output_items : vector containting the output items</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">   * @return int</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a39ebc25dc893e70b81d4d756997dd6a1">general_work</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                   gr_vector_const_void_star &amp;input_items,</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                   gr_vector_void_star &amp;output_items);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;} <span class="comment">// namespace gr</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_ADD_CRC_IMPL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">   * @brief Gnuradio standard function to tell the system it should operate once</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">   * it has a input item</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">   * @param ninput_items_required : number of required input items</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#adeeb01a45dae7558c36756ff4e794134">forecast</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">   * @brief Main function of the add_crc module, this module will add Cyclic</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">   * Redundancy Check (CRC) to the payload to be able to detect more bit errors.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">   * If m_has_crc is set to True</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">   * @param ninput_items : number of input items</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">   * @param input_items  : vector containing the input items</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">   * @param output_items : vector containting the output items</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">   * @return int</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a39ebc25dc893e70b81d4d756997dd6a1">general_work</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                   gr_vector_const_void_star &amp;input_items,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                   gr_vector_void_star &amp;output_items);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_ADD_CRC_IMPL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_ab46b2f78b7eaa01d5eb27ada3e6b1aec"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ab46b2f78b7eaa01d5eb27ada3e6b1aec">gr::lora_sdr::add_crc_impl::crc16</a></div><div class="ttdeci">unsigned int crc16(unsigned int crcValue, unsigned char newByte)</div><div class="ttdoc">CRC16, add 16 bit CRC to the payload.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_a5b6afeb93cbff3baf241da65a1b5999c"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a5b6afeb93cbff3baf241da65a1b5999c">gr::lora_sdr::add_crc_impl::m_payload_len</a></div><div class="ttdeci">uint8_t m_payload_len</div><div class="ttdoc">The length of the payload in bytes.</div><div class="ttdef"><b>Definition:</b> dev/lib/add_crc_impl.h:27</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_ab79f297228f3431e7613629a5d6cede9"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ab79f297228f3431e7613629a5d6cede9">gr::lora_sdr::add_crc_impl::~add_crc_impl</a></div><div class="ttdeci">~add_crc_impl()</div><div class="ttdoc">Destroy the add crc impl object.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_ad7b14f262b44eb3c74de0d8bedfc4211"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ad7b14f262b44eb3c74de0d8bedfc4211">gr::lora_sdr::add_crc_impl::m_has_crc</a></div><div class="ttdeci">bool m_has_crc</div><div class="ttdoc">Indicate the presence of a payload CRC.</div><div class="ttdef"><b>Definition:</b> dev/lib/add_crc_impl.h:15</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_aa52d2d28a50356c49a5f95a7eed988c8"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#aa52d2d28a50356c49a5f95a7eed988c8">gr::lora_sdr::add_crc_impl::msg_handler</a></div><div class="ttdeci">void msg_handler(pmt::pmt_t message)</div><div class="ttdoc">Message handler, handles all the control messages.</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_aa52d2d28a50356c49a5f95a7eed988c8"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#aa52d2d28a50356c49a5f95a7eed988c8">gr::lora_sdr::add_crc_impl::msg_handler</a></div><div class="ttdeci">void msg_handler(pmt::pmt_t message)</div><div class="ttdoc">Message handler, handles the pmt input message (i.e. input data)</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_a141e98281979bcc67c40976732e9aa50"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a141e98281979bcc67c40976732e9aa50">gr::lora_sdr::add_crc_impl::add_crc_impl</a></div><div class="ttdeci">add_crc_impl(bool has_crc)</div><div class="ttdoc">Construct a new add crc impl object.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_a53d129af4a07c049fa50b859fdbeb8f6"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a53d129af4a07c049fa50b859fdbeb8f6">gr::lora_sdr::add_crc_impl::m_payload</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; m_payload</div><div class="ttdoc">The payload data itself.</div><div class="ttdef"><b>Definition:</b> dev/lib/add_crc_impl.h:21</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_adeeb01a45dae7558c36756ff4e794134"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#adeeb01a45dae7558c36756ff4e794134">gr::lora_sdr::add_crc_impl::forecast</a></div><div class="ttdeci">void forecast(int noutput_items, gr_vector_int &amp;ninput_items_required)</div><div class="ttdoc">Where all the action really happens.</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_adeeb01a45dae7558c36756ff4e794134"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#adeeb01a45dae7558c36756ff4e794134">gr::lora_sdr::add_crc_impl::forecast</a></div><div class="ttdeci">void forecast(int noutput_items, gr_vector_int &amp;ninput_items_required)</div><div class="ttdoc">Gnuradio standard function to tell the system it should operate once it has a input item.</div></div>
 <div class="ttc" id="anamespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> dev/include/lora_sdr/add_crc.h:28</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_a39ebc25dc893e70b81d4d756997dd6a1"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a39ebc25dc893e70b81d4d756997dd6a1">gr::lora_sdr::add_crc_impl::general_work</a></div><div class="ttdeci">int general_work(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div><div class="ttdoc">Main function of the add_crc module, this module will add Cyclic Redundancy Check (CRC) to the payloa...</div></div>
 <!-- start footer part -->

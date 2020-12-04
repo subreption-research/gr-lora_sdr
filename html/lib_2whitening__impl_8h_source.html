@@ -67,21 +67,21 @@ $(document).ready(function(){initNavTree('lib_2whitening__impl_8h_source.html','
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>whitening_impl : <span class="keyword">public</span> whitening {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:<span class="comment"></span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">   * @brief indicate that a new message has to be whitened</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">   * @brief PMT message to indicate that a new message (input data) has to be whitened</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">   * </span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">   */</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classgr_1_1lora__sdr_1_1whitening__impl.html#aaa2e9d3e266613222132b8b6c4ffa265">new_message</a>; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">   * @brief store the payload bytes</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">   * @brief Variables that stores the payload bytes</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">   * </span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">   */</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  std::vector&lt;uint8_t&gt; <a class="code" href="classgr_1_1lora__sdr_1_1whitening__impl.html#a9ca78f2bebe9a0a43a48e49df3faa7dc">m_payload</a>;  </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">   * @brief </span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">   * @brief Function that waits for the input message, if received copy its to m_payload to be used in work function</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">   * </span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">   * @param message </span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">   * @param message : string input data</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">   */</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1whitening__impl.html#ad40d4e990c8f746e5fa57b16cf373466">msg_handler</a>(pmt::pmt_t message);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
@@ -98,11 +98,11 @@ $(document).ready(function(){initNavTree('lib_2whitening__impl_8h_source.html','
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1whitening__impl.html#aacb2f2b2b5c5c7253a0f4b6c976f1ee1">~whitening_impl</a>();</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">   * @brief </span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">   * @brief General work function, the actual interleaving happens here</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">   * </span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">   * @param noutput_items </span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">   * @param input_items </span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">   * @param output_items </span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">   * @param noutput_items : number of output items (2 * m_payload.size())</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">   * @param input_items : standard input item</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">   * @param output_items : output data</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">   * @return int </span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">   */</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1whitening__impl.html#aac72e7729195be616478ff45b9b46f56">work</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_const_void_star &amp;input_items,</div>
@@ -114,13 +114,13 @@ $(document).ready(function(){initNavTree('lib_2whitening__impl_8h_source.html','
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_WHITENING_IMPL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1whitening__impl_html_aac72e7729195be616478ff45b9b46f56"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1whitening__impl.html#aac72e7729195be616478ff45b9b46f56">gr::lora_sdr::whitening_impl::work</a></div><div class="ttdeci">int work(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1whitening__impl_html_ad40d4e990c8f746e5fa57b16cf373466"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1whitening__impl.html#ad40d4e990c8f746e5fa57b16cf373466">gr::lora_sdr::whitening_impl::msg_handler</a></div><div class="ttdeci">void msg_handler(pmt::pmt_t message)</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1whitening__impl_html_a9ca78f2bebe9a0a43a48e49df3faa7dc"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1whitening__impl.html#a9ca78f2bebe9a0a43a48e49df3faa7dc">gr::lora_sdr::whitening_impl::m_payload</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; m_payload</div><div class="ttdoc">store the payload bytes</div><div class="ttdef"><b>Definition:</b> dev/lib/whitening_impl.h:23</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1whitening__impl_html_aac72e7729195be616478ff45b9b46f56"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1whitening__impl.html#aac72e7729195be616478ff45b9b46f56">gr::lora_sdr::whitening_impl::work</a></div><div class="ttdeci">int work(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div><div class="ttdoc">General work function, the actual interleaving happens here.</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1whitening__impl_html_ad40d4e990c8f746e5fa57b16cf373466"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1whitening__impl.html#ad40d4e990c8f746e5fa57b16cf373466">gr::lora_sdr::whitening_impl::msg_handler</a></div><div class="ttdeci">void msg_handler(pmt::pmt_t message)</div><div class="ttdoc">Function that waits for the input message, if received copy its to m_payload to be used in work funct...</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1whitening__impl_html_a9ca78f2bebe9a0a43a48e49df3faa7dc"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1whitening__impl.html#a9ca78f2bebe9a0a43a48e49df3faa7dc">gr::lora_sdr::whitening_impl::m_payload</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; m_payload</div><div class="ttdoc">Variables that stores the payload bytes.</div><div class="ttdef"><b>Definition:</b> dev/lib/whitening_impl.h:23</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1whitening__impl_html_aacb2f2b2b5c5c7253a0f4b6c976f1ee1"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1whitening__impl.html#aacb2f2b2b5c5c7253a0f4b6c976f1ee1">gr::lora_sdr::whitening_impl::~whitening_impl</a></div><div class="ttdeci">~whitening_impl()</div><div class="ttdoc">Destroy the whitening impl object.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1whitening__impl_html_a8648bdb19213ed9382c4046fb7084752"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1whitening__impl.html#a8648bdb19213ed9382c4046fb7084752">gr::lora_sdr::whitening_impl::whitening_impl</a></div><div class="ttdeci">whitening_impl()</div><div class="ttdoc">Construct a new whitening impl object.</div></div>
 <div class="ttc" id="anamespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> dev/include/lora_sdr/add_crc.h:28</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1whitening__impl_html_aaa2e9d3e266613222132b8b6c4ffa265"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1whitening__impl.html#aaa2e9d3e266613222132b8b6c4ffa265">gr::lora_sdr::whitening_impl::new_message</a></div><div class="ttdeci">bool new_message</div><div class="ttdoc">indicate that a new message has to be whitened</div><div class="ttdef"><b>Definition:</b> dev/lib/whitening_impl.h:17</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1whitening__impl_html_aaa2e9d3e266613222132b8b6c4ffa265"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1whitening__impl.html#aaa2e9d3e266613222132b8b6c4ffa265">gr::lora_sdr::whitening_impl::new_message</a></div><div class="ttdeci">bool new_message</div><div class="ttdoc">PMT message to indicate that a new message (input data) has to be whitened.</div><div class="ttdef"><b>Definition:</b> dev/lib/whitening_impl.h:17</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

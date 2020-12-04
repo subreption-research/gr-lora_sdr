@@ -62,7 +62,7 @@ $(document).ready(function(){initNavTree('namespacegr_1_1lora__sdr.html',''); in
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html">add_crc</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This block add LoRa CRC (Cyclic redundancy check) into the payload, more info see <a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html">add_crc_impl</a>.  <a href="classgr_1_1lora__sdr_1_1add__crc.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This block adds LoRa CRC (Cyclic redundancy check) into the payload if boolean has_crc is True, for more information see <a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html">add_crc_impl</a>.  <a href="classgr_1_1lora__sdr_1_1add__crc.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html">add_crc_impl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,7 +122,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hamming__enc__impl.html">hamming_enc_impl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1header.html">header</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the header of the data package For more information about the implementation visit <a class="el" href="classgr_1_1lora__sdr_1_1header__impl.html">header_impl</a>.  <a href="classgr_1_1lora__sdr_1_1header.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the header of the data package if implicit header mode (denoted by m_impl_head) is turned on For more information about the implementation visit <a class="el" href="classgr_1_1lora__sdr_1_1header__impl.html">header_impl</a>.  <a href="classgr_1_1lora__sdr_1_1header.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html">header_decoder</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode the header of the data spackage. For more information about the implementation visit <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html">header_decoder_impl</a>.  <a href="classgr_1_1lora__sdr_1_1header__decoder.html#details">More...</a><br /></td></tr>
@@ -152,7 +152,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1RH__RF95__header__impl.html">RH_RF95_header_impl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1whitening.html">whitening</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt;+description of block+&gt;  <a href="classgr_1_1lora__sdr_1_1whitening.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whiten the input data For more information about the implementation visit <a class="el" href="classgr_1_1lora__sdr_1_1whitening__impl.html">whitening_impl</a>.  <a href="classgr_1_1lora__sdr_1_1whitening.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1whitening__impl.html">whitening_impl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,6 +174,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ae0ffa3d5d413320a39a835e8318f3bb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#ae0ffa3d5d413320a39a835e8318f3bb0">build_upchirp</a> (gr_complex *chirp, uint32_t id, uint8_t sf)</td></tr>
 <tr class="memdesc:ae0ffa3d5d413320a39a835e8318f3bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an modulated upchirp using s_f=bw.  <a href="namespacegr_1_1lora__sdr.html#ae0ffa3d5d413320a39a835e8318f3bb0">More...</a><br /></td></tr>
 <tr class="separator:ae0ffa3d5d413320a39a835e8318f3bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7722b83be4f756e6abfb7426c40d70ba"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#a7722b83be4f756e6abfb7426c40d70ba">complex_vector_2_string</a> (gr_complex *input, int length)</td></tr>
+<tr class="separator:a7722b83be4f756e6abfb7426c40d70ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -317,6 +319,34 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a7722b83be4f756e6abfb7426c40d70ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7722b83be4f756e6abfb7426c40d70ba">&#9670;&nbsp;</a></span>complex_vector_2_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string gr::lora_sdr::complex_vector_2_string </td>
+          <td>(</td>
+          <td class="paramtype">gr_complex *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

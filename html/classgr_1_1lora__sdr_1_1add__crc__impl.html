@@ -67,7 +67,7 @@ Inheritance diagram for gr::lora_sdr::add_crc_impl:</div>
  <div class="center">
   <img src="classgr_1_1lora__sdr_1_1add__crc__impl.png" usemap="#gr::lora_5Fsdr::add_5Fcrc_5Fimpl_map" alt=""/>
   <map id="gr::lora_5Fsdr::add_5Fcrc_5Fimpl_map" name="gr::lora_5Fsdr::add_5Fcrc_5Fimpl_map">
-<area href="classgr_1_1lora__sdr_1_1add__crc.html" title="This block add LoRa CRC (Cyclic redundancy check) into the payload, more info see add_crc_impl." alt="gr::lora_sdr::add_crc" shape="rect" coords="0,56,159,80"/>
+<area href="classgr_1_1lora__sdr_1_1add__crc.html" title="This block adds LoRa CRC (Cyclic redundancy check) into the payload if boolean has_crc is True,..." alt="gr::lora_sdr::add_crc" shape="rect" coords="0,56,159,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -80,10 +80,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab79f297228f3431e7613629a5d6cede9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the add crc impl object.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ab79f297228f3431e7613629a5d6cede9">More...</a><br /></td></tr>
 <tr class="separator:ab79f297228f3431e7613629a5d6cede9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeeb01a45dae7558c36756ff4e794134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#adeeb01a45dae7558c36756ff4e794134">forecast</a> (int noutput_items, gr_vector_int &amp;ninput_items_required)</td></tr>
-<tr class="memdesc:adeeb01a45dae7558c36756ff4e794134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where all the action really happens.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#adeeb01a45dae7558c36756ff4e794134">More...</a><br /></td></tr>
+<tr class="memdesc:adeeb01a45dae7558c36756ff4e794134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gnuradio standard function to tell the system it should operate once it has a input item.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#adeeb01a45dae7558c36756ff4e794134">More...</a><br /></td></tr>
 <tr class="separator:adeeb01a45dae7558c36756ff4e794134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39ebc25dc893e70b81d4d756997dd6a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a39ebc25dc893e70b81d4d756997dd6a1">general_work</a> (int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</td></tr>
-<tr class="memdesc:a39ebc25dc893e70b81d4d756997dd6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function of the <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html" title="This block add LoRa CRC (Cyclic redundancy check) into the payload, more info see add_crc_impl.">add_crc</a> module, this module will add Cyclic Redundancy Check (CRC) to the payload to be able to detect more bit errors.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a39ebc25dc893e70b81d4d756997dd6a1">More...</a><br /></td></tr>
+<tr class="memdesc:a39ebc25dc893e70b81d4d756997dd6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function of the <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html" title="This block adds LoRa CRC (Cyclic redundancy check) into the payload if boolean has_crc is True,...">add_crc</a> module, this module will add Cyclic Redundancy Check (CRC) to the payload to be able to detect more bit errors. If m_has_crc is set to True.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a39ebc25dc893e70b81d4d756997dd6a1">More...</a><br /></td></tr>
 <tr class="separator:a39ebc25dc893e70b81d4d756997dd6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a141e98281979bcc67c40976732e9aa50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a141e98281979bcc67c40976732e9aa50">add_crc_impl</a> (bool has_crc)</td></tr>
 <tr class="memdesc:a141e98281979bcc67c40976732e9aa50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new add crc impl object.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a141e98281979bcc67c40976732e9aa50">More...</a><br /></td></tr>
@@ -92,22 +92,40 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab79f297228f3431e7613629a5d6cede9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the add crc impl object.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ab79f297228f3431e7613629a5d6cede9">More...</a><br /></td></tr>
 <tr class="separator:ab79f297228f3431e7613629a5d6cede9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeeb01a45dae7558c36756ff4e794134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#adeeb01a45dae7558c36756ff4e794134">forecast</a> (int noutput_items, gr_vector_int &amp;ninput_items_required)</td></tr>
-<tr class="memdesc:adeeb01a45dae7558c36756ff4e794134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where all the action really happens.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#adeeb01a45dae7558c36756ff4e794134">More...</a><br /></td></tr>
+<tr class="memdesc:adeeb01a45dae7558c36756ff4e794134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gnuradio standard function to tell the system it should operate once it has a input item.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#adeeb01a45dae7558c36756ff4e794134">More...</a><br /></td></tr>
 <tr class="separator:adeeb01a45dae7558c36756ff4e794134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39ebc25dc893e70b81d4d756997dd6a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a39ebc25dc893e70b81d4d756997dd6a1">general_work</a> (int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</td></tr>
-<tr class="memdesc:a39ebc25dc893e70b81d4d756997dd6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function of the <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html" title="This block add LoRa CRC (Cyclic redundancy check) into the payload, more info see add_crc_impl.">add_crc</a> module, this module will add Cyclic Redundancy Check (CRC) to the payload to be able to detect more bit errors.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a39ebc25dc893e70b81d4d756997dd6a1">More...</a><br /></td></tr>
+<tr class="memdesc:a39ebc25dc893e70b81d4d756997dd6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function of the <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html" title="This block adds LoRa CRC (Cyclic redundancy check) into the payload if boolean has_crc is True,...">add_crc</a> module, this module will add Cyclic Redundancy Check (CRC) to the payload to be able to detect more bit errors. If m_has_crc is set to True.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a39ebc25dc893e70b81d4d756997dd6a1">More...</a><br /></td></tr>
+<tr class="separator:a39ebc25dc893e70b81d4d756997dd6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a141e98281979bcc67c40976732e9aa50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a141e98281979bcc67c40976732e9aa50">add_crc_impl</a> (bool has_crc)</td></tr>
+<tr class="memdesc:a141e98281979bcc67c40976732e9aa50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new add crc impl object.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a141e98281979bcc67c40976732e9aa50">More...</a><br /></td></tr>
+<tr class="separator:a141e98281979bcc67c40976732e9aa50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79f297228f3431e7613629a5d6cede9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ab79f297228f3431e7613629a5d6cede9">~add_crc_impl</a> ()</td></tr>
+<tr class="memdesc:ab79f297228f3431e7613629a5d6cede9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the add crc impl object.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ab79f297228f3431e7613629a5d6cede9">More...</a><br /></td></tr>
+<tr class="separator:ab79f297228f3431e7613629a5d6cede9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeeb01a45dae7558c36756ff4e794134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#adeeb01a45dae7558c36756ff4e794134">forecast</a> (int noutput_items, gr_vector_int &amp;ninput_items_required)</td></tr>
+<tr class="memdesc:adeeb01a45dae7558c36756ff4e794134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gnuradio standard function to tell the system it should operate once it has a input item.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#adeeb01a45dae7558c36756ff4e794134">More...</a><br /></td></tr>
+<tr class="separator:adeeb01a45dae7558c36756ff4e794134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ebc25dc893e70b81d4d756997dd6a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a39ebc25dc893e70b81d4d756997dd6a1">general_work</a> (int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</td></tr>
+<tr class="memdesc:a39ebc25dc893e70b81d4d756997dd6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function of the <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html" title="This block adds LoRa CRC (Cyclic redundancy check) into the payload if boolean has_crc is True,...">add_crc</a> module, this module will add Cyclic Redundancy Check (CRC) to the payload to be able to detect more bit errors. If m_has_crc is set to True.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a39ebc25dc893e70b81d4d756997dd6a1">More...</a><br /></td></tr>
 <tr class="separator:a39ebc25dc893e70b81d4d756997dd6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:aa52d2d28a50356c49a5f95a7eed988c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#aa52d2d28a50356c49a5f95a7eed988c8">msg_handler</a> (pmt::pmt_t message)</td></tr>
-<tr class="memdesc:aa52d2d28a50356c49a5f95a7eed988c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message handler, handles all the control messages.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#aa52d2d28a50356c49a5f95a7eed988c8">More...</a><br /></td></tr>
+<tr class="memdesc:aa52d2d28a50356c49a5f95a7eed988c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message handler, handles the pmt input message (i.e. input data)  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#aa52d2d28a50356c49a5f95a7eed988c8">More...</a><br /></td></tr>
 <tr class="separator:aa52d2d28a50356c49a5f95a7eed988c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab46b2f78b7eaa01d5eb27ada3e6b1aec"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ab46b2f78b7eaa01d5eb27ada3e6b1aec">crc16</a> (unsigned int crcValue, unsigned char newByte)</td></tr>
 <tr class="memdesc:ab46b2f78b7eaa01d5eb27ada3e6b1aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">CRC16, add 16 bit CRC to the payload.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ab46b2f78b7eaa01d5eb27ada3e6b1aec">More...</a><br /></td></tr>
 <tr class="separator:ab46b2f78b7eaa01d5eb27ada3e6b1aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa52d2d28a50356c49a5f95a7eed988c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#aa52d2d28a50356c49a5f95a7eed988c8">msg_handler</a> (pmt::pmt_t message)</td></tr>
-<tr class="memdesc:aa52d2d28a50356c49a5f95a7eed988c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message handler, handles all the control messages.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#aa52d2d28a50356c49a5f95a7eed988c8">More...</a><br /></td></tr>
+<tr class="memdesc:aa52d2d28a50356c49a5f95a7eed988c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message handler, handles the pmt input message (i.e. input data)  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#aa52d2d28a50356c49a5f95a7eed988c8">More...</a><br /></td></tr>
+<tr class="separator:aa52d2d28a50356c49a5f95a7eed988c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab46b2f78b7eaa01d5eb27ada3e6b1aec"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ab46b2f78b7eaa01d5eb27ada3e6b1aec">crc16</a> (unsigned int crcValue, unsigned char newByte)</td></tr>
+<tr class="memdesc:ab46b2f78b7eaa01d5eb27ada3e6b1aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">CRC16, add 16 bit CRC to the payload.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ab46b2f78b7eaa01d5eb27ada3e6b1aec">More...</a><br /></td></tr>
+<tr class="separator:ab46b2f78b7eaa01d5eb27ada3e6b1aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52d2d28a50356c49a5f95a7eed988c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#aa52d2d28a50356c49a5f95a7eed988c8">msg_handler</a> (pmt::pmt_t message)</td></tr>
+<tr class="memdesc:aa52d2d28a50356c49a5f95a7eed988c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message handler, handles the pmt input message (i.e. input data)  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#aa52d2d28a50356c49a5f95a7eed988c8">More...</a><br /></td></tr>
 <tr class="separator:aa52d2d28a50356c49a5f95a7eed988c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab46b2f78b7eaa01d5eb27ada3e6b1aec"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ab46b2f78b7eaa01d5eb27ada3e6b1aec">crc16</a> (unsigned int crcValue, unsigned char newByte)</td></tr>
 <tr class="memdesc:ab46b2f78b7eaa01d5eb27ada3e6b1aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">CRC16, add 16 bit CRC to the payload.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ab46b2f78b7eaa01d5eb27ada3e6b1aec">More...</a><br /></td></tr>
@@ -132,17 +150,22 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a30e22b5b18cf980a10a3af747f818301 inherit pub_types_classgr_1_1lora__sdr_1_1add__crc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30e22b5b18cf980a10a3af747f818301 inherit pub_types_classgr_1_1lora__sdr_1_1add__crc"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html">add_crc</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html#a30e22b5b18cf980a10a3af747f818301">sptr</a></td></tr>
 <tr class="separator:a30e22b5b18cf980a10a3af747f818301 inherit pub_types_classgr_1_1lora__sdr_1_1add__crc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30e22b5b18cf980a10a3af747f818301 inherit pub_types_classgr_1_1lora__sdr_1_1add__crc"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html">add_crc</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html#a30e22b5b18cf980a10a3af747f818301">sptr</a></td></tr>
+<tr class="separator:a30e22b5b18cf980a10a3af747f818301 inherit pub_types_classgr_1_1lora__sdr_1_1add__crc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classgr_1_1lora__sdr_1_1add__crc"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classgr_1_1lora__sdr_1_1add__crc')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html">gr::lora_sdr::add_crc</a></td></tr>
 <tr class="memitem:a46eb96a85a8fbf59d04311b34384d5cb inherit pub_static_methods_classgr_1_1lora__sdr_1_1add__crc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html#a30e22b5b18cf980a10a3af747f818301">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html#a46eb96a85a8fbf59d04311b34384d5cb">make</a> (bool has_crc)</td></tr>
-<tr class="memdesc:a46eb96a85a8fbf59d04311b34384d5cb inherit pub_static_methods_classgr_1_1lora__sdr_1_1add__crc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html" title="This block add LoRa CRC (Cyclic redundancy check) into the payload, more info see add_crc_impl.">lora_sdr::add_crc</a>.  <a href="classgr_1_1lora__sdr_1_1add__crc.html#a46eb96a85a8fbf59d04311b34384d5cb">More...</a><br /></td></tr>
+<tr class="memdesc:a46eb96a85a8fbf59d04311b34384d5cb inherit pub_static_methods_classgr_1_1lora__sdr_1_1add__crc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html" title="This block adds LoRa CRC (Cyclic redundancy check) into the payload if boolean has_crc is True,...">lora_sdr::add_crc</a>.  <a href="classgr_1_1lora__sdr_1_1add__crc.html#a46eb96a85a8fbf59d04311b34384d5cb">More...</a><br /></td></tr>
 <tr class="separator:a46eb96a85a8fbf59d04311b34384d5cb inherit pub_static_methods_classgr_1_1lora__sdr_1_1add__crc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46eb96a85a8fbf59d04311b34384d5cb inherit pub_static_methods_classgr_1_1lora__sdr_1_1add__crc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html#a30e22b5b18cf980a10a3af747f818301">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html#a46eb96a85a8fbf59d04311b34384d5cb">make</a> (bool has_crc)</td></tr>
-<tr class="memdesc:a46eb96a85a8fbf59d04311b34384d5cb inherit pub_static_methods_classgr_1_1lora__sdr_1_1add__crc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html" title="This block add LoRa CRC (Cyclic redundancy check) into the payload, more info see add_crc_impl.">lora_sdr::add_crc</a>.  <a href="classgr_1_1lora__sdr_1_1add__crc.html#a46eb96a85a8fbf59d04311b34384d5cb">More...</a><br /></td></tr>
+<tr class="memdesc:a46eb96a85a8fbf59d04311b34384d5cb inherit pub_static_methods_classgr_1_1lora__sdr_1_1add__crc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html" title="This block adds LoRa CRC (Cyclic redundancy check) into the payload if boolean has_crc is True,...">lora_sdr::add_crc</a>.  <a href="classgr_1_1lora__sdr_1_1add__crc.html#a46eb96a85a8fbf59d04311b34384d5cb">More...</a><br /></td></tr>
+<tr class="separator:a46eb96a85a8fbf59d04311b34384d5cb inherit pub_static_methods_classgr_1_1lora__sdr_1_1add__crc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46eb96a85a8fbf59d04311b34384d5cb inherit pub_static_methods_classgr_1_1lora__sdr_1_1add__crc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html#a30e22b5b18cf980a10a3af747f818301">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html#a46eb96a85a8fbf59d04311b34384d5cb">make</a> (bool has_crc)</td></tr>
+<tr class="memdesc:a46eb96a85a8fbf59d04311b34384d5cb inherit pub_static_methods_classgr_1_1lora__sdr_1_1add__crc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html" title="This block adds LoRa CRC (Cyclic redundancy check) into the payload if boolean has_crc is True,...">lora_sdr::add_crc</a>.  <a href="classgr_1_1lora__sdr_1_1add__crc.html#a46eb96a85a8fbf59d04311b34384d5cb">More...</a><br /></td></tr>
 <tr class="separator:a46eb96a85a8fbf59d04311b34384d5cb inherit pub_static_methods_classgr_1_1lora__sdr_1_1add__crc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a141e98281979bcc67c40976732e9aa50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a141e98281979bcc67c40976732e9aa50">&#9670;&nbsp;</a></span>add_crc_impl() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a141e98281979bcc67c40976732e9aa50">&#9670;&nbsp;</a></span>add_crc_impl() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,7 +183,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Construct a new add crc impl object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">has_crc</td><td></td></tr>
+    <tr><td class="paramname">has_crc</td><td>: boolean to indicate if crc should be added to the payload </td></tr>
   </table>
   </dd>
 </dl>
@@ -168,7 +191,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="ab79f297228f3431e7613629a5d6cede9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab79f297228f3431e7613629a5d6cede9">&#9670;&nbsp;</a></span>~add_crc_impl() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab79f297228f3431e7613629a5d6cede9">&#9670;&nbsp;</a></span>~add_crc_impl() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,7 +210,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a141e98281979bcc67c40976732e9aa50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a141e98281979bcc67c40976732e9aa50">&#9670;&nbsp;</a></span>add_crc_impl() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a141e98281979bcc67c40976732e9aa50">&#9670;&nbsp;</a></span>add_crc_impl() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,7 +228,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Construct a new add crc impl object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">has_crc</td><td></td></tr>
+    <tr><td class="paramname">has_crc</td><td>: boolean to indicate if crc should be added to the payload </td></tr>
   </table>
   </dd>
 </dl>
@@ -213,7 +236,52 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="ab79f297228f3431e7613629a5d6cede9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab79f297228f3431e7613629a5d6cede9">&#9670;&nbsp;</a></span>~add_crc_impl() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab79f297228f3431e7613629a5d6cede9">&#9670;&nbsp;</a></span>~add_crc_impl() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gr::lora_sdr::add_crc_impl::~add_crc_impl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy the add crc impl object. </p>
+
+</div>
+</div>
+<a id="a141e98281979bcc67c40976732e9aa50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a141e98281979bcc67c40976732e9aa50">&#9670;&nbsp;</a></span>add_crc_impl() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gr::lora_sdr::add_crc_impl::add_crc_impl </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>has_crc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new add crc impl object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">has_crc</td><td>: boolean to indicate if crc should be added to the payload </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab79f297228f3431e7613629a5d6cede9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab79f297228f3431e7613629a5d6cede9">&#9670;&nbsp;</a></span>~add_crc_impl() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,7 +301,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab46b2f78b7eaa01d5eb27ada3e6b1aec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab46b2f78b7eaa01d5eb27ada3e6b1aec">&#9670;&nbsp;</a></span>crc16() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab46b2f78b7eaa01d5eb27ada3e6b1aec">&#9670;&nbsp;</a></span>crc16() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -279,7 +347,53 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="ab46b2f78b7eaa01d5eb27ada3e6b1aec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab46b2f78b7eaa01d5eb27ada3e6b1aec">&#9670;&nbsp;</a></span>crc16() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab46b2f78b7eaa01d5eb27ada3e6b1aec">&#9670;&nbsp;</a></span>crc16() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int gr::lora_sdr::add_crc_impl::crc16 </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>crcValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>newByte</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>CRC16, add 16 bit CRC to the payload. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">crcValue</td><td>: </td></tr>
+    <tr><td class="paramname">newByte</td><td>: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>unsigned int </dd></dl>
+
+</div>
+</div>
+<a id="ab46b2f78b7eaa01d5eb27ada3e6b1aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab46b2f78b7eaa01d5eb27ada3e6b1aec">&#9670;&nbsp;</a></span>crc16() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -325,7 +439,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="adeeb01a45dae7558c36756ff4e794134"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adeeb01a45dae7558c36756ff4e794134">&#9670;&nbsp;</a></span>forecast() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adeeb01a45dae7558c36756ff4e794134">&#9670;&nbsp;</a></span>forecast() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -350,7 +464,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Where all the action really happens. </p>
+<p>Gnuradio standard function to tell the system it should operate once it has a input item. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">noutput_items</td><td>: number of output items </td></tr>
@@ -362,7 +476,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="adeeb01a45dae7558c36756ff4e794134"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adeeb01a45dae7558c36756ff4e794134">&#9670;&nbsp;</a></span>forecast() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adeeb01a45dae7558c36756ff4e794134">&#9670;&nbsp;</a></span>forecast() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -387,7 +501,44 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Where all the action really happens. </p>
+<p>Gnuradio standard function to tell the system it should operate once it has a input item. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">noutput_items</td><td>: number of output items </td></tr>
+    <tr><td class="paramname">ninput_items_required</td><td>: number of required input items </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adeeb01a45dae7558c36756ff4e794134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeeb01a45dae7558c36756ff4e794134">&#9670;&nbsp;</a></span>forecast() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gr::lora_sdr::add_crc_impl::forecast </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>noutput_items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gr_vector_int &amp;&#160;</td>
+          <td class="paramname"><em>ninput_items_required</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gnuradio standard function to tell the system it should operate once it has a input item. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">noutput_items</td><td>: number of output items </td></tr>
@@ -399,7 +550,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a39ebc25dc893e70b81d4d756997dd6a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39ebc25dc893e70b81d4d756997dd6a1">&#9670;&nbsp;</a></span>general_work() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a39ebc25dc893e70b81d4d756997dd6a1">&#9670;&nbsp;</a></span>general_work() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -436,7 +587,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Main function of the <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html" title="This block add LoRa CRC (Cyclic redundancy check) into the payload, more info see add_crc_impl.">add_crc</a> module, this module will add Cyclic Redundancy Check (CRC) to the payload to be able to detect more bit errors. </p>
+<p>Main function of the <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html" title="This block adds LoRa CRC (Cyclic redundancy check) into the payload if boolean has_crc is True,...">add_crc</a> module, this module will add Cyclic Redundancy Check (CRC) to the payload to be able to detect more bit errors. If m_has_crc is set to True. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">noutput_items</td><td>: number of output items </td></tr>
@@ -451,7 +602,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a39ebc25dc893e70b81d4d756997dd6a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39ebc25dc893e70b81d4d756997dd6a1">&#9670;&nbsp;</a></span>general_work() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a39ebc25dc893e70b81d4d756997dd6a1">&#9670;&nbsp;</a></span>general_work() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -488,7 +639,59 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Main function of the <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html" title="This block add LoRa CRC (Cyclic redundancy check) into the payload, more info see add_crc_impl.">add_crc</a> module, this module will add Cyclic Redundancy Check (CRC) to the payload to be able to detect more bit errors. </p>
+<p>Main function of the <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html" title="This block adds LoRa CRC (Cyclic redundancy check) into the payload if boolean has_crc is True,...">add_crc</a> module, this module will add Cyclic Redundancy Check (CRC) to the payload to be able to detect more bit errors. If m_has_crc is set to True. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">noutput_items</td><td>: number of output items </td></tr>
+    <tr><td class="paramname">ninput_items</td><td>: number of input items </td></tr>
+    <tr><td class="paramname">input_items</td><td>: vector containing the input items </td></tr>
+    <tr><td class="paramname">output_items</td><td>: vector containting the output items </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="a39ebc25dc893e70b81d4d756997dd6a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39ebc25dc893e70b81d4d756997dd6a1">&#9670;&nbsp;</a></span>general_work() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gr::lora_sdr::add_crc_impl::general_work </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>noutput_items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gr_vector_int &amp;&#160;</td>
+          <td class="paramname"><em>ninput_items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gr_vector_const_void_star &amp;&#160;</td>
+          <td class="paramname"><em>input_items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gr_vector_void_star &amp;&#160;</td>
+          <td class="paramname"><em>output_items</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Main function of the <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html" title="This block adds LoRa CRC (Cyclic redundancy check) into the payload if boolean has_crc is True,...">add_crc</a> module, this module will add Cyclic Redundancy Check (CRC) to the payload to be able to detect more bit errors. If m_has_crc is set to True. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">noutput_items</td><td>: number of output items </td></tr>
@@ -503,7 +706,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="aa52d2d28a50356c49a5f95a7eed988c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa52d2d28a50356c49a5f95a7eed988c8">&#9670;&nbsp;</a></span>msg_handler() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa52d2d28a50356c49a5f95a7eed988c8">&#9670;&nbsp;</a></span>msg_handler() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -526,10 +729,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Message handler, handles all the control messages. </p>
+<p>Message handler, handles the pmt input message (i.e. input data) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">message</td><td>:pmt message </td></tr>
+    <tr><td class="paramname">message</td><td>: input message (i.e input data) </td></tr>
   </table>
   </dd>
 </dl>
@@ -537,7 +740,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="aa52d2d28a50356c49a5f95a7eed988c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa52d2d28a50356c49a5f95a7eed988c8">&#9670;&nbsp;</a></span>msg_handler() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa52d2d28a50356c49a5f95a7eed988c8">&#9670;&nbsp;</a></span>msg_handler() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -560,10 +763,44 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Message handler, handles all the control messages. </p>
+<p>Message handler, handles the pmt input message (i.e. input data) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">message</td><td>:pmt message </td></tr>
+    <tr><td class="paramname">message</td><td>: input message (i.e input data) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa52d2d28a50356c49a5f95a7eed988c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa52d2d28a50356c49a5f95a7eed988c8">&#9670;&nbsp;</a></span>msg_handler() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gr::lora_sdr::add_crc_impl::msg_handler </td>
+          <td>(</td>
+          <td class="paramtype">pmt::pmt_t&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Message handler, handles the pmt input message (i.e. input data) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>: input message (i.e input data) </td></tr>
   </table>
   </dd>
 </dl>

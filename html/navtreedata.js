@@ -57,9 +57,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classgr_1_1lora__sdr_1_1frame__sync__impl.html#a7650eac6bb57346f4ab538988b7ba4ba",
-"dev_2include_2lora__sdr_2dewhitening_8h.html",
-"lib_2hamming__enc__impl_8h.html"
+"classgr_1_1lora__sdr_1_1fft__demod__impl.html#ac39e22a443bc819d2ff303df29f0334c",
+"classgr_1_1lora__sdr_1_1hamming__enc.html#aa3e80d4bc27ed6cd23ca2362e8b702e7",
+"dev-test_2lib_2data__source__impl_8h.html",
+"include_2lora__sdr_2hamming__dec_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
