@@ -109,9 +109,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a988e93f02184e00c2669fc13426f7edc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a988e93f02184e00c2669fc13426f7edc">general_work</a> (int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</td></tr>
 <tr class="memdesc:a988e93f02184e00c2669fc13426f7edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function where the actual computation is done.  <a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a988e93f02184e00c2669fc13426f7edc">More...</a><br /></td></tr>
 <tr class="separator:a988e93f02184e00c2669fc13426f7edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abacc979e4e3f57f8bc97feb7c11ec9cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#abacc979e4e3f57f8bc97feb7c11ec9cf">deinterleaver_impl</a> (uint8_t sf)</td></tr>
+<tr class="memdesc:abacc979e4e3f57f8bc97feb7c11ec9cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new deinterleaver impl object.  <a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#abacc979e4e3f57f8bc97feb7c11ec9cf">More...</a><br /></td></tr>
+<tr class="separator:abacc979e4e3f57f8bc97feb7c11ec9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85f84b3a6fd8a4b65ed297bdf61dd4e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a85f84b3a6fd8a4b65ed297bdf61dd4e6">~deinterleaver_impl</a> ()</td></tr>
+<tr class="memdesc:a85f84b3a6fd8a4b65ed297bdf61dd4e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the deinterleaver impl object.  <a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a85f84b3a6fd8a4b65ed297bdf61dd4e6">More...</a><br /></td></tr>
+<tr class="separator:a85f84b3a6fd8a4b65ed297bdf61dd4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7a0ec6b032c177866cb8e1cdbeab0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#aad7a0ec6b032c177866cb8e1cdbeab0d">forecast</a> (int noutput_items, gr_vector_int &amp;ninput_items_required)</td></tr>
+<tr class="memdesc:aad7a0ec6b032c177866cb8e1cdbeab0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard gnuradio function to tell the system with.  <a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#aad7a0ec6b032c177866cb8e1cdbeab0d">More...</a><br /></td></tr>
+<tr class="separator:aad7a0ec6b032c177866cb8e1cdbeab0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a988e93f02184e00c2669fc13426f7edc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a988e93f02184e00c2669fc13426f7edc">general_work</a> (int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</td></tr>
+<tr class="memdesc:a988e93f02184e00c2669fc13426f7edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function where the actual computation is done.  <a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a988e93f02184e00c2669fc13426f7edc">More...</a><br /></td></tr>
+<tr class="separator:a988e93f02184e00c2669fc13426f7edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a681ce9f583d5eb9146e2140f5da399ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a681ce9f583d5eb9146e2140f5da399ff">new_frame_handler</a> (pmt::pmt_t id)</td></tr>
+<tr class="memdesc:a681ce9f583d5eb9146e2140f5da399ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the block variables when a new lora packet needs to be decoded.  <a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a681ce9f583d5eb9146e2140f5da399ff">More...</a><br /></td></tr>
+<tr class="separator:a681ce9f583d5eb9146e2140f5da399ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9afa6729b40c2d278af1a20df16ea62d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a9afa6729b40c2d278af1a20df16ea62d">header_cr_handler</a> (pmt::pmt_t cr)</td></tr>
+<tr class="memdesc:a9afa6729b40c2d278af1a20df16ea62d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the coding rate received from the <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html" title="Decode the header of the data spackage. For more information about the implementation visit header_de...">header_decoder</a> block.  <a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a9afa6729b40c2d278af1a20df16ea62d">More...</a><br /></td></tr>
+<tr class="separator:a9afa6729b40c2d278af1a20df16ea62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a681ce9f583d5eb9146e2140f5da399ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a681ce9f583d5eb9146e2140f5da399ff">new_frame_handler</a> (pmt::pmt_t id)</td></tr>
 <tr class="memdesc:a681ce9f583d5eb9146e2140f5da399ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the block variables when a new lora packet needs to be decoded.  <a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a681ce9f583d5eb9146e2140f5da399ff">More...</a><br /></td></tr>
 <tr class="separator:a681ce9f583d5eb9146e2140f5da399ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,7 +176,12 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a10c6ecd76513d2d8e8faee8a25174ab6 inherit pub_types_classgr_1_1lora__sdr_1_1deinterleaver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10c6ecd76513d2d8e8faee8a25174ab6 inherit pub_types_classgr_1_1lora__sdr_1_1deinterleaver"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver.html">deinterleaver</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver.html#a10c6ecd76513d2d8e8faee8a25174ab6">sptr</a></td></tr>
 <tr class="separator:a10c6ecd76513d2d8e8faee8a25174ab6 inherit pub_types_classgr_1_1lora__sdr_1_1deinterleaver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10c6ecd76513d2d8e8faee8a25174ab6 inherit pub_types_classgr_1_1lora__sdr_1_1deinterleaver"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver.html">deinterleaver</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver.html#a10c6ecd76513d2d8e8faee8a25174ab6">sptr</a></td></tr>
+<tr class="separator:a10c6ecd76513d2d8e8faee8a25174ab6 inherit pub_types_classgr_1_1lora__sdr_1_1deinterleaver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classgr_1_1lora__sdr_1_1deinterleaver"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classgr_1_1lora__sdr_1_1deinterleaver')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver.html">gr::lora_sdr::deinterleaver</a></td></tr>
+<tr class="memitem:a1d8d559906b8e87cab05ca7d8a3330c5 inherit pub_static_methods_classgr_1_1lora__sdr_1_1deinterleaver"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver.html#a10c6ecd76513d2d8e8faee8a25174ab6">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver.html#a1d8d559906b8e87cab05ca7d8a3330c5">make</a> (uint8_t sf)</td></tr>
+<tr class="memdesc:a1d8d559906b8e87cab05ca7d8a3330c5 inherit pub_static_methods_classgr_1_1lora__sdr_1_1deinterleaver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver.html" title="Deinterleaves the received payload, for more information about the implementation visit deinterleaver...">lora_sdr::deinterleaver</a>.  <a href="classgr_1_1lora__sdr_1_1deinterleaver.html#a1d8d559906b8e87cab05ca7d8a3330c5">More...</a><br /></td></tr>
+<tr class="separator:a1d8d559906b8e87cab05ca7d8a3330c5 inherit pub_static_methods_classgr_1_1lora__sdr_1_1deinterleaver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d8d559906b8e87cab05ca7d8a3330c5 inherit pub_static_methods_classgr_1_1lora__sdr_1_1deinterleaver"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver.html#a10c6ecd76513d2d8e8faee8a25174ab6">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver.html#a1d8d559906b8e87cab05ca7d8a3330c5">make</a> (uint8_t sf)</td></tr>
 <tr class="memdesc:a1d8d559906b8e87cab05ca7d8a3330c5 inherit pub_static_methods_classgr_1_1lora__sdr_1_1deinterleaver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver.html" title="Deinterleaves the received payload, for more information about the implementation visit deinterleaver...">lora_sdr::deinterleaver</a>.  <a href="classgr_1_1lora__sdr_1_1deinterleaver.html#a1d8d559906b8e87cab05ca7d8a3330c5">More...</a><br /></td></tr>
 <tr class="separator:a1d8d559906b8e87cab05ca7d8a3330c5 inherit pub_static_methods_classgr_1_1lora__sdr_1_1deinterleaver"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,7 +194,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abacc979e4e3f57f8bc97feb7c11ec9cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abacc979e4e3f57f8bc97feb7c11ec9cf">&#9670;&nbsp;</a></span>deinterleaver_impl() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abacc979e4e3f57f8bc97feb7c11ec9cf">&#9670;&nbsp;</a></span>deinterleaver_impl() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -197,7 +220,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a85f84b3a6fd8a4b65ed297bdf61dd4e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85f84b3a6fd8a4b65ed297bdf61dd4e6">&#9670;&nbsp;</a></span>~deinterleaver_impl() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a85f84b3a6fd8a4b65ed297bdf61dd4e6">&#9670;&nbsp;</a></span>~deinterleaver_impl() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,7 +239,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="abacc979e4e3f57f8bc97feb7c11ec9cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abacc979e4e3f57f8bc97feb7c11ec9cf">&#9670;&nbsp;</a></span>deinterleaver_impl() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abacc979e4e3f57f8bc97feb7c11ec9cf">&#9670;&nbsp;</a></span>deinterleaver_impl() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +265,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a85f84b3a6fd8a4b65ed297bdf61dd4e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85f84b3a6fd8a4b65ed297bdf61dd4e6">&#9670;&nbsp;</a></span>~deinterleaver_impl() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a85f84b3a6fd8a4b65ed297bdf61dd4e6">&#9670;&nbsp;</a></span>~deinterleaver_impl() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,7 +284,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="abacc979e4e3f57f8bc97feb7c11ec9cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abacc979e4e3f57f8bc97feb7c11ec9cf">&#9670;&nbsp;</a></span>deinterleaver_impl() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abacc979e4e3f57f8bc97feb7c11ec9cf">&#9670;&nbsp;</a></span>deinterleaver_impl() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,7 +310,52 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a85f84b3a6fd8a4b65ed297bdf61dd4e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85f84b3a6fd8a4b65ed297bdf61dd4e6">&#9670;&nbsp;</a></span>~deinterleaver_impl() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a85f84b3a6fd8a4b65ed297bdf61dd4e6">&#9670;&nbsp;</a></span>~deinterleaver_impl() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gr::lora_sdr::deinterleaver_impl::~deinterleaver_impl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy the deinterleaver impl object. </p>
+
+</div>
+</div>
+<a id="abacc979e4e3f57f8bc97feb7c11ec9cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abacc979e4e3f57f8bc97feb7c11ec9cf">&#9670;&nbsp;</a></span>deinterleaver_impl() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gr::lora_sdr::deinterleaver_impl::deinterleaver_impl </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>sf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new deinterleaver impl object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sf</td><td>: sampling rate </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a85f84b3a6fd8a4b65ed297bdf61dd4e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85f84b3a6fd8a4b65ed297bdf61dd4e6">&#9670;&nbsp;</a></span>~deinterleaver_impl() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -307,7 +375,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aad7a0ec6b032c177866cb8e1cdbeab0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad7a0ec6b032c177866cb8e1cdbeab0d">&#9670;&nbsp;</a></span>forecast() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aad7a0ec6b032c177866cb8e1cdbeab0d">&#9670;&nbsp;</a></span>forecast() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -344,7 +412,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="aad7a0ec6b032c177866cb8e1cdbeab0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad7a0ec6b032c177866cb8e1cdbeab0d">&#9670;&nbsp;</a></span>forecast() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aad7a0ec6b032c177866cb8e1cdbeab0d">&#9670;&nbsp;</a></span>forecast() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -381,7 +449,44 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="aad7a0ec6b032c177866cb8e1cdbeab0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad7a0ec6b032c177866cb8e1cdbeab0d">&#9670;&nbsp;</a></span>forecast() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aad7a0ec6b032c177866cb8e1cdbeab0d">&#9670;&nbsp;</a></span>forecast() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gr::lora_sdr::deinterleaver_impl::forecast </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>noutput_items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gr_vector_int &amp;&#160;</td>
+          <td class="paramname"><em>ninput_items_required</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Standard gnuradio function to tell the system with. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">noutput_items</td><td>: number of output items </td></tr>
+    <tr><td class="paramname">ninput_items_required</td><td>: number of required output items </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aad7a0ec6b032c177866cb8e1cdbeab0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad7a0ec6b032c177866cb8e1cdbeab0d">&#9670;&nbsp;</a></span>forecast() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -418,7 +523,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a988e93f02184e00c2669fc13426f7edc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a988e93f02184e00c2669fc13426f7edc">&#9670;&nbsp;</a></span>general_work() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a988e93f02184e00c2669fc13426f7edc">&#9670;&nbsp;</a></span>general_work() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -470,7 +575,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a988e93f02184e00c2669fc13426f7edc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a988e93f02184e00c2669fc13426f7edc">&#9670;&nbsp;</a></span>general_work() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a988e93f02184e00c2669fc13426f7edc">&#9670;&nbsp;</a></span>general_work() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -522,7 +627,59 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a988e93f02184e00c2669fc13426f7edc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a988e93f02184e00c2669fc13426f7edc">&#9670;&nbsp;</a></span>general_work() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a988e93f02184e00c2669fc13426f7edc">&#9670;&nbsp;</a></span>general_work() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gr::lora_sdr::deinterleaver_impl::general_work </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>noutput_items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gr_vector_int &amp;&#160;</td>
+          <td class="paramname"><em>ninput_items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gr_vector_const_void_star &amp;&#160;</td>
+          <td class="paramname"><em>input_items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gr_vector_void_star &amp;&#160;</td>
+          <td class="paramname"><em>output_items</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Main function where the actual computation is done. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">noutput_items</td><td>: number of output items </td></tr>
+    <tr><td class="paramname">ninput_items</td><td>: number of input items </td></tr>
+    <tr><td class="paramname">input_items</td><td>: input (i.e gray demapping output) </td></tr>
+    <tr><td class="paramname">output_items</td><td>: output data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="a988e93f02184e00c2669fc13426f7edc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a988e93f02184e00c2669fc13426f7edc">&#9670;&nbsp;</a></span>general_work() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -574,7 +731,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a9afa6729b40c2d278af1a20df16ea62d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9afa6729b40c2d278af1a20df16ea62d">&#9670;&nbsp;</a></span>header_cr_handler() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9afa6729b40c2d278af1a20df16ea62d">&#9670;&nbsp;</a></span>header_cr_handler() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -608,7 +765,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a9afa6729b40c2d278af1a20df16ea62d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9afa6729b40c2d278af1a20df16ea62d">&#9670;&nbsp;</a></span>header_cr_handler() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9afa6729b40c2d278af1a20df16ea62d">&#9670;&nbsp;</a></span>header_cr_handler() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -642,7 +799,41 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a9afa6729b40c2d278af1a20df16ea62d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9afa6729b40c2d278af1a20df16ea62d">&#9670;&nbsp;</a></span>header_cr_handler() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9afa6729b40c2d278af1a20df16ea62d">&#9670;&nbsp;</a></span>header_cr_handler() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gr::lora_sdr::deinterleaver_impl::header_cr_handler </td>
+          <td>(</td>
+          <td class="paramtype">pmt::pmt_t&#160;</td>
+          <td class="paramname"><em>cr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the coding rate received from the <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html" title="Decode the header of the data spackage. For more information about the implementation visit header_de...">header_decoder</a> block. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cr</td><td>: coding rate </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9afa6729b40c2d278af1a20df16ea62d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9afa6729b40c2d278af1a20df16ea62d">&#9670;&nbsp;</a></span>header_cr_handler() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -676,7 +867,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a681ce9f583d5eb9146e2140f5da399ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a681ce9f583d5eb9146e2140f5da399ff">&#9670;&nbsp;</a></span>new_frame_handler() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a681ce9f583d5eb9146e2140f5da399ff">&#9670;&nbsp;</a></span>new_frame_handler() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -710,7 +901,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a681ce9f583d5eb9146e2140f5da399ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a681ce9f583d5eb9146e2140f5da399ff">&#9670;&nbsp;</a></span>new_frame_handler() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a681ce9f583d5eb9146e2140f5da399ff">&#9670;&nbsp;</a></span>new_frame_handler() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -744,7 +935,41 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a681ce9f583d5eb9146e2140f5da399ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a681ce9f583d5eb9146e2140f5da399ff">&#9670;&nbsp;</a></span>new_frame_handler() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a681ce9f583d5eb9146e2140f5da399ff">&#9670;&nbsp;</a></span>new_frame_handler() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gr::lora_sdr::deinterleaver_impl::new_frame_handler </td>
+          <td>(</td>
+          <td class="paramtype">pmt::pmt_t&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reset the block variables when a new lora packet needs to be decoded. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a681ce9f583d5eb9146e2140f5da399ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a681ce9f583d5eb9146e2140f5da399ff">&#9670;&nbsp;</a></span>new_frame_handler() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

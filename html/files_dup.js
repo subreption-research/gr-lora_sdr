@@ -1,9 +1,13 @@
 var files_dup =
 [
     [ "dev/lib/_kiss_fft_guts.h", "dev_2lib_2__kiss__fft__guts_8h.html", "dev_2lib_2__kiss__fft__guts_8h" ],
+    [ "dev-docs/lib/_kiss_fft_guts.h", "dev-docs_2lib_2__kiss__fft__guts_8h.html", "dev-docs_2lib_2__kiss__fft__guts_8h" ],
     [ "dev-test/lib/_kiss_fft_guts.h", "dev-test_2lib_2__kiss__fft__guts_8h.html", "dev-test_2lib_2__kiss__fft__guts_8h" ],
     [ "lib/_kiss_fft_guts.h", "lib_2__kiss__fft__guts_8h.html", "lib_2__kiss__fft__guts_8h" ],
     [ "dev/include/lora_sdr/add_crc.h", "dev_2include_2lora__sdr_2add__crc_8h.html", [
+      [ "add_crc", "classgr_1_1lora__sdr_1_1add__crc.html", "classgr_1_1lora__sdr_1_1add__crc" ]
+    ] ],
+    [ "dev-docs/include/lora_sdr/add_crc.h", "dev-docs_2include_2lora__sdr_2add__crc_8h.html", [
       [ "add_crc", "classgr_1_1lora__sdr_1_1add__crc.html", "classgr_1_1lora__sdr_1_1add__crc" ]
     ] ],
     [ "dev-test/include/lora_sdr/add_crc.h", "dev-test_2include_2lora__sdr_2add__crc_8h.html", [
@@ -15,6 +19,9 @@ var files_dup =
     [ "dev/lib/add_crc_impl.h", "dev_2lib_2add__crc__impl_8h.html", [
       [ "add_crc_impl", "classgr_1_1lora__sdr_1_1add__crc__impl.html", "classgr_1_1lora__sdr_1_1add__crc__impl" ]
     ] ],
+    [ "dev-docs/lib/add_crc_impl.h", "dev-docs_2lib_2add__crc__impl_8h.html", [
+      [ "add_crc_impl", "classgr_1_1lora__sdr_1_1add__crc__impl.html", "classgr_1_1lora__sdr_1_1add__crc__impl" ]
+    ] ],
     [ "dev-test/lib/add_crc_impl.h", "dev-test_2lib_2add__crc__impl_8h.html", [
       [ "add_crc_impl", "classgr_1_1lora__sdr_1_1add__crc__impl.html", "classgr_1_1lora__sdr_1_1add__crc__impl" ]
     ] ],
@@ -22,9 +29,13 @@ var files_dup =
       [ "add_crc_impl", "classgr_1_1lora__sdr_1_1add__crc__impl.html", "classgr_1_1lora__sdr_1_1add__crc__impl" ]
     ] ],
     [ "dev/include/lora_sdr/api.h", "dev_2include_2lora__sdr_2api_8h.html", "dev_2include_2lora__sdr_2api_8h" ],
+    [ "dev-docs/include/lora_sdr/api.h", "dev-docs_2include_2lora__sdr_2api_8h.html", "dev-docs_2include_2lora__sdr_2api_8h" ],
     [ "dev-test/include/lora_sdr/api.h", "dev-test_2include_2lora__sdr_2api_8h.html", "dev-test_2include_2lora__sdr_2api_8h" ],
     [ "include/lora_sdr/api.h", "include_2lora__sdr_2api_8h.html", "include_2lora__sdr_2api_8h" ],
     [ "dev/include/lora_sdr/crc_verif.h", "dev_2include_2lora__sdr_2crc__verif_8h.html", [
+      [ "crc_verif", "classgr_1_1lora__sdr_1_1crc__verif.html", "classgr_1_1lora__sdr_1_1crc__verif" ]
+    ] ],
+    [ "dev-docs/include/lora_sdr/crc_verif.h", "dev-docs_2include_2lora__sdr_2crc__verif_8h.html", [
       [ "crc_verif", "classgr_1_1lora__sdr_1_1crc__verif.html", "classgr_1_1lora__sdr_1_1crc__verif" ]
     ] ],
     [ "dev-test/include/lora_sdr/crc_verif.h", "dev-test_2include_2lora__sdr_2crc__verif_8h.html", [
@@ -36,6 +47,9 @@ var files_dup =
     [ "dev/lib/crc_verif_impl.h", "dev_2lib_2crc__verif__impl_8h.html", [
       [ "crc_verif_impl", "classgr_1_1lora__sdr_1_1crc__verif__impl.html", "classgr_1_1lora__sdr_1_1crc__verif__impl" ]
     ] ],
+    [ "dev-docs/lib/crc_verif_impl.h", "dev-docs_2lib_2crc__verif__impl_8h.html", [
+      [ "crc_verif_impl", "classgr_1_1lora__sdr_1_1crc__verif__impl.html", "classgr_1_1lora__sdr_1_1crc__verif__impl" ]
+    ] ],
     [ "dev-test/lib/crc_verif_impl.h", "dev-test_2lib_2crc__verif__impl_8h.html", [
       [ "crc_verif_impl", "classgr_1_1lora__sdr_1_1crc__verif__impl.html", "classgr_1_1lora__sdr_1_1crc__verif__impl" ]
     ] ],
@@ -43,6 +57,9 @@ var files_dup =
       [ "crc_verif_impl", "classgr_1_1lora__sdr_1_1crc__verif__impl.html", "classgr_1_1lora__sdr_1_1crc__verif__impl" ]
     ] ],
     [ "dev/include/lora_sdr/data_source.h", "dev_2include_2lora__sdr_2data__source_8h.html", [
+      [ "data_source", "classgr_1_1lora__sdr_1_1data__source.html", "classgr_1_1lora__sdr_1_1data__source" ]
+    ] ],
+    [ "dev-docs/include/lora_sdr/data_source.h", "dev-docs_2include_2lora__sdr_2data__source_8h.html", [
       [ "data_source", "classgr_1_1lora__sdr_1_1data__source.html", "classgr_1_1lora__sdr_1_1data__source" ]
     ] ],
     [ "dev-test/include/lora_sdr/data_source.h", "dev-test_2include_2lora__sdr_2data__source_8h.html", [
@@ -54,6 +71,9 @@ var files_dup =
     [ "dev/lib/data_source_impl.h", "dev_2lib_2data__source__impl_8h.html", [
       [ "data_source_impl", "classgr_1_1lora__sdr_1_1data__source__impl.html", "classgr_1_1lora__sdr_1_1data__source__impl" ]
     ] ],
+    [ "dev-docs/lib/data_source_impl.h", "dev-docs_2lib_2data__source__impl_8h.html", [
+      [ "data_source_impl", "classgr_1_1lora__sdr_1_1data__source__impl.html", "classgr_1_1lora__sdr_1_1data__source__impl" ]
+    ] ],
     [ "dev-test/lib/data_source_impl.h", "dev-test_2lib_2data__source__impl_8h.html", [
       [ "data_source_impl", "classgr_1_1lora__sdr_1_1data__source__impl.html", "classgr_1_1lora__sdr_1_1data__source__impl" ]
     ] ],
@@ -61,9 +81,13 @@ var files_dup =
       [ "data_source_impl", "classgr_1_1lora__sdr_1_1data__source__impl.html", "classgr_1_1lora__sdr_1_1data__source__impl" ]
     ] ],
     [ "dev/lib/debug_tools.h", "dev_2lib_2debug__tools_8h.html", "dev_2lib_2debug__tools_8h" ],
+    [ "dev-docs/lib/debug_tools.h", "dev-docs_2lib_2debug__tools_8h.html", "dev-docs_2lib_2debug__tools_8h" ],
     [ "dev-test/lib/debug_tools.h", "dev-test_2lib_2debug__tools_8h.html", "dev-test_2lib_2debug__tools_8h" ],
     [ "lib/debug_tools.h", "lib_2debug__tools_8h.html", "lib_2debug__tools_8h" ],
     [ "dev/include/lora_sdr/deinterleaver.h", "dev_2include_2lora__sdr_2deinterleaver_8h.html", [
+      [ "deinterleaver", "classgr_1_1lora__sdr_1_1deinterleaver.html", "classgr_1_1lora__sdr_1_1deinterleaver" ]
+    ] ],
+    [ "dev-docs/include/lora_sdr/deinterleaver.h", "dev-docs_2include_2lora__sdr_2deinterleaver_8h.html", [
       [ "deinterleaver", "classgr_1_1lora__sdr_1_1deinterleaver.html", "classgr_1_1lora__sdr_1_1deinterleaver" ]
     ] ],
     [ "dev-test/include/lora_sdr/deinterleaver.h", "dev-test_2include_2lora__sdr_2deinterleaver_8h.html", [
@@ -75,6 +99,9 @@ var files_dup =
     [ "dev/lib/deinterleaver_impl.h", "dev_2lib_2deinterleaver__impl_8h.html", [
       [ "deinterleaver_impl", "classgr_1_1lora__sdr_1_1deinterleaver__impl.html", "classgr_1_1lora__sdr_1_1deinterleaver__impl" ]
     ] ],
+    [ "dev-docs/lib/deinterleaver_impl.h", "dev-docs_2lib_2deinterleaver__impl_8h.html", [
+      [ "deinterleaver_impl", "classgr_1_1lora__sdr_1_1deinterleaver__impl.html", "classgr_1_1lora__sdr_1_1deinterleaver__impl" ]
+    ] ],
     [ "dev-test/lib/deinterleaver_impl.h", "dev-test_2lib_2deinterleaver__impl_8h.html", [
       [ "deinterleaver_impl", "classgr_1_1lora__sdr_1_1deinterleaver__impl.html", "classgr_1_1lora__sdr_1_1deinterleaver__impl" ]
     ] ],
@@ -82,6 +109,9 @@ var files_dup =
       [ "deinterleaver_impl", "classgr_1_1lora__sdr_1_1deinterleaver__impl.html", "classgr_1_1lora__sdr_1_1deinterleaver__impl" ]
     ] ],
     [ "dev/include/lora_sdr/dewhitening.h", "dev_2include_2lora__sdr_2dewhitening_8h.html", [
+      [ "dewhitening", "classgr_1_1lora__sdr_1_1dewhitening.html", "classgr_1_1lora__sdr_1_1dewhitening" ]
+    ] ],
+    [ "dev-docs/include/lora_sdr/dewhitening.h", "dev-docs_2include_2lora__sdr_2dewhitening_8h.html", [
       [ "dewhitening", "classgr_1_1lora__sdr_1_1dewhitening.html", "classgr_1_1lora__sdr_1_1dewhitening" ]
     ] ],
     [ "dev-test/include/lora_sdr/dewhitening.h", "dev-test_2include_2lora__sdr_2dewhitening_8h.html", [
@@ -93,6 +123,9 @@ var files_dup =
     [ "dev/lib/dewhitening_impl.h", "dev_2lib_2dewhitening__impl_8h.html", [
       [ "dewhitening_impl", "classgr_1_1lora__sdr_1_1dewhitening__impl.html", "classgr_1_1lora__sdr_1_1dewhitening__impl" ]
     ] ],
+    [ "dev-docs/lib/dewhitening_impl.h", "dev-docs_2lib_2dewhitening__impl_8h.html", [
+      [ "dewhitening_impl", "classgr_1_1lora__sdr_1_1dewhitening__impl.html", "classgr_1_1lora__sdr_1_1dewhitening__impl" ]
+    ] ],
     [ "dev-test/lib/dewhitening_impl.h", "dev-test_2lib_2dewhitening__impl_8h.html", [
       [ "dewhitening_impl", "classgr_1_1lora__sdr_1_1dewhitening__impl.html", "classgr_1_1lora__sdr_1_1dewhitening__impl" ]
     ] ],
@@ -100,6 +133,9 @@ var files_dup =
       [ "dewhitening_impl", "classgr_1_1lora__sdr_1_1dewhitening__impl.html", "classgr_1_1lora__sdr_1_1dewhitening__impl" ]
     ] ],
     [ "dev/include/lora_sdr/err_measures.h", "dev_2include_2lora__sdr_2err__measures_8h.html", [
+      [ "err_measures", "classgr_1_1lora__sdr_1_1err__measures.html", "classgr_1_1lora__sdr_1_1err__measures" ]
+    ] ],
+    [ "dev-docs/include/lora_sdr/err_measures.h", "dev-docs_2include_2lora__sdr_2err__measures_8h.html", [
       [ "err_measures", "classgr_1_1lora__sdr_1_1err__measures.html", "classgr_1_1lora__sdr_1_1err__measures" ]
     ] ],
     [ "dev-test/include/lora_sdr/err_measures.h", "dev-test_2include_2lora__sdr_2err__measures_8h.html", [
@@ -111,6 +147,9 @@ var files_dup =
     [ "dev/lib/err_measures_impl.h", "dev_2lib_2err__measures__impl_8h.html", [
       [ "err_measures_impl", "classgr_1_1lora__sdr_1_1err__measures__impl.html", "classgr_1_1lora__sdr_1_1err__measures__impl" ]
     ] ],
+    [ "dev-docs/lib/err_measures_impl.h", "dev-docs_2lib_2err__measures__impl_8h.html", [
+      [ "err_measures_impl", "classgr_1_1lora__sdr_1_1err__measures__impl.html", "classgr_1_1lora__sdr_1_1err__measures__impl" ]
+    ] ],
     [ "dev-test/lib/err_measures_impl.h", "dev-test_2lib_2err__measures__impl_8h.html", [
       [ "err_measures_impl", "classgr_1_1lora__sdr_1_1err__measures__impl.html", "classgr_1_1lora__sdr_1_1err__measures__impl" ]
     ] ],
@@ -118,6 +157,9 @@ var files_dup =
       [ "err_measures_impl", "classgr_1_1lora__sdr_1_1err__measures__impl.html", "classgr_1_1lora__sdr_1_1err__measures__impl" ]
     ] ],
     [ "dev/include/lora_sdr/fft_demod.h", "dev_2include_2lora__sdr_2fft__demod_8h.html", [
+      [ "fft_demod", "classgr_1_1lora__sdr_1_1fft__demod.html", "classgr_1_1lora__sdr_1_1fft__demod" ]
+    ] ],
+    [ "dev-docs/include/lora_sdr/fft_demod.h", "dev-docs_2include_2lora__sdr_2fft__demod_8h.html", [
       [ "fft_demod", "classgr_1_1lora__sdr_1_1fft__demod.html", "classgr_1_1lora__sdr_1_1fft__demod" ]
     ] ],
     [ "dev-test/include/lora_sdr/fft_demod.h", "dev-test_2include_2lora__sdr_2fft__demod_8h.html", [
@@ -129,6 +171,9 @@ var files_dup =
     [ "dev/lib/fft_demod_impl.h", "dev_2lib_2fft__demod__impl_8h.html", [
       [ "fft_demod_impl", "classgr_1_1lora__sdr_1_1fft__demod__impl.html", "classgr_1_1lora__sdr_1_1fft__demod__impl" ]
     ] ],
+    [ "dev-docs/lib/fft_demod_impl.h", "dev-docs_2lib_2fft__demod__impl_8h.html", [
+      [ "fft_demod_impl", "classgr_1_1lora__sdr_1_1fft__demod__impl.html", "classgr_1_1lora__sdr_1_1fft__demod__impl" ]
+    ] ],
     [ "dev-test/lib/fft_demod_impl.h", "dev-test_2lib_2fft__demod__impl_8h.html", [
       [ "fft_demod_impl", "classgr_1_1lora__sdr_1_1fft__demod__impl.html", "classgr_1_1lora__sdr_1_1fft__demod__impl" ]
     ] ],
@@ -136,6 +181,9 @@ var files_dup =
       [ "fft_demod_impl", "classgr_1_1lora__sdr_1_1fft__demod__impl.html", "classgr_1_1lora__sdr_1_1fft__demod__impl" ]
     ] ],
     [ "dev/include/lora_sdr/frame_sync.h", "dev_2include_2lora__sdr_2frame__sync_8h.html", [
+      [ "frame_sync", "classgr_1_1lora__sdr_1_1frame__sync.html", "classgr_1_1lora__sdr_1_1frame__sync" ]
+    ] ],
+    [ "dev-docs/include/lora_sdr/frame_sync.h", "dev-docs_2include_2lora__sdr_2frame__sync_8h.html", [
       [ "frame_sync", "classgr_1_1lora__sdr_1_1frame__sync.html", "classgr_1_1lora__sdr_1_1frame__sync" ]
     ] ],
     [ "dev-test/include/lora_sdr/frame_sync.h", "dev-test_2include_2lora__sdr_2frame__sync_8h.html", [
@@ -147,6 +195,9 @@ var files_dup =
     [ "dev/lib/frame_sync_impl.h", "dev_2lib_2frame__sync__impl_8h.html", [
       [ "frame_sync_impl", "classgr_1_1lora__sdr_1_1frame__sync__impl.html", "classgr_1_1lora__sdr_1_1frame__sync__impl" ]
     ] ],
+    [ "dev-docs/lib/frame_sync_impl.h", "dev-docs_2lib_2frame__sync__impl_8h.html", [
+      [ "frame_sync_impl", "classgr_1_1lora__sdr_1_1frame__sync__impl.html", "classgr_1_1lora__sdr_1_1frame__sync__impl" ]
+    ] ],
     [ "dev-test/lib/frame_sync_impl.h", "dev-test_2lib_2frame__sync__impl_8h.html", [
       [ "frame_sync_impl", "classgr_1_1lora__sdr_1_1frame__sync__impl.html", "classgr_1_1lora__sdr_1_1frame__sync__impl" ]
     ] ],
@@ -154,6 +205,9 @@ var files_dup =
       [ "frame_sync_impl", "classgr_1_1lora__sdr_1_1frame__sync__impl.html", "classgr_1_1lora__sdr_1_1frame__sync__impl" ]
     ] ],
     [ "dev/include/lora_sdr/gray_decode.h", "dev_2include_2lora__sdr_2gray__decode_8h.html", [
+      [ "gray_decode", "classgr_1_1lora__sdr_1_1gray__decode.html", "classgr_1_1lora__sdr_1_1gray__decode" ]
+    ] ],
+    [ "dev-docs/include/lora_sdr/gray_decode.h", "dev-docs_2include_2lora__sdr_2gray__decode_8h.html", [
       [ "gray_decode", "classgr_1_1lora__sdr_1_1gray__decode.html", "classgr_1_1lora__sdr_1_1gray__decode" ]
     ] ],
     [ "dev-test/include/lora_sdr/gray_decode.h", "dev-test_2include_2lora__sdr_2gray__decode_8h.html", [
@@ -165,6 +219,9 @@ var files_dup =
     [ "dev/lib/gray_decode_impl.h", "dev_2lib_2gray__decode__impl_8h.html", [
       [ "gray_decode_impl", "classgr_1_1lora__sdr_1_1gray__decode__impl.html", "classgr_1_1lora__sdr_1_1gray__decode__impl" ]
     ] ],
+    [ "dev-docs/lib/gray_decode_impl.h", "dev-docs_2lib_2gray__decode__impl_8h.html", [
+      [ "gray_decode_impl", "classgr_1_1lora__sdr_1_1gray__decode__impl.html", "classgr_1_1lora__sdr_1_1gray__decode__impl" ]
+    ] ],
     [ "dev-test/lib/gray_decode_impl.h", "dev-test_2lib_2gray__decode__impl_8h.html", [
       [ "gray_decode_impl", "classgr_1_1lora__sdr_1_1gray__decode__impl.html", "classgr_1_1lora__sdr_1_1gray__decode__impl" ]
     ] ],
@@ -172,6 +229,9 @@ var files_dup =
       [ "gray_decode_impl", "classgr_1_1lora__sdr_1_1gray__decode__impl.html", "classgr_1_1lora__sdr_1_1gray__decode__impl" ]
     ] ],
     [ "dev/include/lora_sdr/gray_enc.h", "dev_2include_2lora__sdr_2gray__enc_8h.html", [
+      [ "gray_enc", "classgr_1_1lora__sdr_1_1gray__enc.html", "classgr_1_1lora__sdr_1_1gray__enc" ]
+    ] ],
+    [ "dev-docs/include/lora_sdr/gray_enc.h", "dev-docs_2include_2lora__sdr_2gray__enc_8h.html", [
       [ "gray_enc", "classgr_1_1lora__sdr_1_1gray__enc.html", "classgr_1_1lora__sdr_1_1gray__enc" ]
     ] ],
     [ "dev-test/include/lora_sdr/gray_enc.h", "dev-test_2include_2lora__sdr_2gray__enc_8h.html", [
@@ -183,6 +243,9 @@ var files_dup =
     [ "dev/lib/gray_enc_impl.h", "dev_2lib_2gray__enc__impl_8h.html", [
       [ "gray_enc_impl", "classgr_1_1lora__sdr_1_1gray__enc__impl.html", "classgr_1_1lora__sdr_1_1gray__enc__impl" ]
     ] ],
+    [ "dev-docs/lib/gray_enc_impl.h", "dev-docs_2lib_2gray__enc__impl_8h.html", [
+      [ "gray_enc_impl", "classgr_1_1lora__sdr_1_1gray__enc__impl.html", "classgr_1_1lora__sdr_1_1gray__enc__impl" ]
+    ] ],
     [ "dev-test/lib/gray_enc_impl.h", "dev-test_2lib_2gray__enc__impl_8h.html", [
       [ "gray_enc_impl", "classgr_1_1lora__sdr_1_1gray__enc__impl.html", "classgr_1_1lora__sdr_1_1gray__enc__impl" ]
     ] ],
@@ -190,6 +253,9 @@ var files_dup =
       [ "gray_enc_impl", "classgr_1_1lora__sdr_1_1gray__enc__impl.html", "classgr_1_1lora__sdr_1_1gray__enc__impl" ]
     ] ],
     [ "dev/include/lora_sdr/hamming_dec.h", "dev_2include_2lora__sdr_2hamming__dec_8h.html", [
+      [ "hamming_dec", "classgr_1_1lora__sdr_1_1hamming__dec.html", "classgr_1_1lora__sdr_1_1hamming__dec" ]
+    ] ],
+    [ "dev-docs/include/lora_sdr/hamming_dec.h", "dev-docs_2include_2lora__sdr_2hamming__dec_8h.html", [
       [ "hamming_dec", "classgr_1_1lora__sdr_1_1hamming__dec.html", "classgr_1_1lora__sdr_1_1hamming__dec" ]
     ] ],
     [ "dev-test/include/lora_sdr/hamming_dec.h", "dev-test_2include_2lora__sdr_2hamming__dec_8h.html", [
@@ -201,6 +267,9 @@ var files_dup =
     [ "dev/lib/hamming_dec_impl.h", "dev_2lib_2hamming__dec__impl_8h.html", [
       [ "hamming_dec_impl", "classgr_1_1lora__sdr_1_1hamming__dec__impl.html", "classgr_1_1lora__sdr_1_1hamming__dec__impl" ]
     ] ],
+    [ "dev-docs/lib/hamming_dec_impl.h", "dev-docs_2lib_2hamming__dec__impl_8h.html", [
+      [ "hamming_dec_impl", "classgr_1_1lora__sdr_1_1hamming__dec__impl.html", "classgr_1_1lora__sdr_1_1hamming__dec__impl" ]
+    ] ],
     [ "dev-test/lib/hamming_dec_impl.h", "dev-test_2lib_2hamming__dec__impl_8h.html", [
       [ "hamming_dec_impl", "classgr_1_1lora__sdr_1_1hamming__dec__impl.html", "classgr_1_1lora__sdr_1_1hamming__dec__impl" ]
     ] ],
@@ -208,6 +277,9 @@ var files_dup =
       [ "hamming_dec_impl", "classgr_1_1lora__sdr_1_1hamming__dec__impl.html", "classgr_1_1lora__sdr_1_1hamming__dec__impl" ]
     ] ],
     [ "dev/include/lora_sdr/hamming_enc.h", "dev_2include_2lora__sdr_2hamming__enc_8h.html", [
+      [ "hamming_enc", "classgr_1_1lora__sdr_1_1hamming__enc.html", "classgr_1_1lora__sdr_1_1hamming__enc" ]
+    ] ],
+    [ "dev-docs/include/lora_sdr/hamming_enc.h", "dev-docs_2include_2lora__sdr_2hamming__enc_8h.html", [
       [ "hamming_enc", "classgr_1_1lora__sdr_1_1hamming__enc.html", "classgr_1_1lora__sdr_1_1hamming__enc" ]
     ] ],
     [ "dev-test/include/lora_sdr/hamming_enc.h", "dev-test_2include_2lora__sdr_2hamming__enc_8h.html", [
@@ -219,6 +291,9 @@ var files_dup =
     [ "dev/lib/hamming_enc_impl.h", "dev_2lib_2hamming__enc__impl_8h.html", [
       [ "hamming_enc_impl", "classgr_1_1lora__sdr_1_1hamming__enc__impl.html", "classgr_1_1lora__sdr_1_1hamming__enc__impl" ]
     ] ],
+    [ "dev-docs/lib/hamming_enc_impl.h", "dev-docs_2lib_2hamming__enc__impl_8h.html", [
+      [ "hamming_enc_impl", "classgr_1_1lora__sdr_1_1hamming__enc__impl.html", "classgr_1_1lora__sdr_1_1hamming__enc__impl" ]
+    ] ],
     [ "dev-test/lib/hamming_enc_impl.h", "dev-test_2lib_2hamming__enc__impl_8h.html", [
       [ "hamming_enc_impl", "classgr_1_1lora__sdr_1_1hamming__enc__impl.html", "classgr_1_1lora__sdr_1_1hamming__enc__impl" ]
     ] ],
@@ -226,6 +301,9 @@ var files_dup =
       [ "hamming_enc_impl", "classgr_1_1lora__sdr_1_1hamming__enc__impl.html", "classgr_1_1lora__sdr_1_1hamming__enc__impl" ]
     ] ],
     [ "dev/include/lora_sdr/header.h", "dev_2include_2lora__sdr_2header_8h.html", [
+      [ "header", "classgr_1_1lora__sdr_1_1header.html", "classgr_1_1lora__sdr_1_1header" ]
+    ] ],
+    [ "dev-docs/include/lora_sdr/header.h", "dev-docs_2include_2lora__sdr_2header_8h.html", [
       [ "header", "classgr_1_1lora__sdr_1_1header.html", "classgr_1_1lora__sdr_1_1header" ]
     ] ],
     [ "dev-test/include/lora_sdr/header.h", "dev-test_2include_2lora__sdr_2header_8h.html", [
@@ -237,6 +315,9 @@ var files_dup =
     [ "dev/include/lora_sdr/header_decoder.h", "dev_2include_2lora__sdr_2header__decoder_8h.html", [
       [ "header_decoder", "classgr_1_1lora__sdr_1_1header__decoder.html", "classgr_1_1lora__sdr_1_1header__decoder" ]
     ] ],
+    [ "dev-docs/include/lora_sdr/header_decoder.h", "dev-docs_2include_2lora__sdr_2header__decoder_8h.html", [
+      [ "header_decoder", "classgr_1_1lora__sdr_1_1header__decoder.html", "classgr_1_1lora__sdr_1_1header__decoder" ]
+    ] ],
     [ "dev-test/include/lora_sdr/header_decoder.h", "dev-test_2include_2lora__sdr_2header__decoder_8h.html", [
       [ "header_decoder", "classgr_1_1lora__sdr_1_1header__decoder.html", "classgr_1_1lora__sdr_1_1header__decoder" ]
     ] ],
@@ -244,6 +325,9 @@ var files_dup =
       [ "header_decoder", "classgr_1_1lora__sdr_1_1header__decoder.html", "classgr_1_1lora__sdr_1_1header__decoder" ]
     ] ],
     [ "dev/lib/header_decoder_impl.h", "dev_2lib_2header__decoder__impl_8h.html", [
+      [ "header_decoder_impl", "classgr_1_1lora__sdr_1_1header__decoder__impl.html", "classgr_1_1lora__sdr_1_1header__decoder__impl" ]
+    ] ],
+    [ "dev-docs/lib/header_decoder_impl.h", "dev-docs_2lib_2header__decoder__impl_8h.html", [
       [ "header_decoder_impl", "classgr_1_1lora__sdr_1_1header__decoder__impl.html", "classgr_1_1lora__sdr_1_1header__decoder__impl" ]
     ] ],
     [ "dev-test/lib/header_decoder_impl.h", "dev-test_2lib_2header__decoder__impl_8h.html", [
@@ -255,6 +339,9 @@ var files_dup =
     [ "dev/lib/header_impl.h", "dev_2lib_2header__impl_8h.html", [
       [ "header_impl", "classgr_1_1lora__sdr_1_1header__impl.html", "classgr_1_1lora__sdr_1_1header__impl" ]
     ] ],
+    [ "dev-docs/lib/header_impl.h", "dev-docs_2lib_2header__impl_8h.html", [
+      [ "header_impl", "classgr_1_1lora__sdr_1_1header__impl.html", "classgr_1_1lora__sdr_1_1header__impl" ]
+    ] ],
     [ "dev-test/lib/header_impl.h", "dev-test_2lib_2header__impl_8h.html", [
       [ "header_impl", "classgr_1_1lora__sdr_1_1header__impl.html", "classgr_1_1lora__sdr_1_1header__impl" ]
     ] ],
@@ -262,6 +349,9 @@ var files_dup =
       [ "header_impl", "classgr_1_1lora__sdr_1_1header__impl.html", "classgr_1_1lora__sdr_1_1header__impl" ]
     ] ],
     [ "dev/include/lora_sdr/interleaver.h", "dev_2include_2lora__sdr_2interleaver_8h.html", [
+      [ "interleaver", "classgr_1_1lora__sdr_1_1interleaver.html", "classgr_1_1lora__sdr_1_1interleaver" ]
+    ] ],
+    [ "dev-docs/include/lora_sdr/interleaver.h", "dev-docs_2include_2lora__sdr_2interleaver_8h.html", [
       [ "interleaver", "classgr_1_1lora__sdr_1_1interleaver.html", "classgr_1_1lora__sdr_1_1interleaver" ]
     ] ],
     [ "dev-test/include/lora_sdr/interleaver.h", "dev-test_2include_2lora__sdr_2interleaver_8h.html", [
@@ -273,6 +363,9 @@ var files_dup =
     [ "dev/lib/interleaver_impl.h", "dev_2lib_2interleaver__impl_8h.html", [
       [ "interleaver_impl", "classgr_1_1lora__sdr_1_1interleaver__impl.html", "classgr_1_1lora__sdr_1_1interleaver__impl" ]
     ] ],
+    [ "dev-docs/lib/interleaver_impl.h", "dev-docs_2lib_2interleaver__impl_8h.html", [
+      [ "interleaver_impl", "classgr_1_1lora__sdr_1_1interleaver__impl.html", "classgr_1_1lora__sdr_1_1interleaver__impl" ]
+    ] ],
     [ "dev-test/lib/interleaver_impl.h", "dev-test_2lib_2interleaver__impl_8h.html", [
       [ "interleaver_impl", "classgr_1_1lora__sdr_1_1interleaver__impl.html", "classgr_1_1lora__sdr_1_1interleaver__impl" ]
     ] ],
@@ -280,9 +373,13 @@ var files_dup =
       [ "interleaver_impl", "classgr_1_1lora__sdr_1_1interleaver__impl.html", "classgr_1_1lora__sdr_1_1interleaver__impl" ]
     ] ],
     [ "dev/lib/kiss_fft.h", "dev_2lib_2kiss__fft_8h.html", "dev_2lib_2kiss__fft_8h" ],
+    [ "dev-docs/lib/kiss_fft.h", "dev-docs_2lib_2kiss__fft_8h.html", "dev-docs_2lib_2kiss__fft_8h" ],
     [ "dev-test/lib/kiss_fft.h", "dev-test_2lib_2kiss__fft_8h.html", "dev-test_2lib_2kiss__fft_8h" ],
     [ "lib/kiss_fft.h", "lib_2kiss__fft_8h.html", "lib_2kiss__fft_8h" ],
     [ "dev/include/lora_sdr/lora_sdr.h", "dev_2include_2lora__sdr_2lora__sdr_8h.html", [
+      [ "lora_sdr", "classgr_1_1lora__sdr_1_1lora__sdr.html", "classgr_1_1lora__sdr_1_1lora__sdr" ]
+    ] ],
+    [ "dev-docs/include/lora_sdr/lora_sdr.h", "dev-docs_2include_2lora__sdr_2lora__sdr_8h.html", [
       [ "lora_sdr", "classgr_1_1lora__sdr_1_1lora__sdr.html", "classgr_1_1lora__sdr_1_1lora__sdr" ]
     ] ],
     [ "dev-test/include/lora_sdr/lora_sdr.h", "dev-test_2include_2lora__sdr_2lora__sdr_8h.html", [
@@ -294,6 +391,9 @@ var files_dup =
     [ "dev/lib/lora_sdr_impl.h", "dev_2lib_2lora__sdr__impl_8h.html", [
       [ "lora_sdr_impl", "classgr_1_1lora__sdr_1_1lora__sdr__impl.html", "classgr_1_1lora__sdr_1_1lora__sdr__impl" ]
     ] ],
+    [ "dev-docs/lib/lora_sdr_impl.h", "dev-docs_2lib_2lora__sdr__impl_8h.html", [
+      [ "lora_sdr_impl", "classgr_1_1lora__sdr_1_1lora__sdr__impl.html", "classgr_1_1lora__sdr_1_1lora__sdr__impl" ]
+    ] ],
     [ "dev-test/lib/lora_sdr_impl.h", "dev-test_2lib_2lora__sdr__impl_8h.html", [
       [ "lora_sdr_impl", "classgr_1_1lora__sdr_1_1lora__sdr__impl.html", "classgr_1_1lora__sdr_1_1lora__sdr__impl" ]
     ] ],
@@ -301,6 +401,9 @@ var files_dup =
       [ "lora_sdr_impl", "classgr_1_1lora__sdr_1_1lora__sdr__impl.html", "classgr_1_1lora__sdr_1_1lora__sdr__impl" ]
     ] ],
     [ "dev/include/lora_sdr/modulate.h", "dev_2include_2lora__sdr_2modulate_8h.html", [
+      [ "modulate", "classgr_1_1lora__sdr_1_1modulate.html", "classgr_1_1lora__sdr_1_1modulate" ]
+    ] ],
+    [ "dev-docs/include/lora_sdr/modulate.h", "dev-docs_2include_2lora__sdr_2modulate_8h.html", [
       [ "modulate", "classgr_1_1lora__sdr_1_1modulate.html", "classgr_1_1lora__sdr_1_1modulate" ]
     ] ],
     [ "dev-test/include/lora_sdr/modulate.h", "dev-test_2include_2lora__sdr_2modulate_8h.html", [
@@ -312,6 +415,9 @@ var files_dup =
     [ "dev/lib/modulate_impl.h", "dev_2lib_2modulate__impl_8h.html", [
       [ "modulate_impl", "classgr_1_1lora__sdr_1_1modulate__impl.html", "classgr_1_1lora__sdr_1_1modulate__impl" ]
     ] ],
+    [ "dev-docs/lib/modulate_impl.h", "dev-docs_2lib_2modulate__impl_8h.html", [
+      [ "modulate_impl", "classgr_1_1lora__sdr_1_1modulate__impl.html", "classgr_1_1lora__sdr_1_1modulate__impl" ]
+    ] ],
     [ "dev-test/lib/modulate_impl.h", "dev-test_2lib_2modulate__impl_8h.html", [
       [ "modulate_impl", "classgr_1_1lora__sdr_1_1modulate__impl.html", "classgr_1_1lora__sdr_1_1modulate__impl" ]
     ] ],
@@ -319,6 +425,9 @@ var files_dup =
       [ "modulate_impl", "classgr_1_1lora__sdr_1_1modulate__impl.html", "classgr_1_1lora__sdr_1_1modulate__impl" ]
     ] ],
     [ "dev/include/lora_sdr/RH_RF95_header.h", "dev_2include_2lora__sdr_2RH__RF95__header_8h.html", [
+      [ "RH_RF95_header", "classgr_1_1lora__sdr_1_1RH__RF95__header.html", "classgr_1_1lora__sdr_1_1RH__RF95__header" ]
+    ] ],
+    [ "dev-docs/include/lora_sdr/RH_RF95_header.h", "dev-docs_2include_2lora__sdr_2RH__RF95__header_8h.html", [
       [ "RH_RF95_header", "classgr_1_1lora__sdr_1_1RH__RF95__header.html", "classgr_1_1lora__sdr_1_1RH__RF95__header" ]
     ] ],
     [ "dev-test/include/lora_sdr/RH_RF95_header.h", "dev-test_2include_2lora__sdr_2RH__RF95__header_8h.html", [
@@ -330,6 +439,9 @@ var files_dup =
     [ "dev/lib/RH_RF95_header_impl.h", "dev_2lib_2RH__RF95__header__impl_8h.html", [
       [ "RH_RF95_header_impl", "classgr_1_1lora__sdr_1_1RH__RF95__header__impl.html", "classgr_1_1lora__sdr_1_1RH__RF95__header__impl" ]
     ] ],
+    [ "dev-docs/lib/RH_RF95_header_impl.h", "dev-docs_2lib_2RH__RF95__header__impl_8h.html", [
+      [ "RH_RF95_header_impl", "classgr_1_1lora__sdr_1_1RH__RF95__header__impl.html", "classgr_1_1lora__sdr_1_1RH__RF95__header__impl" ]
+    ] ],
     [ "dev-test/lib/RH_RF95_header_impl.h", "dev-test_2lib_2RH__RF95__header__impl_8h.html", [
       [ "RH_RF95_header_impl", "classgr_1_1lora__sdr_1_1RH__RF95__header__impl.html", "classgr_1_1lora__sdr_1_1RH__RF95__header__impl" ]
     ] ],
@@ -337,12 +449,17 @@ var files_dup =
       [ "RH_RF95_header_impl", "classgr_1_1lora__sdr_1_1RH__RF95__header__impl.html", "classgr_1_1lora__sdr_1_1RH__RF95__header__impl" ]
     ] ],
     [ "dev/lib/tables.h", "dev_2lib_2tables_8h.html", "dev_2lib_2tables_8h" ],
+    [ "dev-docs/lib/tables.h", "dev-docs_2lib_2tables_8h.html", null ],
     [ "dev-test/lib/tables.h", "dev-test_2lib_2tables_8h.html", null ],
     [ "lib/tables.h", "lib_2tables_8h.html", null ],
     [ "dev/include/lora_sdr/utilities.h", "dev_2include_2lora__sdr_2utilities_8h.html", "dev_2include_2lora__sdr_2utilities_8h" ],
+    [ "dev-docs/include/lora_sdr/utilities.h", "dev-docs_2include_2lora__sdr_2utilities_8h.html", "dev-docs_2include_2lora__sdr_2utilities_8h" ],
     [ "dev-test/include/lora_sdr/utilities.h", "dev-test_2include_2lora__sdr_2utilities_8h.html", "dev-test_2include_2lora__sdr_2utilities_8h" ],
     [ "include/lora_sdr/utilities.h", "include_2lora__sdr_2utilities_8h.html", "include_2lora__sdr_2utilities_8h" ],
     [ "dev/include/lora_sdr/whitening.h", "dev_2include_2lora__sdr_2whitening_8h.html", [
+      [ "whitening", "classgr_1_1lora__sdr_1_1whitening.html", "classgr_1_1lora__sdr_1_1whitening" ]
+    ] ],
+    [ "dev-docs/include/lora_sdr/whitening.h", "dev-docs_2include_2lora__sdr_2whitening_8h.html", [
       [ "whitening", "classgr_1_1lora__sdr_1_1whitening.html", "classgr_1_1lora__sdr_1_1whitening" ]
     ] ],
     [ "dev-test/include/lora_sdr/whitening.h", "dev-test_2include_2lora__sdr_2whitening_8h.html", [
@@ -352,6 +469,9 @@ var files_dup =
       [ "whitening", "classgr_1_1lora__sdr_1_1whitening.html", "classgr_1_1lora__sdr_1_1whitening" ]
     ] ],
     [ "dev/lib/whitening_impl.h", "dev_2lib_2whitening__impl_8h.html", [
+      [ "whitening_impl", "classgr_1_1lora__sdr_1_1whitening__impl.html", "classgr_1_1lora__sdr_1_1whitening__impl" ]
+    ] ],
+    [ "dev-docs/lib/whitening_impl.h", "dev-docs_2lib_2whitening__impl_8h.html", [
       [ "whitening_impl", "classgr_1_1lora__sdr_1_1whitening__impl.html", "classgr_1_1lora__sdr_1_1whitening__impl" ]
     ] ],
     [ "dev-test/lib/whitening_impl.h", "dev-test_2lib_2whitening__impl_8h.html", [
