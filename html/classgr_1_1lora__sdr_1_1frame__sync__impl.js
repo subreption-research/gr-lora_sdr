@@ -13,7 +13,7 @@ var classgr_1_1lora__sdr_1_1frame__sync__impl =
       [ "DOWNCHIRP2", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a2b524afc6785765fff65a13449cb8c95af96bb9c0004167b468656daaff4fea30", null ],
       [ "QUARTER_DOWN", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a2b524afc6785765fff65a13449cb8c95a3e4e5a91c81bedf48f4c2cbdc2fed549", null ]
     ] ],
-    [ "frame_sync_impl", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a9271e12468d0e5bcc6cd9b25cd7ca23b", null ],
+    [ "frame_sync_impl", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a02b945fee455eab26bdab7be0d490f8e", null ],
     [ "~frame_sync_impl", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#aba5790ae712b7e49561462e3b4606d78", null ],
     [ "determine_energy", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a3f1a359b54ddc731d4327d8c72a19dab", null ],
     [ "estimate_CFO", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a81f8d548daf3cf8fe03380e402a8a530", null ],
@@ -46,6 +46,7 @@ var classgr_1_1lora__sdr_1_1frame__sync__impl =
     [ "m_downchirp", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a14d950a36abb113ed9ac633a569e12f3", null ],
     [ "m_has_crc", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a003179df5ff8544990a851a42fe0807d", null ],
     [ "m_impl_head", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a8760cc4cf884ead3d41c3c7ec7ff9678", null ],
+    [ "m_num_recv", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a4abff231a3ccba777feaa438defde684", null ],
     [ "m_number_of_bins", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#ae3f2860b9a9ab9ec2771246f586404ea", null ],
     [ "m_pay_len", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a2233e37b5a8ca7b75e09c3a7a829b511", null ],
     [ "m_samp_rate", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#ab684e902c9a0d246d5f0c54dfa66936d", null ],

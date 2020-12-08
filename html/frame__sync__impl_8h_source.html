@@ -346,139 +346,146 @@ $(document).ready(function(){initNavTree('frame__sync__impl_8h_source.html','');
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment">   */</span></div>
 <div class="line"><a name="l00292"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a13f07cd01445600e72d1d5c0865d92c2">  292</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a13f07cd01445600e72d1d5c0865d92c2">net_id_off</a>;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment">// #ifdef GRLORA_MEASUREMENTS</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="comment">//   int off_by_one_id; ///&lt; Indicate that the network identifiers where off by one</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment">//                      ///&lt; and corrected</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment">//   std::ofstream sync_log; ///&lt; savefile containing the offset estimation and the</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment">//                           ///&lt; signal strength estimation</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment">//   int numb_symbol_to_save; ///&lt; number of symbol to save for every erroneous</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment">//                            ///&lt; frame</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment">//   std::vector&lt;gr_complex&gt;</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="comment">//       last_frame; ///&lt; vector storing samples of the last received frame</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">//   std::ofstream</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="comment">//       samples_file; ///&lt; savefile containing the samples of the erroneous frames</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="comment">// #endif</span></div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="comment">   * @brief Function that handles the coding rate</span></div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="comment">   * </span></div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="comment">   * @param cr : coding rate</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#abdf0395969da75f873586ddc2ed3ed2b">header_cr_handler</a>(pmt::pmt_t cr);</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment">   * @brief Function that handles the payload length (i.e. data length)</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment">   * @param pay_len :payload length</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#ac2d3aead505986fd7443f20b7516c415">header_pay_len_handler</a>(pmt::pmt_t pay_len);</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="comment">   * @brief Function to handle the crc of the header</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="comment">   * @param crc : crc </span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#adf179669215a4186eb9e118c74da1055">header_crc_handler</a>(pmt::pmt_t crc);</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="comment">   * @brief Handles frame errors coming from the decoding</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="comment">   * @param err : error message</span></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a8cafbe752ffa76beaf3c3d61fc4528d4">frame_err_handler</a>(pmt::pmt_t err);</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="comment">   * @brief Estimate the value of fractional part of the CFO using RCTSL</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment">   * @param samples The pointer to the preamble beginning.(We might want to</span></div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment">   * avoid the first symbol since it might be incomplete)</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a81f8d548daf3cf8fe03380e402a8a530">estimate_CFO</a>(gr_complex *samples);</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="comment">   * @brief (not used) Estimate the value of fractional part of the CFO using</span></div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="comment">   * Berniers algorithm</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a1f775ab159a615812bf22c94d919ffd7">estimate_CFO_Bernier</a>();</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="comment">   * @brief Estimate the value of fractional part of the STO from m_consec_up</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="comment">   * @brief Numer of received streams may be larger then 1</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment">   * </span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a4abff231a3ccba777feaa438defde684">  298</a></span>&#160;  uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a4abff231a3ccba777feaa438defde684">m_num_recv</a>;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment">// #ifdef GRLORA_MEASUREMENTS</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment">//   int off_by_one_id; ///&lt; Indicate that the network identifiers where off by one</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="comment">//                      ///&lt; and corrected</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">//   std::ofstream sync_log; ///&lt; savefile containing the offset estimation and the</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="comment">//                           ///&lt; signal strength estimation</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="comment">//   int numb_symbol_to_save; ///&lt; number of symbol to save for every erroneous</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="comment">//                            ///&lt; frame</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="comment">//   std::vector&lt;gr_complex&gt;</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="comment">//       last_frame; ///&lt; vector storing samples of the last received frame</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="comment">//   std::ofstream</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="comment">//       samples_file; ///&lt; savefile containing the samples of the erroneous frames</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="comment">// #endif</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment">   * @brief Function that handles the coding rate</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment">   * </span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">   * @param cr : coding rate</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#abdf0395969da75f873586ddc2ed3ed2b">header_cr_handler</a>(pmt::pmt_t cr);</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment">   * @brief Function that handles the payload length (i.e. data length)</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="comment">   * @param pay_len :payload length</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#ac2d3aead505986fd7443f20b7516c415">header_pay_len_handler</a>(pmt::pmt_t pay_len);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="comment">   * @brief Function to handle the crc of the header</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="comment">   * @param crc : crc </span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#adf179669215a4186eb9e118c74da1055">header_crc_handler</a>(pmt::pmt_t crc);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment">   * @brief Handles frame errors coming from the decoding</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="comment">   * @param err : error message</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a8cafbe752ffa76beaf3c3d61fc4528d4">frame_err_handler</a>(pmt::pmt_t err);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="comment">   * @brief Estimate the value of fractional part of the CFO using RCTSL</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="comment">   * @param samples The pointer to the preamble beginning.(We might want to</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="comment">   * avoid the first symbol since it might be incomplete)</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a81f8d548daf3cf8fe03380e402a8a530">estimate_CFO</a>(gr_complex *samples);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="comment">   * @brief (not used) Estimate the value of fractional part of the CFO using</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="comment">   * Berniers algorithm</span></div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a7650eac6bb57346f4ab538988b7ba4ba">estimate_STO</a>();</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a1f775ab159a615812bf22c94d919ffd7">estimate_CFO_Bernier</a>();</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="comment">   * @brief Function that gets the symbol from the received samples</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="comment">   * @brief Estimate the value of fractional part of the STO from m_consec_up</span></div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="comment">   * @param samples : the complex samples </span></div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="comment">   * @param ref_chirp The reference chirp to use to dechirp the lora symbol.</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="comment">   * @return uint32_t</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  uint32_t <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a7a0f5f8aefdd0a8b21bb5095ddd729a8">get_symbol_val</a>(<span class="keyword">const</span> gr_complex *samples, gr_complex *ref_chirp);</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment">   * @brief Determine the energy of a symbol.</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="comment">   * @param samples The complex symbol to analyse.</span></div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="comment">   * @return float</span></div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a3f1a359b54ddc731d4327d8c72a19dab">determine_energy</a>(<span class="keyword">const</span> gr_complex *samples);</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">   * @brief Handles the error message coming from the header decoding.</span></div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="comment">   * @param err : error message</span></div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a106976a23afd526432feeab776b09ec8">header_err_handler</a>(pmt::pmt_t err);</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160; </div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="comment">   * @brief Construct a new frame sync impl object</span></div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="comment">   * @param samp_rate : sampling rate</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="comment">   * @param bandwidth : bandwidth</span></div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="comment">   * @param sf : spreading factor</span></div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="comment">   * @param impl_head : boolean to tell if system is in implicit header mode or not</span></div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a9271e12468d0e5bcc6cd9b25cd7ca23b">frame_sync_impl</a>(<span class="keywordtype">float</span> samp_rate, uint32_t bandwidth, uint8_t sf,</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                  <span class="keywordtype">bool</span> impl_head);<span class="comment"></span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="comment">   * @brief Destroy the frame sync impl object</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aba5790ae712b7e49561462e3b4606d78">~frame_sync_impl</a>();</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment">   * @brief Standard gnuradio function to tell the system</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment">   * how many input items are needed to produce one output item</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a7650eac6bb57346f4ab538988b7ba4ba">estimate_STO</a>();</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="comment">   * @brief Function that gets the symbol from the received samples</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment">   * @param samples : the complex samples </span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment">   * @param ref_chirp The reference chirp to use to dechirp the lora symbol.</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="comment">   * @return uint32_t</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  uint32_t <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a7a0f5f8aefdd0a8b21bb5095ddd729a8">get_symbol_val</a>(<span class="keyword">const</span> gr_complex *samples, gr_complex *ref_chirp);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="comment">   * @brief Determine the energy of a symbol.</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">   * @param samples The complex symbol to analyse.</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="comment">   * @return float</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a3f1a359b54ddc731d4327d8c72a19dab">determine_energy</a>(<span class="keyword">const</span> gr_complex *samples);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="comment">   * @brief Handles the error message coming from the header decoding.</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="comment">   * @param err : error message</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a106976a23afd526432feeab776b09ec8">header_err_handler</a>(pmt::pmt_t err);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; </div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="comment">   * @brief Construct a new frame sync impl object</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="comment">   * @param samp_rate : sampling rate</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment">   * @param bandwidth : bandwidth</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="comment">   * @param sf : spreading factor</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="comment">   * @param impl_head : boolean to tell if system is in implicit header mode or not</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="comment">   * @param num_recv : number of streams that are simultaneously received (may be larger then 1)</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a02b945fee455eab26bdab7be0d490f8e">frame_sync_impl</a>(<span class="keywordtype">float</span> samp_rate, uint32_t bandwidth, uint8_t sf,</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                  <span class="keywordtype">bool</span> impl_head,uint8_t num_recv);<span class="comment"></span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment">   * @brief Destroy the frame sync impl object</span></div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="comment">   * @param ninput_items_required : number of required input items</span></div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a7860e2694fb44c6af427bce375214d7f">forecast</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment">   * @brief Main function where the main logic and computation resides.</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment">   * Function will find the window of samples and preform several estimates </span></div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="comment">   * to synchronies the internal window of samples to have been received (i.e. align them in time and frequency)</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment">   * @param ninput_items : number of input items</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="comment">   * @param input_items : input items</span></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="comment">   * @param output_items : output items (i.e. start of Rx decoding)</span></div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="comment">   * @return int</span></div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aeaf4f32d03b9c603d3167dc4b99a097b">general_work</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items,</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;                   gr_vector_const_void_star &amp;input_items,</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                   gr_vector_void_star &amp;output_items);</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;};</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;} <span class="comment">// namespace gr</span></div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_SDR_FRAME_SYNC_IMPL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aba5790ae712b7e49561462e3b4606d78">~frame_sync_impl</a>();</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment">   * @brief Standard gnuradio function to tell the system</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment">   * how many input items are needed to produce one output item</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="comment">   * @param ninput_items_required : number of required input items</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a7860e2694fb44c6af427bce375214d7f">forecast</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="comment">   * @brief Main function where the main logic and computation resides.</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="comment">   * Function will find the window of samples and preform several estimates </span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="comment">   * to synchronies the internal window of samples to have been received (i.e. align them in time and frequency)</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="comment">   * @param ninput_items : number of input items</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="comment">   * @param input_items : input items</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="comment">   * @param output_items : output items (i.e. start of Rx decoding)</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="comment">   * @return int</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aeaf4f32d03b9c603d3167dc4b99a097b">general_work</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items,</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                   gr_vector_const_void_star &amp;input_items,</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;                   gr_vector_void_star &amp;output_items);</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;};</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160; </div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_SDR_FRAME_SYNC_IMPL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html_a086f7bf25fa3b2e4c66eb7576e83c45c"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a086f7bf25fa3b2e4c66eb7576e83c45c">gr::lora_sdr::frame_sync_impl::preamble_raw</a></div><div class="ttdeci">std::vector&lt; gr_complex &gt; preamble_raw</div><div class="ttdoc">vector containing the preamble upchirps without any synchronization</div><div class="ttdef"><b>Definition:</b> frame_sync_impl.h:212</div></div>
@@ -497,6 +504,7 @@ $(document).ready(function(){initNavTree('frame__sync__impl_8h_source.html','');
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html_a003179df5ff8544990a851a42fe0807d"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a003179df5ff8544990a851a42fe0807d">gr::lora_sdr::frame_sync_impl::m_has_crc</a></div><div class="ttdeci">uint8_t m_has_crc</div><div class="ttdoc">CRC presence.</div><div class="ttdef"><b>Definition:</b> frame_sync_impl.h:81</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html_a1f775ab159a615812bf22c94d919ffd7"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a1f775ab159a615812bf22c94d919ffd7">gr::lora_sdr::frame_sync_impl::estimate_CFO_Bernier</a></div><div class="ttdeci">void estimate_CFO_Bernier()</div><div class="ttdoc">(not used) Estimate the value of fractional part of the CFO using Berniers algorithm</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html_a94b01d0b856953cf298dc26ce601ca94"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a94b01d0b856953cf298dc26ce601ca94">gr::lora_sdr::frame_sync_impl::CFO_frac_correc</a></div><div class="ttdeci">std::vector&lt; gr_complex &gt; CFO_frac_correc</div><div class="ttdoc">cfo frac correction vector</div><div class="ttdef"><b>Definition:</b> frame_sync_impl.h:268</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html_a02b945fee455eab26bdab7be0d490f8e"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a02b945fee455eab26bdab7be0d490f8e">gr::lora_sdr::frame_sync_impl::frame_sync_impl</a></div><div class="ttdeci">frame_sync_impl(float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head, uint8_t num_recv)</div><div class="ttdoc">Construct a new frame sync impl object.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html">gr::lora_sdr::frame_sync_impl</a></div><div class="ttdef"><b>Definition:</b> frame_sync_impl.h:18</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html_a2233e37b5a8ca7b75e09c3a7a829b511"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a2233e37b5a8ca7b75e09c3a7a829b511">gr::lora_sdr::frame_sync_impl::m_pay_len</a></div><div class="ttdeci">uint32_t m_pay_len</div><div class="ttdoc">Payload length.</div><div class="ttdef"><b>Definition:</b> frame_sync_impl.h:75</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html_af45c81b0f96ffcc571b9cf1cade06b98"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#af45c81b0f96ffcc571b9cf1cade06b98">gr::lora_sdr::frame_sync_impl::m_upchirp</a></div><div class="ttdeci">std::vector&lt; gr_complex &gt; m_upchirp</div><div class="ttdoc">Reference upchirp.</div><div class="ttdef"><b>Definition:</b> frame_sync_impl.h:144</div></div>
@@ -507,7 +515,6 @@ $(document).ready(function(){initNavTree('frame__sync__impl_8h_source.html','');
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync.html">gr::lora_sdr::frame_sync</a></div><div class="ttdoc">Block that is able to detect the received spectrum and start to find the data such that it can be dec...</div><div class="ttdef"><b>Definition:</b> frame_sync.h:38</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html_ab5584e0986ebc2d80c92291787a189a1"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#ab5584e0986ebc2d80c92291787a189a1">gr::lora_sdr::frame_sync_impl::lambda_bernier</a></div><div class="ttdeci">double lambda_bernier</div><div class="ttdoc">fractional part of CFO using Berniers algo</div><div class="ttdef"><b>Definition:</b> frame_sync_impl.h:243</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html_a3218be7beba0809c5e38b3ce9be5e9c5"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a3218be7beba0809c5e38b3ce9be5e9c5">gr::lora_sdr::frame_sync_impl::CFOint</a></div><div class="ttdeci">int CFOint</div><div class="ttdoc">integer part of CFO</div><div class="ttdef"><b>Definition:</b> frame_sync_impl.h:286</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html_a9271e12468d0e5bcc6cd9b25cd7ca23b"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a9271e12468d0e5bcc6cd9b25cd7ca23b">gr::lora_sdr::frame_sync_impl::frame_sync_impl</a></div><div class="ttdeci">frame_sync_impl(float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head)</div><div class="ttdoc">Construct a new frame sync impl object.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html_a494befbdb0b75b127c616b9d4a736255"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a494befbdb0b75b127c616b9d4a736255">gr::lora_sdr::frame_sync_impl::net_id_2</a></div><div class="ttdeci">uint32_t net_id_2</div><div class="ttdoc">network identifier 2</div><div class="ttdef"><b>Definition:</b> frame_sync_impl.h:186</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html_aa62258177e546ad516d4e1556036b4fb"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aa62258177e546ad516d4e1556036b4fb">gr::lora_sdr::frame_sync_impl::m_sf</a></div><div class="ttdeci">uint8_t m_sf</div><div class="ttdoc">Spreading factor.</div><div class="ttdef"><b>Definition:</b> frame_sync_impl.h:63</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html_a8bb40a93d35d2077119cf08569a070e8"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a8bb40a93d35d2077119cf08569a070e8">gr::lora_sdr::frame_sync_impl::bin_idx_new</a></div><div class="ttdeci">int32_t bin_idx_new</div><div class="ttdoc">value of newly demodulated symbol</div><div class="ttdef"><b>Definition:</b> frame_sync_impl.h:162</div></div>
@@ -535,6 +542,7 @@ $(document).ready(function(){initNavTree('frame__sync__impl_8h_source.html','');
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html_ac3ebff914014982b368f2cf729e3a43dae6ca094bf562c31fc6eda992c1bf6726"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#ac3ebff914014982b368f2cf729e3a43dae6ca094bf562c31fc6eda992c1bf6726">gr::lora_sdr::frame_sync_impl::DETECT</a></div><div class="ttdeci">@ DETECT</div><div class="ttdef"><b>Definition:</b> frame_sync_impl.h:28</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html_aa581b92de3463c3ee54f00370c73396f"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aa581b92de3463c3ee54f00370c73396f">gr::lora_sdr::frame_sync_impl::n_up</a></div><div class="ttdeci">uint32_t n_up</div><div class="ttdoc">Number of consecutive upchirps in preamble.</div><div class="ttdef"><b>Definition:</b> frame_sync_impl.h:167</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html_a7650eac6bb57346f4ab538988b7ba4ba"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a7650eac6bb57346f4ab538988b7ba4ba">gr::lora_sdr::frame_sync_impl::estimate_STO</a></div><div class="ttdeci">void estimate_STO()</div><div class="ttdoc">Estimate the value of fractional part of the STO from m_consec_up.</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html_a4abff231a3ccba777feaa438defde684"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a4abff231a3ccba777feaa438defde684">gr::lora_sdr::frame_sync_impl::m_num_recv</a></div><div class="ttdeci">uint8_t m_num_recv</div><div class="ttdoc">Numer of received streams may be larger then 1.</div><div class="ttdef"><b>Definition:</b> frame_sync_impl.h:298</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html_a14d950a36abb113ed9ac633a569e12f3"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a14d950a36abb113ed9ac633a569e12f3">gr::lora_sdr::frame_sync_impl::m_downchirp</a></div><div class="ttdeci">std::vector&lt; gr_complex &gt; m_downchirp</div><div class="ttdoc">Reference downchirp.</div><div class="ttdef"><b>Definition:</b> frame_sync_impl.h:138</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html_a2b524afc6785765fff65a13449cb8c95a363c02bacac44b26e4e918f80c0d5eec"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a2b524afc6785765fff65a13449cb8c95a363c02bacac44b26e4e918f80c0d5eec">gr::lora_sdr::frame_sync_impl::DOWNCHIRP1</a></div><div class="ttdeci">@ DOWNCHIRP1</div><div class="ttdef"><b>Definition:</b> frame_sync_impl.h:39</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync__impl_html_abdf0395969da75f873586ddc2ed3ed2b"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#abdf0395969da75f873586ddc2ed3ed2b">gr::lora_sdr::frame_sync_impl::header_cr_handler</a></div><div class="ttdeci">void header_cr_handler(pmt::pmt_t cr)</div><div class="ttdoc">Function that handles the coding rate.</div></div>
