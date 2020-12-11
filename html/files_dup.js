@@ -87,6 +87,18 @@ var files_dup =
     [ "header_impl.h", "header__impl_8h.html", [
       [ "header_impl", "classgr_1_1lora__sdr_1_1header__impl.html", "classgr_1_1lora__sdr_1_1header__impl" ]
     ] ],
+    [ "hier_rx.h", "hier__rx_8h.html", [
+      [ "hier_rx", "classgr_1_1lora__sdr_1_1hier__rx.html", "classgr_1_1lora__sdr_1_1hier__rx" ]
+    ] ],
+    [ "hier_rx_impl.h", "hier__rx__impl_8h.html", [
+      [ "hier_rx_impl", "classgr_1_1lora__sdr_1_1hier__rx__impl.html", "classgr_1_1lora__sdr_1_1hier__rx__impl" ]
+    ] ],
+    [ "hier_tx.h", "hier__tx_8h.html", [
+      [ "hier_tx", "classgr_1_1lora__sdr_1_1hier__tx.html", "classgr_1_1lora__sdr_1_1hier__tx" ]
+    ] ],
+    [ "hier_tx_impl.h", "hier__tx__impl_8h.html", [
+      [ "hier_tx_impl", "classgr_1_1lora__sdr_1_1hier__tx__impl.html", "classgr_1_1lora__sdr_1_1hier__tx__impl" ]
+    ] ],
     [ "interleaver.h", "interleaver_8h.html", [
       [ "interleaver", "classgr_1_1lora__sdr_1_1interleaver.html", "classgr_1_1lora__sdr_1_1interleaver" ]
     ] ],

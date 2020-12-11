@@ -38,6 +38,14 @@ var hierarchy =
         [ "gr::lora_sdr::RH_RF95_header_impl", "classgr_1_1lora__sdr_1_1RH__RF95__header__impl.html", null ]
       ] ]
     ] ],
+    [ "hier_block2", null, [
+      [ "gr::lora_sdr::hier_rx", "classgr_1_1lora__sdr_1_1hier__rx.html", [
+        [ "gr::lora_sdr::hier_rx_impl", "classgr_1_1lora__sdr_1_1hier__rx__impl.html", null ]
+      ] ],
+      [ "gr::lora_sdr::hier_tx", "classgr_1_1lora__sdr_1_1hier__tx.html", [
+        [ "gr::lora_sdr::hier_tx_impl", "classgr_1_1lora__sdr_1_1hier__tx__impl.html", null ]
+      ] ]
+    ] ],
     [ "kiss_fft_cpx", "structkiss__fft__cpx.html", null ],
     [ "kiss_fft_state", "structkiss__fft__state.html", null ],
     [ "sync_block", null, [
