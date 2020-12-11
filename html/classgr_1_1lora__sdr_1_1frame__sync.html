@@ -80,9 +80,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a885400bf4d5c9732d29c57829006cd39"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html#acc9df91d7e03a2e5cb5a57dab389c765">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html#a885400bf4d5c9732d29c57829006cd39">make</a> (float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head, uint8_t num_recv)</td></tr>
-<tr class="memdesc:a885400bf4d5c9732d29c57829006cd39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html" title="Block that is able to detect the received spectrum and start to find the data such that it can be dec...">lora_sdr::frame_sync</a>.  <a href="classgr_1_1lora__sdr_1_1frame__sync.html#a885400bf4d5c9732d29c57829006cd39">More...</a><br /></td></tr>
-<tr class="separator:a885400bf4d5c9732d29c57829006cd39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a776adf7b13bb1555de3dc0a97b3940cc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html#acc9df91d7e03a2e5cb5a57dab389c765">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html#a776adf7b13bb1555de3dc0a97b3940cc">make</a> (float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head)</td></tr>
+<tr class="memdesc:a776adf7b13bb1555de3dc0a97b3940cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html" title="Block that is able to detect the received spectrum and start to find the data such that it can be dec...">lora_sdr::frame_sync</a>.  <a href="classgr_1_1lora__sdr_1_1frame__sync.html#a776adf7b13bb1555de3dc0a97b3940cc">More...</a><br /></td></tr>
+<tr class="separator:a776adf7b13bb1555de3dc0a97b3940cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Block that is able to detect the received spectrum and start to find the data such that it can be decoded. This block is at the heart of the the RX (decoding) side and houses a lot of logic and data manipulation. For more information about the implementation visit <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html">frame_sync_impl</a>. </p>
@@ -102,8 +102,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a885400bf4d5c9732d29c57829006cd39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a885400bf4d5c9732d29c57829006cd39">&#9670;&nbsp;</a></span>make()</h2>
+<a id="a776adf7b13bb1555de3dc0a97b3940cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a776adf7b13bb1555de3dc0a97b3940cc">&#9670;&nbsp;</a></span>make()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,13 +133,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>impl_head</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>num_recv</em>&#160;</td>
+          <td class="paramname"><em>impl_head</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -155,7 +149,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html" title="Block that is able to detect the received spectrum and start to find the data such that it can be dec...">lora_sdr::frame_sync</a>. </p>
-<p>To avoid accidental use of raw pointers, <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html" title="Block that is able to detect the received spectrum and start to find the data such that it can be dec...">lora_sdr::frame_sync</a>'s constructor is in a private implementation class. <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html#a885400bf4d5c9732d29c57829006cd39" title="Return a shared_ptr to a new instance of lora_sdr::frame_sync.">lora_sdr::frame_sync::make</a> is the public interface for creating new instances. </p>
+<p>To avoid accidental use of raw pointers, <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html" title="Block that is able to detect the received spectrum and start to find the data such that it can be dec...">lora_sdr::frame_sync</a>'s constructor is in a private implementation class. <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html#a776adf7b13bb1555de3dc0a97b3940cc" title="Return a shared_ptr to a new instance of lora_sdr::frame_sync.">lora_sdr::frame_sync::make</a> is the public interface for creating new instances. </p>
 
 </div>
 </div>

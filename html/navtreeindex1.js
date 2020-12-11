@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classgr_1_1lora__sdr_1_1hamming__dec__impl.html":[2,0,0,0,21],
 "classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a5d07feb76b0d8215dfa8e698d64c82e3":[2,0,0,0,21,0],
 "classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a726c794575eeb4832ede943ee7cb95c5":[2,0,0,0,21,3],
 "classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a8d62d5eed7b60068397faeaad2a30922":[2,0,0,0,21,1],
@@ -130,8 +129,8 @@ var NAVTREEINDEX1 =
 "frame__sync_8h_source.html":[3,0,17],
 "frame__sync__impl_8h.html":[3,0,18],
 "frame__sync__impl_8h_source.html":[3,0,18],
-"functions.html":[2,3,0,0],
 "functions.html":[2,3,0],
+"functions.html":[2,3,0,0],
 "functions_b.html":[2,3,0,1],
 "functions_c.html":[2,3,0,2],
 "functions_d.html":[2,3,0,3],
