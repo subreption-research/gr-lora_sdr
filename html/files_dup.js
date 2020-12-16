@@ -109,9 +109,6 @@ var files_dup =
     [ "lora_sdr.h", "lora__sdr_8h.html", [
       [ "lora_sdr", "classgr_1_1lora__sdr_1_1lora__sdr.html", "classgr_1_1lora__sdr_1_1lora__sdr" ]
     ] ],
-    [ "lora_sdr_impl.h", "lora__sdr__impl_8h.html", [
-      [ "lora_sdr_impl", "classgr_1_1lora__sdr_1_1lora__sdr__impl.html", "classgr_1_1lora__sdr_1_1lora__sdr__impl" ]
-    ] ],
     [ "modulate.h", "modulate_8h.html", [
       [ "modulate", "classgr_1_1lora__sdr_1_1modulate.html", "classgr_1_1lora__sdr_1_1modulate" ]
     ] ],

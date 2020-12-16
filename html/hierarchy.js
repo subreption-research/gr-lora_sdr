@@ -28,9 +28,7 @@ var hierarchy =
       [ "gr::lora_sdr::interleaver", "classgr_1_1lora__sdr_1_1interleaver.html", [
         [ "gr::lora_sdr::interleaver_impl", "classgr_1_1lora__sdr_1_1interleaver__impl.html", null ]
       ] ],
-      [ "gr::lora_sdr::lora_sdr", "classgr_1_1lora__sdr_1_1lora__sdr.html", [
-        [ "gr::lora_sdr::lora_sdr_impl", "classgr_1_1lora__sdr_1_1lora__sdr__impl.html", null ]
-      ] ],
+      [ "gr::lora_sdr::lora_sdr", "classgr_1_1lora__sdr_1_1lora__sdr.html", null ],
       [ "gr::lora_sdr::modulate", "classgr_1_1lora__sdr_1_1modulate.html", [
         [ "gr::lora_sdr::modulate_impl", "classgr_1_1lora__sdr_1_1modulate__impl.html", null ]
       ] ],

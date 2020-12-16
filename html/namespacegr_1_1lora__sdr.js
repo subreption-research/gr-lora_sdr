@@ -35,7 +35,6 @@ var namespacegr_1_1lora__sdr =
     [ "interleaver", "classgr_1_1lora__sdr_1_1interleaver.html", "classgr_1_1lora__sdr_1_1interleaver" ],
     [ "interleaver_impl", "classgr_1_1lora__sdr_1_1interleaver__impl.html", "classgr_1_1lora__sdr_1_1interleaver__impl" ],
     [ "lora_sdr", "classgr_1_1lora__sdr_1_1lora__sdr.html", "classgr_1_1lora__sdr_1_1lora__sdr" ],
-    [ "lora_sdr_impl", "classgr_1_1lora__sdr_1_1lora__sdr__impl.html", "classgr_1_1lora__sdr_1_1lora__sdr__impl" ],
     [ "modulate", "classgr_1_1lora__sdr_1_1modulate.html", "classgr_1_1lora__sdr_1_1modulate" ],
     [ "modulate_impl", "classgr_1_1lora__sdr_1_1modulate__impl.html", "classgr_1_1lora__sdr_1_1modulate__impl" ],
     [ "RH_RF95_header", "classgr_1_1lora__sdr_1_1RH__RF95__header.html", "classgr_1_1lora__sdr_1_1RH__RF95__header" ],
