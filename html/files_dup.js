@@ -106,9 +106,6 @@ var files_dup =
       [ "interleaver_impl", "classgr_1_1lora__sdr_1_1interleaver__impl.html", "classgr_1_1lora__sdr_1_1interleaver__impl" ]
     ] ],
     [ "kiss_fft.h", "kiss__fft_8h.html", "kiss__fft_8h" ],
-    [ "lora_sdr.h", "lora__sdr_8h.html", [
-      [ "lora_sdr", "classgr_1_1lora__sdr_1_1lora__sdr.html", "classgr_1_1lora__sdr_1_1lora__sdr" ]
-    ] ],
     [ "modulate.h", "modulate_8h.html", [
       [ "modulate", "classgr_1_1lora__sdr_1_1modulate.html", "classgr_1_1lora__sdr_1_1modulate" ]
     ] ],

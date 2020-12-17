@@ -7,6 +7,9 @@ var hierarchy =
       [ "gr::lora_sdr::crc_verif", "classgr_1_1lora__sdr_1_1crc__verif.html", [
         [ "gr::lora_sdr::crc_verif_impl", "classgr_1_1lora__sdr_1_1crc__verif__impl.html", null ]
       ] ],
+      [ "gr::lora_sdr::data_source", "classgr_1_1lora__sdr_1_1data__source.html", [
+        [ "gr::lora_sdr::data_source_impl", "classgr_1_1lora__sdr_1_1data__source__impl.html", null ]
+      ] ],
       [ "gr::lora_sdr::deinterleaver", "classgr_1_1lora__sdr_1_1deinterleaver.html", [
         [ "gr::lora_sdr::deinterleaver_impl", "classgr_1_1lora__sdr_1_1deinterleaver__impl.html", null ]
       ] ],
@@ -28,7 +31,6 @@ var hierarchy =
       [ "gr::lora_sdr::interleaver", "classgr_1_1lora__sdr_1_1interleaver.html", [
         [ "gr::lora_sdr::interleaver_impl", "classgr_1_1lora__sdr_1_1interleaver__impl.html", null ]
       ] ],
-      [ "gr::lora_sdr::lora_sdr", "classgr_1_1lora__sdr_1_1lora__sdr.html", null ],
       [ "gr::lora_sdr::modulate", "classgr_1_1lora__sdr_1_1modulate.html", [
         [ "gr::lora_sdr::modulate_impl", "classgr_1_1lora__sdr_1_1modulate__impl.html", null ]
       ] ],
@@ -47,9 +49,6 @@ var hierarchy =
     [ "kiss_fft_cpx", "structkiss__fft__cpx.html", null ],
     [ "kiss_fft_state", "structkiss__fft__state.html", null ],
     [ "sync_block", null, [
-      [ "gr::lora_sdr::data_source", "classgr_1_1lora__sdr_1_1data__source.html", [
-        [ "gr::lora_sdr::data_source_impl", "classgr_1_1lora__sdr_1_1data__source__impl.html", null ]
-      ] ],
       [ "gr::lora_sdr::err_measures", "classgr_1_1lora__sdr_1_1err__measures.html", [
         [ "gr::lora_sdr::err_measures_impl", "classgr_1_1lora__sdr_1_1err__measures__impl.html", null ]
       ] ],
