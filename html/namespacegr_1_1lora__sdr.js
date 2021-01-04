@@ -6,6 +6,8 @@ var namespacegr_1_1lora__sdr =
     [ "crc_verif_impl", "classgr_1_1lora__sdr_1_1crc__verif__impl.html", "classgr_1_1lora__sdr_1_1crc__verif__impl" ],
     [ "data_source", "classgr_1_1lora__sdr_1_1data__source.html", "classgr_1_1lora__sdr_1_1data__source" ],
     [ "data_source_impl", "classgr_1_1lora__sdr_1_1data__source__impl.html", "classgr_1_1lora__sdr_1_1data__source__impl" ],
+    [ "data_source_sim", "classgr_1_1lora__sdr_1_1data__source__sim.html", "classgr_1_1lora__sdr_1_1data__source__sim" ],
+    [ "data_source_sim_impl", "classgr_1_1lora__sdr_1_1data__source__sim__impl.html", "classgr_1_1lora__sdr_1_1data__source__sim__impl" ],
     [ "deinterleaver", "classgr_1_1lora__sdr_1_1deinterleaver.html", "classgr_1_1lora__sdr_1_1deinterleaver" ],
     [ "deinterleaver_impl", "classgr_1_1lora__sdr_1_1deinterleaver__impl.html", "classgr_1_1lora__sdr_1_1deinterleaver__impl" ],
     [ "dewhitening", "classgr_1_1lora__sdr_1_1dewhitening.html", "classgr_1_1lora__sdr_1_1dewhitening" ],

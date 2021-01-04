@@ -10,6 +10,9 @@ var hierarchy =
       [ "gr::lora_sdr::data_source", "classgr_1_1lora__sdr_1_1data__source.html", [
         [ "gr::lora_sdr::data_source_impl", "classgr_1_1lora__sdr_1_1data__source__impl.html", null ]
       ] ],
+      [ "gr::lora_sdr::data_source_sim", "classgr_1_1lora__sdr_1_1data__source__sim.html", [
+        [ "gr::lora_sdr::data_source_sim_impl", "classgr_1_1lora__sdr_1_1data__source__sim__impl.html", null ]
+      ] ],
       [ "gr::lora_sdr::deinterleaver", "classgr_1_1lora__sdr_1_1deinterleaver.html", [
         [ "gr::lora_sdr::deinterleaver_impl", "classgr_1_1lora__sdr_1_1deinterleaver__impl.html", null ]
       ] ],

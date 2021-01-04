@@ -20,6 +20,12 @@ var files_dup =
     [ "data_source_impl.h", "data__source__impl_8h.html", [
       [ "data_source_impl", "classgr_1_1lora__sdr_1_1data__source__impl.html", "classgr_1_1lora__sdr_1_1data__source__impl" ]
     ] ],
+    [ "data_source_sim.h", "data__source__sim_8h.html", [
+      [ "data_source_sim", "classgr_1_1lora__sdr_1_1data__source__sim.html", "classgr_1_1lora__sdr_1_1data__source__sim" ]
+    ] ],
+    [ "data_source_sim_impl.h", "data__source__sim__impl_8h.html", [
+      [ "data_source_sim_impl", "classgr_1_1lora__sdr_1_1data__source__sim__impl.html", "classgr_1_1lora__sdr_1_1data__source__sim__impl" ]
+    ] ],
     [ "debug_tools.h", "debug__tools_8h.html", "debug__tools_8h" ],
     [ "deinterleaver.h", "deinterleaver_8h.html", [
       [ "deinterleaver", "classgr_1_1lora__sdr_1_1deinterleaver.html", "classgr_1_1lora__sdr_1_1deinterleaver" ]

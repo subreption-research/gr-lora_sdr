@@ -103,54 +103,58 @@ $(document).ready(function(){initNavTree('data__source__impl_8h_source.html','')
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">   * @param msg : PMT input msg (i.e. trigger from strobe)</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">   */</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1data__source__impl.html#aab56a4a9601909de934e4582b3aa8ade">trigg_handler</a>(pmt::pmt_t msg);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1data__source__impl.html#a802652bbfe43c8db65f7c149ef416d32">   51</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classgr_1_1lora__sdr_1_1data__source__impl.html#a802652bbfe43c8db65f7c149ef416d32">m_work_done</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">   * @brief Construct a new data source impl object</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">   * @param pay_len : payload length</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">   * @param n_frames : number of frames to generate data for</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">   * @param string_input</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1data__source__impl.html#a807a9b84379e81bd526f3d11d15cbc7c">data_source_impl</a>(<span class="keywordtype">int</span> pay_len, <span class="keywordtype">int</span> n_frames, std::string string_input);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">   * @brief Destroy the data source impl object</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1data__source__impl.html#a5648dade0d7cfc8f00b26e8575f8eb00">~data_source_impl</a>();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">   * @brief Place holder function does not do anything for the data source.</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">   * </span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">   * @param noutput_items </span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">   * @param ninput_items_required </span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1data__source__impl.html#a176c8a07b6d3385988f26bc59196a2bf">forecast</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">   * @brief Place holder function of data_source that generated random ([a-z A-Z</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">   * 0-9]) data source to be sent over the network</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">   * @param noutput_items</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">   * @param input_items</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">   * @param output_items</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">   * @return int</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1data__source__impl.html#a9941b2ce8d881e2ab348fab9b53a7268">general_work</a>(<span class="keywordtype">int</span> noutput_items,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                   gr_vector_int &amp;ninput_items,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                   gr_vector_const_void_star &amp;input_items,</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                   gr_vector_void_star &amp;output_items);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">   * @brief boolean to tell the main function execution is finished</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1data__source__impl.html#a76e353cda3754ee45c09c52a067e283e">   55</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classgr_1_1lora__sdr_1_1data__source__impl.html#a76e353cda3754ee45c09c52a067e283e">d_finished</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">   * @brief Construct a new data source impl object</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">   * @param pay_len : payload length</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">   * @param n_frames : number of frames to generate data for</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">   * @param string_input</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1data__source__impl.html#a807a9b84379e81bd526f3d11d15cbc7c">data_source_impl</a>(<span class="keywordtype">int</span> pay_len, <span class="keywordtype">int</span> n_frames, std::string string_input);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">   * @brief Destroy the data source impl object</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1data__source__impl.html#a5648dade0d7cfc8f00b26e8575f8eb00">~data_source_impl</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">   * @brief Place holder function does not do anything for the data source.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">   * @param noutput_items</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">   * @param ninput_items_required</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1data__source__impl.html#a176c8a07b6d3385988f26bc59196a2bf">forecast</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">   * @brief Place holder function of data_source that generated random ([a-z A-Z</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">   * 0-9]) data source to be sent over the network</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">   * @param noutput_items</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">   * @param input_items</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">   * @param output_items</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">   * @return int</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1data__source__impl.html#a9941b2ce8d881e2ab348fab9b53a7268">general_work</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                   gr_vector_const_void_star &amp;input_items,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                   gr_vector_void_star &amp;output_items);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_SDR_DATA_SOURCE_IMPL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_SDR_DATA_SOURCE_IMPL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1data__source__impl_html_a76e353cda3754ee45c09c52a067e283e"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1data__source__impl.html#a76e353cda3754ee45c09c52a067e283e">gr::lora_sdr::data_source_impl::d_finished</a></div><div class="ttdeci">bool d_finished</div><div class="ttdoc">boolean to tell the main function execution is finished</div><div class="ttdef"><b>Definition:</b> data_source_impl.h:55</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1data__source__impl_html_afd7df0785ea2e683b1f756a132540a3c"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1data__source__impl.html#afd7df0785ea2e683b1f756a132540a3c">gr::lora_sdr::data_source_impl::m_pay_len</a></div><div class="ttdeci">int m_pay_len</div><div class="ttdoc">: The payload length</div><div class="ttdef"><b>Definition:</b> data_source_impl.h:26</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1data__source__impl_html_aec9aeee81d28f1da95a30c6619d8b3c6"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1data__source__impl.html#aec9aeee81d28f1da95a30c6619d8b3c6">gr::lora_sdr::data_source_impl::frame_cnt</a></div><div class="ttdeci">int frame_cnt</div><div class="ttdoc">: Count the number of frame sent</div><div class="ttdef"><b>Definition:</b> data_source_impl.h:16</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1data__source__impl_html_a807a9b84379e81bd526f3d11d15cbc7c"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1data__source__impl.html#a807a9b84379e81bd526f3d11d15cbc7c">gr::lora_sdr::data_source_impl::data_source_impl</a></div><div class="ttdeci">data_source_impl(int pay_len, int n_frames, std::string string_input)</div><div class="ttdoc">Construct a new data source impl object.</div></div>
@@ -163,7 +167,6 @@ $(document).ready(function(){initNavTree('data__source__impl_8h_source.html','')
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1data__source__impl_html_ad21dd33ca5e4695faaa8dfafc6723af8"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1data__source__impl.html#ad21dd33ca5e4695faaa8dfafc6723af8">gr::lora_sdr::data_source_impl::m_string_input</a></div><div class="ttdeci">std::string m_string_input</div><div class="ttdoc">: Input data source, if empty random generated data source is used.</div><div class="ttdef"><b>Definition:</b> data_source_impl.h:32</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1data__source__impl_html_aab56a4a9601909de934e4582b3aa8ade"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1data__source__impl.html#aab56a4a9601909de934e4582b3aa8ade">gr::lora_sdr::data_source_impl::trigg_handler</a></div><div class="ttdeci">void trigg_handler(pmt::pmt_t msg)</div><div class="ttdoc">Main function that handles the trigger and dispatches the message making.</div></div>
 <div class="ttc" id="autilities_8h_html"><div class="ttname"><a href="utilities_8h.html">utilities.h</a></div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1data__source__impl_html_a802652bbfe43c8db65f7c149ef416d32"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1data__source__impl.html#a802652bbfe43c8db65f7c149ef416d32">gr::lora_sdr::data_source_impl::m_work_done</a></div><div class="ttdeci">bool m_work_done</div><div class="ttdef"><b>Definition:</b> data_source_impl.h:51</div></div>
 <div class="ttc" id="anamespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> add_crc.h:28</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1data__source__impl_html_a9941b2ce8d881e2ab348fab9b53a7268"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1data__source__impl.html#a9941b2ce8d881e2ab348fab9b53a7268">gr::lora_sdr::data_source_impl::general_work</a></div><div class="ttdeci">int general_work(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div><div class="ttdoc">Place holder function of data_source that generated random ([a-z A-Z 0-9]) data source to be sent ove...</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1data__source__impl_html_a176c8a07b6d3385988f26bc59196a2bf"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1data__source__impl.html#a176c8a07b6d3385988f26bc59196a2bf">gr::lora_sdr::data_source_impl::forecast</a></div><div class="ttdeci">void forecast(int noutput_items, gr_vector_int &amp;ninput_items_required)</div><div class="ttdoc">Place holder function does not do anything for the data source.</div></div>
