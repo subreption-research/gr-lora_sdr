@@ -80,9 +80,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a05288d47f92073c84086ea28cdd292a6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1hier__tx.html#afba19347a5f154e44cb3eff785075114">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hier__tx.html#a05288d47f92073c84086ea28cdd292a6">make</a> (int pay_len, int n_frames, std::string src_data, uint8_t cr, uint8_t sf, bool impl_head, bool has_crc, uint32_t samp_rate, uint32_t bw)</td></tr>
-<tr class="memdesc:a05288d47f92073c84086ea28cdd292a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1hier__tx.html" title="wrapper of Tx chain (data_source, whitening, add_header,add_crc, hamming_enc, interleaver,...">lora_sdr::hier_tx</a>.  <a href="classgr_1_1lora__sdr_1_1hier__tx.html#a05288d47f92073c84086ea28cdd292a6">More...</a><br /></td></tr>
-<tr class="separator:a05288d47f92073c84086ea28cdd292a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ed37f5294e2fe7ccacdea444a0ced0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1hier__tx.html#afba19347a5f154e44cb3eff785075114">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hier__tx.html#a94ed37f5294e2fe7ccacdea444a0ced0">make</a> (int pay_len, int n_frames, std::string src_data, uint8_t cr, uint8_t sf, bool impl_head, bool has_crc, uint32_t samp_rate, uint32_t bw, uint32_t mean)</td></tr>
+<tr class="memdesc:a94ed37f5294e2fe7ccacdea444a0ced0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1hier__tx.html" title="wrapper of Tx chain (data_source, whitening, add_header,add_crc, hamming_enc, interleaver,...">lora_sdr::hier_tx</a>.  <a href="classgr_1_1lora__sdr_1_1hier__tx.html#a94ed37f5294e2fe7ccacdea444a0ced0">More...</a><br /></td></tr>
+<tr class="separator:a94ed37f5294e2fe7ccacdea444a0ced0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>wrapper of Tx chain (<a class="el" href="classgr_1_1lora__sdr_1_1data__source.html" title="Data source that can both generate random strings or static strings, for more information about the i...">data_source</a>, whitening, add_header,<a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html" title="This block adds LoRa CRC (Cyclic redundancy check) into the payload if boolean has_crc is True,...">add_crc</a>, <a class="el" href="classgr_1_1lora__sdr_1_1hamming__enc.html" title="Add hamming code to the to be sent playload. This means extra party bits are added to the payload to ...">hamming_enc</a>, interleaver, gray mapping,modulate) </p>
@@ -102,8 +102,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a05288d47f92073c84086ea28cdd292a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05288d47f92073c84086ea28cdd292a6">&#9670;&nbsp;</a></span>make()</h2>
+<a id="a94ed37f5294e2fe7ccacdea444a0ced0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94ed37f5294e2fe7ccacdea444a0ced0">&#9670;&nbsp;</a></span>make()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -163,7 +163,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>bw</em>&#160;</td>
+          <td class="paramname"><em>bw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>mean</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -179,7 +185,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1hier__tx.html" title="wrapper of Tx chain (data_source, whitening, add_header,add_crc, hamming_enc, interleaver,...">lora_sdr::hier_tx</a>. </p>
-<p>To avoid accidental use of raw pointers, <a class="el" href="classgr_1_1lora__sdr_1_1hier__tx.html" title="wrapper of Tx chain (data_source, whitening, add_header,add_crc, hamming_enc, interleaver,...">lora_sdr::hier_tx</a>'s constructor is in a private implementation class. <a class="el" href="classgr_1_1lora__sdr_1_1hier__tx.html#a05288d47f92073c84086ea28cdd292a6" title="Return a shared_ptr to a new instance of lora_sdr::hier_tx.">lora_sdr::hier_tx::make</a> is the public interface for creating new instances. </p>
+<p>To avoid accidental use of raw pointers, <a class="el" href="classgr_1_1lora__sdr_1_1hier__tx.html" title="wrapper of Tx chain (data_source, whitening, add_header,add_crc, hamming_enc, interleaver,...">lora_sdr::hier_tx</a>'s constructor is in a private implementation class. <a class="el" href="classgr_1_1lora__sdr_1_1hier__tx.html#a94ed37f5294e2fe7ccacdea444a0ced0" title="Return a shared_ptr to a new instance of lora_sdr::hier_tx.">lora_sdr::hier_tx::make</a> is the public interface for creating new instances. </p>
 
 </div>
 </div>
