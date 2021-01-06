@@ -57,7 +57,7 @@ $(document).ready(function(){initNavTree('whitening_8h_source.html',''); initRes
 <a href="whitening_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INCLUDED_LORA_SDR_WHITENING_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define INCLUDED_LORA_SDR_WHITENING_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;gnuradio/block.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;gnuradio/sync_block.h&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="api_8h.html">lora_sdr/api.h</a>&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegr.html">gr</a> {</div>
@@ -69,7 +69,7 @@ $(document).ready(function(){initNavTree('whitening_8h_source.html',''); initRes
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * \ingroup lora_sdr</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1whitening.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="api_8h.html#a7f43a70ead7390c8125a3e3273e64b8c">LORA_SDR_API</a> <a class="code" href="classgr_1_1lora__sdr_1_1whitening.html">whitening</a> : <span class="keyword">virtual</span> <span class="keyword">public</span> gr::block {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1whitening.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="api_8h.html#a7f43a70ead7390c8125a3e3273e64b8c">LORA_SDR_API</a> <a class="code" href="classgr_1_1lora__sdr_1_1whitening.html">whitening</a> : <span class="keyword">virtual</span> <span class="keyword">public</span> gr::sync_block {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1whitening.html#a5aabd6f4cec85a5321175c84c597011f">   18</a></span>&#160;  <span class="keyword">typedef</span> boost::shared_ptr&lt;whitening&gt; <a class="code" href="classgr_1_1lora__sdr_1_1whitening.html#a5aabd6f4cec85a5321175c84c597011f">sptr</a>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"></span> </div>

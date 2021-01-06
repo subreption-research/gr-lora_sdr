@@ -39,9 +39,6 @@ var hierarchy =
       ] ],
       [ "gr::lora_sdr::RH_RF95_header", "classgr_1_1lora__sdr_1_1RH__RF95__header.html", [
         [ "gr::lora_sdr::RH_RF95_header_impl", "classgr_1_1lora__sdr_1_1RH__RF95__header__impl.html", null ]
-      ] ],
-      [ "gr::lora_sdr::whitening", "classgr_1_1lora__sdr_1_1whitening.html", [
-        [ "gr::lora_sdr::whitening_impl", "classgr_1_1lora__sdr_1_1whitening__impl.html", null ]
       ] ]
     ] ],
     [ "hier_block2", null, [
@@ -69,6 +66,9 @@ var hierarchy =
       ] ],
       [ "gr::lora_sdr::hamming_enc", "classgr_1_1lora__sdr_1_1hamming__enc.html", [
         [ "gr::lora_sdr::hamming_enc_impl", "classgr_1_1lora__sdr_1_1hamming__enc__impl.html", null ]
+      ] ],
+      [ "gr::lora_sdr::whitening", "classgr_1_1lora__sdr_1_1whitening.html", [
+        [ "gr::lora_sdr::whitening_impl", "classgr_1_1lora__sdr_1_1whitening__impl.html", null ]
       ] ]
     ] ]
 ];
