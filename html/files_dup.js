@@ -118,6 +118,12 @@ var files_dup =
     [ "modulate_impl.h", "modulate__impl_8h.html", [
       [ "modulate_impl", "classgr_1_1lora__sdr_1_1modulate__impl.html", "classgr_1_1lora__sdr_1_1modulate__impl" ]
     ] ],
+    [ "multi_control.h", "multi__control_8h.html", [
+      [ "multi_control", "classgr_1_1lora__sdr_1_1multi__control.html", "classgr_1_1lora__sdr_1_1multi__control" ]
+    ] ],
+    [ "multi_control_impl.h", "multi__control__impl_8h.html", [
+      [ "multi_control_impl", "classgr_1_1lora__sdr_1_1multi__control__impl.html", "classgr_1_1lora__sdr_1_1multi__control__impl" ]
+    ] ],
     [ "RH_RF95_header.h", "RH__RF95__header_8h.html", [
       [ "RH_RF95_header", "classgr_1_1lora__sdr_1_1RH__RF95__header.html", "classgr_1_1lora__sdr_1_1RH__RF95__header" ]
     ] ],

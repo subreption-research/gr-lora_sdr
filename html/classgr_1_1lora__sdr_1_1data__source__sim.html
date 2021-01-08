@@ -80,9 +80,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a71d647b7c88d4fcc43ca9eb6380a9fd4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a910d1063e8ec5d3eaaffe803aed9dfa0">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a71d647b7c88d4fcc43ca9eb6380a9fd4">make</a> (int pay_len, int n_frames, std::string string_input, uint32_t mean)</td></tr>
-<tr class="memdesc:a71d647b7c88d4fcc43ca9eb6380a9fd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1data__source.html" title="Data source that can both generate random strings or static strings, for more information about the i...">lora_sdr::data_source</a>.  <a href="classgr_1_1lora__sdr_1_1data__source__sim.html#a71d647b7c88d4fcc43ca9eb6380a9fd4">More...</a><br /></td></tr>
-<tr class="separator:a71d647b7c88d4fcc43ca9eb6380a9fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08289483b1c46c68adb1944e7805d72d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a910d1063e8ec5d3eaaffe803aed9dfa0">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a08289483b1c46c68adb1944e7805d72d">make</a> (int pay_len, int n_frames, std::string string_input, uint32_t mean, bool <a class="el" href="classgr_1_1lora__sdr_1_1multi__control.html">multi_control</a>)</td></tr>
+<tr class="memdesc:a08289483b1c46c68adb1944e7805d72d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1data__source.html" title="Data source that can both generate random strings or static strings, for more information about the i...">lora_sdr::data_source</a>.  <a href="classgr_1_1lora__sdr_1_1data__source__sim.html#a08289483b1c46c68adb1944e7805d72d">More...</a><br /></td></tr>
+<tr class="separator:a08289483b1c46c68adb1944e7805d72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Data source that can both generate random strings or static strings, for more information about the implementation visit <a class="el" href="classgr_1_1lora__sdr_1_1data__source__impl.html">data_source_impl</a> Main difference from <a class="el" href="classgr_1_1lora__sdr_1_1data__source.html" title="Data source that can both generate random strings or static strings, for more information about the i...">data_source</a> is that this implementation uses an internal uniform distribution, for the timing of the msg pmt channel. </p>
@@ -102,8 +102,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a71d647b7c88d4fcc43ca9eb6380a9fd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71d647b7c88d4fcc43ca9eb6380a9fd4">&#9670;&nbsp;</a></span>make()</h2>
+<a id="a08289483b1c46c68adb1944e7805d72d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08289483b1c46c68adb1944e7805d72d">&#9670;&nbsp;</a></span>make()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,7 +133,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>mean</em>&#160;</td>
+          <td class="paramname"><em>mean</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>multi_control</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

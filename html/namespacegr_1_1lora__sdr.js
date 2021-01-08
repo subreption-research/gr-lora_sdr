@@ -38,6 +38,8 @@ var namespacegr_1_1lora__sdr =
     [ "interleaver_impl", "classgr_1_1lora__sdr_1_1interleaver__impl.html", "classgr_1_1lora__sdr_1_1interleaver__impl" ],
     [ "modulate", "classgr_1_1lora__sdr_1_1modulate.html", "classgr_1_1lora__sdr_1_1modulate" ],
     [ "modulate_impl", "classgr_1_1lora__sdr_1_1modulate__impl.html", "classgr_1_1lora__sdr_1_1modulate__impl" ],
+    [ "multi_control", "classgr_1_1lora__sdr_1_1multi__control.html", "classgr_1_1lora__sdr_1_1multi__control" ],
+    [ "multi_control_impl", "classgr_1_1lora__sdr_1_1multi__control__impl.html", "classgr_1_1lora__sdr_1_1multi__control__impl" ],
     [ "RH_RF95_header", "classgr_1_1lora__sdr_1_1RH__RF95__header.html", "classgr_1_1lora__sdr_1_1RH__RF95__header" ],
     [ "RH_RF95_header_impl", "classgr_1_1lora__sdr_1_1RH__RF95__header__impl.html", "classgr_1_1lora__sdr_1_1RH__RF95__header__impl" ],
     [ "whitening", "classgr_1_1lora__sdr_1_1whitening.html", "classgr_1_1lora__sdr_1_1whitening" ],

@@ -81,6 +81,9 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 : <a class="el" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a98cbeffc5add19e966fa6e10f1adb7d9">gr::lora_sdr::crc_verif_impl</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1dewhitening__impl.html#a157b81ab15a0947e30f0437a5579b03c">gr::lora_sdr::dewhitening_impl</a>
 </li>
+<li>m_cur_msg
+: <a class="el" href="classgr_1_1lora__sdr_1_1multi__control__impl.html#a9166832c535f29ecffb0ce597ed32f06">gr::lora_sdr::multi_control_impl</a>
+</li>
 <li>m_dechirped
 : <a class="el" href="classgr_1_1lora__sdr_1_1fft__demod__impl.html#afaa84d5826d3d465a87a5f98439b95cc">gr::lora_sdr::fft_demod_impl</a>
 </li>
@@ -91,6 +94,13 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 </li>
 <li>m_fft
 : <a class="el" href="classgr_1_1lora__sdr_1_1fft__demod__impl.html#a0ccca8d20fd9e33d02d624bd337a3cb3">gr::lora_sdr::fft_demod_impl</a>
+</li>
+<li>m_finished
+: <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#af9106a0081379cdd08a893d6272e19fe">gr::lora_sdr::data_source_sim_impl</a>
+, <a class="el" href="classgr_1_1lora__sdr_1_1multi__control__impl.html#a905185c98478689928137bcbc74b711f">gr::lora_sdr::multi_control_impl</a>
+</li>
+<li>m_finished_wait
+: <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a7aae170442081542678a88a4f2b85370">gr::lora_sdr::data_source_sim_impl</a>
 </li>
 <li>m_flags
 : <a class="el" href="classgr_1_1lora__sdr_1_1RH__RF95__header__impl.html#acd689dd7aab85e39821446528bc17345">gr::lora_sdr::RH_RF95_header_impl</a>
@@ -117,9 +127,15 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 <li>m_mean
 : <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a70e9ad91a96aa6de1db747e81979688b">gr::lora_sdr::data_source_sim_impl</a>
 </li>
+<li>m_multi_control
+: <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a9ced078f31c58a7148d335a169e66cef">gr::lora_sdr::data_source_sim_impl</a>
+</li>
 <li>m_n_frames
 : <a class="el" href="classgr_1_1lora__sdr_1_1data__source__impl.html#aebaa93b19af36a6912784fb5e0866178">gr::lora_sdr::data_source_impl</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a207d25a3ccee1b914599d77e802cc1e3">gr::lora_sdr::data_source_sim_impl</a>
+</li>
+<li>m_num_ctrl
+: <a class="el" href="classgr_1_1lora__sdr_1_1multi__control__impl.html#a062596890c26e7732c09af4951930b70">gr::lora_sdr::multi_control_impl</a>
 </li>
 <li>m_number_of_bins
 : <a class="el" href="classgr_1_1lora__sdr_1_1fft__demod__impl.html#a0b0d076e324daddbdb942267de205a97">gr::lora_sdr::fft_demod_impl</a>
@@ -188,7 +204,7 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 : <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html#a46eb96a85a8fbf59d04311b34384d5cb">gr::lora_sdr::add_crc</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1crc__verif.html#a8d3a88dbb742f88a47b1e88a3c3683a7">gr::lora_sdr::crc_verif</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1data__source.html#ae04a723879a096ddbc582ec2fb6b70ad">gr::lora_sdr::data_source</a>
-, <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a71d647b7c88d4fcc43ca9eb6380a9fd4">gr::lora_sdr::data_source_sim</a>
+, <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a08289483b1c46c68adb1944e7805d72d">gr::lora_sdr::data_source_sim</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver.html#a1d8d559906b8e87cab05ca7d8a3330c5">gr::lora_sdr::deinterleaver</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1dewhitening.html#a6611a7708b8c4a79f9bf038be8136924">gr::lora_sdr::dewhitening</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1err__measures.html#af065d77d6bda81dc5dbda893dd951e19">gr::lora_sdr::err_measures</a>
@@ -201,9 +217,10 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 , <a class="el" href="classgr_1_1lora__sdr_1_1header.html#a90759b05ba40572668384c4f907e61d0">gr::lora_sdr::header</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html#a00e9a5d5ae43dc349a53acfa10c28646">gr::lora_sdr::header_decoder</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#abf0f16cc5607b37a04bb1912a9c176ce">gr::lora_sdr::hier_rx</a>
-, <a class="el" href="classgr_1_1lora__sdr_1_1hier__tx.html#a94ed37f5294e2fe7ccacdea444a0ced0">gr::lora_sdr::hier_tx</a>
+, <a class="el" href="classgr_1_1lora__sdr_1_1hier__tx.html#a3a578eadea783ff3ba05ff5562458983">gr::lora_sdr::hier_tx</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1interleaver.html#a3221a20013ca8fad755153d84a35378e">gr::lora_sdr::interleaver</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1modulate.html#afee2074f2c457116a159086cb4475063">gr::lora_sdr::modulate</a>
+, <a class="el" href="classgr_1_1lora__sdr_1_1multi__control.html#ad541bf645ab6cb6410b58885ba44c689">gr::lora_sdr::multi_control</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1RH__RF95__header.html#a64e2c450f96a9e4ccb2e1634ae981269">gr::lora_sdr::RH_RF95_header</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1whitening.html#a6db3671947c08fd931a23c9bc6168be8">gr::lora_sdr::whitening</a>
 </li>
@@ -221,6 +238,9 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 , <a class="el" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a0e210cef35dac625e70e3b52b914abe6">gr::lora_sdr::modulate_impl</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1RH__RF95__header__impl.html#af2d943a8bee4c689294304a50235e492">gr::lora_sdr::RH_RF95_header_impl</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1whitening__impl.html#ad40d4e990c8f746e5fa57b16cf373466">gr::lora_sdr::whitening_impl</a>
+</li>
+<li>multi_control_impl()
+: <a class="el" href="classgr_1_1lora__sdr_1_1multi__control__impl.html#acb388a78888b4aeae974ab4f40731d7a">gr::lora_sdr::multi_control_impl</a>
 </li>
 </ul>
 </div><!-- contents -->

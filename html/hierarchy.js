@@ -37,6 +37,9 @@ var hierarchy =
       [ "gr::lora_sdr::modulate", "classgr_1_1lora__sdr_1_1modulate.html", [
         [ "gr::lora_sdr::modulate_impl", "classgr_1_1lora__sdr_1_1modulate__impl.html", null ]
       ] ],
+      [ "gr::lora_sdr::multi_control", "classgr_1_1lora__sdr_1_1multi__control.html", [
+        [ "gr::lora_sdr::multi_control_impl", "classgr_1_1lora__sdr_1_1multi__control__impl.html", null ]
+      ] ],
       [ "gr::lora_sdr::RH_RF95_header", "classgr_1_1lora__sdr_1_1RH__RF95__header.html", [
         [ "gr::lora_sdr::RH_RF95_header_impl", "classgr_1_1lora__sdr_1_1RH__RF95__header__impl.html", null ]
       ] ]

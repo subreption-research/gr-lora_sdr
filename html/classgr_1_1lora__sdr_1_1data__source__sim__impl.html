@@ -73,9 +73,9 @@ Inheritance diagram for gr::lora_sdr::data_source_sim_impl:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9e7b4ef252ac1f4101d862e3d666bd25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a9e7b4ef252ac1f4101d862e3d666bd25">data_source_sim_impl</a> (int pay_len, int n_frames, std::string string_input, uint32_t mean)</td></tr>
-<tr class="memdesc:a9e7b4ef252ac1f4101d862e3d666bd25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new data source impl object.  <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a9e7b4ef252ac1f4101d862e3d666bd25">More...</a><br /></td></tr>
-<tr class="separator:a9e7b4ef252ac1f4101d862e3d666bd25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1715a25dd073ab2843bed724e31020"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a6e1715a25dd073ab2843bed724e31020">data_source_sim_impl</a> (int pay_len, int n_frames, std::string string_input, uint32_t mean, bool <a class="el" href="classgr_1_1lora__sdr_1_1multi__control.html">multi_control</a>)</td></tr>
+<tr class="memdesc:a6e1715a25dd073ab2843bed724e31020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new data source impl object.  <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a6e1715a25dd073ab2843bed724e31020">More...</a><br /></td></tr>
+<tr class="separator:a6e1715a25dd073ab2843bed724e31020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36a9e79daf318f3c19a474233a81a29e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a36a9e79daf318f3c19a474233a81a29e">~data_source_sim_impl</a> ()</td></tr>
 <tr class="memdesc:a36a9e79daf318f3c19a474233a81a29e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the data source impl object.  <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a36a9e79daf318f3c19a474233a81a29e">More...</a><br /></td></tr>
 <tr class="separator:a36a9e79daf318f3c19a474233a81a29e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -91,6 +91,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:afe4441b448aa30aaa15606096b707bba"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#afe4441b448aa30aaa15606096b707bba">random_string</a> (int nbytes)</td></tr>
 <tr class="memdesc:afe4441b448aa30aaa15606096b707bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a random string containing [a-z A-Z 0-9] for testing the payload data  <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#afe4441b448aa30aaa15606096b707bba">More...</a><br /></td></tr>
 <tr class="separator:afe4441b448aa30aaa15606096b707bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2625ddfc45820978eb3c310374eda7b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a2625ddfc45820978eb3c310374eda7b2">ctrl_in_handler</a> (pmt::pmt_t msg)</td></tr>
+<tr class="memdesc:a2625ddfc45820978eb3c310374eda7b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ctrl input handler, this function will be executed on trigger from the ctrl_in port.  <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a2625ddfc45820978eb3c310374eda7b2">More...</a><br /></td></tr>
+<tr class="separator:a2625ddfc45820978eb3c310374eda7b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -103,15 +106,20 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a260a7bb07d80ab36535ba681b1f0cfb9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a260a7bb07d80ab36535ba681b1f0cfb9">m_pay_len</a></td></tr>
 <tr class="memdesc:a260a7bb07d80ab36535ba681b1f0cfb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">: The payload length  <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a260a7bb07d80ab36535ba681b1f0cfb9">More...</a><br /></td></tr>
 <tr class="separator:a260a7bb07d80ab36535ba681b1f0cfb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac871005fb565481c2a30807f24a05eef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#ac871005fb565481c2a30807f24a05eef">d_finished</a></td></tr>
-<tr class="memdesc:ac871005fb565481c2a30807f24a05eef"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolean to tell the main function execution is finished  <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#ac871005fb565481c2a30807f24a05eef">More...</a><br /></td></tr>
-<tr class="separator:ac871005fb565481c2a30807f24a05eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70e9ad91a96aa6de1db747e81979688b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a70e9ad91a96aa6de1db747e81979688b">m_mean</a></td></tr>
 <tr class="memdesc:a70e9ad91a96aa6de1db747e81979688b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variables that holds the mean time of the uniform distribution.  <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a70e9ad91a96aa6de1db747e81979688b">More...</a><br /></td></tr>
 <tr class="separator:a70e9ad91a96aa6de1db747e81979688b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84adc97eb5ef9575d098a8d2d4f49c73"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a84adc97eb5ef9575d098a8d2d4f49c73">m_string_input</a></td></tr>
 <tr class="memdesc:a84adc97eb5ef9575d098a8d2d4f49c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">: Input data source, if empty random generated data source is used.  <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a84adc97eb5ef9575d098a8d2d4f49c73">More...</a><br /></td></tr>
 <tr class="separator:a84adc97eb5ef9575d098a8d2d4f49c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ced078f31c58a7148d335a169e66cef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a9ced078f31c58a7148d335a169e66cef">m_multi_control</a></td></tr>
+<tr class="memdesc:a9ced078f31c58a7148d335a169e66cef"><td class="mdescLeft">&#160;</td><td class="mdescRight">bollean if we have to control multiple tx chains  <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a9ced078f31c58a7148d335a169e66cef">More...</a><br /></td></tr>
+<tr class="separator:a9ced078f31c58a7148d335a169e66cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aae170442081542678a88a4f2b85370"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a7aae170442081542678a88a4f2b85370">m_finished_wait</a></td></tr>
+<tr class="separator:a7aae170442081542678a88a4f2b85370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9106a0081379cdd08a893d6272e19fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#af9106a0081379cdd08a893d6272e19fe">m_finished</a></td></tr>
+<tr class="memdesc:af9106a0081379cdd08a893d6272e19fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal state variable to tell system if we have received ctrl_in and should send WORK_DONE to the rest of the blocks.  <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#af9106a0081379cdd08a893d6272e19fe">More...</a><br /></td></tr>
+<tr class="separator:af9106a0081379cdd08a893d6272e19fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -119,13 +127,13 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a910d1063e8ec5d3eaaffe803aed9dfa0 inherit pub_types_classgr_1_1lora__sdr_1_1data__source__sim"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html">data_source_sim</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a910d1063e8ec5d3eaaffe803aed9dfa0">sptr</a></td></tr>
 <tr class="separator:a910d1063e8ec5d3eaaffe803aed9dfa0 inherit pub_types_classgr_1_1lora__sdr_1_1data__source__sim"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classgr_1_1lora__sdr_1_1data__source__sim"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classgr_1_1lora__sdr_1_1data__source__sim')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html">gr::lora_sdr::data_source_sim</a></td></tr>
-<tr class="memitem:a71d647b7c88d4fcc43ca9eb6380a9fd4 inherit pub_static_methods_classgr_1_1lora__sdr_1_1data__source__sim"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a910d1063e8ec5d3eaaffe803aed9dfa0">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a71d647b7c88d4fcc43ca9eb6380a9fd4">make</a> (int pay_len, int n_frames, std::string string_input, uint32_t mean)</td></tr>
-<tr class="memdesc:a71d647b7c88d4fcc43ca9eb6380a9fd4 inherit pub_static_methods_classgr_1_1lora__sdr_1_1data__source__sim"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1data__source.html" title="Data source that can both generate random strings or static strings, for more information about the i...">lora_sdr::data_source</a>.  <a href="classgr_1_1lora__sdr_1_1data__source__sim.html#a71d647b7c88d4fcc43ca9eb6380a9fd4">More...</a><br /></td></tr>
-<tr class="separator:a71d647b7c88d4fcc43ca9eb6380a9fd4 inherit pub_static_methods_classgr_1_1lora__sdr_1_1data__source__sim"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08289483b1c46c68adb1944e7805d72d inherit pub_static_methods_classgr_1_1lora__sdr_1_1data__source__sim"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a910d1063e8ec5d3eaaffe803aed9dfa0">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a08289483b1c46c68adb1944e7805d72d">make</a> (int pay_len, int n_frames, std::string string_input, uint32_t mean, bool <a class="el" href="classgr_1_1lora__sdr_1_1multi__control.html">multi_control</a>)</td></tr>
+<tr class="memdesc:a08289483b1c46c68adb1944e7805d72d inherit pub_static_methods_classgr_1_1lora__sdr_1_1data__source__sim"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1data__source.html" title="Data source that can both generate random strings or static strings, for more information about the i...">lora_sdr::data_source</a>.  <a href="classgr_1_1lora__sdr_1_1data__source__sim.html#a08289483b1c46c68adb1944e7805d72d">More...</a><br /></td></tr>
+<tr class="separator:a08289483b1c46c68adb1944e7805d72d inherit pub_static_methods_classgr_1_1lora__sdr_1_1data__source__sim"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9e7b4ef252ac1f4101d862e3d666bd25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e7b4ef252ac1f4101d862e3d666bd25">&#9670;&nbsp;</a></span>data_source_sim_impl()</h2>
+<a id="a6e1715a25dd073ab2843bed724e31020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e1715a25dd073ab2843bed724e31020">&#9670;&nbsp;</a></span>data_source_sim_impl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -152,7 +160,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>mean</em>&#160;</td>
+          <td class="paramname"><em>mean</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>multi_control</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -195,6 +209,40 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2625ddfc45820978eb3c310374eda7b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2625ddfc45820978eb3c310374eda7b2">&#9670;&nbsp;</a></span>ctrl_in_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gr::lora_sdr::data_source_sim_impl::ctrl_in_handler </td>
+          <td>(</td>
+          <td class="paramtype">pmt::pmt_t&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ctrl input handler, this function will be executed on trigger from the ctrl_in port. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>: pmt message (should be d_pmt_done) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a669125b944214fc1cb23dbfedfd8e2c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a669125b944214fc1cb23dbfedfd8e2c9">&#9670;&nbsp;</a></span>forecast()</h2>
 
@@ -276,7 +324,7 @@ Additional Inherited Members</h2></td></tr>
     <tr><td class="paramname">noutput_items</td><td>: number of output items : 1 </td></tr>
     <tr><td class="paramname">ninput_items</td><td>: number of input items : 0 </td></tr>
     <tr><td class="paramname">input_items</td><td>: input item : 0 </td></tr>
-    <tr><td class="paramname">output_items</td><td>: ooutput items : </td></tr>
+    <tr><td class="paramname">output_items</td><td>: output items : </td></tr>
   </table>
   </dd>
 </dl>
@@ -320,30 +368,6 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ac871005fb565481c2a30807f24a05eef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac871005fb565481c2a30807f24a05eef">&#9670;&nbsp;</a></span>d_finished</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool gr::lora_sdr::data_source_sim_impl::d_finished</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>boolean to tell the main function execution is finished </p>
-
-</div>
-</div>
 <a id="a7e0786dfd840fb2dc6003030089052d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7e0786dfd840fb2dc6003030089052d8">&#9670;&nbsp;</a></span>frame_cnt</h2>
 
@@ -368,6 +392,52 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="af9106a0081379cdd08a893d6272e19fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9106a0081379cdd08a893d6272e19fe">&#9670;&nbsp;</a></span>m_finished</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gr::lora_sdr::data_source_sim_impl::m_finished</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>internal state variable to tell system if we have received ctrl_in and should send WORK_DONE to the rest of the blocks. </p>
+
+</div>
+</div>
+<a id="a7aae170442081542678a88a4f2b85370"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aae170442081542678a88a4f2b85370">&#9670;&nbsp;</a></span>m_finished_wait</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gr::lora_sdr::data_source_sim_impl::m_finished_wait</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a70e9ad91a96aa6de1db747e81979688b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a70e9ad91a96aa6de1db747e81979688b">&#9670;&nbsp;</a></span>m_mean</h2>
 
@@ -389,6 +459,30 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Variables that holds the mean time of the uniform distribution. </p>
+
+</div>
+</div>
+<a id="a9ced078f31c58a7148d335a169e66cef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ced078f31c58a7148d335a169e66cef">&#9670;&nbsp;</a></span>m_multi_control</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gr::lora_sdr::data_source_sim_impl::m_multi_control</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>bollean if we have to control multiple tx chains </p>
 
 </div>
 </div>
