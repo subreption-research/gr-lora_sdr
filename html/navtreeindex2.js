@@ -1,5 +1,9 @@
 var NAVTREEINDEX2 =
 {
+"kiss__fft_8h.html#a62e86236e852945b8e120d0228377d71":[3,0,39,2],
+"kiss__fft_8h.html#aa6e24524bfa0247ac606c950e43a9a4d":[3,0,39,3],
+"kiss__fft_8h.html#aab7972365fc8f30a13eed91fa29172ba":[3,0,39,9],
+"kiss__fft_8h.html#ab36e2bb33b74c1a7eabe3271d0916030":[3,0,39,7],
 "kiss__fft_8h.html#ab5ad1560b58375ec071da45401911358":[3,0,39,8],
 "kiss__fft_8h.html#ab8c364e12d4cbde47dca54eb4bc3ce79":[3,0,39,6],
 "kiss__fft_8h.html#ad5d759d8e80434375e61c6a7de9aee79":[3,0,39,5],

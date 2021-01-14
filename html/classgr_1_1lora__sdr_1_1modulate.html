@@ -80,9 +80,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:afee2074f2c457116a159086cb4475063"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1modulate.html#a4b7dfaddb71a83af68be93ce9adc1088">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1modulate.html#afee2074f2c457116a159086cb4475063">make</a> (uint8_t sf, uint32_t samp_rate, uint32_t bw)</td></tr>
-<tr class="memdesc:afee2074f2c457116a159086cb4475063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1modulate.html" title="End block of the sending side that modulates the final to be sent data to the LoRa standard For more ...">lora_sdr::modulate</a>.  <a href="classgr_1_1lora__sdr_1_1modulate.html#afee2074f2c457116a159086cb4475063">More...</a><br /></td></tr>
-<tr class="separator:afee2074f2c457116a159086cb4475063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81b46e234127021462abfbbd8bf7c1a0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1modulate.html#a4b7dfaddb71a83af68be93ce9adc1088">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1modulate.html#a81b46e234127021462abfbbd8bf7c1a0">make</a> (uint8_t sf, uint32_t samp_rate, uint32_t bw, bool create_zeros)</td></tr>
+<tr class="memdesc:a81b46e234127021462abfbbd8bf7c1a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1modulate.html" title="End block of the sending side that modulates the final to be sent data to the LoRa standard For more ...">lora_sdr::modulate</a>.  <a href="classgr_1_1lora__sdr_1_1modulate.html#a81b46e234127021462abfbbd8bf7c1a0">More...</a><br /></td></tr>
+<tr class="separator:a81b46e234127021462abfbbd8bf7c1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>End block of the sending side that modulates the final to be sent data to the LoRa standard For more information about the implementation visit <a class="el" href="classgr_1_1lora__sdr_1_1modulate__impl.html">modulate_impl</a>. </p>
@@ -102,8 +102,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="afee2074f2c457116a159086cb4475063"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afee2074f2c457116a159086cb4475063">&#9670;&nbsp;</a></span>make()</h2>
+<a id="a81b46e234127021462abfbbd8bf7c1a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81b46e234127021462abfbbd8bf7c1a0">&#9670;&nbsp;</a></span>make()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -127,7 +127,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>bw</em>&#160;</td>
+          <td class="paramname"><em>bw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>create_zeros</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -143,7 +149,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1modulate.html" title="End block of the sending side that modulates the final to be sent data to the LoRa standard For more ...">lora_sdr::modulate</a>. </p>
-<p>To avoid accidental use of raw pointers, <a class="el" href="classgr_1_1lora__sdr_1_1modulate.html" title="End block of the sending side that modulates the final to be sent data to the LoRa standard For more ...">lora_sdr::modulate</a>'s constructor is in a private implementation class. <a class="el" href="classgr_1_1lora__sdr_1_1modulate.html#afee2074f2c457116a159086cb4475063" title="Return a shared_ptr to a new instance of lora_sdr::modulate.">lora_sdr::modulate::make</a> is the public interface for creating new instances. </p>
+<p>To avoid accidental use of raw pointers, <a class="el" href="classgr_1_1lora__sdr_1_1modulate.html" title="End block of the sending side that modulates the final to be sent data to the LoRa standard For more ...">lora_sdr::modulate</a>'s constructor is in a private implementation class. <a class="el" href="classgr_1_1lora__sdr_1_1modulate.html#a81b46e234127021462abfbbd8bf7c1a0" title="Return a shared_ptr to a new instance of lora_sdr::modulate.">lora_sdr::modulate::make</a> is the public interface for creating new instances. </p>
 
 </div>
 </div>

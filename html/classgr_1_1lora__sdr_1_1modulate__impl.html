@@ -73,9 +73,12 @@ Inheritance diagram for gr::lora_sdr::modulate_impl:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a588aa8c55c92d07af1b98184e6426396"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a588aa8c55c92d07af1b98184e6426396">modulate_impl</a> (uint8_t sf, uint32_t samp_rate, uint32_t bw)</td></tr>
-<tr class="memdesc:a588aa8c55c92d07af1b98184e6426396"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new modulate impl object.  <a href="classgr_1_1lora__sdr_1_1modulate__impl.html#a588aa8c55c92d07af1b98184e6426396">More...</a><br /></td></tr>
-<tr class="separator:a588aa8c55c92d07af1b98184e6426396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ac69dfb4fc259b80c4c3baa746b050a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a0ac69dfb4fc259b80c4c3baa746b050a">modulate_impl</a> (uint8_t sf, uint32_t samp_rate, uint32_t bw, bool create_zeros)</td></tr>
+<tr class="memdesc:a0ac69dfb4fc259b80c4c3baa746b050a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new modulate impl object.  <a href="classgr_1_1lora__sdr_1_1modulate__impl.html#a0ac69dfb4fc259b80c4c3baa746b050a">More...</a><br /></td></tr>
+<tr class="separator:a0ac69dfb4fc259b80c4c3baa746b050a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0127d1a524523185e644c2d354dcc04f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a0127d1a524523185e644c2d354dcc04f">ctrl_in_handler</a> (pmt::pmt_t msg)</td></tr>
+<tr class="memdesc:a0127d1a524523185e644c2d354dcc04f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ctrl input handler, this function will be executed on trigger from the ctrl_in port.  <a href="classgr_1_1lora__sdr_1_1modulate__impl.html#a0127d1a524523185e644c2d354dcc04f">More...</a><br /></td></tr>
+<tr class="separator:a0127d1a524523185e644c2d354dcc04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a115b4bb223b5ad808fe8766823367c6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a115b4bb223b5ad808fe8766823367c6f">~modulate_impl</a> ()</td></tr>
 <tr class="memdesc:a115b4bb223b5ad808fe8766823367c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the modulate impl object.  <a href="classgr_1_1lora__sdr_1_1modulate__impl.html#a115b4bb223b5ad808fe8766823367c6f">More...</a><br /></td></tr>
 <tr class="separator:a115b4bb223b5ad808fe8766823367c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,6 +127,10 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a25df5b094d1afb50275104f97a02b17d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a25df5b094d1afb50275104f97a02b17d">symb_cnt</a></td></tr>
 <tr class="memdesc:a25df5b094d1afb50275104f97a02b17d"><td class="mdescLeft">&#160;</td><td class="mdescRight">counter of the number of lora symbols sent  <a href="classgr_1_1lora__sdr_1_1modulate__impl.html#a25df5b094d1afb50275104f97a02b17d">More...</a><br /></td></tr>
 <tr class="separator:a25df5b094d1afb50275104f97a02b17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81de2ab736c68e6c33842a7170ebb11a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a81de2ab736c68e6c33842a7170ebb11a">m_multi_control</a></td></tr>
+<tr class="separator:a81de2ab736c68e6c33842a7170ebb11a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac04b5a32e1bb38f64c6d33a8b19a3c35"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1modulate__impl.html#ac04b5a32e1bb38f64c6d33a8b19a3c35">m_create_zeros</a></td></tr>
+<tr class="separator:ac04b5a32e1bb38f64c6d33a8b19a3c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -131,13 +138,13 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a4b7dfaddb71a83af68be93ce9adc1088 inherit pub_types_classgr_1_1lora__sdr_1_1modulate"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1modulate.html">modulate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1modulate.html#a4b7dfaddb71a83af68be93ce9adc1088">sptr</a></td></tr>
 <tr class="separator:a4b7dfaddb71a83af68be93ce9adc1088 inherit pub_types_classgr_1_1lora__sdr_1_1modulate"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classgr_1_1lora__sdr_1_1modulate"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classgr_1_1lora__sdr_1_1modulate')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classgr_1_1lora__sdr_1_1modulate.html">gr::lora_sdr::modulate</a></td></tr>
-<tr class="memitem:afee2074f2c457116a159086cb4475063 inherit pub_static_methods_classgr_1_1lora__sdr_1_1modulate"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1modulate.html#a4b7dfaddb71a83af68be93ce9adc1088">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1modulate.html#afee2074f2c457116a159086cb4475063">make</a> (uint8_t sf, uint32_t samp_rate, uint32_t bw)</td></tr>
-<tr class="memdesc:afee2074f2c457116a159086cb4475063 inherit pub_static_methods_classgr_1_1lora__sdr_1_1modulate"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1modulate.html" title="End block of the sending side that modulates the final to be sent data to the LoRa standard For more ...">lora_sdr::modulate</a>.  <a href="classgr_1_1lora__sdr_1_1modulate.html#afee2074f2c457116a159086cb4475063">More...</a><br /></td></tr>
-<tr class="separator:afee2074f2c457116a159086cb4475063 inherit pub_static_methods_classgr_1_1lora__sdr_1_1modulate"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81b46e234127021462abfbbd8bf7c1a0 inherit pub_static_methods_classgr_1_1lora__sdr_1_1modulate"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1modulate.html#a4b7dfaddb71a83af68be93ce9adc1088">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1modulate.html#a81b46e234127021462abfbbd8bf7c1a0">make</a> (uint8_t sf, uint32_t samp_rate, uint32_t bw, bool create_zeros)</td></tr>
+<tr class="memdesc:a81b46e234127021462abfbbd8bf7c1a0 inherit pub_static_methods_classgr_1_1lora__sdr_1_1modulate"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1modulate.html" title="End block of the sending side that modulates the final to be sent data to the LoRa standard For more ...">lora_sdr::modulate</a>.  <a href="classgr_1_1lora__sdr_1_1modulate.html#a81b46e234127021462abfbbd8bf7c1a0">More...</a><br /></td></tr>
+<tr class="separator:a81b46e234127021462abfbbd8bf7c1a0 inherit pub_static_methods_classgr_1_1lora__sdr_1_1modulate"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a588aa8c55c92d07af1b98184e6426396"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a588aa8c55c92d07af1b98184e6426396">&#9670;&nbsp;</a></span>modulate_impl()</h2>
+<a id="a0ac69dfb4fc259b80c4c3baa746b050a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ac69dfb4fc259b80c4c3baa746b050a">&#9670;&nbsp;</a></span>modulate_impl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -158,7 +165,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>bw</em>&#160;</td>
+          <td class="paramname"><em>bw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>create_zeros</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -200,6 +213,32 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0127d1a524523185e644c2d354dcc04f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0127d1a524523185e644c2d354dcc04f">&#9670;&nbsp;</a></span>ctrl_in_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gr::lora_sdr::modulate_impl::ctrl_in_handler </td>
+          <td>(</td>
+          <td class="paramtype">pmt::pmt_t&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ctrl input handler, this function will be executed on trigger from the ctrl_in port. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>: pmt message (should be d_pmt_done) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a28e0c84f4fe1595df12af7967a418693"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a28e0c84f4fe1595df12af7967a418693">&#9670;&nbsp;</a></span>forecast()</h2>
 
@@ -348,6 +387,28 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ac04b5a32e1bb38f64c6d33a8b19a3c35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac04b5a32e1bb38f64c6d33a8b19a3c35">&#9670;&nbsp;</a></span>m_create_zeros</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gr::lora_sdr::modulate_impl::m_create_zeros</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a784362e26a06069fafab4f11c70a0d09"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a784362e26a06069fafab4f11c70a0d09">&#9670;&nbsp;</a></span>m_downchirp</h2>
 
@@ -369,6 +430,28 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>reference downchirp </p>
+
+</div>
+</div>
+<a id="a81de2ab736c68e6c33842a7170ebb11a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81de2ab736c68e6c33842a7170ebb11a">&#9670;&nbsp;</a></span>m_multi_control</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gr::lora_sdr::modulate_impl::m_multi_control</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
