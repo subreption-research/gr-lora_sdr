@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GNU Radio&#39;s LoRa_SDR OOT Package: fft_demod_impl.h File Reference</title>
+<title>GNU Radio&#39;s LoRa_SDR OOT Package: frame_detector.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -45,7 +45,7 @@
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('fft__demod__impl_8h.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('frame__detector_8h.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -54,21 +54,18 @@ $(document).ready(function(){initNavTree('fft__demod__impl_8h.html',''); initRes
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">fft_demod_impl.h File Reference</div>  </div>
+<div class="title">frame_detector.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;fstream&gt;</code><br />
-<code>#include &lt;gnuradio/io_signature.h&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;<a class="el" href="fft__demod_8h_source.html">lora_sdr/fft_demod.h</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="helpers_8h_source.html">helpers.h</a>&quot;</code><br />
-<code>#include &lt;volk/volk.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="api_8h_source.html">lora_sdr/api.h</a>&gt;</code><br />
+<code>#include &lt;gnuradio/block.h&gt;</code><br />
 </div>
-<p><a href="fft__demod__impl_8h_source.html">Go to the source code of this file.</a></p>
+<p><a href="frame__detector_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1fft__demod__impl.html">gr::lora_sdr::fft_demod_impl</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html">gr::lora_sdr::frame_detector</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LoRa frame detector, this block detects a LoRa frames using a preamble detection to find the start of the frame and a SNR energy based detector to detect the end of the frame. If a frame is detected the frame is outputted to the output.  <a href="classgr_1_1lora__sdr_1_1frame__detector.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -78,12 +75,16 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacegr_1_1lora__sdr"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html">gr::lora_sdr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Martyn van Dijke (<a href="#" onclick="location.href='mai'+'lto:'+'mar'+'ti'+'jnv'+'di'+'jke'+'60'+'0@g'+'ma'+'il.'+'co'+'m'; return false;">marti<span style="display: none;">.nosp@m.</span>jnvd<span style="display: none;">.nosp@m.</span>ijke6<span style="display: none;">.nosp@m.</span>00@g<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>com</a>) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2021-03-23 </dd></dl>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a9e59a6ca996d8e033e247fdcad6e85e.html">gr-lora_sdr</a></li><li class="navelem"><a class="el" href="dir_60bf111f53f945f3e5ed100aae5ff3c5.html">lib</a></li><li class="navelem"><a class="el" href="fft__demod__impl_8h.html">fft_demod_impl.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a9e59a6ca996d8e033e247fdcad6e85e.html">gr-lora_sdr</a></li><li class="navelem"><a class="el" href="dir_1d3a105732dff926f19447d8ea8f2a4f.html">include</a></li><li class="navelem"><a class="el" href="dir_4e3ed8ceab9ef738bc87e7d0956ce1e2.html">lora_sdr</a></li><li class="navelem"><a class="el" href="frame__detector_8h.html">frame_detector.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

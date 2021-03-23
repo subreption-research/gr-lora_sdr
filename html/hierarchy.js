@@ -22,6 +22,9 @@ var hierarchy =
       [ "gr::lora_sdr::fft_demod", "classgr_1_1lora__sdr_1_1fft__demod.html", [
         [ "gr::lora_sdr::fft_demod_impl", "classgr_1_1lora__sdr_1_1fft__demod__impl.html", null ]
       ] ],
+      [ "gr::lora_sdr::frame_detector", "classgr_1_1lora__sdr_1_1frame__detector.html", [
+        [ "gr::lora_sdr::frame_detector_impl", "classgr_1_1lora__sdr_1_1frame__detector__impl.html", null ]
+      ] ],
       [ "gr::lora_sdr::frame_sync", "classgr_1_1lora__sdr_1_1frame__sync.html", [
         [ "gr::lora_sdr::frame_sync_impl", "classgr_1_1lora__sdr_1_1frame__sync__impl.html", null ]
       ] ],

@@ -16,6 +16,8 @@ var namespacegr_1_1lora__sdr =
     [ "err_measures_impl", "classgr_1_1lora__sdr_1_1err__measures__impl.html", "classgr_1_1lora__sdr_1_1err__measures__impl" ],
     [ "fft_demod", "classgr_1_1lora__sdr_1_1fft__demod.html", "classgr_1_1lora__sdr_1_1fft__demod" ],
     [ "fft_demod_impl", "classgr_1_1lora__sdr_1_1fft__demod__impl.html", "classgr_1_1lora__sdr_1_1fft__demod__impl" ],
+    [ "frame_detector", "classgr_1_1lora__sdr_1_1frame__detector.html", "classgr_1_1lora__sdr_1_1frame__detector" ],
+    [ "frame_detector_impl", "classgr_1_1lora__sdr_1_1frame__detector__impl.html", "classgr_1_1lora__sdr_1_1frame__detector__impl" ],
     [ "frame_sync", "classgr_1_1lora__sdr_1_1frame__sync.html", "classgr_1_1lora__sdr_1_1frame__sync" ],
     [ "frame_sync_impl", "classgr_1_1lora__sdr_1_1frame__sync__impl.html", "classgr_1_1lora__sdr_1_1frame__sync__impl" ],
     [ "gray_decode", "classgr_1_1lora__sdr_1_1gray__decode.html", "classgr_1_1lora__sdr_1_1gray__decode" ],

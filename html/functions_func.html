@@ -83,9 +83,6 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 <li>deinterleaver_impl()
 : <a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#abacc979e4e3f57f8bc97feb7c11ec9cf">gr::lora_sdr::deinterleaver_impl</a>
 </li>
-<li>determine_energy()
-: <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a3f1a359b54ddc731d4327d8c72a19dab">gr::lora_sdr::frame_sync_impl</a>
-</li>
 <li>dewhitening_impl()
 : <a class="el" href="classgr_1_1lora__sdr_1_1dewhitening__impl.html#a3e63ec5340212128238f07f9a2f53d65">gr::lora_sdr::dewhitening_impl</a>
 </li>
@@ -120,12 +117,16 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 , <a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#aad7a0ec6b032c177866cb8e1cdbeab0d">gr::lora_sdr::deinterleaver_impl</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1dewhitening__impl.html#a2382c13953ec3a0fe020cb9b794fbb14">gr::lora_sdr::dewhitening_impl</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1fft__demod__impl.html#a96287d39435951608c38f0056be4cd53">gr::lora_sdr::fft_demod_impl</a>
+, <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a560e10de2a1471dc7eb99236b57f211f">gr::lora_sdr::frame_detector_impl</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a7860e2694fb44c6af427bce375214d7f">gr::lora_sdr::frame_sync_impl</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#a912c5211ada6a98099cd426951b220d7">gr::lora_sdr::header_decoder_impl</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1header__impl.html#ae05493af895b9be8c4da49b9508ea771">gr::lora_sdr::header_impl</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0957f1e476d8926c265e325b17dc136f">gr::lora_sdr::interleaver_impl</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a28e0c84f4fe1595df12af7967a418693">gr::lora_sdr::modulate_impl</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1RH__RF95__header__impl.html#a3fcefe211f8d462a426f218faba638f8">gr::lora_sdr::RH_RF95_header_impl</a>
+</li>
+<li>frame_detector_impl()
+: <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a21f49d3be4b6885fcde50e9e6ab4a18e">gr::lora_sdr::frame_detector_impl</a>
 </li>
 <li>frame_err_handler()
 : <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a8cafbe752ffa76beaf3c3d61fc4528d4">gr::lora_sdr::frame_sync_impl</a>
@@ -145,6 +146,7 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 , <a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a988e93f02184e00c2669fc13426f7edc">gr::lora_sdr::deinterleaver_impl</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1dewhitening__impl.html#aef67789f37eaaaa30a6c2c2331303c12">gr::lora_sdr::dewhitening_impl</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1fft__demod__impl.html#ab06bde4706616dac75b7438b2e6b291e">gr::lora_sdr::fft_demod_impl</a>
+, <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a63849e8943c68c28dd2b63f6ed3b01e3">gr::lora_sdr::frame_detector_impl</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aeaf4f32d03b9c603d3167dc4b99a097b">gr::lora_sdr::frame_sync_impl</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#a49a4f2a90d68e1947b310403682d0fec">gr::lora_sdr::header_decoder_impl</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1header__impl.html#afa6f7f180882d6edc93f204d0e2b947a">gr::lora_sdr::header_impl</a>
@@ -154,7 +156,6 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 </li>
 <li>get_symbol_val()
 : <a class="el" href="classgr_1_1lora__sdr_1_1fft__demod__impl.html#af9815b3171b41bc0a0bb979d54830f5c">gr::lora_sdr::fft_demod_impl</a>
-, <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a7a0f5f8aefdd0a8b21bb5095ddd729a8">gr::lora_sdr::frame_sync_impl</a>
 </li>
 <li>gray_decode_impl()
 : <a class="el" href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#ae20e24942fb422f81f1d599bedec3f05">gr::lora_sdr::gray_decode_impl</a>
@@ -223,6 +224,7 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 , <a class="el" href="classgr_1_1lora__sdr_1_1dewhitening.html#a6611a7708b8c4a79f9bf038be8136924">gr::lora_sdr::dewhitening</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1err__measures.html#af065d77d6bda81dc5dbda893dd951e19">gr::lora_sdr::err_measures</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1fft__demod.html#a3416792e976c1759d3062530ae7df26a">gr::lora_sdr::fft_demod</a>
+, <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html#a1e2c249706d459b824598c89715918e0">gr::lora_sdr::frame_detector</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html#a776adf7b13bb1555de3dc0a97b3940cc">gr::lora_sdr::frame_sync</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1gray__decode.html#a07d9fafee356f2637a3e3b87db29e19e">gr::lora_sdr::gray_decode</a>
 , <a class="el" href="classgr_1_1lora__sdr_1_1gray__enc.html#aea9076b78c4fdcfdbd83e29f69bbd6b6">gr::lora_sdr::gray_enc</a>
@@ -323,6 +325,9 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 </li>
 <li>~fft_demod_impl()
 : <a class="el" href="classgr_1_1lora__sdr_1_1fft__demod__impl.html#a7419ee12d81e6d0fa4ddcccd91ec9cd8">gr::lora_sdr::fft_demod_impl</a>
+</li>
+<li>~frame_detector_impl()
+: <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a109682da06611c617e14a7f52cfd06ef">gr::lora_sdr::frame_detector_impl</a>
 </li>
 <li>~frame_sync_impl()
 : <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aba5790ae712b7e49561462e3b4606d78">gr::lora_sdr::frame_sync_impl</a>

@@ -131,12 +131,6 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a7650eac6bb57346f4ab538988b7ba4ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a7650eac6bb57346f4ab538988b7ba4ba">estimate_STO</a> ()</td></tr>
 <tr class="memdesc:a7650eac6bb57346f4ab538988b7ba4ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the value of fractional part of the STO from m_consec_up.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a7650eac6bb57346f4ab538988b7ba4ba">More...</a><br /></td></tr>
 <tr class="separator:a7650eac6bb57346f4ab538988b7ba4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a0f5f8aefdd0a8b21bb5095ddd729a8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a7a0f5f8aefdd0a8b21bb5095ddd729a8">get_symbol_val</a> (const gr_complex *samples, gr_complex *ref_chirp)</td></tr>
-<tr class="memdesc:a7a0f5f8aefdd0a8b21bb5095ddd729a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that gets the symbol from the received samples.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a7a0f5f8aefdd0a8b21bb5095ddd729a8">More...</a><br /></td></tr>
-<tr class="separator:a7a0f5f8aefdd0a8b21bb5095ddd729a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f1a359b54ddc731d4327d8c72a19dab"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a3f1a359b54ddc731d4327d8c72a19dab">determine_energy</a> (const gr_complex *samples)</td></tr>
-<tr class="memdesc:a3f1a359b54ddc731d4327d8c72a19dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the energy of a symbol.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a3f1a359b54ddc731d4327d8c72a19dab">More...</a><br /></td></tr>
-<tr class="separator:a3f1a359b54ddc731d4327d8c72a19dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a106976a23afd526432feeab776b09ec8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a106976a23afd526432feeab776b09ec8">header_err_handler</a> (pmt::pmt_t err)</td></tr>
 <tr class="memdesc:a106976a23afd526432feeab776b09ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the error message coming from the header decoding.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a106976a23afd526432feeab776b09ec8">More...</a><br /></td></tr>
 <tr class="separator:a106976a23afd526432feeab776b09ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -424,41 +418,6 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3f1a359b54ddc731d4327d8c72a19dab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f1a359b54ddc731d4327d8c72a19dab">&#9670;&nbsp;</a></span>determine_energy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float gr::lora_sdr::frame_sync_impl::determine_energy </td>
-          <td>(</td>
-          <td class="paramtype">const gr_complex *&#160;</td>
-          <td class="paramname"><em>samples</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Determine the energy of a symbol. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">samples</td><td>The complex symbol to analyse. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>float </dd></dl>
-
-</div>
-</div>
 <a id="a81f8d548daf3cf8fe03380e402a8a530"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81f8d548daf3cf8fe03380e402a8a530">&#9670;&nbsp;</a></span>estimate_CFO()</h2>
 
@@ -667,52 +626,6 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
-
-</div>
-</div>
-<a id="a7a0f5f8aefdd0a8b21bb5095ddd729a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a0f5f8aefdd0a8b21bb5095ddd729a8">&#9670;&nbsp;</a></span>get_symbol_val()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t gr::lora_sdr::frame_sync_impl::get_symbol_val </td>
-          <td>(</td>
-          <td class="paramtype">const gr_complex *&#160;</td>
-          <td class="paramname"><em>samples</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">gr_complex *&#160;</td>
-          <td class="paramname"><em>ref_chirp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Function that gets the symbol from the received samples. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">samples</td><td>: the complex samples </td></tr>
-    <tr><td class="paramname">ref_chirp</td><td>The reference chirp to use to dechirp the lora symbol. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>uint32_t </dd></dl>
 
 </div>
 </div>

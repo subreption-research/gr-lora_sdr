@@ -51,6 +51,12 @@ var files_dup =
     [ "fft_demod_impl.h", "fft__demod__impl_8h.html", [
       [ "fft_demod_impl", "classgr_1_1lora__sdr_1_1fft__demod__impl.html", "classgr_1_1lora__sdr_1_1fft__demod__impl" ]
     ] ],
+    [ "frame_detector.h", "frame__detector_8h.html", [
+      [ "frame_detector", "classgr_1_1lora__sdr_1_1frame__detector.html", "classgr_1_1lora__sdr_1_1frame__detector" ]
+    ] ],
+    [ "frame_detector_impl.h", "frame__detector__impl_8h.html", [
+      [ "frame_detector_impl", "classgr_1_1lora__sdr_1_1frame__detector__impl.html", "classgr_1_1lora__sdr_1_1frame__detector__impl" ]
+    ] ],
     [ "frame_sync.h", "frame__sync_8h.html", [
       [ "frame_sync", "classgr_1_1lora__sdr_1_1frame__sync.html", "classgr_1_1lora__sdr_1_1frame__sync" ]
     ] ],
@@ -93,6 +99,7 @@ var files_dup =
     [ "header_impl.h", "header__impl_8h.html", [
       [ "header_impl", "classgr_1_1lora__sdr_1_1header__impl.html", "classgr_1_1lora__sdr_1_1header__impl" ]
     ] ],
+    [ "helpers.h", "helpers_8h.html", "helpers_8h" ],
     [ "hier_rx.h", "hier__rx_8h.html", [
       [ "hier_rx", "classgr_1_1lora__sdr_1_1hier__rx.html", "classgr_1_1lora__sdr_1_1hier__rx" ]
     ] ],
@@ -125,7 +132,6 @@ var files_dup =
       [ "RH_RF95_header_impl", "classgr_1_1lora__sdr_1_1RH__RF95__header__impl.html", "classgr_1_1lora__sdr_1_1RH__RF95__header__impl" ]
     ] ],
     [ "tables.h", "tables_8h.html", "tables_8h" ],
-    [ "utilities.h", "utilities_8h.html", "utilities_8h" ],
     [ "whitening.h", "whitening_8h.html", [
       [ "whitening", "classgr_1_1lora__sdr_1_1whitening.html", "classgr_1_1lora__sdr_1_1whitening" ]
     ] ],

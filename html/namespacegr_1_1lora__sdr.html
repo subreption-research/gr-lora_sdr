@@ -101,6 +101,11 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1fft__demod__impl.html">fft_demod_impl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html">frame_detector</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LoRa frame detector, this block detects a LoRa frames using a preamble detection to find the start of the frame and a SNR energy based detector to detect the end of the frame. If a frame is detected the frame is outputted to the output.  <a href="classgr_1_1lora__sdr_1_1frame__detector.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html">frame_detector_impl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html">frame_sync</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block that is able to detect the received spectrum and start to find the data such that it can be decoded. This block is at the heart of the the RX (decoding) side and houses a lot of logic and data manipulation. For more information about the implementation visit <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html">frame_sync_impl</a>.  <a href="classgr_1_1lora__sdr_1_1frame__sync.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,6 +174,14 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a7722b83be4f756e6abfb7426c40d70ba"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#a7722b83be4f756e6abfb7426c40d70ba">complex_vector_2_string</a> (gr_complex *input, int length)</td></tr>
+<tr class="separator:a7722b83be4f756e6abfb7426c40d70ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65ee30c2a8d000e032c251d6cdf6995a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#a65ee30c2a8d000e032c251d6cdf6995a">get_symbol_val</a> (const gr_complex *samples, gr_complex *ref_chirp, uint32_t m_number_of_bins, uint32_t m_samples_per_symbol, <a class="el" href="structkiss__fft__cpx.html">kiss_fft_cpx</a> *cx_in, <a class="el" href="structkiss__fft__cpx.html">kiss_fft_cpx</a> *cx_out)</td></tr>
+<tr class="memdesc:a65ee30c2a8d000e032c251d6cdf6995a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that gets the symbol from the received samples.  <a href="namespacegr_1_1lora__sdr.html#a65ee30c2a8d000e032c251d6cdf6995a">More...</a><br /></td></tr>
+<tr class="separator:a65ee30c2a8d000e032c251d6cdf6995a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35377ec67f15948ad3e138256dd5cfcd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#a35377ec67f15948ad3e138256dd5cfcd">determine_energy</a> (const gr_complex *samples, uint32_t m_samples_per_symbol)</td></tr>
+<tr class="memdesc:a35377ec67f15948ad3e138256dd5cfcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the energy of a symbol.  <a href="namespacegr_1_1lora__sdr.html#a35377ec67f15948ad3e138256dd5cfcd">More...</a><br /></td></tr>
+<tr class="separator:a35377ec67f15948ad3e138256dd5cfcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb2d67013a158614413dedf3f2ae4503"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#adb2d67013a158614413dedf3f2ae4503">mod</a> (long a, long b)</td></tr>
 <tr class="memdesc:adb2d67013a158614413dedf3f2ae4503"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the modulus ab between 0 and (b-1)  <a href="namespacegr_1_1lora__sdr.html#adb2d67013a158614413dedf3f2ae4503">More...</a><br /></td></tr>
 <tr class="separator:adb2d67013a158614413dedf3f2ae4503"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,8 +197,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ae0ffa3d5d413320a39a835e8318f3bb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#ae0ffa3d5d413320a39a835e8318f3bb0">build_upchirp</a> (gr_complex *chirp, uint32_t id, uint8_t sf)</td></tr>
 <tr class="memdesc:ae0ffa3d5d413320a39a835e8318f3bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an modulated upchirp using s_f=bw.  <a href="namespacegr_1_1lora__sdr.html#ae0ffa3d5d413320a39a835e8318f3bb0">More...</a><br /></td></tr>
 <tr class="separator:ae0ffa3d5d413320a39a835e8318f3bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7722b83be4f756e6abfb7426c40d70ba"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#a7722b83be4f756e6abfb7426c40d70ba">complex_vector_2_string</a> (gr_complex *input, int length)</td></tr>
-<tr class="separator:a7722b83be4f756e6abfb7426c40d70ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -199,9 +210,6 @@ Variables</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">uint32_t gr::lora_sdr::bool2int </td>
@@ -211,11 +219,6 @@ Variables</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Convert a MSB first vector of bool to a integer. </p>
@@ -225,6 +228,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>uint32_t </dd></dl>
 
 </div>
 </div>
@@ -233,9 +237,6 @@ Variables</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void gr::lora_sdr::build_ref_chirps </td>
@@ -261,19 +262,14 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Return the reference chirps using s_f=bw. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">upchirp</td><td>The pointer to the reference upchirp </td></tr>
-    <tr><td class="paramname">downchirp</td><td>The pointer to the reference downchirp </td></tr>
-    <tr><td class="paramname">sf</td><td>The spreading factor to use </td></tr>
+    <tr><td class="paramname">upchirp</td><td>: The pointer to the reference upchirp </td></tr>
+    <tr><td class="paramname">downchirp</td><td>: The pointer to the reference downchirp </td></tr>
+    <tr><td class="paramname">sf</td><td>: The spreading factor to use </td></tr>
   </table>
   </dd>
 </dl>
@@ -285,9 +281,6 @@ Variables</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void gr::lora_sdr::build_upchirp </td>
@@ -313,19 +306,14 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Return an modulated upchirp using s_f=bw. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">chirp</td><td>The pointer to the modulated upchirp </td></tr>
-    <tr><td class="paramname">id</td><td>The number used to modulate the chirp </td></tr>
-    <tr><td class="paramname">sf</td><td>The spreading factor to use </td></tr>
+    <tr><td class="paramname">chirp</td><td>: The pointer to the modulated upchirp </td></tr>
+    <tr><td class="paramname">id</td><td>: The number used to modulate the chirp </td></tr>
+    <tr><td class="paramname">sf</td><td>: The spreading factor to use </td></tr>
   </table>
   </dd>
 </dl>
@@ -360,14 +348,110 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a35377ec67f15948ad3e138256dd5cfcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35377ec67f15948ad3e138256dd5cfcd">&#9670;&nbsp;</a></span>determine_energy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gr::lora_sdr::determine_energy </td>
+          <td>(</td>
+          <td class="paramtype">const gr_complex *&#160;</td>
+          <td class="paramname"><em>samples</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>m_samples_per_symbol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine the energy of a symbol. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">samples</td><td>The complex symbol to analyse. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>float </dd></dl>
+
+</div>
+</div>
+<a id="a65ee30c2a8d000e032c251d6cdf6995a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65ee30c2a8d000e032c251d6cdf6995a">&#9670;&nbsp;</a></span>get_symbol_val()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t gr::lora_sdr::get_symbol_val </td>
+          <td>(</td>
+          <td class="paramtype">const gr_complex *&#160;</td>
+          <td class="paramname"><em>samples</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gr_complex *&#160;</td>
+          <td class="paramname"><em>ref_chirp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>m_number_of_bins</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>m_samples_per_symbol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structkiss__fft__cpx.html">kiss_fft_cpx</a> *&#160;</td>
+          <td class="paramname"><em>cx_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structkiss__fft__cpx.html">kiss_fft_cpx</a> *&#160;</td>
+          <td class="paramname"><em>cx_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function that gets the symbol from the received samples. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">samples</td><td>: the complex samples </td></tr>
+    <tr><td class="paramname">ref_chirp</td><td>The reference chirp to use to dechirp the lora symbol. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>uint32_t </dd></dl>
+
+</div>
+</div>
 <a id="af4e0331fc85f5e094f335feb3d65fb61"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af4e0331fc85f5e094f335feb3d65fb61">&#9670;&nbsp;</a></span>int2bool()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::vector&lt;bool&gt; gr::lora_sdr::int2bool </td>
@@ -387,21 +471,17 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Convert an integer into a MSB first vector of bool. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">integer</td><td>The integer to convert </td></tr>
-    <tr><td class="paramname">n_bits</td><td>The output number of bits </td></tr>
+    <tr><td class="paramname">integer</td><td>: The integer to convert </td></tr>
+    <tr><td class="paramname">n_bits</td><td>: The output number of bits </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>std::vector&lt;bool&gt; </dd></dl>
 
 </div>
 </div>
@@ -410,9 +490,6 @@ Variables</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">long gr::lora_sdr::mod </td>
@@ -432,11 +509,6 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>return the modulus ab between 0 and (b-1) </p>
