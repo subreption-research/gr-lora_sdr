@@ -14,6 +14,7 @@ var classgr_1_1lora__sdr_1_1frame__detector__impl =
     [ "cx_out", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a2b66d8bd8dc6ade63b410a78a0bdbf34", null ],
     [ "m_bw", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#af85febc977acb98efb4f7c6722c70474", null ],
     [ "m_downchirp", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#aacd34f79a32a63c02c4ec054536a73be", null ],
+    [ "m_i", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a11176c53508e83fdd00e12d7a5d0011f", null ],
     [ "m_number_of_bins", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a9c07537c915ae9a572ab9c452dbb2d95", null ],
     [ "m_samp_rate", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a9ba9b820b22c0cd7a5fbfb8f9215fb40", null ],
     [ "m_samples_per_symbol", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a927206fcb01985c251ae47f51633c9ad", null ],
