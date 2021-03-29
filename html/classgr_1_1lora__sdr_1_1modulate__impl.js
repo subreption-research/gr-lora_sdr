@@ -13,6 +13,7 @@ var classgr_1_1lora__sdr_1_1modulate__impl =
     [ "m_number_of_bins", "classgr_1_1lora__sdr_1_1modulate__impl.html#aab459eb2bccd75e7432e4c41a55c1087", null ],
     [ "m_samp_rate", "classgr_1_1lora__sdr_1_1modulate__impl.html#a0d42a486c0e9026f92d0e4dff1c183b4", null ],
     [ "m_samples_per_symbol", "classgr_1_1lora__sdr_1_1modulate__impl.html#a36660b5a232ae44e9f7da4ee2a65bcfc", null ],
+    [ "m_samples_send", "classgr_1_1lora__sdr_1_1modulate__impl.html#a71d696a41af9e89ac5dc2b40fc974de0", null ],
     [ "m_sf", "classgr_1_1lora__sdr_1_1modulate__impl.html#a0503404afe218f71be3c58f719760a59", null ],
     [ "m_symbols_per_second", "classgr_1_1lora__sdr_1_1modulate__impl.html#ada87a0de1315f3d5ab842f73e2435ffa", null ],
     [ "m_upchirp", "classgr_1_1lora__sdr_1_1modulate__impl.html#ab81def3ea19c85e4e17ec9782c2de4d1", null ],

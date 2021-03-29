@@ -2,6 +2,7 @@ var classgr_1_1lora__sdr_1_1frame__detector__impl =
 [
     [ "State", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72d", [
       [ "FIND_PREAMBLE", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72da9f742ecaa3441532f418963509534799", null ],
+      [ "SEND_FRAMES", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72daf2ec2291f35c36333d7700650d974873", null ],
       [ "FIND_END_FRAME", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72dacf3524ed1618184377abb111b0162e3f", null ]
     ] ],
     [ "frame_detector_impl", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a4cee494e0fcae6f98e63b8cecbc88dbf", null ],
@@ -14,12 +15,12 @@ var classgr_1_1lora__sdr_1_1frame__detector__impl =
     [ "cx_out", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a2b66d8bd8dc6ade63b410a78a0bdbf34", null ],
     [ "m_bw", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#af85febc977acb98efb4f7c6722c70474", null ],
     [ "m_downchirp", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#aacd34f79a32a63c02c4ec054536a73be", null ],
-    [ "m_i", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a11176c53508e83fdd00e12d7a5d0011f", null ],
     [ "m_number_of_bins", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a9c07537c915ae9a572ab9c452dbb2d95", null ],
     [ "m_samp_rate", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a9ba9b820b22c0cd7a5fbfb8f9215fb40", null ],
     [ "m_samples_per_symbol", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a927206fcb01985c251ae47f51633c9ad", null ],
     [ "m_sf", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#aa56e034a9db362206e95a40864b718c8", null ],
     [ "m_state", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#abcd7d3a602a0061a1f40b0d2cd073dce", null ],
+    [ "mem_vec", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a6f2719678753a044bd025d40ae22b236", null ],
     [ "n_up", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a2be893d874f717f1e8022b41891d49c8", null ],
     [ "symbol_cnt", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#ae55d38b5beef69b0beb091e3f6d89cd8", null ]
 ];

@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"helpers_8h.html#a35377ec67f15948ad3e138256dd5cfcd":[3,0,35,3],
+"helpers_8h.html#a65ee30c2a8d000e032c251d6cdf6995a":[3,0,35,4],
 "helpers_8h.html#ab200cb6584b1993e5227cb0c2feaf077":[3,0,35,1],
 "helpers_8h.html#adb2d67013a158614413dedf3f2ae4503":[3,0,35,6],
 "helpers_8h.html#ae0ffa3d5d413320a39a835e8318f3bb0":[3,0,35,2],

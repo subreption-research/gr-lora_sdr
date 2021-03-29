@@ -132,66 +132,67 @@ $(document).ready(function(){initNavTree('modulate__impl_8h_source.html',''); in
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1modulate__impl.html#ac04b5a32e1bb38f64c6d33a8b19a3c35">   77</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#ac04b5a32e1bb38f64c6d33a8b19a3c35">m_create_zeros</a>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">   * @brief Gnuradio function that handles the PMT message</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">   * @param message : PMT message (i.e. input data from datasource)</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a0e210cef35dac625e70e3b52b914abe6">msg_handler</a>(pmt::pmt_t message);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">   * @brief Construct a new modulate impl object</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">   * @param sf spreading factor</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">   * @param samp_rate sampling rate</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">   * @param bw bandwith</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a0ac69dfb4fc259b80c4c3baa746b050a">modulate_impl</a>(uint8_t sf, uint32_t samp_rate, uint32_t bw, <span class="keywordtype">bool</span> create_zeros);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">   * @brief Ctrl input handler, this function will be executed on trigger from</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">   * the ctrl_in port</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">   * @param msg : pmt message (should be d_pmt_done)</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a0127d1a524523185e644c2d354dcc04f">ctrl_in_handler</a>(pmt::pmt_t msg);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">   * @brief Destroy the modulate impl object</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a115b4bb223b5ad808fe8766823367c6f">~modulate_impl</a>();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">   * @brief standard gnuradio forecast function that tells the system that input</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">   * data is needed before it can continue and compute the actual modulation</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">   * @param ninput_items_required : number of required input items</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a28e0c84f4fe1595df12af7967a418693">forecast</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">   * @brief Main function where the actual computation is done.</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a71d696a41af9e89ac5dc2b40fc974de0">   79</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a71d696a41af9e89ac5dc2b40fc974de0">m_samples_send</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">   * @brief Gnuradio function that handles the PMT message</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">   * @param message : PMT message (i.e. input data from datasource)</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a0e210cef35dac625e70e3b52b914abe6">msg_handler</a>(pmt::pmt_t message);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">   * @brief Construct a new modulate impl object</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">   * @param sf spreading factor</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">   * @param samp_rate sampling rate</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">   * @param bw bandwith</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a0ac69dfb4fc259b80c4c3baa746b050a">modulate_impl</a>(uint8_t sf, uint32_t samp_rate, uint32_t bw, <span class="keywordtype">bool</span> create_zeros);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">   * @brief Ctrl input handler, this function will be executed on trigger from</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">   * the ctrl_in port</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">   * @param msg : pmt message (should be d_pmt_done)</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a0127d1a524523185e644c2d354dcc04f">ctrl_in_handler</a>(pmt::pmt_t msg);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">   * @brief Destroy the modulate impl object</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a115b4bb223b5ad808fe8766823367c6f">~modulate_impl</a>();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">   * @brief standard gnuradio forecast function that tells the system that input</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">   * data is needed before it can continue and compute the actual modulation</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">   * @param ninput_items_required : number of required input items</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a28e0c84f4fe1595df12af7967a418693">forecast</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">   * @brief Main function where the actual computation is done.</span></div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">   * @param ninput_items : number of input items</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">   * @param input_items : input data  (i.e. output of gray mapping stage)</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">   * @param output_items : output data</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">   * @return int</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a3cfe0381dc856de57622357554995310">general_work</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items,</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                   gr_vector_const_void_star &amp;input_items,</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                   gr_vector_void_star &amp;output_items);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;};</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;} <span class="comment">// namespace gr</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_MODULATE_IMPL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">   * @param ninput_items : number of input items</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">   * @param input_items : input data  (i.e. output of gray mapping stage)</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">   * @param output_items : output data</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">   * @return int</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a3cfe0381dc856de57622357554995310">general_work</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items,</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                   gr_vector_const_void_star &amp;input_items,</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                   gr_vector_void_star &amp;output_items);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_MODULATE_IMPL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_a0d42a486c0e9026f92d0e4dff1c183b4"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#a0d42a486c0e9026f92d0e4dff1c183b4">gr::lora_sdr::modulate_impl::m_samp_rate</a></div><div class="ttdeci">uint32_t m_samp_rate</div><div class="ttdoc">Transmission sampling rate.</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:25</div></div>
@@ -200,6 +201,7 @@ $(document).ready(function(){initNavTree('modulate__impl_8h_source.html',''); in
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html">gr::lora_sdr::modulate_impl</a></div><div class="ttdef"><b>Definition:</b> modulate_impl.h:13</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_a0503404afe218f71be3c58f719760a59"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#a0503404afe218f71be3c58f719760a59">gr::lora_sdr::modulate_impl::m_sf</a></div><div class="ttdeci">uint8_t m_sf</div><div class="ttdoc">Transmission spreading factor.</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:19</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_adab83f8a64cca05269b7af04282515fd"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#adab83f8a64cca05269b7af04282515fd">gr::lora_sdr::modulate_impl::n_up</a></div><div class="ttdeci">uint n_up</div><div class="ttdoc">number of upchirps in the preamble</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:67</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_a71d696a41af9e89ac5dc2b40fc974de0"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#a71d696a41af9e89ac5dc2b40fc974de0">gr::lora_sdr::modulate_impl::m_samples_send</a></div><div class="ttdeci">int m_samples_send</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:79</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_a28e0c84f4fe1595df12af7967a418693"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#a28e0c84f4fe1595df12af7967a418693">gr::lora_sdr::modulate_impl::forecast</a></div><div class="ttdeci">void forecast(int noutput_items, gr_vector_int &amp;ninput_items_required)</div><div class="ttdoc">standard gnuradio forecast function that tells the system that input data is needed before it can con...</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_ac04b5a32e1bb38f64c6d33a8b19a3c35"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#ac04b5a32e1bb38f64c6d33a8b19a3c35">gr::lora_sdr::modulate_impl::m_create_zeros</a></div><div class="ttdeci">bool m_create_zeros</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:77</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_ada87a0de1315f3d5ab842f73e2435ffa"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#ada87a0de1315f3d5ab842f73e2435ffa">gr::lora_sdr::modulate_impl::m_symbols_per_second</a></div><div class="ttdeci">double m_symbols_per_second</div><div class="ttdoc">lora symbols per second</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:43</div></div>

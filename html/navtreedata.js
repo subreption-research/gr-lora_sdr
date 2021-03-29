@@ -57,8 +57,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "RH__RF95__header_8h.html",
-"classgr_1_1lora__sdr_1_1frame__sync__impl.html#a8cafbe752ffa76beaf3c3d61fc4528d4",
-"helpers_8h.html#ab200cb6584b1993e5227cb0c2feaf077"
+"classgr_1_1lora__sdr_1_1frame__sync__impl.html#a8bb40a93d35d2077119cf08569a070e8",
+"helpers_8h.html#a35377ec67f15948ad3e138256dd5cfcd"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
