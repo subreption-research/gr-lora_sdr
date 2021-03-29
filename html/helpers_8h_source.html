@@ -81,67 +81,72 @@ $(document).ready(function(){initNavTree('helpers_8h_source.html',''); initResiz
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * @brief Function that gets the symbol from the received samples</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * </span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * @param samples : the complex samples</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * @param ref_chirp The reference chirp to use to dechirp the lora symbol.</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> * @return uint32_t</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;uint32_t <a class="code" href="namespacegr_1_1lora__sdr.html#a65ee30c2a8d000e032c251d6cdf6995a">get_symbol_val</a>(<span class="keyword">const</span> gr_complex *samples, gr_complex *ref_chirp,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                        uint32_t m_number_of_bins,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                        uint32_t m_samples_per_symbol, <a class="code" href="structkiss__fft__cpx.html">kiss_fft_cpx</a> *cx_in,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                        <a class="code" href="structkiss__fft__cpx.html">kiss_fft_cpx</a> *cx_out);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> * @brief Determine the energy of a symbol.</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> * @param samples The complex symbol to analyse.</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> * @return float</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">float</span> <a class="code" href="namespacegr_1_1lora__sdr.html#a35377ec67f15948ad3e138256dd5cfcd">determine_energy</a>(<span class="keyword">const</span> gr_complex *samples,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                       uint32_t m_samples_per_symbol);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> *  @brief  return the modulus a%b between 0 and (b-1)</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">long</span> <a class="code" href="namespacegr_1_1lora__sdr.html#adb2d67013a158614413dedf3f2ae4503">mod</a>(<span class="keywordtype">long</span> a, <span class="keywordtype">long</span> b);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * @param ref_chirp : the reference chirp to use to dechirp the lora symbol.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> * @param m_number_of_bins : number of bings</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> * @param m_samples_per_symbol : number of samples per LoRa symbol</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> * @param cx_in : fft in</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * @param cx_out : fft out</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> * @return uint32_t </span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;uint32_t <a class="code" href="namespacegr_1_1lora__sdr.html#a65ee30c2a8d000e032c251d6cdf6995a">get_symbol_val</a>(<span class="keyword">const</span> gr_complex *samples, gr_complex *ref_chirp,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                        uint32_t m_number_of_bins,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                        uint32_t m_samples_per_symbol, <a class="code" href="structkiss__fft__cpx.html">kiss_fft_cpx</a> *cx_in,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                        <a class="code" href="structkiss__fft__cpx.html">kiss_fft_cpx</a> *cx_out);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> * @brief Determine the energy of a symbol.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> * @param samples The complex symbol to analyse.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> * @param m_samples_per_symbol : number of samples per LoRa symbol</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> * @return float </span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">float</span> <a class="code" href="namespacegr_1_1lora__sdr.html#a35377ec67f15948ad3e138256dd5cfcd">determine_energy</a>(<span class="keyword">const</span> gr_complex *samples,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                       uint32_t m_samples_per_symbol);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> * @brief Convert an integer into a MSB first vector of bool</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> * @param integer : The integer to convert</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> * @param n_bits : The output number of bits</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> * @return std::vector&lt;bool&gt;</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;std::vector&lt;bool&gt; <a class="code" href="namespacegr_1_1lora__sdr.html#af4e0331fc85f5e094f335feb3d65fb61">int2bool</a>(uint integer, uint8_t n_bits);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> * @brief Convert a MSB first vector of bool to a integer</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> * @param b The boolean vector to convert</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> * @return uint32_t</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;uint32_t <a class="code" href="namespacegr_1_1lora__sdr.html#aff065b957d7d236fcb0c9fd010c9b6a6">bool2int</a>(std::vector&lt;bool&gt; b);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> * @brief Return the reference chirps using s_f=bw</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> * @param upchirp : The pointer to the reference upchirp</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> * @param downchirp : The pointer to the reference downchirp</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> * @param sf : The spreading factor to use</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacegr_1_1lora__sdr.html#ab200cb6584b1993e5227cb0c2feaf077">build_ref_chirps</a>(gr_complex *upchirp, gr_complex *downchirp, uint8_t sf);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"> * @brief Return an modulated upchirp using s_f=bw</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> * @param chirp : The pointer to the modulated upchirp</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> * @param id : The number used to modulate the chirp</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> * @param sf : The spreading factor to use</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacegr_1_1lora__sdr.html#ae0ffa3d5d413320a39a835e8318f3bb0">build_upchirp</a>(gr_complex *chirp, uint32_t <span class="keywordtype">id</span>, uint8_t sf);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> *  @brief  return the modulus a%b between 0 and (b-1)</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">long</span> <a class="code" href="namespacegr_1_1lora__sdr.html#adb2d67013a158614413dedf3f2ae4503">mod</a>(<span class="keywordtype">long</span> a, <span class="keywordtype">long</span> b);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> * @brief Convert an integer into a MSB first vector of bool</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> * @param integer : The integer to convert</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> * @param n_bits : The output number of bits</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> * @return std::vector&lt;bool&gt;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;std::vector&lt;bool&gt; <a class="code" href="namespacegr_1_1lora__sdr.html#af4e0331fc85f5e094f335feb3d65fb61">int2bool</a>(uint integer, uint8_t n_bits);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> * @brief Convert a MSB first vector of bool to a integer</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> * @param b The boolean vector to convert</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> * @return uint32_t</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;uint32_t <a class="code" href="namespacegr_1_1lora__sdr.html#aff065b957d7d236fcb0c9fd010c9b6a6">bool2int</a>(std::vector&lt;bool&gt; b);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> * @brief Return the reference chirps using s_f=bw</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> * @param upchirp : The pointer to the reference upchirp</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"> * @param downchirp : The pointer to the reference downchirp</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"> * @param sf : The spreading factor to use</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacegr_1_1lora__sdr.html#ab200cb6584b1993e5227cb0c2feaf077">build_ref_chirps</a>(gr_complex *upchirp, gr_complex *downchirp, uint8_t sf);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> * @brief Return an modulated upchirp using s_f=bw</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"> * @param chirp : The pointer to the modulated upchirp</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"> * @param id : The number used to modulate the chirp</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"> * @param sf : The spreading factor to use</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacegr_1_1lora__sdr.html#ae0ffa3d5d413320a39a835e8318f3bb0">build_upchirp</a>(gr_complex *chirp, uint32_t <span class="keywordtype">id</span>, uint8_t sf);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;} <span class="comment">// namespace gr</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespacegr_1_1lora__sdr_html_af4e0331fc85f5e094f335feb3d65fb61"><div class="ttname"><a href="namespacegr_1_1lora__sdr.html#af4e0331fc85f5e094f335feb3d65fb61">gr::lora_sdr::int2bool</a></div><div class="ttdeci">std::vector&lt; bool &gt; int2bool(uint integer, uint8_t n_bits)</div><div class="ttdoc">Convert an integer into a MSB first vector of bool.</div></div>
