@@ -20,6 +20,7 @@ var classgr_1_1lora__sdr_1_1frame__detector__impl =
     [ "m_samples_per_symbol", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a927206fcb01985c251ae47f51633c9ad", null ],
     [ "m_sf", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#aa56e034a9db362206e95a40864b718c8", null ],
     [ "m_state", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#abcd7d3a602a0061a1f40b0d2cd073dce", null ],
+    [ "m_threshold", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#ad58a83a1f15d11e9e8875ef74f76e78c", null ],
     [ "mem_vec", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a6f2719678753a044bd025d40ae22b236", null ],
     [ "n_up", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a2be893d874f717f1e8022b41891d49c8", null ],
     [ "symbol_cnt", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#ae55d38b5beef69b0beb091e3f6d89cd8", null ]
