@@ -85,38 +85,36 @@ $(document).ready(function(){initNavTree('frame__sync_8h_source.html',''); initR
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">namespace </span>lora_sdr {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">    /*!</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     * \brief Block that is able to detect the received spectrum and start to find the data such that it can be decoded.</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     * This block is at the heart of the the RX (decoding) side and houses a lot of logic and data manipulation.</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     * For more information about the implementation visit frame_sync_impl</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     * \ingroup lora_sdr</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__sync.html">   38</a></span>&#160;    <span class="keyword">class </span><a class="code" href="api_8h.html#a7f43a70ead7390c8125a3e3273e64b8c">LORA_SDR_API</a> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync.html">frame_sync</a> : <span class="keyword">virtual</span> <span class="keyword">public</span> gr::block</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;     <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__sync.html#acc9df91d7e03a2e5cb5a57dab389c765">   41</a></span>&#160;      <span class="keyword">typedef</span> boost::shared_ptr&lt;frame_sync&gt; <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync.html#acc9df91d7e03a2e5cb5a57dab389c765">sptr</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">      /*!</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">       * \brief Return a shared_ptr to a new instance of lora_sdr::frame_sync.</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">       *</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">       * To avoid accidental use of raw pointers, lora_sdr::frame_sync&#39;s</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">       * constructor is in a private implementation</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">       * class. lora_sdr::frame_sync::make is the public interface for</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">       * creating new instances.</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">       */</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keyword">static</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync.html#acc9df91d7e03a2e5cb5a57dab389c765">sptr</a> make(<span class="keywordtype">float</span> samp_rate, uint32_t bandwidth, uint8_t sf, <span class="keywordtype">bool</span> impl_head);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    };</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  } <span class="comment">// namespace lora_sdr</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     * \brief &lt;+description of block+&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     * \ingroup lora_sdr</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__sync.html">   36</a></span>&#160;    <span class="keyword">class </span><a class="code" href="api_8h.html#a7f43a70ead7390c8125a3e3273e64b8c">LORA_SDR_API</a> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync.html">frame_sync</a> : <span class="keyword">virtual</span> <span class="keyword">public</span> gr::block</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;     <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__sync.html#acc9df91d7e03a2e5cb5a57dab389c765">   39</a></span>&#160;      <span class="keyword">typedef</span> boost::shared_ptr&lt;frame_sync&gt; <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync.html#acc9df91d7e03a2e5cb5a57dab389c765">sptr</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">      /*!</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">       * \brief Return a shared_ptr to a new instance of lora_sdr::frame_sync.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">       *</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">       * To avoid accidental use of raw pointers, lora_sdr::frame_sync&#39;s</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">       * constructor is in a private implementation</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">       * class. lora_sdr::frame_sync::make is the public interface for</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">       * creating new instances.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">       */</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keyword">static</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__sync.html#acc9df91d7e03a2e5cb5a57dab389c765">sptr</a> make(<span class="keywordtype">float</span> samp_rate, uint32_t bandwidth, uint8_t sf, <span class="keywordtype">bool</span> impl_head, std::vector&lt;uint16_t&gt; sync_word);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    };</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  } <span class="comment">// namespace lora_sdr</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_SDR_FRAME_SYNC_H */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_SDR_FRAME_SYNC_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aapi_8h_html_a7f43a70ead7390c8125a3e3273e64b8c"><div class="ttname"><a href="api_8h.html#a7f43a70ead7390c8125a3e3273e64b8c">LORA_SDR_API</a></div><div class="ttdeci">#define LORA_SDR_API</div><div class="ttdef"><b>Definition:</b> api.h:30</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync_html_acc9df91d7e03a2e5cb5a57dab389c765"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync.html#acc9df91d7e03a2e5cb5a57dab389c765">gr::lora_sdr::frame_sync::sptr</a></div><div class="ttdeci">boost::shared_ptr&lt; frame_sync &gt; sptr</div><div class="ttdef"><b>Definition:</b> frame_sync.h:41</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync.html">gr::lora_sdr::frame_sync</a></div><div class="ttdoc">Block that is able to detect the received spectrum and start to find the data such that it can be dec...</div><div class="ttdef"><b>Definition:</b> frame_sync.h:38</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync_html_acc9df91d7e03a2e5cb5a57dab389c765"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync.html#acc9df91d7e03a2e5cb5a57dab389c765">gr::lora_sdr::frame_sync::sptr</a></div><div class="ttdeci">boost::shared_ptr&lt; frame_sync &gt; sptr</div><div class="ttdef"><b>Definition:</b> frame_sync.h:39</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__sync_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__sync.html">gr::lora_sdr::frame_sync</a></div><div class="ttdoc">&lt;+description of block+&gt;</div><div class="ttdef"><b>Definition:</b> frame_sync.h:36</div></div>
 <div class="ttc" id="anamespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> add_crc.h:28</div></div>
 <div class="ttc" id="aapi_8h_html"><div class="ttname"><a href="api_8h.html">api.h</a></div></div>
 <!-- start footer part -->

@@ -52,7 +52,6 @@ $(document).ready(function(){initNavTree('classgr_1_1lora__sdr_1_1interleaver__i
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classgr_1_1lora__sdr_1_1interleaver__impl-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -86,12 +85,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adfe772e35ecb4e837e620a9f88245e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function that does the actual computation of the interleaver.  <a href="classgr_1_1lora__sdr_1_1interleaver__impl.html#adfe772e35ecb4e837e620a9f88245e06">More...</a><br /></td></tr>
 <tr class="separator:adfe772e35ecb4e837e620a9f88245e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a2f1e6660c33fb26575041de39eb89aca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a2f1e6660c33fb26575041de39eb89aca">msg_handler</a> (pmt::pmt_t message)</td></tr>
-<tr class="memdesc:a2f1e6660c33fb26575041de39eb89aca"><td class="mdescLeft">&#160;</td><td class="mdescRight">PMT input message handler. Handles the pmt message (i.e. input data)  <a href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a2f1e6660c33fb26575041de39eb89aca">More...</a><br /></td></tr>
-<tr class="separator:a2f1e6660c33fb26575041de39eb89aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a6945652529f45d51705db59c89974c9a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a6945652529f45d51705db59c89974c9a">m_cr</a></td></tr>
@@ -103,6 +96,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a0ebde855ca3af4ff51d5b006f3121346"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0ebde855ca3af4ff51d5b006f3121346">cw_cnt</a></td></tr>
 <tr class="memdesc:a0ebde855ca3af4ff51d5b006f3121346"><td class="mdescLeft">&#160;</td><td class="mdescRight">variable that counts the number of codewords  <a href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0ebde855ca3af4ff51d5b006f3121346">More...</a><br /></td></tr>
 <tr class="separator:a0ebde855ca3af4ff51d5b006f3121346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c55011e558a16cbe00f0b8b312363d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0c55011e558a16cbe00f0b8b312363d7">m_frame_len</a></td></tr>
+<tr class="memdesc:a0c55011e558a16cbe00f0b8b312363d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">length of the frame in number of items  <a href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0c55011e558a16cbe00f0b8b312363d7">More...</a><br /></td></tr>
+<tr class="separator:a0c55011e558a16cbe00f0b8b312363d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -261,40 +257,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a2f1e6660c33fb26575041de39eb89aca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f1e6660c33fb26575041de39eb89aca">&#9670;&nbsp;</a></span>msg_handler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gr::lora_sdr::interleaver_impl::msg_handler </td>
-          <td>(</td>
-          <td class="paramtype">pmt::pmt_t&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>PMT input message handler. Handles the pmt message (i.e. input data) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">message</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a0ebde855ca3af4ff51d5b006f3121346"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ebde855ca3af4ff51d5b006f3121346">&#9670;&nbsp;</a></span>cw_cnt</h2>
@@ -341,6 +303,30 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Transmission coding rate. </p>
+
+</div>
+</div>
+<a id="a0c55011e558a16cbe00f0b8b312363d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c55011e558a16cbe00f0b8b312363d7">&#9670;&nbsp;</a></span>m_frame_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gr::lora_sdr::interleaver_impl::m_frame_len</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>length of the frame in number of items </p>
 
 </div>
 </div>

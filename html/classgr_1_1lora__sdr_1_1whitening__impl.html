@@ -80,25 +80,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aacb2f2b2b5c5c7253a0f4b6c976f1ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the whitening impl object.  <a href="classgr_1_1lora__sdr_1_1whitening__impl.html#aacb2f2b2b5c5c7253a0f4b6c976f1ee1">More...</a><br /></td></tr>
 <tr class="separator:aacb2f2b2b5c5c7253a0f4b6c976f1ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac72e7729195be616478ff45b9b46f56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1whitening__impl.html#aac72e7729195be616478ff45b9b46f56">work</a> (int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</td></tr>
-<tr class="memdesc:aac72e7729195be616478ff45b9b46f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">General work function, the actual interleaving happens here.  <a href="classgr_1_1lora__sdr_1_1whitening__impl.html#aac72e7729195be616478ff45b9b46f56">More...</a><br /></td></tr>
 <tr class="separator:aac72e7729195be616478ff45b9b46f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ad40d4e990c8f746e5fa57b16cf373466"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1whitening__impl.html#ad40d4e990c8f746e5fa57b16cf373466">msg_handler</a> (pmt::pmt_t message)</td></tr>
-<tr class="memdesc:ad40d4e990c8f746e5fa57b16cf373466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that waits for the input message, if received copy its to m_payload to be used in work function.  <a href="classgr_1_1lora__sdr_1_1whitening__impl.html#ad40d4e990c8f746e5fa57b16cf373466">More...</a><br /></td></tr>
 <tr class="separator:ad40d4e990c8f746e5fa57b16cf373466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aaa2e9d3e266613222132b8b6c4ffa265"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1whitening__impl.html#aaa2e9d3e266613222132b8b6c4ffa265">new_message</a></td></tr>
-<tr class="memdesc:aaa2e9d3e266613222132b8b6c4ffa265"><td class="mdescLeft">&#160;</td><td class="mdescRight">PMT message to indicate that a new message (input data) has to be whitened.  <a href="classgr_1_1lora__sdr_1_1whitening__impl.html#aaa2e9d3e266613222132b8b6c4ffa265">More...</a><br /></td></tr>
+<tr class="memdesc:aaa2e9d3e266613222132b8b6c4ffa265"><td class="mdescLeft">&#160;</td><td class="mdescRight">indicate that a new message has to be whitened  <a href="classgr_1_1lora__sdr_1_1whitening__impl.html#aaa2e9d3e266613222132b8b6c4ffa265">More...</a><br /></td></tr>
 <tr class="separator:aaa2e9d3e266613222132b8b6c4ffa265"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e037f323dc42d3cc0707d59bdd49c21"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1whitening__impl.html#a9e037f323dc42d3cc0707d59bdd49c21">m_payload</a></td></tr>
-<tr class="memdesc:a9e037f323dc42d3cc0707d59bdd49c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variables that stores the payload bytes.  <a href="classgr_1_1lora__sdr_1_1whitening__impl.html#a9e037f323dc42d3cc0707d59bdd49c21">More...</a><br /></td></tr>
+<tr class="memdesc:a9e037f323dc42d3cc0707d59bdd49c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">store the payload bytes  <a href="classgr_1_1lora__sdr_1_1whitening__impl.html#a9e037f323dc42d3cc0707d59bdd49c21">More...</a><br /></td></tr>
 <tr class="separator:a9e037f323dc42d3cc0707d59bdd49c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a827feb264c4a2066c55b9e8473dd9f47"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1whitening__impl.html#a827feb264c4a2066c55b9e8473dd9f47">m_work_done</a></td></tr>
-<tr class="separator:a827feb264c4a2066c55b9e8473dd9f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a549e42fbdd1c1d338f4bd2b22d4662a0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1whitening__impl.html#a549e42fbdd1c1d338f4bd2b22d4662a0">payload_str</a></td></tr>
+<tr class="separator:a549e42fbdd1c1d338f4bd2b22d4662a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -174,14 +172,6 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Function that waits for the input message, if received copy its to m_payload to be used in work function. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">message</td><td>: string input data </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="aac72e7729195be616478ff45b9b46f56"></a>
@@ -215,13 +205,11 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>General work function, the actual interleaving happens here. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">noutput_items</td><td>: number of output items (2 * m_payload.size()) </td></tr>
-    <tr><td class="paramname">input_items</td><td>: standard input item </td></tr>
-    <tr><td class="paramname">output_items</td><td>: output data </td></tr>
+    <tr><td class="paramname">noutput_items</td><td></td></tr>
+    <tr><td class="paramname">input_items</td><td></td></tr>
+    <tr><td class="paramname">output_items</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -250,29 +238,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Variables that stores the payload bytes. </p>
-
-</div>
-</div>
-<a id="a827feb264c4a2066c55b9e8473dd9f47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a827feb264c4a2066c55b9e8473dd9f47">&#9670;&nbsp;</a></span>m_work_done</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool gr::lora_sdr::whitening_impl::m_work_done</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>store the payload bytes </p>
 
 </div>
 </div>
@@ -296,7 +262,29 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>PMT message to indicate that a new message (input data) has to be whitened. </p>
+<p>indicate that a new message has to be whitened </p>
+
+</div>
+</div>
+<a id="a549e42fbdd1c1d338f4bd2b22d4662a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a549e42fbdd1c1d338f4bd2b22d4662a0">&#9670;&nbsp;</a></span>payload_str</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; gr::lora_sdr::whitening_impl::payload_str</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

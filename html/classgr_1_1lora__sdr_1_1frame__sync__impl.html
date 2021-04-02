@@ -68,23 +68,21 @@ Inheritance diagram for gr::lora_sdr::frame_sync_impl:</div>
  <div class="center">
   <img src="classgr_1_1lora__sdr_1_1frame__sync__impl.png" usemap="#gr::lora_5Fsdr::frame_5Fsync_5Fimpl_map" alt=""/>
   <map id="gr::lora_5Fsdr::frame_5Fsync_5Fimpl_map" name="gr::lora_5Fsdr::frame_5Fsync_5Fimpl_map">
-<area href="classgr_1_1lora__sdr_1_1frame__sync.html" title="Block that is able to detect the received spectrum and start to find the data such that it can be dec..." alt="gr::lora_sdr::frame_sync" shape="rect" coords="0,56,178,80"/>
+<area href="classgr_1_1lora__sdr_1_1frame__sync.html" title="&lt;+description of block+&gt;" alt="gr::lora_sdr::frame_sync" shape="rect" coords="0,56,178,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9271e12468d0e5bcc6cd9b25cd7ca23b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a9271e12468d0e5bcc6cd9b25cd7ca23b">frame_sync_impl</a> (float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head)</td></tr>
-<tr class="memdesc:a9271e12468d0e5bcc6cd9b25cd7ca23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new frame sync impl object.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a9271e12468d0e5bcc6cd9b25cd7ca23b">More...</a><br /></td></tr>
-<tr class="separator:a9271e12468d0e5bcc6cd9b25cd7ca23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d45a9cebe6cf3d1933665b7428b8c97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a4d45a9cebe6cf3d1933665b7428b8c97">frame_sync_impl</a> (float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head, std::vector&lt; uint16_t &gt; sync_word)</td></tr>
+<tr class="memdesc:a4d45a9cebe6cf3d1933665b7428b8c97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new frame sync impl object.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a4d45a9cebe6cf3d1933665b7428b8c97">More...</a><br /></td></tr>
+<tr class="separator:a4d45a9cebe6cf3d1933665b7428b8c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba5790ae712b7e49561462e3b4606d78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aba5790ae712b7e49561462e3b4606d78">~frame_sync_impl</a> ()</td></tr>
 <tr class="memdesc:aba5790ae712b7e49561462e3b4606d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the frame sync impl object.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aba5790ae712b7e49561462e3b4606d78">More...</a><br /></td></tr>
 <tr class="separator:aba5790ae712b7e49561462e3b4606d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7860e2694fb44c6af427bce375214d7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a7860e2694fb44c6af427bce375214d7f">forecast</a> (int noutput_items, gr_vector_int &amp;ninput_items_required)</td></tr>
-<tr class="memdesc:a7860e2694fb44c6af427bce375214d7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard gnuradio function to tell the system how many input items are needed to produce one output item.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a7860e2694fb44c6af427bce375214d7f">More...</a><br /></td></tr>
 <tr class="separator:a7860e2694fb44c6af427bce375214d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeaf4f32d03b9c603d3167dc4b99a097b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aeaf4f32d03b9c603d3167dc4b99a097b">general_work</a> (int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</td></tr>
-<tr class="memdesc:aeaf4f32d03b9c603d3167dc4b99a097b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function where the main logic and computation resides. Function will find the window of samples and preform several estimates to synchronies the internal window of samples to have been received (i.e. align them in time and frequency)  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aeaf4f32d03b9c603d3167dc4b99a097b">More...</a><br /></td></tr>
 <tr class="separator:aeaf4f32d03b9c603d3167dc4b99a097b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
@@ -110,18 +108,9 @@ Private Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:abdf0395969da75f873586ddc2ed3ed2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#abdf0395969da75f873586ddc2ed3ed2b">header_cr_handler</a> (pmt::pmt_t cr)</td></tr>
-<tr class="memdesc:abdf0395969da75f873586ddc2ed3ed2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that handles the coding rate.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#abdf0395969da75f873586ddc2ed3ed2b">More...</a><br /></td></tr>
-<tr class="separator:abdf0395969da75f873586ddc2ed3ed2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2d3aead505986fd7443f20b7516c415"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#ac2d3aead505986fd7443f20b7516c415">header_pay_len_handler</a> (pmt::pmt_t pay_len)</td></tr>
-<tr class="memdesc:ac2d3aead505986fd7443f20b7516c415"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that handles the payload length (i.e. data length)  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#ac2d3aead505986fd7443f20b7516c415">More...</a><br /></td></tr>
-<tr class="separator:ac2d3aead505986fd7443f20b7516c415"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf179669215a4186eb9e118c74da1055"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#adf179669215a4186eb9e118c74da1055">header_crc_handler</a> (pmt::pmt_t crc)</td></tr>
-<tr class="memdesc:adf179669215a4186eb9e118c74da1055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to handle the crc of the header.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#adf179669215a4186eb9e118c74da1055">More...</a><br /></td></tr>
-<tr class="separator:adf179669215a4186eb9e118c74da1055"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cafbe752ffa76beaf3c3d61fc4528d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a8cafbe752ffa76beaf3c3d61fc4528d4">frame_err_handler</a> (pmt::pmt_t err)</td></tr>
-<tr class="memdesc:a8cafbe752ffa76beaf3c3d61fc4528d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles frame errors coming from the decoding.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a8cafbe752ffa76beaf3c3d61fc4528d4">More...</a><br /></td></tr>
-<tr class="separator:a8cafbe752ffa76beaf3c3d61fc4528d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af99d769e92de9b830a40ab1b2ba89d68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#af99d769e92de9b830a40ab1b2ba89d68">frame_info_handler</a> (pmt::pmt_t frame_info)</td></tr>
+<tr class="memdesc:af99d769e92de9b830a40ab1b2ba89d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle the reception of the explicit header information, received from the <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html" title="Decode the header of the data spackage. For more information about the implementation visit header_de...">header_decoder</a> block.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#af99d769e92de9b830a40ab1b2ba89d68">More...</a><br /></td></tr>
+<tr class="separator:af99d769e92de9b830a40ab1b2ba89d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81f8d548daf3cf8fe03380e402a8a530"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a81f8d548daf3cf8fe03380e402a8a530">estimate_CFO</a> (gr_complex *samples)</td></tr>
 <tr class="memdesc:a81f8d548daf3cf8fe03380e402a8a530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the value of fractional part of the CFO using RCTSL.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a81f8d548daf3cf8fe03380e402a8a530">More...</a><br /></td></tr>
 <tr class="separator:a81f8d548daf3cf8fe03380e402a8a530"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,9 +120,15 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a7650eac6bb57346f4ab538988b7ba4ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a7650eac6bb57346f4ab538988b7ba4ba">estimate_STO</a> ()</td></tr>
 <tr class="memdesc:a7650eac6bb57346f4ab538988b7ba4ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the value of fractional part of the STO from m_consec_up.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a7650eac6bb57346f4ab538988b7ba4ba">More...</a><br /></td></tr>
 <tr class="separator:a7650eac6bb57346f4ab538988b7ba4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a106976a23afd526432feeab776b09ec8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a106976a23afd526432feeab776b09ec8">header_err_handler</a> (pmt::pmt_t err)</td></tr>
-<tr class="memdesc:a106976a23afd526432feeab776b09ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the error message coming from the header decoding.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a106976a23afd526432feeab776b09ec8">More...</a><br /></td></tr>
-<tr class="separator:a106976a23afd526432feeab776b09ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a0f5f8aefdd0a8b21bb5095ddd729a8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a7a0f5f8aefdd0a8b21bb5095ddd729a8">get_symbol_val</a> (const gr_complex *samples, gr_complex *ref_chirp)</td></tr>
+<tr class="memdesc:a7a0f5f8aefdd0a8b21bb5095ddd729a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recover the lora symbol value using argmax of the dechirped symbol FFT. Returns -1 in case of an fft window containing no energy to handle noiseless simulations.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a7a0f5f8aefdd0a8b21bb5095ddd729a8">More...</a><br /></td></tr>
+<tr class="separator:a7a0f5f8aefdd0a8b21bb5095ddd729a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f1a359b54ddc731d4327d8c72a19dab"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a3f1a359b54ddc731d4327d8c72a19dab">determine_energy</a> (const gr_complex *samples)</td></tr>
+<tr class="memdesc:a3f1a359b54ddc731d4327d8c72a19dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the energy of a symbol.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a3f1a359b54ddc731d4327d8c72a19dab">More...</a><br /></td></tr>
+<tr class="separator:a3f1a359b54ddc731d4327d8c72a19dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a283eae1d4c91804cbb25d032590b6cf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a283eae1d4c91804cbb25d032590b6cf9">header_err_handler</a> (pmt::pmt_t payload_len)</td></tr>
+<tr class="memdesc:a283eae1d4c91804cbb25d032590b6cf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the error message coming from the header decoding.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a283eae1d4c91804cbb25d032590b6cf9">More...</a><br /></td></tr>
+<tr class="separator:a283eae1d4c91804cbb25d032590b6cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -141,7 +136,7 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:af6f15eff69be46a3ebbc6711f1f0dcd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current state of the synchronization.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#af6f15eff69be46a3ebbc6711f1f0dcd3">More...</a><br /></td></tr>
 <tr class="separator:af6f15eff69be46a3ebbc6711f1f0dcd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a4ae1521f6018562e434771c26d7e66"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a9a4ae1521f6018562e434771c26d7e66">m_bw</a></td></tr>
-<tr class="memdesc:a9a4ae1521f6018562e434771c26d7e66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bandwith.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a9a4ae1521f6018562e434771c26d7e66">More...</a><br /></td></tr>
+<tr class="memdesc:a9a4ae1521f6018562e434771c26d7e66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bandwidth.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a9a4ae1521f6018562e434771c26d7e66">More...</a><br /></td></tr>
 <tr class="separator:a9a4ae1521f6018562e434771c26d7e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab684e902c9a0d246d5f0c54dfa66936d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#ab684e902c9a0d246d5f0c54dfa66936d">m_samp_rate</a></td></tr>
 <tr class="memdesc:ab684e902c9a0d246d5f0c54dfa66936d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sampling rate.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#ab684e902c9a0d246d5f0c54dfa66936d">More...</a><br /></td></tr>
@@ -153,32 +148,32 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:a89bdc0fa6ac011519600b410dd1de931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coding rate.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a89bdc0fa6ac011519600b410dd1de931">More...</a><br /></td></tr>
 <tr class="separator:a89bdc0fa6ac011519600b410dd1de931"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2233e37b5a8ca7b75e09c3a7a829b511"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a2233e37b5a8ca7b75e09c3a7a829b511">m_pay_len</a></td></tr>
-<tr class="memdesc:a2233e37b5a8ca7b75e09c3a7a829b511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Payload length.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a2233e37b5a8ca7b75e09c3a7a829b511">More...</a><br /></td></tr>
+<tr class="memdesc:a2233e37b5a8ca7b75e09c3a7a829b511"><td class="mdescLeft">&#160;</td><td class="mdescRight">payload length  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a2233e37b5a8ca7b75e09c3a7a829b511">More...</a><br /></td></tr>
 <tr class="separator:a2233e37b5a8ca7b75e09c3a7a829b511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a003179df5ff8544990a851a42fe0807d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a003179df5ff8544990a851a42fe0807d">m_has_crc</a></td></tr>
 <tr class="memdesc:a003179df5ff8544990a851a42fe0807d"><td class="mdescLeft">&#160;</td><td class="mdescRight">CRC presence.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a003179df5ff8544990a851a42fe0807d">More...</a><br /></td></tr>
 <tr class="separator:a003179df5ff8544990a851a42fe0807d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc6bbefe889cbdafce47e1afc6bb2de"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aedc6bbefe889cbdafce47e1afc6bb2de">m_invalid_header</a></td></tr>
+<tr class="memdesc:aedc6bbefe889cbdafce47e1afc6bb2de"><td class="mdescLeft">&#160;</td><td class="mdescRight">invalid header checksum  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aedc6bbefe889cbdafce47e1afc6bb2de">More...</a><br /></td></tr>
+<tr class="separator:aedc6bbefe889cbdafce47e1afc6bb2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8760cc4cf884ead3d41c3c7ec7ff9678"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a8760cc4cf884ead3d41c3c7ec7ff9678">m_impl_head</a></td></tr>
-<tr class="memdesc:a8760cc4cf884ead3d41c3c7ec7ff9678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use implicit header mode.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a8760cc4cf884ead3d41c3c7ec7ff9678">More...</a><br /></td></tr>
+<tr class="memdesc:a8760cc4cf884ead3d41c3c7ec7ff9678"><td class="mdescLeft">&#160;</td><td class="mdescRight">use implicit header mode  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a8760cc4cf884ead3d41c3c7ec7ff9678">More...</a><br /></td></tr>
 <tr class="separator:a8760cc4cf884ead3d41c3c7ec7ff9678"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bb5eeff6d22579aa578477055dfc0a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a2bb5eeff6d22579aa578477055dfc0a4">received_cr</a></td></tr>
-<tr class="memdesc:a2bb5eeff6d22579aa578477055dfc0a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that the coding rate has been given by the <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html" title="Decode the header of the data spackage. For more information about the implementation visit header_de...">header_decoder</a> block.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a2bb5eeff6d22579aa578477055dfc0a4">More...</a><br /></td></tr>
-<tr class="separator:a2bb5eeff6d22579aa578477055dfc0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5f3945fed7b5b7540703552da7451e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aa5f3945fed7b5b7540703552da7451e9">received_crc</a></td></tr>
-<tr class="memdesc:aa5f3945fed7b5b7540703552da7451e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that the crc presence has been given by the <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html" title="Decode the header of the data spackage. For more information about the implementation visit header_de...">header_decoder</a> block.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aa5f3945fed7b5b7540703552da7451e9">More...</a><br /></td></tr>
-<tr class="separator:aa5f3945fed7b5b7540703552da7451e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c77a061b85d8ddabcdc5371061f43b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a3c77a061b85d8ddabcdc5371061f43b6">received_pay_len</a></td></tr>
-<tr class="memdesc:a3c77a061b85d8ddabcdc5371061f43b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that the payload length has been given by the <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html" title="Decode the header of the data spackage. For more information about the implementation visit header_de...">header_decoder</a> block.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a3c77a061b85d8ddabcdc5371061f43b6">More...</a><br /></td></tr>
-<tr class="separator:a3c77a061b85d8ddabcdc5371061f43b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55d4053bc0cdf4c97aa90eaf260f1a85"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a55d4053bc0cdf4c97aa90eaf260f1a85">m_sync_words</a></td></tr>
+<tr class="memdesc:a55d4053bc0cdf4c97aa90eaf260f1a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector containing the two sync words (network identifiers)  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a55d4053bc0cdf4c97aa90eaf260f1a85">More...</a><br /></td></tr>
+<tr class="separator:a55d4053bc0cdf4c97aa90eaf260f1a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3f2860b9a9ab9ec2771246f586404ea"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#ae3f2860b9a9ab9ec2771246f586404ea">m_number_of_bins</a></td></tr>
 <tr class="memdesc:ae3f2860b9a9ab9ec2771246f586404ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of bins in each lora Symbol.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#ae3f2860b9a9ab9ec2771246f586404ea">More...</a><br /></td></tr>
 <tr class="separator:ae3f2860b9a9ab9ec2771246f586404ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a470a1f224c9b0dd35c1daab4df69eed9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a470a1f224c9b0dd35c1daab4df69eed9">m_samples_per_symbol</a></td></tr>
 <tr class="memdesc:a470a1f224c9b0dd35c1daab4df69eed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of samples received per lora symbols.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a470a1f224c9b0dd35c1daab4df69eed9">More...</a><br /></td></tr>
 <tr class="separator:a470a1f224c9b0dd35c1daab4df69eed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdccba1627ee3b149979e5add9d077f7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#abdccba1627ee3b149979e5add9d077f7">symb_numb</a></td></tr>
-<tr class="memdesc:abdccba1627ee3b149979e5add9d077f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of payload loar symbols  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#abdccba1627ee3b149979e5add9d077f7">More...</a><br /></td></tr>
-<tr class="separator:abdccba1627ee3b149979e5add9d077f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc7c37b0a40f775575ff31d2c992655"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a1fc7c37b0a40f775575ff31d2c992655">m_symb_numb</a></td></tr>
+<tr class="memdesc:a1fc7c37b0a40f775575ff31d2c992655"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of payload lora symbols  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a1fc7c37b0a40f775575ff31d2c992655">More...</a><br /></td></tr>
+<tr class="separator:a1fc7c37b0a40f775575ff31d2c992655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab09a0b1e253fe2adbde9b8172361a7a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aab09a0b1e253fe2adbde9b8172361a7a">m_received_head</a></td></tr>
+<tr class="memdesc:aab09a0b1e253fe2adbde9b8172361a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">indicate that the header has be decoded and received by this block  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aab09a0b1e253fe2adbde9b8172361a7a">More...</a><br /></td></tr>
+<tr class="separator:aab09a0b1e253fe2adbde9b8172361a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a383c6483d547e6510c88afffa16a7013"><td class="memItemLeft" align="right" valign="top">std::vector&lt; gr_complex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a383c6483d547e6510c88afffa16a7013">in_down</a></td></tr>
 <tr class="memdesc:a383c6483d547e6510c88afffa16a7013"><td class="mdescLeft">&#160;</td><td class="mdescRight">downsampled input  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a383c6483d547e6510c88afffa16a7013">More...</a><br /></td></tr>
 <tr class="separator:a383c6483d547e6510c88afffa16a7013"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,12 +198,6 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a14c396c5df39fa330aba0869e6033048"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a14c396c5df39fa330aba0869e6033048">symbols_to_skip</a></td></tr>
 <tr class="memdesc:a14c396c5df39fa330aba0869e6033048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of integer symbol to skip after consecutive upchirps.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a14c396c5df39fa330aba0869e6033048">More...</a><br /></td></tr>
 <tr class="separator:a14c396c5df39fa330aba0869e6033048"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23563e7b9e8c3febede3510ce97beaff"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a23563e7b9e8c3febede3510ce97beaff">net_id_1</a></td></tr>
-<tr class="memdesc:a23563e7b9e8c3febede3510ce97beaff"><td class="mdescLeft">&#160;</td><td class="mdescRight">network identifier 1  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a23563e7b9e8c3febede3510ce97beaff">More...</a><br /></td></tr>
-<tr class="separator:a23563e7b9e8c3febede3510ce97beaff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a494befbdb0b75b127c616b9d4a736255"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a494befbdb0b75b127c616b9d4a736255">net_id_2</a></td></tr>
-<tr class="memdesc:a494befbdb0b75b127c616b9d4a736255"><td class="mdescLeft">&#160;</td><td class="mdescRight">network identifier 2  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a494befbdb0b75b127c616b9d4a736255">More...</a><br /></td></tr>
-<tr class="separator:a494befbdb0b75b127c616b9d4a736255"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46cfbafe7bdf7f1f75812fc21f510736"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structkiss__fft__cpx.html">kiss_fft_cpx</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a46cfbafe7bdf7f1f75812fc21f510736">cx_in</a></td></tr>
 <tr class="memdesc:a46cfbafe7bdf7f1f75812fc21f510736"><td class="mdescLeft">&#160;</td><td class="mdescRight">input of the FFT  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a46cfbafe7bdf7f1f75812fc21f510736">More...</a><br /></td></tr>
 <tr class="separator:a46cfbafe7bdf7f1f75812fc21f510736"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,15 +219,15 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a59d7020858f6c9002d54985231f16d7d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a59d7020858f6c9002d54985231f16d7d">k_hat</a></td></tr>
 <tr class="memdesc:a59d7020858f6c9002d54985231f16d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">integer part of CFO+STO  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a59d7020858f6c9002d54985231f16d7d">More...</a><br /></td></tr>
 <tr class="separator:a59d7020858f6c9002d54985231f16d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e4738dbc0b13031ff68bc4c27d10ac5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a0e4738dbc0b13031ff68bc4c27d10ac5">lambda_cfo</a></td></tr>
-<tr class="memdesc:a0e4738dbc0b13031ff68bc4c27d10ac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">fractional part of CFO  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a0e4738dbc0b13031ff68bc4c27d10ac5">More...</a><br /></td></tr>
-<tr class="separator:a0e4738dbc0b13031ff68bc4c27d10ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5584e0986ebc2d80c92291787a189a1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#ab5584e0986ebc2d80c92291787a189a1">lambda_bernier</a></td></tr>
-<tr class="memdesc:ab5584e0986ebc2d80c92291787a189a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">fractional part of CFO using Berniers algo  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#ab5584e0986ebc2d80c92291787a189a1">More...</a><br /></td></tr>
-<tr class="separator:ab5584e0986ebc2d80c92291787a189a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2c64922abd169455d933c8eb74ecfcc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#ae2c64922abd169455d933c8eb74ecfcc">lambda_sto</a></td></tr>
-<tr class="memdesc:ae2c64922abd169455d933c8eb74ecfcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">fractional part of CFO  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#ae2c64922abd169455d933c8eb74ecfcc">More...</a><br /></td></tr>
-<tr class="separator:ae2c64922abd169455d933c8eb74ecfcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c1ef19350c10d99ba072a4e8a9a410"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#ad9c1ef19350c10d99ba072a4e8a9a410">lambda_cfo</a></td></tr>
+<tr class="memdesc:ad9c1ef19350c10d99ba072a4e8a9a410"><td class="mdescLeft">&#160;</td><td class="mdescRight">fractional part of CFO  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#ad9c1ef19350c10d99ba072a4e8a9a410">More...</a><br /></td></tr>
+<tr class="separator:ad9c1ef19350c10d99ba072a4e8a9a410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9f084c6c81697959959922938c03c4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a5a9f084c6c81697959959922938c03c4">lambda_bernier</a></td></tr>
+<tr class="memdesc:a5a9f084c6c81697959959922938c03c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">fractional part of CFO using Berniers algo  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a5a9f084c6c81697959959922938c03c4">More...</a><br /></td></tr>
+<tr class="separator:a5a9f084c6c81697959959922938c03c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68a0d9b3eb9e1129aed75d33aa3572fd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a68a0d9b3eb9e1129aed75d33aa3572fd">lambda_sto</a></td></tr>
+<tr class="memdesc:a68a0d9b3eb9e1129aed75d33aa3572fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">fractional part of CFO  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a68a0d9b3eb9e1129aed75d33aa3572fd">More...</a><br /></td></tr>
+<tr class="separator:a68a0d9b3eb9e1129aed75d33aa3572fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2849c607a48302dc88bcc823ea57c641"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a2849c607a48302dc88bcc823ea57c641">cfo_sto_est</a></td></tr>
 <tr class="memdesc:a2849c607a48302dc88bcc823ea57c641"><td class="mdescLeft">&#160;</td><td class="mdescRight">indicate that the estimation of lambda_cfo/sto has been performed  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a2849c607a48302dc88bcc823ea57c641">More...</a><br /></td></tr>
 <tr class="separator:a2849c607a48302dc88bcc823ea57c641"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,6 +249,12 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a13f07cd01445600e72d1d5c0865d92c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a13f07cd01445600e72d1d5c0865d92c2">net_id_off</a></td></tr>
 <tr class="memdesc:a13f07cd01445600e72d1d5c0865d92c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">offset of the network identifier  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a13f07cd01445600e72d1d5c0865d92c2">More...</a><br /></td></tr>
 <tr class="separator:a13f07cd01445600e72d1d5c0865d92c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79b877b1caf2c1412bccffe9468dbd32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a79b877b1caf2c1412bccffe9468dbd32">off_by_one_id</a></td></tr>
+<tr class="memdesc:a79b877b1caf2c1412bccffe9468dbd32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that the network identifiers where off by one and corrected.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a79b877b1caf2c1412bccffe9468dbd32">More...</a><br /></td></tr>
+<tr class="separator:a79b877b1caf2c1412bccffe9468dbd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebada7ee90cda6aa98c6333f1e0ea6c5"><td class="memItemLeft" align="right" valign="top">std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aebada7ee90cda6aa98c6333f1e0ea6c5">sync_log</a></td></tr>
+<tr class="memdesc:aebada7ee90cda6aa98c6333f1e0ea6c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">savefile containing the offset estimation and the signal strength estimation  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aebada7ee90cda6aa98c6333f1e0ea6c5">More...</a><br /></td></tr>
+<tr class="separator:aebada7ee90cda6aa98c6333f1e0ea6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -267,9 +262,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:acc9df91d7e03a2e5cb5a57dab389c765 inherit pub_types_classgr_1_1lora__sdr_1_1frame__sync"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html">frame_sync</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html#acc9df91d7e03a2e5cb5a57dab389c765">sptr</a></td></tr>
 <tr class="separator:acc9df91d7e03a2e5cb5a57dab389c765 inherit pub_types_classgr_1_1lora__sdr_1_1frame__sync"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classgr_1_1lora__sdr_1_1frame__sync"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classgr_1_1lora__sdr_1_1frame__sync')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html">gr::lora_sdr::frame_sync</a></td></tr>
-<tr class="memitem:a776adf7b13bb1555de3dc0a97b3940cc inherit pub_static_methods_classgr_1_1lora__sdr_1_1frame__sync"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html#acc9df91d7e03a2e5cb5a57dab389c765">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html#a776adf7b13bb1555de3dc0a97b3940cc">make</a> (float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head)</td></tr>
-<tr class="memdesc:a776adf7b13bb1555de3dc0a97b3940cc inherit pub_static_methods_classgr_1_1lora__sdr_1_1frame__sync"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html" title="Block that is able to detect the received spectrum and start to find the data such that it can be dec...">lora_sdr::frame_sync</a>.  <a href="classgr_1_1lora__sdr_1_1frame__sync.html#a776adf7b13bb1555de3dc0a97b3940cc">More...</a><br /></td></tr>
-<tr class="separator:a776adf7b13bb1555de3dc0a97b3940cc inherit pub_static_methods_classgr_1_1lora__sdr_1_1frame__sync"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ab5e3de1d9207614c01bdc849d4eff inherit pub_static_methods_classgr_1_1lora__sdr_1_1frame__sync"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html#acc9df91d7e03a2e5cb5a57dab389c765">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html#af1ab5e3de1d9207614c01bdc849d4eff">make</a> (float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head, std::vector&lt; uint16_t &gt; sync_word)</td></tr>
+<tr class="memdesc:af1ab5e3de1d9207614c01bdc849d4eff inherit pub_static_methods_classgr_1_1lora__sdr_1_1frame__sync"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html" title="&lt;+description of block+&gt;">lora_sdr::frame_sync</a>.  <a href="classgr_1_1lora__sdr_1_1frame__sync.html#af1ab5e3de1d9207614c01bdc849d4eff">More...</a><br /></td></tr>
+<tr class="separator:af1ab5e3de1d9207614c01bdc849d4eff inherit pub_static_methods_classgr_1_1lora__sdr_1_1frame__sync"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ac3ebff914014982b368f2cf729e3a43d"></a>
@@ -347,8 +342,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9271e12468d0e5bcc6cd9b25cd7ca23b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9271e12468d0e5bcc6cd9b25cd7ca23b">&#9670;&nbsp;</a></span>frame_sync_impl()</h2>
+<a id="a4d45a9cebe6cf3d1933665b7428b8c97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d45a9cebe6cf3d1933665b7428b8c97">&#9670;&nbsp;</a></span>frame_sync_impl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -375,7 +370,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>impl_head</em>&#160;</td>
+          <td class="paramname"><em>impl_head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; uint16_t &gt;&#160;</td>
+          <td class="paramname"><em>sync_word</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -388,10 +389,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Construct a new frame sync impl object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">samp_rate</td><td>: sampling rate </td></tr>
-    <tr><td class="paramname">bandwidth</td><td>: bandwidth </td></tr>
-    <tr><td class="paramname">sf</td><td>: spreading factor </td></tr>
-    <tr><td class="paramname">impl_head</td><td>: boolean to tell if system is in implicit header mode or not </td></tr>
+    <tr><td class="paramname">samp_rate</td><td></td></tr>
+    <tr><td class="paramname">bandwidth</td><td></td></tr>
+    <tr><td class="paramname">sf</td><td></td></tr>
+    <tr><td class="paramname">impl_head</td><td></td></tr>
+    <tr><td class="paramname">sync_word</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -418,6 +420,40 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3f1a359b54ddc731d4327d8c72a19dab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f1a359b54ddc731d4327d8c72a19dab">&#9670;&nbsp;</a></span>determine_energy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gr::lora_sdr::frame_sync_impl::determine_energy </td>
+          <td>(</td>
+          <td class="paramtype">const gr_complex *&#160;</td>
+          <td class="paramname"><em>samples</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine the energy of a symbol. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">samples</td><td>The complex symbol to analyse. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a81f8d548daf3cf8fe03380e402a8a530"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81f8d548daf3cf8fe03380e402a8a530">&#9670;&nbsp;</a></span>estimate_CFO()</h2>
 
@@ -531,20 +567,18 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Standard gnuradio function to tell the system how many input items are needed to produce one output item. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">noutput_items</td><td>: number of output items </td></tr>
-    <tr><td class="paramname">ninput_items_required</td><td>: number of required input items </td></tr>
+    <tr><td class="paramname">noutput_items</td><td></td></tr>
+    <tr><td class="paramname">ninput_items_required</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a8cafbe752ffa76beaf3c3d61fc4528d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cafbe752ffa76beaf3c3d61fc4528d4">&#9670;&nbsp;</a></span>frame_err_handler()</h2>
+<a id="af99d769e92de9b830a40ab1b2ba89d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af99d769e92de9b830a40ab1b2ba89d68">&#9670;&nbsp;</a></span>frame_info_handler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -553,10 +587,10 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void gr::lora_sdr::frame_sync_impl::frame_err_handler </td>
+          <td class="memname">void gr::lora_sdr::frame_sync_impl::frame_info_handler </td>
           <td>(</td>
           <td class="paramtype">pmt::pmt_t&#160;</td>
-          <td class="paramname"><em>err</em></td><td>)</td>
+          <td class="paramname"><em>frame_info</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -567,13 +601,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Handles frame errors coming from the decoding. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">err</td><td>: error message </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Handle the reception of the explicit header information, received from the <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html" title="Decode the header of the data spackage. For more information about the implementation visit header_de...">header_decoder</a> block. </p>
 
 </div>
 </div>
@@ -614,14 +642,12 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Main function where the main logic and computation resides. Function will find the window of samples and preform several estimates to synchronies the internal window of samples to have been received (i.e. align them in time and frequency) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">noutput_items</td><td>: number of output items </td></tr>
-    <tr><td class="paramname">ninput_items</td><td>: number of input items </td></tr>
-    <tr><td class="paramname">input_items</td><td>: input items </td></tr>
-    <tr><td class="paramname">output_items</td><td>: output items (i.e. start of Rx decoding) </td></tr>
+    <tr><td class="paramname">noutput_items</td><td></td></tr>
+    <tr><td class="paramname">ninput_items</td><td></td></tr>
+    <tr><td class="paramname">input_items</td><td></td></tr>
+    <tr><td class="paramname">output_items</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -629,8 +655,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="abdf0395969da75f873586ddc2ed3ed2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdf0395969da75f873586ddc2ed3ed2b">&#9670;&nbsp;</a></span>header_cr_handler()</h2>
+<a id="a7a0f5f8aefdd0a8b21bb5095ddd729a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a0f5f8aefdd0a8b21bb5095ddd729a8">&#9670;&nbsp;</a></span>get_symbol_val()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -639,11 +665,21 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void gr::lora_sdr::frame_sync_impl::header_cr_handler </td>
+          <td class="memname">uint32_t gr::lora_sdr::frame_sync_impl::get_symbol_val </td>
           <td>(</td>
-          <td class="paramtype">pmt::pmt_t&#160;</td>
-          <td class="paramname"><em>cr</em></td><td>)</td>
+          <td class="paramtype">const gr_complex *&#160;</td>
+          <td class="paramname"><em>samples</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">gr_complex *&#160;</td>
+          <td class="paramname"><em>ref_chirp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -653,52 +689,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Function that handles the coding rate. </p>
+<p>Recover the lora symbol value using argmax of the dechirped symbol FFT. Returns -1 in case of an fft window containing no energy to handle noiseless simulations. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cr</td><td>: coding rate </td></tr>
+    <tr><td class="paramname">samples</td><td>The pointer to the symbol beginning. </td></tr>
+    <tr><td class="paramname">ref_chirp</td><td>The reference chirp to use to dechirp the lora symbol. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="adf179669215a4186eb9e118c74da1055"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf179669215a4186eb9e118c74da1055">&#9670;&nbsp;</a></span>header_crc_handler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gr::lora_sdr::frame_sync_impl::header_crc_handler </td>
-          <td>(</td>
-          <td class="paramtype">pmt::pmt_t&#160;</td>
-          <td class="paramname"><em>crc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Function to handle the crc of the header. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">crc</td><td>: crc </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a106976a23afd526432feeab776b09ec8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a106976a23afd526432feeab776b09ec8">&#9670;&nbsp;</a></span>header_err_handler()</h2>
+<a id="a283eae1d4c91804cbb25d032590b6cf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a283eae1d4c91804cbb25d032590b6cf9">&#9670;&nbsp;</a></span>header_err_handler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -710,7 +713,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void gr::lora_sdr::frame_sync_impl::header_err_handler </td>
           <td>(</td>
           <td class="paramtype">pmt::pmt_t&#160;</td>
-          <td class="paramname"><em>err</em></td><td>)</td>
+          <td class="paramname"><em>payload_len</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -722,46 +725,6 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Handles the error message coming from the header decoding. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">err</td><td>: error message </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ac2d3aead505986fd7443f20b7516c415"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2d3aead505986fd7443f20b7516c415">&#9670;&nbsp;</a></span>header_pay_len_handler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gr::lora_sdr::frame_sync_impl::header_pay_len_handler </td>
-          <td>(</td>
-          <td class="paramtype">pmt::pmt_t&#160;</td>
-          <td class="paramname"><em>pay_len</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Function that handles the payload length (i.e. data length) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pay_len</td><td>:payload length </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1030,8 +993,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ab5584e0986ebc2d80c92291787a189a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5584e0986ebc2d80c92291787a189a1">&#9670;&nbsp;</a></span>lambda_bernier</h2>
+<a id="a5a9f084c6c81697959959922938c03c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a9f084c6c81697959959922938c03c4">&#9670;&nbsp;</a></span>lambda_bernier</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1040,7 +1003,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double gr::lora_sdr::frame_sync_impl::lambda_bernier</td>
+          <td class="memname">float gr::lora_sdr::frame_sync_impl::lambda_bernier</td>
         </tr>
       </table>
   </td>
@@ -1054,8 +1017,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a0e4738dbc0b13031ff68bc4c27d10ac5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e4738dbc0b13031ff68bc4c27d10ac5">&#9670;&nbsp;</a></span>lambda_cfo</h2>
+<a id="ad9c1ef19350c10d99ba072a4e8a9a410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9c1ef19350c10d99ba072a4e8a9a410">&#9670;&nbsp;</a></span>lambda_cfo</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1064,7 +1027,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double gr::lora_sdr::frame_sync_impl::lambda_cfo</td>
+          <td class="memname">float gr::lora_sdr::frame_sync_impl::lambda_cfo</td>
         </tr>
       </table>
   </td>
@@ -1078,8 +1041,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ae2c64922abd169455d933c8eb74ecfcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2c64922abd169455d933c8eb74ecfcc">&#9670;&nbsp;</a></span>lambda_sto</h2>
+<a id="a68a0d9b3eb9e1129aed75d33aa3572fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68a0d9b3eb9e1129aed75d33aa3572fd">&#9670;&nbsp;</a></span>lambda_sto</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1088,7 +1051,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double gr::lora_sdr::frame_sync_impl::lambda_sto</td>
+          <td class="memname">float gr::lora_sdr::frame_sync_impl::lambda_sto</td>
         </tr>
       </table>
   </td>
@@ -1122,7 +1085,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Bandwith. </p>
+<p>Bandwidth. </p>
 
 </div>
 </div>
@@ -1218,7 +1181,31 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Use implicit header mode. </p>
+<p>use implicit header mode </p>
+
+</div>
+</div>
+<a id="aedc6bbefe889cbdafce47e1afc6bb2de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedc6bbefe889cbdafce47e1afc6bb2de">&#9670;&nbsp;</a></span>m_invalid_header</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t gr::lora_sdr::frame_sync_impl::m_invalid_header</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>invalid header checksum </p>
 
 </div>
 </div>
@@ -1266,7 +1253,31 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Payload length. </p>
+<p>payload length </p>
+
+</div>
+</div>
+<a id="aab09a0b1e253fe2adbde9b8172361a7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab09a0b1e253fe2adbde9b8172361a7a">&#9670;&nbsp;</a></span>m_received_head</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gr::lora_sdr::frame_sync_impl::m_received_head</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>indicate that the header has be decoded and received by this block </p>
 
 </div>
 </div>
@@ -1366,6 +1377,54 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a1fc7c37b0a40f775575ff31d2c992655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fc7c37b0a40f775575ff31d2c992655">&#9670;&nbsp;</a></span>m_symb_numb</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t gr::lora_sdr::frame_sync_impl::m_symb_numb</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>number of payload lora symbols </p>
+
+</div>
+</div>
+<a id="a55d4053bc0cdf4c97aa90eaf260f1a85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55d4053bc0cdf4c97aa90eaf260f1a85">&#9670;&nbsp;</a></span>m_sync_words</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;uint16_t&gt; gr::lora_sdr::frame_sync_impl::m_sync_words</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>vector containing the two sync words (network identifiers) </p>
+
+</div>
+</div>
 <a id="af45c81b0f96ffcc571b9cf1cade06b98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af45c81b0f96ffcc571b9cf1cade06b98">&#9670;&nbsp;</a></span>m_upchirp</h2>
 
@@ -1414,54 +1473,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a23563e7b9e8c3febede3510ce97beaff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23563e7b9e8c3febede3510ce97beaff">&#9670;&nbsp;</a></span>net_id_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t gr::lora_sdr::frame_sync_impl::net_id_1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>network identifier 1 </p>
-
-</div>
-</div>
-<a id="a494befbdb0b75b127c616b9d4a736255"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a494befbdb0b75b127c616b9d4a736255">&#9670;&nbsp;</a></span>net_id_2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t gr::lora_sdr::frame_sync_impl::net_id_2</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>network identifier 2 </p>
-
-</div>
-</div>
 <a id="a13f07cd01445600e72d1d5c0865d92c2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a13f07cd01445600e72d1d5c0865d92c2">&#9670;&nbsp;</a></span>net_id_off</h2>
 
@@ -1483,6 +1494,30 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>offset of the network identifier </p>
+
+</div>
+</div>
+<a id="a79b877b1caf2c1412bccffe9468dbd32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79b877b1caf2c1412bccffe9468dbd32">&#9670;&nbsp;</a></span>off_by_one_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gr::lora_sdr::frame_sync_impl::off_by_one_id</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicate that the network identifiers where off by one and corrected. </p>
 
 </div>
 </div>
@@ -1534,78 +1569,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a2bb5eeff6d22579aa578477055dfc0a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bb5eeff6d22579aa578477055dfc0a4">&#9670;&nbsp;</a></span>received_cr</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool gr::lora_sdr::frame_sync_impl::received_cr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Indicate that the coding rate has been given by the <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html" title="Decode the header of the data spackage. For more information about the implementation visit header_de...">header_decoder</a> block. </p>
-
-</div>
-</div>
-<a id="aa5f3945fed7b5b7540703552da7451e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5f3945fed7b5b7540703552da7451e9">&#9670;&nbsp;</a></span>received_crc</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool gr::lora_sdr::frame_sync_impl::received_crc</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Indicate that the crc presence has been given by the <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html" title="Decode the header of the data spackage. For more information about the implementation visit header_de...">header_decoder</a> block. </p>
-
-</div>
-</div>
-<a id="a3c77a061b85d8ddabcdc5371061f43b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c77a061b85d8ddabcdc5371061f43b6">&#9670;&nbsp;</a></span>received_pay_len</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool gr::lora_sdr::frame_sync_impl::received_pay_len</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Indicate that the payload length has been given by the <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html" title="Decode the header of the data spackage. For more information about the implementation visit header_de...">header_decoder</a> block. </p>
-
-</div>
-</div>
 <a id="a4068c720254e46d5274b20ef99cd08b7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4068c720254e46d5274b20ef99cd08b7">&#9670;&nbsp;</a></span>symb_corr</h2>
 
@@ -1627,30 +1590,6 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>symbol with CFO frac corrected </p>
-
-</div>
-</div>
-<a id="abdccba1627ee3b149979e5add9d077f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdccba1627ee3b149979e5add9d077f7">&#9670;&nbsp;</a></span>symb_numb</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t gr::lora_sdr::frame_sync_impl::symb_numb</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>number of payload loar symbols </p>
 
 </div>
 </div>
@@ -1699,6 +1638,30 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Number of integer symbol to skip after consecutive upchirps. </p>
+
+</div>
+</div>
+<a id="aebada7ee90cda6aa98c6333f1e0ea6c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebada7ee90cda6aa98c6333f1e0ea6c5">&#9670;&nbsp;</a></span>sync_log</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ofstream gr::lora_sdr::frame_sync_impl::sync_log</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>savefile containing the offset estimation and the signal strength estimation </p>
 
 </div>
 </div>

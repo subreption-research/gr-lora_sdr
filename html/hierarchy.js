@@ -7,9 +7,6 @@ var hierarchy =
       [ "gr::lora_sdr::crc_verif", "classgr_1_1lora__sdr_1_1crc__verif.html", [
         [ "gr::lora_sdr::crc_verif_impl", "classgr_1_1lora__sdr_1_1crc__verif__impl.html", null ]
       ] ],
-      [ "gr::lora_sdr::data_source", "classgr_1_1lora__sdr_1_1data__source.html", [
-        [ "gr::lora_sdr::data_source_impl", "classgr_1_1lora__sdr_1_1data__source__impl.html", null ]
-      ] ],
       [ "gr::lora_sdr::data_source_sim", "classgr_1_1lora__sdr_1_1data__source__sim.html", [
         [ "gr::lora_sdr::data_source_sim_impl", "classgr_1_1lora__sdr_1_1data__source__sim__impl.html", null ]
       ] ],
@@ -40,10 +37,23 @@ var hierarchy =
       [ "gr::lora_sdr::modulate", "classgr_1_1lora__sdr_1_1modulate.html", [
         [ "gr::lora_sdr::modulate_impl", "classgr_1_1lora__sdr_1_1modulate__impl.html", null ]
       ] ],
+      [ "gr::lora_sdr::mu_detection", "classgr_1_1lora__sdr_1_1mu__detection.html", [
+        [ "gr::lora_sdr::mu_detection_impl", "classgr_1_1lora__sdr_1_1mu__detection__impl.html", null ]
+      ] ],
+      [ "gr::lora_sdr::mu_synchro", "classgr_1_1lora__sdr_1_1mu__synchro.html", [
+        [ "gr::lora_sdr::mu_synchro_impl", "classgr_1_1lora__sdr_1_1mu__synchro__impl.html", null ]
+      ] ],
+      [ "gr::lora_sdr::partial_ml", "classgr_1_1lora__sdr_1_1partial__ml.html", [
+        [ "gr::lora_sdr::partial_ml_impl", "classgr_1_1lora__sdr_1_1partial__ml__impl.html", null ]
+      ] ],
       [ "gr::lora_sdr::RH_RF95_header", "classgr_1_1lora__sdr_1_1RH__RF95__header.html", [
         [ "gr::lora_sdr::RH_RF95_header_impl", "classgr_1_1lora__sdr_1_1RH__RF95__header__impl.html", null ]
+      ] ],
+      [ "gr::lora_sdr::signal_detector", "classgr_1_1lora__sdr_1_1signal__detector.html", [
+        [ "gr::lora_sdr::signal_detector_impl", "classgr_1_1lora__sdr_1_1signal__detector__impl.html", null ]
       ] ]
     ] ],
+    [ "gr::lora_sdr::est_param", "structgr_1_1lora__sdr_1_1est__param.html", null ],
     [ "hier_block2", null, [
       [ "gr::lora_sdr::hier_rx", "classgr_1_1lora__sdr_1_1hier__rx.html", [
         [ "gr::lora_sdr::hier_rx_impl", "classgr_1_1lora__sdr_1_1hier__rx__impl.html", null ]
@@ -55,8 +65,14 @@ var hierarchy =
     [ "kiss_fft_cpx", "structkiss__fft__cpx.html", null ],
     [ "kiss_fft_state", "structkiss__fft__state.html", null ],
     [ "sync_block", null, [
+      [ "gr::lora_sdr::data_source", "classgr_1_1lora__sdr_1_1data__source.html", [
+        [ "gr::lora_sdr::data_source_impl", "classgr_1_1lora__sdr_1_1data__source__impl.html", null ]
+      ] ],
       [ "gr::lora_sdr::err_measures", "classgr_1_1lora__sdr_1_1err__measures.html", [
         [ "gr::lora_sdr::err_measures_impl", "classgr_1_1lora__sdr_1_1err__measures__impl.html", null ]
+      ] ],
+      [ "gr::lora_sdr::frame_src", "classgr_1_1lora__sdr_1_1frame__src.html", [
+        [ "gr::lora_sdr::frame_src_impl", "classgr_1_1lora__sdr_1_1frame__src__impl.html", null ]
       ] ],
       [ "gr::lora_sdr::gray_decode", "classgr_1_1lora__sdr_1_1gray__decode.html", [
         [ "gr::lora_sdr::gray_decode_impl", "classgr_1_1lora__sdr_1_1gray__decode__impl.html", null ]
@@ -70,8 +86,13 @@ var hierarchy =
       [ "gr::lora_sdr::hamming_enc", "classgr_1_1lora__sdr_1_1hamming__enc.html", [
         [ "gr::lora_sdr::hamming_enc_impl", "classgr_1_1lora__sdr_1_1hamming__enc__impl.html", null ]
       ] ],
+      [ "gr::lora_sdr::noise_est", "classgr_1_1lora__sdr_1_1noise__est.html", [
+        [ "gr::lora_sdr::noise_est_impl", "classgr_1_1lora__sdr_1_1noise__est__impl.html", null ]
+      ] ],
       [ "gr::lora_sdr::whitening", "classgr_1_1lora__sdr_1_1whitening.html", [
         [ "gr::lora_sdr::whitening_impl", "classgr_1_1lora__sdr_1_1whitening__impl.html", null ]
       ] ]
-    ] ]
+    ] ],
+    [ "gr::lora_sdr::mu_synchro_impl::user", "structgr_1_1lora__sdr_1_1mu__synchro__impl_1_1user.html", null ],
+    [ "gr::lora_sdr::partial_ml_impl::window", "structgr_1_1lora__sdr_1_1partial__ml__impl_1_1window.html", null ]
 ];

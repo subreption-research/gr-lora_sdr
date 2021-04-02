@@ -42,9 +42,7 @@ var files_dup =
     [ "err_measures.h", "err__measures_8h.html", [
       [ "err_measures", "classgr_1_1lora__sdr_1_1err__measures.html", "classgr_1_1lora__sdr_1_1err__measures" ]
     ] ],
-    [ "err_measures_impl.h", "err__measures__impl_8h.html", [
-      [ "err_measures_impl", "classgr_1_1lora__sdr_1_1err__measures__impl.html", "classgr_1_1lora__sdr_1_1err__measures__impl" ]
-    ] ],
+    [ "err_measures_impl.h", "err__measures__impl_8h.html", "err__measures__impl_8h" ],
     [ "fft_demod.h", "fft__demod_8h.html", [
       [ "fft_demod", "classgr_1_1lora__sdr_1_1fft__demod.html", "classgr_1_1lora__sdr_1_1fft__demod" ]
     ] ],
@@ -57,12 +55,16 @@ var files_dup =
     [ "frame_detector_impl.h", "frame__detector__impl_8h.html", [
       [ "frame_detector_impl", "classgr_1_1lora__sdr_1_1frame__detector__impl.html", "classgr_1_1lora__sdr_1_1frame__detector__impl" ]
     ] ],
+    [ "frame_src.h", "frame__src_8h.html", [
+      [ "frame_src", "classgr_1_1lora__sdr_1_1frame__src.html", "classgr_1_1lora__sdr_1_1frame__src" ]
+    ] ],
+    [ "frame_src_impl.h", "frame__src__impl_8h.html", [
+      [ "frame_src_impl", "classgr_1_1lora__sdr_1_1frame__src__impl.html", "classgr_1_1lora__sdr_1_1frame__src__impl" ]
+    ] ],
     [ "frame_sync.h", "frame__sync_8h.html", [
       [ "frame_sync", "classgr_1_1lora__sdr_1_1frame__sync.html", "classgr_1_1lora__sdr_1_1frame__sync" ]
     ] ],
-    [ "frame_sync_impl.h", "frame__sync__impl_8h.html", [
-      [ "frame_sync_impl", "classgr_1_1lora__sdr_1_1frame__sync__impl.html", "classgr_1_1lora__sdr_1_1frame__sync__impl" ]
-    ] ],
+    [ "frame_sync_impl.h", "frame__sync__impl_8h.html", "frame__sync__impl_8h" ],
     [ "gray_decode.h", "gray__decode_8h.html", [
       [ "gray_decode", "classgr_1_1lora__sdr_1_1gray__decode.html", "classgr_1_1lora__sdr_1_1gray__decode" ]
     ] ],
@@ -125,13 +127,47 @@ var files_dup =
     [ "modulate_impl.h", "modulate__impl_8h.html", [
       [ "modulate_impl", "classgr_1_1lora__sdr_1_1modulate__impl.html", "classgr_1_1lora__sdr_1_1modulate__impl" ]
     ] ],
+    [ "mu_detection.h", "mu__detection_8h.html", [
+      [ "mu_detection", "classgr_1_1lora__sdr_1_1mu__detection.html", "classgr_1_1lora__sdr_1_1mu__detection" ]
+    ] ],
+    [ "mu_detection_impl.h", "mu__detection__impl_8h.html", [
+      [ "est_param", "structgr_1_1lora__sdr_1_1est__param.html", "structgr_1_1lora__sdr_1_1est__param" ],
+      [ "mu_detection_impl", "classgr_1_1lora__sdr_1_1mu__detection__impl.html", "classgr_1_1lora__sdr_1_1mu__detection__impl" ]
+    ] ],
+    [ "mu_synchro.h", "mu__synchro_8h.html", [
+      [ "mu_synchro", "classgr_1_1lora__sdr_1_1mu__synchro.html", "classgr_1_1lora__sdr_1_1mu__synchro" ]
+    ] ],
+    [ "mu_synchro_impl.h", "mu__synchro__impl_8h.html", [
+      [ "mu_synchro_impl", "classgr_1_1lora__sdr_1_1mu__synchro__impl.html", "classgr_1_1lora__sdr_1_1mu__synchro__impl" ],
+      [ "user", "structgr_1_1lora__sdr_1_1mu__synchro__impl_1_1user.html", "structgr_1_1lora__sdr_1_1mu__synchro__impl_1_1user" ]
+    ] ],
+    [ "noise_est.h", "noise__est_8h.html", [
+      [ "noise_est", "classgr_1_1lora__sdr_1_1noise__est.html", "classgr_1_1lora__sdr_1_1noise__est" ]
+    ] ],
+    [ "noise_est_impl.h", "noise__est__impl_8h.html", [
+      [ "noise_est_impl", "classgr_1_1lora__sdr_1_1noise__est__impl.html", "classgr_1_1lora__sdr_1_1noise__est__impl" ]
+    ] ],
+    [ "partial_ml.h", "partial__ml_8h.html", [
+      [ "partial_ml", "classgr_1_1lora__sdr_1_1partial__ml.html", "classgr_1_1lora__sdr_1_1partial__ml" ]
+    ] ],
+    [ "partial_ml_impl.h", "partial__ml__impl_8h.html", [
+      [ "partial_ml_impl", "classgr_1_1lora__sdr_1_1partial__ml__impl.html", "classgr_1_1lora__sdr_1_1partial__ml__impl" ],
+      [ "window", "structgr_1_1lora__sdr_1_1partial__ml__impl_1_1window.html", "structgr_1_1lora__sdr_1_1partial__ml__impl_1_1window" ]
+    ] ],
     [ "RH_RF95_header.h", "RH__RF95__header_8h.html", [
       [ "RH_RF95_header", "classgr_1_1lora__sdr_1_1RH__RF95__header.html", "classgr_1_1lora__sdr_1_1RH__RF95__header" ]
     ] ],
     [ "RH_RF95_header_impl.h", "RH__RF95__header__impl_8h.html", [
       [ "RH_RF95_header_impl", "classgr_1_1lora__sdr_1_1RH__RF95__header__impl.html", "classgr_1_1lora__sdr_1_1RH__RF95__header__impl" ]
     ] ],
+    [ "signal_detector.h", "signal__detector_8h.html", [
+      [ "signal_detector", "classgr_1_1lora__sdr_1_1signal__detector.html", "classgr_1_1lora__sdr_1_1signal__detector" ]
+    ] ],
+    [ "signal_detector_impl.h", "signal__detector__impl_8h.html", [
+      [ "signal_detector_impl", "classgr_1_1lora__sdr_1_1signal__detector__impl.html", "classgr_1_1lora__sdr_1_1signal__detector__impl" ]
+    ] ],
     [ "tables.h", "tables_8h.html", "tables_8h" ],
+    [ "utilities.h", "utilities_8h.html", "utilities_8h" ],
     [ "whitening.h", "whitening_8h.html", [
       [ "whitening", "classgr_1_1lora__sdr_1_1whitening.html", "classgr_1_1lora__sdr_1_1whitening" ]
     ] ],

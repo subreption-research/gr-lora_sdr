@@ -74,38 +74,36 @@ Inheritance diagram for gr::lora_sdr::add_crc_impl:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a141e98281979bcc67c40976732e9aa50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a141e98281979bcc67c40976732e9aa50">add_crc_impl</a> (bool has_crc)</td></tr>
-<tr class="memdesc:a141e98281979bcc67c40976732e9aa50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new add crc impl object.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a141e98281979bcc67c40976732e9aa50">More...</a><br /></td></tr>
 <tr class="separator:a141e98281979bcc67c40976732e9aa50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab79f297228f3431e7613629a5d6cede9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ab79f297228f3431e7613629a5d6cede9">~add_crc_impl</a> ()</td></tr>
-<tr class="memdesc:ab79f297228f3431e7613629a5d6cede9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the add crc impl object.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ab79f297228f3431e7613629a5d6cede9">More...</a><br /></td></tr>
 <tr class="separator:ab79f297228f3431e7613629a5d6cede9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeeb01a45dae7558c36756ff4e794134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#adeeb01a45dae7558c36756ff4e794134">forecast</a> (int noutput_items, gr_vector_int &amp;ninput_items_required)</td></tr>
-<tr class="memdesc:adeeb01a45dae7558c36756ff4e794134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gnuradio standard function to tell the system it should operate once it has a input item.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#adeeb01a45dae7558c36756ff4e794134">More...</a><br /></td></tr>
 <tr class="separator:adeeb01a45dae7558c36756ff4e794134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39ebc25dc893e70b81d4d756997dd6a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a39ebc25dc893e70b81d4d756997dd6a1">general_work</a> (int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</td></tr>
-<tr class="memdesc:a39ebc25dc893e70b81d4d756997dd6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function of the <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html" title="This block adds LoRa CRC (Cyclic redundancy check) into the payload if boolean has_crc is True,...">add_crc</a> module, this module will add Cyclic Redundancy Check (CRC) to the payload to be able to detect more bit errors. If m_has_crc is set to True.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a39ebc25dc893e70b81d4d756997dd6a1">More...</a><br /></td></tr>
 <tr class="separator:a39ebc25dc893e70b81d4d756997dd6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:aa52d2d28a50356c49a5f95a7eed988c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#aa52d2d28a50356c49a5f95a7eed988c8">msg_handler</a> (pmt::pmt_t message)</td></tr>
-<tr class="memdesc:aa52d2d28a50356c49a5f95a7eed988c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message handler, handles the pmt input message (i.e. input data)  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#aa52d2d28a50356c49a5f95a7eed988c8">More...</a><br /></td></tr>
-<tr class="separator:aa52d2d28a50356c49a5f95a7eed988c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab46b2f78b7eaa01d5eb27ada3e6b1aec"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ab46b2f78b7eaa01d5eb27ada3e6b1aec">crc16</a> (unsigned int crcValue, unsigned char newByte)</td></tr>
-<tr class="memdesc:ab46b2f78b7eaa01d5eb27ada3e6b1aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">CRC16, add 16 bit CRC to the payload.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ab46b2f78b7eaa01d5eb27ada3e6b1aec">More...</a><br /></td></tr>
 <tr class="separator:ab46b2f78b7eaa01d5eb27ada3e6b1aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ad7b14f262b44eb3c74de0d8bedfc4211"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ad7b14f262b44eb3c74de0d8bedfc4211">m_has_crc</a></td></tr>
-<tr class="memdesc:ad7b14f262b44eb3c74de0d8bedfc4211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate the presence of a payload CRC.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ad7b14f262b44eb3c74de0d8bedfc4211">More...</a><br /></td></tr>
+<tr class="memdesc:ad7b14f262b44eb3c74de0d8bedfc4211"><td class="mdescLeft">&#160;</td><td class="mdescRight">indicate the presence of a payload CRC  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ad7b14f262b44eb3c74de0d8bedfc4211">More...</a><br /></td></tr>
 <tr class="separator:ad7b14f262b44eb3c74de0d8bedfc4211"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a076373e7eb8c27a1b363d70af735083a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a076373e7eb8c27a1b363d70af735083a">m_payload</a></td></tr>
-<tr class="memdesc:a076373e7eb8c27a1b363d70af735083a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The payload data itself.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a076373e7eb8c27a1b363d70af735083a">More...</a><br /></td></tr>
+<tr class="memdesc:a076373e7eb8c27a1b363d70af735083a"><td class="mdescLeft">&#160;</td><td class="mdescRight">payload data  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a076373e7eb8c27a1b363d70af735083a">More...</a><br /></td></tr>
 <tr class="separator:a076373e7eb8c27a1b363d70af735083a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b6afeb93cbff3baf241da65a1b5999c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a5b6afeb93cbff3baf241da65a1b5999c">m_payload_len</a></td></tr>
-<tr class="memdesc:a5b6afeb93cbff3baf241da65a1b5999c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the payload in bytes.  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a5b6afeb93cbff3baf241da65a1b5999c">More...</a><br /></td></tr>
+<tr class="memdesc:a5b6afeb93cbff3baf241da65a1b5999c"><td class="mdescLeft">&#160;</td><td class="mdescRight">length of the payload in Bytes  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a5b6afeb93cbff3baf241da65a1b5999c">More...</a><br /></td></tr>
 <tr class="separator:a5b6afeb93cbff3baf241da65a1b5999c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a943ef9059f6ed9624174c4770588ce36"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a943ef9059f6ed9624174c4770588ce36">m_frame_len</a></td></tr>
+<tr class="memdesc:a943ef9059f6ed9624174c4770588ce36"><td class="mdescLeft">&#160;</td><td class="mdescRight">length of the frame in number of gnuradio items  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a943ef9059f6ed9624174c4770588ce36">More...</a><br /></td></tr>
+<tr class="separator:a943ef9059f6ed9624174c4770588ce36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3cbdba283580114de19250c57642f93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ae3cbdba283580114de19250c57642f93">m_cnt</a></td></tr>
+<tr class="memdesc:ae3cbdba283580114de19250c57642f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">counter of the number of symbol in frame  <a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ae3cbdba283580114de19250c57642f93">More...</a><br /></td></tr>
+<tr class="separator:ae3cbdba283580114de19250c57642f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -134,14 +132,6 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Construct a new add crc impl object. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">has_crc</td><td>: boolean to indicate if crc should be added to the payload </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="ab79f297228f3431e7613629a5d6cede9"></a>
@@ -158,8 +148,6 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Destroy the add crc impl object. </p>
 
 </div>
 </div>
@@ -198,16 +186,6 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>CRC16, add 16 bit CRC to the payload. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">crcValue</td><td>: </td></tr>
-    <tr><td class="paramname">newByte</td><td>: </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>unsigned int </dd></dl>
-
 </div>
 </div>
 <a id="adeeb01a45dae7558c36756ff4e794134"></a>
@@ -235,15 +213,6 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Gnuradio standard function to tell the system it should operate once it has a input item. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">noutput_items</td><td>: number of output items </td></tr>
-    <tr><td class="paramname">ninput_items_required</td><td>: number of required input items </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -285,22 +254,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Main function of the <a class="el" href="classgr_1_1lora__sdr_1_1add__crc.html" title="This block adds LoRa CRC (Cyclic redundancy check) into the payload if boolean has_crc is True,...">add_crc</a> module, this module will add Cyclic Redundancy Check (CRC) to the payload to be able to detect more bit errors. If m_has_crc is set to True. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">noutput_items</td><td>: number of output items </td></tr>
-    <tr><td class="paramname">ninput_items</td><td>: number of input items </td></tr>
-    <tr><td class="paramname">input_items</td><td>: vector containing the input items </td></tr>
-    <tr><td class="paramname">output_items</td><td>: vector containting the output items </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
-
 </div>
 </div>
-<a id="aa52d2d28a50356c49a5f95a7eed988c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa52d2d28a50356c49a5f95a7eed988c8">&#9670;&nbsp;</a></span>msg_handler()</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae3cbdba283580114de19250c57642f93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3cbdba283580114de19250c57642f93">&#9670;&nbsp;</a></span>m_cnt</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -309,11 +267,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void gr::lora_sdr::add_crc_impl::msg_handler </td>
-          <td>(</td>
-          <td class="paramtype">pmt::pmt_t&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
-          <td></td>
+          <td class="memname">int gr::lora_sdr::add_crc_impl::m_cnt</td>
         </tr>
       </table>
   </td>
@@ -323,17 +277,34 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Message handler, handles the pmt input message (i.e. input data) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">message</td><td>: input message (i.e input data) </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>counter of the number of symbol in frame </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a943ef9059f6ed9624174c4770588ce36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a943ef9059f6ed9624174c4770588ce36">&#9670;&nbsp;</a></span>m_frame_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gr::lora_sdr::add_crc_impl::m_frame_len</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>length of the frame in number of gnuradio items </p>
+
+</div>
+</div>
 <a id="ad7b14f262b44eb3c74de0d8bedfc4211"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7b14f262b44eb3c74de0d8bedfc4211">&#9670;&nbsp;</a></span>m_has_crc</h2>
 
@@ -354,7 +325,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Indicate the presence of a payload CRC. </p>
+<p>indicate the presence of a payload CRC </p>
 
 </div>
 </div>
@@ -378,7 +349,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The payload data itself. </p>
+<p>payload data </p>
 
 </div>
 </div>
@@ -402,7 +373,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The length of the payload in bytes. </p>
+<p>length of the payload in Bytes </p>
 
 </div>
 </div>

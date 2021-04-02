@@ -106,6 +106,17 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a5e67c8fa72fdb77854ceb2993a658842"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1header__impl.html#a5e67c8fa72fdb77854ceb2993a658842">m_payload_len</a></td></tr>
 <tr class="memdesc:a5e67c8fa72fdb77854ceb2993a658842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Payload length (i.e input data length)  <a href="classgr_1_1lora__sdr_1_1header__impl.html#a5e67c8fa72fdb77854ceb2993a658842">More...</a><br /></td></tr>
 <tr class="separator:a5e67c8fa72fdb77854ceb2993a658842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca588f64d4ac4fc29219e51b3a43785"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1header__impl.html#abca588f64d4ac4fc29219e51b3a43785">m_cnt_nibbles</a></td></tr>
+<tr class="memdesc:abca588f64d4ac4fc29219e51b3a43785"><td class="mdescLeft">&#160;</td><td class="mdescRight">count the processes nibbles in a frame  <a href="classgr_1_1lora__sdr_1_1header__impl.html#abca588f64d4ac4fc29219e51b3a43785">More...</a><br /></td></tr>
+<tr class="separator:abca588f64d4ac4fc29219e51b3a43785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4d1805da4721b0e5a2f59c97d965688"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1header__impl.html#ae4d1805da4721b0e5a2f59c97d965688">m_cnt_header_nibbles</a></td></tr>
+<tr class="memdesc:ae4d1805da4721b0e5a2f59c97d965688"><td class="mdescLeft">&#160;</td><td class="mdescRight">count the number of explicit header nibbles output  <a href="classgr_1_1lora__sdr_1_1header__impl.html#ae4d1805da4721b0e5a2f59c97d965688">More...</a><br /></td></tr>
+<tr class="separator:ae4d1805da4721b0e5a2f59c97d965688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c5d2c01aea61dc62937e636e6514279"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1header__impl.html#a1c5d2c01aea61dc62937e636e6514279">m_header</a></td></tr>
+<tr class="memdesc:a1c5d2c01aea61dc62937e636e6514279"><td class="mdescLeft">&#160;</td><td class="mdescRight">contain the header to prepend  <a href="classgr_1_1lora__sdr_1_1header__impl.html#a1c5d2c01aea61dc62937e636e6514279">More...</a><br /></td></tr>
+<tr class="separator:a1c5d2c01aea61dc62937e636e6514279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1487176fb0bf6732a579555b6401d88b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; tag_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1header__impl.html#a1487176fb0bf6732a579555b6401d88b">m_tags</a></td></tr>
+<tr class="separator:a1487176fb0bf6732a579555b6401d88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -306,6 +317,54 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae4d1805da4721b0e5a2f59c97d965688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4d1805da4721b0e5a2f59c97d965688">&#9670;&nbsp;</a></span>m_cnt_header_nibbles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint gr::lora_sdr::header_impl::m_cnt_header_nibbles</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>count the number of explicit header nibbles output </p>
+
+</div>
+</div>
+<a id="abca588f64d4ac4fc29219e51b3a43785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abca588f64d4ac4fc29219e51b3a43785">&#9670;&nbsp;</a></span>m_cnt_nibbles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint gr::lora_sdr::header_impl::m_cnt_nibbles</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>count the processes nibbles in a frame </p>
+
+</div>
+</div>
 <a id="afcbe1e73136c6aec3d6e60b31b0d9e7a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afcbe1e73136c6aec3d6e60b31b0d9e7a">&#9670;&nbsp;</a></span>m_cr</h2>
 
@@ -354,6 +413,30 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a1c5d2c01aea61dc62937e636e6514279"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c5d2c01aea61dc62937e636e6514279">&#9670;&nbsp;</a></span>m_header</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;uint8_t&gt; gr::lora_sdr::header_impl::m_header</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>contain the header to prepend </p>
+
+</div>
+</div>
 <a id="add166cd35985b68d1b47775d7bc6bd74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add166cd35985b68d1b47775d7bc6bd74">&#9670;&nbsp;</a></span>m_impl_head</h2>
 
@@ -399,6 +482,28 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Payload length (i.e input data length) </p>
+
+</div>
+</div>
+<a id="a1487176fb0bf6732a579555b6401d88b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1487176fb0bf6732a579555b6401d88b">&#9670;&nbsp;</a></span>m_tags</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;tag_t&gt; gr::lora_sdr::header_impl::m_tags</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -57,53 +57,58 @@ $(document).ready(function(){initNavTree('gray__decode__impl_8h_source.html','')
 <a href="gray__decode__impl_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INCLUDED_LORA_GRAY_DECODE_IMPL_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define INCLUDED_LORA_GRAY_DECODE_IMPL_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="gray__decode_8h.html">lora_sdr/gray_decode.h</a>&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegr.html">gr</a> {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>lora_sdr {</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1gray__decode__impl.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classgr_1_1lora__sdr_1_1gray__decode__impl.html">gray_decode_impl</a> : <span class="keyword">public</span> <a class="code" href="classgr_1_1lora__sdr_1_1gray__decode.html">gray_decode</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> /**</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">  * @brief Sampling rate</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">  * </span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">  */</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#acc5e709f668784be13caf7700375ec0e">   15</a></span>&#160;  uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#acc5e709f668784be13caf7700375ec0e">m_sf</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">   * @brief Construct a new gray decode impl object</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">   * @param sf : sampling rate</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#ae20e24942fb422f81f1d599bedec3f05">gray_decode_impl</a>(uint8_t sf);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">   * @brief Destroy the gray decode impl object</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#a5cd8c2b03edf707cab5f2081f546a750">~gray_decode_impl</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">   * @brief Main function where the actual computation resides</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">   * @param input_items : input items (i.e. fft_demod)</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">   * @param output_items : output data</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">   * @return int</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#a1496f94897bb1910eb383744109c0c38">work</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_const_void_star &amp;input_items,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;           gr_vector_void_star &amp;output_items);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;} <span class="comment">// namespace gr</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_GRAY_DECODE_IMPL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="gray__decode_8h.html">lora_sdr/gray_decode.h</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegr.html">gr</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="keyword">namespace </span>lora_sdr {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1gray__decode__impl.html">   10</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classgr_1_1lora__sdr_1_1gray__decode__impl.html">gray_decode_impl</a> : <span class="keyword">public</span> <a class="code" href="classgr_1_1lora__sdr_1_1gray__decode.html">gray_decode</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;     <span class="keyword">private</span>:<span class="comment"></span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">     /**</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">      * @brief Spreading factor used</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">      * </span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">      */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#acc5e709f668784be13caf7700375ec0e">   17</a></span>&#160;      uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#acc5e709f668784be13caf7700375ec0e">m_sf</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;     <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">      /**</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">       * @brief Construct a new gray decode impl object</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">       * </span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">       * @param sf Spreading factor used</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">       */</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <a class="code" href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#ae20e24942fb422f81f1d599bedec3f05">gray_decode_impl</a>(uint8_t sf);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">      /**</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">       * @brief Destroy the gray decode impl object</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">       * </span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">       */</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <a class="code" href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#a5cd8c2b03edf707cab5f2081f546a750">~gray_decode_impl</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">      /**</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">       * @brief </span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">       * </span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">       * @param noutput_items </span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">       * @param input_items </span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">       * @param output_items </span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">       * @return int </span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">       */</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#a1496f94897bb1910eb383744109c0c38">work</a>(</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;              <span class="keywordtype">int</span> noutput_items,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;              gr_vector_const_void_star &amp;input_items,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;              gr_vector_void_star &amp;output_items</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      );</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    };</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  } <span class="comment">// namespace lora</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_GRAY_DECODE_IMPL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1gray__decode__impl_html_a1496f94897bb1910eb383744109c0c38"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#a1496f94897bb1910eb383744109c0c38">gr::lora_sdr::gray_decode_impl::work</a></div><div class="ttdeci">int work(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div><div class="ttdoc">Main function where the actual computation resides.</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1gray__decode__impl_html_acc5e709f668784be13caf7700375ec0e"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#acc5e709f668784be13caf7700375ec0e">gr::lora_sdr::gray_decode_impl::m_sf</a></div><div class="ttdeci">uint8_t m_sf</div><div class="ttdoc">Sampling rate.</div><div class="ttdef"><b>Definition:</b> gray_decode_impl.h:15</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1gray__decode__impl_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1gray__decode__impl.html">gr::lora_sdr::gray_decode_impl</a></div><div class="ttdef"><b>Definition:</b> gray_decode_impl.h:9</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1gray__decode__impl_html_a1496f94897bb1910eb383744109c0c38"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#a1496f94897bb1910eb383744109c0c38">gr::lora_sdr::gray_decode_impl::work</a></div><div class="ttdeci">int work(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1gray__decode__impl_html_acc5e709f668784be13caf7700375ec0e"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#acc5e709f668784be13caf7700375ec0e">gr::lora_sdr::gray_decode_impl::m_sf</a></div><div class="ttdeci">uint8_t m_sf</div><div class="ttdoc">Spreading factor used.</div><div class="ttdef"><b>Definition:</b> gray_decode_impl.h:17</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1gray__decode__impl_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1gray__decode__impl.html">gr::lora_sdr::gray_decode_impl</a></div><div class="ttdef"><b>Definition:</b> gray_decode_impl.h:10</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1gray__decode__impl_html_ae20e24942fb422f81f1d599bedec3f05"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#ae20e24942fb422f81f1d599bedec3f05">gr::lora_sdr::gray_decode_impl::gray_decode_impl</a></div><div class="ttdeci">gray_decode_impl(uint8_t sf)</div><div class="ttdoc">Construct a new gray decode impl object.</div></div>
 <div class="ttc" id="agray__decode_8h_html"><div class="ttname"><a href="gray__decode_8h.html">gray_decode.h</a></div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1gray__decode_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1gray__decode.html">gr::lora_sdr::gray_decode</a></div><div class="ttdoc">Decode the received payload with the inverse gray mapping in order to obtain the send message....</div><div class="ttdef"><b>Definition:</b> gray_decode.h:37</div></div>

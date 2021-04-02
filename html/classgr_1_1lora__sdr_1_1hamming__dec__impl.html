@@ -52,7 +52,6 @@ $(document).ready(function(){initNavTree('classgr_1_1lora__sdr_1_1hamming__dec__
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classgr_1_1lora__sdr_1_1hamming__dec__impl-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -83,15 +82,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab152998bcda1cc40835d82fa1afed17a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function where the actual computation resides.  <a href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#ab152998bcda1cc40835d82fa1afed17a">More...</a><br /></td></tr>
 <tr class="separator:ab152998bcda1cc40835d82fa1afed17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ac241ccd3e25eccc083dc300bb1ad860f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#ac241ccd3e25eccc083dc300bb1ad860f">header_cr_handler</a> (pmt::pmt_t cr)</td></tr>
-<tr class="memdesc:ac241ccd3e25eccc083dc300bb1ad860f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the coding rate received from the <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html" title="Decode the header of the data spackage. For more information about the implementation visit header_de...">header_decoder</a> block.  <a href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#ac241ccd3e25eccc083dc300bb1ad860f">More...</a><br /></td></tr>
-<tr class="separator:ac241ccd3e25eccc083dc300bb1ad860f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a726c794575eeb4832ede943ee7cb95c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a726c794575eeb4832ede943ee7cb95c5">new_frame_handler</a> (pmt::pmt_t id)</td></tr>
-<tr class="memdesc:a726c794575eeb4832ede943ee7cb95c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the block variables for a new frame.  <a href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a726c794575eeb4832ede943ee7cb95c5">More...</a><br /></td></tr>
-<tr class="separator:a726c794575eeb4832ede943ee7cb95c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a97b48238fbd0aa5162df2003ba908e1e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a97b48238fbd0aa5162df2003ba908e1e">m_cr</a></td></tr>
@@ -100,9 +90,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aac6775251e61db5b28d48755bb00d054"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#aac6775251e61db5b28d48755bb00d054">cr_app</a></td></tr>
 <tr class="memdesc:aac6775251e61db5b28d48755bb00d054"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coding rate use for the block.  <a href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#aac6775251e61db5b28d48755bb00d054">More...</a><br /></td></tr>
 <tr class="separator:aac6775251e61db5b28d48755bb00d054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa687b995a65fc5c6a10d4aba0f3fb2f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#aa687b995a65fc5c6a10d4aba0f3fb2f0">is_first</a></td></tr>
-<tr class="memdesc:aa687b995a65fc5c6a10d4aba0f3fb2f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that it is the first block.  <a href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#aa687b995a65fc5c6a10d4aba0f3fb2f0">More...</a><br /></td></tr>
-<tr class="separator:aa687b995a65fc5c6a10d4aba0f3fb2f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fd7af839ca20a62e5a2d7d67446a17b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a0fd7af839ca20a62e5a2d7d67446a17b">is_header</a></td></tr>
+<tr class="memdesc:a0fd7af839ca20a62e5a2d7d67446a17b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that it is the first block.  <a href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a0fd7af839ca20a62e5a2d7d67446a17b">More...</a><br /></td></tr>
+<tr class="separator:a0fd7af839ca20a62e5a2d7d67446a17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -154,74 +144,6 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac241ccd3e25eccc083dc300bb1ad860f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac241ccd3e25eccc083dc300bb1ad860f">&#9670;&nbsp;</a></span>header_cr_handler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gr::lora_sdr::hamming_dec_impl::header_cr_handler </td>
-          <td>(</td>
-          <td class="paramtype">pmt::pmt_t&#160;</td>
-          <td class="paramname"><em>cr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Handles the coding rate received from the <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html" title="Decode the header of the data spackage. For more information about the implementation visit header_de...">header_decoder</a> block. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cr</td><td>: coding rate </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a726c794575eeb4832ede943ee7cb95c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a726c794575eeb4832ede943ee7cb95c5">&#9670;&nbsp;</a></span>new_frame_handler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gr::lora_sdr::hamming_dec_impl::new_frame_handler </td>
-          <td>(</td>
-          <td class="paramtype">pmt::pmt_t&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reset the block variables for a new frame. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ab152998bcda1cc40835d82fa1afed17a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab152998bcda1cc40835d82fa1afed17a">&#9670;&nbsp;</a></span>work()</h2>
 
@@ -292,8 +214,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aa687b995a65fc5c6a10d4aba0f3fb2f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa687b995a65fc5c6a10d4aba0f3fb2f0">&#9670;&nbsp;</a></span>is_first</h2>
+<a id="a0fd7af839ca20a62e5a2d7d67446a17b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fd7af839ca20a62e5a2d7d67446a17b">&#9670;&nbsp;</a></span>is_header</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -302,7 +224,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool gr::lora_sdr::hamming_dec_impl::is_first</td>
+          <td class="memname">bool gr::lora_sdr::hamming_dec_impl::is_header</td>
         </tr>
       </table>
   </td>

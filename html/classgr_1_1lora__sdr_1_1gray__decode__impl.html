@@ -79,13 +79,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a5cd8c2b03edf707cab5f2081f546a750"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the gray decode impl object.  <a href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#a5cd8c2b03edf707cab5f2081f546a750">More...</a><br /></td></tr>
 <tr class="separator:a5cd8c2b03edf707cab5f2081f546a750"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1496f94897bb1910eb383744109c0c38"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#a1496f94897bb1910eb383744109c0c38">work</a> (int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</td></tr>
-<tr class="memdesc:a1496f94897bb1910eb383744109c0c38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function where the actual computation resides.  <a href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#a1496f94897bb1910eb383744109c0c38">More...</a><br /></td></tr>
 <tr class="separator:a1496f94897bb1910eb383744109c0c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:acc5e709f668784be13caf7700375ec0e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#acc5e709f668784be13caf7700375ec0e">m_sf</a></td></tr>
-<tr class="memdesc:acc5e709f668784be13caf7700375ec0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sampling rate.  <a href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#acc5e709f668784be13caf7700375ec0e">More...</a><br /></td></tr>
+<tr class="memdesc:acc5e709f668784be13caf7700375ec0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spreading factor used.  <a href="classgr_1_1lora__sdr_1_1gray__decode__impl.html#acc5e709f668784be13caf7700375ec0e">More...</a><br /></td></tr>
 <tr class="separator:acc5e709f668784be13caf7700375ec0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -118,7 +117,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Construct a new gray decode impl object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sf</td><td>: sampling rate </td></tr>
+    <tr><td class="paramname">sf</td><td>Spreading factor used </td></tr>
   </table>
   </dd>
 </dl>
@@ -176,13 +175,11 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Main function where the actual computation resides. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">noutput_items</td><td>: number of output items </td></tr>
-    <tr><td class="paramname">input_items</td><td>: input items (i.e. <a class="el" href="classgr_1_1lora__sdr_1_1fft__demod.html" title="FFT demodulation block ,for more information about the implementation visit fft_demod_impl.">fft_demod</a>) </td></tr>
-    <tr><td class="paramname">output_items</td><td>: output data </td></tr>
+    <tr><td class="paramname">noutput_items</td><td></td></tr>
+    <tr><td class="paramname">input_items</td><td></td></tr>
+    <tr><td class="paramname">output_items</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -211,7 +208,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sampling rate. </p>
+<p>Spreading factor used. </p>
 
 </div>
 </div>

@@ -52,7 +52,6 @@ $(document).ready(function(){initNavTree('classgr_1_1lora__sdr_1_1deinterleaver_
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classgr_1_1lora__sdr_1_1deinterleaver__impl-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -86,15 +85,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a988e93f02184e00c2669fc13426f7edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function where the actual computation is done.  <a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a988e93f02184e00c2669fc13426f7edc">More...</a><br /></td></tr>
 <tr class="separator:a988e93f02184e00c2669fc13426f7edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a681ce9f583d5eb9146e2140f5da399ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a681ce9f583d5eb9146e2140f5da399ff">new_frame_handler</a> (pmt::pmt_t id)</td></tr>
-<tr class="memdesc:a681ce9f583d5eb9146e2140f5da399ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the block variables when a new lora packet needs to be decoded.  <a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a681ce9f583d5eb9146e2140f5da399ff">More...</a><br /></td></tr>
-<tr class="separator:a681ce9f583d5eb9146e2140f5da399ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9afa6729b40c2d278af1a20df16ea62d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a9afa6729b40c2d278af1a20df16ea62d">header_cr_handler</a> (pmt::pmt_t cr)</td></tr>
-<tr class="memdesc:a9afa6729b40c2d278af1a20df16ea62d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the coding rate received from the <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html" title="Decode the header of the data spackage. For more information about the implementation visit header_de...">header_decoder</a> block.  <a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a9afa6729b40c2d278af1a20df16ea62d">More...</a><br /></td></tr>
-<tr class="separator:a9afa6729b40c2d278af1a20df16ea62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a4317ded1b980b934dcd8da9e90b29cfe"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a4317ded1b980b934dcd8da9e90b29cfe">m_sf</a></td></tr>
@@ -109,9 +99,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a2ee14c8c25c0343be3ec8d56408805f8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a2ee14c8c25c0343be3ec8d56408805f8">cw_len</a></td></tr>
 <tr class="memdesc:a2ee14c8c25c0343be3ec8d56408805f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of a codeword.  <a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a2ee14c8c25c0343be3ec8d56408805f8">More...</a><br /></td></tr>
 <tr class="separator:a2ee14c8c25c0343be3ec8d56408805f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c00749eec7089a76dde4de2c9c37020"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a0c00749eec7089a76dde4de2c9c37020">is_first</a></td></tr>
-<tr class="memdesc:a0c00749eec7089a76dde4de2c9c37020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that we need to deinterleave the first block.  <a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a0c00749eec7089a76dde4de2c9c37020">More...</a><br /></td></tr>
-<tr class="separator:a0c00749eec7089a76dde4de2c9c37020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97de2d049c1a00936d67de3d7189d2f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#aa97de2d049c1a00936d67de3d7189d2f">m_is_header</a></td></tr>
+<tr class="memdesc:aa97de2d049c1a00936d67de3d7189d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that we need to deinterleave the first block with the default header parameters (cr=4/8, reduced rate)  <a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#aa97de2d049c1a00936d67de3d7189d2f">More...</a><br /></td></tr>
+<tr class="separator:aa97de2d049c1a00936d67de3d7189d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -259,74 +249,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a9afa6729b40c2d278af1a20df16ea62d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9afa6729b40c2d278af1a20df16ea62d">&#9670;&nbsp;</a></span>header_cr_handler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gr::lora_sdr::deinterleaver_impl::header_cr_handler </td>
-          <td>(</td>
-          <td class="paramtype">pmt::pmt_t&#160;</td>
-          <td class="paramname"><em>cr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Handles the coding rate received from the <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html" title="Decode the header of the data spackage. For more information about the implementation visit header_de...">header_decoder</a> block. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cr</td><td>: coding rate </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a681ce9f583d5eb9146e2140f5da399ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a681ce9f583d5eb9146e2140f5da399ff">&#9670;&nbsp;</a></span>new_frame_handler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gr::lora_sdr::deinterleaver_impl::new_frame_handler </td>
-          <td>(</td>
-          <td class="paramtype">pmt::pmt_t&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reset the block variables when a new lora packet needs to be decoded. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a2ee14c8c25c0343be3ec8d56408805f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ee14c8c25c0343be3ec8d56408805f8">&#9670;&nbsp;</a></span>cw_len</h2>
@@ -352,30 +274,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a0c00749eec7089a76dde4de2c9c37020"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c00749eec7089a76dde4de2c9c37020">&#9670;&nbsp;</a></span>is_first</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool gr::lora_sdr::deinterleaver_impl::is_first</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Indicate that we need to deinterleave the first block. </p>
-
-</div>
-</div>
 <a id="a6385b2a7a625f058ea1dbd1fe3cd9448"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6385b2a7a625f058ea1dbd1fe3cd9448">&#9670;&nbsp;</a></span>m_cr</h2>
 
@@ -397,6 +295,30 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Transmission Coding rate. </p>
+
+</div>
+</div>
+<a id="aa97de2d049c1a00936d67de3d7189d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa97de2d049c1a00936d67de3d7189d2f">&#9670;&nbsp;</a></span>m_is_header</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gr::lora_sdr::deinterleaver_impl::m_is_header</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicate that we need to deinterleave the first block with the default header parameters (cr=4/8, reduced rate) </p>
 
 </div>
 </div>

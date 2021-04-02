@@ -84,60 +84,59 @@ $(document).ready(function(){initNavTree('interleaver__impl_8h_source.html','');
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0ebde855ca3af4ff51d5b006f3121346">   28</a></span>&#160;  uint32_t <a class="code" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0ebde855ca3af4ff51d5b006f3121346">cw_cnt</a>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">   * @brief PMT input message handler.</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">   * Handles the pmt message (i.e. input data)</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">   * @param message</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a2f1e6660c33fb26575041de39eb89aca">msg_handler</a>(pmt::pmt_t message);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">   * @brief Construct a new interleaver impl object</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">   * @param cr coding rate</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">   * @param sf sampling rate</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#acfe9c5f82e17715891430113d526e0bb">interleaver_impl</a>(uint8_t cr, uint8_t sf);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">   * @brief Destroy the interleaver impl object</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#aa7d8a1471e5f14a641475c1fd7fa1e84">~interleaver_impl</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">   * @brief Standard gnuradio function to ensure a number of input items are received before continuing</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">   * @param noutput_items : number of input items</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">   * @param ninput_items_required : number of requires input items = 1</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0957f1e476d8926c265e325b17dc136f">forecast</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">   * @brief Main function that does the actual computation of the interleaver.</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">   * </span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">   * @param ninput_items : number of input items</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">   * @param input_items : the data of the input items (i.e hamming encoding stage)</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">   * @param output_items : output data</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">   * @return int</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#adfe772e35ecb4e837e620a9f88245e06">general_work</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                   gr_vector_const_void_star &amp;input_items,</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                   gr_vector_void_star &amp;output_items);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;} <span class="comment">// namespace gr</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_INTERLEAVER_IMPL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">   * @brief length of the frame in number of items</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0c55011e558a16cbe00f0b8b312363d7">   34</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0c55011e558a16cbe00f0b8b312363d7">m_frame_len</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">   * @brief Construct a new interleaver impl object</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">   * @param cr coding rate</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">   * @param sf sampling rate</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#acfe9c5f82e17715891430113d526e0bb">interleaver_impl</a>(uint8_t cr, uint8_t sf);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">   * @brief Destroy the interleaver impl object</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#aa7d8a1471e5f14a641475c1fd7fa1e84">~interleaver_impl</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">   * @brief Standard gnuradio function to ensure a number of input items are</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">   * received before continuing</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">   * @param noutput_items : number of input items</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">   * @param ninput_items_required : number of requires input items = 1</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0957f1e476d8926c265e325b17dc136f">forecast</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="comment"></span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">   * @brief Main function that does the actual computation of the interleaver.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">   * </span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">   * @param ninput_items : number of input items</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">   * @param input_items : the data of the input items (i.e hamming encoding stage)</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">   * @param output_items : output data</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">   * @return int</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#adfe772e35ecb4e837e620a9f88245e06">general_work</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                   gr_vector_const_void_star &amp;input_items,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                   gr_vector_void_star &amp;output_items);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_INTERLEAVER_IMPL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1interleaver__impl_html_a0957f1e476d8926c265e325b17dc136f"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0957f1e476d8926c265e325b17dc136f">gr::lora_sdr::interleaver_impl::forecast</a></div><div class="ttdeci">void forecast(int noutput_items, gr_vector_int &amp;ninput_items_required)</div><div class="ttdoc">Standard gnuradio function to ensure a number of input items are received before continuing.</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1interleaver__impl_html_a0c55011e558a16cbe00f0b8b312363d7"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0c55011e558a16cbe00f0b8b312363d7">gr::lora_sdr::interleaver_impl::m_frame_len</a></div><div class="ttdeci">int m_frame_len</div><div class="ttdoc">length of the frame in number of items</div><div class="ttdef"><b>Definition:</b> interleaver_impl.h:34</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1interleaver__impl_html_aa7d8a1471e5f14a641475c1fd7fa1e84"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1interleaver__impl.html#aa7d8a1471e5f14a641475c1fd7fa1e84">gr::lora_sdr::interleaver_impl::~interleaver_impl</a></div><div class="ttdeci">~interleaver_impl()</div><div class="ttdoc">Destroy the interleaver impl object.</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1interleaver__impl_html_a2f1e6660c33fb26575041de39eb89aca"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a2f1e6660c33fb26575041de39eb89aca">gr::lora_sdr::interleaver_impl::msg_handler</a></div><div class="ttdeci">void msg_handler(pmt::pmt_t message)</div><div class="ttdoc">PMT input message handler. Handles the pmt message (i.e. input data)</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1interleaver_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1interleaver.html">gr::lora_sdr::interleaver</a></div><div class="ttdoc">Interleaves the to be sent data, in order to gain more resilience against bit transmission errors For...</div><div class="ttdef"><b>Definition:</b> interleaver.h:37</div></div>
 <div class="ttc" id="ainterleaver_8h_html"><div class="ttname"><a href="interleaver_8h.html">interleaver.h</a></div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1interleaver__impl_html_a0ebde855ca3af4ff51d5b006f3121346"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0ebde855ca3af4ff51d5b006f3121346">gr::lora_sdr::interleaver_impl::cw_cnt</a></div><div class="ttdeci">uint32_t cw_cnt</div><div class="ttdoc">variable that counts the number of codewords</div><div class="ttdef"><b>Definition:</b> interleaver_impl.h:28</div></div>

@@ -7,6 +7,7 @@ var classgr_1_1lora__sdr_1_1err__measures__impl =
     [ "work", "classgr_1_1lora__sdr_1_1err__measures__impl.html#aed53036188e66c19e7a2fb6eaa7b974b", null ],
     [ "BE", "classgr_1_1lora__sdr_1_1err__measures__impl.html#a6d1c86d9b2f96efc9ff1fdf2c8d473ee", null ],
     [ "drop", "classgr_1_1lora__sdr_1_1err__measures__impl.html#aa14460ee9757ac1af575c5b3becce949", null ],
+    [ "err_outfile", "classgr_1_1lora__sdr_1_1err__measures__impl.html#a9e0485640c3150e38c85ef877f19f1dc", null ],
     [ "m_corr_payload", "classgr_1_1lora__sdr_1_1err__measures__impl.html#ab7202171f89c7005b264e4baaedc1bb7", null ],
     [ "m_payload", "classgr_1_1lora__sdr_1_1err__measures__impl.html#af24cdfdabaf3b348da432c3ebcbadb1d", null ]
 ];
