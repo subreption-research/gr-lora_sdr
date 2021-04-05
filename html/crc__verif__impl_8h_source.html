@@ -77,41 +77,40 @@ $(document).ready(function(){initNavTree('crc__verif__impl_8h_source.html',''); 
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a24f7cd4c52adad90d5e8b4c2d257b91b">   21</a></span>&#160;<span class="comment"></span>        std::vector&lt;uint8_t&gt; <a class="code" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a24f7cd4c52adad90d5e8b4c2d257b91b">in_buff</a>;<span class="comment">///&lt; input buffer containing the data bytes and CRC if any</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#af3870255ef3b7235e9223e43aaa9f807">   23</a></span>&#160;        uint32_t <a class="code" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#af3870255ef3b7235e9223e43aaa9f807">cnt</a>=0;<span class="comment">///&lt; count the number of frame</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"></span><span class="comment"></span> </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">        /**</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">         *  \brief  Handles the payload length received from the header_decoder block.</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#ad6455bacf021f7f364ab49cc4951f7c7">header_pay_len_handler</a>(pmt::pmt_t payload_len);<span class="comment"></span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">        /**</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">         *  \brief  Handles the crc_presence received from the header_decoder block.</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a00933d681f1529f303ddb376c729408e">header_crc_handler</a>(pmt::pmt_t crc_presence);<span class="comment"></span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">        /**</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">         *  \brief  Calculate the CRC 16 using poly=0x1021 and Init=0x0000</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">         *</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">         *  \param  data</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">         *          The pointer to the data beginning.</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">         *  \param  len</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">         *          The length of the data in bytes.</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a38de958e3a0ae16390b0e435b1033351">crc16</a>(uint8_t* data, uint32_t len);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;     <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <a class="code" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#abd83a5701be2529b6baad04a9e8cd39c">crc_verif_impl</a>(<span class="keywordtype">bool</span> exit);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <a class="code" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#ad76dab09cf9164a5f55e4d481f16bfc8">~crc_verif_impl</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a97c2b3e045c503153ee1acbd092f0e23">forecast</a> (<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a02d02bb28e3d86d460ed5cabf0e8790d">general_work</a>(<span class="keywordtype">int</span> noutput_items,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;           gr_vector_int &amp;ninput_items,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;           gr_vector_const_void_star &amp;input_items,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;           gr_vector_void_star &amp;output_items);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    };</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  } <span class="comment">// namespace lora</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <span class="comment">// namespace gr</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_CRC_VERIF_IMPL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"></span><span class="comment">        /**</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">         *  \brief  Handles the payload length received from the header_decoder block.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#ad6455bacf021f7f364ab49cc4951f7c7">header_pay_len_handler</a>(pmt::pmt_t payload_len);<span class="comment"></span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">        /**</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">         *  \brief  Handles the crc_presence received from the header_decoder block.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a00933d681f1529f303ddb376c729408e">header_crc_handler</a>(pmt::pmt_t crc_presence);<span class="comment"></span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">        /**</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">         *  \brief  Calculate the CRC 16 using poly=0x1021 and Init=0x0000</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">         *</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">         *  \param  data</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">         *          The pointer to the data beginning.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">         *  \param  len</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">         *          The length of the data in bytes.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a38de958e3a0ae16390b0e435b1033351">crc16</a>(uint8_t* data, uint32_t len);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;     <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <a class="code" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#abd83a5701be2529b6baad04a9e8cd39c">crc_verif_impl</a>(<span class="keywordtype">bool</span> exit);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <a class="code" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#ad76dab09cf9164a5f55e4d481f16bfc8">~crc_verif_impl</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a97c2b3e045c503153ee1acbd092f0e23">forecast</a> (<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a02d02bb28e3d86d460ed5cabf0e8790d">general_work</a>(<span class="keywordtype">int</span> noutput_items,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;           gr_vector_int &amp;ninput_items,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;           gr_vector_const_void_star &amp;input_items,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;           gr_vector_void_star &amp;output_items);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    };</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  } <span class="comment">// namespace lora</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_CRC_VERIF_IMPL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1crc__verif__impl_html_ad76dab09cf9164a5f55e4d481f16bfc8"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#ad76dab09cf9164a5f55e4d481f16bfc8">gr::lora_sdr::crc_verif_impl::~crc_verif_impl</a></div><div class="ttdeci">~crc_verif_impl()</div></div>
