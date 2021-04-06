@@ -1,5 +1,13 @@
 var NAVTREEINDEX3 =
 {
+"namespacegr.html":[2,0,0],
+"namespacegr_1_1lora__sdr.html":[2,0,0,0],
+"namespacemembers.html":[1,0],
+"namespacemembers_enum.html":[1,3],
+"namespacemembers_eval.html":[1,4],
+"namespacemembers_func.html":[1,1],
+"namespacemembers_vars.html":[1,2],
+"noise__est_8h.html":[3,0,51],
 "noise__est_8h_source.html":[3,0,51],
 "noise__est__impl_8h.html":[3,0,52],
 "noise__est__impl_8h_source.html":[3,0,52],

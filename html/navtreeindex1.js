@@ -1,5 +1,13 @@
 var NAVTREEINDEX1 =
 {
+"classgr_1_1lora__sdr_1_1frame__sync__impl.html#a0e20beb40f927d2e3b8440db05c3a2c2":[2,0,0,0,22,53],
+"classgr_1_1lora__sdr_1_1frame__sync__impl.html#a13f07cd01445600e72d1d5c0865d92c2":[2,0,0,0,22,44],
+"classgr_1_1lora__sdr_1_1frame__sync__impl.html#a14c396c5df39fa330aba0869e6033048":[2,0,0,0,22,50],
+"classgr_1_1lora__sdr_1_1frame__sync__impl.html#a14d950a36abb113ed9ac633a569e12f3":[2,0,0,0,22,29],
+"classgr_1_1lora__sdr_1_1frame__sync__impl.html#a1f775ab159a615812bf22c94d919ffd7":[2,0,0,0,22,6],
+"classgr_1_1lora__sdr_1_1frame__sync__impl.html#a1fc7c37b0a40f775575ff31d2c992655":[2,0,0,0,22,40],
+"classgr_1_1lora__sdr_1_1frame__sync__impl.html#a2233e37b5a8ca7b75e09c3a7a829b511":[2,0,0,0,22,34],
+"classgr_1_1lora__sdr_1_1frame__sync__impl.html#a283eae1d4c91804cbb25d032590b6cf9":[2,0,0,0,22,12],
 "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a2849c607a48302dc88bcc823ea57c641":[2,0,0,0,22,16],
 "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a2b524afc6785765fff65a13449cb8c95":[2,0,0,0,22,1],
 "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a2b524afc6785765fff65a13449cb8c95a0feb99e1be18748a655f97e0c0ab51b0":[2,0,0,0,22,1,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX1 =
 "classgr_1_1lora__sdr_1_1mu__synchro__impl.html#ae506d28fa444925b3995b9a7e34aa937a2acced7b395e678bbc50627943453d0b":[2,0,0,0,46,2,0],
 "classgr_1_1lora__sdr_1_1mu__synchro__impl.html#ae506d28fa444925b3995b9a7e34aa937ab75abb061b4ada3956034e332eb69631":[2,0,0,0,46,2,4],
 "classgr_1_1lora__sdr_1_1mu__synchro__impl.html#ae506d28fa444925b3995b9a7e34aa937ab97061497b5c15326311764fe067a3d9":[2,0,0,0,46,2,3],
-"classgr_1_1lora__sdr_1_1mu__synchro__impl.html#ae506d28fa444925b3995b9a7e34aa937af1b97f5b3193cfb7d0944e0bbe68834f":[2,0,0,0,46,2,1],
-"classgr_1_1lora__sdr_1_1mu__synchro__impl.html#ae8e24980ff6e2e494ada2073dd2a4245":[2,0,0,0,46,13],
-"classgr_1_1lora__sdr_1_1mu__synchro__impl.html#af322d5915199c2ce76732a3f27cf85af":[2,0,0,0,46,23],
-"classgr_1_1lora__sdr_1_1noise__est.html":[2,0,0,0,47],
-"classgr_1_1lora__sdr_1_1noise__est.html#a0adeb5c40e3eef7278729afaf02783ee":[2,0,0,0,47,1],
-"classgr_1_1lora__sdr_1_1noise__est.html#ab72ae6a62f9074c9260a8ddd8e168ea2":[2,0,0,0,47,0],
-"classgr_1_1lora__sdr_1_1noise__est__impl.html":[2,0,0,0,48],
-"classgr_1_1lora__sdr_1_1noise__est__impl.html#a0f89fd5b7dc4c0f314b3496feca737b8":[2,0,0,0,48,0],
-"classgr_1_1lora__sdr_1_1noise__est__impl.html#a2a00fa5c5977f50eb81415ee1e2a9bdf":[2,0,0,0,48,2]
+"classgr_1_1lora__sdr_1_1mu__synchro__impl.html#ae506d28fa444925b3995b9a7e34aa937af1b97f5b3193cfb7d0944e0bbe68834f":[2,0,0,0,46,2,1]
 };
