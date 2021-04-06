@@ -88,26 +88,28 @@ $(document).ready(function(){initNavTree('hier__tx__impl_8h_source.html',''); in
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">   * @param impl_head : impl_head mode (boolean on/off)</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">   * @param has_crc : has_crc mode (boolean on/off)</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">   * @param samp_rate : sampling rate</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">   * @param bw : bandwith</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">   * @param bw : bandwith to use</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">   * @param mean : mean time in ms</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">   * @param multi_control : Whetere multi control is enabled (aka should we wait for stopping if more chains are transmitting)</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1hier__tx__impl.html#ae56aff8428d9676d4b3645e940efd034">hier_tx_impl</a>(<span class="keywordtype">int</span> pay_len, <span class="keywordtype">int</span> n_frames, std::string src_data, uint8_t cr,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;               uint8_t sf, <span class="keywordtype">bool</span> impl_head, <span class="keywordtype">bool</span> has_crc, uint32_t samp_rate,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;               uint32_t bw,uint32_t mean, <span class="keywordtype">bool</span> multi_control);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1hier__tx__impl.html#a721552f3561d65c45d2029d60e057899">~hier_tx_impl</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">// Where all the action really happens</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// namespace gr</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_SDR_HIER_TX_IMPL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">   * @param sync_words : sync words to use</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">   * @param create_zeros : whether multi control is enabled (aka should we wait for stopping if more chains are transmitting)</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1hier__tx__impl.html#a836d9a3d6d08ed99d069ee6e172306f2">hier_tx_impl</a>(<span class="keywordtype">int</span> pay_len, <span class="keywordtype">int</span> n_frames, std::string src_data,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;               uint8_t cr, uint8_t sf, <span class="keywordtype">bool</span> impl_head, <span class="keywordtype">bool</span> has_crc,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;               uint32_t samp_rate, uint32_t bw, uint32_t mean, std::vector&lt;uint16_t&gt; sync_words,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;               <span class="keywordtype">bool</span> create_zeros);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1hier__tx__impl.html#a721552f3561d65c45d2029d60e057899">~hier_tx_impl</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="comment">// Where all the action really happens</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_SDR_HIER_TX_IMPL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1hier__tx__impl_html_ae56aff8428d9676d4b3645e940efd034"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hier__tx__impl.html#ae56aff8428d9676d4b3645e940efd034">gr::lora_sdr::hier_tx_impl::hier_tx_impl</a></div><div class="ttdeci">hier_tx_impl(int pay_len, int n_frames, std::string src_data, uint8_t cr, uint8_t sf, bool impl_head, bool has_crc, uint32_t samp_rate, uint32_t bw, uint32_t mean, bool multi_control)</div><div class="ttdoc">Construct a new hier tx impl::hier tx impl object.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1hier__tx__impl_html_a721552f3561d65c45d2029d60e057899"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hier__tx__impl.html#a721552f3561d65c45d2029d60e057899">gr::lora_sdr::hier_tx_impl::~hier_tx_impl</a></div><div class="ttdeci">~hier_tx_impl()</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1hier__tx__impl_html_a836d9a3d6d08ed99d069ee6e172306f2"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hier__tx__impl.html#a836d9a3d6d08ed99d069ee6e172306f2">gr::lora_sdr::hier_tx_impl::hier_tx_impl</a></div><div class="ttdeci">hier_tx_impl(int pay_len, int n_frames, std::string src_data, uint8_t cr, uint8_t sf, bool impl_head, bool has_crc, uint32_t samp_rate, uint32_t bw, uint32_t mean, std::vector&lt; uint16_t &gt; sync_words, bool create_zeros)</div><div class="ttdoc">Construct a new hier tx impl::hier tx impl object.</div></div>
 <div class="ttc" id="ahier__tx_8h_html"><div class="ttname"><a href="hier__tx_8h.html">hier_tx.h</a></div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1hier__tx_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hier__tx.html">gr::lora_sdr::hier_tx</a></div><div class="ttdoc">wrapper of Tx chain (data_source, whitening, add_header,add_crc, hamming_enc, interleaver,...</div><div class="ttdef"><b>Definition:</b> hier_tx.h:26</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1hier__tx__impl_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hier__tx__impl.html">gr::lora_sdr::hier_tx_impl</a></div><div class="ttdef"><b>Definition:</b> hier_tx_impl.h:19</div></div>

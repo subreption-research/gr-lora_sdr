@@ -12,6 +12,7 @@ var classgr_1_1lora__sdr_1_1crc__verif__impl =
     [ "m_char", "classgr_1_1lora__sdr_1_1crc__verif__impl.html#abac6f187a60d535a99f0dc8290563c99", null ],
     [ "m_crc", "classgr_1_1lora__sdr_1_1crc__verif__impl.html#af29548fda0c8ea608001404d0cab18d3", null ],
     [ "m_crc_presence", "classgr_1_1lora__sdr_1_1crc__verif__impl.html#a98cbeffc5add19e966fa6e10f1adb7d9", null ],
+    [ "m_exit", "classgr_1_1lora__sdr_1_1crc__verif__impl.html#aa7ed9a3493e7a7505ee0f6063a311339", null ],
     [ "m_payload_len", "classgr_1_1lora__sdr_1_1crc__verif__impl.html#ac948d435528bab46576eb3edcc6f2d95", null ],
     [ "message_str", "classgr_1_1lora__sdr_1_1crc__verif__impl.html#a420c009662c0973b013768d00b4934f7", null ],
     [ "new_frame", "classgr_1_1lora__sdr_1_1crc__verif__impl.html#a89cf4871ea6c68e05cf442db5d5a7fb2", null ]

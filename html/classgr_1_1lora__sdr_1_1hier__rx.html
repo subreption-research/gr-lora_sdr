@@ -80,9 +80,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae60ad3e457d2e0b78e2754cab67c7a16"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#afcbec9a5d1cddd9634ca59936b493c6a">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#ae60ad3e457d2e0b78e2754cab67c7a16">make</a> (float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head, uint8_t cr, uint32_t pay_len, bool has_crc, bool exit)</td></tr>
-<tr class="memdesc:ae60ad3e457d2e0b78e2754cab67c7a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html" title="Wrapper block that hold the entire Rx chain : (frame_sync, fft_demod, gray_decode,...">lora_sdr::hier_rx</a>.  <a href="classgr_1_1lora__sdr_1_1hier__rx.html#ae60ad3e457d2e0b78e2754cab67c7a16">More...</a><br /></td></tr>
-<tr class="separator:ae60ad3e457d2e0b78e2754cab67c7a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04f7d354a405603d3663f95b1739f2a5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#afcbec9a5d1cddd9634ca59936b493c6a">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#a04f7d354a405603d3663f95b1739f2a5">make</a> (float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head, uint8_t cr, uint32_t pay_len, bool has_crc, std::vector&lt; uint16_t &gt; sync_words, bool exit)</td></tr>
+<tr class="memdesc:a04f7d354a405603d3663f95b1739f2a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html" title="Wrapper block that hold the entire Rx chain : (frame_sync, fft_demod, gray_decode,...">lora_sdr::hier_rx</a>.  <a href="classgr_1_1lora__sdr_1_1hier__rx.html#a04f7d354a405603d3663f95b1739f2a5">More...</a><br /></td></tr>
+<tr class="separator:a04f7d354a405603d3663f95b1739f2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Wrapper block that hold the entire Rx chain : (<a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html" title="&lt;+description of block+&gt;">frame_sync</a>, <a class="el" href="classgr_1_1lora__sdr_1_1fft__demod.html" title="FFT demodulation block ,for more information about the implementation visit fft_demod_impl.">fft_demod</a>, <a class="el" href="classgr_1_1lora__sdr_1_1gray__decode.html" title="Decode the received payload with the inverse gray mapping in order to obtain the send message....">gray_decode</a>, deinterleaver, <a class="el" href="classgr_1_1lora__sdr_1_1hamming__dec.html" title="Hamming decoding stage, decode the received payload. If necessary this block will preform error detec...">hamming_dec</a>, <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html" title="Decode the header of the data spackage. For more information about the implementation visit header_de...">header_decoder</a>, dewhitening, <a class="el" href="classgr_1_1lora__sdr_1_1crc__verif.html" title="Verifies if the included crc is correct or not for more information about the implementation visit cr...">crc_verif</a>) </p>
@@ -102,8 +102,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae60ad3e457d2e0b78e2754cab67c7a16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae60ad3e457d2e0b78e2754cab67c7a16">&#9670;&nbsp;</a></span>make()</h2>
+<a id="a04f7d354a405603d3663f95b1739f2a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04f7d354a405603d3663f95b1739f2a5">&#9670;&nbsp;</a></span>make()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,6 +156,12 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::vector&lt; uint16_t &gt;&#160;</td>
+          <td class="paramname"><em>sync_words</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>exit</em>&#160;</td>
         </tr>
@@ -173,7 +179,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html" title="Wrapper block that hold the entire Rx chain : (frame_sync, fft_demod, gray_decode,...">lora_sdr::hier_rx</a>. </p>
-<p>To avoid accidental use of raw pointers, <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html" title="Wrapper block that hold the entire Rx chain : (frame_sync, fft_demod, gray_decode,...">lora_sdr::hier_rx</a>'s constructor is in a private implementation class. <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#ae60ad3e457d2e0b78e2754cab67c7a16" title="Return a shared_ptr to a new instance of lora_sdr::hier_rx.">lora_sdr::hier_rx::make</a> is the public interface for creating new instances. </p>
+<p>To avoid accidental use of raw pointers, <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html" title="Wrapper block that hold the entire Rx chain : (frame_sync, fft_demod, gray_decode,...">lora_sdr::hier_rx</a>'s constructor is in a private implementation class. <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#a04f7d354a405603d3663f95b1739f2a5" title="Return a shared_ptr to a new instance of lora_sdr::hier_rx.">lora_sdr::hier_rx::make</a> is the public interface for creating new instances. </p>
 
 </div>
 </div>

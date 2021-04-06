@@ -71,9 +71,9 @@ Inheritance diagram for gr::lora_sdr::hier_rx_impl:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a43b395dfdb080b50d0719634fb24067d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hier__rx__impl.html#a43b395dfdb080b50d0719634fb24067d">hier_rx_impl</a> (float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head, uint8_t cr, uint32_t pay_len, bool has_crc, bool exit)</td></tr>
-<tr class="memdesc:a43b395dfdb080b50d0719634fb24067d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new hier rx impl object.  <a href="classgr_1_1lora__sdr_1_1hier__rx__impl.html#a43b395dfdb080b50d0719634fb24067d">More...</a><br /></td></tr>
-<tr class="separator:a43b395dfdb080b50d0719634fb24067d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c35a5af20203e914066c484e291535"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hier__rx__impl.html#a04c35a5af20203e914066c484e291535">hier_rx_impl</a> (float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head, uint8_t cr, uint32_t pay_len, bool has_crc, std::vector&lt; uint16_t &gt; sync_words, bool exit)</td></tr>
+<tr class="memdesc:a04c35a5af20203e914066c484e291535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new hier rx impl object.  <a href="classgr_1_1lora__sdr_1_1hier__rx__impl.html#a04c35a5af20203e914066c484e291535">More...</a><br /></td></tr>
+<tr class="separator:a04c35a5af20203e914066c484e291535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68da14c0c68273510d03058825524c06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hier__rx__impl.html#a68da14c0c68273510d03058825524c06">~hier_rx_impl</a> ()</td></tr>
 <tr class="memdesc:a68da14c0c68273510d03058825524c06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the hier rx impl object.  <a href="classgr_1_1lora__sdr_1_1hier__rx__impl.html#a68da14c0c68273510d03058825524c06">More...</a><br /></td></tr>
 <tr class="separator:a68da14c0c68273510d03058825524c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -84,13 +84,13 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:afcbec9a5d1cddd9634ca59936b493c6a inherit pub_types_classgr_1_1lora__sdr_1_1hier__rx"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html">hier_rx</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#afcbec9a5d1cddd9634ca59936b493c6a">sptr</a></td></tr>
 <tr class="separator:afcbec9a5d1cddd9634ca59936b493c6a inherit pub_types_classgr_1_1lora__sdr_1_1hier__rx"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classgr_1_1lora__sdr_1_1hier__rx"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classgr_1_1lora__sdr_1_1hier__rx')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html">gr::lora_sdr::hier_rx</a></td></tr>
-<tr class="memitem:ae60ad3e457d2e0b78e2754cab67c7a16 inherit pub_static_methods_classgr_1_1lora__sdr_1_1hier__rx"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#afcbec9a5d1cddd9634ca59936b493c6a">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#ae60ad3e457d2e0b78e2754cab67c7a16">make</a> (float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head, uint8_t cr, uint32_t pay_len, bool has_crc, bool exit)</td></tr>
-<tr class="memdesc:ae60ad3e457d2e0b78e2754cab67c7a16 inherit pub_static_methods_classgr_1_1lora__sdr_1_1hier__rx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html" title="Wrapper block that hold the entire Rx chain : (frame_sync, fft_demod, gray_decode,...">lora_sdr::hier_rx</a>.  <a href="classgr_1_1lora__sdr_1_1hier__rx.html#ae60ad3e457d2e0b78e2754cab67c7a16">More...</a><br /></td></tr>
-<tr class="separator:ae60ad3e457d2e0b78e2754cab67c7a16 inherit pub_static_methods_classgr_1_1lora__sdr_1_1hier__rx"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04f7d354a405603d3663f95b1739f2a5 inherit pub_static_methods_classgr_1_1lora__sdr_1_1hier__rx"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#afcbec9a5d1cddd9634ca59936b493c6a">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#a04f7d354a405603d3663f95b1739f2a5">make</a> (float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head, uint8_t cr, uint32_t pay_len, bool has_crc, std::vector&lt; uint16_t &gt; sync_words, bool exit)</td></tr>
+<tr class="memdesc:a04f7d354a405603d3663f95b1739f2a5 inherit pub_static_methods_classgr_1_1lora__sdr_1_1hier__rx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html" title="Wrapper block that hold the entire Rx chain : (frame_sync, fft_demod, gray_decode,...">lora_sdr::hier_rx</a>.  <a href="classgr_1_1lora__sdr_1_1hier__rx.html#a04f7d354a405603d3663f95b1739f2a5">More...</a><br /></td></tr>
+<tr class="separator:a04f7d354a405603d3663f95b1739f2a5 inherit pub_static_methods_classgr_1_1lora__sdr_1_1hier__rx"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a43b395dfdb080b50d0719634fb24067d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43b395dfdb080b50d0719634fb24067d">&#9670;&nbsp;</a></span>hier_rx_impl()</h2>
+<a id="a04c35a5af20203e914066c484e291535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04c35a5af20203e914066c484e291535">&#9670;&nbsp;</a></span>hier_rx_impl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,6 +140,12 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::vector&lt; uint16_t &gt;&#160;</td>
+          <td class="paramname"><em>sync_words</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>exit</em>&#160;</td>
         </tr>
@@ -154,14 +160,15 @@ Additional Inherited Members</h2></td></tr>
 <p>Construct a new hier rx impl object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">samp_rate</td><td></td></tr>
-    <tr><td class="paramname">bandwidth</td><td></td></tr>
-    <tr><td class="paramname">sf</td><td></td></tr>
-    <tr><td class="paramname">impl_head</td><td></td></tr>
-    <tr><td class="paramname">cr</td><td></td></tr>
-    <tr><td class="paramname">pay_len</td><td></td></tr>
-    <tr><td class="paramname">has_crc</td><td></td></tr>
-    <tr><td class="paramname">exit</td><td></td></tr>
+    <tr><td class="paramname">samp_rate</td><td>: sampling rate to use </td></tr>
+    <tr><td class="paramname">bandwidth</td><td>: bandwith to use </td></tr>
+    <tr><td class="paramname">sf</td><td>: spreading factor to use </td></tr>
+    <tr><td class="paramname">impl_head</td><td>: impl_head mode (boolean) </td></tr>
+    <tr><td class="paramname">cr</td><td>: coding rate </td></tr>
+    <tr><td class="paramname">pay_len</td><td>: payload length </td></tr>
+    <tr><td class="paramname">has_crc</td><td>: has_crc (boolean) </td></tr>
+    <tr><td class="paramname">sync_words</td><td>: syncwords to use </td></tr>
+    <tr><td class="paramname">exit</td><td>: boolean to tell system what to do on done signal (exit or not) </td></tr>
   </table>
   </dd>
 </dl>

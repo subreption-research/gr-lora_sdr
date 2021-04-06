@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classgr_1_1lora__sdr_1_1noise__est__impl.html#a381cf5d3e927c209266867493280c3e6":[2,0,0,0,48,1],
 "classgr_1_1lora__sdr_1_1noise__est__impl.html#aacca6375f4d967511debf6abf738fdb3":[2,0,0,0,48,4],
 "classgr_1_1lora__sdr_1_1noise__est__impl.html#abd7d2217709949a928e99be596e4919f":[2,0,0,0,48,3],
 "classgr_1_1lora__sdr_1_1noise__est__impl.html#ae0b9d27a84c6d8edd3cd3451b1aa11bd":[2,0,0,0,48,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "namespacemembers_eval.html":[1,4],
 "namespacemembers_func.html":[1,1],
 "namespacemembers_vars.html":[1,2],
-"noise__est_8h.html":[3,0,51],
-"noise__est_8h_source.html":[3,0,51]
+"noise__est_8h.html":[3,0,51]
 };

@@ -80,34 +80,36 @@ $(document).ready(function(){initNavTree('hier__rx__impl_8h_source.html',''); in
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">   * @brief Construct a new hier rx impl object</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">   * @param samp_rate</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">   * @param bandwidth</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">   * @param sf</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">   * @param impl_head</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">   * @param cr</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">   * @param pay_len</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">   * @param has_crc</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">   * @param exit</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1hier__rx__impl.html#a43b395dfdb080b50d0719634fb24067d">hier_rx_impl</a>(<span class="keywordtype">float</span> samp_rate, uint32_t bandwidth, uint8_t sf, <span class="keywordtype">bool</span> impl_head,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;               uint8_t cr, uint32_t pay_len, <span class="keywordtype">bool</span> has_crc, <span class="keywordtype">bool</span> exit);<span class="comment"></span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">   * @brief Destroy the hier rx impl object</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1hier__rx__impl.html#a68da14c0c68273510d03058825524c06">~hier_rx_impl</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">// Where all the action really happens</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// namespace gr</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_SDR_HIER_RX_IMPL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">   * @param samp_rate : sampling rate to use</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">   * @param bandwidth : bandwith to use</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">   * @param sf : spreading factor to use</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">   * @param impl_head : impl_head mode (boolean)</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">   * @param cr : coding rate</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">   * @param pay_len : payload length</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">   * @param has_crc : has_crc (boolean)</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">   * @param sync_words : syncwords to use</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">   * @param exit : boolean to tell system what to do on done signal (exit or not)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1hier__rx__impl.html#a04c35a5af20203e914066c484e291535">hier_rx_impl</a>(<span class="keywordtype">float</span> samp_rate, uint32_t bandwidth, uint8_t sf,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;               <span class="keywordtype">bool</span> impl_head, uint8_t cr, uint32_t pay_len,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;               <span class="keywordtype">bool</span> has_crc, std::vector&lt;uint16_t&gt; sync_words, <span class="keywordtype">bool</span> exit);<span class="comment"></span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">   * @brief Destroy the hier rx impl object</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1hier__rx__impl.html#a68da14c0c68273510d03058825524c06">~hier_rx_impl</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="comment">// Where all the action really happens</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_SDR_HIER_RX_IMPL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1hier__rx__impl_html_a04c35a5af20203e914066c484e291535"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hier__rx__impl.html#a04c35a5af20203e914066c484e291535">gr::lora_sdr::hier_rx_impl::hier_rx_impl</a></div><div class="ttdeci">hier_rx_impl(float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head, uint8_t cr, uint32_t pay_len, bool has_crc, std::vector&lt; uint16_t &gt; sync_words, bool exit)</div><div class="ttdoc">Construct a new hier rx impl object.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1hier__rx__impl_html_a68da14c0c68273510d03058825524c06"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hier__rx__impl.html#a68da14c0c68273510d03058825524c06">gr::lora_sdr::hier_rx_impl::~hier_rx_impl</a></div><div class="ttdeci">~hier_rx_impl()</div><div class="ttdoc">Destroy the hier rx impl object.</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1hier__rx__impl_html_a43b395dfdb080b50d0719634fb24067d"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hier__rx__impl.html#a43b395dfdb080b50d0719634fb24067d">gr::lora_sdr::hier_rx_impl::hier_rx_impl</a></div><div class="ttdeci">hier_rx_impl(float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head, uint8_t cr, uint32_t pay_len, bool has_crc, bool exit)</div><div class="ttdoc">Construct a new hier rx impl object.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1hier__rx__impl_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hier__rx__impl.html">gr::lora_sdr::hier_rx_impl</a></div><div class="ttdef"><b>Definition:</b> hier_rx_impl.h:19</div></div>
 <div class="ttc" id="anamespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> add_crc.h:28</div></div>
 <div class="ttc" id="ahier__rx_8h_html"><div class="ttname"><a href="hier__rx_8h.html">hier_rx.h</a></div></div>
