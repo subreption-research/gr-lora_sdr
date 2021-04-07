@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"mu__synchro__impl_8h.html":[3,0,50],
+"mu__synchro__impl_8h_source.html":[3,0,50],
 "namespacegr.html":[2,0,0],
 "namespacegr_1_1lora__sdr.html":[2,0,0,0],
 "namespacemembers.html":[1,0],

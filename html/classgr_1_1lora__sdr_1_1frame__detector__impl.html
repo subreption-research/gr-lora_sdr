@@ -53,6 +53,7 @@ $(document).ready(function(){initNavTree('classgr_1_1lora__sdr_1_1frame__detecto
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classgr_1_1lora__sdr_1_1frame__detector__impl-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -80,7 +81,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a109682da06611c617e14a7f52cfd06ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the frame detector impl object.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a109682da06611c617e14a7f52cfd06ef">More...</a><br /></td></tr>
 <tr class="separator:a109682da06611c617e14a7f52cfd06ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a560e10de2a1471dc7eb99236b57f211f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a560e10de2a1471dc7eb99236b57f211f">forecast</a> (int noutput_items, gr_vector_int &amp;ninput_items_required)</td></tr>
-<tr class="memdesc:a560e10de2a1471dc7eb99236b57f211f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard gnuradio function to forecast the number of items needed in order for the file to function.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a560e10de2a1471dc7eb99236b57f211f">More...</a><br /></td></tr>
 <tr class="separator:a560e10de2a1471dc7eb99236b57f211f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63849e8943c68c28dd2b63f6ed3b01e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a63849e8943c68c28dd2b63f6ed3b01e3">general_work</a> (int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</td></tr>
 <tr class="memdesc:a63849e8943c68c28dd2b63f6ed3b01e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">General work function. Main gnuradio function that does the heavy lifting.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a63849e8943c68c28dd2b63f6ed3b01e3">More...</a><br /></td></tr>
@@ -95,31 +95,52 @@ Private Types</h2></td></tr>
 <tr class="memdesc:af2bdd6e4fccb2f5db62d4185d5fae72d"><td class="mdescLeft">&#160;</td><td class="mdescRight">State the frame finder can be in.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72d">More...</a><br /></td></tr>
 <tr class="separator:af2bdd6e4fccb2f5db62d4185d5fae72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a440c063d3da3ac1c5650135f353725e4"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a440c063d3da3ac1c5650135f353725e4">get_symbol</a> (const gr_complex *input)</td></tr>
+<tr class="memdesc:a440c063d3da3ac1c5650135f353725e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the symbol object value (aka decoded LoRa symbol value)  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a440c063d3da3ac1c5650135f353725e4">More...</a><br /></td></tr>
+<tr class="separator:a440c063d3da3ac1c5650135f353725e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfcd9de757a2a73d03c1ae69775db1cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#acfcd9de757a2a73d03c1ae69775db1cd">check_in_frame</a> (const gr_complex *input)</td></tr>
+<tr class="memdesc:acfcd9de757a2a73d03c1ae69775db1cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if current samples have the right.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#acfcd9de757a2a73d03c1ae69775db1cd">More...</a><br /></td></tr>
+<tr class="separator:acfcd9de757a2a73d03c1ae69775db1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb2f88b53475f4fe4eba8a003a071e63"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#abb2f88b53475f4fe4eba8a003a071e63">calc_power</a> (const gr_complex *input)</td></tr>
+<tr class="memdesc:abb2f88b53475f4fe4eba8a003a071e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the LoRa frame peak power.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#abb2f88b53475f4fe4eba8a003a071e63">More...</a><br /></td></tr>
+<tr class="separator:abb2f88b53475f4fe4eba8a003a071e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a292fbf0752cac1a5d8ddffbf726e84dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a292fbf0752cac1a5d8ddffbf726e84dc">set_power</a> (const gr_complex *input)</td></tr>
+<tr class="memdesc:a292fbf0752cac1a5d8ddffbf726e84dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current LoRa frame power.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a292fbf0752cac1a5d8ddffbf726e84dc">More...</a><br /></td></tr>
+<tr class="separator:a292fbf0752cac1a5d8ddffbf726e84dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:abcd7d3a602a0061a1f40b0d2cd073dce"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#abcd7d3a602a0061a1f40b0d2cd073dce">m_state</a></td></tr>
 <tr class="memdesc:abcd7d3a602a0061a1f40b0d2cd073dce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current state of the frame finder.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#abcd7d3a602a0061a1f40b0d2cd073dce">More...</a><br /></td></tr>
 <tr class="separator:abcd7d3a602a0061a1f40b0d2cd073dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af85febc977acb98efb4f7c6722c70474"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#af85febc977acb98efb4f7c6722c70474">m_bw</a></td></tr>
-<tr class="memdesc:af85febc977acb98efb4f7c6722c70474"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bandwith.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#af85febc977acb98efb4f7c6722c70474">More...</a><br /></td></tr>
-<tr class="separator:af85febc977acb98efb4f7c6722c70474"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ba9b820b22c0cd7a5fbfb8f9215fb40"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a9ba9b820b22c0cd7a5fbfb8f9215fb40">m_samp_rate</a></td></tr>
-<tr class="memdesc:a9ba9b820b22c0cd7a5fbfb8f9215fb40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sampling rate.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a9ba9b820b22c0cd7a5fbfb8f9215fb40">More...</a><br /></td></tr>
-<tr class="separator:a9ba9b820b22c0cd7a5fbfb8f9215fb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa56e034a9db362206e95a40864b718c8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#aa56e034a9db362206e95a40864b718c8">m_sf</a></td></tr>
 <tr class="memdesc:aa56e034a9db362206e95a40864b718c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spreading factor.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#aa56e034a9db362206e95a40864b718c8">More...</a><br /></td></tr>
 <tr class="separator:aa56e034a9db362206e95a40864b718c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc8806fc77969f3c7a3b558e6c0b2cf2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#adc8806fc77969f3c7a3b558e6c0b2cf2">m_N</a></td></tr>
-<tr class="memdesc:adc8806fc77969f3c7a3b558e6c0b2cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of bins in each lora Symbol.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#adc8806fc77969f3c7a3b558e6c0b2cf2">More...</a><br /></td></tr>
-<tr class="separator:adc8806fc77969f3c7a3b558e6c0b2cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a927206fcb01985c251ae47f51633c9ad"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a927206fcb01985c251ae47f51633c9ad">m_samples_per_symbol</a></td></tr>
-<tr class="memdesc:a927206fcb01985c251ae47f51633c9ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of samples received per lora symbols.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a927206fcb01985c251ae47f51633c9ad">More...</a><br /></td></tr>
+<tr class="memdesc:a927206fcb01985c251ae47f51633c9ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of samples per LoRa symbol.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a927206fcb01985c251ae47f51633c9ad">More...</a><br /></td></tr>
 <tr class="separator:a927206fcb01985c251ae47f51633c9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc8806fc77969f3c7a3b558e6c0b2cf2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#adc8806fc77969f3c7a3b558e6c0b2cf2">m_N</a></td></tr>
+<tr class="memdesc:adc8806fc77969f3c7a3b558e6c0b2cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">2^sf  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#adc8806fc77969f3c7a3b558e6c0b2cf2">More...</a><br /></td></tr>
+<tr class="separator:adc8806fc77969f3c7a3b558e6c0b2cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cbcc1e0cdd745242ee8fee18bf1bde2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a7cbcc1e0cdd745242ee8fee18bf1bde2">m_os_factor</a></td></tr>
+<tr class="memdesc:a7cbcc1e0cdd745242ee8fee18bf1bde2"><td class="mdescLeft">&#160;</td><td class="mdescRight">oversampling factor  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a7cbcc1e0cdd745242ee8fee18bf1bde2">More...</a><br /></td></tr>
+<tr class="separator:a7cbcc1e0cdd745242ee8fee18bf1bde2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f59bd78d88f0d53499be8ad9db4780d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a1f59bd78d88f0d53499be8ad9db4780d">m_threshold</a></td></tr>
+<tr class="memdesc:a1f59bd78d88f0d53499be8ad9db4780d"><td class="mdescLeft">&#160;</td><td class="mdescRight">detection threshold  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a1f59bd78d88f0d53499be8ad9db4780d">More...</a><br /></td></tr>
+<tr class="separator:a1f59bd78d88f0d53499be8ad9db4780d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b925b1d2837507cebefc553034880e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a80b925b1d2837507cebefc553034880e">m_fft_symb</a></td></tr>
+<tr class="memdesc:a80b925b1d2837507cebefc553034880e"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of symbols on which the fft will be made  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a80b925b1d2837507cebefc553034880e">More...</a><br /></td></tr>
+<tr class="separator:a80b925b1d2837507cebefc553034880e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06edc7d99a9b322d11d4cb7022950a9f"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a06edc7d99a9b322d11d4cb7022950a9f">m_margin</a></td></tr>
+<tr class="memdesc:a06edc7d99a9b322d11d4cb7022950a9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">margin in the input buffer that will be output when a detection occurs [number of symbols]  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a06edc7d99a9b322d11d4cb7022950a9f">More...</a><br /></td></tr>
+<tr class="separator:a06edc7d99a9b322d11d4cb7022950a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacd34f79a32a63c02c4ec054536a73be"><td class="memItemLeft" align="right" valign="top">std::vector&lt; gr_complex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#aacd34f79a32a63c02c4ec054536a73be">m_downchirp</a></td></tr>
-<tr class="memdesc:aacd34f79a32a63c02c4ec054536a73be"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference downchirp  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#aacd34f79a32a63c02c4ec054536a73be">More...</a><br /></td></tr>
+<tr class="memdesc:aacd34f79a32a63c02c4ec054536a73be"><td class="mdescLeft">&#160;</td><td class="mdescRight">the reference downchirp  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#aacd34f79a32a63c02c4ec054536a73be">More...</a><br /></td></tr>
 <tr class="separator:aacd34f79a32a63c02c4ec054536a73be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20194a573e69df897e4f230f5705ca83"><td class="memItemLeft" align="right" valign="top">std::vector&lt; gr_complex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a20194a573e69df897e4f230f5705ca83">m_dechirped</a></td></tr>
-<tr class="memdesc:a20194a573e69df897e4f230f5705ca83"><td class="mdescLeft">&#160;</td><td class="mdescRight">the dechirped symbols on which we need to perform the FF  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a20194a573e69df897e4f230f5705ca83">More...</a><br /></td></tr>
+<tr class="memdesc:a20194a573e69df897e4f230f5705ca83"><td class="mdescLeft">&#160;</td><td class="mdescRight">the dechirped symbols on which we need to perform the FFT.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a20194a573e69df897e4f230f5705ca83">More...</a><br /></td></tr>
 <tr class="separator:a20194a573e69df897e4f230f5705ca83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a967b393bf15680a1a0940a7f2eb54777"><td class="memItemLeft" align="right" valign="top">std::vector&lt; gr_complex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a967b393bf15680a1a0940a7f2eb54777">cx_out</a></td></tr>
 <tr class="memdesc:a967b393bf15680a1a0940a7f2eb54777"><td class="mdescLeft">&#160;</td><td class="mdescRight">the output of the FFT  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a967b393bf15680a1a0940a7f2eb54777">More...</a><br /></td></tr>
@@ -127,20 +148,16 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a155008e901d5fe2be5a606990e4fb714"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kiss__fft_8h.html#ab8c364e12d4cbde47dca54eb4bc3ce79">kiss_fft_cfg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a155008e901d5fe2be5a606990e4fb714">fft_cfg</a></td></tr>
 <tr class="memdesc:a155008e901d5fe2be5a606990e4fb714"><td class="mdescLeft">&#160;</td><td class="mdescRight">the configuration of the FFT  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a155008e901d5fe2be5a606990e4fb714">More...</a><br /></td></tr>
 <tr class="separator:a155008e901d5fe2be5a606990e4fb714"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2b778a09d511e27f3dfe2de0f80f21e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; gr_complex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#ae2b778a09d511e27f3dfe2de0f80f21e">m_input_decim</a></td></tr>
-<tr class="memdesc:ae2b778a09d511e27f3dfe2de0f80f21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">decimated input  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#ae2b778a09d511e27f3dfe2de0f80f21e">More...</a><br /></td></tr>
-<tr class="separator:ae2b778a09d511e27f3dfe2de0f80f21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f08c00c121ef7fbbcb4658339c4f67d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; gr_complex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a3f08c00c121ef7fbbcb4658339c4f67d">m_input_downsampled</a></td></tr>
+<tr class="memdesc:a3f08c00c121ef7fbbcb4658339c4f67d"><td class="mdescLeft">&#160;</td><td class="mdescRight">downsampled input  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a3f08c00c121ef7fbbcb4658339c4f67d">More...</a><br /></td></tr>
+<tr class="separator:a3f08c00c121ef7fbbcb4658339c4f67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf28578a1ba72e4a4b38e87d84f0c7f9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#abf28578a1ba72e4a4b38e87d84f0c7f9">m_max_it</a></td></tr>
-<tr class="memdesc:abf28578a1ba72e4a4b38e87d84f0c7f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">iterator used to find max and argmax of FFT  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#abf28578a1ba72e4a4b38e87d84f0c7f9">More...</a><br /></td></tr>
 <tr class="separator:abf28578a1ba72e4a4b38e87d84f0c7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac5317fa2889e34ba07dd0c5d1aa23ef"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#aac5317fa2889e34ba07dd0c5d1aa23ef">m_dfts_mag</a></td></tr>
 <tr class="memdesc:aac5317fa2889e34ba07dd0c5d1aa23ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector containing the magnitude of the FFT.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#aac5317fa2889e34ba07dd0c5d1aa23ef">More...</a><br /></td></tr>
 <tr class="separator:aac5317fa2889e34ba07dd0c5d1aa23ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae55d38b5beef69b0beb091e3f6d89cd8"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#ae55d38b5beef69b0beb091e3f6d89cd8">symbol_cnt</a></td></tr>
-<tr class="memdesc:ae55d38b5beef69b0beb091e3f6d89cd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of symbols already received.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#ae55d38b5beef69b0beb091e3f6d89cd8">More...</a><br /></td></tr>
-<tr class="separator:ae55d38b5beef69b0beb091e3f6d89cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeedf3d2f6190e1ce3da00348a0cfa9e5"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#aeedf3d2f6190e1ce3da00348a0cfa9e5">bin_idx</a></td></tr>
-<tr class="memdesc:aeedf3d2f6190e1ce3da00348a0cfa9e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">value of previous lora symbol  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#aeedf3d2f6190e1ce3da00348a0cfa9e5">More...</a><br /></td></tr>
+<tr class="memdesc:aeedf3d2f6190e1ce3da00348a0cfa9e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">value of previous lora demodulated symbol  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#aeedf3d2f6190e1ce3da00348a0cfa9e5">More...</a><br /></td></tr>
 <tr class="separator:aeedf3d2f6190e1ce3da00348a0cfa9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3891097f2d197441ac3b0f27e821b31e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a3891097f2d197441ac3b0f27e821b31e">bin_idx_new</a></td></tr>
 <tr class="memdesc:a3891097f2d197441ac3b0f27e821b31e"><td class="mdescLeft">&#160;</td><td class="mdescRight">value of newly demodulated symbol  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a3891097f2d197441ac3b0f27e821b31e">More...</a><br /></td></tr>
@@ -149,23 +166,14 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:a2be893d874f717f1e8022b41891d49c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of consecutive upchirps in preamble.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a2be893d874f717f1e8022b41891d49c8">More...</a><br /></td></tr>
 <tr class="separator:a2be893d874f717f1e8022b41891d49c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f2719678753a044bd025d40ae22b236"><td class="memItemLeft" align="right" valign="top">std::vector&lt; gr_complex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a6f2719678753a044bd025d40ae22b236">mem_vec</a></td></tr>
-<tr class="memdesc:a6f2719678753a044bd025d40ae22b236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temproary memory vector to hold samples values.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a6f2719678753a044bd025d40ae22b236">More...</a><br /></td></tr>
+<tr class="memdesc:a6f2719678753a044bd025d40ae22b236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a6f2719678753a044bd025d40ae22b236">More...</a><br /></td></tr>
 <tr class="separator:a6f2719678753a044bd025d40ae22b236"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa24bcd0fd65987a3160ecf095cd6a8d3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#aa24bcd0fd65987a3160ecf095cd6a8d3">m_threshold</a></td></tr>
-<tr class="memdesc:aa24bcd0fd65987a3160ecf095cd6a8d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Treshold value to compare to.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#aa24bcd0fd65987a3160ecf095cd6a8d3">More...</a><br /></td></tr>
-<tr class="separator:aa24bcd0fd65987a3160ecf095cd6a8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cbcc1e0cdd745242ee8fee18bf1bde2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a7cbcc1e0cdd745242ee8fee18bf1bde2">m_os_factor</a></td></tr>
-<tr class="memdesc:a7cbcc1e0cdd745242ee8fee18bf1bde2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upsampling factor to use.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a7cbcc1e0cdd745242ee8fee18bf1bde2">More...</a><br /></td></tr>
-<tr class="separator:a7cbcc1e0cdd745242ee8fee18bf1bde2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17c4ddb7343d0d4ae24ab08f034bfd5a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a17c4ddb7343d0d4ae24ab08f034bfd5a">symbol_cnt</a></td></tr>
+<tr class="memdesc:a17c4ddb7343d0d4ae24ab08f034bfd5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">LoRa symbol count.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a17c4ddb7343d0d4ae24ab08f034bfd5a">More...</a><br /></td></tr>
+<tr class="separator:a17c4ddb7343d0d4ae24ab08f034bfd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7997494432b772b878fb9d803e9501b0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a7997494432b772b878fb9d803e9501b0">m_power</a></td></tr>
-<tr class="memdesc:a7997494432b772b878fb9d803e9501b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current power.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a7997494432b772b878fb9d803e9501b0">More...</a><br /></td></tr>
+<tr class="memdesc:a7997494432b772b878fb9d803e9501b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Power of a detected LoRa preamble to compare against.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a7997494432b772b878fb9d803e9501b0">More...</a><br /></td></tr>
 <tr class="separator:a7997494432b772b878fb9d803e9501b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55d3d1dd1d2c26f062278571343e9934"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a55d3d1dd1d2c26f062278571343e9934">m_margin</a></td></tr>
-<tr class="memdesc:a55d3d1dd1d2c26f062278571343e9934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of samples to take as margin.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a55d3d1dd1d2c26f062278571343e9934">More...</a><br /></td></tr>
-<tr class="separator:a55d3d1dd1d2c26f062278571343e9934"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa535310f2285e5b4d7844b9f149aa0f6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#aa535310f2285e5b4d7844b9f149aa0f6">m_fft_symb</a></td></tr>
-<tr class="memdesc:aa535310f2285e5b4d7844b9f149aa0f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of symbols on which the fft will be made  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#aa535310f2285e5b4d7844b9f149aa0f6">More...</a><br /></td></tr>
-<tr class="separator:aa535310f2285e5b4d7844b9f149aa0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -276,6 +284,78 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="abb2f88b53475f4fe4eba8a003a071e63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb2f88b53475f4fe4eba8a003a071e63">&#9670;&nbsp;</a></span>calc_power()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gr::lora_sdr::frame_detector_impl::calc_power </td>
+          <td>(</td>
+          <td class="paramtype">const gr_complex *&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the LoRa frame peak power. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>: input samples </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>float : peak power </dd></dl>
+
+</div>
+</div>
+<a id="acfcd9de757a2a73d03c1ae69775db1cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfcd9de757a2a73d03c1ae69775db1cd">&#9670;&nbsp;</a></span>check_in_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gr::lora_sdr::frame_detector_impl::check_in_frame </td>
+          <td>(</td>
+          <td class="paramtype">const gr_complex *&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if current samples have the right. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true : we are in a LoRa frame </dd>
+<dd>
+false : we are not in a LoRa frame </dd></dl>
+
+</div>
+</div>
 <a id="a560e10de2a1471dc7eb99236b57f211f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a560e10de2a1471dc7eb99236b57f211f">&#9670;&nbsp;</a></span>forecast()</h2>
 
@@ -301,8 +381,6 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Standard gnuradio function to forecast the number of items needed in order for the file to function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">noutput_items</td><td>: number of output items </td></tr>
@@ -365,6 +443,75 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a440c063d3da3ac1c5650135f353725e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a440c063d3da3ac1c5650135f353725e4">&#9670;&nbsp;</a></span>get_symbol()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t gr::lora_sdr::frame_detector_impl::get_symbol </td>
+          <td>(</td>
+          <td class="paramtype">const gr_complex *&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the symbol object value (aka decoded LoRa symbol value) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>: complex samples </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int32_t : LoRa symbol value </dd></dl>
+
+</div>
+</div>
+<a id="a292fbf0752cac1a5d8ddffbf726e84dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a292fbf0752cac1a5d8ddffbf726e84dc">&#9670;&nbsp;</a></span>set_power()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gr::lora_sdr::frame_detector_impl::set_power </td>
+          <td>(</td>
+          <td class="paramtype">const gr_complex *&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the current LoRa frame power. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>: complex samples </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="aeedf3d2f6190e1ce3da00348a0cfa9e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeedf3d2f6190e1ce3da00348a0cfa9e5">&#9670;&nbsp;</a></span>bin_idx</h2>
@@ -386,7 +533,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>value of previous lora symbol </p>
+<p>value of previous lora demodulated symbol </p>
 
 </div>
 </div>
@@ -462,30 +609,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="af85febc977acb98efb4f7c6722c70474"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af85febc977acb98efb4f7c6722c70474">&#9670;&nbsp;</a></span>m_bw</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t gr::lora_sdr::frame_detector_impl::m_bw</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Bandwith. </p>
-
-</div>
-</div>
 <a id="a20194a573e69df897e4f230f5705ca83"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a20194a573e69df897e4f230f5705ca83">&#9670;&nbsp;</a></span>m_dechirped</h2>
 
@@ -506,7 +629,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>the dechirped symbols on which we need to perform the FF </p>
+<p>the dechirped symbols on which we need to perform the FFT. </p>
 
 </div>
 </div>
@@ -554,12 +677,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>reference downchirp </p>
+<p>the reference downchirp </p>
 
 </div>
 </div>
-<a id="aa535310f2285e5b4d7844b9f149aa0f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa535310f2285e5b4d7844b9f149aa0f6">&#9670;&nbsp;</a></span>m_fft_symb</h2>
+<a id="a80b925b1d2837507cebefc553034880e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80b925b1d2837507cebefc553034880e">&#9670;&nbsp;</a></span>m_fft_symb</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -568,7 +691,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int gr::lora_sdr::frame_detector_impl::m_fft_symb</td>
+          <td class="memname">int32_t gr::lora_sdr::frame_detector_impl::m_fft_symb</td>
         </tr>
       </table>
   </td>
@@ -582,8 +705,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ae2b778a09d511e27f3dfe2de0f80f21e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2b778a09d511e27f3dfe2de0f80f21e">&#9670;&nbsp;</a></span>m_input_decim</h2>
+<a id="a3f08c00c121ef7fbbcb4658339c4f67d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f08c00c121ef7fbbcb4658339c4f67d">&#9670;&nbsp;</a></span>m_input_downsampled</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -592,7 +715,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;gr_complex&gt; gr::lora_sdr::frame_detector_impl::m_input_decim</td>
+          <td class="memname">std::vector&lt;gr_complex&gt; gr::lora_sdr::frame_detector_impl::m_input_downsampled</td>
         </tr>
       </table>
   </td>
@@ -602,12 +725,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>decimated input </p>
+<p>downsampled input </p>
 
 </div>
 </div>
-<a id="a55d3d1dd1d2c26f062278571343e9934"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55d3d1dd1d2c26f062278571343e9934">&#9670;&nbsp;</a></span>m_margin</h2>
+<a id="a06edc7d99a9b322d11d4cb7022950a9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06edc7d99a9b322d11d4cb7022950a9f">&#9670;&nbsp;</a></span>m_margin</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -616,7 +739,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float gr::lora_sdr::frame_detector_impl::m_margin</td>
+          <td class="memname">int32_t gr::lora_sdr::frame_detector_impl::m_margin</td>
         </tr>
       </table>
   </td>
@@ -626,7 +749,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Number of samples to take as margin. </p>
+<p>margin in the input buffer that will be output when a detection occurs [number of symbols] </p>
 
 </div>
 </div>
@@ -649,8 +772,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>iterator used to find max and argmax of FFT </p>
+<p>@briefiterator used to find max and argmax of FFT </p>
 
 </div>
 </div>
@@ -674,7 +796,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Number of bins in each lora Symbol. </p>
+<p>2^sf </p>
 
 </div>
 </div>
@@ -698,7 +820,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Upsampling factor to use. </p>
+<p>oversampling factor </p>
 
 </div>
 </div>
@@ -722,31 +844,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Current power. </p>
-
-</div>
-</div>
-<a id="a9ba9b820b22c0cd7a5fbfb8f9215fb40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ba9b820b22c0cd7a5fbfb8f9215fb40">&#9670;&nbsp;</a></span>m_samp_rate</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t gr::lora_sdr::frame_detector_impl::m_samp_rate</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sampling rate. </p>
+<p>Power of a detected LoRa preamble to compare against. </p>
 
 </div>
 </div>
@@ -770,7 +868,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Number of samples received per lora symbols. </p>
+<p>Number of samples per LoRa symbol. </p>
 
 </div>
 </div>
@@ -822,8 +920,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aa24bcd0fd65987a3160ecf095cd6a8d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa24bcd0fd65987a3160ecf095cd6a8d3">&#9670;&nbsp;</a></span>m_threshold</h2>
+<a id="a1f59bd78d88f0d53499be8ad9db4780d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f59bd78d88f0d53499be8ad9db4780d">&#9670;&nbsp;</a></span>m_threshold</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -832,7 +930,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float gr::lora_sdr::frame_detector_impl::m_threshold</td>
+          <td class="memname">double gr::lora_sdr::frame_detector_impl::m_threshold</td>
         </tr>
       </table>
   </td>
@@ -842,7 +940,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Treshold value to compare to. </p>
+<p>detection threshold </p>
 
 </div>
 </div>
@@ -866,7 +964,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Temproary memory vector to hold samples values. </p>
+<p>Temporary. </p>
 
 </div>
 </div>
@@ -894,8 +992,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ae55d38b5beef69b0beb091e3f6d89cd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae55d38b5beef69b0beb091e3f6d89cd8">&#9670;&nbsp;</a></span>symbol_cnt</h2>
+<a id="a17c4ddb7343d0d4ae24ab08f034bfd5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17c4ddb7343d0d4ae24ab08f034bfd5a">&#9670;&nbsp;</a></span>symbol_cnt</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -904,7 +1002,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t gr::lora_sdr::frame_detector_impl::symbol_cnt</td>
+          <td class="memname">uint16_t gr::lora_sdr::frame_detector_impl::symbol_cnt</td>
         </tr>
       </table>
   </td>
@@ -914,7 +1012,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Number of symbols already received. </p>
+<p>LoRa symbol count. </p>
 
 </div>
 </div>
