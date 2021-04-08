@@ -2,17 +2,16 @@ var classgr_1_1lora__sdr_1_1frame__detector__impl =
 [
     [ "State", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72d", [
       [ "FIND_PREAMBLE", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72da9f742ecaa3441532f418963509534799", null ],
-      [ "SEND_FRAMES", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72daf2ec2291f35c36333d7700650d974873", null ],
-      [ "FIND_END_FRAME", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72dacf3524ed1618184377abb111b0162e3f", null ]
+      [ "SEND_FRAMES", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72daf2ec2291f35c36333d7700650d974873", null ]
     ] ],
     [ "frame_detector_impl", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a4cee494e0fcae6f98e63b8cecbc88dbf", null ],
     [ "~frame_detector_impl", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a109682da06611c617e14a7f52cfd06ef", null ],
-    [ "calc_power", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#abb2f88b53475f4fe4eba8a003a071e63", null ],
-    [ "check_in_frame", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#acfcd9de757a2a73d03c1ae69775db1cd", null ],
+    [ "calc_power", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a56584b60cc9886263eabb615ff0e417d", null ],
+    [ "check_in_frame", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a51e18b34ae556e193745ad81d2b76db6", null ],
     [ "forecast", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a560e10de2a1471dc7eb99236b57f211f", null ],
     [ "general_work", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a63849e8943c68c28dd2b63f6ed3b01e3", null ],
-    [ "get_symbol", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a440c063d3da3ac1c5650135f353725e4", null ],
-    [ "set_power", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a292fbf0752cac1a5d8ddffbf726e84dc", null ],
+    [ "get_symbol", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#ad5632d38d7ac80e601ec73ede7b3d4e9", null ],
+    [ "set_power", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#ae8d3bc347115cc2faf77de1cc511ae51", null ],
     [ "bin_idx", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#aeedf3d2f6190e1ce3da00348a0cfa9e5", null ],
     [ "bin_idx_new", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a3891097f2d197441ac3b0f27e821b31e", null ],
     [ "cx_out", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a967b393bf15680a1a0940a7f2eb54777", null ],
@@ -24,6 +23,7 @@ var classgr_1_1lora__sdr_1_1frame__detector__impl =
     [ "m_input_downsampled", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a3f08c00c121ef7fbbcb4658339c4f67d", null ],
     [ "m_margin", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a06edc7d99a9b322d11d4cb7022950a9f", null ],
     [ "m_max_it", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#abf28578a1ba72e4a4b38e87d84f0c7f9", null ],
+    [ "m_mul_out", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a1b97d976824a6cb67d49abb82264a300", null ],
     [ "m_N", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#adc8806fc77969f3c7a3b558e6c0b2cf2", null ],
     [ "m_os_factor", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a7cbcc1e0cdd745242ee8fee18bf1bde2", null ],
     [ "m_power", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a7997494432b772b878fb9d803e9501b0", null ],
@@ -31,7 +31,7 @@ var classgr_1_1lora__sdr_1_1frame__detector__impl =
     [ "m_sf", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#aa56e034a9db362206e95a40864b718c8", null ],
     [ "m_state", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#abcd7d3a602a0061a1f40b0d2cd073dce", null ],
     [ "m_threshold", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a1f59bd78d88f0d53499be8ad9db4780d", null ],
-    [ "mem_vec", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a6f2719678753a044bd025d40ae22b236", null ],
+    [ "mem_vec", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a1f880e933cd4b34ed00153acfb857875", null ],
     [ "n_up", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a2be893d874f717f1e8022b41891d49c8", null ],
     [ "symbol_cnt", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a17c4ddb7343d0d4ae24ab08f034bfd5a", null ]
 ];

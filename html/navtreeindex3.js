@@ -1,5 +1,15 @@
 var NAVTREEINDEX3 =
 {
+"modulate_8h_source.html":[3,0,45],
+"modulate__impl_8h.html":[3,0,46],
+"modulate__impl_8h_source.html":[3,0,46],
+"modules.html":[0],
+"mu__detection_8h.html":[3,0,47],
+"mu__detection_8h_source.html":[3,0,47],
+"mu__detection__impl_8h.html":[3,0,48],
+"mu__detection__impl_8h_source.html":[3,0,48],
+"mu__synchro_8h.html":[3,0,49],
+"mu__synchro_8h_source.html":[3,0,49],
 "mu__synchro__impl_8h.html":[3,0,50],
 "mu__synchro__impl_8h_source.html":[3,0,50],
 "namespacegr.html":[2,0,0],
