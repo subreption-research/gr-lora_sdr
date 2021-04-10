@@ -56,13 +56,11 @@ var classgr_1_1lora__sdr_1_1frame__sync__impl =
     [ "m_upchirp", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#af45c81b0f96ffcc571b9cf1cade06b98", null ],
     [ "n_up", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#aa581b92de3463c3ee54f00370c73396f", null ],
     [ "net_id_off", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a13f07cd01445600e72d1d5c0865d92c2", null ],
-    [ "off_by_one_id", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a79b877b1caf2c1412bccffe9468dbd32", null ],
     [ "preamble_raw", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a086f7bf25fa3b2e4c66eb7576e83c45c", null ],
     [ "preamble_up", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a40ed0f1b1076744b029bc6223244887f", null ],
     [ "symb_corr", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a4068c720254e46d5274b20ef99cd08b7", null ],
     [ "symbol_cnt", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a64adb1e1f451420f2a89e2acf831a954", null ],
     [ "symbols_to_skip", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a14c396c5df39fa330aba0869e6033048", null ],
-    [ "sync_log", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#aebada7ee90cda6aa98c6333f1e0ea6c5", null ],
     [ "up_symb_to_use", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#aac6f3ec75f3c13ea1d8516254baa33da", null ],
     [ "usFactor", "classgr_1_1lora__sdr_1_1frame__sync__impl.html#a0e20beb40f927d2e3b8440db05c3a2c2", null ]
 ];

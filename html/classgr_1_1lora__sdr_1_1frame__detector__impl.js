@@ -19,6 +19,7 @@ var classgr_1_1lora__sdr_1_1frame__detector__impl =
     [ "m_dechirped", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a20194a573e69df897e4f230f5705ca83", null ],
     [ "m_dfts_mag", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#aac5317fa2889e34ba07dd0c5d1aa23ef", null ],
     [ "m_downchirp", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#aacd34f79a32a63c02c4ec054536a73be", null ],
+    [ "m_exit", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a43669bdb81ddc9cd2679d153b2ea9440", null ],
     [ "m_fft_symb", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a80b925b1d2837507cebefc553034880e", null ],
     [ "m_input_downsampled", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a3f08c00c121ef7fbbcb4658339c4f67d", null ],
     [ "m_margin", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a06edc7d99a9b322d11d4cb7022950a9f", null ],

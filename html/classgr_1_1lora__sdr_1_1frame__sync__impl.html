@@ -249,12 +249,6 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a13f07cd01445600e72d1d5c0865d92c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a13f07cd01445600e72d1d5c0865d92c2">net_id_off</a></td></tr>
 <tr class="memdesc:a13f07cd01445600e72d1d5c0865d92c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">offset of the network identifier  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a13f07cd01445600e72d1d5c0865d92c2">More...</a><br /></td></tr>
 <tr class="separator:a13f07cd01445600e72d1d5c0865d92c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79b877b1caf2c1412bccffe9468dbd32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a79b877b1caf2c1412bccffe9468dbd32">off_by_one_id</a></td></tr>
-<tr class="memdesc:a79b877b1caf2c1412bccffe9468dbd32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that the network identifiers where off by one and corrected.  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#a79b877b1caf2c1412bccffe9468dbd32">More...</a><br /></td></tr>
-<tr class="separator:a79b877b1caf2c1412bccffe9468dbd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebada7ee90cda6aa98c6333f1e0ea6c5"><td class="memItemLeft" align="right" valign="top">std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aebada7ee90cda6aa98c6333f1e0ea6c5">sync_log</a></td></tr>
-<tr class="memdesc:aebada7ee90cda6aa98c6333f1e0ea6c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">savefile containing the offset estimation and the signal strength estimation  <a href="classgr_1_1lora__sdr_1_1frame__sync__impl.html#aebada7ee90cda6aa98c6333f1e0ea6c5">More...</a><br /></td></tr>
-<tr class="separator:aebada7ee90cda6aa98c6333f1e0ea6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -1497,30 +1491,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a79b877b1caf2c1412bccffe9468dbd32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79b877b1caf2c1412bccffe9468dbd32">&#9670;&nbsp;</a></span>off_by_one_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gr::lora_sdr::frame_sync_impl::off_by_one_id</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Indicate that the network identifiers where off by one and corrected. </p>
-
-</div>
-</div>
 <a id="a086f7bf25fa3b2e4c66eb7576e83c45c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a086f7bf25fa3b2e4c66eb7576e83c45c">&#9670;&nbsp;</a></span>preamble_raw</h2>
 
@@ -1638,30 +1608,6 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Number of integer symbol to skip after consecutive upchirps. </p>
-
-</div>
-</div>
-<a id="aebada7ee90cda6aa98c6333f1e0ea6c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebada7ee90cda6aa98c6333f1e0ea6c5">&#9670;&nbsp;</a></span>sync_log</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ofstream gr::lora_sdr::frame_sync_impl::sync_log</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>savefile containing the offset estimation and the signal strength estimation </p>
 
 </div>
 </div>

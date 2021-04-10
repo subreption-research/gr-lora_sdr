@@ -62,7 +62,9 @@ var files_dup =
     [ "frame_sync.h", "frame__sync_8h.html", [
       [ "frame_sync", "classgr_1_1lora__sdr_1_1frame__sync.html", "classgr_1_1lora__sdr_1_1frame__sync" ]
     ] ],
-    [ "frame_sync_impl.h", "frame__sync__impl_8h.html", "frame__sync__impl_8h" ],
+    [ "frame_sync_impl.h", "frame__sync__impl_8h.html", [
+      [ "frame_sync_impl", "classgr_1_1lora__sdr_1_1frame__sync__impl.html", "classgr_1_1lora__sdr_1_1frame__sync__impl" ]
+    ] ],
     [ "gray_decode.h", "gray__decode_8h.html", [
       [ "gray_decode", "classgr_1_1lora__sdr_1_1gray__decode.html", "classgr_1_1lora__sdr_1_1gray__decode" ]
     ] ],
