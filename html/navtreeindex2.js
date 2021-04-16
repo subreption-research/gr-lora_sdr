@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classgr_1_1lora__sdr_1_1mu__synchro__impl.html#aae893031afce6fc56d43a2fd62156dd8":[2,0,0,0,46,16],
 "classgr_1_1lora__sdr_1_1mu__synchro__impl.html#ad0801efba23b63153236fec3c67d6163":[2,0,0,0,46,15],
 "classgr_1_1lora__sdr_1_1mu__synchro__impl.html#adf79d135a1e910d8a713773041fcdd9b":[2,0,0,0,46,7],
 "classgr_1_1lora__sdr_1_1mu__synchro__impl.html#ae506d28fa444925b3995b9a7e34aa937":[2,0,0,0,46,2],
@@ -134,8 +135,8 @@ var NAVTREEINDEX2 =
 "frame__sync_8h_source.html":[3,0,23],
 "frame__sync__impl_8h.html":[3,0,24],
 "frame__sync__impl_8h_source.html":[3,0,24],
-"functions.html":[2,3,0],
 "functions.html":[2,3,0,0],
+"functions.html":[2,3,0],
 "functions_b.html":[2,3,0,1],
 "functions_c.html":[2,3,0,2],
 "functions_d.html":[2,3,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "modulate_8h.html":[3,0,45],
 "modulate_8h_source.html":[3,0,45],
 "modulate__impl_8h.html":[3,0,46],
-"modulate__impl_8h_source.html":[3,0,46],
-"modules.html":[0]
+"modulate__impl_8h_source.html":[3,0,46]
 };

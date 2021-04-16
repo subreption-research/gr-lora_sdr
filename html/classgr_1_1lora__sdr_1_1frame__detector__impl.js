@@ -28,6 +28,7 @@ var classgr_1_1lora__sdr_1_1frame__detector__impl =
     [ "m_power", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a7997494432b772b878fb9d803e9501b0", null ],
     [ "m_samples_per_symbol", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a927206fcb01985c251ae47f51633c9ad", null ],
     [ "m_sf", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#aa56e034a9db362206e95a40864b718c8", null ],
+    [ "m_signal_power_decim", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#ab5c492ab227f7d647394e2de2af13dbe", null ],
     [ "m_state", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#abcd7d3a602a0061a1f40b0d2cd073dce", null ],
     [ "m_threshold", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a1f59bd78d88f0d53499be8ad9db4780d", null ],
     [ "mem_vec", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a1f880e933cd4b34ed00153acfb857875", null ],

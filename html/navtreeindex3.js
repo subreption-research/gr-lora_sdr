@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"modules.html":[0],
 "mu__detection_8h.html":[3,0,47],
 "mu__detection_8h_source.html":[3,0,47],
 "mu__detection__impl_8h.html":[3,0,48],

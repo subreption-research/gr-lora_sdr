@@ -173,6 +173,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a7997494432b772b878fb9d803e9501b0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a7997494432b772b878fb9d803e9501b0">m_power</a></td></tr>
 <tr class="memdesc:a7997494432b772b878fb9d803e9501b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Power of a detected LoRa preamble to compare against.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a7997494432b772b878fb9d803e9501b0">More...</a><br /></td></tr>
 <tr class="separator:a7997494432b772b878fb9d803e9501b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5c492ab227f7d647394e2de2af13dbe"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#ab5c492ab227f7d647394e2de2af13dbe">m_signal_power_decim</a></td></tr>
+<tr class="memdesc:ab5c492ab227f7d647394e2de2af13dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value to devide by when there is no noise in the system (recommended value 2)  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#ab5c492ab227f7d647394e2de2af13dbe">More...</a><br /></td></tr>
+<tr class="separator:ab5c492ab227f7d647394e2de2af13dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -898,6 +901,30 @@ false : we are not in a LoRa frame </dd></dl>
 </div><div class="memdoc">
 
 <p>Spreading factor. </p>
+
+</div>
+</div>
+<a id="ab5c492ab227f7d647394e2de2af13dbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5c492ab227f7d647394e2de2af13dbe">&#9670;&nbsp;</a></span>m_signal_power_decim</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t gr::lora_sdr::frame_detector_impl::m_signal_power_decim</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Value to devide by when there is no noise in the system (recommended value 2) </p>
 
 </div>
 </div>
