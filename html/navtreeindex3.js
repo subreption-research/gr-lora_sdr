@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"hier__tx__impl_8h.html":[3,0,42],
 "hier__tx__impl_8h_source.html":[3,0,42],
 "hierarchy.html":[2,2],
 "index.html":[],

@@ -18,5 +18,6 @@ var classgr_1_1lora__sdr_1_1modulate__impl =
     [ "n_up", "classgr_1_1lora__sdr_1_1modulate__impl.html#adab83f8a64cca05269b7af04282515fd", null ],
     [ "padd_cnt", "classgr_1_1lora__sdr_1_1modulate__impl.html#af23e7544411e1f66e6959d77d2428734", null ],
     [ "preamb_symb_cnt", "classgr_1_1lora__sdr_1_1modulate__impl.html#a9f704967d6e5368fa459c1317aac466a", null ],
-    [ "symb_cnt", "classgr_1_1lora__sdr_1_1modulate__impl.html#a25df5b094d1afb50275104f97a02b17d", null ]
+    [ "symb_cnt", "classgr_1_1lora__sdr_1_1modulate__impl.html#a25df5b094d1afb50275104f97a02b17d", null ],
+    [ "test", "classgr_1_1lora__sdr_1_1modulate__impl.html#acce46348b9a2bca32a1165e9b4edb35e", null ]
 ];

@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classgr_1_1lora__sdr_1_1mu__synchro.html#a7576687b84df80469bc719b35eb7619a":[2,0,0,0,45,1],
 "classgr_1_1lora__sdr_1_1mu__synchro.html#a9e887771ce4830c215c85c814af37d08":[2,0,0,0,45,0],
 "classgr_1_1lora__sdr_1_1mu__synchro__impl.html":[2,0,0,0,46],
 "classgr_1_1lora__sdr_1_1mu__synchro__impl.html#a13febb0ef3b1db2396ddaa42ae0515ba":[2,0,0,0,46,20],
@@ -184,8 +185,8 @@ var NAVTREEINDEX2 =
 "functions_t.html":[2,3,0,18],
 "functions_type.html":[2,3,3],
 "functions_u.html":[2,3,0,19],
-"functions_vars.html":[2,3,2,0],
 "functions_vars.html":[2,3,2],
+"functions_vars.html":[2,3,2,0],
 "functions_vars_c.html":[2,3,2,1],
 "functions_vars_d.html":[2,3,2,2],
 "functions_vars_e.html":[2,3,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "hier__rx__impl_8h.html":[3,0,40],
 "hier__rx__impl_8h_source.html":[3,0,40],
 "hier__tx_8h.html":[3,0,41],
-"hier__tx_8h_source.html":[3,0,41],
-"hier__tx__impl_8h.html":[3,0,42]
+"hier__tx_8h_source.html":[3,0,41]
 };
