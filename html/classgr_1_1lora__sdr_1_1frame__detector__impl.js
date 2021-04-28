@@ -53,7 +53,10 @@ var classgr_1_1lora__sdr_1_1frame__detector__impl =
     [ "m_symbol_cnt_frame", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a59830462fb6ee28f69b959ff8f4e095f", null ],
     [ "m_temp", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a4809dff1754e3611c8b5fcc0c7d415fc", null ],
     [ "m_threshold", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#aa24bcd0fd65987a3160ecf095cd6a8d3", null ],
+    [ "mem_vec", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a1f880e933cd4b34ed00153acfb857875", null ],
     [ "n_up", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a2be893d874f717f1e8022b41891d49c8", null ],
+    [ "output_log_after", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#af8b9be31615940205ebf0bed5695347d", null ],
+    [ "output_log_before", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#ae24a6c1fbb27ee0c4e4ff22e1d99b570", null ],
     [ "symbol_cnt", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a17c4ddb7343d0d4ae24ab08f034bfd5a", null ],
     [ "symbol_frame", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a2881eae706eee04ffa8ffb32a50abc67", null ]
 ];

@@ -209,6 +209,13 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ab35bdfc0c2660e2bf46851e1368b8f20"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#ab35bdfc0c2660e2bf46851e1368b8f20">m_inter_frame_padding</a></td></tr>
 <tr class="memdesc:ab35bdfc0c2660e2bf46851e1368b8f20"><td class="mdescLeft">&#160;</td><td class="mdescRight">length in samples of zero append to each frame  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#ab35bdfc0c2660e2bf46851e1368b8f20">More...</a><br /></td></tr>
 <tr class="separator:ab35bdfc0c2660e2bf46851e1368b8f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f880e933cd4b34ed00153acfb857875"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgr_1_1lora__sdr_1_1Temporary__buffer.html">Temporary_buffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a1f880e933cd4b34ed00153acfb857875">mem_vec</a></td></tr>
+<tr class="memdesc:a1f880e933cd4b34ed00153acfb857875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary memory vector.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a1f880e933cd4b34ed00153acfb857875">More...</a><br /></td></tr>
+<tr class="separator:a1f880e933cd4b34ed00153acfb857875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24a6c1fbb27ee0c4e4ff22e1d99b570"><td class="memItemLeft" align="right" valign="top">std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#ae24a6c1fbb27ee0c4e4ff22e1d99b570">output_log_before</a></td></tr>
+<tr class="separator:ae24a6c1fbb27ee0c4e4ff22e1d99b570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8b9be31615940205ebf0bed5695347d"><td class="memItemLeft" align="right" valign="top">std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#af8b9be31615940205ebf0bed5695347d">output_log_after</a></td></tr>
+<tr class="separator:af8b9be31615940205ebf0bed5695347d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa24bcd0fd65987a3160ecf095cd6a8d3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#aa24bcd0fd65987a3160ecf095cd6a8d3">m_threshold</a></td></tr>
 <tr class="memdesc:aa24bcd0fd65987a3160ecf095cd6a8d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">detection threshold  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#aa24bcd0fd65987a3160ecf095cd6a8d3">More...</a><br /></td></tr>
 <tr class="separator:aa24bcd0fd65987a3160ecf095cd6a8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1367,6 +1374,30 @@ false : we are not in a LoRa frame </dd></dl>
 
 </div>
 </div>
+<a id="a1f880e933cd4b34ed00153acfb857875"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f880e933cd4b34ed00153acfb857875">&#9670;&nbsp;</a></span>mem_vec</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgr_1_1lora__sdr_1_1Temporary__buffer.html">Temporary_buffer</a> gr::lora_sdr::frame_detector_impl::mem_vec</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Temporary memory vector. </p>
+
+</div>
+</div>
 <a id="a2be893d874f717f1e8022b41891d49c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2be893d874f717f1e8022b41891d49c8">&#9670;&nbsp;</a></span>n_up</h2>
 
@@ -1388,6 +1419,50 @@ false : we are not in a LoRa frame </dd></dl>
 </div><div class="memdoc">
 
 <p>Number of consecutive upchirps in preamble. </p>
+
+</div>
+</div>
+<a id="af8b9be31615940205ebf0bed5695347d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8b9be31615940205ebf0bed5695347d">&#9670;&nbsp;</a></span>output_log_after</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ofstream gr::lora_sdr::frame_detector_impl::output_log_after</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae24a6c1fbb27ee0c4e4ff22e1d99b570"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae24a6c1fbb27ee0c4e4ff22e1d99b570">&#9670;&nbsp;</a></span>output_log_before</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ofstream gr::lora_sdr::frame_detector_impl::output_log_before</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
