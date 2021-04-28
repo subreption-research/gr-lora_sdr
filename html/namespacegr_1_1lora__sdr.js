@@ -55,7 +55,6 @@ var namespacegr_1_1lora__sdr =
     [ "RH_RF95_header_impl", "classgr_1_1lora__sdr_1_1RH__RF95__header__impl.html", "classgr_1_1lora__sdr_1_1RH__RF95__header__impl" ],
     [ "signal_detector", "classgr_1_1lora__sdr_1_1signal__detector.html", "classgr_1_1lora__sdr_1_1signal__detector" ],
     [ "signal_detector_impl", "classgr_1_1lora__sdr_1_1signal__detector__impl.html", "classgr_1_1lora__sdr_1_1signal__detector__impl" ],
-    [ "Temporary_buffer", "classgr_1_1lora__sdr_1_1Temporary__buffer.html", "classgr_1_1lora__sdr_1_1Temporary__buffer" ],
     [ "whitening", "classgr_1_1lora__sdr_1_1whitening.html", "classgr_1_1lora__sdr_1_1whitening" ],
     [ "whitening_impl", "classgr_1_1lora__sdr_1_1whitening__impl.html", "classgr_1_1lora__sdr_1_1whitening__impl" ]
 ];
