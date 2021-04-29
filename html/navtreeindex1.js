@@ -1,9 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classgr_1_1lora__sdr_1_1frame__detector__impl.html#af85febc977acb98efb4f7c6722c70474":[2,0,0,0,18,20],
-"classgr_1_1lora__sdr_1_1frame__src.html":[2,0,0,0,19],
-"classgr_1_1lora__sdr_1_1frame__src.html#abda843a3c01fb36aff48064c9ce2e055":[2,0,0,0,19,1],
-"classgr_1_1lora__sdr_1_1frame__src.html#add24725744425cf5cbab8c49077cf82c":[2,0,0,0,19,0],
 "classgr_1_1lora__sdr_1_1frame__src__impl.html":[2,0,0,0,20],
 "classgr_1_1lora__sdr_1_1frame__src__impl.html#a151316d9b28052a400b2503d0c7f412c":[2,0,0,0,20,13],
 "classgr_1_1lora__sdr_1_1frame__src__impl.html#a1c045f462871e655dc2a05a51011092f":[2,0,0,0,20,22],
@@ -208,7 +204,6 @@ var NAVTREEINDEX1 =
 "classgr_1_1lora__sdr_1_1modulate__impl.html#aa7996cc28155b930a520c56d547f5ef7":[2,0,0,0,42,4],
 "classgr_1_1lora__sdr_1_1modulate__impl.html#aab459eb2bccd75e7432e4c41a55c1087":[2,0,0,0,42,8],
 "classgr_1_1lora__sdr_1_1modulate__impl.html#ab81def3ea19c85e4e17ec9782c2de4d1":[2,0,0,0,42,14],
-"classgr_1_1lora__sdr_1_1modulate__impl.html#acce46348b9a2bca32a1165e9b4edb35e":[2,0,0,0,42,19],
 "classgr_1_1lora__sdr_1_1modulate__impl.html#ada87a0de1315f3d5ab842f73e2435ffa":[2,0,0,0,42,12],
 "classgr_1_1lora__sdr_1_1modulate__impl.html#adab83f8a64cca05269b7af04282515fd":[2,0,0,0,42,15],
 "classgr_1_1lora__sdr_1_1modulate__impl.html#ae71f7489940a16777b65182b1139e2d4":[2,0,0,0,42,13],
@@ -249,5 +244,10 @@ var NAVTREEINDEX1 =
 "classgr_1_1lora__sdr_1_1mu__detection__impl.html#ac40409a06763acfb5fdec2fc8710b8d4":[2,0,0,0,44,0],
 "classgr_1_1lora__sdr_1_1mu__detection__impl.html#adf16e9589980f6330074acc2391d71a1":[2,0,0,0,44,23],
 "classgr_1_1lora__sdr_1_1mu__detection__impl.html#adf2ab5a4f3f2c41b6d9f4d7e7a246181":[2,0,0,0,44,7],
-"classgr_1_1lora__sdr_1_1mu__detection__impl.html#ae18ea0c9cf76634557d05071303679bf":[2,0,0,0,44,34]
+"classgr_1_1lora__sdr_1_1mu__detection__impl.html#ae18ea0c9cf76634557d05071303679bf":[2,0,0,0,44,34],
+"classgr_1_1lora__sdr_1_1mu__detection__impl.html#ae33ba957796af21a84ba322ce6fbaa1d":[2,0,0,0,44,1],
+"classgr_1_1lora__sdr_1_1mu__detection__impl.html#ae64254281306436fdee5b238b9dc6091":[2,0,0,0,44,12],
+"classgr_1_1lora__sdr_1_1mu__detection__impl.html#af782bbbf5a7c44087a5140fd498ca560":[2,0,0,0,44,13],
+"classgr_1_1lora__sdr_1_1mu__synchro.html":[2,0,0,0,45],
+"classgr_1_1lora__sdr_1_1mu__synchro.html#a7576687b84df80469bc719b35eb7619a":[2,0,0,0,45,1]
 };

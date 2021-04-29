@@ -1,10 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"classgr_1_1lora__sdr_1_1mu__detection__impl.html#ae33ba957796af21a84ba322ce6fbaa1d":[2,0,0,0,44,1],
-"classgr_1_1lora__sdr_1_1mu__detection__impl.html#ae64254281306436fdee5b238b9dc6091":[2,0,0,0,44,12],
-"classgr_1_1lora__sdr_1_1mu__detection__impl.html#af782bbbf5a7c44087a5140fd498ca560":[2,0,0,0,44,13],
-"classgr_1_1lora__sdr_1_1mu__synchro.html":[2,0,0,0,45],
-"classgr_1_1lora__sdr_1_1mu__synchro.html#a7576687b84df80469bc719b35eb7619a":[2,0,0,0,45,1],
 "classgr_1_1lora__sdr_1_1mu__synchro.html#a9e887771ce4830c215c85c814af37d08":[2,0,0,0,45,0],
 "classgr_1_1lora__sdr_1_1mu__synchro__impl.html":[2,0,0,0,46],
 "classgr_1_1lora__sdr_1_1mu__synchro__impl.html#a13febb0ef3b1db2396ddaa42ae0515ba":[2,0,0,0,46,20],
@@ -151,6 +146,11 @@ var NAVTREEINDEX2 =
 "files.html":[3,0],
 "frame__detector_8h.html":[3,0,19],
 "frame__detector_8h_source.html":[3,0,19],
+"frame__detector__impl_8h.html":[3,0,20],
+"frame__detector__impl_8h_source.html":[3,0,20],
+"frame__detector__impl__old_8h.html":[3,0,21],
+"frame__detector__impl__old_8h.html#ae49810672a50077008e1a0600ee67235":[3,0,21,2],
+"frame__detector__impl__old_8h_source.html":[3,0,21],
 "frame__src_8h.html":[3,0,22],
 "frame__src_8h_source.html":[3,0,22],
 "frame__src__impl_8h.html":[3,0,23],

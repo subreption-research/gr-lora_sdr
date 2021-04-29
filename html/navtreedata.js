@@ -59,8 +59,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "RH__RF95__header_8h.html",
-"classgr_1_1lora__sdr_1_1frame__detector__impl.html#af85febc977acb98efb4f7c6722c70474",
-"classgr_1_1lora__sdr_1_1mu__detection__impl.html#ae33ba957796af21a84ba322ce6fbaa1d",
+"classgr_1_1lora__sdr_1_1frame__src__impl.html",
+"classgr_1_1lora__sdr_1_1mu__synchro.html#a9e887771ce4830c215c85c814af37d08",
 "hier__tx__impl_8h_source.html"
 ];
 
