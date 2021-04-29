@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"hier__tx__impl_8h_source.html":[3,0,42],
+"hierarchy.html":[2,2],
 "index.html":[],
 "interleaver_8h.html":[3,0,43],
 "interleaver_8h_source.html":[3,0,43],
@@ -19,8 +21,7 @@ var NAVTREEINDEX3 =
 "kiss__fft_8h.html#ad5d759d8e80434375e61c6a7de9aee79":[3,0,45,5],
 "kiss__fft_8h_source.html":[3,0,45],
 "lib_2frame__detector__impl_8h.html":[3,0,20],
-"lib_2frame__detector__impl_8h.html#a33f6b7dd5ef2a6052bb5a29708ce9bd9":[3,0,20,2],
-"lib_2frame__detector__impl_8h.html#ae49810672a50077008e1a0600ee67235":[3,0,20,3],
+"lib_2frame__detector__impl_8h.html#ae49810672a50077008e1a0600ee67235":[3,0,20,2],
 "lib_2frame__detector__impl_8h_source.html":[3,0,20],
 "modulate_8h.html":[3,0,46],
 "modulate_8h_source.html":[3,0,46],
