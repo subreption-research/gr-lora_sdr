@@ -55,7 +55,6 @@ var files_dup =
     [ "frame_detector_impl.h", "frame__detector__impl_8h.html", [
       [ "frame_detector_impl", "classgr_1_1lora__sdr_1_1frame__detector__impl.html", "classgr_1_1lora__sdr_1_1frame__detector__impl" ]
     ] ],
-    [ "frame_detector_impl_old.h", "frame__detector__impl__old_8h.html", "frame__detector__impl__old_8h" ],
     [ "frame_src.h", "frame__src_8h.html", [
       [ "frame_src", "classgr_1_1lora__sdr_1_1frame__src.html", "classgr_1_1lora__sdr_1_1frame__src" ]
     ] ],

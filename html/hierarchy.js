@@ -93,7 +93,6 @@ var hierarchy =
         [ "gr::lora_sdr::whitening_impl", "classgr_1_1lora__sdr_1_1whitening__impl.html", null ]
       ] ]
     ] ],
-    [ "gr::lora_sdr::Temporary_buffer", "classgr_1_1lora__sdr_1_1Temporary__buffer.html", null ],
     [ "gr::lora_sdr::mu_synchro_impl::user", "structgr_1_1lora__sdr_1_1mu__synchro__impl_1_1user.html", null ],
     [ "gr::lora_sdr::partial_ml_impl::window", "structgr_1_1lora__sdr_1_1partial__ml__impl_1_1window.html", null ]
 ];
