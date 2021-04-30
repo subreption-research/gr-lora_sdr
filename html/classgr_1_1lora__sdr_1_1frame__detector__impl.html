@@ -89,8 +89,8 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
 <tr class="memitem:af2bdd6e4fccb2f5db62d4185d5fae72d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72d">State</a> { <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72da9f742ecaa3441532f418963509534799">FIND_PREAMBLE</a>, 
-<a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72da6a7f5a7a7ca4ad5e0878814aeac84863">SEND_FRAME</a>, 
-<a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72da0ac249bd6443721b8c0408054d57dcf3">SEND_END_FRAME</a>
+<a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72da9534437370dbd04dcd8b42f9a51409b9">SEND_PREAMBLE</a>, 
+<a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72da6a7f5a7a7ca4ad5e0878814aeac84863">SEND_FRAME</a>
  }</td></tr>
 <tr class="memdesc:af2bdd6e4fccb2f5db62d4185d5fae72d"><td class="mdescLeft">&#160;</td><td class="mdescRight">State the frame finder can be in.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72d">More...</a><br /></td></tr>
 <tr class="separator:af2bdd6e4fccb2f5db62d4185d5fae72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,9 +100,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a62f8f6554e01a7a9989d149a0c1c071a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a62f8f6554e01a7a9989d149a0c1c071a">get_symbol_val</a> (const gr_complex *input)</td></tr>
 <tr class="memdesc:a62f8f6554e01a7a9989d149a0c1c071a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the symbol object value (aka decoded LoRa symbol value) Function consumes vectors of length m_N.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a62f8f6554e01a7a9989d149a0c1c071a">More...</a><br /></td></tr>
 <tr class="separator:a62f8f6554e01a7a9989d149a0c1c071a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51e18b34ae556e193745ad81d2b76db6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a51e18b34ae556e193745ad81d2b76db6">check_in_frame</a> (gr_complex *input)</td></tr>
-<tr class="memdesc:a51e18b34ae556e193745ad81d2b76db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if current samples have the right.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a51e18b34ae556e193745ad81d2b76db6">More...</a><br /></td></tr>
-<tr class="separator:a51e18b34ae556e193745ad81d2b76db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfcd9de757a2a73d03c1ae69775db1cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#acfcd9de757a2a73d03c1ae69775db1cd">check_in_frame</a> (const gr_complex *input)</td></tr>
+<tr class="memdesc:acfcd9de757a2a73d03c1ae69775db1cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if current samples have the right.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#acfcd9de757a2a73d03c1ae69775db1cd">More...</a><br /></td></tr>
+<tr class="separator:acfcd9de757a2a73d03c1ae69775db1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb2f88b53475f4fe4eba8a003a071e63"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#abb2f88b53475f4fe4eba8a003a071e63">calc_power</a> (const gr_complex *input)</td></tr>
 <tr class="memdesc:abb2f88b53475f4fe4eba8a003a071e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the LoRa frame peak power.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#abb2f88b53475f4fe4eba8a003a071e63">More...</a><br /></td></tr>
 <tr class="separator:abb2f88b53475f4fe4eba8a003a071e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,8 +211,8 @@ Additional Inherited Members</h2></td></tr>
 </ul>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af2bdd6e4fccb2f5db62d4185d5fae72da9f742ecaa3441532f418963509534799"></a>FIND_PREAMBLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af2bdd6e4fccb2f5db62d4185d5fae72da9534437370dbd04dcd8b42f9a51409b9"></a>SEND_PREAMBLE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af2bdd6e4fccb2f5db62d4185d5fae72da6a7f5a7a7ca4ad5e0878814aeac84863"></a>SEND_FRAME&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af2bdd6e4fccb2f5db62d4185d5fae72da0ac249bd6443721b8c0408054d57dcf3"></a>SEND_END_FRAME&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -312,8 +312,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a51e18b34ae556e193745ad81d2b76db6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51e18b34ae556e193745ad81d2b76db6">&#9670;&nbsp;</a></span>check_in_frame()</h2>
+<a id="acfcd9de757a2a73d03c1ae69775db1cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfcd9de757a2a73d03c1ae69775db1cd">&#9670;&nbsp;</a></span>check_in_frame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -324,7 +324,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool gr::lora_sdr::frame_detector_impl::check_in_frame </td>
           <td>(</td>
-          <td class="paramtype">gr_complex *&#160;</td>
+          <td class="paramtype">const gr_complex *&#160;</td>
           <td class="paramname"><em>input</em></td><td>)</td>
           <td></td>
         </tr>

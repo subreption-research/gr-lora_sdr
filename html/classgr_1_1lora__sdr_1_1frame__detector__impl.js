@@ -2,13 +2,13 @@ var classgr_1_1lora__sdr_1_1frame__detector__impl =
 [
     [ "State", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72d", [
       [ "FIND_PREAMBLE", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72da9f742ecaa3441532f418963509534799", null ],
-      [ "SEND_FRAME", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72da6a7f5a7a7ca4ad5e0878814aeac84863", null ],
-      [ "SEND_END_FRAME", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72da0ac249bd6443721b8c0408054d57dcf3", null ]
+      [ "SEND_PREAMBLE", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72da9534437370dbd04dcd8b42f9a51409b9", null ],
+      [ "SEND_FRAME", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72da6a7f5a7a7ca4ad5e0878814aeac84863", null ]
     ] ],
     [ "frame_detector_impl", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#ae66cafd5171721add83e973f1478b9e4", null ],
     [ "~frame_detector_impl", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a109682da06611c617e14a7f52cfd06ef", null ],
     [ "calc_power", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#abb2f88b53475f4fe4eba8a003a071e63", null ],
-    [ "check_in_frame", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a51e18b34ae556e193745ad81d2b76db6", null ],
+    [ "check_in_frame", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#acfcd9de757a2a73d03c1ae69775db1cd", null ],
     [ "forecast", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a560e10de2a1471dc7eb99236b57f211f", null ],
     [ "general_work", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a63849e8943c68c28dd2b63f6ed3b01e3", null ],
     [ "get_symbol_val", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a62f8f6554e01a7a9989d149a0c1c071a", null ],
