@@ -32,6 +32,5 @@ var classgr_1_1lora__sdr_1_1frame__detector__impl =
     [ "m_temp", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a4809dff1754e3611c8b5fcc0c7d415fc", null ],
     [ "m_threshold", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#aa24bcd0fd65987a3160ecf095cd6a8d3", null ],
     [ "n_up", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a2be893d874f717f1e8022b41891d49c8", null ],
-    [ "symbol_cnt", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a17c4ddb7343d0d4ae24ab08f034bfd5a", null ],
-    [ "test", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a96ca5b5fc367c21458a550af58db2e79", null ]
+    [ "symbol_cnt", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a17c4ddb7343d0d4ae24ab08f034bfd5a", null ]
 ];

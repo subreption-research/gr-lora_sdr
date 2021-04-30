@@ -1,6 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"namespacegr.html":[2,0,0],
 "namespacegr_1_1lora__sdr.html":[2,0,0,0],
 "namespacemembers.html":[1,0],
 "namespacemembers_enum.html":[1,3],

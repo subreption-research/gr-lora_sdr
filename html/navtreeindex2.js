@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"classgr_1_1lora__sdr_1_1mu__synchro__impl.html#ae506d28fa444925b3995b9a7e34aa937af1b97f5b3193cfb7d0944e0bbe68834f":[2,0,0,0,46,2,1],
 "classgr_1_1lora__sdr_1_1mu__synchro__impl.html#ae8e24980ff6e2e494ada2073dd2a4245":[2,0,0,0,46,13],
 "classgr_1_1lora__sdr_1_1mu__synchro__impl.html#af322d5915199c2ce76732a3f27cf85af":[2,0,0,0,46,23],
 "classgr_1_1lora__sdr_1_1noise__est.html":[2,0,0,0,47],
@@ -126,8 +125,8 @@ var NAVTREEINDEX2 =
 "frame__sync_8h_source.html":[3,0,23],
 "frame__sync__impl_8h.html":[3,0,24],
 "frame__sync__impl_8h_source.html":[3,0,24],
-"functions.html":[2,3,0],
 "functions.html":[2,3,0,0],
+"functions.html":[2,3,0],
 "functions_b.html":[2,3,0,1],
 "functions_c.html":[2,3,0,2],
 "functions_d.html":[2,3,0,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "mu__synchro_8h.html":[3,0,49],
 "mu__synchro_8h_source.html":[3,0,49],
 "mu__synchro__impl_8h.html":[3,0,50],
-"mu__synchro__impl_8h_source.html":[3,0,50]
+"mu__synchro__impl_8h_source.html":[3,0,50],
+"namespacegr.html":[2,0,0]
 };
