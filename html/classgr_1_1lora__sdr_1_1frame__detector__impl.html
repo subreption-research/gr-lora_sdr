@@ -74,9 +74,9 @@ Inheritance diagram for gr::lora_sdr::frame_detector_impl:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae66cafd5171721add83e973f1478b9e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#ae66cafd5171721add83e973f1478b9e4">frame_detector_impl</a> (uint8_t sf, uint32_t threshold)</td></tr>
-<tr class="memdesc:ae66cafd5171721add83e973f1478b9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new frame detector impl object.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#ae66cafd5171721add83e973f1478b9e4">More...</a><br /></td></tr>
-<tr class="separator:ae66cafd5171721add83e973f1478b9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a953125573c0ba039cf6ac77d2477c3f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a953125573c0ba039cf6ac77d2477c3f6">frame_detector_impl</a> (uint8_t sf, uint32_t samp_rate, uint32_t bw, uint32_t threshold)</td></tr>
+<tr class="memdesc:a953125573c0ba039cf6ac77d2477c3f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new frame detector impl object.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a953125573c0ba039cf6ac77d2477c3f6">More...</a><br /></td></tr>
+<tr class="separator:a953125573c0ba039cf6ac77d2477c3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a109682da06611c617e14a7f52cfd06ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a109682da06611c617e14a7f52cfd06ef">~frame_detector_impl</a> ()</td></tr>
 <tr class="memdesc:a109682da06611c617e14a7f52cfd06ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the frame detector impl object.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a109682da06611c617e14a7f52cfd06ef">More...</a><br /></td></tr>
 <tr class="separator:a109682da06611c617e14a7f52cfd06ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -90,7 +90,8 @@ Public Member Functions</h2></td></tr>
 Private Types</h2></td></tr>
 <tr class="memitem:af2bdd6e4fccb2f5db62d4185d5fae72d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72d">State</a> { <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72da9f742ecaa3441532f418963509534799">FIND_PREAMBLE</a>, 
 <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72da9534437370dbd04dcd8b42f9a51409b9">SEND_PREAMBLE</a>, 
-<a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72da6a7f5a7a7ca4ad5e0878814aeac84863">SEND_FRAME</a>
+<a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72da6a7f5a7a7ca4ad5e0878814aeac84863">SEND_FRAME</a>, 
+<a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72da0ac249bd6443721b8c0408054d57dcf3">SEND_END_FRAME</a>
  }</td></tr>
 <tr class="memdesc:af2bdd6e4fccb2f5db62d4185d5fae72d"><td class="mdescLeft">&#160;</td><td class="mdescRight">State the frame finder can be in.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72d">More...</a><br /></td></tr>
 <tr class="separator:af2bdd6e4fccb2f5db62d4185d5fae72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,7 +167,23 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:ac2c0259e5cc87d7d7823b134a2223a79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter for counting if we are past the net identifier and downchirps once we have found the preamble.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#ac2c0259e5cc87d7d7823b134a2223a79">More...</a><br /></td></tr>
 <tr class="separator:ac2c0259e5cc87d7d7823b134a2223a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad586272d96ff68c9b6b3b70a81df387"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#aad586272d96ff68c9b6b3b70a81df387">in_frame</a></td></tr>
+<tr class="memdesc:aad586272d96ff68c9b6b3b70a81df387"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolean variables to tell if we are still in a LoRa frame or not  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#aad586272d96ff68c9b6b3b70a81df387">More...</a><br /></td></tr>
 <tr class="separator:aad586272d96ff68c9b6b3b70a81df387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35bdfc0c2660e2bf46851e1368b8f20"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#ab35bdfc0c2660e2bf46851e1368b8f20">m_inter_frame_padding</a></td></tr>
+<tr class="memdesc:ab35bdfc0c2660e2bf46851e1368b8f20"><td class="mdescLeft">&#160;</td><td class="mdescRight">length in samples of zero append to each frame  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#ab35bdfc0c2660e2bf46851e1368b8f20">More...</a><br /></td></tr>
+<tr class="separator:ab35bdfc0c2660e2bf46851e1368b8f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e5e0519ed6e24a2c4c8b5df022ed2d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a1e5e0519ed6e24a2c4c8b5df022ed2d2">cnt_padding</a></td></tr>
+<tr class="memdesc:a1e5e0519ed6e24a2c4c8b5df022ed2d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter variable to tell how many extra padding symbols we have processed.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a1e5e0519ed6e24a2c4c8b5df022ed2d2">More...</a><br /></td></tr>
+<tr class="separator:a1e5e0519ed6e24a2c4c8b5df022ed2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a207de3840b776e08f14ae9027f0045d4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a207de3840b776e08f14ae9027f0045d4">m_symbols_per_second</a></td></tr>
+<tr class="memdesc:a207de3840b776e08f14ae9027f0045d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">lora symbols per second  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a207de3840b776e08f14ae9027f0045d4">More...</a><br /></td></tr>
+<tr class="separator:a207de3840b776e08f14ae9027f0045d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba9b820b22c0cd7a5fbfb8f9215fb40"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a9ba9b820b22c0cd7a5fbfb8f9215fb40">m_samp_rate</a></td></tr>
+<tr class="memdesc:a9ba9b820b22c0cd7a5fbfb8f9215fb40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmission sampling rate.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a9ba9b820b22c0cd7a5fbfb8f9215fb40">More...</a><br /></td></tr>
+<tr class="separator:a9ba9b820b22c0cd7a5fbfb8f9215fb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af85febc977acb98efb4f7c6722c70474"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#af85febc977acb98efb4f7c6722c70474">m_bw</a></td></tr>
+<tr class="memdesc:af85febc977acb98efb4f7c6722c70474"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmission bandwidth (Works only for samp_rate=bw)  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#af85febc977acb98efb4f7c6722c70474">More...</a><br /></td></tr>
+<tr class="separator:af85febc977acb98efb4f7c6722c70474"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4809dff1754e3611c8b5fcc0c7d415fc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; gr_complex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a4809dff1754e3611c8b5fcc0c7d415fc">m_temp</a></td></tr>
 <tr class="memdesc:a4809dff1754e3611c8b5fcc0c7d415fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary gr_complex vector for processing the input per m_samples_processed.  <a href="classgr_1_1lora__sdr_1_1frame__detector__impl.html#a4809dff1754e3611c8b5fcc0c7d415fc">More...</a><br /></td></tr>
 <tr class="separator:a4809dff1754e3611c8b5fcc0c7d415fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,9 +194,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a16128dd6c9b469aea1b7e4fe1deb8280 inherit pub_types_classgr_1_1lora__sdr_1_1frame__detector"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html">frame_detector</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html#a16128dd6c9b469aea1b7e4fe1deb8280">sptr</a></td></tr>
 <tr class="separator:a16128dd6c9b469aea1b7e4fe1deb8280 inherit pub_types_classgr_1_1lora__sdr_1_1frame__detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classgr_1_1lora__sdr_1_1frame__detector"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classgr_1_1lora__sdr_1_1frame__detector')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html">gr::lora_sdr::frame_detector</a></td></tr>
-<tr class="memitem:acea35d26fe3cefecf97b630c2294a386 inherit pub_static_methods_classgr_1_1lora__sdr_1_1frame__detector"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html#a16128dd6c9b469aea1b7e4fe1deb8280">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html#acea35d26fe3cefecf97b630c2294a386">make</a> (uint8_t sf, uint32_t threshold)</td></tr>
-<tr class="memdesc:acea35d26fe3cefecf97b630c2294a386 inherit pub_static_methods_classgr_1_1lora__sdr_1_1frame__detector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html" title="LoRa frame detector, this block detects a LoRa frames using a preamble detection to find the start of...">lora_sdr::frame_detector</a>.  <a href="classgr_1_1lora__sdr_1_1frame__detector.html#acea35d26fe3cefecf97b630c2294a386">More...</a><br /></td></tr>
-<tr class="separator:acea35d26fe3cefecf97b630c2294a386 inherit pub_static_methods_classgr_1_1lora__sdr_1_1frame__detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c0b95f427a9cd6516427bb226b1f064 inherit pub_static_methods_classgr_1_1lora__sdr_1_1frame__detector"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html#a16128dd6c9b469aea1b7e4fe1deb8280">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html#a4c0b95f427a9cd6516427bb226b1f064">make</a> (uint8_t sf, uint32_t samp_rate, uint32_t bw, uint32_t threshold)</td></tr>
+<tr class="memdesc:a4c0b95f427a9cd6516427bb226b1f064 inherit pub_static_methods_classgr_1_1lora__sdr_1_1frame__detector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html" title="LoRa frame detector, this block detects a LoRa frames using a preamble detection to find the start of...">lora_sdr::frame_detector</a>.  <a href="classgr_1_1lora__sdr_1_1frame__detector.html#a4c0b95f427a9cd6516427bb226b1f064">More...</a><br /></td></tr>
+<tr class="separator:a4c0b95f427a9cd6516427bb226b1f064 inherit pub_static_methods_classgr_1_1lora__sdr_1_1frame__detector"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="af2bdd6e4fccb2f5db62d4185d5fae72d"></a>
@@ -205,19 +222,22 @@ Additional Inherited Members</h2></td></tr>
 <p>State the frame finder can be in. </p>
 <ul>
 <li>FIND_PREAMLBE : find the preamble</li>
-<li>FIND_END_FRAME : find the end of the frame </li>
+<li>SEND_PREAMBLE : send the buffered preamble symbols</li>
+<li>SEND_FRAME : send frame</li>
+<li>SEND_END_FRAME : send the last part of the frame </li>
 </ul>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af2bdd6e4fccb2f5db62d4185d5fae72da9f742ecaa3441532f418963509534799"></a>FIND_PREAMBLE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af2bdd6e4fccb2f5db62d4185d5fae72da9534437370dbd04dcd8b42f9a51409b9"></a>SEND_PREAMBLE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af2bdd6e4fccb2f5db62d4185d5fae72da6a7f5a7a7ca4ad5e0878814aeac84863"></a>SEND_FRAME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af2bdd6e4fccb2f5db62d4185d5fae72da0ac249bd6443721b8c0408054d57dcf3"></a>SEND_END_FRAME&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae66cafd5171721add83e973f1478b9e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae66cafd5171721add83e973f1478b9e4">&#9670;&nbsp;</a></span>frame_detector_impl()</h2>
+<a id="a953125573c0ba039cf6ac77d2477c3f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a953125573c0ba039cf6ac77d2477c3f6">&#9670;&nbsp;</a></span>frame_detector_impl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,6 +247,18 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>sf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>samp_rate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>bw</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -576,6 +608,30 @@ false : we are not in a LoRa frame </dd></dl>
 
 </div>
 </div>
+<a id="a1e5e0519ed6e24a2c4c8b5df022ed2d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e5e0519ed6e24a2c4c8b5df022ed2d2">&#9670;&nbsp;</a></span>cnt_padding</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gr::lora_sdr::frame_detector_impl::cnt_padding</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Counter variable to tell how many extra padding symbols we have processed. </p>
+
+</div>
+</div>
 <a id="a967b393bf15680a1a0940a7f2eb54777"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a967b393bf15680a1a0940a7f2eb54777">&#9670;&nbsp;</a></span>cx_out</h2>
 
@@ -643,6 +699,32 @@ false : we are not in a LoRa frame </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>boolean variables to tell if we are still in a LoRa frame or not </p>
+
+</div>
+</div>
+<a id="af85febc977acb98efb4f7c6722c70474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af85febc977acb98efb4f7c6722c70474">&#9670;&nbsp;</a></span>m_bw</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t gr::lora_sdr::frame_detector_impl::m_bw</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transmission bandwidth (Works only for samp_rate=bw) </p>
 
 </div>
 </div>
@@ -742,6 +824,30 @@ false : we are not in a LoRa frame </dd></dl>
 
 </div>
 </div>
+<a id="ab35bdfc0c2660e2bf46851e1368b8f20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab35bdfc0c2660e2bf46851e1368b8f20">&#9670;&nbsp;</a></span>m_inter_frame_padding</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gr::lora_sdr::frame_detector_impl::m_inter_frame_padding</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>length in samples of zero append to each frame </p>
+
+</div>
+</div>
 <a id="abf28578a1ba72e4a4b38e87d84f0c7f9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf28578a1ba72e4a4b38e87d84f0c7f9">&#9670;&nbsp;</a></span>m_max_it</h2>
 
@@ -810,6 +916,30 @@ false : we are not in a LoRa frame </dd></dl>
 </div><div class="memdoc">
 
 <p>Power of a detected LoRa preamble to compare against. </p>
+
+</div>
+</div>
+<a id="a9ba9b820b22c0cd7a5fbfb8f9215fb40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ba9b820b22c0cd7a5fbfb8f9215fb40">&#9670;&nbsp;</a></span>m_samp_rate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t gr::lora_sdr::frame_detector_impl::m_samp_rate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transmission sampling rate. </p>
 
 </div>
 </div>
@@ -882,6 +1012,30 @@ false : we are not in a LoRa frame </dd></dl>
 </div><div class="memdoc">
 
 <p>Current state of the frame finder. </p>
+
+</div>
+</div>
+<a id="a207de3840b776e08f14ae9027f0045d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a207de3840b776e08f14ae9027f0045d4">&#9670;&nbsp;</a></span>m_symbols_per_second</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double gr::lora_sdr::frame_detector_impl::m_symbols_per_second</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>lora symbols per second </p>
 
 </div>
 </div>
