@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classgr_1_1lora__sdr_1_1mu__synchro__impl.html#ae506d28fa444925b3995b9a7e34aa937":[2,0,0,0,46,2],
 "classgr_1_1lora__sdr_1_1mu__synchro__impl.html#ae506d28fa444925b3995b9a7e34aa937a2417a0adce57faa1b74726f4cf041a37":[2,0,0,0,46,2,2],
 "classgr_1_1lora__sdr_1_1mu__synchro__impl.html#ae506d28fa444925b3995b9a7e34aa937a2acced7b395e678bbc50627943453d0b":[2,0,0,0,46,2,0],
 "classgr_1_1lora__sdr_1_1mu__synchro__impl.html#ae506d28fa444925b3995b9a7e34aa937ab75abb061b4ada3956034e332eb69631":[2,0,0,0,46,2,4],
@@ -155,8 +156,8 @@ var NAVTREEINDEX2 =
 "functions_t.html":[2,3,0,18],
 "functions_type.html":[2,3,3],
 "functions_u.html":[2,3,0,19],
-"functions_vars.html":[2,3,2,0],
 "functions_vars.html":[2,3,2],
+"functions_vars.html":[2,3,2,0],
 "functions_vars_c.html":[2,3,2,1],
 "functions_vars_d.html":[2,3,2,2],
 "functions_vars_e.html":[2,3,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "modules.html":[0],
 "mu__detection_8h.html":[3,0,47],
 "mu__detection_8h_source.html":[3,0,47],
-"mu__detection__impl_8h.html":[3,0,48],
-"mu__detection__impl_8h_source.html":[3,0,48]
+"mu__detection__impl_8h.html":[3,0,48]
 };

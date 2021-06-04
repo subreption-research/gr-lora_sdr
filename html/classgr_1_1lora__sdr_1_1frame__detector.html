@@ -80,9 +80,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a4c0b95f427a9cd6516427bb226b1f064"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html#a16128dd6c9b469aea1b7e4fe1deb8280">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html#a4c0b95f427a9cd6516427bb226b1f064">make</a> (uint8_t sf, uint32_t samp_rate, uint32_t bw, uint32_t threshold)</td></tr>
-<tr class="memdesc:a4c0b95f427a9cd6516427bb226b1f064"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html" title="LoRa frame detector, this block detects a LoRa frames using a preamble detection to find the start of...">lora_sdr::frame_detector</a>.  <a href="classgr_1_1lora__sdr_1_1frame__detector.html#a4c0b95f427a9cd6516427bb226b1f064">More...</a><br /></td></tr>
-<tr class="separator:a4c0b95f427a9cd6516427bb226b1f064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757d3973d5e5b4cd84df3d5d8673ca98"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html#a16128dd6c9b469aea1b7e4fe1deb8280">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html#a757d3973d5e5b4cd84df3d5d8673ca98">make</a> (uint8_t sf, uint32_t samp_rate, uint32_t bw, float threshold)</td></tr>
+<tr class="memdesc:a757d3973d5e5b4cd84df3d5d8673ca98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html" title="LoRa frame detector, this block detects a LoRa frames using a preamble detection to find the start of...">lora_sdr::frame_detector</a>.  <a href="classgr_1_1lora__sdr_1_1frame__detector.html#a757d3973d5e5b4cd84df3d5d8673ca98">More...</a><br /></td></tr>
+<tr class="separator:a757d3973d5e5b4cd84df3d5d8673ca98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>LoRa frame detector, this block detects a LoRa frames using a preamble detection to find the start of the frame and a SNR energy based detector to detect the end of the frame. If a frame is detected the frame is outputted to the output. </p>
@@ -102,8 +102,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4c0b95f427a9cd6516427bb226b1f064"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c0b95f427a9cd6516427bb226b1f064">&#9670;&nbsp;</a></span>make()</h2>
+<a id="a757d3973d5e5b4cd84df3d5d8673ca98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a757d3973d5e5b4cd84df3d5d8673ca98">&#9670;&nbsp;</a></span>make()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -132,7 +132,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>threshold</em>&#160;</td>
         </tr>
         <tr>
@@ -149,7 +149,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html" title="LoRa frame detector, this block detects a LoRa frames using a preamble detection to find the start of...">lora_sdr::frame_detector</a>. </p>
-<p>To avoid accidental use of raw pointers, <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html" title="LoRa frame detector, this block detects a LoRa frames using a preamble detection to find the start of...">lora_sdr::frame_detector</a>'s constructor is in a private implementation class. <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html#a4c0b95f427a9cd6516427bb226b1f064" title="Return a shared_ptr to a new instance of lora_sdr::frame_detector.">lora_sdr::frame_detector::make</a> is the public interface for creating new instances. </p>
+<p>To avoid accidental use of raw pointers, <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html" title="LoRa frame detector, this block detects a LoRa frames using a preamble detection to find the start of...">lora_sdr::frame_detector</a>'s constructor is in a private implementation class. <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector.html#a757d3973d5e5b4cd84df3d5d8673ca98" title="Return a shared_ptr to a new instance of lora_sdr::frame_detector.">lora_sdr::frame_detector::make</a> is the public interface for creating new instances. </p>
 
 </div>
 </div>

@@ -15,5 +15,6 @@ var classgr_1_1lora__sdr_1_1crc__verif__impl =
     [ "m_exit", "classgr_1_1lora__sdr_1_1crc__verif__impl.html#aa7ed9a3493e7a7505ee0f6063a311339", null ],
     [ "m_payload_len", "classgr_1_1lora__sdr_1_1crc__verif__impl.html#ac948d435528bab46576eb3edcc6f2d95", null ],
     [ "message_str", "classgr_1_1lora__sdr_1_1crc__verif__impl.html#a420c009662c0973b013768d00b4934f7", null ],
-    [ "new_frame", "classgr_1_1lora__sdr_1_1crc__verif__impl.html#a89cf4871ea6c68e05cf442db5d5a7fb2", null ]
+    [ "new_frame", "classgr_1_1lora__sdr_1_1crc__verif__impl.html#a89cf4871ea6c68e05cf442db5d5a7fb2", null ],
+    [ "t1", "classgr_1_1lora__sdr_1_1crc__verif__impl.html#a3442369d73c41a5fdc86025b4854a3a5", null ]
 ];

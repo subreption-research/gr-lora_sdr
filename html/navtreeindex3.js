@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"mu__detection__impl_8h_source.html":[3,0,48],
 "mu__synchro_8h.html":[3,0,49],
 "mu__synchro_8h_source.html":[3,0,49],
 "mu__synchro__impl_8h.html":[3,0,50],

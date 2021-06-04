@@ -6,7 +6,7 @@ var classgr_1_1lora__sdr_1_1frame__detector__impl =
       [ "SEND_FRAME", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72da6a7f5a7a7ca4ad5e0878814aeac84863", null ],
       [ "SEND_END_FRAME", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#af2bdd6e4fccb2f5db62d4185d5fae72da0ac249bd6443721b8c0408054d57dcf3", null ]
     ] ],
-    [ "frame_detector_impl", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a953125573c0ba039cf6ac77d2477c3f6", null ],
+    [ "frame_detector_impl", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#ae863b0abc42241fb68367fb3553ae74c", null ],
     [ "~frame_detector_impl", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a109682da06611c617e14a7f52cfd06ef", null ],
     [ "calc_power", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#abb2f88b53475f4fe4eba8a003a071e63", null ],
     [ "check_in_frame", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#acfcd9de757a2a73d03c1ae69775db1cd", null ],
