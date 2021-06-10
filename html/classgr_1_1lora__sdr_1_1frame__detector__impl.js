@@ -28,6 +28,7 @@ var classgr_1_1lora__sdr_1_1frame__detector__impl =
     [ "m_detected_tag_end", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#a1e98103e254179e4a81999d443ba73fd", null ],
     [ "m_dfts_mag", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#aac5317fa2889e34ba07dd0c5d1aa23ef", null ],
     [ "m_downchirp", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#aacd34f79a32a63c02c4ec054536a73be", null ],
+    [ "m_end_offset", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#ad11adc755216fe418ed98620cb7ec3bd", null ],
     [ "m_inter_frame_padding", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#ab35bdfc0c2660e2bf46851e1368b8f20", null ],
     [ "m_max_it", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#abf28578a1ba72e4a4b38e87d84f0c7f9", null ],
     [ "m_N", "classgr_1_1lora__sdr_1_1frame__detector__impl.html#adc8806fc77969f3c7a3b558e6c0b2cf2", null ],

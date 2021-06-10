@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classgr_1_1lora__sdr_1_1mu__synchro__impl.html#aa9573ef2fd35a3b00c2a6ed48d34c46e":[2,0,0,0,46,11],
 "classgr_1_1lora__sdr_1_1mu__synchro__impl.html#aae893031afce6fc56d43a2fd62156dd8":[2,0,0,0,46,16],
 "classgr_1_1lora__sdr_1_1mu__synchro__impl.html#ad0801efba23b63153236fec3c67d6163":[2,0,0,0,46,15],
 "classgr_1_1lora__sdr_1_1mu__synchro__impl.html#adf79d135a1e910d8a713773041fcdd9b":[2,0,0,0,46,7],
@@ -125,6 +126,7 @@ var NAVTREEINDEX2 =
 "frame__detector_8h.html":[3,0,19],
 "frame__detector_8h_source.html":[3,0,19],
 "frame__detector__impl_8h.html":[3,0,20],
+"frame__detector__impl_8h.html#a1fd209c8deb43a6849b0e6c3931f5dde":[3,0,20,1],
 "frame__detector__impl_8h_source.html":[3,0,20],
 "frame__src_8h.html":[3,0,21],
 "frame__src_8h_source.html":[3,0,21],
@@ -159,8 +161,8 @@ var NAVTREEINDEX2 =
 "functions_t.html":[2,3,0,18],
 "functions_type.html":[2,3,3],
 "functions_u.html":[2,3,0,19],
-"functions_vars.html":[2,3,2],
 "functions_vars.html":[2,3,2,0],
+"functions_vars.html":[2,3,2],
 "functions_vars_c.html":[2,3,2,1],
 "functions_vars_d.html":[2,3,2,2],
 "functions_vars_e.html":[2,3,2,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "kiss__fft_8h_source.html":[3,0,44],
 "modulate_8h.html":[3,0,45],
 "modulate_8h_source.html":[3,0,45],
-"modulate__impl_8h.html":[3,0,46],
-"modulate__impl_8h_source.html":[3,0,46],
-"modules.html":[0]
+"modulate__impl_8h.html":[3,0,46]
 };
