@@ -49,10 +49,16 @@ var files_dup =
     [ "fft_demod_impl.h", "fft__demod__impl_8h.html", [
       [ "fft_demod_impl", "classgr_1_1lora__sdr_1_1fft__demod__impl.html", "classgr_1_1lora__sdr_1_1fft__demod__impl" ]
     ] ],
-    [ "frame_detector.h", "frame__detector_8h.html", [
-      [ "frame_detector", "classgr_1_1lora__sdr_1_1frame__detector.html", "classgr_1_1lora__sdr_1_1frame__detector" ]
+    [ "frame_detector_sequence.h", "frame__detector__sequence_8h.html", [
+      [ "frame_detector_sequence", "classgr_1_1lora__sdr_1_1frame__detector__sequence.html", "classgr_1_1lora__sdr_1_1frame__detector__sequence" ]
     ] ],
-    [ "frame_detector_impl.h", "frame__detector__impl_8h.html", "frame__detector__impl_8h" ],
+    [ "frame_detector_sequence_impl.h", "frame__detector__sequence__impl_8h.html", [
+      [ "frame_detector_sequence_impl", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl" ]
+    ] ],
+    [ "frame_detector_threshold.h", "frame__detector__threshold_8h.html", [
+      [ "frame_detector_threshold", "classgr_1_1lora__sdr_1_1frame__detector__threshold.html", "classgr_1_1lora__sdr_1_1frame__detector__threshold" ]
+    ] ],
+    [ "frame_detector_threshold_impl.h", "frame__detector__threshold__impl_8h.html", "frame__detector__threshold__impl_8h" ],
     [ "frame_src.h", "frame__src_8h.html", [
       [ "frame_src", "classgr_1_1lora__sdr_1_1frame__src.html", "classgr_1_1lora__sdr_1_1frame__src" ]
     ] ],
