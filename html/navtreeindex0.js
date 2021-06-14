@@ -192,6 +192,7 @@ var NAVTREEINDEX0 =
 "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aa5cd5413fa85563fa93c6874c7637da77":[2,0,0,0,18,0,2],
 "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aa745f28d926dd558a2637f5bfa45c2808":[2,0,0,0,18,0,0],
 "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aa77ed2b02935eb459e9dc719a6c59f844":[2,0,0,0,18,0,1],
+"classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aaa89188f54d7bce64cd7f599069b12c8b":[2,0,0,0,18,0,3],
 "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a237debc6606cc3b5cb3b718f51d398a8":[2,0,0,0,18,12],
 "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a2a86a05b2486255bafa223e1a2ec55e2":[2,0,0,0,18,22],
 "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a2ce218e4c5f1b87680cc1532a9bced09":[2,0,0,0,18,16],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#ac5bafeeb233dc5a081cda9cbd154511aa73ba12b646b7c8d0f4f084f50f4874e1":[2,0,0,0,20,0,0],
 "classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#ac5bafeeb233dc5a081cda9cbd154511aaa1d442ea889b771310ccce505e0090f7":[2,0,0,0,20,0,3],
 "classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#ac5bafeeb233dc5a081cda9cbd154511aaa5afa0310eec316dcee8973c3a35c56a":[2,0,0,0,20,0,1],
-"classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#ad509977e32331a89cf7fb8234659baa2":[2,0,0,0,20,3],
-"classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#adb7a327b7fa7c7b52f3a030106b45aad":[2,0,0,0,20,33]
+"classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#ad509977e32331a89cf7fb8234659baa2":[2,0,0,0,20,3]
 };

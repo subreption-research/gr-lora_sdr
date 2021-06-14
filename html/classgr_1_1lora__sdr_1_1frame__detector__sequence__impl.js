@@ -3,7 +3,8 @@ var classgr_1_1lora__sdr_1_1frame__detector__sequence__impl =
     [ "State", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043a", [
       [ "FIND_PREAMBLE", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aa745f28d926dd558a2637f5bfa45c2808", null ],
       [ "SEND_PREAMBLE", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aa77ed2b02935eb459e9dc719a6c59f844", null ],
-      [ "SEND_FRAME", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aa5cd5413fa85563fa93c6874c7637da77", null ]
+      [ "SEND_FRAME", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aa5cd5413fa85563fa93c6874c7637da77", null ],
+      [ "SEND_END_FRAME", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aaa89188f54d7bce64cd7f599069b12c8b", null ]
     ] ],
     [ "frame_detector_sequence_impl", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#ad8b86493d9627bc3062ead1818fde7df", null ],
     [ "~frame_detector_sequence_impl", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a35dadb5a4e830af83bac6eb1082891c9", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classgr_1_1lora__sdr_1_1mu__detection__impl.html#aa54b434ae607c6845580064b1570e12d":[2,0,0,0,46,25],
 "classgr_1_1lora__sdr_1_1mu__detection__impl.html#ab246ed462bc134758549bbbf151e464f":[2,0,0,0,46,31],
 "classgr_1_1lora__sdr_1_1mu__detection__impl.html#ab694b5019bc3fb8cd4ba0dc82daccd5c":[2,0,0,0,46,17],
 "classgr_1_1lora__sdr_1_1mu__detection__impl.html#ac40409a06763acfb5fdec2fc8710b8d4":[2,0,0,0,46,0],
@@ -158,6 +159,7 @@ var NAVTREEINDEX2 =
 "frame__detector__sequence_8h.html":[3,0,19],
 "frame__detector__sequence_8h_source.html":[3,0,19],
 "frame__detector__sequence__impl_8h.html":[3,0,20],
+"frame__detector__sequence__impl_8h.html#a51ca272c2e0185a6bf63dc78b03c5cbc":[3,0,20,1],
 "frame__detector__sequence__impl_8h_source.html":[3,0,20],
 "frame__detector__threshold_8h.html":[3,0,21],
 "frame__detector__threshold_8h_source.html":[3,0,21],
@@ -197,8 +199,8 @@ var NAVTREEINDEX2 =
 "functions_t.html":[2,3,0,18],
 "functions_type.html":[2,3,3],
 "functions_u.html":[2,3,0,19],
-"functions_vars.html":[2,3,2,0],
 "functions_vars.html":[2,3,2],
+"functions_vars.html":[2,3,2,0],
 "functions_vars_c.html":[2,3,2,1],
 "functions_vars_d.html":[2,3,2,2],
 "functions_vars_e.html":[2,3,2,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "header__decoder__impl_8h_source.html":[3,0,37],
 "header__impl_8h.html":[3,0,38],
 "header__impl_8h_source.html":[3,0,38],
-"helpers_8h.html":[3,0,39],
-"helpers_8h.html#a03a538483edbae2770055534c94be827":[3,0,39,5],
-"helpers_8h.html#a35377ec67f15948ad3e138256dd5cfcd":[3,0,39,3]
+"helpers_8h.html":[3,0,39]
 };
