@@ -2,6 +2,7 @@ var classgr_1_1lora__sdr_1_1frame__detector__sequence__impl =
 [
     [ "State", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043a", [
       [ "FIND_PREAMBLE", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aa745f28d926dd558a2637f5bfa45c2808", null ],
+      [ "SEND_BUFFER", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aaf69559a732146f3a1f3bd0dcc4652f2f", null ],
       [ "SEND_PREAMBLE", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aa77ed2b02935eb459e9dc719a6c59f844", null ],
       [ "SEND_FRAME", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aa5cd5413fa85563fa93c6874c7637da77", null ],
       [ "SEND_END_FRAME", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aaa89188f54d7bce64cd7f599069b12c8b", null ]
@@ -17,6 +18,7 @@ var classgr_1_1lora__sdr_1_1frame__detector__sequence__impl =
     [ "cx_out", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#aee7bd344fff444d131b12534e7d46da2", null ],
     [ "fft_cfg", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#aa716c35694e132005ef6215d07202eb1", null ],
     [ "m_bw", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a30b59337db918d80e7c5b7a6202db712", null ],
+    [ "m_cnt", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#afac50a6a97b2430bc8ad086c89aef8e8", null ],
     [ "m_dechirped", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a237debc6606cc3b5cb3b718f51d398a8", null ],
     [ "m_dfts_mag", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a40c474ad3abc70cc28cf5b40f221b0d5", null ],
     [ "m_downchirp", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a8bef1844f451ce6608c6e0f480d31fa7", null ],

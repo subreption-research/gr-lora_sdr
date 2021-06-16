@@ -89,10 +89,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a1e24ebaf027678bd58e257b68260043a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043a">State</a> { <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aa745f28d926dd558a2637f5bfa45c2808">FIND_PREAMBLE</a>, 
+<tr class="memitem:a1e24ebaf027678bd58e257b68260043a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043a">State</a> { <br />
+&#160;&#160;<a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aa745f28d926dd558a2637f5bfa45c2808">FIND_PREAMBLE</a>, 
+<a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aaf69559a732146f3a1f3bd0dcc4652f2f">SEND_BUFFER</a>, 
 <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aa77ed2b02935eb459e9dc719a6c59f844">SEND_PREAMBLE</a>, 
 <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aa5cd5413fa85563fa93c6874c7637da77">SEND_FRAME</a>, 
-<a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aaa89188f54d7bce64cd7f599069b12c8b">SEND_END_FRAME</a>
+<br />
+&#160;&#160;<a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043aaa89188f54d7bce64cd7f599069b12c8b">SEND_END_FRAME</a>
+<br />
  }</td></tr>
 <tr class="memdesc:a1e24ebaf027678bd58e257b68260043a"><td class="mdescLeft">&#160;</td><td class="mdescRight">State the frame finder can be in.  <a href="classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a1e24ebaf027678bd58e257b68260043a">More...</a><br /></td></tr>
 <tr class="separator:a1e24ebaf027678bd58e257b68260043a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +165,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a71d1600642aaf383f6c6ad97dad6e38d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a71d1600642aaf383f6c6ad97dad6e38d">m_n_seq</a></td></tr>
 <tr class="memdesc:a71d1600642aaf383f6c6ad97dad6e38d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of connective symbols form the end of the packet.  <a href="classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#a71d1600642aaf383f6c6ad97dad6e38d">More...</a><br /></td></tr>
 <tr class="separator:a71d1600642aaf383f6c6ad97dad6e38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afac50a6a97b2430bc8ad086c89aef8e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#afac50a6a97b2430bc8ad086c89aef8e8">m_cnt</a></td></tr>
+<tr class="memdesc:afac50a6a97b2430bc8ad086c89aef8e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter for counting if we are past the net identifier and downchirps once we have found the preamble.  <a href="classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html#afac50a6a97b2430bc8ad086c89aef8e8">More...</a><br /></td></tr>
+<tr class="separator:afac50a6a97b2430bc8ad086c89aef8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -196,11 +203,13 @@ Additional Inherited Members</h2></td></tr>
 <p>State the frame finder can be in. </p>
 <ul>
 <li>FIND_PREAMLBE : find the preamble</li>
-<li>SEND_PREAMBLE : send the buffered preamble symbols</li>
-<li>SEND_FRAME : send frame </li>
+<li>SEND_BUFFER : send the buffered input</li>
+<li>SEND_PREAMBLE : send the preamble</li>
+<li>SEND_FRAME : send frame and serach for end of frame -SEND_END_FRAME : TODO: logic surrounding CRC check </li>
 </ul>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1e24ebaf027678bd58e257b68260043aa745f28d926dd558a2637f5bfa45c2808"></a>FIND_PREAMBLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1e24ebaf027678bd58e257b68260043aaf69559a732146f3a1f3bd0dcc4652f2f"></a>SEND_BUFFER&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1e24ebaf027678bd58e257b68260043aa77ed2b02935eb459e9dc719a6c59f844"></a>SEND_PREAMBLE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1e24ebaf027678bd58e257b68260043aa5cd5413fa85563fa93c6874c7637da77"></a>SEND_FRAME&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1e24ebaf027678bd58e257b68260043aaa89188f54d7bce64cd7f599069b12c8b"></a>SEND_END_FRAME&#160;</td><td class="fielddoc"></td></tr>
@@ -546,6 +555,30 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Transmission bandwidth (Works only for samp_rate=bw) </p>
+
+</div>
+</div>
+<a id="afac50a6a97b2430bc8ad086c89aef8e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afac50a6a97b2430bc8ad086c89aef8e8">&#9670;&nbsp;</a></span>m_cnt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gr::lora_sdr::frame_detector_sequence_impl::m_cnt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Counter for counting if we are past the net identifier and downchirps once we have found the preamble. </p>
 
 </div>
 </div>
