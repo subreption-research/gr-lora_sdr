@@ -21,6 +21,7 @@ var classgr_1_1lora__sdr_1_1frame__detector__threshold__impl =
     [ "cx_out", "classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a55231e7d9a68c150477555d865a4979d", null ],
     [ "fft_cfg", "classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a272f589de9a6c9cc68c8f32a8d948971", null ],
     [ "in_frame", "classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a37bab5fac0e5ffd63d952bc574d5017c", null ],
+    [ "m_begin_offset", "classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a575ea0a1d3fc5762844eff8eef79f91c", null ],
     [ "m_bw", "classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#af251af63450033cca83237fc4e97b620", null ],
     [ "m_cnt", "classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a9dcb0ec77e3769e1f507049de4d2d3b5", null ],
     [ "m_dechirped", "classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a57b84d09e1a2c93c12634aacf67fb006", null ],

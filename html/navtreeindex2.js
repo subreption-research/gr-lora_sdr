@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classgr_1_1lora__sdr_1_1mu__detection__impl.html#aa02f7b396b66f34c372e15bdbbd5af82":[2,0,0,0,46,24],
 "classgr_1_1lora__sdr_1_1mu__detection__impl.html#aa17b0f278e8d180694634ba8ef03cbde":[2,0,0,0,46,18],
 "classgr_1_1lora__sdr_1_1mu__detection__impl.html#aa1fe9129c4dd9369d0c90e48d25582d7":[2,0,0,0,46,15],
 "classgr_1_1lora__sdr_1_1mu__detection__impl.html#aa54b434ae607c6845580064b1570e12d":[2,0,0,0,46,25],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "header__decoder_8h.html":[3,0,36],
 "header__decoder_8h_source.html":[3,0,36],
 "header__decoder__impl_8h.html":[3,0,37],
-"header__decoder__impl_8h_source.html":[3,0,37],
-"header__impl_8h.html":[3,0,38]
+"header__decoder__impl_8h_source.html":[3,0,37]
 };
