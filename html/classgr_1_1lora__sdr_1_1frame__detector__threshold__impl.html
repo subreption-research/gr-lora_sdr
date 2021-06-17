@@ -187,6 +187,10 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aaa3ac17701db73050fbd03b499df0d21"><td class="memItemLeft" align="right" valign="top">std::vector&lt; gr_complex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#aaa3ac17701db73050fbd03b499df0d21">m_temp</a></td></tr>
 <tr class="memdesc:aaa3ac17701db73050fbd03b499df0d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary gr_complex vector for processing the input per m_samples_processed.  <a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#aaa3ac17701db73050fbd03b499df0d21">More...</a><br /></td></tr>
 <tr class="separator:aaa3ac17701db73050fbd03b499df0d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ebd09950a0c70ebeed6d4c29adb9ed"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#ac8ebd09950a0c70ebeed6d4c29adb9ed">avg_ratio</a></td></tr>
+<tr class="separator:ac8ebd09950a0c70ebeed6d4c29adb9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52afd94bf1362fe7b63f8bfad6049751"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a52afd94bf1362fe7b63f8bfad6049751">m_n_avg</a></td></tr>
+<tr class="separator:a52afd94bf1362fe7b63f8bfad6049751"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb7a327b7fa7c7b52f3a030106b45aad"><td class="memItemLeft" align="right" valign="top">std::vector&lt; tag_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#adb7a327b7fa7c7b52f3a030106b45aad">m_tags_vector</a></td></tr>
 <tr class="memdesc:adb7a327b7fa7c7b52f3a030106b45aad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tags vector to hold gnuradio simulation tags.  <a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#adb7a327b7fa7c7b52f3a030106b45aad">More...</a><br /></td></tr>
 <tr class="separator:adb7a327b7fa7c7b52f3a030106b45aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -551,6 +555,28 @@ false : we are not in a LoRa frame </dd></dl>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac8ebd09950a0c70ebeed6d4c29adb9ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ebd09950a0c70ebeed6d4c29adb9ed">&#9670;&nbsp;</a></span>avg_ratio</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;float&gt; gr::lora_sdr::frame_detector_threshold_impl::avg_ratio</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adfd36db815793db63afb03b98e75564a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adfd36db815793db63afb03b98e75564a">&#9670;&nbsp;</a></span>bin_idx</h2>
 
@@ -1003,6 +1029,28 @@ false : we are not in a LoRa frame </dd></dl>
 </div><div class="memdoc">
 
 <p>2^sf </p>
+
+</div>
+</div>
+<a id="a52afd94bf1362fe7b63f8bfad6049751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52afd94bf1362fe7b63f8bfad6049751">&#9670;&nbsp;</a></span>m_n_avg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gr::lora_sdr::frame_detector_threshold_impl::m_n_avg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
