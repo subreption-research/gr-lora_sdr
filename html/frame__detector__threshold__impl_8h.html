@@ -60,6 +60,8 @@ $(document).ready(function(){initNavTree('frame__detector__threshold__impl_8h.ht
 <div class="contents">
 <div class="textblock"><code>#include &lt;gnuradio/io_signature.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="frame__detector__threshold_8h_source.html">lora_sdr/frame_detector_threshold.h</a>&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="kiss__fft_8h_source.html">kiss_fft.h</a>&quot;</code><br />
 </div>
@@ -83,6 +85,8 @@ Macros</h2></td></tr>
 <tr class="separator:a51ca272c2e0185a6bf63dc78b03c5cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fd209c8deb43a6849b0e6c3931f5dde"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame__detector__threshold__impl_8h.html#a1fd209c8deb43a6849b0e6c3931f5dde">GRLORA_SIM</a></td></tr>
 <tr class="separator:a1fd209c8deb43a6849b0e6c3931f5dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1ad9cb61b50f173a87714ff7d35731e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="frame__detector__threshold__impl_8h.html#ae1ad9cb61b50f173a87714ff7d35731e">GRLORA_FILE</a></td></tr>
+<tr class="separator:ae1ad9cb61b50f173a87714ff7d35731e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Martyn van Dijke (<a href="#" onclick="location.href='mai'+'lto:'+'mar'+'ti'+'jnv'+'di'+'jke'+'60'+'0@g'+'ma'+'il.'+'co'+'m'; return false;">marti<span style="display: none;">.nosp@m.</span>jnvd<span style="display: none;">.nosp@m.</span>ijke6<span style="display: none;">.nosp@m.</span>00@g<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>com</a>) </dd></dl>
@@ -97,6 +101,20 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define GRLORA_DEBUGV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1ad9cb61b50f173a87714ff7d35731e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1ad9cb61b50f173a87714ff7d35731e">&#9670;&nbsp;</a></span>GRLORA_FILE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GRLORA_FILE</td>
         </tr>
       </table>
 </div><div class="memdoc">
