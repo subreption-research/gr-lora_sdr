@@ -21,6 +21,8 @@ var namespacegr_1_1lora__sdr =
     [ "frame_detector_sequence_impl", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl.html", "classgr_1_1lora__sdr_1_1frame__detector__sequence__impl" ],
     [ "frame_detector_threshold", "classgr_1_1lora__sdr_1_1frame__detector__threshold.html", "classgr_1_1lora__sdr_1_1frame__detector__threshold" ],
     [ "frame_detector_threshold_impl", "classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html", "classgr_1_1lora__sdr_1_1frame__detector__threshold__impl" ],
+    [ "frame_detector_timeout", "classgr_1_1lora__sdr_1_1frame__detector__timeout.html", "classgr_1_1lora__sdr_1_1frame__detector__timeout" ],
+    [ "frame_detector_timeout_impl", "classgr_1_1lora__sdr_1_1frame__detector__timeout__impl.html", "classgr_1_1lora__sdr_1_1frame__detector__timeout__impl" ],
     [ "frame_src", "classgr_1_1lora__sdr_1_1frame__src.html", "classgr_1_1lora__sdr_1_1frame__src" ],
     [ "frame_src_impl", "classgr_1_1lora__sdr_1_1frame__src__impl.html", "classgr_1_1lora__sdr_1_1frame__src__impl" ],
     [ "frame_sync", "classgr_1_1lora__sdr_1_1frame__sync.html", "classgr_1_1lora__sdr_1_1frame__sync" ],

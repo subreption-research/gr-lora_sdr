@@ -25,6 +25,9 @@ var hierarchy =
       [ "gr::lora_sdr::frame_detector_threshold", "classgr_1_1lora__sdr_1_1frame__detector__threshold.html", [
         [ "gr::lora_sdr::frame_detector_threshold_impl", "classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html", null ]
       ] ],
+      [ "gr::lora_sdr::frame_detector_timeout", "classgr_1_1lora__sdr_1_1frame__detector__timeout.html", [
+        [ "gr::lora_sdr::frame_detector_timeout_impl", "classgr_1_1lora__sdr_1_1frame__detector__timeout__impl.html", null ]
+      ] ],
       [ "gr::lora_sdr::frame_sync", "classgr_1_1lora__sdr_1_1frame__sync.html", [
         [ "gr::lora_sdr::frame_sync_impl", "classgr_1_1lora__sdr_1_1frame__sync__impl.html", null ]
       ] ],

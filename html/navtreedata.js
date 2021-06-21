@@ -60,8 +60,8 @@ var NAVTREEINDEX =
 [
 "RH__RF95__header_8h.html",
 "classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#ac5bafeeb233dc5a081cda9cbd154511aa73ba12b646b7c8d0f4f084f50f4874e1",
-"classgr_1_1lora__sdr_1_1mu__detection__impl.html#a97c0114587e71c87cef242ea35cf443d",
-"header__decoder_8h.html"
+"classgr_1_1lora__sdr_1_1modulate__impl.html#a9f704967d6e5368fa459c1317aac466a",
+"functions_vars_h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

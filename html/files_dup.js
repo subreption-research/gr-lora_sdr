@@ -57,6 +57,10 @@ var files_dup =
       [ "frame_detector_threshold", "classgr_1_1lora__sdr_1_1frame__detector__threshold.html", "classgr_1_1lora__sdr_1_1frame__detector__threshold" ]
     ] ],
     [ "frame_detector_threshold_impl.h", "frame__detector__threshold__impl_8h.html", "frame__detector__threshold__impl_8h" ],
+    [ "frame_detector_timeout.h", "frame__detector__timeout_8h.html", [
+      [ "frame_detector_timeout", "classgr_1_1lora__sdr_1_1frame__detector__timeout.html", "classgr_1_1lora__sdr_1_1frame__detector__timeout" ]
+    ] ],
+    [ "frame_detector_timeout_impl.h", "frame__detector__timeout__impl_8h.html", "frame__detector__timeout__impl_8h" ],
     [ "frame_src.h", "frame__src_8h.html", [
       [ "frame_src", "classgr_1_1lora__sdr_1_1frame__src.html", "classgr_1_1lora__sdr_1_1frame__src" ]
     ] ],
