@@ -277,94 +277,96 @@ $(document).ready(function(){initNavTree('frame__detector__threshold__impl_8h_so
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="comment">   * @brief Variable to hold the packet offset of the end tag</span></div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a575ea0a1d3fc5762844eff8eef79f91c">  224</a></span>&#160;    std::vector&lt;u_int32_t&gt; <a class="code" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a575ea0a1d3fc5762844eff8eef79f91c">m_begin_offset</a>;</div>
+<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a11d723b3790ef0b9a9d7d662505d9d56">  224</a></span>&#160;   u_int32_t <a class="code" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a11d723b3790ef0b9a9d7d662505d9d56">m_begin_offset</a>;</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a1b0f8fa7bcec62653f0800328e199803">  226</a></span>&#160;    u_int32_t <a class="code" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a1b0f8fa7bcec62653f0800328e199803">m_begin_store</a>;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="preprocessor">#ifdef GRLORA_FILE</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    std::ofstream file_ratio;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">   * @brief Get the symbol object value (aka decoded LoRa symbol value)</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment">   * Function consumes vectors of length m_N</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="comment">   * @param input : complex samples</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment">   * @return int32_t : LoRa symbol value</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  int32_t <a class="code" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a6c84890daf20c24d6eff61dcd2f39be0">get_symbol_val</a>(<span class="keyword">const</span> gr_complex *input);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="comment">   * @brief Checks if current samples have the right</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="comment">   * @param input : complex input samples</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="comment">   * @return true : we are in a LoRa frame</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="comment">   * @return false : we are not in a LoRa frame</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a5d32104246929c42e07965e822419da7">check_in_frame</a>(<span class="keyword">const</span> gr_complex *input);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment">   * @brief Calculates the LoRa frame peak power</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment">   * @param input : complex input samples</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment">   * @return float : peak power</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#ad509977e32331a89cf7fb8234659baa2">calc_power</a>(<span class="keyword">const</span> gr_complex *input);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment">   * @brief Set the current LoRa symbol energy</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment">   * Function uses vectors of length m_N</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment">   * @param input : complex samples</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#af4342ac00178475ddcaad3a979e93f73">set_power</a>(<span class="keyword">const</span> gr_complex *input);</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment">   * @brief Construct a new frame detector impl object</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">   * @param samp_rate : sampling rate</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">   * @param bandwidth : bandwith</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment">   * @param sf : spreading factor</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">   * @param threshold : threshold value to use</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a2c1f798819edd60240bf7e2ccdd15ae7">frame_detector_threshold_impl</a>(uint8_t sf, uint32_t samp_rate, uint32_t bw,</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                      <span class="keywordtype">float</span> threshold);</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="comment">   * @brief Destroy the frame detector impl object</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#ae35553b843f625bc7eadb055388f9b44">~frame_detector_threshold_impl</a>();</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="comment">   * @brief</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment">   * @param ninput_items_required : required input items (how many items must we</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment">   * have for we can do something)</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a00305f22131f1445fc9afa0006a9f548">forecast</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment">   * @brief General work function.</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="comment">   * Main gnuradio function that does the heavy lifting</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment">   * @param ninput_items : number of input items</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment">   * @param input_items : input items</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment">   * @param output_items : output items</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment">   * @return int</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a3a9e9d03ce3b73405ab70e56bd762b54">general_work</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items,</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                   gr_vector_const_void_star &amp;input_items,</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                   gr_vector_void_star &amp;output_items);</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;};</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;} <span class="comment">// namespace gr</span></div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_SDR_FRAME_DETECTOR_THRESHOLD_IMPL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor">#ifdef GRLORA_FILE</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    std::ofstream file_ratio;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment">   * @brief Get the symbol object value (aka decoded LoRa symbol value)</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="comment">   * Function consumes vectors of length m_N</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="comment">   * @param input : complex samples</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment">   * @return int32_t : LoRa symbol value</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  int32_t <a class="code" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a6c84890daf20c24d6eff61dcd2f39be0">get_symbol_val</a>(<span class="keyword">const</span> gr_complex *input);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="comment">   * @brief Checks if current samples have the right</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="comment">   * @param input : complex input samples</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="comment">   * @return true : we are in a LoRa frame</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment">   * @return false : we are not in a LoRa frame</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a5d32104246929c42e07965e822419da7">check_in_frame</a>(<span class="keyword">const</span> gr_complex *input);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment">   * @brief Calculates the LoRa frame peak power</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment">   * @param input : complex input samples</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment">   * @return float : peak power</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#ad509977e32331a89cf7fb8234659baa2">calc_power</a>(<span class="keyword">const</span> gr_complex *input);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment">   * @brief Set the current LoRa symbol energy</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment">   * Function uses vectors of length m_N</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="comment">   * @param input : complex samples</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#af4342ac00178475ddcaad3a979e93f73">set_power</a>(<span class="keyword">const</span> gr_complex *input);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">   * @brief Construct a new frame detector impl object</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment">   * @param samp_rate : sampling rate</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">   * @param bandwidth : bandwith</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="comment">   * @param sf : spreading factor</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="comment">   * @param threshold : threshold value to use</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a2c1f798819edd60240bf7e2ccdd15ae7">frame_detector_threshold_impl</a>(uint8_t sf, uint32_t samp_rate, uint32_t bw,</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                      <span class="keywordtype">float</span> threshold);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="comment">   * @brief Destroy the frame detector impl object</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <a class="code" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#ae35553b843f625bc7eadb055388f9b44">~frame_detector_threshold_impl</a>();</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment">   * @brief</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment">   * @param ninput_items_required : required input items (how many items must we</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment">   * have for we can do something)</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a00305f22131f1445fc9afa0006a9f548">forecast</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment">   * @brief General work function.</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment">   * Main gnuradio function that does the heavy lifting</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment">   * @param noutput_items : number of output items</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment">   * @param ninput_items : number of input items</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment">   * @param input_items : input items</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="comment">   * @param output_items : output items</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">   * @return int</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a3a9e9d03ce3b73405ab70e56bd762b54">general_work</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items,</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                   gr_vector_const_void_star &amp;input_items,</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                   gr_vector_void_star &amp;output_items);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;};</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;} <span class="comment">// namespace lora_sdr</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_SDR_FRAME_DETECTOR_THRESHOLD_IMPL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_adfd36db815793db63afb03b98e75564a"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#adfd36db815793db63afb03b98e75564a">gr::lora_sdr::frame_detector_threshold_impl::bin_idx</a></div><div class="ttdeci">int32_t bin_idx</div><div class="ttdoc">value of previous lora demodulated symbol</div><div class="ttdef"><b>Definition:</b> frame_detector_threshold_impl.h:108</div></div>
@@ -379,6 +381,7 @@ $(document).ready(function(){initNavTree('frame__detector__threshold__impl_8h_so
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_ac8ebd09950a0c70ebeed6d4c29adb9ed"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#ac8ebd09950a0c70ebeed6d4c29adb9ed">gr::lora_sdr::frame_detector_threshold_impl::avg_ratio</a></div><div class="ttdeci">std::vector&lt; float &gt; avg_ratio</div><div class="ttdef"><b>Definition:</b> frame_detector_threshold_impl.h:191</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_aa8e34105defaca4c5a4ca93f416148a0"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#aa8e34105defaca4c5a4ca93f416148a0">gr::lora_sdr::frame_detector_threshold_impl::m_samp_rate</a></div><div class="ttdeci">uint32_t m_samp_rate</div><div class="ttdoc">Transmission sampling rate.</div><div class="ttdef"><b>Definition:</b> frame_detector_threshold_impl.h:176</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_a52afd94bf1362fe7b63f8bfad6049751"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a52afd94bf1362fe7b63f8bfad6049751">gr::lora_sdr::frame_detector_threshold_impl::m_n_avg</a></div><div class="ttdeci">int m_n_avg</div><div class="ttdef"><b>Definition:</b> frame_detector_threshold_impl.h:193</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_a11d723b3790ef0b9a9d7d662505d9d56"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a11d723b3790ef0b9a9d7d662505d9d56">gr::lora_sdr::frame_detector_threshold_impl::m_begin_offset</a></div><div class="ttdeci">u_int32_t m_begin_offset</div><div class="ttdoc">Variable to hold the packet offset of the end tag.</div><div class="ttdef"><b>Definition:</b> frame_detector_threshold_impl.h:224</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_a0cb04e7de5a36f0bdb1a9ecd9e310798"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a0cb04e7de5a36f0bdb1a9ecd9e310798">gr::lora_sdr::frame_detector_threshold_impl::bin_idx_new</a></div><div class="ttdeci">int32_t bin_idx_new</div><div class="ttdoc">value of newly demodulated symbol</div><div class="ttdef"><b>Definition:</b> frame_detector_threshold_impl.h:114</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_a6cc05dc79cc82d8634032d01a299ed5a"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a6cc05dc79cc82d8634032d01a299ed5a">gr::lora_sdr::frame_detector_threshold_impl::m_end_offset</a></div><div class="ttdeci">u_int32_t m_end_offset</div><div class="ttdoc">Variable to hold the packet offset of the end tag.</div><div class="ttdef"><b>Definition:</b> frame_detector_threshold_impl.h:218</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_ac5bafeeb233dc5a081cda9cbd154511aa21d6854c676e2a5a71c6fcef4e851aca"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#ac5bafeeb233dc5a081cda9cbd154511aa21d6854c676e2a5a71c6fcef4e851aca">gr::lora_sdr::frame_detector_threshold_impl::SEND_FRAME</a></div><div class="ttdeci">@ SEND_FRAME</div><div class="ttdef"><b>Definition:</b> frame_detector_threshold_impl.h:36</div></div>
@@ -393,13 +396,13 @@ $(document).ready(function(){initNavTree('frame__detector__threshold__impl_8h_so
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_a5d32104246929c42e07965e822419da7"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a5d32104246929c42e07965e822419da7">gr::lora_sdr::frame_detector_threshold_impl::check_in_frame</a></div><div class="ttdeci">bool check_in_frame(const gr_complex *input)</div><div class="ttdoc">Checks if current samples have the right.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_af2cdc9939a0358231e05ee2d81c6a63f"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#af2cdc9939a0358231e05ee2d81c6a63f">gr::lora_sdr::frame_detector_threshold_impl::m_state</a></div><div class="ttdeci">uint8_t m_state</div><div class="ttdoc">Current state of the frame finder.</div><div class="ttdef"><b>Definition:</b> frame_detector_threshold_impl.h:42</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_ac5bafeeb233dc5a081cda9cbd154511a"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#ac5bafeeb233dc5a081cda9cbd154511a">gr::lora_sdr::frame_detector_threshold_impl::State</a></div><div class="ttdeci">State</div><div class="ttdoc">State the frame finder can be in.</div><div class="ttdef"><b>Definition:</b> frame_detector_threshold_impl.h:36</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_a575ea0a1d3fc5762844eff8eef79f91c"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a575ea0a1d3fc5762844eff8eef79f91c">gr::lora_sdr::frame_detector_threshold_impl::m_begin_offset</a></div><div class="ttdeci">std::vector&lt; u_int32_t &gt; m_begin_offset</div><div class="ttdoc">Variable to hold the packet offset of the end tag.</div><div class="ttdef"><b>Definition:</b> frame_detector_threshold_impl.h:224</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_a55231e7d9a68c150477555d865a4979d"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a55231e7d9a68c150477555d865a4979d">gr::lora_sdr::frame_detector_threshold_impl::cx_out</a></div><div class="ttdeci">std::vector&lt; gr_complex &gt; cx_out</div><div class="ttdoc">the output of the FFT</div><div class="ttdef"><b>Definition:</b> frame_detector_threshold_impl.h:84</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_af790e343c3e08595f1d958fc05c9174f"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#af790e343c3e08595f1d958fc05c9174f">gr::lora_sdr::frame_detector_threshold_impl::m_samples_per_symbol</a></div><div class="ttdeci">uint32_t m_samples_per_symbol</div><div class="ttdoc">Number of samples per LoRa symbol.</div><div class="ttdef"><b>Definition:</b> frame_detector_threshold_impl.h:54</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_aa517852e6ccb37eb2aff039262bcf47c"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#aa517852e6ccb37eb2aff039262bcf47c">gr::lora_sdr::frame_detector_threshold_impl::buffer</a></div><div class="ttdeci">std::vector&lt; gr_complex &gt; buffer</div><div class="ttdoc">Temporary memory vector.</div><div class="ttdef"><b>Definition:</b> frame_detector_threshold_impl.h:126</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_a2c1f798819edd60240bf7e2ccdd15ae7"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a2c1f798819edd60240bf7e2ccdd15ae7">gr::lora_sdr::frame_detector_threshold_impl::frame_detector_threshold_impl</a></div><div class="ttdeci">frame_detector_threshold_impl(uint8_t sf, uint32_t samp_rate, uint32_t bw, float threshold)</div><div class="ttdoc">Construct a new frame detector impl object.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_a1dafd651e6c44030de06cd70c99f5cf7"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a1dafd651e6c44030de06cd70c99f5cf7">gr::lora_sdr::frame_detector_threshold_impl::m_threshold</a></div><div class="ttdeci">float m_threshold</div><div class="ttdoc">detection threshold</div><div class="ttdef"><b>Definition:</b> frame_detector_threshold_impl.h:66</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_a2b56f2b810bd91fe18327e73cd46f8aa"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a2b56f2b810bd91fe18327e73cd46f8aa">gr::lora_sdr::frame_detector_threshold_impl::m_sf</a></div><div class="ttdeci">uint8_t m_sf</div><div class="ttdoc">Spreading factor.</div><div class="ttdef"><b>Definition:</b> frame_detector_threshold_impl.h:48</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_a1b0f8fa7bcec62653f0800328e199803"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a1b0f8fa7bcec62653f0800328e199803">gr::lora_sdr::frame_detector_threshold_impl::m_begin_store</a></div><div class="ttdeci">u_int32_t m_begin_store</div><div class="ttdef"><b>Definition:</b> frame_detector_threshold_impl.h:226</div></div>
 <div class="ttc" id="astructkiss__fft__state_html"><div class="ttname"><a href="structkiss__fft__state.html">kiss_fft_state</a></div><div class="ttdef"><b>Definition:</b> _kiss_fft_guts.h:22</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_adb7a327b7fa7c7b52f3a030106b45aad"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#adb7a327b7fa7c7b52f3a030106b45aad">gr::lora_sdr::frame_detector_threshold_impl::m_tags_vector</a></div><div class="ttdeci">std::vector&lt; tag_t &gt; m_tags_vector</div><div class="ttdoc">Tags vector to hold gnuradio simulation tags.</div><div class="ttdef"><b>Definition:</b> frame_detector_threshold_impl.h:200</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__detector__threshold__impl_html_a00305f22131f1445fc9afa0006a9f548"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#a00305f22131f1445fc9afa0006a9f548">gr::lora_sdr::frame_detector_threshold_impl::forecast</a></div><div class="ttdeci">void forecast(int noutput_items, gr_vector_int &amp;ninput_items_required)</div></div>

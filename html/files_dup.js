@@ -11,9 +11,7 @@ var files_dup =
     [ "crc_verif.h", "crc__verif_8h.html", [
       [ "crc_verif", "classgr_1_1lora__sdr_1_1crc__verif.html", "classgr_1_1lora__sdr_1_1crc__verif" ]
     ] ],
-    [ "crc_verif_impl.h", "crc__verif__impl_8h.html", [
-      [ "crc_verif_impl", "classgr_1_1lora__sdr_1_1crc__verif__impl.html", "classgr_1_1lora__sdr_1_1crc__verif__impl" ]
-    ] ],
+    [ "crc_verif_impl.h", "crc__verif__impl_8h.html", "crc__verif__impl_8h" ],
     [ "data_source.h", "data__source_8h.html", [
       [ "data_source", "classgr_1_1lora__sdr_1_1data__source.html", "classgr_1_1lora__sdr_1_1data__source" ]
     ] ],
