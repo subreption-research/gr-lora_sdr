@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"classgr_1_1lora__sdr_1_1modulate__impl.html#a5673e64912584a17be7b417622e94805":[2,0,0,0,46,7],
+"classgr_1_1lora__sdr_1_1modulate__impl.html#a6d3a378a9c1e48fe4053bb631d7e345e":[2,0,0,0,46,0],
 "classgr_1_1lora__sdr_1_1modulate__impl.html#a784362e26a06069fafab4f11c70a0d09":[2,0,0,0,46,5],
 "classgr_1_1lora__sdr_1_1modulate__impl.html#a9f704967d6e5368fa459c1317aac466a":[2,0,0,0,46,17],
 "classgr_1_1lora__sdr_1_1modulate__impl.html#aa7996cc28155b930a520c56d547f5ef7":[2,0,0,0,46,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "functions_u.html":[2,3,0,19],
 "functions_vars.html":[2,3,2],
 "functions_vars.html":[2,3,2,0],
-"functions_vars_b.html":[2,3,2,1],
-"functions_vars_c.html":[2,3,2,2],
-"functions_vars_d.html":[2,3,2,3]
+"functions_vars_b.html":[2,3,2,1]
 };
