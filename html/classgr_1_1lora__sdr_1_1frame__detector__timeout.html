@@ -80,9 +80,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad6e1b4f0f398875a70cfe225079751a4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html#ae1169f2a834f254ea104e27cf3a34bde">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html#ad6e1b4f0f398875a70cfe225079751a4">make</a> (uint8_t sf, uint32_t samp_rate, uint32_t bw, uint8_t n_bytes)</td></tr>
-<tr class="memdesc:ad6e1b4f0f398875a70cfe225079751a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html" title="Frame detector block, looks for a LoRa frame given SF, sapling rate and BW. Once this block has found...">lora_sdr::frame_detector_timeout</a>.  <a href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html#ad6e1b4f0f398875a70cfe225079751a4">More...</a><br /></td></tr>
-<tr class="separator:ad6e1b4f0f398875a70cfe225079751a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1bc8dd1a1e873ba173f66a06415f7e5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html#ae1169f2a834f254ea104e27cf3a34bde">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html#ab1bc8dd1a1e873ba173f66a06415f7e5">make</a> (uint8_t sf, uint32_t samp_rate, uint32_t bw, uint8_t n_bytes, bool detect_second_packet)</td></tr>
+<tr class="memdesc:ab1bc8dd1a1e873ba173f66a06415f7e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html" title="Frame detector block, looks for a LoRa frame given SF, sapling rate and BW. Once this block has found...">lora_sdr::frame_detector_timeout</a>.  <a href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html#ab1bc8dd1a1e873ba173f66a06415f7e5">More...</a><br /></td></tr>
+<tr class="separator:ab1bc8dd1a1e873ba173f66a06415f7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Frame detector block, looks for a LoRa frame given SF, sapling rate and BW. Once this block has found the preamble upchirps the block will output n_bytes to its output. </p>
@@ -102,8 +102,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad6e1b4f0f398875a70cfe225079751a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6e1b4f0f398875a70cfe225079751a4">&#9670;&nbsp;</a></span>make()</h2>
+<a id="ab1bc8dd1a1e873ba173f66a06415f7e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1bc8dd1a1e873ba173f66a06415f7e5">&#9670;&nbsp;</a></span>make()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,7 +133,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>n_bytes</em>&#160;</td>
+          <td class="paramname"><em>n_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>detect_second_packet</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -149,7 +155,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html" title="Frame detector block, looks for a LoRa frame given SF, sapling rate and BW. Once this block has found...">lora_sdr::frame_detector_timeout</a>. </p>
-<p>To avoid accidental use of raw pointers, <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html" title="Frame detector block, looks for a LoRa frame given SF, sapling rate and BW. Once this block has found...">lora_sdr::frame_detector_timeout</a>'s constructor is in a private implementation class. <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html#ad6e1b4f0f398875a70cfe225079751a4" title="Return a shared_ptr to a new instance of lora_sdr::frame_detector_timeout.">lora_sdr::frame_detector_timeout::make</a> is the public interface for creating new instances. </p>
+<p>To avoid accidental use of raw pointers, <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html" title="Frame detector block, looks for a LoRa frame given SF, sapling rate and BW. Once this block has found...">lora_sdr::frame_detector_timeout</a>'s constructor is in a private implementation class. <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html#ab1bc8dd1a1e873ba173f66a06415f7e5" title="Return a shared_ptr to a new instance of lora_sdr::frame_detector_timeout.">lora_sdr::frame_detector_timeout::make</a> is the public interface for creating new instances. </p>
 
 </div>
 </div>

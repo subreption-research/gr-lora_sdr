@@ -74,9 +74,9 @@ Inheritance diagram for gr::lora_sdr::frame_detector_timeout_impl:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9848b5d5f3fcf6bef53cb68b3825abef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout__impl.html#a9848b5d5f3fcf6bef53cb68b3825abef">frame_detector_timeout_impl</a> (uint8_t sf, uint32_t smap_rate, uint32_t bw, uint8_t n_bytes)</td></tr>
-<tr class="memdesc:a9848b5d5f3fcf6bef53cb68b3825abef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new frame detector impl object.  <a href="classgr_1_1lora__sdr_1_1frame__detector__timeout__impl.html#a9848b5d5f3fcf6bef53cb68b3825abef">More...</a><br /></td></tr>
-<tr class="separator:a9848b5d5f3fcf6bef53cb68b3825abef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabd9c6ba86914721c2586c1d9ca5ff98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout__impl.html#aabd9c6ba86914721c2586c1d9ca5ff98">frame_detector_timeout_impl</a> (uint8_t sf, uint32_t smap_rate, uint32_t bw, uint8_t n_bytes, bool detect_second_packet)</td></tr>
+<tr class="memdesc:aabd9c6ba86914721c2586c1d9ca5ff98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new frame detector impl object.  <a href="classgr_1_1lora__sdr_1_1frame__detector__timeout__impl.html#aabd9c6ba86914721c2586c1d9ca5ff98">More...</a><br /></td></tr>
+<tr class="separator:aabd9c6ba86914721c2586c1d9ca5ff98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a538cdf84c3034d4e11febf5dae86fed3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout__impl.html#a538cdf84c3034d4e11febf5dae86fed3">~frame_detector_timeout_impl</a> ()</td></tr>
 <tr class="memdesc:a538cdf84c3034d4e11febf5dae86fed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the frame detector impl object.  <a href="classgr_1_1lora__sdr_1_1frame__detector__timeout__impl.html#a538cdf84c3034d4e11febf5dae86fed3">More...</a><br /></td></tr>
 <tr class="separator:a538cdf84c3034d4e11febf5dae86fed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,6 +113,7 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:a2e0c1fab6f4f052395f2113d7db2f4f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of bytes we should send after detection.  <a href="classgr_1_1lora__sdr_1_1frame__detector__timeout__impl.html#a2e0c1fab6f4f052395f2113d7db2f4f6">More...</a><br /></td></tr>
 <tr class="separator:a2e0c1fab6f4f052395f2113d7db2f4f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11de6d5cb3a8441383768d8ee3c9a98e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout__impl.html#a11de6d5cb3a8441383768d8ee3c9a98e">m_store_n_bytes</a></td></tr>
+<tr class="memdesc:a11de6d5cb3a8441383768d8ee3c9a98e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of bytes we should store for reference later.  <a href="classgr_1_1lora__sdr_1_1frame__detector__timeout__impl.html#a11de6d5cb3a8441383768d8ee3c9a98e">More...</a><br /></td></tr>
 <tr class="separator:a11de6d5cb3a8441383768d8ee3c9a98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c9ddf938aaf434f8e665491ba8fbfa6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout__impl.html#a1c9ddf938aaf434f8e665491ba8fbfa6">m_samples_per_symbol</a></td></tr>
 <tr class="memdesc:a1c9ddf938aaf434f8e665491ba8fbfa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of samples per LoRa symbol.  <a href="classgr_1_1lora__sdr_1_1frame__detector__timeout__impl.html#a1c9ddf938aaf434f8e665491ba8fbfa6">More...</a><br /></td></tr>
@@ -165,6 +166,7 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:a39c56e4a0dbc9dcedb588c49847f3fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter for counting the number of bytes we have sent.  <a href="classgr_1_1lora__sdr_1_1frame__detector__timeout__impl.html#a39c56e4a0dbc9dcedb588c49847f3fda">More...</a><br /></td></tr>
 <tr class="separator:a39c56e4a0dbc9dcedb588c49847f3fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a796b8f6d94d279fccf5fe8e934f6b19f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout__impl.html#a796b8f6d94d279fccf5fe8e934f6b19f">m_detect_second_packet</a></td></tr>
+<tr class="memdesc:a796b8f6d94d279fccf5fe8e934f6b19f"><td class="mdescLeft">&#160;</td><td class="mdescRight">wheter we should detect a second packet in the timeout window or nor  <a href="classgr_1_1lora__sdr_1_1frame__detector__timeout__impl.html#a796b8f6d94d279fccf5fe8e934f6b19f">More...</a><br /></td></tr>
 <tr class="separator:a796b8f6d94d279fccf5fe8e934f6b19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -173,9 +175,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ae1169f2a834f254ea104e27cf3a34bde inherit pub_types_classgr_1_1lora__sdr_1_1frame__detector__timeout"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html">frame_detector_timeout</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html#ae1169f2a834f254ea104e27cf3a34bde">sptr</a></td></tr>
 <tr class="separator:ae1169f2a834f254ea104e27cf3a34bde inherit pub_types_classgr_1_1lora__sdr_1_1frame__detector__timeout"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classgr_1_1lora__sdr_1_1frame__detector__timeout"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classgr_1_1lora__sdr_1_1frame__detector__timeout')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html">gr::lora_sdr::frame_detector_timeout</a></td></tr>
-<tr class="memitem:ad6e1b4f0f398875a70cfe225079751a4 inherit pub_static_methods_classgr_1_1lora__sdr_1_1frame__detector__timeout"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html#ae1169f2a834f254ea104e27cf3a34bde">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html#ad6e1b4f0f398875a70cfe225079751a4">make</a> (uint8_t sf, uint32_t samp_rate, uint32_t bw, uint8_t n_bytes)</td></tr>
-<tr class="memdesc:ad6e1b4f0f398875a70cfe225079751a4 inherit pub_static_methods_classgr_1_1lora__sdr_1_1frame__detector__timeout"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html" title="Frame detector block, looks for a LoRa frame given SF, sapling rate and BW. Once this block has found...">lora_sdr::frame_detector_timeout</a>.  <a href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html#ad6e1b4f0f398875a70cfe225079751a4">More...</a><br /></td></tr>
-<tr class="separator:ad6e1b4f0f398875a70cfe225079751a4 inherit pub_static_methods_classgr_1_1lora__sdr_1_1frame__detector__timeout"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1bc8dd1a1e873ba173f66a06415f7e5 inherit pub_static_methods_classgr_1_1lora__sdr_1_1frame__detector__timeout"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html#ae1169f2a834f254ea104e27cf3a34bde">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html#ab1bc8dd1a1e873ba173f66a06415f7e5">make</a> (uint8_t sf, uint32_t samp_rate, uint32_t bw, uint8_t n_bytes, bool detect_second_packet)</td></tr>
+<tr class="memdesc:ab1bc8dd1a1e873ba173f66a06415f7e5 inherit pub_static_methods_classgr_1_1lora__sdr_1_1frame__detector__timeout"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html" title="Frame detector block, looks for a LoRa frame given SF, sapling rate and BW. Once this block has found...">lora_sdr::frame_detector_timeout</a>.  <a href="classgr_1_1lora__sdr_1_1frame__detector__timeout.html#ab1bc8dd1a1e873ba173f66a06415f7e5">More...</a><br /></td></tr>
+<tr class="separator:ab1bc8dd1a1e873ba173f66a06415f7e5 inherit pub_static_methods_classgr_1_1lora__sdr_1_1frame__detector__timeout"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a6b710d3f0ec2fc9ba95def396c711482"></a>
@@ -213,8 +215,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9848b5d5f3fcf6bef53cb68b3825abef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9848b5d5f3fcf6bef53cb68b3825abef">&#9670;&nbsp;</a></span>frame_detector_timeout_impl()</h2>
+<a id="aabd9c6ba86914721c2586c1d9ca5ff98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabd9c6ba86914721c2586c1d9ca5ff98">&#9670;&nbsp;</a></span>frame_detector_timeout_impl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -241,7 +243,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>n_bytes</em>&#160;</td>
+          <td class="paramname"><em>n_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>detect_second_packet</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -258,6 +266,7 @@ Additional Inherited Members</h2></td></tr>
     <tr><td class="paramname">bandwidth</td><td>: bandwith </td></tr>
     <tr><td class="paramname">sf</td><td>: spreading factor </td></tr>
     <tr><td class="paramname">n_bytes</td><td>: number of bytes to send after preamble detection </td></tr>
+    <tr><td class="paramname">detect_second_packet</td><td>: if systems needs to detect second frame inside the window </td></tr>
   </table>
   </dd>
 </dl>
@@ -619,6 +628,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>wheter we should detect a second packet in the timeout window or nor </p>
+
 </div>
 </div>
 <a id="ac477c2dccf3e43ec6dbd4e7a6aeb1386"></a>
@@ -855,6 +866,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Number of bytes we should store for reference later. </p>
 
 </div>
 </div>
