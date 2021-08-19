@@ -52,15 +52,16 @@ $(document).ready(function(){initNavTree('mu__synchro__impl_8h.html',''); initRe
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">mu_synchro_impl.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;fstream&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="helpers_8h_source.html">helpers.h</a>&quot;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;<a class="el" href="mu__synchro_8h_source.html">lora_sdr/mu_synchro.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="utilities_8h_source.html">lora_sdr/utilities.h</a>&gt;</code><br />
 </div>
 <p><a href="mu__synchro__impl_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -77,7 +78,65 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacegr_1_1lora__sdr"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html">gr::lora_sdr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a6fc8397e24b44d31ac0c7c6aa874cd2d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mu__synchro__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2d">Symbol_type</a> { <br />
+&#160;&#160;<a class="el" href="mu__synchro__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2dadb31f5ef7acca5e1131fcc0fbfa6911d">VOID</a>, 
+<a class="el" href="mu__synchro__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2da5fd23d3a85ae7734bd01b8a1f5cb0657">UPCHIRP</a>, 
+<a class="el" href="mu__synchro__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2da91d7ea8d3a238bdd5d13ddcd94e129cf">SYNC_WORD</a>, 
+<a class="el" href="mu__synchro__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2da2c48590fc8ac8aef6d6ae293871cd928">DOWNCHIRP</a>, 
+<br />
+&#160;&#160;<a class="el" href="mu__synchro__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2da1af73521347e318ad3327cad2bb625e2">QUARTER_DOWN</a>, 
+<a class="el" href="mu__synchro__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2da14aa1c5c4852ea2d61eef4d73772ea65">PAYLOAD</a>, 
+<a class="el" href="mu__synchro__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2daf6adbbdb69d80588184f30a38895b43e">UNDETERMINED</a>, 
+<a class="el" href="partial__ml__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2dadb31f5ef7acca5e1131fcc0fbfa6911d">VOID</a>, 
+<br />
+&#160;&#160;<a class="el" href="partial__ml__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2da5fd23d3a85ae7734bd01b8a1f5cb0657">UPCHIRP</a>, 
+<a class="el" href="partial__ml__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2da91d7ea8d3a238bdd5d13ddcd94e129cf">SYNC_WORD</a>, 
+<a class="el" href="partial__ml__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2da2c48590fc8ac8aef6d6ae293871cd928">DOWNCHIRP</a>, 
+<a class="el" href="partial__ml__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2da1af73521347e318ad3327cad2bb625e2">QUARTER_DOWN</a>, 
+<br />
+&#160;&#160;<a class="el" href="partial__ml__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2da14aa1c5c4852ea2d61eef4d73772ea65">PAYLOAD</a>, 
+<a class="el" href="partial__ml__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2daf6adbbdb69d80588184f30a38895b43e">UNDETERMINED</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a6fc8397e24b44d31ac0c7c6aa874cd2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permitted symbol types.  <a href="mu__synchro__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2d">More...</a><br /></td></tr>
+<tr class="separator:a6fc8397e24b44d31ac0c7c6aa874cd2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a6fc8397e24b44d31ac0c7c6aa874cd2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fc8397e24b44d31ac0c7c6aa874cd2d">&#9670;&nbsp;</a></span>Symbol_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="mu__synchro__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2d">Symbol_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permitted symbol types. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6fc8397e24b44d31ac0c7c6aa874cd2dadb31f5ef7acca5e1131fcc0fbfa6911d"></a>VOID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6fc8397e24b44d31ac0c7c6aa874cd2da5fd23d3a85ae7734bd01b8a1f5cb0657"></a>UPCHIRP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6fc8397e24b44d31ac0c7c6aa874cd2da91d7ea8d3a238bdd5d13ddcd94e129cf"></a>SYNC_WORD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6fc8397e24b44d31ac0c7c6aa874cd2da2c48590fc8ac8aef6d6ae293871cd928"></a>DOWNCHIRP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6fc8397e24b44d31ac0c7c6aa874cd2da1af73521347e318ad3327cad2bb625e2"></a>QUARTER_DOWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6fc8397e24b44d31ac0c7c6aa874cd2da14aa1c5c4852ea2d61eef4d73772ea65"></a>PAYLOAD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6fc8397e24b44d31ac0c7c6aa874cd2daf6adbbdb69d80588184f30a38895b43e"></a>UNDETERMINED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6fc8397e24b44d31ac0c7c6aa874cd2dadb31f5ef7acca5e1131fcc0fbfa6911d"></a>VOID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6fc8397e24b44d31ac0c7c6aa874cd2da5fd23d3a85ae7734bd01b8a1f5cb0657"></a>UPCHIRP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6fc8397e24b44d31ac0c7c6aa874cd2da91d7ea8d3a238bdd5d13ddcd94e129cf"></a>SYNC_WORD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6fc8397e24b44d31ac0c7c6aa874cd2da2c48590fc8ac8aef6d6ae293871cd928"></a>DOWNCHIRP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6fc8397e24b44d31ac0c7c6aa874cd2da1af73521347e318ad3327cad2bb625e2"></a>QUARTER_DOWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6fc8397e24b44d31ac0c7c6aa874cd2da14aa1c5c4852ea2d61eef4d73772ea65"></a>PAYLOAD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6fc8397e24b44d31ac0c7c6aa874cd2daf6adbbdb69d80588184f30a38895b43e"></a>UNDETERMINED&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

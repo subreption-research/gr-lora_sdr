@@ -143,10 +143,7 @@ var files_dup =
     [ "mu_synchro.h", "mu__synchro_8h.html", [
       [ "mu_synchro", "classgr_1_1lora__sdr_1_1mu__synchro.html", "classgr_1_1lora__sdr_1_1mu__synchro" ]
     ] ],
-    [ "mu_synchro_impl.h", "mu__synchro__impl_8h.html", [
-      [ "mu_synchro_impl", "classgr_1_1lora__sdr_1_1mu__synchro__impl.html", "classgr_1_1lora__sdr_1_1mu__synchro__impl" ],
-      [ "user", "structgr_1_1lora__sdr_1_1mu__synchro__impl_1_1user.html", "structgr_1_1lora__sdr_1_1mu__synchro__impl_1_1user" ]
-    ] ],
+    [ "mu_synchro_impl.h", "mu__synchro__impl_8h.html", "mu__synchro__impl_8h" ],
     [ "noise_est.h", "noise__est_8h.html", [
       [ "noise_est", "classgr_1_1lora__sdr_1_1noise__est.html", "classgr_1_1lora__sdr_1_1noise__est" ]
     ] ],
@@ -156,10 +153,7 @@ var files_dup =
     [ "partial_ml.h", "partial__ml_8h.html", [
       [ "partial_ml", "classgr_1_1lora__sdr_1_1partial__ml.html", "classgr_1_1lora__sdr_1_1partial__ml" ]
     ] ],
-    [ "partial_ml_impl.h", "partial__ml__impl_8h.html", [
-      [ "partial_ml_impl", "classgr_1_1lora__sdr_1_1partial__ml__impl.html", "classgr_1_1lora__sdr_1_1partial__ml__impl" ],
-      [ "window", "structgr_1_1lora__sdr_1_1partial__ml__impl_1_1window.html", "structgr_1_1lora__sdr_1_1partial__ml__impl_1_1window" ]
-    ] ],
+    [ "partial_ml_impl.h", "partial__ml__impl_8h.html", "partial__ml__impl_8h" ],
     [ "RH_RF95_header.h", "RH__RF95__header_8h.html", [
       [ "RH_RF95_header", "classgr_1_1lora__sdr_1_1RH__RF95__header.html", "classgr_1_1lora__sdr_1_1RH__RF95__header" ]
     ] ],
@@ -173,7 +167,6 @@ var files_dup =
       [ "signal_detector_impl", "classgr_1_1lora__sdr_1_1signal__detector__impl.html", "classgr_1_1lora__sdr_1_1signal__detector__impl" ]
     ] ],
     [ "tables.h", "tables_8h.html", "tables_8h" ],
-    [ "utilities.h", "utilities_8h.html", "utilities_8h" ],
     [ "whitening.h", "whitening_8h.html", [
       [ "whitening", "classgr_1_1lora__sdr_1_1whitening.html", "classgr_1_1lora__sdr_1_1whitening" ]
     ] ],

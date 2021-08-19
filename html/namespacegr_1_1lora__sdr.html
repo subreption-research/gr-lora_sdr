@@ -52,7 +52,6 @@ $(document).ready(function(){initNavTree('namespacegr_1_1lora__sdr.html',''); in
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -209,56 +208,40 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1whitening__impl.html">whitening_impl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a218ae81b1fd7437e0a90a52c0862a011"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#a218ae81b1fd7437e0a90a52c0862a011">Symbol_type</a> { <br />
-&#160;&#160;<a class="el" href="namespacegr_1_1lora__sdr.html#a218ae81b1fd7437e0a90a52c0862a011a5a45095dc6ee2e2f3c0773d03bf9721d">VOID</a>, 
-<a class="el" href="namespacegr_1_1lora__sdr.html#a218ae81b1fd7437e0a90a52c0862a011a91bda78ad41dfb29be6566550774d187">UPCHIRP</a>, 
-<a class="el" href="namespacegr_1_1lora__sdr.html#a218ae81b1fd7437e0a90a52c0862a011a1b11289a41505366e9e9afe8579d8c1c">SYNC_WORD</a>, 
-<a class="el" href="namespacegr_1_1lora__sdr.html#a218ae81b1fd7437e0a90a52c0862a011a21d478379a44fdf8681248cad4e01bb4">DOWNCHIRP</a>, 
-<br />
-&#160;&#160;<a class="el" href="namespacegr_1_1lora__sdr.html#a218ae81b1fd7437e0a90a52c0862a011a5fd937fd0764a0f41fe0cf30205a0612">QUARTER_DOWN</a>, 
-<a class="el" href="namespacegr_1_1lora__sdr.html#a218ae81b1fd7437e0a90a52c0862a011a70318753dcd8fe38476b318d59b07287">PAYLOAD</a>, 
-<a class="el" href="namespacegr_1_1lora__sdr.html#a218ae81b1fd7437e0a90a52c0862a011a3f72791f6787e533aba637d2d936083a">UNDETERMINED</a>
-<br />
- }</td></tr>
-<tr class="separator:a218ae81b1fd7437e0a90a52c0862a011"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:adb2d67013a158614413dedf3f2ae4503"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#adb2d67013a158614413dedf3f2ae4503">mod</a> (long a, long b)</td></tr>
-<tr class="memdesc:adb2d67013a158614413dedf3f2ae4503"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the modulus ab between 0 and (b-1)  <a href="namespacegr_1_1lora__sdr.html#adb2d67013a158614413dedf3f2ae4503">More...</a><br /></td></tr>
-<tr class="separator:adb2d67013a158614413dedf3f2ae4503"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee3478d34b874a3ec1f30ad014b13db5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#aee3478d34b874a3ec1f30ad014b13db5">double_mod</a> (double a, long b)</td></tr>
-<tr class="separator:aee3478d34b874a3ec1f30ad014b13db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03a538483edbae2770055534c94be827"><td class="memItemLeft" align="right" valign="top">std::vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#a03a538483edbae2770055534c94be827">int2bool</a> (uint integer, uint8_t n_bits)</td></tr>
-<tr class="memdesc:a03a538483edbae2770055534c94be827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an integer into a MSB first vector of bool.  <a href="namespacegr_1_1lora__sdr.html#a03a538483edbae2770055534c94be827">More...</a><br /></td></tr>
-<tr class="separator:a03a538483edbae2770055534c94be827"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff065b957d7d236fcb0c9fd010c9b6a6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#aff065b957d7d236fcb0c9fd010c9b6a6">bool2int</a> (std::vector&lt; bool &gt; b)</td></tr>
-<tr class="memdesc:aff065b957d7d236fcb0c9fd010c9b6a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a MSB first vector of bool to a integer.  <a href="namespacegr_1_1lora__sdr.html#aff065b957d7d236fcb0c9fd010c9b6a6">More...</a><br /></td></tr>
-<tr class="separator:aff065b957d7d236fcb0c9fd010c9b6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a893750c2dfbab39c55d59ce7cf7d6fb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#a893750c2dfbab39c55d59ce7cf7d6fb4">build_upchirp</a> (gr_complex *chirp, uint32_t id, uint8_t sf, uint8_t os_factor=1)</td></tr>
-<tr class="memdesc:a893750c2dfbab39c55d59ce7cf7d6fb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an modulated upchirp using s_f=bw.  <a href="namespacegr_1_1lora__sdr.html#a893750c2dfbab39c55d59ce7cf7d6fb4">More...</a><br /></td></tr>
-<tr class="separator:a893750c2dfbab39c55d59ce7cf7d6fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a022a5d0dabf8815dfa0092729d69ec4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#a022a5d0dabf8815dfa0092729d69ec4a">build_ref_chirps</a> (gr_complex *upchirp, gr_complex *downchirp, uint8_t sf, uint8_t os_factor=1)</td></tr>
-<tr class="memdesc:a022a5d0dabf8815dfa0092729d69ec4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the reference chirps using s_f=bw.  <a href="namespacegr_1_1lora__sdr.html#a022a5d0dabf8815dfa0092729d69ec4a">More...</a><br /></td></tr>
-<tr class="separator:a022a5d0dabf8815dfa0092729d69ec4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a707052fe795e6352adc9a561d27f498d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#a707052fe795e6352adc9a561d27f498d">random_string</a> (int Nbytes)</td></tr>
-<tr class="separator:a707052fe795e6352adc9a561d27f498d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7722b83be4f756e6abfb7426c40d70ba"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#a7722b83be4f756e6abfb7426c40d70ba">complex_vector_2_string</a> (gr_complex *input, int length)</td></tr>
 <tr class="separator:a7722b83be4f756e6abfb7426c40d70ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb2d67013a158614413dedf3f2ae4503"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#adb2d67013a158614413dedf3f2ae4503">mod</a> (long a, long b)</td></tr>
+<tr class="memdesc:adb2d67013a158614413dedf3f2ae4503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple modulo the modulus ab between 0 and (b-1)  <a href="namespacegr_1_1lora__sdr.html#adb2d67013a158614413dedf3f2ae4503">More...</a><br /></td></tr>
+<tr class="separator:adb2d67013a158614413dedf3f2ae4503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee3478d34b874a3ec1f30ad014b13db5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#aee3478d34b874a3ec1f30ad014b13db5">double_mod</a> (double a, long b)</td></tr>
+<tr class="memdesc:aee3478d34b874a3ec1f30ad014b13db5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple modulo the modulus ab between 0 and (b-1) for doubles.  <a href="namespacegr_1_1lora__sdr.html#aee3478d34b874a3ec1f30ad014b13db5">More...</a><br /></td></tr>
+<tr class="separator:aee3478d34b874a3ec1f30ad014b13db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b2a9d6555dc1db8f5e9b927c02d073f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#a4b2a9d6555dc1db8f5e9b927c02d073f">int2bool</a> (uint8_t integer, uint8_t n_bits)</td></tr>
+<tr class="memdesc:a4b2a9d6555dc1db8f5e9b927c02d073f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an integer into a MSB first vector of bool.  <a href="namespacegr_1_1lora__sdr.html#a4b2a9d6555dc1db8f5e9b927c02d073f">More...</a><br /></td></tr>
+<tr class="separator:a4b2a9d6555dc1db8f5e9b927c02d073f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a707052fe795e6352adc9a561d27f498d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#a707052fe795e6352adc9a561d27f498d">random_string</a> (int Nbytes)</td></tr>
+<tr class="memdesc:a707052fe795e6352adc9a561d27f498d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a random string of given length.  <a href="namespacegr_1_1lora__sdr.html#a707052fe795e6352adc9a561d27f498d">More...</a><br /></td></tr>
+<tr class="separator:a707052fe795e6352adc9a561d27f498d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65ee30c2a8d000e032c251d6cdf6995a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#a65ee30c2a8d000e032c251d6cdf6995a">get_symbol_val</a> (const gr_complex *samples, gr_complex *ref_chirp, uint32_t m_number_of_bins, uint32_t m_samples_per_symbol, <a class="el" href="structkiss__fft__cpx.html">kiss_fft_cpx</a> *cx_in, <a class="el" href="structkiss__fft__cpx.html">kiss_fft_cpx</a> *cx_out)</td></tr>
 <tr class="memdesc:a65ee30c2a8d000e032c251d6cdf6995a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that gets the symbol from the received samples.  <a href="namespacegr_1_1lora__sdr.html#a65ee30c2a8d000e032c251d6cdf6995a">More...</a><br /></td></tr>
 <tr class="separator:a65ee30c2a8d000e032c251d6cdf6995a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35377ec67f15948ad3e138256dd5cfcd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#a35377ec67f15948ad3e138256dd5cfcd">determine_energy</a> (const gr_complex *samples, uint32_t m_samples_per_symbol)</td></tr>
 <tr class="memdesc:a35377ec67f15948ad3e138256dd5cfcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the energy of a symbol.  <a href="namespacegr_1_1lora__sdr.html#a35377ec67f15948ad3e138256dd5cfcd">More...</a><br /></td></tr>
 <tr class="separator:a35377ec67f15948ad3e138256dd5cfcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff065b957d7d236fcb0c9fd010c9b6a6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#aff065b957d7d236fcb0c9fd010c9b6a6">bool2int</a> (std::vector&lt; bool &gt; b)</td></tr>
+<tr class="memdesc:aff065b957d7d236fcb0c9fd010c9b6a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a MSB first vector of bool to a integer.  <a href="namespacegr_1_1lora__sdr.html#aff065b957d7d236fcb0c9fd010c9b6a6">More...</a><br /></td></tr>
+<tr class="separator:aff065b957d7d236fcb0c9fd010c9b6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab200cb6584b1993e5227cb0c2feaf077"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#ab200cb6584b1993e5227cb0c2feaf077">build_ref_chirps</a> (gr_complex *upchirp, gr_complex *downchirp, uint8_t sf)</td></tr>
 <tr class="memdesc:ab200cb6584b1993e5227cb0c2feaf077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the reference chirps using s_f=bw.  <a href="namespacegr_1_1lora__sdr.html#ab200cb6584b1993e5227cb0c2feaf077">More...</a><br /></td></tr>
 <tr class="separator:ab200cb6584b1993e5227cb0c2feaf077"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0ffa3d5d413320a39a835e8318f3bb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#ae0ffa3d5d413320a39a835e8318f3bb0">build_upchirp</a> (gr_complex *chirp, uint32_t id, uint8_t sf)</td></tr>
 <tr class="memdesc:ae0ffa3d5d413320a39a835e8318f3bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an modulated upchirp using s_f=bw.  <a href="namespacegr_1_1lora__sdr.html#ae0ffa3d5d413320a39a835e8318f3bb0">More...</a><br /></td></tr>
 <tr class="separator:ae0ffa3d5d413320a39a835e8318f3bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c5da76929a6f19a586e6c9919d2b6e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegr_1_1lora__sdr.html#a0c5da76929a6f19a586e6c9919d2b6e6">build_upchirp_os_factor</a> (gr_complex *chirp, uint32_t id, uint8_t sf, uint8_t os_factor)</td></tr>
+<tr class="memdesc:a0c5da76929a6f19a586e6c9919d2b6e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an modulated upchirp using s_f=bw with over sampling factor.  <a href="namespacegr_1_1lora__sdr.html#a0c5da76929a6f19a586e6c9919d2b6e6">More...</a><br /></td></tr>
+<tr class="separator:a0c5da76929a6f19a586e6c9919d2b6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -266,39 +249,12 @@ Variables</h2></td></tr>
 <tr class="memdesc:ac9015b8839f9981e9f6a82316b52dffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pseudo random whitening sequence.  <a href="namespacegr_1_1lora__sdr.html#ac9015b8839f9981e9f6a82316b52dffb">More...</a><br /></td></tr>
 <tr class="separator:ac9015b8839f9981e9f6a82316b52dffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a218ae81b1fd7437e0a90a52c0862a011"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a218ae81b1fd7437e0a90a52c0862a011">&#9670;&nbsp;</a></span>Symbol_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="namespacegr_1_1lora__sdr.html#a218ae81b1fd7437e0a90a52c0862a011">gr::lora_sdr::Symbol_type</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a218ae81b1fd7437e0a90a52c0862a011a5a45095dc6ee2e2f3c0773d03bf9721d"></a>VOID&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a218ae81b1fd7437e0a90a52c0862a011a91bda78ad41dfb29be6566550774d187"></a>UPCHIRP&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a218ae81b1fd7437e0a90a52c0862a011a1b11289a41505366e9e9afe8579d8c1c"></a>SYNC_WORD&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a218ae81b1fd7437e0a90a52c0862a011a21d478379a44fdf8681248cad4e01bb4"></a>DOWNCHIRP&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a218ae81b1fd7437e0a90a52c0862a011a5fd937fd0764a0f41fe0cf30205a0612"></a>QUARTER_DOWN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a218ae81b1fd7437e0a90a52c0862a011a70318753dcd8fe38476b318d59b07287"></a>PAYLOAD&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a218ae81b1fd7437e0a90a52c0862a011a3f72791f6787e533aba637d2d936083a"></a>UNDETERMINED&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="aff065b957d7d236fcb0c9fd010c9b6a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff065b957d7d236fcb0c9fd010c9b6a6">&#9670;&nbsp;</a></span>bool2int()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">uint32_t gr::lora_sdr::bool2int </td>
@@ -308,17 +264,11 @@ Variables</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Convert a MSB first vector of bool to a integer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">b</td><td>The boolean vector to convert</td></tr>
     <tr><td class="paramname">b</td><td>The boolean vector to convert </td></tr>
   </table>
   </dd>
@@ -328,7 +278,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="ab200cb6584b1993e5227cb0c2feaf077"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab200cb6584b1993e5227cb0c2feaf077">&#9670;&nbsp;</a></span>build_ref_chirps() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab200cb6584b1993e5227cb0c2feaf077">&#9670;&nbsp;</a></span>build_ref_chirps()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -371,68 +321,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a022a5d0dabf8815dfa0092729d69ec4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a022a5d0dabf8815dfa0092729d69ec4a">&#9670;&nbsp;</a></span>build_ref_chirps() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gr::lora_sdr::build_ref_chirps </td>
-          <td>(</td>
-          <td class="paramtype">gr_complex *&#160;</td>
-          <td class="paramname"><em>upchirp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">gr_complex *&#160;</td>
-          <td class="paramname"><em>downchirp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>sf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>os_factor</em> = <code>1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return the reference chirps using s_f=bw. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">upchirp</td><td>The pointer to the reference upchirp </td></tr>
-    <tr><td class="paramname">downchirp</td><td>The pointer to the reference downchirp </td></tr>
-    <tr><td class="paramname">sf</td><td>The spreading factor to use </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">References <a class="el" href="namespacegr_1_1lora__sdr.html#a893750c2dfbab39c55d59ce7cf7d6fb4">build_upchirp()</a>.</p>
-
-</div>
-</div>
 <a id="ae0ffa3d5d413320a39a835e8318f3bb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0ffa3d5d413320a39a835e8318f3bb0">&#9670;&nbsp;</a></span>build_upchirp() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0ffa3d5d413320a39a835e8318f3bb0">&#9670;&nbsp;</a></span>build_upchirp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -475,17 +365,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a893750c2dfbab39c55d59ce7cf7d6fb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a893750c2dfbab39c55d59ce7cf7d6fb4">&#9670;&nbsp;</a></span>build_upchirp() <span class="overload">[2/2]</span></h2>
+<a id="a0c5da76929a6f19a586e6c9919d2b6e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c5da76929a6f19a586e6c9919d2b6e6">&#9670;&nbsp;</a></span>build_upchirp_os_factor()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void gr::lora_sdr::build_upchirp </td>
+          <td class="memname">void gr::lora_sdr::build_upchirp_os_factor </td>
           <td>(</td>
           <td class="paramtype">gr_complex *&#160;</td>
           <td class="paramname"><em>chirp</em>, </td>
@@ -506,7 +393,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>os_factor</em> = <code>1</code>&#160;</td>
+          <td class="paramname"><em>os_factor</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -514,25 +401,18 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Return an modulated upchirp using s_f=bw. </p>
+<p>Return an modulated upchirp using s_f=bw with over sampling factor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">chirp</td><td>The pointer to the modulated upchirp </td></tr>
-    <tr><td class="paramname">id</td><td>The number used to modulate the chirp </td></tr>
-    <tr><td class="paramname">sf</td><td>The spreading factor to use </td></tr>
-    <tr><td class="paramname">os_factor</td><td>The oversampling factor used to generate the upchirp </td></tr>
+    <tr><td class="paramname">chirp</td><td>: The pointer to the modulated upchirp </td></tr>
+    <tr><td class="paramname">id</td><td>: The number used to modulate the chirp </td></tr>
+    <tr><td class="paramname">sf</td><td>: The spreading factor to use </td></tr>
+    <tr><td class="paramname">os_factor</td><td>: oversmapling factor </td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">Referenced by <a class="el" href="namespacegr_1_1lora__sdr.html#a022a5d0dabf8815dfa0092729d69ec4a">build_ref_chirps()</a>.</p>
 
 </div>
 </div>
@@ -607,9 +487,6 @@ Variables</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double gr::lora_sdr::double_mod </td>
@@ -629,12 +506,17 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>Simple modulo the modulus ab between 0 and (b-1) for doubles. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td></td></tr>
+    <tr><td class="paramname">b</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
 
 </div>
 </div>
@@ -704,19 +586,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a03a538483edbae2770055534c94be827"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03a538483edbae2770055534c94be827">&#9670;&nbsp;</a></span>int2bool()</h2>
+<a id="a4b2a9d6555dc1db8f5e9b927c02d073f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b2a9d6555dc1db8f5e9b927c02d073f">&#9670;&nbsp;</a></span>int2bool()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; bool &gt; gr::lora_sdr::int2bool </td>
+          <td class="memname">std::vector&lt;bool&gt; gr::lora_sdr::int2bool </td>
           <td>(</td>
-          <td class="paramtype">uint&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>integer</em>, </td>
         </tr>
         <tr>
@@ -731,20 +610,13 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Convert an integer into a MSB first vector of bool. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">integer</td><td>The integer to convert </td></tr>
-    <tr><td class="paramname">n_bits</td><td>The output number of bits</td></tr>
-    <tr><td class="paramname">integer</td><td>: The integer to convert </td></tr>
-    <tr><td class="paramname">n_bits</td><td>: The output number of bits </td></tr>
+    <tr><td class="paramname">n_bits</td><td>The output number of bits </td></tr>
   </table>
   </dd>
 </dl>
@@ -757,9 +629,6 @@ Variables</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">long gr::lora_sdr::mod </td>
@@ -779,14 +648,17 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>return the modulus ab between 0 and (b-1) </p>
+<p>Simple modulo the modulus ab between 0 and (b-1) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td></td></tr>
+    <tr><td class="paramname">b</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>long modulo of ab </dd></dl>
 
 </div>
 </div>
@@ -795,9 +667,6 @@ Variables</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::string gr::lora_sdr::random_string </td>
@@ -807,12 +676,16 @@ Variables</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>Generates a random string of given length. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Nbytes</td><td>: Number of bytes in the string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
 
 </div>
 </div>
