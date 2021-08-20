@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GNU Radio&#39;s LoRa_SDR OOT Package: hamming_dec_impl.h Source File</title>
+<title>GNU Radio&#39;s LORA_SDR Package: hamming_dec_impl.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio&#39;s LoRa_SDR OOT Package
+   <div id="projectname">GNU Radio&#39;s LORA_SDR Package
    </div>
-   <div id="projectbrief">OOT module that provides PHY LoRa capabilities</div>
   </td>
  </tr>
  </tbody>
@@ -68,19 +67,19 @@ $(document).ready(function(){initNavTree('hamming__dec__impl_8h_source.html','')
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">   * @brief Transmission coding rate</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a97b48238fbd0aa5162df2003ba908e1e">   15</a></span>&#160;  uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a97b48238fbd0aa5162df2003ba908e1e">m_cr</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  uint8_t m_cr;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">   * @brief Coding rate use for the block</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#aac6775251e61db5b28d48755bb00d054">   21</a></span>&#160;  uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#aac6775251e61db5b28d48755bb00d054">cr_app</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  uint8_t cr_app;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">   * @brief Indicate that it is the first block</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a0fd7af839ca20a62e5a2d7d67446a17b">   27</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a0fd7af839ca20a62e5a2d7d67446a17b">is_header</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">bool</span> is_header;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">  /**</span></div>
@@ -113,12 +112,9 @@ $(document).ready(function(){initNavTree('hamming__dec__impl_8h_source.html','')
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_hamming_dec_IMPL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1hamming__dec__impl_html_a0fd7af839ca20a62e5a2d7d67446a17b"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a0fd7af839ca20a62e5a2d7d67446a17b">gr::lora_sdr::hamming_dec_impl::is_header</a></div><div class="ttdeci">bool is_header</div><div class="ttdoc">Indicate that it is the first block.</div><div class="ttdef"><b>Definition:</b> hamming_dec_impl.h:27</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1hamming__dec_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hamming__dec.html">gr::lora_sdr::hamming_dec</a></div><div class="ttdoc">Hamming decoding stage, decode the received payload. If necessary this block will preform error detec...</div><div class="ttdef"><b>Definition:</b> hamming_dec.h:38</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1hamming__dec__impl_html_a97b48238fbd0aa5162df2003ba908e1e"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a97b48238fbd0aa5162df2003ba908e1e">gr::lora_sdr::hamming_dec_impl::m_cr</a></div><div class="ttdeci">uint8_t m_cr</div><div class="ttdoc">Transmission coding rate.</div><div class="ttdef"><b>Definition:</b> hamming_dec_impl.h:15</div></div>
 <div class="ttc" id="ahamming__dec_8h_html"><div class="ttname"><a href="hamming__dec_8h.html">hamming_dec.h</a></div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1hamming__dec__impl_html_a5d07feb76b0d8215dfa8e698d64c82e3"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#a5d07feb76b0d8215dfa8e698d64c82e3">gr::lora_sdr::hamming_dec_impl::hamming_dec_impl</a></div><div class="ttdeci">hamming_dec_impl()</div><div class="ttdoc">Construct a new hamming dec impl object.</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1hamming__dec__impl_html_aac6775251e61db5b28d48755bb00d054"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#aac6775251e61db5b28d48755bb00d054">gr::lora_sdr::hamming_dec_impl::cr_app</a></div><div class="ttdeci">uint8_t cr_app</div><div class="ttdoc">Coding rate use for the block.</div><div class="ttdef"><b>Definition:</b> hamming_dec_impl.h:21</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1hamming__dec__impl_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html">gr::lora_sdr::hamming_dec_impl</a></div><div class="ttdef"><b>Definition:</b> hamming_dec_impl.h:9</div></div>
 <div class="ttc" id="anamespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> add_crc.h:28</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1hamming__dec__impl_html_ab152998bcda1cc40835d82fa1afed17a"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1hamming__dec__impl.html#ab152998bcda1cc40835d82fa1afed17a">gr::lora_sdr::hamming_dec_impl::work</a></div><div class="ttdeci">int work(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div><div class="ttdoc">Main function where the actual computation resides.</div></div>

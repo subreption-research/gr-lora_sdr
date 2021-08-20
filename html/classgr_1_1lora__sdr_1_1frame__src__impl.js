@@ -2,27 +2,5 @@ var classgr_1_1lora__sdr_1_1frame__src__impl =
 [
     [ "frame_src_impl", "classgr_1_1lora__sdr_1_1frame__src__impl.html#a5d22d293cf47ef7dab96271321356599", null ],
     [ "~frame_src_impl", "classgr_1_1lora__sdr_1_1frame__src__impl.html#a8a2c7426ceb2f0e3bf6561170125436e", null ],
-    [ "is_first_user", "classgr_1_1lora__sdr_1_1frame__src__impl.html#a62de55b904abb954c79f60b9a30ca354", null ],
-    [ "work", "classgr_1_1lora__sdr_1_1frame__src__impl.html#a3e8aab00345eb10fafedca2c87841ab6", null ],
-    [ "is_first", "classgr_1_1lora__sdr_1_1frame__src__impl.html#a6bf8550e9f33d0171b005e7c6c0a4e10", null ],
-    [ "m_bw", "classgr_1_1lora__sdr_1_1frame__src__impl.html#a2765e205edfdd8b5c607ae45a1718ce3", null ],
-    [ "m_cfo", "classgr_1_1lora__sdr_1_1frame__src__impl.html#a2e80da0c1a4bb060c7a736ae611b04f1", null ],
-    [ "m_cnt", "classgr_1_1lora__sdr_1_1frame__src__impl.html#a5f44639e754d3d789610a30605cb5020", null ],
-    [ "m_delay", "classgr_1_1lora__sdr_1_1frame__src__impl.html#ae671559728c1bd49e4d5d87410685102", null ],
-    [ "m_delay_with_rand_sto", "classgr_1_1lora__sdr_1_1frame__src__impl.html#a4505fb363627dac8b3c5ab89fad4aff1", null ],
-    [ "m_downchirp", "classgr_1_1lora__sdr_1_1frame__src__impl.html#ad3ad73e76aa0682ca03cf516c8bc9ae6", null ],
-    [ "m_frame", "classgr_1_1lora__sdr_1_1frame__src__impl.html#a86a77d512f9275e16db05b2fecd77cf0", null ],
-    [ "m_frame_cnt", "classgr_1_1lora__sdr_1_1frame__src__impl.html#ac41220a7a557e453e7fba388efdfc287", null ],
-    [ "m_frame_length", "classgr_1_1lora__sdr_1_1frame__src__impl.html#a151316d9b28052a400b2503d0c7f412c", null ],
-    [ "m_N", "classgr_1_1lora__sdr_1_1frame__src__impl.html#a9a19fa2bc9b65f1ba20b14a2df3ca3d2", null ],
-    [ "m_n_frames", "classgr_1_1lora__sdr_1_1frame__src__impl.html#ae7d13df00817e3f6b2ab35bae78e9fd9", null ],
-    [ "m_n_up", "classgr_1_1lora__sdr_1_1frame__src__impl.html#a82d36cdd74e688138636c0920a4abc43", null ],
-    [ "m_offset", "classgr_1_1lora__sdr_1_1frame__src__impl.html#a3efae32761b8ec5a166d6a967240ad23", null ],
-    [ "m_os_factor", "classgr_1_1lora__sdr_1_1frame__src__impl.html#a30af25643fe67c8b3570af7efd78ad3c", null ],
-    [ "m_pay_len", "classgr_1_1lora__sdr_1_1frame__src__impl.html#aa39b3acb8ac7daa43b108d6d52c3b4a6", null ],
-    [ "m_rand_sto", "classgr_1_1lora__sdr_1_1frame__src__impl.html#abaecde729bcfd247d128d841f048c065", null ],
-    [ "m_samp_rate", "classgr_1_1lora__sdr_1_1frame__src__impl.html#a8b16c56354268542b849e1ab3aa43956", null ],
-    [ "m_sf", "classgr_1_1lora__sdr_1_1frame__src__impl.html#a1c045f462871e655dc2a05a51011092f", null ],
-    [ "m_sto_val", "classgr_1_1lora__sdr_1_1frame__src__impl.html#a2c396fe8f5cacca71f0325f357326e28", null ],
-    [ "m_upchirp", "classgr_1_1lora__sdr_1_1frame__src__impl.html#abc9c57f217bc27d546ded0ac5022584b", null ]
+    [ "work", "classgr_1_1lora__sdr_1_1frame__src__impl.html#a3e8aab00345eb10fafedca2c87841ab6", null ]
 ];

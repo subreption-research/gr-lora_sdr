@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GNU Radio&#39;s LoRa_SDR OOT Package: interleaver_impl.h Source File</title>
+<title>GNU Radio&#39;s LORA_SDR Package: interleaver_impl.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio&#39;s LoRa_SDR OOT Package
+   <div id="projectname">GNU Radio&#39;s LORA_SDR Package
    </div>
-   <div id="projectbrief">OOT module that provides PHY LoRa capabilities</div>
   </td>
  </tr>
  </tbody>
@@ -69,25 +68,25 @@ $(document).ready(function(){initNavTree('interleaver__impl_8h_source.html','');
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">   * @brief Transmission coding rate</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a6945652529f45d51705db59c89974c9a">   16</a></span>&#160;  uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a6945652529f45d51705db59c89974c9a">m_cr</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  uint8_t m_cr;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">   * @brief Transmission spreading factor</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a9c6741820d3d0d6b5e381a73602cf71d">   22</a></span>&#160;  uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a9c6741820d3d0d6b5e381a73602cf71d">m_sf</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  uint8_t m_sf;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">   * @brief variable that counts the number of codewords</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0ebde855ca3af4ff51d5b006f3121346">   28</a></span>&#160;  uint32_t <a class="code" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0ebde855ca3af4ff51d5b006f3121346">cw_cnt</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  uint32_t cw_cnt;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">   * @brief length of the frame in number of items</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0c55011e558a16cbe00f0b8b312363d7">   34</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0c55011e558a16cbe00f0b8b312363d7">m_frame_len</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">int</span> m_frame_len;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">  /**</span></div>
@@ -135,13 +134,9 @@ $(document).ready(function(){initNavTree('interleaver__impl_8h_source.html','');
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1interleaver__impl_html_a0957f1e476d8926c265e325b17dc136f"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0957f1e476d8926c265e325b17dc136f">gr::lora_sdr::interleaver_impl::forecast</a></div><div class="ttdeci">void forecast(int noutput_items, gr_vector_int &amp;ninput_items_required)</div><div class="ttdoc">Standard gnuradio function to ensure a number of input items are received before continuing.</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1interleaver__impl_html_a0c55011e558a16cbe00f0b8b312363d7"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0c55011e558a16cbe00f0b8b312363d7">gr::lora_sdr::interleaver_impl::m_frame_len</a></div><div class="ttdeci">int m_frame_len</div><div class="ttdoc">length of the frame in number of items</div><div class="ttdef"><b>Definition:</b> interleaver_impl.h:34</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1interleaver__impl_html_aa7d8a1471e5f14a641475c1fd7fa1e84"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1interleaver__impl.html#aa7d8a1471e5f14a641475c1fd7fa1e84">gr::lora_sdr::interleaver_impl::~interleaver_impl</a></div><div class="ttdeci">~interleaver_impl()</div><div class="ttdoc">Destroy the interleaver impl object.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1interleaver_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1interleaver.html">gr::lora_sdr::interleaver</a></div><div class="ttdoc">Interleaves the to be sent data, in order to gain more resilience against bit transmission errors For...</div><div class="ttdef"><b>Definition:</b> interleaver.h:37</div></div>
 <div class="ttc" id="ainterleaver_8h_html"><div class="ttname"><a href="interleaver_8h.html">interleaver.h</a></div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1interleaver__impl_html_a0ebde855ca3af4ff51d5b006f3121346"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a0ebde855ca3af4ff51d5b006f3121346">gr::lora_sdr::interleaver_impl::cw_cnt</a></div><div class="ttdeci">uint32_t cw_cnt</div><div class="ttdoc">variable that counts the number of codewords</div><div class="ttdef"><b>Definition:</b> interleaver_impl.h:28</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1interleaver__impl_html_a9c6741820d3d0d6b5e381a73602cf71d"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a9c6741820d3d0d6b5e381a73602cf71d">gr::lora_sdr::interleaver_impl::m_sf</a></div><div class="ttdeci">uint8_t m_sf</div><div class="ttdoc">Transmission spreading factor.</div><div class="ttdef"><b>Definition:</b> interleaver_impl.h:22</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1interleaver__impl_html_a6945652529f45d51705db59c89974c9a"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1interleaver__impl.html#a6945652529f45d51705db59c89974c9a">gr::lora_sdr::interleaver_impl::m_cr</a></div><div class="ttdeci">uint8_t m_cr</div><div class="ttdoc">Transmission coding rate.</div><div class="ttdef"><b>Definition:</b> interleaver_impl.h:16</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1interleaver__impl_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1interleaver__impl.html">gr::lora_sdr::interleaver_impl</a></div><div class="ttdef"><b>Definition:</b> interleaver_impl.h:10</div></div>
 <div class="ttc" id="anamespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> add_crc.h:28</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1interleaver__impl_html_acfe9c5f82e17715891430113d526e0bb"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1interleaver__impl.html#acfe9c5f82e17715891430113d526e0bb">gr::lora_sdr::interleaver_impl::interleaver_impl</a></div><div class="ttdeci">interleaver_impl(uint8_t cr, uint8_t sf)</div><div class="ttdoc">Construct a new interleaver impl object.</div></div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GNU Radio&#39;s LoRa_SDR OOT Package: frame_src_impl.h Source File</title>
+<title>GNU Radio&#39;s LORA_SDR Package: frame_src_impl.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio&#39;s LoRa_SDR OOT Package
+   <div id="projectname">GNU Radio&#39;s LORA_SDR Package
    </div>
-   <div id="projectbrief">OOT module that provides PHY LoRa capabilities</div>
   </td>
  </tr>
  </tbody>
@@ -90,115 +89,115 @@ $(document).ready(function(){initNavTree('frame__src__impl_8h_source.html',''); 
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">   * @brief Transmission spreading factor</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a1c045f462871e655dc2a05a51011092f">   37</a></span>&#160;  uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a1c045f462871e655dc2a05a51011092f">m_sf</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  uint8_t m_sf;<span class="comment"></span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">   * @brief Transmission sampling rate</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a8b16c56354268542b849e1ab3aa43956">   42</a></span>&#160;  uint32_t <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a8b16c56354268542b849e1ab3aa43956">m_samp_rate</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  uint32_t m_samp_rate;<span class="comment"></span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">   * @brief Transmission bandwidth (Works only for samp_rate=bw)</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a2765e205edfdd8b5c607ae45a1718ce3">   47</a></span>&#160;  uint32_t <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a2765e205edfdd8b5c607ae45a1718ce3">m_bw</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  uint32_t m_bw;<span class="comment"></span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">   * @brief number of bin per loar symbol</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a9a19fa2bc9b65f1ba20b14a2df3ca3d2">   52</a></span>&#160;  uint32_t <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a9a19fa2bc9b65f1ba20b14a2df3ca3d2">m_N</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  uint32_t m_N;<span class="comment"></span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">   * @brief oversampling factor</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a30af25643fe67c8b3570af7efd78ad3c">   57</a></span>&#160;  uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a30af25643fe67c8b3570af7efd78ad3c">m_os_factor</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  uint8_t m_os_factor;<span class="comment"></span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">   * @brief number of zeros between two frames</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#ae671559728c1bd49e4d5d87410685102">   62</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#ae671559728c1bd49e4d5d87410685102">m_delay</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">int</span> m_delay;<span class="comment"></span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">   * @brief number of symbols in a frame payload</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#aa39b3acb8ac7daa43b108d6d52c3b4a6">   67</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#aa39b3acb8ac7daa43b108d6d52c3b4a6">m_pay_len</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">int</span> m_pay_len;<span class="comment"></span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">   * @brief number of frames to transmit</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#ae7d13df00817e3f6b2ab35bae78e9fd9">   72</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#ae7d13df00817e3f6b2ab35bae78e9fd9">m_n_frames</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">int</span> m_n_frames;<span class="comment"></span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">   * @brief the number of zeros sent before the first symbol</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a3efae32761b8ec5a166d6a967240ad23">   77</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a3efae32761b8ec5a166d6a967240ad23">m_offset</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">int</span> m_offset;<span class="comment"></span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">   * @brief the CFO of the user</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a2e80da0c1a4bb060c7a736ae611b04f1">   82</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a2e80da0c1a4bb060c7a736ae611b04f1">m_cfo</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">float</span> m_cfo;<span class="comment"></span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">   * @brief indicate to use a random STO, uniformly distributed in</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">   * [0,2^sf*m_os_factor)</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#abaecde729bcfd247d128d841f048c065">   88</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#abaecde729bcfd247d128d841f048c065">m_rand_sto</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">bool</span> m_rand_sto;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">   * @brief delay between frame taking a random sto into account</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a4505fb363627dac8b3c5ab89fad4aff1">   94</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a4505fb363627dac8b3c5ab89fad4aff1">m_delay_with_rand_sto</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">int</span> m_delay_with_rand_sto;<span class="comment"></span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">   * @brief rand_sto val</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a2c396fe8f5cacca71f0325f357326e28">   99</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a2c396fe8f5cacca71f0325f357326e28">m_sto_val</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">int</span> m_sto_val;<span class="comment"></span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">   * @brief reference upchirp</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#abc9c57f217bc27d546ded0ac5022584b">  104</a></span>&#160;  std::vector&lt;gr_complex&gt; <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#abc9c57f217bc27d546ded0ac5022584b">m_upchirp</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  std::vector&lt;gr_complex&gt; m_upchirp;<span class="comment"></span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">   * @brief reference downchirp</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#ad3ad73e76aa0682ca03cf516c8bc9ae6">  109</a></span>&#160;  std::vector&lt;gr_complex&gt; <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#ad3ad73e76aa0682ca03cf516c8bc9ae6">m_downchirp</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  std::vector&lt;gr_complex&gt; m_downchirp;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">   * @brief frame length in samples</span></div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a151316d9b28052a400b2503d0c7f412c">  115</a></span>&#160;  uint32_t <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a151316d9b28052a400b2503d0c7f412c">m_frame_length</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  uint32_t m_frame_length;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">   * @brief contains the whole frame</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a86a77d512f9275e16db05b2fecd77cf0">  121</a></span>&#160;  std::vector&lt;gr_complex&gt; <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a86a77d512f9275e16db05b2fecd77cf0">m_frame</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  std::vector&lt;gr_complex&gt; m_frame;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">   * @brief variable used to wait before outputing the first frame</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a6bf8550e9f33d0171b005e7c6c0a4e10">  127</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a6bf8550e9f33d0171b005e7c6c0a4e10">is_first</a>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">bool</span> is_first;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">   * @brief number of upchirps in the preamble</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a82d36cdd74e688138636c0920a4abc43">  133</a></span>&#160;  uint <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a82d36cdd74e688138636c0920a4abc43">m_n_up</a>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  uint m_n_up;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment">   * @brief sample counter</span></div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a5f44639e754d3d789610a30605cb5020">  139</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a5f44639e754d3d789610a30605cb5020">m_cnt</a>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordtype">int</span> m_cnt;</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment">   * @brief frame counter</span></div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#ac41220a7a557e453e7fba388efdfc287">  145</a></span>&#160;  uint <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#ac41220a7a557e453e7fba388efdfc287">m_frame_cnt</a>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  uint m_frame_cnt;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">   * @brief   return true if this block is responsible for the frame of the</span></div>
@@ -208,7 +207,7 @@ $(document).ready(function(){initNavTree('frame__src__impl_8h_source.html',''); 
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">   * @return true</span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">   * @return false</span></div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a62de55b904abb954c79f60b9a30ca354">is_first_user</a>();</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordtype">bool</span> is_first_user();</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment">  /**</span></div>
@@ -250,36 +249,14 @@ $(document).ready(function(){initNavTree('frame__src__impl_8h_source.html',''); 
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_SDR_FRAME_SRC_IMPL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_a2765e205edfdd8b5c607ae45a1718ce3"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a2765e205edfdd8b5c607ae45a1718ce3">gr::lora_sdr::frame_src_impl::m_bw</a></div><div class="ttdeci">uint32_t m_bw</div><div class="ttdoc">Transmission bandwidth (Works only for samp_rate=bw)</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:47</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_a8b16c56354268542b849e1ab3aa43956"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a8b16c56354268542b849e1ab3aa43956">gr::lora_sdr::frame_src_impl::m_samp_rate</a></div><div class="ttdeci">uint32_t m_samp_rate</div><div class="ttdoc">Transmission sampling rate.</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:42</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_a4505fb363627dac8b3c5ab89fad4aff1"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a4505fb363627dac8b3c5ab89fad4aff1">gr::lora_sdr::frame_src_impl::m_delay_with_rand_sto</a></div><div class="ttdeci">int m_delay_with_rand_sto</div><div class="ttdoc">delay between frame taking a random sto into account</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:94</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html">gr::lora_sdr::frame_src_impl</a></div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:31</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_a9a19fa2bc9b65f1ba20b14a2df3ca3d2"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a9a19fa2bc9b65f1ba20b14a2df3ca3d2">gr::lora_sdr::frame_src_impl::m_N</a></div><div class="ttdeci">uint32_t m_N</div><div class="ttdoc">number of bin per loar symbol</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:52</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_a30af25643fe67c8b3570af7efd78ad3c"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a30af25643fe67c8b3570af7efd78ad3c">gr::lora_sdr::frame_src_impl::m_os_factor</a></div><div class="ttdeci">uint8_t m_os_factor</div><div class="ttdoc">oversampling factor</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:57</div></div>
 <div class="ttc" id="aframe__src_8h_html"><div class="ttname"><a href="frame__src_8h.html">frame_src.h</a></div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_a8a2c7426ceb2f0e3bf6561170125436e"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a8a2c7426ceb2f0e3bf6561170125436e">gr::lora_sdr::frame_src_impl::~frame_src_impl</a></div><div class="ttdeci">~frame_src_impl()</div><div class="ttdoc">Destroy the frame src impl object.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src.html">gr::lora_sdr::frame_src</a></div><div class="ttdef"><b>Definition:</b> frame_src.h:35</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_a62de55b904abb954c79f60b9a30ca354"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a62de55b904abb954c79f60b9a30ca354">gr::lora_sdr::frame_src_impl::is_first_user</a></div><div class="ttdeci">bool is_first_user()</div><div class="ttdoc">return true if this block is responsible for the frame of the first user. this decision is based on t...</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_a3efae32761b8ec5a166d6a967240ad23"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a3efae32761b8ec5a166d6a967240ad23">gr::lora_sdr::frame_src_impl::m_offset</a></div><div class="ttdeci">int m_offset</div><div class="ttdoc">the number of zeros sent before the first symbol</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:77</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_abc9c57f217bc27d546ded0ac5022584b"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#abc9c57f217bc27d546ded0ac5022584b">gr::lora_sdr::frame_src_impl::m_upchirp</a></div><div class="ttdeci">std::vector&lt; gr_complex &gt; m_upchirp</div><div class="ttdoc">reference upchirp</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:104</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_a82d36cdd74e688138636c0920a4abc43"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a82d36cdd74e688138636c0920a4abc43">gr::lora_sdr::frame_src_impl::m_n_up</a></div><div class="ttdeci">uint m_n_up</div><div class="ttdoc">number of upchirps in the preamble</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:133</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_aa39b3acb8ac7daa43b108d6d52c3b4a6"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#aa39b3acb8ac7daa43b108d6d52c3b4a6">gr::lora_sdr::frame_src_impl::m_pay_len</a></div><div class="ttdeci">int m_pay_len</div><div class="ttdoc">number of symbols in a frame payload</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:67</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_a5d22d293cf47ef7dab96271321356599"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a5d22d293cf47ef7dab96271321356599">gr::lora_sdr::frame_src_impl::frame_src_impl</a></div><div class="ttdeci">frame_src_impl(uint8_t sf, int pay_len, int delay, int offset, float cfo, int n_frames, int os_factor, bool rand_sto)</div><div class="ttdoc">Construct a new frame src impl object.</div></div>
 <div class="ttc" id="ahelpers_8h_html"><div class="ttname"><a href="helpers_8h.html">helpers.h</a></div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_ac41220a7a557e453e7fba388efdfc287"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#ac41220a7a557e453e7fba388efdfc287">gr::lora_sdr::frame_src_impl::m_frame_cnt</a></div><div class="ttdeci">uint m_frame_cnt</div><div class="ttdoc">frame counter</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:145</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_ae671559728c1bd49e4d5d87410685102"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#ae671559728c1bd49e4d5d87410685102">gr::lora_sdr::frame_src_impl::m_delay</a></div><div class="ttdeci">int m_delay</div><div class="ttdoc">number of zeros between two frames</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:62</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_a3e8aab00345eb10fafedca2c87841ab6"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a3e8aab00345eb10fafedca2c87841ab6">gr::lora_sdr::frame_src_impl::work</a></div><div class="ttdeci">int work(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div><div class="ttdoc">Standard gnuradio function.</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_a1c045f462871e655dc2a05a51011092f"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a1c045f462871e655dc2a05a51011092f">gr::lora_sdr::frame_src_impl::m_sf</a></div><div class="ttdeci">uint8_t m_sf</div><div class="ttdoc">Transmission spreading factor.</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:37</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_ad3ad73e76aa0682ca03cf516c8bc9ae6"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#ad3ad73e76aa0682ca03cf516c8bc9ae6">gr::lora_sdr::frame_src_impl::m_downchirp</a></div><div class="ttdeci">std::vector&lt; gr_complex &gt; m_downchirp</div><div class="ttdoc">reference downchirp</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:109</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_a2c396fe8f5cacca71f0325f357326e28"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a2c396fe8f5cacca71f0325f357326e28">gr::lora_sdr::frame_src_impl::m_sto_val</a></div><div class="ttdeci">int m_sto_val</div><div class="ttdoc">rand_sto val</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:99</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_a86a77d512f9275e16db05b2fecd77cf0"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a86a77d512f9275e16db05b2fecd77cf0">gr::lora_sdr::frame_src_impl::m_frame</a></div><div class="ttdeci">std::vector&lt; gr_complex &gt; m_frame</div><div class="ttdoc">contains the whole frame</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:121</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_abaecde729bcfd247d128d841f048c065"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#abaecde729bcfd247d128d841f048c065">gr::lora_sdr::frame_src_impl::m_rand_sto</a></div><div class="ttdeci">bool m_rand_sto</div><div class="ttdoc">indicate to use a random STO, uniformly distributed in [0,2^sf*m_os_factor)</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:88</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_ae7d13df00817e3f6b2ab35bae78e9fd9"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#ae7d13df00817e3f6b2ab35bae78e9fd9">gr::lora_sdr::frame_src_impl::m_n_frames</a></div><div class="ttdeci">int m_n_frames</div><div class="ttdoc">number of frames to transmit</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:72</div></div>
 <div class="ttc" id="anamespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> add_crc.h:28</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_a2e80da0c1a4bb060c7a736ae611b04f1"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a2e80da0c1a4bb060c7a736ae611b04f1">gr::lora_sdr::frame_src_impl::m_cfo</a></div><div class="ttdeci">float m_cfo</div><div class="ttdoc">the CFO of the user</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:82</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_a5f44639e754d3d789610a30605cb5020"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a5f44639e754d3d789610a30605cb5020">gr::lora_sdr::frame_src_impl::m_cnt</a></div><div class="ttdeci">int m_cnt</div><div class="ttdoc">sample counter</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:139</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_a6bf8550e9f33d0171b005e7c6c0a4e10"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a6bf8550e9f33d0171b005e7c6c0a4e10">gr::lora_sdr::frame_src_impl::is_first</a></div><div class="ttdeci">bool is_first</div><div class="ttdoc">variable used to wait before outputing the first frame</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:127</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1frame__src__impl_html_a151316d9b28052a400b2503d0c7f412c"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1frame__src__impl.html#a151316d9b28052a400b2503d0c7f412c">gr::lora_sdr::frame_src_impl::m_frame_length</a></div><div class="ttdeci">uint32_t m_frame_length</div><div class="ttdoc">frame length in samples</div><div class="ttdef"><b>Definition:</b> frame_src_impl.h:115</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

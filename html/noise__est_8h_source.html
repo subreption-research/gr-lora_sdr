@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GNU Radio&#39;s LoRa_SDR OOT Package: noise_est.h Source File</title>
+<title>GNU Radio&#39;s LORA_SDR Package: noise_est.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio&#39;s LoRa_SDR OOT Package
+   <div id="projectname">GNU Radio&#39;s LORA_SDR Package
    </div>
-   <div id="projectbrief">OOT module that provides PHY LoRa capabilities</div>
   </td>
  </tr>
  </tbody>
@@ -92,7 +91,7 @@ $(document).ready(function(){initNavTree('noise__est_8h_source.html',''); initRe
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1noise__est.html">   36</a></span>&#160;    <span class="keyword">class </span><a class="code" href="api_8h.html#a7f43a70ead7390c8125a3e3273e64b8c">LORA_SDR_API</a> <a class="code" href="classgr_1_1lora__sdr_1_1noise__est.html">noise_est</a> : <span class="keyword">virtual</span> <span class="keyword">public</span> gr::sync_block</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;     <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1noise__est.html#ab72ae6a62f9074c9260a8ddd8e168ea2">   39</a></span>&#160;      <span class="keyword">typedef</span> boost::shared_ptr&lt;noise_est&gt; <a class="code" href="classgr_1_1lora__sdr_1_1noise__est.html#ab72ae6a62f9074c9260a8ddd8e168ea2">sptr</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1noise__est.html#abb85e30e24a8e4506301ec1121dd4761">   39</a></span>&#160;      <span class="keyword">typedef</span> std::shared_ptr&lt;noise_est&gt; <a class="code" href="classgr_1_1lora__sdr_1_1noise__est.html#abb85e30e24a8e4506301ec1121dd4761">sptr</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">      /*!</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">       * \brief This block estimate the noise power using the &#39;n_samples&#39; first sample presented at his input.</span></div>
@@ -101,7 +100,7 @@ $(document).ready(function(){initNavTree('noise__est_8h_source.html',''); initRe
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">       * </span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">       * \param n_samples number of samples used to estimate noise</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">       */</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keyword">static</span> <a class="code" href="classgr_1_1lora__sdr_1_1noise__est.html#ab72ae6a62f9074c9260a8ddd8e168ea2">sptr</a> make(uint32_t n_samples);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keyword">static</span> <a class="code" href="classgr_1_1lora__sdr_1_1noise__est.html#abb85e30e24a8e4506301ec1121dd4761">sptr</a> make(uint32_t n_samples);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    };</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  } <span class="comment">// namespace lora_sdr</span></div>
@@ -111,10 +110,10 @@ $(document).ready(function(){initNavTree('noise__est_8h_source.html',''); initRe
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aapi_8h_html_a7f43a70ead7390c8125a3e3273e64b8c"><div class="ttname"><a href="api_8h.html#a7f43a70ead7390c8125a3e3273e64b8c">LORA_SDR_API</a></div><div class="ttdeci">#define LORA_SDR_API</div><div class="ttdef"><b>Definition:</b> api.h:30</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1noise__est_html_ab72ae6a62f9074c9260a8ddd8e168ea2"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1noise__est.html#ab72ae6a62f9074c9260a8ddd8e168ea2">gr::lora_sdr::noise_est::sptr</a></div><div class="ttdeci">boost::shared_ptr&lt; noise_est &gt; sptr</div><div class="ttdef"><b>Definition:</b> noise_est.h:39</div></div>
+<div class="ttc" id="aapi_8h_html_a7f43a70ead7390c8125a3e3273e64b8c"><div class="ttname"><a href="api_8h.html#a7f43a70ead7390c8125a3e3273e64b8c">LORA_SDR_API</a></div><div class="ttdeci">#define LORA_SDR_API</div><div class="ttdef"><b>Definition:</b> api.h:19</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1noise__est_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1noise__est.html">gr::lora_sdr::noise_est</a></div><div class="ttdef"><b>Definition:</b> noise_est.h:36</div></div>
 <div class="ttc" id="anamespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> add_crc.h:28</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1noise__est_html_abb85e30e24a8e4506301ec1121dd4761"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1noise__est.html#abb85e30e24a8e4506301ec1121dd4761">gr::lora_sdr::noise_est::sptr</a></div><div class="ttdeci">std::shared_ptr&lt; noise_est &gt; sptr</div><div class="ttdef"><b>Definition:</b> noise_est.h:39</div></div>
 <div class="ttc" id="aapi_8h_html"><div class="ttname"><a href="api_8h.html">api.h</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

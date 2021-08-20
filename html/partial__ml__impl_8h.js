@@ -1,7 +1,6 @@
 var partial__ml__impl_8h =
 [
     [ "partial_ml_impl", "classgr_1_1lora__sdr_1_1partial__ml__impl.html", "classgr_1_1lora__sdr_1_1partial__ml__impl" ],
-    [ "window", "structgr_1_1lora__sdr_1_1partial__ml__impl_1_1window.html", "structgr_1_1lora__sdr_1_1partial__ml__impl_1_1window" ],
     [ "Symbol_type", "partial__ml__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2d", [
       [ "VOID", "mu__synchro__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2dadb31f5ef7acca5e1131fcc0fbfa6911d", null ],
       [ "UPCHIRP", "mu__synchro__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2da5fd23d3a85ae7734bd01b8a1f5cb0657", null ],

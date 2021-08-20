@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GNU Radio&#39;s LoRa_SDR OOT Package: gr::lora_sdr::crc_verif_impl Class Reference</title>
+<title>GNU Radio&#39;s LORA_SDR Package: gr::lora_sdr::crc_verif_impl Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio&#39;s LoRa_SDR OOT Package
+   <div id="projectname">GNU Radio&#39;s LORA_SDR Package
    </div>
-   <div id="projectbrief">OOT module that provides PHY LoRa capabilities</div>
   </td>
  </tr>
  </tbody>
@@ -52,8 +51,6 @@ $(document).ready(function(){initNavTree('classgr_1_1lora__sdr_1_1crc__verif__im
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classgr_1_1lora__sdr_1_1crc__verif__impl-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">gr::lora_sdr::crc_verif_impl Class Reference</div>  </div>
@@ -82,57 +79,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a02d02bb28e3d86d460ed5cabf0e8790d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a02d02bb28e3d86d460ed5cabf0e8790d">general_work</a> (int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</td></tr>
 <tr class="separator:a02d02bb28e3d86d460ed5cabf0e8790d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ad6455bacf021f7f364ab49cc4951f7c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#ad6455bacf021f7f364ab49cc4951f7c7">header_pay_len_handler</a> (pmt::pmt_t payload_len)</td></tr>
-<tr class="memdesc:ad6455bacf021f7f364ab49cc4951f7c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the payload length received from the <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html" title="Decode the header of the data spackage. For more information about the implementation visit header_de...">header_decoder</a> block.  <a href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#ad6455bacf021f7f364ab49cc4951f7c7">More...</a><br /></td></tr>
-<tr class="separator:ad6455bacf021f7f364ab49cc4951f7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00933d681f1529f303ddb376c729408e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a00933d681f1529f303ddb376c729408e">header_crc_handler</a> (pmt::pmt_t crc_presence)</td></tr>
-<tr class="memdesc:a00933d681f1529f303ddb376c729408e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the crc_presence received from the <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html" title="Decode the header of the data spackage. For more information about the implementation visit header_de...">header_decoder</a> block.  <a href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a00933d681f1529f303ddb376c729408e">More...</a><br /></td></tr>
-<tr class="separator:a00933d681f1529f303ddb376c729408e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38de958e3a0ae16390b0e435b1033351"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a38de958e3a0ae16390b0e435b1033351">crc16</a> (uint8_t *data, uint32_t len)</td></tr>
-<tr class="memdesc:a38de958e3a0ae16390b0e435b1033351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the CRC 16 using poly=0x1021 and Init=0x0000.  <a href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a38de958e3a0ae16390b0e435b1033351">More...</a><br /></td></tr>
-<tr class="separator:a38de958e3a0ae16390b0e435b1033351"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ac948d435528bab46576eb3edcc6f2d95"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#ac948d435528bab46576eb3edcc6f2d95">m_payload_len</a></td></tr>
-<tr class="memdesc:ac948d435528bab46576eb3edcc6f2d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Payload length in bytes.  <a href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#ac948d435528bab46576eb3edcc6f2d95">More...</a><br /></td></tr>
-<tr class="separator:ac948d435528bab46576eb3edcc6f2d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98cbeffc5add19e966fa6e10f1adb7d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a98cbeffc5add19e966fa6e10f1adb7d9">m_crc_presence</a></td></tr>
-<tr class="memdesc:a98cbeffc5add19e966fa6e10f1adb7d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate if there is a payload CRC.  <a href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a98cbeffc5add19e966fa6e10f1adb7d9">More...</a><br /></td></tr>
-<tr class="separator:a98cbeffc5add19e966fa6e10f1adb7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af29548fda0c8ea608001404d0cab18d3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#af29548fda0c8ea608001404d0cab18d3">m_crc</a></td></tr>
-<tr class="memdesc:af29548fda0c8ea608001404d0cab18d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CRC calculated from the received payload.  <a href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#af29548fda0c8ea608001404d0cab18d3">More...</a><br /></td></tr>
-<tr class="separator:af29548fda0c8ea608001404d0cab18d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a420c009662c0973b013768d00b4934f7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a420c009662c0973b013768d00b4934f7">message_str</a></td></tr>
-<tr class="memdesc:a420c009662c0973b013768d00b4934f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The payload string.  <a href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a420c009662c0973b013768d00b4934f7">More...</a><br /></td></tr>
-<tr class="separator:a420c009662c0973b013768d00b4934f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abac6f187a60d535a99f0dc8290563c99"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#abac6f187a60d535a99f0dc8290563c99">m_char</a></td></tr>
-<tr class="memdesc:abac6f187a60d535a99f0dc8290563c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">A new char of the payload.  <a href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#abac6f187a60d535a99f0dc8290563c99">More...</a><br /></td></tr>
-<tr class="separator:abac6f187a60d535a99f0dc8290563c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89cf4871ea6c68e05cf442db5d5a7fb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a89cf4871ea6c68e05cf442db5d5a7fb2">new_frame</a></td></tr>
-<tr class="memdesc:a89cf4871ea6c68e05cf442db5d5a7fb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">indicate a new frame  <a href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a89cf4871ea6c68e05cf442db5d5a7fb2">More...</a><br /></td></tr>
-<tr class="separator:a89cf4871ea6c68e05cf442db5d5a7fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24f7cd4c52adad90d5e8b4c2d257b91b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a24f7cd4c52adad90d5e8b4c2d257b91b">in_buff</a></td></tr>
-<tr class="memdesc:a24f7cd4c52adad90d5e8b4c2d257b91b"><td class="mdescLeft">&#160;</td><td class="mdescRight">input buffer containing the data bytes and CRC if any  <a href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a24f7cd4c52adad90d5e8b4c2d257b91b">More...</a><br /></td></tr>
-<tr class="separator:a24f7cd4c52adad90d5e8b4c2d257b91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3442369d73c41a5fdc86025b4854a3a5"><td class="memItemLeft" align="right" valign="top">std::chrono::high_resolution_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#a3442369d73c41a5fdc86025b4854a3a5">t1</a></td></tr>
-<tr class="separator:a3442369d73c41a5fdc86025b4854a3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7ed9a3493e7a7505ee0f6063a311339"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#aa7ed9a3493e7a7505ee0f6063a311339">m_exit</a></td></tr>
-<tr class="memdesc:aa7ed9a3493e7a7505ee0f6063a311339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean value to tell if we should close the program if "work_done" signal is received.  <a href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#aa7ed9a3493e7a7505ee0f6063a311339">More...</a><br /></td></tr>
-<tr class="separator:aa7ed9a3493e7a7505ee0f6063a311339"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3870255ef3b7235e9223e43aaa9f807"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#af3870255ef3b7235e9223e43aaa9f807">cnt</a> =0</td></tr>
-<tr class="memdesc:af3870255ef3b7235e9223e43aaa9f807"><td class="mdescLeft">&#160;</td><td class="mdescRight">count the number of frame  <a href="classgr_1_1lora__sdr_1_1crc__verif__impl.html#af3870255ef3b7235e9223e43aaa9f807">More...</a><br /></td></tr>
-<tr class="separator:af3870255ef3b7235e9223e43aaa9f807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classgr_1_1lora__sdr_1_1crc__verif"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classgr_1_1lora__sdr_1_1crc__verif')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classgr_1_1lora__sdr_1_1crc__verif.html">gr::lora_sdr::crc_verif</a></td></tr>
-<tr class="memitem:ae5939101448bdd7295622afb95b13ed6 inherit pub_types_classgr_1_1lora__sdr_1_1crc__verif"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1crc__verif.html">crc_verif</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1crc__verif.html#ae5939101448bdd7295622afb95b13ed6">sptr</a></td></tr>
-<tr class="separator:ae5939101448bdd7295622afb95b13ed6 inherit pub_types_classgr_1_1lora__sdr_1_1crc__verif"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec20c88ce13bce2acc35d8e68fcada6e inherit pub_types_classgr_1_1lora__sdr_1_1crc__verif"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1crc__verif.html">crc_verif</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1crc__verif.html#aec20c88ce13bce2acc35d8e68fcada6e">sptr</a></td></tr>
+<tr class="separator:aec20c88ce13bce2acc35d8e68fcada6e inherit pub_types_classgr_1_1lora__sdr_1_1crc__verif"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classgr_1_1lora__sdr_1_1crc__verif"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classgr_1_1lora__sdr_1_1crc__verif')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classgr_1_1lora__sdr_1_1crc__verif.html">gr::lora_sdr::crc_verif</a></td></tr>
-<tr class="memitem:acf0bb734e0652e27175c0913e6909f1e inherit pub_static_methods_classgr_1_1lora__sdr_1_1crc__verif"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1crc__verif.html#ae5939101448bdd7295622afb95b13ed6">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1crc__verif.html#acf0bb734e0652e27175c0913e6909f1e">make</a> (bool exit)</td></tr>
+<tr class="memitem:acf0bb734e0652e27175c0913e6909f1e inherit pub_static_methods_classgr_1_1lora__sdr_1_1crc__verif"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1crc__verif.html#aec20c88ce13bce2acc35d8e68fcada6e">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1crc__verif.html#acf0bb734e0652e27175c0913e6909f1e">make</a> (bool exit)</td></tr>
 <tr class="memdesc:acf0bb734e0652e27175c0913e6909f1e inherit pub_static_methods_classgr_1_1lora__sdr_1_1crc__verif"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1crc__verif.html" title="Verifies if the included crc is correct or not for more information about the implementation visit cr...">lora_sdr::crc_verif</a>.  <a href="classgr_1_1lora__sdr_1_1crc__verif.html#acf0bb734e0652e27175c0913e6909f1e">More...</a><br /></td></tr>
 <tr class="separator:acf0bb734e0652e27175c0913e6909f1e inherit pub_static_methods_classgr_1_1lora__sdr_1_1crc__verif"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -173,51 +126,6 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a38de958e3a0ae16390b0e435b1033351"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38de958e3a0ae16390b0e435b1033351">&#9670;&nbsp;</a></span>crc16()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int gr::lora_sdr::crc_verif_impl::crc16 </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Calculate the CRC 16 using poly=0x1021 and Init=0x0000. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>The pointer to the data beginning. </td></tr>
-    <tr><td class="paramname">len</td><td>The length of the data in bytes. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a97c2b3e045c503153ee1acbd092f0e23"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a97c2b3e045c503153ee1acbd092f0e23">&#9670;&nbsp;</a></span>forecast()</h2>
 
@@ -282,301 +190,6 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a00933d681f1529f303ddb376c729408e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00933d681f1529f303ddb376c729408e">&#9670;&nbsp;</a></span>header_crc_handler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gr::lora_sdr::crc_verif_impl::header_crc_handler </td>
-          <td>(</td>
-          <td class="paramtype">pmt::pmt_t&#160;</td>
-          <td class="paramname"><em>crc_presence</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Handles the crc_presence received from the <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html" title="Decode the header of the data spackage. For more information about the implementation visit header_de...">header_decoder</a> block. </p>
-
-</div>
-</div>
-<a id="ad6455bacf021f7f364ab49cc4951f7c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6455bacf021f7f364ab49cc4951f7c7">&#9670;&nbsp;</a></span>header_pay_len_handler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gr::lora_sdr::crc_verif_impl::header_pay_len_handler </td>
-          <td>(</td>
-          <td class="paramtype">pmt::pmt_t&#160;</td>
-          <td class="paramname"><em>payload_len</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Handles the payload length received from the <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html" title="Decode the header of the data spackage. For more information about the implementation visit header_de...">header_decoder</a> block. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="af3870255ef3b7235e9223e43aaa9f807"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3870255ef3b7235e9223e43aaa9f807">&#9670;&nbsp;</a></span>cnt</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t gr::lora_sdr::crc_verif_impl::cnt =0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>count the number of frame </p>
-
-</div>
-</div>
-<a id="a24f7cd4c52adad90d5e8b4c2d257b91b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24f7cd4c52adad90d5e8b4c2d257b91b">&#9670;&nbsp;</a></span>in_buff</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;uint8_t&gt; gr::lora_sdr::crc_verif_impl::in_buff</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>input buffer containing the data bytes and CRC if any </p>
-
-</div>
-</div>
-<a id="abac6f187a60d535a99f0dc8290563c99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abac6f187a60d535a99f0dc8290563c99">&#9670;&nbsp;</a></span>m_char</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">char gr::lora_sdr::crc_verif_impl::m_char</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>A new char of the payload. </p>
-
-</div>
-</div>
-<a id="af29548fda0c8ea608001404d0cab18d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af29548fda0c8ea608001404d0cab18d3">&#9670;&nbsp;</a></span>m_crc</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t gr::lora_sdr::crc_verif_impl::m_crc</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The CRC calculated from the received payload. </p>
-
-</div>
-</div>
-<a id="a98cbeffc5add19e966fa6e10f1adb7d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98cbeffc5add19e966fa6e10f1adb7d9">&#9670;&nbsp;</a></span>m_crc_presence</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool gr::lora_sdr::crc_verif_impl::m_crc_presence</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Indicate if there is a payload CRC. </p>
-
-</div>
-</div>
-<a id="aa7ed9a3493e7a7505ee0f6063a311339"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7ed9a3493e7a7505ee0f6063a311339">&#9670;&nbsp;</a></span>m_exit</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool gr::lora_sdr::crc_verif_impl::m_exit</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Boolean value to tell if we should close the program if "work_done" signal is received. </p>
-
-</div>
-</div>
-<a id="ac948d435528bab46576eb3edcc6f2d95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac948d435528bab46576eb3edcc6f2d95">&#9670;&nbsp;</a></span>m_payload_len</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t gr::lora_sdr::crc_verif_impl::m_payload_len</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Payload length in bytes. </p>
-
-</div>
-</div>
-<a id="a420c009662c0973b013768d00b4934f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a420c009662c0973b013768d00b4934f7">&#9670;&nbsp;</a></span>message_str</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string gr::lora_sdr::crc_verif_impl::message_str</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The payload string. </p>
-
-</div>
-</div>
-<a id="a89cf4871ea6c68e05cf442db5d5a7fb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89cf4871ea6c68e05cf442db5d5a7fb2">&#9670;&nbsp;</a></span>new_frame</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool gr::lora_sdr::crc_verif_impl::new_frame</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>indicate a new frame </p>
-
-</div>
-</div>
-<a id="a3442369d73c41a5fdc86025b4854a3a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3442369d73c41a5fdc86025b4854a3a5">&#9670;&nbsp;</a></span>t1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::chrono::high_resolution_clock::time_point gr::lora_sdr::crc_verif_impl::t1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>

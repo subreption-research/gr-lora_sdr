@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GNU Radio&#39;s LoRa_SDR OOT Package: header_decoder_impl.h Source File</title>
+<title>GNU Radio&#39;s LORA_SDR Package: header_decoder_impl.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio&#39;s LoRa_SDR OOT Package
+   <div id="projectname">GNU Radio&#39;s LORA_SDR Package
    </div>
-   <div id="projectbrief">OOT module that provides PHY LoRa capabilities</div>
   </td>
  </tr>
  </tbody>
@@ -69,58 +68,58 @@ $(document).ready(function(){initNavTree('header__decoder__impl_8h_source.html',
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">   * @brief ize of the header in nibbles</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#a77917cc06ab704011f8e5b7edd5e265d">   16</a></span>&#160;  <span class="keyword">const</span> uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#a77917cc06ab704011f8e5b7edd5e265d">header_len</a> = 5;<span class="comment"></span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">const</span> uint8_t header_len = 5;<span class="comment"></span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">   * @brief Specify if we use an explicit or implicit header</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#ac3f73a12945f631285c3411fe1924ba8">   21</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#ac3f73a12945f631285c3411fe1924ba8">m_impl_header</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">bool</span> m_impl_header;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">   * @brief The payload length in bytes</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#ac86aa87a24ada0167ad2568338667746">   27</a></span>&#160;  uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#ac86aa87a24ada0167ad2568338667746">m_payload_len</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  uint8_t m_payload_len;<span class="comment"></span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">   * @brief Specify the usage of a payload CRC</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#a9783dcfc61522e86655264b003dd7d3a">   32</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#a9783dcfc61522e86655264b003dd7d3a">m_has_crc</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">bool</span> m_has_crc;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">   * @brief Coding rate</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#a932e5215a102ae2f6df2dfc846033f62">   38</a></span>&#160;  uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#a932e5215a102ae2f6df2dfc846033f62">m_cr</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  uint8_t m_cr;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">   * @brief</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#af1dfde848bc2a510609d3fb762fbcbeb">   44</a></span>&#160;  uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#af1dfde848bc2a510609d3fb762fbcbeb">header_chk</a>; <span class="comment">///&lt; The header checksum received in the header</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  uint8_t header_chk; <span class="comment">///&lt; The header checksum received in the header</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"></span><span class="comment"></span> </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">   * @brief</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#ab98ef453939204f56767e4fa911ac787">   50</a></span>&#160;  uint32_t <a class="code" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#ab98ef453939204f56767e4fa911ac787">pay_cnt</a>; <span class="comment">///&lt; The number of payload nibbles received</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  uint32_t pay_cnt; <span class="comment">///&lt; The number of payload nibbles received</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"></span><span class="comment"></span> </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">   * @brief</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#a4f4b7c62dbe74c80e4925fc00ad89143">   56</a></span>&#160;  uint32_t <a class="code" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#a4f4b7c62dbe74c80e4925fc00ad89143">nout</a>; <span class="comment">///&lt; The number of data nibbles to output</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  uint32_t nout; <span class="comment">///&lt; The number of data nibbles to output</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"></span><span class="comment">  /**</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">   * @brief</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#ab8404b85d2c60f719e5c0780d6b8cf97">   61</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#ab8404b85d2c60f719e5c0780d6b8cf97">is_header</a>; <span class="comment">///&lt; Indicate that we need to decode the header</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">bool</span> is_header; <span class="comment">///&lt; Indicate that we need to decode the header</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"></span><span class="comment"></span> </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">   * @brief Reset the block variables for a new frame.</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#aefda3c74ce59f8c8cfcf3befff54d0af">new_frame_handler</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> new_frame_handler();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">   * @brief publish decoding information contained in the header or provided to</span></div>
@@ -131,7 +130,7 @@ $(document).ready(function(){initNavTree('header__decoder__impl_8h_source.html',
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">   * @param crc</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">   * @param err</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#af5c5d142a9bb71c0c41f2e51f891c9a3">publish_frame_info</a>(<span class="keywordtype">int</span> cr, <span class="keywordtype">int</span> pay_len, <span class="keywordtype">int</span> crc, <span class="keywordtype">int</span> err);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span> publish_frame_info(<span class="keywordtype">int</span> cr, <span class="keywordtype">int</span> pay_len, <span class="keywordtype">int</span> crc, <span class="keywordtype">int</span> err);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">  /**</span></div>
@@ -177,25 +176,14 @@ $(document).ready(function(){initNavTree('header__decoder__impl_8h_source.html',
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_HEADER_DECODER_IMPL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__decoder__impl_html_af5c5d142a9bb71c0c41f2e51f891c9a3"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#af5c5d142a9bb71c0c41f2e51f891c9a3">gr::lora_sdr::header_decoder_impl::publish_frame_info</a></div><div class="ttdeci">void publish_frame_info(int cr, int pay_len, int crc, int err)</div><div class="ttdoc">publish decoding information contained in the header or provided to the block</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__decoder__impl_html_a932e5215a102ae2f6df2dfc846033f62"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#a932e5215a102ae2f6df2dfc846033f62">gr::lora_sdr::header_decoder_impl::m_cr</a></div><div class="ttdeci">uint8_t m_cr</div><div class="ttdoc">Coding rate.</div><div class="ttdef"><b>Definition:</b> header_decoder_impl.h:38</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__decoder__impl_html_aefda3c74ce59f8c8cfcf3befff54d0af"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#aefda3c74ce59f8c8cfcf3befff54d0af">gr::lora_sdr::header_decoder_impl::new_frame_handler</a></div><div class="ttdeci">void new_frame_handler()</div><div class="ttdoc">Reset the block variables for a new frame.</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__decoder__impl_html_ab8404b85d2c60f719e5c0780d6b8cf97"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#ab8404b85d2c60f719e5c0780d6b8cf97">gr::lora_sdr::header_decoder_impl::is_header</a></div><div class="ttdeci">bool is_header</div><div class="ttdef"><b>Definition:</b> header_decoder_impl.h:61</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__decoder__impl_html_a912c5211ada6a98099cd426951b220d7"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#a912c5211ada6a98099cd426951b220d7">gr::lora_sdr::header_decoder_impl::forecast</a></div><div class="ttdeci">void forecast(int noutput_items, gr_vector_int &amp;ninput_items_required)</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__decoder__impl_html_ab98ef453939204f56767e4fa911ac787"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#ab98ef453939204f56767e4fa911ac787">gr::lora_sdr::header_decoder_impl::pay_cnt</a></div><div class="ttdeci">uint32_t pay_cnt</div><div class="ttdef"><b>Definition:</b> header_decoder_impl.h:50</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__decoder__impl_html_ac86aa87a24ada0167ad2568338667746"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#ac86aa87a24ada0167ad2568338667746">gr::lora_sdr::header_decoder_impl::m_payload_len</a></div><div class="ttdeci">uint8_t m_payload_len</div><div class="ttdoc">The payload length in bytes.</div><div class="ttdef"><b>Definition:</b> header_decoder_impl.h:27</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__decoder_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__decoder.html">gr::lora_sdr::header_decoder</a></div><div class="ttdoc">Decode the header of the data spackage. For more information about the implementation visit header_de...</div><div class="ttdef"><b>Definition:</b> header_decoder.h:37</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__decoder__impl_html_a47d5c528e5f77c773e381157b292a008"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#a47d5c528e5f77c773e381157b292a008">gr::lora_sdr::header_decoder_impl::~header_decoder_impl</a></div><div class="ttdeci">~header_decoder_impl()</div><div class="ttdoc">Destroy the header decoder impl object.</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__decoder__impl_html_af1dfde848bc2a510609d3fb762fbcbeb"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#af1dfde848bc2a510609d3fb762fbcbeb">gr::lora_sdr::header_decoder_impl::header_chk</a></div><div class="ttdeci">uint8_t header_chk</div><div class="ttdef"><b>Definition:</b> header_decoder_impl.h:44</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__decoder__impl_html_a77917cc06ab704011f8e5b7edd5e265d"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#a77917cc06ab704011f8e5b7edd5e265d">gr::lora_sdr::header_decoder_impl::header_len</a></div><div class="ttdeci">const uint8_t header_len</div><div class="ttdoc">ize of the header in nibbles</div><div class="ttdef"><b>Definition:</b> header_decoder_impl.h:16</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__decoder__impl_html_ac3f73a12945f631285c3411fe1924ba8"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#ac3f73a12945f631285c3411fe1924ba8">gr::lora_sdr::header_decoder_impl::m_impl_header</a></div><div class="ttdeci">bool m_impl_header</div><div class="ttdoc">Specify if we use an explicit or implicit header.</div><div class="ttdef"><b>Definition:</b> header_decoder_impl.h:21</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__decoder__impl_html_a49a4f2a90d68e1947b310403682d0fec"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#a49a4f2a90d68e1947b310403682d0fec">gr::lora_sdr::header_decoder_impl::general_work</a></div><div class="ttdeci">int general_work(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__decoder__impl_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__decoder__impl.html">gr::lora_sdr::header_decoder_impl</a></div><div class="ttdef"><b>Definition:</b> header_decoder_impl.h:10</div></div>
 <div class="ttc" id="anamespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> add_crc.h:28</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__decoder__impl_html_a4f4b7c62dbe74c80e4925fc00ad89143"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#a4f4b7c62dbe74c80e4925fc00ad89143">gr::lora_sdr::header_decoder_impl::nout</a></div><div class="ttdeci">uint32_t nout</div><div class="ttdef"><b>Definition:</b> header_decoder_impl.h:56</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__decoder__impl_html_ab1bf9d329c4abaa52ba915bd7f5f5e2e"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#ab1bf9d329c4abaa52ba915bd7f5f5e2e">gr::lora_sdr::header_decoder_impl::header_decoder_impl</a></div><div class="ttdeci">header_decoder_impl(bool impl_head, uint8_t cr, uint32_t pay_len, bool has_crc)</div><div class="ttdoc">Construct a new header decoder impl object.</div></div>
 <div class="ttc" id="aheader__decoder_8h_html"><div class="ttname"><a href="header__decoder_8h.html">header_decoder.h</a></div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1header__decoder__impl_html_a9783dcfc61522e86655264b003dd7d3a"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1header__decoder__impl.html#a9783dcfc61522e86655264b003dd7d3a">gr::lora_sdr::header_decoder_impl::m_has_crc</a></div><div class="ttdeci">bool m_has_crc</div><div class="ttdoc">Specify the usage of a payload CRC.</div><div class="ttdef"><b>Definition:</b> header_decoder_impl.h:32</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

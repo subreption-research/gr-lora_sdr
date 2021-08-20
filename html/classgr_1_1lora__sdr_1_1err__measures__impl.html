@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GNU Radio&#39;s LoRa_SDR OOT Package: gr::lora_sdr::err_measures_impl Class Reference</title>
+<title>GNU Radio&#39;s LORA_SDR Package: gr::lora_sdr::err_measures_impl Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio&#39;s LoRa_SDR OOT Package
+   <div id="projectname">GNU Radio&#39;s LORA_SDR Package
    </div>
-   <div id="projectbrief">OOT module that provides PHY LoRa capabilities</div>
   </td>
  </tr>
  </tbody>
@@ -52,8 +51,6 @@ $(document).ready(function(){initNavTree('classgr_1_1lora__sdr_1_1err__measures_
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classgr_1_1lora__sdr_1_1err__measures__impl-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">gr::lora_sdr::err_measures_impl Class Reference</div>  </div>
@@ -83,39 +80,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aed53036188e66c19e7a2fb6eaa7b974b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function of error measurement.  <a href="classgr_1_1lora__sdr_1_1err__measures__impl.html#aed53036188e66c19e7a2fb6eaa7b974b">More...</a><br /></td></tr>
 <tr class="separator:aed53036188e66c19e7a2fb6eaa7b974b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a70be364136d66ddc755e1e1468d62559"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1err__measures__impl.html#a70be364136d66ddc755e1e1468d62559">msg_handler</a> (pmt::pmt_t msg)</td></tr>
-<tr class="memdesc:a70be364136d66ddc755e1e1468d62559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Msg handler, will handle the incoming decoded message.  <a href="classgr_1_1lora__sdr_1_1err__measures__impl.html#a70be364136d66ddc755e1e1468d62559">More...</a><br /></td></tr>
-<tr class="separator:a70be364136d66ddc755e1e1468d62559"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14052b48c4b90bf6fb784cd84f8abdc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1err__measures__impl.html#a14052b48c4b90bf6fb784cd84f8abdc6">ref_handler</a> (pmt::pmt_t ref)</td></tr>
-<tr class="memdesc:a14052b48c4b90bf6fb784cd84f8abdc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference handler, input of the reference payload.  <a href="classgr_1_1lora__sdr_1_1err__measures__impl.html#a14052b48c4b90bf6fb784cd84f8abdc6">More...</a><br /></td></tr>
-<tr class="separator:a14052b48c4b90bf6fb784cd84f8abdc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ab7202171f89c7005b264e4baaedc1bb7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1err__measures__impl.html#ab7202171f89c7005b264e4baaedc1bb7">m_corr_payload</a></td></tr>
-<tr class="memdesc:ab7202171f89c7005b264e4baaedc1bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector containing the reference payload.  <a href="classgr_1_1lora__sdr_1_1err__measures__impl.html#ab7202171f89c7005b264e4baaedc1bb7">More...</a><br /></td></tr>
-<tr class="separator:ab7202171f89c7005b264e4baaedc1bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af24cdfdabaf3b348da432c3ebcbadb1d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1err__measures__impl.html#af24cdfdabaf3b348da432c3ebcbadb1d">m_payload</a></td></tr>
-<tr class="memdesc:af24cdfdabaf3b348da432c3ebcbadb1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector containing the received payload.  <a href="classgr_1_1lora__sdr_1_1err__measures__impl.html#af24cdfdabaf3b348da432c3ebcbadb1d">More...</a><br /></td></tr>
-<tr class="separator:af24cdfdabaf3b348da432c3ebcbadb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d1c86d9b2f96efc9ff1fdf2c8d473ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1err__measures__impl.html#a6d1c86d9b2f96efc9ff1fdf2c8d473ee">BE</a></td></tr>
-<tr class="memdesc:a6d1c86d9b2f96efc9ff1fdf2c8d473ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bits errors in the frame.  <a href="classgr_1_1lora__sdr_1_1err__measures__impl.html#a6d1c86d9b2f96efc9ff1fdf2c8d473ee">More...</a><br /></td></tr>
-<tr class="separator:a6d1c86d9b2f96efc9ff1fdf2c8d473ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa14460ee9757ac1af575c5b3becce949"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1err__measures__impl.html#aa14460ee9757ac1af575c5b3becce949">drop</a></td></tr>
-<tr class="memdesc:aa14460ee9757ac1af575c5b3becce949"><td class="mdescLeft">&#160;</td><td class="mdescRight">variable used to detect missing frames  <a href="classgr_1_1lora__sdr_1_1err__measures__impl.html#aa14460ee9757ac1af575c5b3becce949">More...</a><br /></td></tr>
-<tr class="separator:aa14460ee9757ac1af575c5b3becce949"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e0485640c3150e38c85ef877f19f1dc"><td class="memItemLeft" align="right" valign="top">std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1err__measures__impl.html#a9e0485640c3150e38c85ef877f19f1dc">err_outfile</a></td></tr>
-<tr class="separator:a9e0485640c3150e38c85ef877f19f1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classgr_1_1lora__sdr_1_1err__measures"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classgr_1_1lora__sdr_1_1err__measures')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classgr_1_1lora__sdr_1_1err__measures.html">gr::lora_sdr::err_measures</a></td></tr>
-<tr class="memitem:a51e39025d249df128721754dcd9dc7f7 inherit pub_types_classgr_1_1lora__sdr_1_1err__measures"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1err__measures.html">err_measures</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1err__measures.html#a51e39025d249df128721754dcd9dc7f7">sptr</a></td></tr>
-<tr class="separator:a51e39025d249df128721754dcd9dc7f7 inherit pub_types_classgr_1_1lora__sdr_1_1err__measures"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae343570464a0f6e3503aa62584b9ff57 inherit pub_types_classgr_1_1lora__sdr_1_1err__measures"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1err__measures.html">err_measures</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1err__measures.html#ae343570464a0f6e3503aa62584b9ff57">sptr</a></td></tr>
+<tr class="separator:ae343570464a0f6e3503aa62584b9ff57 inherit pub_types_classgr_1_1lora__sdr_1_1err__measures"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classgr_1_1lora__sdr_1_1err__measures"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classgr_1_1lora__sdr_1_1err__measures')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classgr_1_1lora__sdr_1_1err__measures.html">gr::lora_sdr::err_measures</a></td></tr>
-<tr class="memitem:af065d77d6bda81dc5dbda893dd951e19 inherit pub_static_methods_classgr_1_1lora__sdr_1_1err__measures"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1err__measures.html#a51e39025d249df128721754dcd9dc7f7">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1err__measures.html#af065d77d6bda81dc5dbda893dd951e19">make</a> ()</td></tr>
+<tr class="memitem:af065d77d6bda81dc5dbda893dd951e19 inherit pub_static_methods_classgr_1_1lora__sdr_1_1err__measures"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1err__measures.html#ae343570464a0f6e3503aa62584b9ff57">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1err__measures.html#af065d77d6bda81dc5dbda893dd951e19">make</a> ()</td></tr>
 <tr class="memdesc:af065d77d6bda81dc5dbda893dd951e19 inherit pub_static_methods_classgr_1_1lora__sdr_1_1err__measures"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1err__measures.html" title="Simple block that can count and output the number of Bit Error&#39;s (BE) ,for more information about the...">lora_sdr::err_measures</a>.  <a href="classgr_1_1lora__sdr_1_1err__measures.html#af065d77d6bda81dc5dbda893dd951e19">More...</a><br /></td></tr>
 <tr class="separator:af065d77d6bda81dc5dbda893dd951e19 inherit pub_static_methods_classgr_1_1lora__sdr_1_1err__measures"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -159,74 +130,6 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a70be364136d66ddc755e1e1468d62559"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70be364136d66ddc755e1e1468d62559">&#9670;&nbsp;</a></span>msg_handler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gr::lora_sdr::err_measures_impl::msg_handler </td>
-          <td>(</td>
-          <td class="paramtype">pmt::pmt_t&#160;</td>
-          <td class="paramname"><em>msg</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Msg handler, will handle the incoming decoded message. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">msg</td><td>: decoded payload message </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a14052b48c4b90bf6fb784cd84f8abdc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14052b48c4b90bf6fb784cd84f8abdc6">&#9670;&nbsp;</a></span>ref_handler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gr::lora_sdr::err_measures_impl::ref_handler </td>
-          <td>(</td>
-          <td class="paramtype">pmt::pmt_t&#160;</td>
-          <td class="paramname"><em>ref</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reference handler, input of the reference payload. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ref</td><td>: reference payload to compare against </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="aed53036188e66c19e7a2fb6eaa7b974b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aed53036188e66c19e7a2fb6eaa7b974b">&#9670;&nbsp;</a></span>work()</h2>
 
@@ -269,125 +172,6 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a6d1c86d9b2f96efc9ff1fdf2c8d473ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d1c86d9b2f96efc9ff1fdf2c8d473ee">&#9670;&nbsp;</a></span>BE</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gr::lora_sdr::err_measures_impl::BE</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Bits errors in the frame. </p>
-
-</div>
-</div>
-<a id="aa14460ee9757ac1af575c5b3becce949"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa14460ee9757ac1af575c5b3becce949">&#9670;&nbsp;</a></span>drop</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gr::lora_sdr::err_measures_impl::drop</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>variable used to detect missing frames </p>
-
-</div>
-</div>
-<a id="a9e0485640c3150e38c85ef877f19f1dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e0485640c3150e38c85ef877f19f1dc">&#9670;&nbsp;</a></span>err_outfile</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ofstream gr::lora_sdr::err_measures_impl::err_outfile</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab7202171f89c7005b264e4baaedc1bb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7202171f89c7005b264e4baaedc1bb7">&#9670;&nbsp;</a></span>m_corr_payload</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;char&gt; gr::lora_sdr::err_measures_impl::m_corr_payload</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Vector containing the reference payload. </p>
-
-</div>
-</div>
-<a id="af24cdfdabaf3b348da432c3ebcbadb1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af24cdfdabaf3b348da432c3ebcbadb1d">&#9670;&nbsp;</a></span>m_payload</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;char&gt; gr::lora_sdr::err_measures_impl::m_payload</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Vector containing the received payload. </p>
 
 </div>
 </div>

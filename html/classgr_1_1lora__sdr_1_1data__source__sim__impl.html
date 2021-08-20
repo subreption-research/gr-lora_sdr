@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GNU Radio&#39;s LoRa_SDR OOT Package: gr::lora_sdr::data_source_sim_impl Class Reference</title>
+<title>GNU Radio&#39;s LORA_SDR Package: gr::lora_sdr::data_source_sim_impl Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio&#39;s LoRa_SDR OOT Package
+   <div id="projectname">GNU Radio&#39;s LORA_SDR Package
    </div>
-   <div id="projectbrief">OOT module that provides PHY LoRa capabilities</div>
   </td>
  </tr>
  </tbody>
@@ -52,8 +51,6 @@ $(document).ready(function(){initNavTree('classgr_1_1lora__sdr_1_1data__source__
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">gr::lora_sdr::data_source_sim_impl Class Reference</div>  </div>
@@ -86,49 +83,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aea19668e845692eefae8fd67b7dfc08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function, generates random ([a-z A-Z 0-9]) data input to be sent over the network or if input_string set send this over the network. The sim version of the <a class="el" href="classgr_1_1lora__sdr_1_1data__source.html" title="&lt;+description of block+&gt;">data_source</a> has an internal sleep function set by the parameter mean.  <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#aea19668e845692eefae8fd67b7dfc08b">More...</a><br /></td></tr>
 <tr class="separator:aea19668e845692eefae8fd67b7dfc08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:afe4441b448aa30aaa15606096b707bba"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#afe4441b448aa30aaa15606096b707bba">random_string</a> (int nbytes)</td></tr>
-<tr class="memdesc:afe4441b448aa30aaa15606096b707bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a random string containing [a-z A-Z 0-9] for testing the payload data  <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#afe4441b448aa30aaa15606096b707bba">More...</a><br /></td></tr>
-<tr class="separator:afe4441b448aa30aaa15606096b707bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a7e0786dfd840fb2dc6003030089052d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a7e0786dfd840fb2dc6003030089052d8">frame_cnt</a></td></tr>
-<tr class="memdesc:a7e0786dfd840fb2dc6003030089052d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">: Count the number of frame sent  <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a7e0786dfd840fb2dc6003030089052d8">More...</a><br /></td></tr>
-<tr class="separator:a7e0786dfd840fb2dc6003030089052d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a207d25a3ccee1b914599d77e802cc1e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a207d25a3ccee1b914599d77e802cc1e3">m_n_frames</a></td></tr>
-<tr class="memdesc:a207d25a3ccee1b914599d77e802cc1e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">: The maximal number of frame to send  <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a207d25a3ccee1b914599d77e802cc1e3">More...</a><br /></td></tr>
-<tr class="separator:a207d25a3ccee1b914599d77e802cc1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a260a7bb07d80ab36535ba681b1f0cfb9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a260a7bb07d80ab36535ba681b1f0cfb9">m_pay_len</a></td></tr>
-<tr class="memdesc:a260a7bb07d80ab36535ba681b1f0cfb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">: The payload length  <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a260a7bb07d80ab36535ba681b1f0cfb9">More...</a><br /></td></tr>
-<tr class="separator:a260a7bb07d80ab36535ba681b1f0cfb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70e9ad91a96aa6de1db747e81979688b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a70e9ad91a96aa6de1db747e81979688b">m_mean</a></td></tr>
-<tr class="memdesc:a70e9ad91a96aa6de1db747e81979688b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variables that holds the mean time of the uniform distribution.  <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a70e9ad91a96aa6de1db747e81979688b">More...</a><br /></td></tr>
-<tr class="separator:a70e9ad91a96aa6de1db747e81979688b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84adc97eb5ef9575d098a8d2d4f49c73"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a84adc97eb5ef9575d098a8d2d4f49c73">m_string_input</a></td></tr>
-<tr class="memdesc:a84adc97eb5ef9575d098a8d2d4f49c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">: Input data source, if empty random generated data source is used.  <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a84adc97eb5ef9575d098a8d2d4f49c73">More...</a><br /></td></tr>
-<tr class="separator:a84adc97eb5ef9575d098a8d2d4f49c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ced078f31c58a7148d335a169e66cef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a9ced078f31c58a7148d335a169e66cef">m_multi_control</a></td></tr>
-<tr class="memdesc:a9ced078f31c58a7148d335a169e66cef"><td class="mdescLeft">&#160;</td><td class="mdescRight">bollean if we have to control multiple tx chains  <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a9ced078f31c58a7148d335a169e66cef">More...</a><br /></td></tr>
-<tr class="separator:a9ced078f31c58a7148d335a169e66cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7aae170442081542678a88a4f2b85370"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a7aae170442081542678a88a4f2b85370">m_finished_wait</a></td></tr>
-<tr class="separator:a7aae170442081542678a88a4f2b85370"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9106a0081379cdd08a893d6272e19fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#af9106a0081379cdd08a893d6272e19fe">m_finished</a></td></tr>
-<tr class="memdesc:af9106a0081379cdd08a893d6272e19fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal state variable to tell system if we have received ctrl_in and should send WORK_DONE to the rest of the blocks.  <a href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#af9106a0081379cdd08a893d6272e19fe">More...</a><br /></td></tr>
-<tr class="separator:af9106a0081379cdd08a893d6272e19fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a662287e22d98bfe785c41f0b5101242c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a662287e22d98bfe785c41f0b5101242c">m_wait</a></td></tr>
-<tr class="separator:a662287e22d98bfe785c41f0b5101242c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a371d0a7e8b6bd1e68b909bcd5ffc9ab2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim__impl.html#a371d0a7e8b6bd1e68b909bcd5ffc9ab2">m_n_send</a></td></tr>
-<tr class="separator:a371d0a7e8b6bd1e68b909bcd5ffc9ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classgr_1_1lora__sdr_1_1data__source__sim"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classgr_1_1lora__sdr_1_1data__source__sim')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html">gr::lora_sdr::data_source_sim</a></td></tr>
-<tr class="memitem:a910d1063e8ec5d3eaaffe803aed9dfa0 inherit pub_types_classgr_1_1lora__sdr_1_1data__source__sim"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html">data_source_sim</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a910d1063e8ec5d3eaaffe803aed9dfa0">sptr</a></td></tr>
-<tr class="separator:a910d1063e8ec5d3eaaffe803aed9dfa0 inherit pub_types_classgr_1_1lora__sdr_1_1data__source__sim"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19bc5e668bd10264057859496c68ed1f inherit pub_types_classgr_1_1lora__sdr_1_1data__source__sim"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html">data_source_sim</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a19bc5e668bd10264057859496c68ed1f">sptr</a></td></tr>
+<tr class="separator:a19bc5e668bd10264057859496c68ed1f inherit pub_types_classgr_1_1lora__sdr_1_1data__source__sim"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classgr_1_1lora__sdr_1_1data__source__sim"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classgr_1_1lora__sdr_1_1data__source__sim')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html">gr::lora_sdr::data_source_sim</a></td></tr>
-<tr class="memitem:acf06e9351413e37b5307ddfcf32d98ab inherit pub_static_methods_classgr_1_1lora__sdr_1_1data__source__sim"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a910d1063e8ec5d3eaaffe803aed9dfa0">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#acf06e9351413e37b5307ddfcf32d98ab">make</a> (int pay_len, int n_frames, std::string string_input, uint32_t mean, bool exit_control)</td></tr>
+<tr class="memitem:acf06e9351413e37b5307ddfcf32d98ab inherit pub_static_methods_classgr_1_1lora__sdr_1_1data__source__sim"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a19bc5e668bd10264057859496c68ed1f">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#acf06e9351413e37b5307ddfcf32d98ab">make</a> (int pay_len, int n_frames, std::string string_input, uint32_t mean, bool exit_control)</td></tr>
 <tr class="memdesc:acf06e9351413e37b5307ddfcf32d98ab inherit pub_static_methods_classgr_1_1lora__sdr_1_1data__source__sim"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1data__source.html" title="&lt;+description of block+&gt;">lora_sdr::data_source</a>.  <a href="classgr_1_1lora__sdr_1_1data__source__sim.html#acf06e9351413e37b5307ddfcf32d98ab">More...</a><br /></td></tr>
 <tr class="separator:acf06e9351413e37b5307ddfcf32d98ab inherit pub_static_methods_classgr_1_1lora__sdr_1_1data__source__sim"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -296,276 +257,6 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int : work status </dd></dl>
-
-</div>
-</div>
-<a id="afe4441b448aa30aaa15606096b707bba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe4441b448aa30aaa15606096b707bba">&#9670;&nbsp;</a></span>random_string()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string gr::lora_sdr::data_source_sim_impl::random_string </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>nbytes</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>returns a random string containing [a-z A-Z 0-9] for testing the payload data </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">nbytes</td><td>: the number of char in the string </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>std::string : the random generated string </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a7e0786dfd840fb2dc6003030089052d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e0786dfd840fb2dc6003030089052d8">&#9670;&nbsp;</a></span>frame_cnt</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gr::lora_sdr::data_source_sim_impl::frame_cnt</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>: Count the number of frame sent </p>
-
-</div>
-</div>
-<a id="af9106a0081379cdd08a893d6272e19fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9106a0081379cdd08a893d6272e19fe">&#9670;&nbsp;</a></span>m_finished</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool gr::lora_sdr::data_source_sim_impl::m_finished</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>internal state variable to tell system if we have received ctrl_in and should send WORK_DONE to the rest of the blocks. </p>
-
-</div>
-</div>
-<a id="a7aae170442081542678a88a4f2b85370"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7aae170442081542678a88a4f2b85370">&#9670;&nbsp;</a></span>m_finished_wait</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool gr::lora_sdr::data_source_sim_impl::m_finished_wait</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a70e9ad91a96aa6de1db747e81979688b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70e9ad91a96aa6de1db747e81979688b">&#9670;&nbsp;</a></span>m_mean</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t gr::lora_sdr::data_source_sim_impl::m_mean</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Variables that holds the mean time of the uniform distribution. </p>
-
-</div>
-</div>
-<a id="a9ced078f31c58a7148d335a169e66cef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ced078f31c58a7148d335a169e66cef">&#9670;&nbsp;</a></span>m_multi_control</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool gr::lora_sdr::data_source_sim_impl::m_multi_control</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>bollean if we have to control multiple tx chains </p>
-
-</div>
-</div>
-<a id="a207d25a3ccee1b914599d77e802cc1e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a207d25a3ccee1b914599d77e802cc1e3">&#9670;&nbsp;</a></span>m_n_frames</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gr::lora_sdr::data_source_sim_impl::m_n_frames</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>: The maximal number of frame to send </p>
-
-</div>
-</div>
-<a id="a371d0a7e8b6bd1e68b909bcd5ffc9ab2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a371d0a7e8b6bd1e68b909bcd5ffc9ab2">&#9670;&nbsp;</a></span>m_n_send</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gr::lora_sdr::data_source_sim_impl::m_n_send</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a260a7bb07d80ab36535ba681b1f0cfb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a260a7bb07d80ab36535ba681b1f0cfb9">&#9670;&nbsp;</a></span>m_pay_len</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gr::lora_sdr::data_source_sim_impl::m_pay_len</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>: The payload length </p>
-
-</div>
-</div>
-<a id="a84adc97eb5ef9575d098a8d2d4f49c73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84adc97eb5ef9575d098a8d2d4f49c73">&#9670;&nbsp;</a></span>m_string_input</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string gr::lora_sdr::data_source_sim_impl::m_string_input</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>: Input data source, if empty random generated data source is used. </p>
-
-</div>
-</div>
-<a id="a662287e22d98bfe785c41f0b5101242c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a662287e22d98bfe785c41f0b5101242c">&#9670;&nbsp;</a></span>m_wait</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool gr::lora_sdr::data_source_sim_impl::m_wait</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

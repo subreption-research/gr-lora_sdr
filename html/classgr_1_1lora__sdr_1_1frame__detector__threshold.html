@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GNU Radio&#39;s LoRa_SDR OOT Package: gr::lora_sdr::frame_detector_threshold Class Reference</title>
+<title>GNU Radio&#39;s LORA_SDR Package: gr::lora_sdr::frame_detector_threshold Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio&#39;s LoRa_SDR OOT Package
+   <div id="projectname">GNU Radio&#39;s LORA_SDR Package
    </div>
-   <div id="projectbrief">OOT module that provides PHY LoRa capabilities</div>
   </td>
  </tr>
  </tbody>
@@ -75,26 +74,26 @@ Inheritance diagram for gr::lora_sdr::frame_detector_threshold:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a5eb15d9f016388e4a5da53536646cccd"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__threshold.html">frame_detector_threshold</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__threshold.html#a5eb15d9f016388e4a5da53536646cccd">sptr</a></td></tr>
-<tr class="separator:a5eb15d9f016388e4a5da53536646cccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55e11a256523aed7af1cc900cc50e38f"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__threshold.html">frame_detector_threshold</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__threshold.html#a55e11a256523aed7af1cc900cc50e38f">sptr</a></td></tr>
+<tr class="separator:a55e11a256523aed7af1cc900cc50e38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab91e79c1ca83da355e2ce6903f875c47"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__threshold.html#a5eb15d9f016388e4a5da53536646cccd">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__threshold.html#ab91e79c1ca83da355e2ce6903f875c47">make</a> (uint8_t sf, uint32_t samp_rate, uint32_t bw, float threshold)</td></tr>
+<tr class="memitem:ab91e79c1ca83da355e2ce6903f875c47"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__threshold.html#a55e11a256523aed7af1cc900cc50e38f">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__threshold.html#ab91e79c1ca83da355e2ce6903f875c47">make</a> (uint8_t sf, uint32_t samp_rate, uint32_t bw, float threshold)</td></tr>
 <tr class="memdesc:ab91e79c1ca83da355e2ce6903f875c47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__threshold.html" title="LoRa frame detector threshold, this block detects a LoRa frames using a preamble detection to find th...">lora_sdr::frame_detector_threshold</a>.  <a href="classgr_1_1lora__sdr_1_1frame__detector__threshold.html#ab91e79c1ca83da355e2ce6903f875c47">More...</a><br /></td></tr>
 <tr class="separator:ab91e79c1ca83da355e2ce6903f875c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>LoRa frame detector threshold, this block detects a LoRa frames using a preamble detection to find the start of the frame and a SNR energy based detector to detect the end of the frame. If a frame is detected the frame is outputted to the output. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a5eb15d9f016388e4a5da53536646cccd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5eb15d9f016388e4a5da53536646cccd">&#9670;&nbsp;</a></span>sptr</h2>
+<a id="a55e11a256523aed7af1cc900cc50e38f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55e11a256523aed7af1cc900cc50e38f">&#9670;&nbsp;</a></span>sptr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__threshold.html">frame_detector_threshold</a>&gt; <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__threshold.html#a5eb15d9f016388e4a5da53536646cccd">gr::lora_sdr::frame_detector_threshold::sptr</a></td>
+          <td class="memname">typedef std::shared_ptr&lt;<a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__threshold.html">frame_detector_threshold</a>&gt; <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__threshold.html#a55e11a256523aed7af1cc900cc50e38f">gr::lora_sdr::frame_detector_threshold::sptr</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -112,7 +111,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__threshold.html#a5eb15d9f016388e4a5da53536646cccd">sptr</a> gr::lora_sdr::frame_detector_threshold::make </td>
+          <td class="memname">static <a class="el" href="classgr_1_1lora__sdr_1_1frame__detector__threshold.html#a55e11a256523aed7af1cc900cc50e38f">sptr</a> gr::lora_sdr::frame_detector_threshold::make </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>sf</em>, </td>

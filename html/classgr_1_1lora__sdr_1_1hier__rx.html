@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GNU Radio&#39;s LoRa_SDR OOT Package: gr::lora_sdr::hier_rx Class Reference</title>
+<title>GNU Radio&#39;s LORA_SDR Package: gr::lora_sdr::hier_rx Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio&#39;s LoRa_SDR OOT Package
+   <div id="projectname">GNU Radio&#39;s LORA_SDR Package
    </div>
-   <div id="projectbrief">OOT module that provides PHY LoRa capabilities</div>
   </td>
  </tr>
  </tbody>
@@ -75,26 +74,26 @@ Inheritance diagram for gr::lora_sdr::hier_rx:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:afcbec9a5d1cddd9634ca59936b493c6a"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html">hier_rx</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#afcbec9a5d1cddd9634ca59936b493c6a">sptr</a></td></tr>
-<tr class="separator:afcbec9a5d1cddd9634ca59936b493c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e7e92daa93ccc5f4c5056b6ca278261"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html">hier_rx</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#a8e7e92daa93ccc5f4c5056b6ca278261">sptr</a></td></tr>
+<tr class="separator:a8e7e92daa93ccc5f4c5056b6ca278261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a04f7d354a405603d3663f95b1739f2a5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#afcbec9a5d1cddd9634ca59936b493c6a">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#a04f7d354a405603d3663f95b1739f2a5">make</a> (float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head, uint8_t cr, uint32_t pay_len, bool has_crc, std::vector&lt; uint16_t &gt; sync_words, bool exit)</td></tr>
+<tr class="memitem:a04f7d354a405603d3663f95b1739f2a5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#a8e7e92daa93ccc5f4c5056b6ca278261">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#a04f7d354a405603d3663f95b1739f2a5">make</a> (float samp_rate, uint32_t bandwidth, uint8_t sf, bool impl_head, uint8_t cr, uint32_t pay_len, bool has_crc, std::vector&lt; uint16_t &gt; sync_words, bool exit)</td></tr>
 <tr class="memdesc:a04f7d354a405603d3663f95b1739f2a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html" title="Wrapper block that hold the entire Rx chain : (frame_sync, fft_demod, gray_decode,...">lora_sdr::hier_rx</a>.  <a href="classgr_1_1lora__sdr_1_1hier__rx.html#a04f7d354a405603d3663f95b1739f2a5">More...</a><br /></td></tr>
 <tr class="separator:a04f7d354a405603d3663f95b1739f2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Wrapper block that hold the entire Rx chain : (<a class="el" href="classgr_1_1lora__sdr_1_1frame__sync.html" title="&lt;+description of block+&gt;">frame_sync</a>, <a class="el" href="classgr_1_1lora__sdr_1_1fft__demod.html" title="FFT demodulation block ,for more information about the implementation visit fft_demod_impl.">fft_demod</a>, <a class="el" href="classgr_1_1lora__sdr_1_1gray__decode.html" title="Decode the received payload with the inverse gray mapping in order to obtain the send message....">gray_decode</a>, deinterleaver, <a class="el" href="classgr_1_1lora__sdr_1_1hamming__dec.html" title="Hamming decoding stage, decode the received payload. If necessary this block will preform error detec...">hamming_dec</a>, <a class="el" href="classgr_1_1lora__sdr_1_1header__decoder.html" title="Decode the header of the data spackage. For more information about the implementation visit header_de...">header_decoder</a>, dewhitening, <a class="el" href="classgr_1_1lora__sdr_1_1crc__verif.html" title="Verifies if the included crc is correct or not for more information about the implementation visit cr...">crc_verif</a>) </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="afcbec9a5d1cddd9634ca59936b493c6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcbec9a5d1cddd9634ca59936b493c6a">&#9670;&nbsp;</a></span>sptr</h2>
+<a id="a8e7e92daa93ccc5f4c5056b6ca278261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e7e92daa93ccc5f4c5056b6ca278261">&#9670;&nbsp;</a></span>sptr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html">hier_rx</a>&gt; <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#afcbec9a5d1cddd9634ca59936b493c6a">gr::lora_sdr::hier_rx::sptr</a></td>
+          <td class="memname">typedef std::shared_ptr&lt;<a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html">hier_rx</a>&gt; <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#a8e7e92daa93ccc5f4c5056b6ca278261">gr::lora_sdr::hier_rx::sptr</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -112,7 +111,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#afcbec9a5d1cddd9634ca59936b493c6a">sptr</a> gr::lora_sdr::hier_rx::make </td>
+          <td class="memname">static <a class="el" href="classgr_1_1lora__sdr_1_1hier__rx.html#a8e7e92daa93ccc5f4c5056b6ca278261">sptr</a> gr::lora_sdr::hier_rx::make </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>samp_rate</em>, </td>

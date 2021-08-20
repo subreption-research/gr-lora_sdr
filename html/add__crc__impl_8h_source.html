@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GNU Radio&#39;s LoRa_SDR OOT Package: add_crc_impl.h Source File</title>
+<title>GNU Radio&#39;s LORA_SDR Package: add_crc_impl.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio&#39;s LoRa_SDR OOT Package
+   <div id="projectname">GNU Radio&#39;s LORA_SDR Package
    </div>
-   <div id="projectbrief">OOT module that provides PHY LoRa capabilities</div>
   </td>
  </tr>
  </tbody>
@@ -68,31 +67,31 @@ $(document).ready(function(){initNavTree('add__crc__impl_8h_source.html',''); in
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * @brief indicate the presence of a payload CRC</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * </span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ad7b14f262b44eb3c74de0d8bedfc4211">   15</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ad7b14f262b44eb3c74de0d8bedfc4211">m_has_crc</a>;            </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordtype">bool</span> m_has_crc;            </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="comment"></span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">   * @brief payload data</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">   * </span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a076373e7eb8c27a1b363d70af735083a">   21</a></span>&#160;  std::vector&lt;uint8_t&gt; <a class="code" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a076373e7eb8c27a1b363d70af735083a">m_payload</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  std::vector&lt;uint8_t&gt; m_payload;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="comment"></span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">   * @brief length of the payload in Bytes</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">   * </span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a5b6afeb93cbff3baf241da65a1b5999c">   27</a></span>&#160;  uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a5b6afeb93cbff3baf241da65a1b5999c">m_payload_len</a>;          </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  uint8_t m_payload_len;          </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="comment"></span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">   * @brief length of the frame in number of gnuradio items</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">   * </span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a943ef9059f6ed9624174c4770588ce36">   33</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a943ef9059f6ed9624174c4770588ce36">m_frame_len</a>; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">int</span> m_frame_len; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="comment"></span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">   * @brief  counter of the number of symbol in frame</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">   * </span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ae3cbdba283580114de19250c57642f93">   39</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ae3cbdba283580114de19250c57642f93">m_cnt</a>;    </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">int</span> m_cnt;    </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">   * @brief Calculates the crc value for a given byte</span></div>
@@ -101,7 +100,7 @@ $(document).ready(function(){initNavTree('add__crc__impl_8h_source.html',''); in
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">   * @param newByte : byte for calculate the crc value for </span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">   * @return unsigned int </span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ab46b2f78b7eaa01d5eb27ada3e6b1aec">crc16</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> crcValue, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> newByte);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> crc16(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> crcValue, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> newByte);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">/**</span></div>
@@ -144,12 +143,7 @@ $(document).ready(function(){initNavTree('add__crc__impl_8h_source.html',''); in
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_ADD_CRC_IMPL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_a076373e7eb8c27a1b363d70af735083a"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a076373e7eb8c27a1b363d70af735083a">gr::lora_sdr::add_crc_impl::m_payload</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; m_payload</div><div class="ttdoc">payload data</div><div class="ttdef"><b>Definition:</b> add_crc_impl.h:21</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_ab46b2f78b7eaa01d5eb27ada3e6b1aec"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ab46b2f78b7eaa01d5eb27ada3e6b1aec">gr::lora_sdr::add_crc_impl::crc16</a></div><div class="ttdeci">unsigned int crc16(unsigned int crcValue, unsigned char newByte)</div><div class="ttdoc">Calculates the crc value for a given byte.</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_a5b6afeb93cbff3baf241da65a1b5999c"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a5b6afeb93cbff3baf241da65a1b5999c">gr::lora_sdr::add_crc_impl::m_payload_len</a></div><div class="ttdeci">uint8_t m_payload_len</div><div class="ttdoc">length of the payload in Bytes</div><div class="ttdef"><b>Definition:</b> add_crc_impl.h:27</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_ab79f297228f3431e7613629a5d6cede9"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ab79f297228f3431e7613629a5d6cede9">gr::lora_sdr::add_crc_impl::~add_crc_impl</a></div><div class="ttdeci">~add_crc_impl()</div><div class="ttdoc">Destroy the add crc impl object.</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_ae3cbdba283580114de19250c57642f93"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ae3cbdba283580114de19250c57642f93">gr::lora_sdr::add_crc_impl::m_cnt</a></div><div class="ttdeci">int m_cnt</div><div class="ttdoc">counter of the number of symbol in frame</div><div class="ttdef"><b>Definition:</b> add_crc_impl.h:39</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_ad7b14f262b44eb3c74de0d8bedfc4211"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#ad7b14f262b44eb3c74de0d8bedfc4211">gr::lora_sdr::add_crc_impl::m_has_crc</a></div><div class="ttdeci">bool m_has_crc</div><div class="ttdoc">indicate the presence of a payload CRC</div><div class="ttdef"><b>Definition:</b> add_crc_impl.h:15</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_a141e98281979bcc67c40976732e9aa50"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a141e98281979bcc67c40976732e9aa50">gr::lora_sdr::add_crc_impl::add_crc_impl</a></div><div class="ttdeci">add_crc_impl(bool has_crc)</div><div class="ttdoc">Construct a new add crc impl object.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_adeeb01a45dae7558c36756ff4e794134"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#adeeb01a45dae7558c36756ff4e794134">gr::lora_sdr::add_crc_impl::forecast</a></div><div class="ttdeci">void forecast(int noutput_items, gr_vector_int &amp;ninput_items_required)</div><div class="ttdoc">Standard gnuradio function for telling the scheduler how many input items are needed.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html">gr::lora_sdr::add_crc_impl</a></div><div class="ttdef"><b>Definition:</b> add_crc_impl.h:9</div></div>
@@ -157,7 +151,6 @@ $(document).ready(function(){initNavTree('add__crc__impl_8h_source.html',''); in
 <div class="ttc" id="ahelpers_8h_html"><div class="ttname"><a href="helpers_8h.html">helpers.h</a></div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc.html">gr::lora_sdr::add_crc</a></div><div class="ttdoc">This block adds LoRa CRC (Cyclic redundancy check) into the payload if boolean has_crc is True,...</div><div class="ttdef"><b>Definition:</b> add_crc.h:37</div></div>
 <div class="ttc" id="anamespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> add_crc.h:28</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_a943ef9059f6ed9624174c4770588ce36"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a943ef9059f6ed9624174c4770588ce36">gr::lora_sdr::add_crc_impl::m_frame_len</a></div><div class="ttdeci">int m_frame_len</div><div class="ttdoc">length of the frame in number of gnuradio items</div><div class="ttdef"><b>Definition:</b> add_crc_impl.h:33</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1add__crc__impl_html_a39ebc25dc893e70b81d4d756997dd6a1"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1add__crc__impl.html#a39ebc25dc893e70b81d4d756997dd6a1">gr::lora_sdr::add_crc_impl::general_work</a></div><div class="ttdeci">int general_work(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div><div class="ttdoc">stanard gnuradio function that does the actual computations</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

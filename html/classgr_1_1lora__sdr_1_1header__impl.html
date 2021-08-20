@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GNU Radio&#39;s LoRa_SDR OOT Package: gr::lora_sdr::header_impl Class Reference</title>
+<title>GNU Radio&#39;s LORA_SDR Package: gr::lora_sdr::header_impl Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio&#39;s LoRa_SDR OOT Package
+   <div id="projectname">GNU Radio&#39;s LORA_SDR Package
    </div>
-   <div id="projectbrief">OOT module that provides PHY LoRa capabilities</div>
   </td>
  </tr>
  </tbody>
@@ -52,8 +51,6 @@ $(document).ready(function(){initNavTree('classgr_1_1lora__sdr_1_1header__impl.h
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classgr_1_1lora__sdr_1_1header__impl-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">gr::lora_sdr::header_impl Class Reference</div>  </div>
@@ -86,45 +83,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:afa6f7f180882d6edc93f204d0e2b947a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function where the actual computation is done. If impl_head is set to true the output will be the payload added with an header.  <a href="classgr_1_1lora__sdr_1_1header__impl.html#afa6f7f180882d6edc93f204d0e2b947a">More...</a><br /></td></tr>
 <tr class="separator:afa6f7f180882d6edc93f204d0e2b947a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a939d100f3b5b01893fff314c37f5db76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1header__impl.html#a939d100f3b5b01893fff314c37f5db76">msg_handler</a> (pmt::pmt_t message)</td></tr>
-<tr class="memdesc:a939d100f3b5b01893fff314c37f5db76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that handles on the input PMT message (i.e. input data from data source)  <a href="classgr_1_1lora__sdr_1_1header__impl.html#a939d100f3b5b01893fff314c37f5db76">More...</a><br /></td></tr>
-<tr class="separator:a939d100f3b5b01893fff314c37f5db76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:add166cd35985b68d1b47775d7bc6bd74"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1header__impl.html#add166cd35985b68d1b47775d7bc6bd74">m_impl_head</a></td></tr>
-<tr class="memdesc:add166cd35985b68d1b47775d7bc6bd74"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolean variable to indicate implicit header mode is used  <a href="classgr_1_1lora__sdr_1_1header__impl.html#add166cd35985b68d1b47775d7bc6bd74">More...</a><br /></td></tr>
-<tr class="separator:add166cd35985b68d1b47775d7bc6bd74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98332592978639984f93f49783886231"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1header__impl.html#a98332592978639984f93f49783886231">m_has_crc</a></td></tr>
-<tr class="memdesc:a98332592978639984f93f49783886231"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolean variable to indicate the presence of a payload crc  <a href="classgr_1_1lora__sdr_1_1header__impl.html#a98332592978639984f93f49783886231">More...</a><br /></td></tr>
-<tr class="separator:a98332592978639984f93f49783886231"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcbe1e73136c6aec3d6e60b31b0d9e7a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1header__impl.html#afcbe1e73136c6aec3d6e60b31b0d9e7a">m_cr</a></td></tr>
-<tr class="memdesc:afcbe1e73136c6aec3d6e60b31b0d9e7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmission coding rate.  <a href="classgr_1_1lora__sdr_1_1header__impl.html#afcbe1e73136c6aec3d6e60b31b0d9e7a">More...</a><br /></td></tr>
-<tr class="separator:afcbe1e73136c6aec3d6e60b31b0d9e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e67c8fa72fdb77854ceb2993a658842"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1header__impl.html#a5e67c8fa72fdb77854ceb2993a658842">m_payload_len</a></td></tr>
-<tr class="memdesc:a5e67c8fa72fdb77854ceb2993a658842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Payload length (i.e input data length)  <a href="classgr_1_1lora__sdr_1_1header__impl.html#a5e67c8fa72fdb77854ceb2993a658842">More...</a><br /></td></tr>
-<tr class="separator:a5e67c8fa72fdb77854ceb2993a658842"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abca588f64d4ac4fc29219e51b3a43785"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1header__impl.html#abca588f64d4ac4fc29219e51b3a43785">m_cnt_nibbles</a></td></tr>
-<tr class="memdesc:abca588f64d4ac4fc29219e51b3a43785"><td class="mdescLeft">&#160;</td><td class="mdescRight">count the processes nibbles in a frame  <a href="classgr_1_1lora__sdr_1_1header__impl.html#abca588f64d4ac4fc29219e51b3a43785">More...</a><br /></td></tr>
-<tr class="separator:abca588f64d4ac4fc29219e51b3a43785"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4d1805da4721b0e5a2f59c97d965688"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1header__impl.html#ae4d1805da4721b0e5a2f59c97d965688">m_cnt_header_nibbles</a></td></tr>
-<tr class="memdesc:ae4d1805da4721b0e5a2f59c97d965688"><td class="mdescLeft">&#160;</td><td class="mdescRight">count the number of explicit header nibbles output  <a href="classgr_1_1lora__sdr_1_1header__impl.html#ae4d1805da4721b0e5a2f59c97d965688">More...</a><br /></td></tr>
-<tr class="separator:ae4d1805da4721b0e5a2f59c97d965688"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c5d2c01aea61dc62937e636e6514279"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1header__impl.html#a1c5d2c01aea61dc62937e636e6514279">m_header</a></td></tr>
-<tr class="memdesc:a1c5d2c01aea61dc62937e636e6514279"><td class="mdescLeft">&#160;</td><td class="mdescRight">contain the header to prepend  <a href="classgr_1_1lora__sdr_1_1header__impl.html#a1c5d2c01aea61dc62937e636e6514279">More...</a><br /></td></tr>
-<tr class="separator:a1c5d2c01aea61dc62937e636e6514279"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1487176fb0bf6732a579555b6401d88b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; tag_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1header__impl.html#a1487176fb0bf6732a579555b6401d88b">m_tags</a></td></tr>
-<tr class="separator:a1487176fb0bf6732a579555b6401d88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classgr_1_1lora__sdr_1_1header"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classgr_1_1lora__sdr_1_1header')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classgr_1_1lora__sdr_1_1header.html">gr::lora_sdr::header</a></td></tr>
-<tr class="memitem:ad3e8a1bb5ac14e261664227d35bfb22c inherit pub_types_classgr_1_1lora__sdr_1_1header"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1header.html">header</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1header.html#ad3e8a1bb5ac14e261664227d35bfb22c">sptr</a></td></tr>
-<tr class="separator:ad3e8a1bb5ac14e261664227d35bfb22c inherit pub_types_classgr_1_1lora__sdr_1_1header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0f8f34cf2512b58ee2244f9b3d3672d inherit pub_types_classgr_1_1lora__sdr_1_1header"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1header.html">header</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1header.html#ad0f8f34cf2512b58ee2244f9b3d3672d">sptr</a></td></tr>
+<tr class="separator:ad0f8f34cf2512b58ee2244f9b3d3672d inherit pub_types_classgr_1_1lora__sdr_1_1header"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classgr_1_1lora__sdr_1_1header"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classgr_1_1lora__sdr_1_1header')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classgr_1_1lora__sdr_1_1header.html">gr::lora_sdr::header</a></td></tr>
-<tr class="memitem:a90759b05ba40572668384c4f907e61d0 inherit pub_static_methods_classgr_1_1lora__sdr_1_1header"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1header.html#ad3e8a1bb5ac14e261664227d35bfb22c">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1header.html#a90759b05ba40572668384c4f907e61d0">make</a> (bool impl_head, bool has_crc, uint8_t cr)</td></tr>
+<tr class="memitem:a90759b05ba40572668384c4f907e61d0 inherit pub_static_methods_classgr_1_1lora__sdr_1_1header"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1header.html#ad0f8f34cf2512b58ee2244f9b3d3672d">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1header.html#a90759b05ba40572668384c4f907e61d0">make</a> (bool impl_head, bool has_crc, uint8_t cr)</td></tr>
 <tr class="memdesc:a90759b05ba40572668384c4f907e61d0 inherit pub_static_methods_classgr_1_1lora__sdr_1_1header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1header.html" title="Encode the header of the data package if implicit header mode (denoted by m_impl_head) is turned on F...">lora_sdr::header</a>.  <a href="classgr_1_1lora__sdr_1_1header.html#a90759b05ba40572668384c4f907e61d0">More...</a><br /></td></tr>
 <tr class="separator:a90759b05ba40572668384c4f907e61d0 inherit pub_static_methods_classgr_1_1lora__sdr_1_1header"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -279,231 +244,6 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
-
-</div>
-</div>
-<a id="a939d100f3b5b01893fff314c37f5db76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a939d100f3b5b01893fff314c37f5db76">&#9670;&nbsp;</a></span>msg_handler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gr::lora_sdr::header_impl::msg_handler </td>
-          <td>(</td>
-          <td class="paramtype">pmt::pmt_t&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Function that handles on the input PMT message (i.e. input data from data source) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">message</td><td>pmt message </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ae4d1805da4721b0e5a2f59c97d965688"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4d1805da4721b0e5a2f59c97d965688">&#9670;&nbsp;</a></span>m_cnt_header_nibbles</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint gr::lora_sdr::header_impl::m_cnt_header_nibbles</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>count the number of explicit header nibbles output </p>
-
-</div>
-</div>
-<a id="abca588f64d4ac4fc29219e51b3a43785"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abca588f64d4ac4fc29219e51b3a43785">&#9670;&nbsp;</a></span>m_cnt_nibbles</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint gr::lora_sdr::header_impl::m_cnt_nibbles</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>count the processes nibbles in a frame </p>
-
-</div>
-</div>
-<a id="afcbe1e73136c6aec3d6e60b31b0d9e7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcbe1e73136c6aec3d6e60b31b0d9e7a">&#9670;&nbsp;</a></span>m_cr</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t gr::lora_sdr::header_impl::m_cr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Transmission coding rate. </p>
-
-</div>
-</div>
-<a id="a98332592978639984f93f49783886231"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98332592978639984f93f49783886231">&#9670;&nbsp;</a></span>m_has_crc</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool gr::lora_sdr::header_impl::m_has_crc</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>boolean variable to indicate the presence of a payload crc </p>
-
-</div>
-</div>
-<a id="a1c5d2c01aea61dc62937e636e6514279"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c5d2c01aea61dc62937e636e6514279">&#9670;&nbsp;</a></span>m_header</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;uint8_t&gt; gr::lora_sdr::header_impl::m_header</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>contain the header to prepend </p>
-
-</div>
-</div>
-<a id="add166cd35985b68d1b47775d7bc6bd74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add166cd35985b68d1b47775d7bc6bd74">&#9670;&nbsp;</a></span>m_impl_head</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool gr::lora_sdr::header_impl::m_impl_head</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>boolean variable to indicate implicit header mode is used </p>
-
-</div>
-</div>
-<a id="a5e67c8fa72fdb77854ceb2993a658842"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e67c8fa72fdb77854ceb2993a658842">&#9670;&nbsp;</a></span>m_payload_len</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t gr::lora_sdr::header_impl::m_payload_len</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Payload length (i.e input data length) </p>
-
-</div>
-</div>
-<a id="a1487176fb0bf6732a579555b6401d88b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1487176fb0bf6732a579555b6401d88b">&#9670;&nbsp;</a></span>m_tags</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;tag_t&gt; gr::lora_sdr::header_impl::m_tags</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

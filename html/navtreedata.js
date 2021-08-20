@@ -22,7 +22,7 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "GNU Radio's LoRa_SDR OOT Package", "index.html", [
+  [ "GNU Radio's LORA_SDR Package", "index.html", [
     [ "Modules", "modules.html", "modules" ],
     [ "Namespace Members", "namespacemembers.html", [
       [ "All", "namespacemembers.html", null ],
@@ -34,12 +34,10 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
+        [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", "functions_vars" ],
-        [ "Typedefs", "functions_type.html", null ],
-        [ "Enumerations", "functions_enum.html", null ],
-        [ "Enumerator", "functions_eval.html", null ]
+        [ "Variables", "functions_vars.html", null ],
+        [ "Typedefs", "functions_type.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -47,6 +45,7 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Enumerator", "globals_eval.html", null ],
@@ -59,9 +58,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "RH__RF95__header_8h.html",
-"classgr_1_1lora__sdr_1_1frame__detector__threshold__impl.html#ac5bafeeb233dc5a081cda9cbd154511aa21d6854c676e2a5a71c6fcef4e851aca",
-"classgr_1_1lora__sdr_1_1modulate__impl.html#a5673e64912584a17be7b417622e94805",
-"functions_vars_c.html"
+"classgr_1_1lora__sdr_1_1partial__ml__impl.html#a5efea2984a45427bd26ea5e22fe3cf13",
+"hier__rx__impl_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GNU Radio&#39;s LoRa_SDR OOT Package: fft_demod.h Source File</title>
+<title>GNU Radio&#39;s LORA_SDR Package: fft_demod.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio&#39;s LoRa_SDR OOT Package
+   <div id="projectname">GNU Radio&#39;s LORA_SDR Package
    </div>
-   <div id="projectbrief">OOT module that provides PHY LoRa capabilities</div>
   </td>
  </tr>
  </tbody>
@@ -92,7 +91,7 @@ $(document).ready(function(){initNavTree('fft__demod_8h_source.html',''); initRe
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1fft__demod.html">   36</a></span>&#160;    <span class="keyword">class </span><a class="code" href="api_8h.html#a7f43a70ead7390c8125a3e3273e64b8c">LORA_SDR_API</a> <a class="code" href="classgr_1_1lora__sdr_1_1fft__demod.html">fft_demod</a> : <span class="keyword">virtual</span> <span class="keyword">public</span> gr::block</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;     <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1fft__demod.html#ab2c3a81290444e82a9e741ce03baad91">   39</a></span>&#160;      <span class="keyword">typedef</span> boost::shared_ptr&lt;fft_demod&gt; <a class="code" href="classgr_1_1lora__sdr_1_1fft__demod.html#ab2c3a81290444e82a9e741ce03baad91">sptr</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1fft__demod.html#a69ca8050cd56e63b7e998408588d3bca">   39</a></span>&#160;      <span class="keyword">typedef</span> std::shared_ptr&lt;fft_demod&gt; <a class="code" href="classgr_1_1lora__sdr_1_1fft__demod.html#a69ca8050cd56e63b7e998408588d3bca">sptr</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">      /*!</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">       * \brief Return a shared_ptr to a new instance of lora_sdr::fft_demod.</span></div>
@@ -102,7 +101,7 @@ $(document).ready(function(){initNavTree('fft__demod_8h_source.html',''); initRe
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">       * class. lora_sdr::fft_demod::make is the public interface for</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">       * creating new instances.</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">       */</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keyword">static</span> <a class="code" href="classgr_1_1lora__sdr_1_1fft__demod.html#ab2c3a81290444e82a9e741ce03baad91">sptr</a> make(<span class="keywordtype">float</span> samp_rate, uint32_t bandwidth, uint8_t sf,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keyword">static</span> <a class="code" href="classgr_1_1lora__sdr_1_1fft__demod.html#a69ca8050cd56e63b7e998408588d3bca">sptr</a> make(<span class="keywordtype">float</span> samp_rate, uint32_t bandwidth, uint8_t sf,</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                               <span class="keywordtype">bool</span> impl_head);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    };</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
@@ -114,8 +113,8 @@ $(document).ready(function(){initNavTree('fft__demod_8h_source.html',''); initRe
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1fft__demod_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1fft__demod.html">gr::lora_sdr::fft_demod</a></div><div class="ttdoc">FFT demodulation block ,for more information about the implementation visit fft_demod_impl.</div><div class="ttdef"><b>Definition:</b> fft_demod.h:36</div></div>
-<div class="ttc" id="aapi_8h_html_a7f43a70ead7390c8125a3e3273e64b8c"><div class="ttname"><a href="api_8h.html#a7f43a70ead7390c8125a3e3273e64b8c">LORA_SDR_API</a></div><div class="ttdeci">#define LORA_SDR_API</div><div class="ttdef"><b>Definition:</b> api.h:30</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1fft__demod_html_ab2c3a81290444e82a9e741ce03baad91"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1fft__demod.html#ab2c3a81290444e82a9e741ce03baad91">gr::lora_sdr::fft_demod::sptr</a></div><div class="ttdeci">boost::shared_ptr&lt; fft_demod &gt; sptr</div><div class="ttdef"><b>Definition:</b> fft_demod.h:39</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1fft__demod_html_a69ca8050cd56e63b7e998408588d3bca"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1fft__demod.html#a69ca8050cd56e63b7e998408588d3bca">gr::lora_sdr::fft_demod::sptr</a></div><div class="ttdeci">std::shared_ptr&lt; fft_demod &gt; sptr</div><div class="ttdef"><b>Definition:</b> fft_demod.h:39</div></div>
+<div class="ttc" id="aapi_8h_html_a7f43a70ead7390c8125a3e3273e64b8c"><div class="ttname"><a href="api_8h.html#a7f43a70ead7390c8125a3e3273e64b8c">LORA_SDR_API</a></div><div class="ttdeci">#define LORA_SDR_API</div><div class="ttdef"><b>Definition:</b> api.h:19</div></div>
 <div class="ttc" id="anamespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> add_crc.h:28</div></div>
 <div class="ttc" id="aapi_8h_html"><div class="ttname"><a href="api_8h.html">api.h</a></div></div>
 <!-- start footer part -->

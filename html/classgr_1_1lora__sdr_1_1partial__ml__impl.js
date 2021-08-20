@@ -1,32 +1,7 @@
 var classgr_1_1lora__sdr_1_1partial__ml__impl =
 [
-    [ "window", "structgr_1_1lora__sdr_1_1partial__ml__impl_1_1window.html", "structgr_1_1lora__sdr_1_1partial__ml__impl_1_1window" ],
     [ "partial_ml_impl", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#abce182aa247fe3aabf4d3d8bb1d2000d", null ],
     [ "~partial_ml_impl", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#a5efea2984a45427bd26ea5e22fe3cf13", null ],
-    [ "add_demod_tag", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#a13a653f348f92d3a1c357cc9bce69d56", null ],
-    [ "dechirp_and_fft", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#ad91acadaba82cdec58230005fe03d19d", null ],
     [ "forecast", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#a987abaa8754d7361b97c43e26c47d49b", null ],
-    [ "general_work", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#adec180b6245ae3d97274081b2130c06b", null ],
-    [ "is_kind_downchirp", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#a21030bed3e0e6ec72476f4b1c9e85a26", null ],
-    [ "is_kind_upchirp", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#a73ad814f8c0688da7e871155434c769f", null ],
-    [ "matched_filter1", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#aaa2371ea23dd61c7f8432976e3f81732", null ],
-    [ "matched_filter2", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#a34e6490ae5bb919dcedd354efe327fba", null ],
-    [ "first_upchirp", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#a5f2b44b4dd939a2949c3f5aed0adc983", null ],
-    [ "m_id", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#afa48b840f38a3306b7cd82ebeb059769", null ],
-    [ "m_init", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#a460fea0bf87756ac69e3f0bc8a416174", null ],
-    [ "m_Ki", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#a6fac09298e8c989081d54cafb074027c", null ],
-    [ "m_N", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#a1429ab4a488e3a4349c496b20e927120", null ],
-    [ "m_os_factor", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#a5e8e96ffb4ebcf394fe073ab36e013cb", null ],
-    [ "m_ref_downchirp", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#a79376b6b80752d7d04ee32028f95a7ea", null ],
-    [ "m_ref_upchirp", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#a34e40817e3051852660e945e8d99ab25", null ],
-    [ "m_sf", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#a083108f4e9dfe91db273778b00965d58", null ],
-    [ "mf", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#ac1992c013f236a8bf2ab0dd31c1c678c", null ],
-    [ "Mu", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#a0bc19d4e60a253d610b3c17d033b0298", null ],
-    [ "preamb_peak", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#a611951da0b5ee350a9bf5055d3320a9b", null ],
-    [ "prev_theta_u", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#ade5d7890fbf63251d454d637369aecae", null ],
-    [ "SNR_est", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#a7947feed028c0c72cf1f826a54e1b981", null ],
-    [ "Su", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#a5c7a78702bcf5438b1028bebaf86ecdb", null ],
-    [ "theta_u", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#a45541a3a012999b483de63503481e1c7", null ],
-    [ "third_symbol_part", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#af48f077e38ee9fce75eee80160a92346", null ],
-    [ "window", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#ae3e8c74b49463d938e3f6dd0f0df7664", null ]
+    [ "general_work", "classgr_1_1lora__sdr_1_1partial__ml__impl.html#adec180b6245ae3d97274081b2130c06b", null ]
 ];

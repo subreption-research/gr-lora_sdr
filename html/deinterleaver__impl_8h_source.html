@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GNU Radio&#39;s LoRa_SDR OOT Package: deinterleaver_impl.h Source File</title>
+<title>GNU Radio&#39;s LORA_SDR Package: deinterleaver_impl.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio&#39;s LoRa_SDR OOT Package
+   <div id="projectname">GNU Radio&#39;s LORA_SDR Package
    </div>
-   <div id="projectbrief">OOT module that provides PHY LoRa capabilities</div>
   </td>
  </tr>
  </tbody>
@@ -69,32 +68,32 @@ $(document).ready(function(){initNavTree('deinterleaver__impl_8h_source.html',''
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">   * @brief Transmission Spreading factor</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a4317ded1b980b934dcd8da9e90b29cfe">   16</a></span>&#160;  uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a4317ded1b980b934dcd8da9e90b29cfe">m_sf</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  uint8_t m_sf;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">   * @brief Transmission Coding rate</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a6385b2a7a625f058ea1dbd1fe3cd9448">   22</a></span>&#160;  uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a6385b2a7a625f058ea1dbd1fe3cd9448">m_cr</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  uint8_t m_cr;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">   * @brief Spreading factor to use to deinterleave</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a5311d0dc3c782b33735b98cd387c769a">   28</a></span>&#160;  uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a5311d0dc3c782b33735b98cd387c769a">sf_app</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  uint8_t sf_app;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">   * @brief Length of a codeword</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a2ee14c8c25c0343be3ec8d56408805f8">   34</a></span>&#160;  uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a2ee14c8c25c0343be3ec8d56408805f8">cw_len</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  uint8_t cw_len;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">   * @brief Indicate that we need to deinterleave the first block with the</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">   * default header parameters (cr=4/8, reduced rate)</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#aa97de2d049c1a00936d67de3d7189d2f">   41</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#aa97de2d049c1a00936d67de3d7189d2f">m_is_header</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">bool</span> m_is_header;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">  /**</span></div>
@@ -139,17 +138,12 @@ $(document).ready(function(){initNavTree('deinterleaver__impl_8h_source.html',''
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1deinterleaver__impl_html_a988e93f02184e00c2669fc13426f7edc"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a988e93f02184e00c2669fc13426f7edc">gr::lora_sdr::deinterleaver_impl::general_work</a></div><div class="ttdeci">int general_work(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div><div class="ttdoc">Main function where the actual computation is done.</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1deinterleaver__impl_html_a4317ded1b980b934dcd8da9e90b29cfe"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a4317ded1b980b934dcd8da9e90b29cfe">gr::lora_sdr::deinterleaver_impl::m_sf</a></div><div class="ttdeci">uint8_t m_sf</div><div class="ttdoc">Transmission Spreading factor.</div><div class="ttdef"><b>Definition:</b> deinterleaver_impl.h:16</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1deinterleaver__impl_html_a85f84b3a6fd8a4b65ed297bdf61dd4e6"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a85f84b3a6fd8a4b65ed297bdf61dd4e6">gr::lora_sdr::deinterleaver_impl::~deinterleaver_impl</a></div><div class="ttdeci">~deinterleaver_impl()</div><div class="ttdoc">Destroy the deinterleaver impl object.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1deinterleaver__impl_html_aad7a0ec6b032c177866cb8e1cdbeab0d"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#aad7a0ec6b032c177866cb8e1cdbeab0d">gr::lora_sdr::deinterleaver_impl::forecast</a></div><div class="ttdeci">void forecast(int noutput_items, gr_vector_int &amp;ninput_items_required)</div><div class="ttdoc">Standard gnuradio function to tell the system with.</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1deinterleaver__impl_html_a5311d0dc3c782b33735b98cd387c769a"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a5311d0dc3c782b33735b98cd387c769a">gr::lora_sdr::deinterleaver_impl::sf_app</a></div><div class="ttdeci">uint8_t sf_app</div><div class="ttdoc">Spreading factor to use to deinterleave.</div><div class="ttdef"><b>Definition:</b> deinterleaver_impl.h:28</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1deinterleaver__impl_html_a6385b2a7a625f058ea1dbd1fe3cd9448"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a6385b2a7a625f058ea1dbd1fe3cd9448">gr::lora_sdr::deinterleaver_impl::m_cr</a></div><div class="ttdeci">uint8_t m_cr</div><div class="ttdoc">Transmission Coding rate.</div><div class="ttdef"><b>Definition:</b> deinterleaver_impl.h:22</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1deinterleaver__impl_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html">gr::lora_sdr::deinterleaver_impl</a></div><div class="ttdef"><b>Definition:</b> deinterleaver_impl.h:10</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1deinterleaver__impl_html_a2ee14c8c25c0343be3ec8d56408805f8"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#a2ee14c8c25c0343be3ec8d56408805f8">gr::lora_sdr::deinterleaver_impl::cw_len</a></div><div class="ttdeci">uint8_t cw_len</div><div class="ttdoc">Length of a codeword.</div><div class="ttdef"><b>Definition:</b> deinterleaver_impl.h:34</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1deinterleaver__impl_html_abacc979e4e3f57f8bc97feb7c11ec9cf"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#abacc979e4e3f57f8bc97feb7c11ec9cf">gr::lora_sdr::deinterleaver_impl::deinterleaver_impl</a></div><div class="ttdeci">deinterleaver_impl(uint8_t sf)</div><div class="ttdoc">Construct a new deinterleaver impl object.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1deinterleaver_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1deinterleaver.html">gr::lora_sdr::deinterleaver</a></div><div class="ttdoc">Deinterleaves the received payload, for more information about the implementation visit deinterleaver...</div><div class="ttdef"><b>Definition:</b> deinterleaver.h:36</div></div>
 <div class="ttc" id="anamespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> add_crc.h:28</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1deinterleaver__impl_html_aa97de2d049c1a00936d67de3d7189d2f"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1deinterleaver__impl.html#aa97de2d049c1a00936d67de3d7189d2f">gr::lora_sdr::deinterleaver_impl::m_is_header</a></div><div class="ttdeci">bool m_is_header</div><div class="ttdoc">Indicate that we need to deinterleave the first block with the default header parameters (cr=4/8,...</div><div class="ttdef"><b>Definition:</b> deinterleaver_impl.h:41</div></div>
 <div class="ttc" id="adeinterleaver_8h_html"><div class="ttname"><a href="deinterleaver_8h.html">deinterleaver.h</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

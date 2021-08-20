@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GNU Radio&#39;s LoRa_SDR OOT Package: modulate_impl.h Source File</title>
+<title>GNU Radio&#39;s LORA_SDR Package: modulate_impl.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio&#39;s LoRa_SDR OOT Package
+   <div id="projectname">GNU Radio&#39;s LORA_SDR Package
    </div>
-   <div id="projectbrief">OOT module that provides PHY LoRa capabilities</div>
   </td>
  </tr>
  </tbody>
@@ -73,90 +72,90 @@ $(document).ready(function(){initNavTree('modulate__impl_8h_source.html',''); in
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">   * @briefTransmission spreading factor</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a0503404afe218f71be3c58f719760a59">   20</a></span>&#160;  uint8_t <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a0503404afe218f71be3c58f719760a59">m_sf</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  uint8_t m_sf;<span class="comment"></span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">   * @brief Transmission sampling rate</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a0d42a486c0e9026f92d0e4dff1c183b4">   25</a></span>&#160;  uint32_t <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a0d42a486c0e9026f92d0e4dff1c183b4">m_samp_rate</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  uint32_t m_samp_rate;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">   * @brief Transmission bandwidth (Works only for samp_rate=bw)</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1modulate__impl.html#aa7996cc28155b930a520c56d547f5ef7">   31</a></span>&#160;  uint32_t <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#aa7996cc28155b930a520c56d547f5ef7">m_bw</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  uint32_t m_bw;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">   * @brief number of bin per loar symbol</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1modulate__impl.html#aab459eb2bccd75e7432e4c41a55c1087">   37</a></span>&#160;  uint32_t <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#aab459eb2bccd75e7432e4c41a55c1087">m_number_of_bins</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  uint32_t m_number_of_bins;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">   * @brief lora symbols per second</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1modulate__impl.html#ada87a0de1315f3d5ab842f73e2435ffa">   43</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#ada87a0de1315f3d5ab842f73e2435ffa">m_symbols_per_second</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">double</span> m_symbols_per_second;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">   * @brief samples per symbols(Works only for 2^sf)</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a36660b5a232ae44e9f7da4ee2a65bcfc">   49</a></span>&#160;  uint32_t <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a36660b5a232ae44e9f7da4ee2a65bcfc">m_samples_per_symbol</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  uint32_t m_samples_per_symbol;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">   * @brief sync words (network id)</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1modulate__impl.html#ae71f7489940a16777b65182b1139e2d4">   55</a></span>&#160;  std::vector&lt;uint16_t&gt; <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#ae71f7489940a16777b65182b1139e2d4">m_sync_words</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  std::vector&lt;uint16_t&gt; m_sync_words;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">   * @brief length in samples of zero append to each frame</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a5673e64912584a17be7b417622e94805">   61</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a5673e64912584a17be7b417622e94805">m_inter_frame_padding</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">int</span> m_inter_frame_padding;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">   * @brief length of the frame in number of items</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1modulate__impl.html#af95c39e3f212f721da351e2d2cdc7640">   67</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#af95c39e3f212f721da351e2d2cdc7640">m_frame_len</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">int</span> m_frame_len;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">   * @briefreference upchirp</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1modulate__impl.html#ab81def3ea19c85e4e17ec9782c2de4d1">   73</a></span>&#160;  std::vector&lt;gr_complex&gt; <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#ab81def3ea19c85e4e17ec9782c2de4d1">m_upchirp</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  std::vector&lt;gr_complex&gt; m_upchirp;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">   * @brief reference downchirp</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a784362e26a06069fafab4f11c70a0d09">   79</a></span>&#160;  std::vector&lt;gr_complex&gt; <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a784362e26a06069fafab4f11c70a0d09">m_downchirp</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  std::vector&lt;gr_complex&gt; m_downchirp;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">   * @brief number of upchirps in the preamble</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1modulate__impl.html#adab83f8a64cca05269b7af04282515fd">   85</a></span>&#160;  uint <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#adab83f8a64cca05269b7af04282515fd">n_up</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  uint n_up;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">   * @brief counter of the number of lora symbols sent</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a25df5b094d1afb50275104f97a02b17d">   91</a></span>&#160;  uint32_t <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a25df5b094d1afb50275104f97a02b17d">symb_cnt</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  uint32_t symb_cnt;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">   * @brief  counter of the number of preamble symbols output</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a9f704967d6e5368fa459c1317aac466a">   97</a></span>&#160;  uint32_t <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#a9f704967d6e5368fa459c1317aac466a">preamb_symb_cnt</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  uint32_t preamb_symb_cnt;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">   * @brief counter of the number of null symbols output after each frame</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1modulate__impl.html#af23e7544411e1f66e6959d77d2428734">  103</a></span>&#160;  uint32_t <a class="code" href="classgr_1_1lora__sdr_1_1modulate__impl.html#af23e7544411e1f66e6959d77d2428734">padd_cnt</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  uint32_t padd_cnt;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">  /**</span></div>
@@ -205,27 +204,12 @@ $(document).ready(function(){initNavTree('modulate__impl_8h_source.html',''); in
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LORA_MODULATE_IMPL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_a0d42a486c0e9026f92d0e4dff1c183b4"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#a0d42a486c0e9026f92d0e4dff1c183b4">gr::lora_sdr::modulate_impl::m_samp_rate</a></div><div class="ttdeci">uint32_t m_samp_rate</div><div class="ttdoc">Transmission sampling rate.</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:25</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_ae71f7489940a16777b65182b1139e2d4"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#ae71f7489940a16777b65182b1139e2d4">gr::lora_sdr::modulate_impl::m_sync_words</a></div><div class="ttdeci">std::vector&lt; uint16_t &gt; m_sync_words</div><div class="ttdoc">sync words (network id)</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:55</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html">gr::lora_sdr::modulate_impl</a></div><div class="ttdef"><b>Definition:</b> modulate_impl.h:14</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_a9f704967d6e5368fa459c1317aac466a"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#a9f704967d6e5368fa459c1317aac466a">gr::lora_sdr::modulate_impl::preamb_symb_cnt</a></div><div class="ttdeci">uint32_t preamb_symb_cnt</div><div class="ttdoc">counter of the number of preamble symbols output</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:97</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_a0503404afe218f71be3c58f719760a59"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#a0503404afe218f71be3c58f719760a59">gr::lora_sdr::modulate_impl::m_sf</a></div><div class="ttdeci">uint8_t m_sf</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:20</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_adab83f8a64cca05269b7af04282515fd"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#adab83f8a64cca05269b7af04282515fd">gr::lora_sdr::modulate_impl::n_up</a></div><div class="ttdeci">uint n_up</div><div class="ttdoc">number of upchirps in the preamble</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:85</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_af95c39e3f212f721da351e2d2cdc7640"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#af95c39e3f212f721da351e2d2cdc7640">gr::lora_sdr::modulate_impl::m_frame_len</a></div><div class="ttdeci">int m_frame_len</div><div class="ttdoc">length of the frame in number of items</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:67</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_a28e0c84f4fe1595df12af7967a418693"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#a28e0c84f4fe1595df12af7967a418693">gr::lora_sdr::modulate_impl::forecast</a></div><div class="ttdeci">void forecast(int noutput_items, gr_vector_int &amp;ninput_items_required)</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_ada87a0de1315f3d5ab842f73e2435ffa"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#ada87a0de1315f3d5ab842f73e2435ffa">gr::lora_sdr::modulate_impl::m_symbols_per_second</a></div><div class="ttdeci">double m_symbols_per_second</div><div class="ttdoc">lora symbols per second</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:43</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_aa7996cc28155b930a520c56d547f5ef7"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#aa7996cc28155b930a520c56d547f5ef7">gr::lora_sdr::modulate_impl::m_bw</a></div><div class="ttdeci">uint32_t m_bw</div><div class="ttdoc">Transmission bandwidth (Works only for samp_rate=bw)</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:31</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_a25df5b094d1afb50275104f97a02b17d"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#a25df5b094d1afb50275104f97a02b17d">gr::lora_sdr::modulate_impl::symb_cnt</a></div><div class="ttdeci">uint32_t symb_cnt</div><div class="ttdoc">counter of the number of lora symbols sent</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:91</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_a784362e26a06069fafab4f11c70a0d09"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#a784362e26a06069fafab4f11c70a0d09">gr::lora_sdr::modulate_impl::m_downchirp</a></div><div class="ttdeci">std::vector&lt; gr_complex &gt; m_downchirp</div><div class="ttdoc">reference downchirp</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:79</div></div>
 <div class="ttc" id="ahelpers_8h_html"><div class="ttname"><a href="helpers_8h.html">helpers.h</a></div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_a5673e64912584a17be7b417622e94805"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#a5673e64912584a17be7b417622e94805">gr::lora_sdr::modulate_impl::m_inter_frame_padding</a></div><div class="ttdeci">int m_inter_frame_padding</div><div class="ttdoc">length in samples of zero append to each frame</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:61</div></div>
 <div class="ttc" id="anamespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> add_crc.h:28</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_af23e7544411e1f66e6959d77d2428734"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#af23e7544411e1f66e6959d77d2428734">gr::lora_sdr::modulate_impl::padd_cnt</a></div><div class="ttdeci">uint32_t padd_cnt</div><div class="ttdoc">counter of the number of null symbols output after each frame</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:103</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_a3cfe0381dc856de57622357554995310"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#a3cfe0381dc856de57622357554995310">gr::lora_sdr::modulate_impl::general_work</a></div><div class="ttdeci">int general_work(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_a36660b5a232ae44e9f7da4ee2a65bcfc"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#a36660b5a232ae44e9f7da4ee2a65bcfc">gr::lora_sdr::modulate_impl::m_samples_per_symbol</a></div><div class="ttdeci">uint32_t m_samples_per_symbol</div><div class="ttdoc">samples per symbols(Works only for 2^sf)</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:49</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_aab459eb2bccd75e7432e4c41a55c1087"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#aab459eb2bccd75e7432e4c41a55c1087">gr::lora_sdr::modulate_impl::m_number_of_bins</a></div><div class="ttdeci">uint32_t m_number_of_bins</div><div class="ttdoc">number of bin per loar symbol</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:37</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_a115b4bb223b5ad808fe8766823367c6f"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#a115b4bb223b5ad808fe8766823367c6f">gr::lora_sdr::modulate_impl::~modulate_impl</a></div><div class="ttdeci">~modulate_impl()</div><div class="ttdoc">Destroy the modulate impl object.</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_ab81def3ea19c85e4e17ec9782c2de4d1"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#ab81def3ea19c85e4e17ec9782c2de4d1">gr::lora_sdr::modulate_impl::m_upchirp</a></div><div class="ttdeci">std::vector&lt; gr_complex &gt; m_upchirp</div><div class="ttdef"><b>Definition:</b> modulate_impl.h:73</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate.html">gr::lora_sdr::modulate</a></div><div class="ttdoc">End block of the sending side that modulates the final to be sent data to the LoRa standard For more ...</div><div class="ttdef"><b>Definition:</b> modulate.h:37</div></div>
 <div class="ttc" id="amodulate_8h_html"><div class="ttname"><a href="modulate_8h.html">modulate.h</a></div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1modulate__impl_html_a6d3a378a9c1e48fe4053bb631d7e345e"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1modulate__impl.html#a6d3a378a9c1e48fe4053bb631d7e345e">gr::lora_sdr::modulate_impl::modulate_impl</a></div><div class="ttdeci">modulate_impl(uint8_t sf, uint32_t samp_rate, uint32_t bw, std::vector&lt; uint16_t &gt; sync_words, bool create_zeros)</div><div class="ttdoc">Construct a new modulate impl object.</div></div>

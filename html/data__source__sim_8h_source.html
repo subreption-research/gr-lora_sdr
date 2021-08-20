@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GNU Radio&#39;s LoRa_SDR OOT Package: data_source_sim.h Source File</title>
+<title>GNU Radio&#39;s LORA_SDR Package: data_source_sim.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio&#39;s LoRa_SDR OOT Package
+   <div id="projectname">GNU Radio&#39;s LORA_SDR Package
    </div>
-   <div id="projectbrief">OOT module that provides PHY LoRa capabilities</div>
   </td>
  </tr>
  </tbody>
@@ -83,7 +82,7 @@ $(document).ready(function(){initNavTree('data__source__sim_8h_source.html','');
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1data__source__sim.html">   27</a></span>&#160;    <span class="keyword">class </span><a class="code" href="api_8h.html#a7f43a70ead7390c8125a3e3273e64b8c">LORA_SDR_API</a> <a class="code" href="classgr_1_1lora__sdr_1_1data__source__sim.html">data_source_sim</a> : <span class="keyword">virtual</span> <span class="keyword">public</span> gr::block</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;     <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a910d1063e8ec5d3eaaffe803aed9dfa0">   30</a></span>&#160;      <span class="keyword">typedef</span> boost::shared_ptr&lt;data_source_sim&gt; <a class="code" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a910d1063e8ec5d3eaaffe803aed9dfa0">sptr</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a19bc5e668bd10264057859496c68ed1f">   30</a></span>&#160;      <span class="keyword">typedef</span> std::shared_ptr&lt;data_source_sim&gt; <a class="code" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a19bc5e668bd10264057859496c68ed1f">sptr</a>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">      /*!</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">       * \brief Return a shared_ptr to a new instance of lora_sdr::data_source.</span></div>
@@ -93,7 +92,7 @@ $(document).ready(function(){initNavTree('data__source__sim_8h_source.html','');
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">       * class. lora_sdr::data_source::make is the public interface for</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">       * creating new instances.</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">       */</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keyword">static</span> <a class="code" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a910d1063e8ec5d3eaaffe803aed9dfa0">sptr</a> make(<span class="keywordtype">int</span> pay_len,<span class="keywordtype">int</span> n_frames, std::string string_input, uint32_t mean, <span class="keywordtype">bool</span> exit_control);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keyword">static</span> <a class="code" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a19bc5e668bd10264057859496c68ed1f">sptr</a> make(<span class="keywordtype">int</span> pay_len,<span class="keywordtype">int</span> n_frames, std::string string_input, uint32_t mean, <span class="keywordtype">bool</span> exit_control);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    };</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  } <span class="comment">// namespace lora_sdr</span></div>
@@ -103,8 +102,8 @@ $(document).ready(function(){initNavTree('data__source__sim_8h_source.html','');
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1data__source__sim_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1data__source__sim.html">gr::lora_sdr::data_source_sim</a></div><div class="ttdoc">Data source that can both generate random strings or static strings, for more information about the i...</div><div class="ttdef"><b>Definition:</b> data_source_sim.h:27</div></div>
-<div class="ttc" id="aapi_8h_html_a7f43a70ead7390c8125a3e3273e64b8c"><div class="ttname"><a href="api_8h.html#a7f43a70ead7390c8125a3e3273e64b8c">LORA_SDR_API</a></div><div class="ttdeci">#define LORA_SDR_API</div><div class="ttdef"><b>Definition:</b> api.h:30</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1data__source__sim_html_a910d1063e8ec5d3eaaffe803aed9dfa0"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1data__source__sim.html#a910d1063e8ec5d3eaaffe803aed9dfa0">gr::lora_sdr::data_source_sim::sptr</a></div><div class="ttdeci">boost::shared_ptr&lt; data_source_sim &gt; sptr</div><div class="ttdef"><b>Definition:</b> data_source_sim.h:30</div></div>
+<div class="ttc" id="aapi_8h_html_a7f43a70ead7390c8125a3e3273e64b8c"><div class="ttname"><a href="api_8h.html#a7f43a70ead7390c8125a3e3273e64b8c">LORA_SDR_API</a></div><div class="ttdeci">#define LORA_SDR_API</div><div class="ttdef"><b>Definition:</b> api.h:19</div></div>
+<div class="ttc" id="aclassgr_1_1lora__sdr_1_1data__source__sim_html_a19bc5e668bd10264057859496c68ed1f"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1data__source__sim.html#a19bc5e668bd10264057859496c68ed1f">gr::lora_sdr::data_source_sim::sptr</a></div><div class="ttdeci">std::shared_ptr&lt; data_source_sim &gt; sptr</div><div class="ttdef"><b>Definition:</b> data_source_sim.h:30</div></div>
 <div class="ttc" id="anamespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> add_crc.h:28</div></div>
 <div class="ttc" id="aapi_8h_html"><div class="ttname"><a href="api_8h.html">api.h</a></div></div>
 <!-- start footer part -->

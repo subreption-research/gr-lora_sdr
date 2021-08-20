@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GNU Radio&#39;s LoRa_SDR OOT Package: gr::lora_sdr::data_source_impl Class Reference</title>
+<title>GNU Radio&#39;s LORA_SDR Package: gr::lora_sdr::data_source_impl Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio&#39;s LoRa_SDR OOT Package
+   <div id="projectname">GNU Radio&#39;s LORA_SDR Package
    </div>
-   <div id="projectbrief">OOT module that provides PHY LoRa capabilities</div>
   </td>
  </tr>
  </tbody>
@@ -52,8 +51,6 @@ $(document).ready(function(){initNavTree('classgr_1_1lora__sdr_1_1data__source__
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classgr_1_1lora__sdr_1_1data__source__impl-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">gr::lora_sdr::data_source_impl Class Reference</div>  </div>
@@ -83,37 +80,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a359fbacfd3b9f85afad711e84e17e84c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place holder function of <a class="el" href="classgr_1_1lora__sdr_1_1data__source.html" title="&lt;+description of block+&gt;">data_source</a> that generated random ([a-z A-Z 0-9]) data source to be sent over the network.  <a href="classgr_1_1lora__sdr_1_1data__source__impl.html#a359fbacfd3b9f85afad711e84e17e84c">More...</a><br /></td></tr>
 <tr class="separator:a359fbacfd3b9f85afad711e84e17e84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ae90773fff0c2c3407fed0db484415d1b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__impl.html#ae90773fff0c2c3407fed0db484415d1b">random_string</a> (int nbytes)</td></tr>
-<tr class="memdesc:ae90773fff0c2c3407fed0db484415d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a random string containing [a-z A-Z 0-9] for testing the payload data  <a href="classgr_1_1lora__sdr_1_1data__source__impl.html#ae90773fff0c2c3407fed0db484415d1b">More...</a><br /></td></tr>
-<tr class="separator:ae90773fff0c2c3407fed0db484415d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab56a4a9601909de934e4582b3aa8ade"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__impl.html#aab56a4a9601909de934e4582b3aa8ade">trigg_handler</a> (pmt::pmt_t msg)</td></tr>
-<tr class="memdesc:aab56a4a9601909de934e4582b3aa8ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function that handles the trigger and dispatches the message making.  <a href="classgr_1_1lora__sdr_1_1data__source__impl.html#aab56a4a9601909de934e4582b3aa8ade">More...</a><br /></td></tr>
-<tr class="separator:aab56a4a9601909de934e4582b3aa8ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:aec9aeee81d28f1da95a30c6619d8b3c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__impl.html#aec9aeee81d28f1da95a30c6619d8b3c6">frame_cnt</a></td></tr>
-<tr class="memdesc:aec9aeee81d28f1da95a30c6619d8b3c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">: Count the number of frame sent  <a href="classgr_1_1lora__sdr_1_1data__source__impl.html#aec9aeee81d28f1da95a30c6619d8b3c6">More...</a><br /></td></tr>
-<tr class="separator:aec9aeee81d28f1da95a30c6619d8b3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebaa93b19af36a6912784fb5e0866178"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__impl.html#aebaa93b19af36a6912784fb5e0866178">m_n_frames</a></td></tr>
-<tr class="memdesc:aebaa93b19af36a6912784fb5e0866178"><td class="mdescLeft">&#160;</td><td class="mdescRight">: The maximal number of frame to send  <a href="classgr_1_1lora__sdr_1_1data__source__impl.html#aebaa93b19af36a6912784fb5e0866178">More...</a><br /></td></tr>
-<tr class="separator:aebaa93b19af36a6912784fb5e0866178"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd7df0785ea2e683b1f756a132540a3c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__impl.html#afd7df0785ea2e683b1f756a132540a3c">m_pay_len</a></td></tr>
-<tr class="memdesc:afd7df0785ea2e683b1f756a132540a3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">: The payload length  <a href="classgr_1_1lora__sdr_1_1data__source__impl.html#afd7df0785ea2e683b1f756a132540a3c">More...</a><br /></td></tr>
-<tr class="separator:afd7df0785ea2e683b1f756a132540a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad21dd33ca5e4695faaa8dfafc6723af8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__impl.html#ad21dd33ca5e4695faaa8dfafc6723af8">m_string_input</a></td></tr>
-<tr class="memdesc:ad21dd33ca5e4695faaa8dfafc6723af8"><td class="mdescLeft">&#160;</td><td class="mdescRight">: Input data source, if empty random generated data source is used.  <a href="classgr_1_1lora__sdr_1_1data__source__impl.html#ad21dd33ca5e4695faaa8dfafc6723af8">More...</a><br /></td></tr>
-<tr class="separator:ad21dd33ca5e4695faaa8dfafc6723af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classgr_1_1lora__sdr_1_1data__source"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classgr_1_1lora__sdr_1_1data__source')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classgr_1_1lora__sdr_1_1data__source.html">gr::lora_sdr::data_source</a></td></tr>
-<tr class="memitem:a27bf4f8366600a8d1edf6b8b5c340fe7 inherit pub_types_classgr_1_1lora__sdr_1_1data__source"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1data__source.html">data_source</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source.html#a27bf4f8366600a8d1edf6b8b5c340fe7">sptr</a></td></tr>
-<tr class="separator:a27bf4f8366600a8d1edf6b8b5c340fe7 inherit pub_types_classgr_1_1lora__sdr_1_1data__source"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6113f190b2e72380d3d1a39e1a33ccaa inherit pub_types_classgr_1_1lora__sdr_1_1data__source"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1data__source.html">data_source</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source.html#a6113f190b2e72380d3d1a39e1a33ccaa">sptr</a></td></tr>
+<tr class="separator:a6113f190b2e72380d3d1a39e1a33ccaa inherit pub_types_classgr_1_1lora__sdr_1_1data__source"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classgr_1_1lora__sdr_1_1data__source"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classgr_1_1lora__sdr_1_1data__source')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classgr_1_1lora__sdr_1_1data__source.html">gr::lora_sdr::data_source</a></td></tr>
-<tr class="memitem:ae04a723879a096ddbc582ec2fb6b70ad inherit pub_static_methods_classgr_1_1lora__sdr_1_1data__source"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1data__source.html#a27bf4f8366600a8d1edf6b8b5c340fe7">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source.html#ae04a723879a096ddbc582ec2fb6b70ad">make</a> (int pay_len, int n_frames, std::string string_input)</td></tr>
+<tr class="memitem:ae04a723879a096ddbc582ec2fb6b70ad inherit pub_static_methods_classgr_1_1lora__sdr_1_1data__source"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1data__source.html#a6113f190b2e72380d3d1a39e1a33ccaa">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source.html#ae04a723879a096ddbc582ec2fb6b70ad">make</a> (int pay_len, int n_frames, std::string string_input)</td></tr>
 <tr class="memdesc:ae04a723879a096ddbc582ec2fb6b70ad inherit pub_static_methods_classgr_1_1lora__sdr_1_1data__source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1data__source.html" title="&lt;+description of block+&gt;">lora_sdr::data_source</a>.  <a href="classgr_1_1lora__sdr_1_1data__source.html#ae04a723879a096ddbc582ec2fb6b70ad">More...</a><br /></td></tr>
 <tr class="separator:ae04a723879a096ddbc582ec2fb6b70ad inherit pub_static_methods_classgr_1_1lora__sdr_1_1data__source"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -182,75 +155,6 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae90773fff0c2c3407fed0db484415d1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae90773fff0c2c3407fed0db484415d1b">&#9670;&nbsp;</a></span>random_string()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string gr::lora_sdr::data_source_impl::random_string </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>nbytes</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>returns a random string containing [a-z A-Z 0-9] for testing the payload data </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">nbytes</td><td>: the number of char in the string </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>std::string : the random generated string </dd></dl>
-
-</div>
-</div>
-<a id="aab56a4a9601909de934e4582b3aa8ade"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab56a4a9601909de934e4582b3aa8ade">&#9670;&nbsp;</a></span>trigg_handler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gr::lora_sdr::data_source_impl::trigg_handler </td>
-          <td>(</td>
-          <td class="paramtype">pmt::pmt_t&#160;</td>
-          <td class="paramname"><em>msg</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Main function that handles the trigger and dispatches the message making. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">msg</td><td>: PMT input msg (i.e. trigger from strobe) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a359fbacfd3b9f85afad711e84e17e84c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a359fbacfd3b9f85afad711e84e17e84c">&#9670;&nbsp;</a></span>work()</h2>
 
@@ -293,103 +197,6 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="aec9aeee81d28f1da95a30c6619d8b3c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec9aeee81d28f1da95a30c6619d8b3c6">&#9670;&nbsp;</a></span>frame_cnt</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gr::lora_sdr::data_source_impl::frame_cnt</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>: Count the number of frame sent </p>
-
-</div>
-</div>
-<a id="aebaa93b19af36a6912784fb5e0866178"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebaa93b19af36a6912784fb5e0866178">&#9670;&nbsp;</a></span>m_n_frames</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gr::lora_sdr::data_source_impl::m_n_frames</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>: The maximal number of frame to send </p>
-
-</div>
-</div>
-<a id="afd7df0785ea2e683b1f756a132540a3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd7df0785ea2e683b1f756a132540a3c">&#9670;&nbsp;</a></span>m_pay_len</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gr::lora_sdr::data_source_impl::m_pay_len</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>: The payload length </p>
-
-</div>
-</div>
-<a id="ad21dd33ca5e4695faaa8dfafc6723af8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad21dd33ca5e4695faaa8dfafc6723af8">&#9670;&nbsp;</a></span>m_string_input</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string gr::lora_sdr::data_source_impl::m_string_input</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>: Input data source, if empty random generated data source is used. </p>
 
 </div>
 </div>

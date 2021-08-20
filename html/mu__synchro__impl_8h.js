@@ -1,7 +1,6 @@
 var mu__synchro__impl_8h =
 [
     [ "mu_synchro_impl", "classgr_1_1lora__sdr_1_1mu__synchro__impl.html", "classgr_1_1lora__sdr_1_1mu__synchro__impl" ],
-    [ "user", "structgr_1_1lora__sdr_1_1mu__synchro__impl_1_1user.html", "structgr_1_1lora__sdr_1_1mu__synchro__impl_1_1user" ],
     [ "Symbol_type", "mu__synchro__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2d", [
       [ "VOID", "mu__synchro__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2dadb31f5ef7acca5e1131fcc0fbfa6911d", null ],
       [ "UPCHIRP", "mu__synchro__impl_8h.html#a6fc8397e24b44d31ac0c7c6aa874cd2da5fd23d3a85ae7734bd01b8a1f5cb0657", null ],

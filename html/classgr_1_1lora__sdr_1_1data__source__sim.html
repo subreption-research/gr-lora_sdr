@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GNU Radio&#39;s LoRa_SDR OOT Package: gr::lora_sdr::data_source_sim Class Reference</title>
+<title>GNU Radio&#39;s LORA_SDR Package: gr::lora_sdr::data_source_sim Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio&#39;s LoRa_SDR OOT Package
+   <div id="projectname">GNU Radio&#39;s LORA_SDR Package
    </div>
-   <div id="projectbrief">OOT module that provides PHY LoRa capabilities</div>
   </td>
  </tr>
  </tbody>
@@ -75,26 +74,26 @@ Inheritance diagram for gr::lora_sdr::data_source_sim:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a910d1063e8ec5d3eaaffe803aed9dfa0"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html">data_source_sim</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a910d1063e8ec5d3eaaffe803aed9dfa0">sptr</a></td></tr>
-<tr class="separator:a910d1063e8ec5d3eaaffe803aed9dfa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19bc5e668bd10264057859496c68ed1f"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html">data_source_sim</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a19bc5e668bd10264057859496c68ed1f">sptr</a></td></tr>
+<tr class="separator:a19bc5e668bd10264057859496c68ed1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:acf06e9351413e37b5307ddfcf32d98ab"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a910d1063e8ec5d3eaaffe803aed9dfa0">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#acf06e9351413e37b5307ddfcf32d98ab">make</a> (int pay_len, int n_frames, std::string string_input, uint32_t mean, bool exit_control)</td></tr>
+<tr class="memitem:acf06e9351413e37b5307ddfcf32d98ab"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a19bc5e668bd10264057859496c68ed1f">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#acf06e9351413e37b5307ddfcf32d98ab">make</a> (int pay_len, int n_frames, std::string string_input, uint32_t mean, bool exit_control)</td></tr>
 <tr class="memdesc:acf06e9351413e37b5307ddfcf32d98ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lora__sdr_1_1data__source.html" title="&lt;+description of block+&gt;">lora_sdr::data_source</a>.  <a href="classgr_1_1lora__sdr_1_1data__source__sim.html#acf06e9351413e37b5307ddfcf32d98ab">More...</a><br /></td></tr>
 <tr class="separator:acf06e9351413e37b5307ddfcf32d98ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Data source that can both generate random strings or static strings, for more information about the implementation visit <a class="el" href="classgr_1_1lora__sdr_1_1data__source__impl.html">data_source_impl</a> Main difference from <a class="el" href="classgr_1_1lora__sdr_1_1data__source.html" title="&lt;+description of block+&gt;">data_source</a> is that this implementation uses an internal uniform distribution, for the timing of the msg pmt channel. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a910d1063e8ec5d3eaaffe803aed9dfa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a910d1063e8ec5d3eaaffe803aed9dfa0">&#9670;&nbsp;</a></span>sptr</h2>
+<a id="a19bc5e668bd10264057859496c68ed1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19bc5e668bd10264057859496c68ed1f">&#9670;&nbsp;</a></span>sptr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html">data_source_sim</a>&gt; <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a910d1063e8ec5d3eaaffe803aed9dfa0">gr::lora_sdr::data_source_sim::sptr</a></td>
+          <td class="memname">typedef std::shared_ptr&lt;<a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html">data_source_sim</a>&gt; <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a19bc5e668bd10264057859496c68ed1f">gr::lora_sdr::data_source_sim::sptr</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -112,7 +111,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a910d1063e8ec5d3eaaffe803aed9dfa0">sptr</a> gr::lora_sdr::data_source_sim::make </td>
+          <td class="memname">static <a class="el" href="classgr_1_1lora__sdr_1_1data__source__sim.html#a19bc5e668bd10264057859496c68ed1f">sptr</a> gr::lora_sdr::data_source_sim::make </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>pay_len</em>, </td>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GNU Radio&#39;s LoRa_SDR OOT Package: err_measures_impl.h Source File</title>
+<title>GNU Radio&#39;s LORA_SDR Package: err_measures_impl.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio&#39;s LoRa_SDR OOT Package
+   <div id="projectname">GNU Radio&#39;s LORA_SDR Package
    </div>
-   <div id="projectbrief">OOT module that provides PHY LoRa capabilities</div>
   </td>
  </tr>
  </tbody>
@@ -72,40 +71,40 @@ $(document).ready(function(){initNavTree('err__measures__impl_8h_source.html',''
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">   * @brief Vector containing the reference payload</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1err__measures__impl.html#ab7202171f89c7005b264e4baaedc1bb7">   19</a></span>&#160;  std::vector&lt;char&gt; <a class="code" href="classgr_1_1lora__sdr_1_1err__measures__impl.html#ab7202171f89c7005b264e4baaedc1bb7">m_corr_payload</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  std::vector&lt;char&gt; m_corr_payload;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">   * @brief Vector containing the received payload</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1err__measures__impl.html#af24cdfdabaf3b348da432c3ebcbadb1d">   25</a></span>&#160;  std::vector&lt;char&gt; <a class="code" href="classgr_1_1lora__sdr_1_1err__measures__impl.html#af24cdfdabaf3b348da432c3ebcbadb1d">m_payload</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  std::vector&lt;char&gt; m_payload;<span class="comment"></span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">   * @brief Bits errors in the frame</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1err__measures__impl.html#a6d1c86d9b2f96efc9ff1fdf2c8d473ee">   30</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1err__measures__impl.html#a6d1c86d9b2f96efc9ff1fdf2c8d473ee">BE</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">int</span> BE;<span class="comment"></span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">   * @brief variable used to detect missing frames</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1err__measures__impl.html#aa14460ee9757ac1af575c5b3becce949">   35</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lora__sdr_1_1err__measures__impl.html#aa14460ee9757ac1af575c5b3becce949">drop</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">int</span> drop;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#ifdef GRLORA_MEASUREMENTS</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classgr_1_1lora__sdr_1_1err__measures__impl.html#a9e0485640c3150e38c85ef877f19f1dc">   38</a></span>&#160;  std::ofstream <a class="code" href="classgr_1_1lora__sdr_1_1err__measures__impl.html#a9e0485640c3150e38c85ef877f19f1dc">err_outfile</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  std::ofstream err_outfile;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">   * @brief Msg handler, will handle the incoming decoded message</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">   * @param msg : decoded payload message</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1err__measures__impl.html#a70be364136d66ddc755e1e1468d62559">msg_handler</a>(pmt::pmt_t msg);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> msg_handler(pmt::pmt_t msg);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">  /**</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">   * @brief Reference handler, input of the reference payload</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">   * @param ref : reference payload to compare against</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lora__sdr_1_1err__measures__impl.html#a14052b48c4b90bf6fb784cd84f8abdc6">ref_handler</a>(pmt::pmt_t ref);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> ref_handler(pmt::pmt_t ref);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">  /**</span></div>
@@ -141,14 +140,7 @@ $(document).ready(function(){initNavTree('err__measures__impl_8h_source.html',''
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1err__measures__impl_html_a719d49c656b47a95d3c6a5fa78f9fa06"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1err__measures__impl.html#a719d49c656b47a95d3c6a5fa78f9fa06">gr::lora_sdr::err_measures_impl::err_measures_impl</a></div><div class="ttdeci">err_measures_impl()</div><div class="ttdoc">Construct a new err measures impl object.</div></div>
 <div class="ttc" id="aerr__measures_8h_html"><div class="ttname"><a href="err__measures_8h.html">err_measures.h</a></div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1err__measures__impl_html_aed53036188e66c19e7a2fb6eaa7b974b"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1err__measures__impl.html#aed53036188e66c19e7a2fb6eaa7b974b">gr::lora_sdr::err_measures_impl::work</a></div><div class="ttdeci">int work(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div><div class="ttdoc">Main function of error measurement.</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1err__measures__impl_html_a9e0485640c3150e38c85ef877f19f1dc"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1err__measures__impl.html#a9e0485640c3150e38c85ef877f19f1dc">gr::lora_sdr::err_measures_impl::err_outfile</a></div><div class="ttdeci">std::ofstream err_outfile</div><div class="ttdef"><b>Definition:</b> err_measures_impl.h:38</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1err__measures__impl_html_a6d1c86d9b2f96efc9ff1fdf2c8d473ee"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1err__measures__impl.html#a6d1c86d9b2f96efc9ff1fdf2c8d473ee">gr::lora_sdr::err_measures_impl::BE</a></div><div class="ttdeci">int BE</div><div class="ttdoc">Bits errors in the frame.</div><div class="ttdef"><b>Definition:</b> err_measures_impl.h:30</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1err__measures__impl_html_a14052b48c4b90bf6fb784cd84f8abdc6"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1err__measures__impl.html#a14052b48c4b90bf6fb784cd84f8abdc6">gr::lora_sdr::err_measures_impl::ref_handler</a></div><div class="ttdeci">void ref_handler(pmt::pmt_t ref)</div><div class="ttdoc">Reference handler, input of the reference payload.</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1err__measures__impl_html_ab65c3f943a8b19cb74d5accf47ab8e1f"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1err__measures__impl.html#ab65c3f943a8b19cb74d5accf47ab8e1f">gr::lora_sdr::err_measures_impl::~err_measures_impl</a></div><div class="ttdeci">~err_measures_impl()</div><div class="ttdoc">Destroy the err measures impl object.</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1err__measures__impl_html_ab7202171f89c7005b264e4baaedc1bb7"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1err__measures__impl.html#ab7202171f89c7005b264e4baaedc1bb7">gr::lora_sdr::err_measures_impl::m_corr_payload</a></div><div class="ttdeci">std::vector&lt; char &gt; m_corr_payload</div><div class="ttdoc">Vector containing the reference payload.</div><div class="ttdef"><b>Definition:</b> err_measures_impl.h:19</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1err__measures__impl_html_af24cdfdabaf3b348da432c3ebcbadb1d"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1err__measures__impl.html#af24cdfdabaf3b348da432c3ebcbadb1d">gr::lora_sdr::err_measures_impl::m_payload</a></div><div class="ttdeci">std::vector&lt; char &gt; m_payload</div><div class="ttdoc">Vector containing the received payload.</div><div class="ttdef"><b>Definition:</b> err_measures_impl.h:25</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1err__measures__impl_html_a70be364136d66ddc755e1e1468d62559"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1err__measures__impl.html#a70be364136d66ddc755e1e1468d62559">gr::lora_sdr::err_measures_impl::msg_handler</a></div><div class="ttdeci">void msg_handler(pmt::pmt_t msg)</div><div class="ttdoc">Msg handler, will handle the incoming decoded message.</div></div>
-<div class="ttc" id="aclassgr_1_1lora__sdr_1_1err__measures__impl_html_aa14460ee9757ac1af575c5b3becce949"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1err__measures__impl.html#aa14460ee9757ac1af575c5b3becce949">gr::lora_sdr::err_measures_impl::drop</a></div><div class="ttdeci">int drop</div><div class="ttdoc">variable used to detect missing frames</div><div class="ttdef"><b>Definition:</b> err_measures_impl.h:35</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1err__measures__impl_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1err__measures__impl.html">gr::lora_sdr::err_measures_impl</a></div><div class="ttdef"><b>Definition:</b> err_measures_impl.h:13</div></div>
 <div class="ttc" id="anamespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> add_crc.h:28</div></div>
 <div class="ttc" id="aclassgr_1_1lora__sdr_1_1err__measures_html"><div class="ttname"><a href="classgr_1_1lora__sdr_1_1err__measures.html">gr::lora_sdr::err_measures</a></div><div class="ttdoc">Simple block that can count and output the number of Bit Error's (BE) ,for more information about the...</div><div class="ttdef"><b>Definition:</b> err_measures.h:36</div></div>
