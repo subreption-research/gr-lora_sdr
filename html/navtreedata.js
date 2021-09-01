@@ -59,7 +59,7 @@ var NAVTREEINDEX =
 [
 "RH__RF95__header_8h.html",
 "classgr_1_1lora__sdr_1_1partial__ml__impl.html#a5efea2984a45427bd26ea5e22fe3cf13",
-"hier__rx__impl_8h_source.html"
+"hier__rx__pydoc__template_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
